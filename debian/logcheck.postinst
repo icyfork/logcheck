@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.14 2004/05/24 01:28:22 eevans-guest Exp $
+# $Id: logcheck.postinst,v 1.15 2004/06/01 21:37:04 maks-guest Exp $
 
 set -e
 
@@ -43,7 +43,8 @@ case "$1" in
 	if dpkg --compare-versions "$2" lt 1.2.19; then
     	  # Fix Permissions
     	  chown -R logcheck:logcheck /var/lib/logcheck  || true
-          chown -R logcheck:logcheck /var/state/logcheck &> /dev/null || true
+          chown -R logcheck:logcheck /var/state/logcheck > /dev/null 2>&1 \
+	      || true
           chgrp -R logcheck /etc/logcheck || true
           chmod 750 /etc/logcheck/ignore.d.paranoid || true
           chmod 750 /etc/logcheck/ignore.d.workstation || true
@@ -54,7 +55,7 @@ case "$1" in
           chmod 750 /etc/logcheck/violations.ignore.d || true
     	  chmod -R g+rX /etc/logcheck || true
           # just in case
-          chown logcheck /var/lock/logcheck &> /dev/null || true
+          chown logcheck /var/lock/logcheck > /dev/null 2>&1 || true
 	fi
 
 	;;
