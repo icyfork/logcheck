@@ -41,7 +41,7 @@ logcheck (1.2.21) unstable; urgency=low
   * debian/*templates: Some small consistency and formating updates. Updated
     the debian/po/*.po files too.
 
- -- 
+ -- Todd Troxell <ttroxell@debian.org>  Thursday, 03 Jun 2004 05:49:47 -0500
 
 logcheck (1.2.20a) unstable; urgency=low
 
