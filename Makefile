@@ -9,13 +9,13 @@ install:
 	install -d $(DESTDIR)/var/lib/logcheck
 	install -d $(DESTDIR)/usr/sbin
 
-	install -m 4750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.paranoid
-	install -m 4750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.workstation
-	install -m 4750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.server
-	install -m 4750 -d $(DESTDIR)/$(CONFDIR)/cracking.d
-	install -m 4750 -d $(DESTDIR)/$(CONFDIR)/cracking.ignore.d
-	install -m 4750 -d $(DESTDIR)/$(CONFDIR)/violations.d
-	install -m 4750 -d $(DESTDIR)/$(CONFDIR)/violations.ignore.d
+	install -m 2750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.paranoid
+	install -m 2750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.workstation
+	install -m 2750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.server
+	install -m 2750 -d $(DESTDIR)/$(CONFDIR)/cracking.d
+	install -m 2750 -d $(DESTDIR)/$(CONFDIR)/cracking.ignore.d
+	install -m 2750 -d $(DESTDIR)/$(CONFDIR)/violations.d
+	install -m 2750 -d $(DESTDIR)/$(CONFDIR)/violations.ignore.d
 
 	# Install the scripts
 	install -m 755 src/logcheck $(DESTDIR)/$(BINDIR)/
