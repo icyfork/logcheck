@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.69 2004/07/20 08:27:44 maks-guest Exp $
+# $Id: logcheck,v 1.70 2004/07/20 14:08:08 maks-guest Exp $
 
 
 # Set the umask
@@ -81,7 +81,7 @@ cleanup() {
 
     if [ -n "$LOCK" ]; then
         debug "cleanup: Killing lockfile-touch - $LOCK"
-	kill $LOCK
+	kill $LOCK && unset LOCK
     fi
 
     if [ -f "$LOCKFILE.lock" ]; then
@@ -114,11 +114,16 @@ error() {
     if [ "$2" = "noclean" ]; then
 	debug "error: Not removing lockfile"
     else
-	debug "error: Killing lockfile-touch - $LOCK"
-	kill $LOCK
+        if [ -n "$LOCK" ]; then
+	    debug "error: Killing lockfile-touch - $LOCK"
+	    kill $LOCK && unset LOCK
+	fi
 
-       debug "error: Removing lockfile: $LOCKFILE.lock"
-       lockfile-remove $LOCKFILE
+       if [ -f "$LOCKFILE.lock" ]; then
+           debug "error: Removing lockfile: $LOCKFILE.lock"
+           lockfile-remove $LOCKFILE
+       fi
+	
     fi
 
     debug "Error: $message"
