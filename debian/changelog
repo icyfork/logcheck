@@ -9,6 +9,7 @@ logcheck (1.2.21) unstable; urgency=low
   * Harden permissions regarding world.
   * Added and updated arpwatch, bind, openvpn, postfix and spamd rules.
     thanks to Peter Palfrader <weasel@debian.org>.
+  * New Config option for subject tags [logcheck].
 
  -- 
 
