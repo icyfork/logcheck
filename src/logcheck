@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.51 2004/06/04 16:02:18 maks-guest Exp $
+# $Id: logcheck,v 1.52 2004/06/05 16:54:09 maks-guest Exp $
 
 
 # Set the umask
@@ -278,6 +278,12 @@ greplogoutput() {
 	    
 	    if [ -n "$ignore" -a -f "$ignore/$(basename $grepfile)" ]; then
 		cleanchecked "$ignore/$(basename $grepfile)"
+	    fi
+
+	    # quick and dirty fix for ignoring logcheck-foo files 
+	    # in the case logcheck itself has no raised entry
+	    if [ -n "$ignore" -a -f "$ignore/logcheck-$(basename $grepfile)" ]; then
+		cleanchecked "$ignore/logcheck-$(basename $grepfile)"
 	    fi
 	    
 	    # If it's the logcheck file, we do something special
