@@ -6,3 +6,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \(\?@[._[:alnum:]-]+\) \[INFO\] Logout.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[NOTICE\] .+ (up|down)loaded  \([0-9]+ bytes, [0-9]+.[0-9]+KB/sec\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[NOTICE\] File successfully renamed or moved: \[.+\]->\[.+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[NOTICE\] Deleted .+$
