@@ -1,6 +1,6 @@
 logcheck (1.2.23) unstable; urgency=low
 
-  maks
+  maks:
   * Remove logcheck pre-dependency on logtail.
   * Added imapproxy, nfs, rngd, scponly rules. 
   * Updated dhcpd, innd, su, sudo rules. 
@@ -10,6 +10,9 @@ logcheck (1.2.23) unstable; urgency=low
   * Added -l LOG switch for test runs on new log files.
     thanks todd for ideas and first work (Closes: #234385).
   * Add -m switch to specify recipient. (Closes: #149567).
+  alfie:
+  * debian/logcheck-database.templates: Clearified the rules-directories-note
+    template and got updates for all translations. Thanks for fast responses!
 
  -- 
 
