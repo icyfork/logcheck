@@ -4,7 +4,7 @@
 # Controls the format of date-/time-stamps in subject lines:
 # Alternatively, set the format to suit your locale
 
-#DATE="$(date +'%Y/%m/%d %H:%M')"
+#DATE="$(date +'%Y-%m-%d %H:%M')"
 
 # Controls the presence of boilerplate at the top of each message:
 # Set to "no" to eliminate the boilerplate
