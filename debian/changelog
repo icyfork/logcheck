@@ -1,8 +1,8 @@
 logcheck (1.2.18) unstable; urgency=low
 
-  * Update sudo rules.
-  * Update dhclient rules. (Closes: #202718) 
-  * Update ignore.d.server/ssh to match newest ssh logs. (Closes: #242217)
+  * Updated sudo, oidentd rules.
+  * Updated dhclient rules. (Closes: #202718) 
+  * Updated ignore.d.server/ssh to match newest ssh logs. (Closes: #242217)
   * Updated cron, ssh, sudo, su rulefiles to recent PAM session logs. 
     (Closes: #241058, #242276, #243861)
   * Sync better package description with manpage intro.

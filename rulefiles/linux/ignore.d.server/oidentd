@@ -1,2 +1,2 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ oidentd\[[0-9]+\]: Connection from localhost \(127.0.0.1\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ oidentd\[[0-9]+\]: Connection from localhost \(127.0.0.1\):0$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ oidentd\[[0-9]+\]: \[127.0.0.1\] Successful lookup: .* , .* : list \(list\)$
