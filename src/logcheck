@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.78 2004/09/18 22:10:13 maks-guest Exp $
+# $Id: logcheck,v 1.79 2004/09/19 08:46:36 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -299,7 +299,8 @@ greplogoutput() {
 	    # If it's the logcheck file, we do something special
 	    if [ "$(basename $grepfile)" = "logcheck" ]; then 
 
-		# Now ignore all entries from the logcheck-<package> files
+		# Now ignore all entries from the ignore dir
+		# old logcheck versions only ignored logcheck-<package> files
 		if [ -n "$ignore" ]; then
 		    debug "Applying Logcheck override files"
 		    for file in $(ls -1 $ignore/) ; do
@@ -311,7 +312,7 @@ greplogoutput() {
 		fi
  
 		debug "Cleaning logcheck"
-		# Remove any  entries already reported
+		# Remove any entries already reported
 		for file in $(ls $raise/ | grep -v '^logcheck') ; do
 		    debug "Cleaning logcheck: $file"
 		    cleanchecked "$raise/$file"
