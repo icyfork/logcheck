@@ -2,6 +2,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: cdrom: open failed\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: apm: overridden by ACPI\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: apm: BIOS version [.0-9]+ Flags [x0-9]+ \(Driver version [.[:alnum:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ modprobe: FATAL: Error inserting apm \([^[:space:]]+\): No such device$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hd[[:lower:]]+: (ATAPI reset complete|drive not ready for command)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hd[[:lower:]]+: ATAPI [0-9]+X DVD-ROM CD-R/RW drive, [0-9]+kB Cache$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Uniform CD-ROM driver Revision: [0-9]\.[0-9]+$

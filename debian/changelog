@@ -7,7 +7,9 @@ logcheck (1.2.36) unstable; urgency=low
   * Add harmless pdns rule at server level.
   * Add rules for cups-lpd at level server.
   * Add violations.ignore.d/logcheck-dcc for the nightly dccifd reporting.
-  * Add rule ignore.d.server/kernel for printer out of paper.
+  * Add rule ignore.d.server/kernel for printer out of paper. 
+    (Closes: #298291)
+  * Add one more apm rule for useless gdm logout message.
   todd:
   * Add support for warnings in report
 
