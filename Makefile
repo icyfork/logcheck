@@ -7,7 +7,6 @@ install:
 	# Create the directories
 	install -m 750 -d $(DESTDIR)/$(CONFDIR)
 	install -d $(DESTDIR)/var/lib/logcheck
-	install -d $(DESTDIR)/var/state/logcheck
 	install -d $(DESTDIR)/usr/sbin
 
 	install -m 750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.paranoid
