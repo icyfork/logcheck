@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/hd[a-z], starting scheduled Long Self-Test.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/hd[a-z], starting scheduled Short Self-Test.$

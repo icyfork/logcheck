@@ -48,5 +48,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +store_swap_size = [0-9]+k$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: storeLateRelease: released [0-9]+ objects$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +[0-9]+ entries written so far\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: urlParse: Illegal character in hostname '.*'$
 # squidguard
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: helperOpenServers: Starting [0-9]+ 'squidGuard' processes$

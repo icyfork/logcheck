@@ -1,2 +1,16 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Auto-save of retention data completed successfully.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: LOG ROTATION: (DAILY|WEEKLY|MONTHLY)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Nagios 1\.1 starting\.\.\. \(PID=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;CRITICAL;(SOFT|HARD);.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;WARNING;(SOFT|HARD);.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;OK;(SOFT|HARD);.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;CRITICAL;.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;WARNING;.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;OK;.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST ALERT: [._[:alnum:]-]+;DOWN;(SOFT|HARD);.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST ALERT: [._[:alnum:]-]+;UP;(SOFT|HARD);.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;DOWN;.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;UP;.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST DOWNTIME ALERT: [._[:alnum:]-]+;STOPPED;.*$
+# nrpe
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nrpe\[[0-9]+\]: Error: Could not complete SSL handshake. 5$
