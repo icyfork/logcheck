@@ -10,7 +10,8 @@ logcheck (1.2.35) unstable; urgency=low
   * Add rules for webmin (closes: #286307).
   * Add rules for postfix 2.2.
   * Modify rule for pure-ftpd logout messages (closes: #294612).
-    
+  * Add rule for pure-ftpd timeout messages (closes: #295254).
+
  -- 
 
 logcheck (1.2.34) unstable; urgency=low
