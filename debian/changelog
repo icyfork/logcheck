@@ -1,6 +1,6 @@
 logcheck (1.2.30) unstable; urgency=low
 
-  maks
+  maks:
   * Move pptpd rules to level server.
   * Small typo fixes in docs.
   * Set group ownership in Makefile for non debian installs.
@@ -9,6 +9,9 @@ logcheck (1.2.30) unstable; urgency=low
     all for level server thanks to Peter Palfrader <weasel@debian.org>.
   * Logcheck/rules: Don't take locale for granted use character class instead.
   * Fix 2 samba rules. (closes: #277635)
+  jamie:
+  * Added new rules for dnsmasq. (Closes: 277636)
+  * Added rules for hylafax.
 
  -- 
 
