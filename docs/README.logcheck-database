@@ -155,10 +155,13 @@ should be using "[[:alpha:]]"; and you can write out things like
 hostnames explicitly - hence "oempc" above, rather than the pattern
 "[._[:alnum:]-]+".
 
-A quick test for a new rule would be to grep aboves regex against
-its logfile, but it is safer to remove any trailing space before:
+To test new rules, you can grep your log file, and remove trailing
+space with something like this:
+
 sed -e 's/[[:space:]]+$//' /var/log/syslog | egrep \
 '^\w{3} [ :0-9]{11} oempc wwwoffled\[[0-9]+\]: WWWOFFLE (On|Off)line\.$'
+
+If the log line is displayed, then your regex works.
 
 Pass all rules files through "sort -u" to simplify maintenance, then
 ensure they have a final end-of-line carriage return so that they
