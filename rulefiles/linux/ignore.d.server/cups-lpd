@@ -1,3 +1,5 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cups-lpd\[[0-9]+\]: Connection from [._[:alnum:]-]+ \([.0-9]{7,15}\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cups-lpd\[[0-9]+\]: Print file - job ID = [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cups-lpd\[[0-9]+\]: Unknown command-line option "\\" ignored!$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cups-lpd\[[0-9]+\]: Unknown LPD command [^[:space:]]+!$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cups-lpd\[[0-9]+\]: Command line = [[:alnum:]]+$
