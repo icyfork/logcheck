@@ -1,11 +1,11 @@
-.TH LOGTAIL 8 "Sun,  7 Apr 2002" "Debian" "logtail manual"
+.TH LOGTAIL 8 "Fri, 19 Nov 2004" "Debian" "logtail manual"
 .SH NAME
 logtail \- print log file lines that have not been read
 .SH SYNOPSIS
 .B logtail
-[\fIOPTION\fR]... 
-[-f \fI logfile\fR ]
-.R -o \fIoffsetfile\fR
+.RI [-t]
+.BI \-f logfile
+.RI [\-o offsetfile ]
 .SH DESCRIPTION
 .B logtail
 reads a specified file (usually a log file) and writes
@@ -45,15 +45,15 @@ is shorter than it was at the last run of
 it writes a warning message to the standard output.
 .SH OPTIONS
 .TP
-\fB\-f\fR
+.B \-f
 .I logfile 
 to be read after offset
 .TP
-\fB\-o\fR
+.B \-o
 .I offsetfile 
 stores offset of previous run
 .TP
-\fB\-t\fR
+.B \-t
 test mode - do not change offset in
 .I offsetfile
 .SH RETURN VALUES

@@ -4,8 +4,9 @@ logcheck (1.2.32) unstable; urgency=low
   * Add rules for jabberd, openvpn, rsnapshot, stunnel at level server
     from Peter Palfrader <weasel@debian.org>.
   * Default reportlevel is "server", correct logcheck.conf thanks koki.
-  * logtail.8 denoted switches as optional that were required and vis versa.
-    Denote the required -f switch under brackets.
+  alfie
+  * logtail.8: Fixed formating to be consistant, changed OPTION to -r (the
+    only OPTION not mentioned yet :))
 
  --
 
