@@ -1,7 +1,9 @@
+
 logcheck (1.2.29) unstable; urgency=low
 
   maks:
-  * Don't report sudo calls where pwd contains spaces (closes: 272969)
+  * Don't report sudo calls where pwd contains spaces (closes: #272969)
+  * Fix trailing space in perdition rule. (closes: #273433)
 
  --
 
