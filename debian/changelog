@@ -18,6 +18,7 @@ logcheck (1.2.30) unstable; urgency=low
   * Added rules for hylafax.
   alfie:
   * Fix sed error to really remove trailing spaces. (closes: #278337)
+  * Add myself to uploaders field because of stable releases.
 
  -- 
 
