@@ -5,7 +5,7 @@ BINDIR = usr/sbin
 
 install:
 	# Create the directories
-	install -d $(DESTDIR)/$(CONFDIR)
+	install -m 750 -d $(DESTDIR)/$(CONFDIR)
 	install -d $(DESTDIR)/var/lib/logcheck
 	install -d $(DESTDIR)/var/state/logcheck
 	install -d $(DESTDIR)/usr/sbin
@@ -23,21 +23,21 @@ install:
 	install -m 755 src/logtail $(DESTDIR)/$(BINDIR)/
 
 	# Install the config files
-	install -m 644 etc/logcheck.logfiles $(DESTDIR)/$(CONFDIR)
-	install -m 644 etc/logcheck.conf $(DESTDIR)/$(CONFDIR)
+	install -m 640 etc/logcheck.logfiles $(DESTDIR)/$(CONFDIR)
+	install -m 640 etc/logcheck.conf $(DESTDIR)/$(CONFDIR)
 
 	# Install the rulefiles
-	install -m 644 rulefiles/linux/ignore.d.paranoid/* \
+	install -m 640 rulefiles/linux/ignore.d.paranoid/* \
 		$(DESTDIR)/$(CONFDIR)/ignore.d.paranoid/
-	install -m 644 rulefiles/linux/ignore.d.server/* \
+	install -m 640 rulefiles/linux/ignore.d.server/* \
 		$(DESTDIR)/$(CONFDIR)/ignore.d.server/
-	install -m 644 rulefiles/linux/ignore.d.workstation/* \
+	install -m 640 rulefiles/linux/ignore.d.workstation/* \
 		$(DESTDIR)/$(CONFDIR)/ignore.d.workstation/
-	install -m 644 rulefiles/linux/violations.d/* \
+	install -m 640 rulefiles/linux/violations.d/* \
 		$(DESTDIR)/$(CONFDIR)/violations.d/
-	install -m 644 rulefiles/linux/violations.ignore.d/* \
+	install -m 640 rulefiles/linux/violations.ignore.d/* \
 		$(DESTDIR)/$(CONFDIR)/violations.ignore.d/
-	install -m 644 rulefiles/linux/cracking.d/* \
+	install -m 640 rulefiles/linux/cracking.d/* \
 		$(DESTDIR)/$(CONFDIR)/cracking.d/
 
 clean:
