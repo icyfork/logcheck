@@ -5,8 +5,8 @@ logcheck (1.2.35) unstable; urgency=low
   * Add smartd rule, whitespace fix openvpn rule, merge old smartd rules.
   * Add rule for imaplogin disconnected + logout messages. 
     (closes: #294950, #295418)
-  * Add rule violations.ignore.d/logcheck-ssh + rule ignore.d.server/ssh for the
-    PARANOID wildcard in /etc/hosts.deny.
+  * Add rule violations.ignore.d/logcheck-ssh + rule ignore.d.server/ssh for
+    the PARANOID wildcard in /etc/hosts.deny.
   * Match dots as dots aka '\.' in all rules.
   * Add kernel rules at level workstation (annoying apm, usb storage)
   * Fix gconf SIGHUP rule (dup whitespace).
@@ -22,8 +22,11 @@ logcheck (1.2.35) unstable; urgency=low
   * Add rule for courierpop3login (closes: 296014).
   * Add rule in violations.ignore.d/logcheck-pureftp for upload/download
     messages (closes: #296110).
-
- -- 
+  todd:
+  * Correct link syntax in copyright (closes: 296214).
+  * Add comments to clarify postinst
+  
+ -- Todd Troxell <ttroxell@debian.org>  Sunday, 20 Feb 2005 23:17:00 -0500
 
 logcheck (1.2.34) unstable; urgency=low
 

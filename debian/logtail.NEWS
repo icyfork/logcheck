@@ -1,3 +1,10 @@
+logtail (1.2.35) unstable; urgency=low
+
+  * logtail's calling options now respect reverse compatibility with
+    software written preceeding the changes in 1.2.24.  See changelog.
+
+ -- Todd Troxell <ttroxell@debian.org>  Sun Feb 20 23:01:00 +0500
+
 logcheck (1.2.34) unstable; urgency=low
   
   * logtail now reports errors on stderr instead of stdout.
