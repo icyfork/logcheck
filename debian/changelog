@@ -3,12 +3,12 @@ logcheck (1.2.21) unstable; urgency=low
   maks:
   * Better description of logtail package.
   * Recommend use of an offsite email address in main conf.
-  * Added and updated bind, cracklib, innd, postfix, nntpcache, kernel, 
-    Login.app, proftp, pump rulefiles.  
+  * Added and updated bind, cracklib, innd, postfix, nntpcache, kernel,
+    Login.app, proftp, pump rulefiles.
     (Closes: #248816, #213709, #198767 #248409)
   * Added -v switch (outputs logcheck version).
   * Harden permissions regarding world.
-  * Added and updated arpwatch, bind, gconf, gdm, kernel, openvpn, postfix, 
+  * Added and updated arpwatch, bind, gconf, gdm, kernel, openvpn, postfix,
     rpc.statd and spamd rules.  thanks to Peter Palfrader <weasel@debian.org>.
   * New Config option for subject tags [logcheck].
   * Lower all debconf messages priority.
@@ -18,13 +18,17 @@ logcheck (1.2.21) unstable; urgency=low
   * Additional INN rule from Mark Brown (Closes: #249181)
   * Add debconf to logcheck Depends:
   eevans:
-  * Made addition of logcheck user and permissions/ownership changes a 
+  * Made addition of logcheck user and permissions/ownership changes a
     conditional of an upgrade from a version less than 1.2.19,
     (Closes: #249324).
+  alfie:
+  * src/logcheck: test also for readability for the header.txt and footer.txt.
+  * debian/changelog: stripped all trailing whitespace from the file.
 
  -- 
 
 logcheck (1.2.20a) unstable; urgency=low
+
   maks:
   * Fix bug where many extra TMPDIRs were being created and never removed
 
@@ -51,7 +55,7 @@ logcheck (1.2.20) unstable; urgency=low
   * debian/logcheck.8 is generated, so get rid of it in clean target, too.
   todd:
   * Change logcheck home to /var/lib/logcheck. (Closes: #247614)
-  * Change modes on /etc/logcheck. (Closes: #247929, #248046) 
+  * Change modes on /etc/logcheck. (Closes: #247929, #248046)
   * Allow adm group to read logcheck rules. (Closes: #209048)
   * Remove noroot template. (Closes: #247360)
   * Remove useless chown to /var/tmp/logcheck* thanks to maks.
@@ -116,9 +120,9 @@ logcheck (1.2.18) unstable; urgency=low
   * New maintainer (Closes: #244271)
   * Updated debian/copyright with new upstream information. (Closes: #206022)
   * Updated sudo, oidentd rules.
-  * Updated dhclient rules. (Closes: #202718) 
+  * Updated dhclient rules. (Closes: #202718)
   * Updated ignore.d.server/ssh to match newest ssh logs. (Closes: #242217)
-  * Updated cron, ssh, sudo, su rulefiles to recent PAM session logs. 
+  * Updated cron, ssh, sudo, su rulefiles to recent PAM session logs.
     (Closes: #241058, #242276, #243861)
   * Sync better package description with manpage intro.
   * Use standard ISO 8601 separator like "-" for date. (Closes: #226840)
@@ -161,7 +165,7 @@ logcheck (1.2.16) unstable; urgency=low
     (Closes: #224026) Thanks to Marc Haber.
 
  -- Steve Kemp <skx@debian.org>  Wednesday, 03 Mar 2004 17:31:27 +0000
-    
+
 logcheck (1.2.15) unstable; urgency=low
 
   * Clarified copyright, thanks to Javier <jfs@computer.org>
@@ -172,7 +176,7 @@ logcheck (1.2.15) unstable; urgency=low
   * Fixed typo in template, thanks to Christian <cts@debian.org>
     (Closes: #191340)
   * Fixed more typos in templates, thanks to Jens <jens@kubieziel.de>
-    (Closes: #201628) 
+    (Closes: #201628)
   * Create working directory on install, thanks to Peter Rose
     (Closes: #198922)
 
@@ -180,11 +184,11 @@ logcheck (1.2.15) unstable; urgency=low
 
 logcheck (1.2.14) unstable; urgency=low
 
-  * Improved lockfile handling, thanks to Nicholas Francois 
+  * Improved lockfile handling, thanks to Nicholas Francois
     (Closes: #189867)
-  * Call logfile via it's complete path, thanks to Mark Ballinger 
+  * Call logfile via it's complete path, thanks to Mark Ballinger
     (Closes: #190395)
-  * Updated the rules for dhclient, thanks to Mark Brown 
+  * Updated the rules for dhclient, thanks to Mark Brown
     (Closes: #190872)
   * Don't complain about failing removal of checkfile, thanks to Christian
     Hammers (Closes: #186365)
@@ -219,9 +223,9 @@ logcheck (1.2.12) unstable; urgency=low
   * Flag a @reboot run of logcheck in the subject line.
   * Use debian/compat instead setting DH_COMPAT=4 in debian/rules.
   * Some improvements to the following rulefiles:
-    - /etc/logcheck/ignore.d.paranoid/cron  
-    - /etc/logcheck/ignore.d.server/innd  
-  
+    - /etc/logcheck/ignore.d.paranoid/cron
+    - /etc/logcheck/ignore.d.server/innd
+
  -- Jon Middleton <jjm@debian.org>  Wed, 19 Mar 2003 21:34:29 +0000
 
 logcheck (1.2.11) unstable; urgency=low
@@ -259,19 +263,19 @@ logcheck (1.2.9) unstable; urgency=low
     - /etc/logcheck/ignore.d.paranoid/cron
     - /etc/logcheck/ignore.d.paranoid/postfix
     - /etc/logcheck/ignore.d.server/imap
-  
+
  -- Jon Middleton <jjm@debian.org>  Sun, 23 Feb 2003 10:37:56 +0000
 
 logcheck (1.2.8) unstable; urgency=low
 
   * Added ERROR to violations.d/logcheck. (closes: #182011)
-  * Correct typo in violations.ignore.d/logcheck-innd. 
+  * Correct typo in violations.ignore.d/logcheck-innd.
     (closes: #181847, #182025)
   * Ignore pam session open and close messages for a user in
     violations.ignore.d/su.  (closes: #180844)
   * Some fixes and improvements to the following rulefiles:
     - /etc/logcheck/cracking.d/logcheck
-    - /etc/logcheck/violations.ignore.d/logcheck-innd 
+    - /etc/logcheck/violations.ignore.d/logcheck-innd
     - /etc/logcheck/ignore.d.paranoid/cron
     - /etc/logcheck/ignore.d.paranoid/ssh
     - /etc/logcheck/ignore.d.server/cron
@@ -314,7 +318,7 @@ logcheck (1.2.6) unstable; urgency=low
     incorrectly anchored lines (with example syslog messages) would be
     welcomed.
   * Cleanup the rulefiles
-    - Remove duplicate rules from workstation, server and paranoid. 
+    - Remove duplicate rules from workstation, server and paranoid.
     - Remove .* where possible (closes: #165950).
     - Anchor all lines with ^ and $ (closes: #166029).
     - Remove obsolete and badly written rules.
@@ -339,7 +343,7 @@ logcheck (1.2.5) unstable; urgency=low
     - Use ${misc:Depends} to generate debconf depends.
   * Add a versioned build-dep for debianutils, as the regression
     tests require run-parts with the --list option. (closes: #177987)
-  * Improvements to violations.ignore.d/su from Elmar Hoffmann. 
+  * Improvements to violations.ignore.d/su from Elmar Hoffmann.
     (closes: #178421)
   * Improvements to ignore.d.server/dhclient from Jonas Smedegaard.
     (closes: #178540)
@@ -350,7 +354,7 @@ logcheck (1.2.5) unstable; urgency=low
 
 logcheck (1.2.4) unstable; urgency=low
 
-  * No longer use echo -e, as it's not available under dash. 
+  * No longer use echo -e, as it's not available under dash.
     (closes: #176700)
   * Add violations.ignore.d/su to ignore some common cases.
   * Improved regex's for su and sudo violations rulefiles.
@@ -372,7 +376,7 @@ logcheck (1.2.2) unstable; urgency=low
   * Reduce memory use in logtail by calling the file handle from a
     while loop. (closes: #175546).
   * Include manpage for logcheck. (closes: #169197)
-  * Make sure that all rulefiles have new line before EOF. 
+  * Make sure that all rulefiles have new line before EOF.
     (closes: #166015, #175985)
   * Sort logcheck rulefiles.
   * Remove duplicates from cracking and violations logcheck rulefiles.
@@ -430,7 +434,7 @@ logcheck (1.1.9.8) unstable; urgency=low
     file. (closes: #155594, #155596)
   * Added more bind ignores for to ignore.d.server. (closes: #164859)
   * Added ignores for gconf to ignore.d.workstation.
-  * Added ignores for squid to ignore.d.server.  
+  * Added ignores for squid to ignore.d.server.
   * Added a lockfile so that only one instance can run (closes: #144118)
   * Added violations.ignore.d/standard.postfix with common messages.
   * Added failure to violations.d/standard.
@@ -445,7 +449,7 @@ logcheck (1.1.9.8) unstable; urgency=low
 logcheck (1.1.9.7) unstable; urgency=low
 
   * Do not mask some real errors from dhcp (closes: #164794)
-  * Ignore crontab edit and replace for server and workstation 
+  * Ignore crontab edit and replace for server and workstation
     (closes: #97407)
 
  -- Jon Middleton <jjm@debian.org>  Tue, 15 Oct 2002 09:17:56 +0100
@@ -454,15 +458,15 @@ logcheck (1.1.9.6) unstable; urgency=low
 
   * Added ignore rules for dhclient and chronyd (closes: #161247, #92101)
   * Added innd stats message to violations.ignore.d/standard (closes: #91734)
-  * Added ucd-snmp Connections to ignore.d.server/standard 
+  * Added ucd-snmp Connections to ignore.d.server/standard
     (closes: #100721, #95682)
   * Added promisc to violations.d/standard (closes: #113572, #114616)
   * Added ignore rules for pppd (closes: #137228)
   * Added rules for dhcp3-server to ignore.d.server/dhcp (closes: #141973)
   * Added lame server ignore rule for bind9 (closes: #146150)
   * Added local oidentd lookup to ignore.d.server/standard (closes: #92272)
-  * Added some imapd ignore rules to ignore.d.server/imap (closes: #136699)  
-  * Added ignore for bind NOTIFYs to ignore.d.server/bind (closes: #128901)  
+  * Added some imapd ignore rules to ignore.d.server/imap (closes: #136699)
+  * Added ignore for bind NOTIFYs to ignore.d.server/bind (closes: #128901)
   * Updated workstation and server ignore entries for new pam (closes: #164168)
   * More robust handling of non-existent logfiles (closes: #164003)
   * Added ignore rules to server and workstation for nntpcache
@@ -473,7 +477,7 @@ logcheck (1.1.9.6) unstable; urgency=low
 logcheck (1.1.9.5) unstable; urgency=low
 
   * The default reportlevel was not changed in the last release.
-  * Fix logtails postinst for upgrade from versions between 1.1.9.2 
+  * Fix logtails postinst for upgrade from versions between 1.1.9.2
     and 1.1.9.4.
   * Change logcheck.logfiles to only be a union of *.* this should finally
     fix the long standing problem of lines being logged multiple times in
@@ -511,7 +515,7 @@ logcheck (1.1.9.2) unstable; urgency=low
   * Added Rene Mayrhofer and myself to the Uploaders field.
   * Logheck postinsts:
     - Do not exit if confiles not writable (closes: #121123)
-    - Do not exit if logcheck.logfiles has no comments (closes: 155398)  
+    - Do not exit if logcheck.logfiles has no comments (closes: 155398)
   * Fix typo's in the debconf messages (closes: #155486)
   * Change logtail to only depend on perl-base (closes: 156416)
   * Improve error checking of cleanrules function (closes: 156387)
@@ -526,13 +530,13 @@ logcheck (1.1.9.1) unstable; urgency=low
   * Increase the version number as this version has undergone a complete
     rewrite (and make it a Debian native package). (closes: #121923)
   * Set LC_CTYPE="" for utf-8 locels. (closes: #136508)
-  * Add cracking ignore suppport. 
+  * Add cracking ignore suppport.
     (closes: #114573, #123898, #131934, #131934)
-  * Security violation mails now have a different subject. 
+  * Security violation mails now have a different subject.
     (closes: #119465)
   * Comments are now allowed in rulefiles. (closes: #148964)
   * Really fix the the directory problem. (closes: #151239, #136015)
-  * We now use functions for common code. (closes: #127864) 
+  * We now use functions for common code. (closes: #127864)
   * All greps are now case sensitive. (closes: #112128, #94351)
   * Try to reduce the number duplicate lines.
     (closes: #129700, #122133, #126326)
@@ -547,7 +551,7 @@ logcheck (1.1.9.1) unstable; urgency=low
     - disable newbie message (closes: #142655)
   * Reduced the length of the e-mail subject lines.
   * Standard rulefiles are now stored in the .d directory's.
-  * Move standard rulefiles to there new location on upgrade.  
+  * Move standard rulefiles to there new location on upgrade.
   * Rewrote main Makefile and use that in debian/rules.
   * Depend on the Source version of logtail and logcheck-database.
   * Versioned depends on debian-utils. (closes: #153668)
@@ -565,12 +569,12 @@ logcheck (1.1.9.1) unstable; urgency=low
  -- Jon Middleton <jjm@debian.org>  Sat, 20 Jul 2002 15:56:24 +0100
 
 logcheck (1.1.9.0) experimental; urgency=low
-  
+
   * Experimental version
   * Not released.
   * Now a Debian Native package as the diffeneces to 1.1.1 are so vast.
 
- -- Jon Middleton <jjm@debian.org>  Sat, 29 Jun 2002 21:42:12 +0100  
+ -- Jon Middleton <jjm@debian.org>  Sat, 29 Jun 2002 21:42:12 +0100
 
 logcheck (1.1.1-13.5) unstable; urgency=low
 
@@ -579,7 +583,7 @@ logcheck (1.1.1-13.5) unstable; urgency=low
   * Run mktemp after we get the e-mail address.
 
  -- Jon Middleton <jjm@debian.org>  Mon,  1 Jul 2002 20:38:49 +0100
-  
+
 logcheck (1.1.1-13.4) unstable; urgency=low
 
   * NMU with maintainer's permission.
@@ -610,14 +614,14 @@ logcheck (1.1.1-13.2) unstable; urgency=low
   * Create temporary directory with mktemp -d and cleanup after every run.
     (closes: #139666,  #134294)
   * Remove /var/tmp/logcheck from package.
-  * Move cleaned rulefiles to the temporary directory. 
+  * Move cleaned rulefiles to the temporary directory.
     (Fixes half of #148964)
-  * Do not remove /var/lib/logcheck in postinst. 
+  * Do not remove /var/lib/logcheck in postinst.
     (closes: #144390, #137043, #136890)
   * Install manpages for logcheck not logcheck.sh (closes: #55970)
   * Move logtail manpage into the logtail package (closes: #136890)
-  * Remove Non-English character from package description. (closes: #134286) 
-  * Fix ssh excludes for newer versions (closes: #143851, #132254)  
+  * Remove Non-English character from package description. (closes: #134286)
+  * Fix ssh excludes for newer versions (closes: #143851, #132254)
 
  -- Jon Middleton <jjm@debian.org>  Sun,  9 Jun 2002 17:16:31 +0100
 
@@ -928,7 +932,7 @@ logcheck (1.1.1-4) unstable; urgency=low
     (closes: bug #52097, bug #51291).
   * Run logcheck from the cron.d file only if it is installed
     (closes: bug #51748, bug #51342).
-  * Added a note in the postinstall that the config file 
+  * Added a note in the postinstall that the config file
     /etc/cron.d/logcheck should be overwritten by dpkg (Thanks to Andrew
     Stribblehill for the hint).
 
