@@ -5,6 +5,7 @@ logcheck (1.2.22) unstable; urgency=low
   * Update automount, innd, kernel, openvpn, postfix rules. 
     (Closes: #252216, #249474, #244172, #252174, #187496)
   * Better readability of greplogoutput() in logcheck.
+  * Our Perl usage needs 5.8, add dependency. (Closes: #252078)
 
  -- 
 

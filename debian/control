@@ -9,7 +9,7 @@ Build-Depends-Indep: debhelper (>= 4.1.13), docbook-to-man,
 
 Package: logcheck
 Architecture: all
-Depends: adduser, debconf, exim4 | mail-transport-agent, cron (>=3.0pl1-68), sysklogd | system-log-daemon | syslog-ng, mailx, logtail (= ${Source-Version}), logcheck-database (= ${Source-Version}), debianutils (>= 1.16.9), lockfile-progs, ${misc:Depends} 
+Depends: adduser, debconf, exim4 | mail-transport-agent, cron (>=3.0pl1-68), sysklogd | system-log-daemon | syslog-ng, mailx, logtail (= ${Source-Version}), logcheck-database (= ${Source-Version}), debianutils (>= 1.16.9), lockfile-progs, ${misc:Depends}, perl (>= 5.8.0)
 Pre-Depends: logtail (>= 1.1.9.1)
 Suggests: syslog-summary
 Description: Mails anomalies in the system logfiles to the administrator
