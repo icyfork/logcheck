@@ -1,0 +1,18 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: Peer Connection Initiated with [0-9.]{7,15}:[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: Data Channel (En|De)crypt: Cipher '[[:alnum:]-]+' initialized with [0-9]+ bit key$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: Data Channel (En|De)crypt: Using [0-9]+ bit message hash '[[:alnum:]-]+' for HMAC authentication$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: Control Channel: TLSv1, cipher TLSv1/SSLv3 [[:alnum:]-]+, [0-9]+ bit RSA$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: VERIFY SCRIPT OK: depth=[0-9]+, .*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: VERIFY OK: depth=[0-9]+, .*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: Inactivity timeout \(--ping-restart\), restarting$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: Closing TCP/UDP socket$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: Re-using SSL/TLS context$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: (Data|Control) Channel MTU parms \[[A-Z:0-9 ]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: Preserving previous TUN/TAP instance: [[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: Local Options hash \(VER=V3\): '[0-9a-f]+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: (Local|Expected Remote) Options hash \(VER=V3\): '[0-9a-f]+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: UDPv4 link (local \(bound\)|remote): (\[undef\]|[._[:alnum:]-]+):[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: TLS: tls_pre_decrypt: first response to initial packet from [0-9.]{7,15}:[0-9]+, sid=[0-9a-f]+ [0-9a-f]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: TLS: tls_process: killed expiring key$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: TLS: soft reset sec=[0-9]+ bytes=[0-9]+/[0-9]+ pkts=[0-9]+/[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ openvpn\[[0-9]+\]: TLS Error: Unknown data channel key ID or IP address received from [0-9.]{7,15}:[0-9]+: [0-9]+$
