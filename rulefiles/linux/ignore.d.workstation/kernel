@@ -28,7 +28,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial support registered for Generic$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial Driver core [.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial support registered for [_[:alnum:]-]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]:[[:space:]]+[[:alnum:]-]+: (loaded successfully|already loaded)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]:[[:space:]]+[_[:alnum:]-]+: (loaded successfully|already loaded)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node changed: [-:0-9]+ -> [-:0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node (suspended|resumed): ID:BUS\[[-:0-9]+\]  GUID\[[0-9a-f]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: The root node is not cycle master capable; selecting a new root node and resetting\.\.\.$
