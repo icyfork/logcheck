@@ -20,7 +20,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.9 2004/04/28 17:52:27 eevans-guest Exp $
+# $Id: logcheck,v 1.10 2004/05/03 05:49:44 ttroxell Exp $
 
 
 # Set the umask
@@ -350,8 +350,6 @@ usage: logcheck [-c CFG] [-d] [-h] [-l LOG] [-o] [-r DIR] [-s|-p|-w] [-S] [-t]
  -s           = runlevel "server"
  -S           = overrule default state directory
  -t           = do not remove the TMPDIR 
- -T LOGFILE   = test LOGFILE with current ruleset
-                (Does not alter logwatch offset)
  -u           = enable syslog-summary
  -w           = runlevel "workstation"
 EOF

@@ -162,14 +162,6 @@ manpage.1: manpage.sgml
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><option>-T LOGFILE</option>
-	</term>
-	<listitem>
-	  <para>Test current rules with LOGFILE without updating logtai offset
-	  </para>
-	</listitem>
-      </varlistentry>
-      <varlistentry>
         <term><option>-u</option>
         </term>
         <listitem>
