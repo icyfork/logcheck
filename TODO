@@ -12,11 +12,11 @@
 
    Use PyTest.
    Expand the tests.
+   Remove duplicate configs and rules in test.
 
-* Overhaul Section titles
+* Overhaul Section titles (post sarge release)
 
    Rename "Attack Alerts" to "Security Violations" ?
-
    Rename some of the .d directories.
 
 * Re-write logtail
