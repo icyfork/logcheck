@@ -10,6 +10,7 @@ logcheck (1.2.28) unstable; urgency=low
   * Minor comment fixes for picky readers.
   * Handle lack of permissions gracefully. (Closes: #271482)
   * Small update dhcp for dyndns support. (Closes: #260743)
+  * Add a sendfile rule at level workstation for its connect syslogging.
 
 
  -- 
