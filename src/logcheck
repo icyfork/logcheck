@@ -22,10 +22,11 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.72 2004/08/02 18:49:36 ttroxell Exp $
+# $Id: logcheck,v 1.73 2004/08/14 07:45:04 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root."
+    echo "Use sudo to invoke logcheck: sudo -u logcheck logcheck [options]."
     exit 1
 fi
 
