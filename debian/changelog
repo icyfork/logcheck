@@ -18,6 +18,9 @@ logcheck (1.2.24) unstable; urgency=low
   * Added userv rules. (Closes: #260105)
   * Generalize user match in spamd rule. (Closes: #260103)
   * Added a ippl rule at level workstation. (Closes: #260102)
+  * Update logcheck help message to all switches.
+  * Correct logcheck command line parsing, -T needs no args.
+  * Use 6 'X' for mktemp(1) template.
   * Do not create unused /var/state/logcheck and really get rid of it. 
     (Closes: #260096)
   todd:
