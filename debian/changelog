@@ -19,6 +19,7 @@ logcheck (1.2.36) unstable; urgency=low
   * Add support for warnings in report
   * Update copyright dates
   * Warn on invalid regex (Closes: #295560)
+  * Update udev for directories (Matt Brubeck) (Closes: #301415)
 
  --
 

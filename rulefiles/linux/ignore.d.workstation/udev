@@ -1,1 +1,1 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ udev\[[0-9]+\]: (creating|removing) device node '/dev/[[:alpha:]]+[0-9]*'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ udev\[[0-9]+\]: (creating|removing) device node '/dev(/[[:alpha:]]+[0-9]*)+'$
