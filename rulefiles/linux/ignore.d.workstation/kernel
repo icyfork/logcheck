@@ -21,6 +21,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hub [0-9]+-[0-9]+:[0-9]+\.[0-9]+: over-current change on port [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [0-9]+-[0-9]+: new full speed USB device using address [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hub.c: new USB device [.:0-9-]+, assigned address [0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [0-9]-[0-9]: USB disconnect, address [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: USB disconnect on device [.:0-9-]+ address [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage device found at [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Initializing USB Mass Storage driver\.\.\.$
