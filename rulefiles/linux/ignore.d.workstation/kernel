@@ -1,11 +1,11 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: cdrom: This disc doesn't have any tracks I recognize!$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Uniform CD-ROM driver Revision: [0-9]\.[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]+: no IPv6 routers present$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: spurious 8259A interrupt: IRQ7\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: icmpv6: msg of unknown type$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: i2c_adapter i2c-0: sendbytes: error - bailout\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: msp34xx: I/O error #1 \((read|write) 0x[0-9a-fA-F]+/0x[0-9a-fA-F]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]: New link status: AP (In|Out of) Range \([0-9]+\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+evdev: alr
-eady loaded$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+evdev: loa
-ded sucessfully$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]+: Media Link (Off|On [0-9]+
-mbps (full|half)-duplex)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+evdev: already loaded$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+evdev: loaded sucessfully$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]+: Media Link (Off|On [0-9]+mbps (full|half)-duplex)$
