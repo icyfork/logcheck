@@ -12,7 +12,7 @@ logcheck (1.2.35) unstable; urgency=low
   * Fix gconf SIGHUP rule (dup whitespace).
   jamie:
   * Add rules for webmin (closes: #286307).
-  * Add rules for postfix 2.2.
+  * Add rules for postfix 2.2, innd.
   * Modify rule for pure-ftpd logout messages (closes: #294612).
   * Add rule for pure-ftpd timeout messages (closes: #295254).
   * Modify rule for pure-ftpd logout messages to match even if
