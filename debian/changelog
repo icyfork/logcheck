@@ -8,7 +8,8 @@ logcheck (1.2.30) unstable; urgency=low
     openvpn, postfix, slapd, smartd, smokeping, squid, ssh, thy, uptimed.
     all for level server thanks to Peter Palfrader <weasel@debian.org>.
   * Logcheck/rules: Don't take locale for granted use character class instead.
-  * Fix 2 samba rules. (closes: #277635)
+  * Fix 2 samba rules at level server. (closes: #277635)
+  * Fix imapd rule at level paranoid. (closes: #277696)
   jamie:
   * Added new rules for dnsmasq. (Closes: 277636)
   * Added rules for hylafax.
