@@ -4,7 +4,7 @@ logcheck (1.2.33) unstable; urgency=low
   * Enhance rules at level workstation for removable devices. 
     (closes: #284505, #284825)
   * Fix dnsmasq rule regarding DHCPINFORM. (closes: #286532)
-  * Add rbldnsd fules at level server from Rafael Jesus Alcantara Perez
+  * Add rbldnsd rules at level server from Rafael Jesus Alcantara Perez
     <rafa@dedaloingenieros.com>. (closes: #285602)
   * Add jabberd rules from Peter Palfrader <weasel@debian.org>.
   * Add rule for weekly nmbd logrotate. (closes: #286329)
@@ -12,7 +12,7 @@ logcheck (1.2.33) unstable; urgency=low
     on level workstation. (closes: #286747)
   * Fix dovecot rules: dots in usernames + other breakage. (closes: #286306)
   * Fix gconfd rules for latest default english logging style.
-  * Logtail need to Depend on versioned perl not logcheck. (closes: #288580)
+  * Logtail need to depend on versioned perl not logcheck. (closes: #288580)
   * Add rules for dictd, francine, kernel from alfie.
   todd:
   * Set rule directories setgid to simplify administration. (closes: #286230)
