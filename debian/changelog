@@ -7,6 +7,9 @@ logcheck (1.2.34) unstable; urgency=low
     (closes: #289801)
   * Adjust logcheck to redirect stdout and also stderr when reporting in order 
     to maintain the current behavior of logcheck after the change above.
+  maks
+  * Add pdns rule.
+  * Fix pam_winbind rule at level workstation. (Closes: #289866)
 
 --
 
