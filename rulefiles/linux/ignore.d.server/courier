@@ -4,6 +4,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap(login|d-ssl): LOGOUT, user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap(login|d-ssl): LOGOUT, ip=\[[.:[:alnum:]]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ courierpop3login: LOGOUT, ip=\[[.:[:alnum:]]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ courierpop3login: (TIMEOUT|DISCONNECTED), user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\], top=[[:digit:]]+, retr=[[:digit:]]+, time=[[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap(login|d-ssl): DISCONNECTED, user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap(login|d-ssl): DISCONNECTED, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap(login|d-ssl): DISCONNECTED, user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+, time=[0-9]+$
