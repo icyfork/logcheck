@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.65 2004/07/20 07:56:42 maks-guest Exp $
+# $Id: logcheck,v 1.66 2004/07/20 08:10:12 maks-guest Exp $
 
 
 # Set the umask
@@ -538,7 +538,7 @@ while getopts $GETOPTS opt; do
 	    ;;
     esac
 done
-debug "Finished getopts"
+debug "Finished getopts $GETOPTS"
 shift `expr $OPTIND - 1`
 
 if [ $REPORTLEVEL = "workstation" ]; then
