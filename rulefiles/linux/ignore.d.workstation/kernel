@@ -13,9 +13,9 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]: New link status: (Disconnected|Connected) \([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: REJECT input_ext IN=[[:alnum:]]+ OUT= MAC=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]+: Media Link (Off|On [0-9]+mbps (full|half)-duplex)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [0-9A-z]+: module license '[0-9A-z]+' taints kernel\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ISO 9660 Extensions: Microsoft Joliet Level [0-3]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ISO 9660 Extensions: [_[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ISOFS: changing to secondary root$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: agpgart: Found an AGP [0-9.]+ compliant device at [0-9:.]+\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: agpgart: Putting AGP V[0-9] device at [0-9:.]+ into [0-9]x mode$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hub [0-9]+-[0-9]+:[0-9]+\.[0-9]+: over-current change on port [0-9]+$
@@ -23,6 +23,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hub.c: new USB device [.:0-9-]+, assigned address [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: USB disconnect on device [.:0-9-]+ address [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage device found at [0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Initializing USB Mass Storage driver\.\.\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage support registered\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]:[[:space:]]+usb-storage: loaded successfully$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node changed: [-:0-9]+ -> [-:0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node (suspended|resumed): ID:BUS\[[-:0-9]+\]  GUID\[[0-9a-f]+\]$
@@ -32,16 +34,20 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node [:0-9\-]+ Max speed \[S[0-9]+\] - Max payload \[[0-9]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: XFS mounting filesystem [[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Ending clean XFS mount for filesystem: [[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: scsi2 : SCSI emulation for IEEE-1394 SBP-2 Devices$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: scsi[0-9]+ : SCSI emulation for (IEEE-1394 SBP-2 Devices|USB Mass Storage devices)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi removable disk sd[a-z] at scsi[0-9], channel [0-9], id [0-9], lun [0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: SCSI device sd[a-z]: [0-9]+ 512-byte hdwr sectors \([0-9]+ MB\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Write Protect is off$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sr[0-9]+: [^[:space:]]+ drive: [ \/[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Vendor: [^[:space:]]+ +Model: [^[:space:]]+ [^[:space:]]+ +Rev: +[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Type: +[^[:space:]]+ +ANSI SCSI revision: [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi CD-ROM sr[0-9]+ at scsi[0-9], channel [0-9], id [0-9], lun [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scsi.agent\[[0-9]+\]: cdrom at [\./:[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: keyboard: Too many NACKs -- noisy kbd cable\?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ide-floppy driver [[:alnum:].]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ohci_hcd [.[:digit:]\:]+: wakeup$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb 1-1: new low speed USB device using address [0-9]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbcore: registered new driver [a-z]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbcore: registered new driver [[:lower:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: ctrl urb status [-[:digit:]]+ received$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: v[\:[:digit:].]+USB HID core driver$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[:0-9:]+\]:[[:space:]]+usbhid: loaded successfully$
