@@ -1,5 +1,6 @@
 logcheck (1.2.18) unstable; urgency=low
 
+  * Sync better package description with manpage intro.
   * Use standard ISO 8601 separator like "-" for date. (Closes: #226840)
   * Removed reference to old filename restriction. (Closes: #193485)
   * Better wording for -l switch. (Closes: #234383)
