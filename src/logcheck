@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.95 2004/10/27 17:09:49 maks-guest Exp $
+# $Id: logcheck,v 1.96 2004/10/28 17:25:00 alfie Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -188,7 +188,7 @@ cleanrules() {
 	    if [ -f ${dir}/${rulefile} ]; then
 		debug "cleanrules: ${dir}/${rulefile}"
 		# pipe to cat on greps to get usable exit status
-		egrep --text -v '^[[:space:]]*$|^#' $dir/$rulefile | cat \
+		egrep --text -v '^[[:space:]]\+$|^#' $dir/$rulefile | cat \
 		    >> $cleaned/$rulefile \
 		    || error "Couldn't append to $cleaned/$rulefile. Disk Full?"
 	    fi
@@ -615,7 +615,7 @@ fi
 mkdir $TMPDIR/logoutput \
     || error "Could not mkdir for log files"
 if [ ! $LOGFILE ]; then
-    for file in $(egrep --text -v "(^#|^[[:space:]]+$)" $LOGFILES_LIST); do
+    for file in $(egrep --text -v "(^#|^[[:space:]]\+$)" $LOGFILES_LIST); do
 	logoutput "$file"
     done 
 elif [ $LOGFILE ]; then
@@ -629,7 +629,7 @@ fi
 # First sort the logs to remove duplicate lines (from different logfiles with
 # the same lines) and reduce CPU and memory usage afterwards.
 debug "Sorting logs"
-$SORT $TMPDIR/logoutput/* | sed -e 's/[[:space:]]*$//' | cat  \
+$SORT $TMPDIR/logoutput/* | sed -e 's/[[:space:]]\+$//' | cat  \
     > $TMPDIR/logoutput-sorted \
         || error "Could not output to $TMPDIR/logoutput-sorted Disk Full?"
  
