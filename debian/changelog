@@ -15,6 +15,7 @@ logcheck (1.2.25) unstable; urgency=low
   * Small rule updates for dhcpd, kernel, nagios, postfix, rsnapshot
     thanks to Peter Palfrader <weasel@debian.org>.
   * Add gps policy server rules. (Closes: #265176)
+  * Fix port match in oidentd rules. (Closes: #265588)
 
  --
 
