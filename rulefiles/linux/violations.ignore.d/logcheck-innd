@@ -1,4 +1,4 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alnum:]]+:[0-9]+ (closed|checkpoint) seconds [0-9]+ accepted [0-9]+ refused [0-9]+ rejected [0-9]+ duplicate [0-9]+ accepted size [0-9]+ duplicate size [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: (localhost\:[0-9]+|[[[:alnum:]]+:[0-9]+) (closed|checkpoint) seconds [0-9]+ accepted [0-9]+ refused [0-9]+ rejected [0-9]+ duplicate [0-9]+ accepted size [0-9]+ duplicate size [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: rejected [0-9]+ Unwanted (newsgroup|distribution) "[._,[:alnum:]-]+"$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: rejected [0-9]+ Too old -- "\w{3}, [0-9 ]+ \w{3} [0-9]{4} [0-9:]{8} (\+|-)[0-9]{4}"$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: rejected [0-9]+ Too old -- "[0-9]+ \w{3} [0-9]{4} [0-9:]{8} ([A-Z]+|(\+|-)[0-9]{4})"$

@@ -2,7 +2,8 @@ logcheck (1.2.22) unstable; urgency=low
 
   maks:
   * Remove broken attempt to avoid UTF-8. (Closes: #214117)
-  * Update kernel, openvpn, postfix rules. (Closes: #252216, #249474)
+  * Update innd, kernel, openvpn, postfix rules. 
+    (Closes: #252216, #249474, #244172)
 
  -- 
 
