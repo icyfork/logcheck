@@ -5,21 +5,21 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): Wrote [0-9]+ deleted host decls to leases file\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): Wrote [0-9]+ new dynamic host decls to leases file\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): Wrote [0-9]+ leases to leases file\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): (BOOTREQUEST|DHCPDISCOVER) from [:[:alnum:]]+ (\([:._[:alnum:]-]+\) |)via [[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): BOOTREPLY for [.0-9]+ to [:[:alnum:]]+ (\([:._[:alnum:]-]+\) |)via [[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPOFFER on [.0-9]+ to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPREQUEST for [.0-9]+ (\([.0-9]+\) |)from [:._[:alnum:]-]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPACK on [.0-9]+ to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): (BOOTREQUEST|DHCPDISCOVER) from [:[:alnum:]]+ (\([:._[:alnum:]-]+\) |)via [.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): BOOTREPLY for [.0-9]+ to [:[:alnum:]]+ (\([:._[:alnum:]-]+\) |)via [.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPOFFER on [.0-9]+ to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPREQUEST for [.0-9]+ (\([.0-9]+\) |)from [:._[:alnum:]-]+ (\([[:alnum:]]+\) |)via [.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPACK on [.0-9]+ to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPINFORM from [:[:alnum:]\.]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPNAK on [:[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPRELEASE on [.0-9]+$
 #Added for dhcp 3
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPDISCOVER from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [[:alnum:]]+(: load balance to peer [._[:alnum:]-]+)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPOFFER on [.0-9]+ to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPREQUEST for [.0-9]+ (\([.0-9]+\) |)from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [[:alnum:]]+(: load balance to peer [._[:alnum:]-]+|: lease owned by peer)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK on [.0-9]+ to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPINFORM from [.0-9]+ via [[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPRELEASE of [.0-9]+ from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [[:alnum:]]+ \((not |)found\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPDISCOVER from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+(: load balance to peer [._[:alnum:]-]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPOFFER on [.0-9]+ to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPREQUEST for [.0-9]+ (\([.0-9]+\) |)from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+(: load balance to peer [._[:alnum:]-]+|: lease owned by peer)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK on [.0-9]+ to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPINFORM from [.0-9]+ via [.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPRELEASE of [.0-9]+ from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+ \((not |)found\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: pool [0-9a-f]{7} [.0-9]+/[:[:alnum:]]+ total [:[:alnum:]]+  free [:[:alnum:]]+  backup [:[:alnum:]]+  lts [:[:alnum:]-]+$
 
