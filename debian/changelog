@@ -1,5 +1,7 @@
 logcheck (1.2.18) unstable; urgency=low
 
+  * Updated cron, ssh, sudo, su rulefiles to recent PAM session logs. 
+    (Closes: #241058, #242276, #243861)
   * Sync better package description with manpage intro.
   * Use standard ISO 8601 separator like "-" for date. (Closes: #226840)
   * Removed reference to old filename restriction. (Closes: #193485)
