@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsnapshot\[[0-9]+\]: /usr/bin/rsnapshot( -c [^ ]*)? (hourly|daily|weekly|monthly): completed successfully$
