@@ -3,6 +3,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Nagios 1\.1 starting\.\.\. \(PID=[0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;CRITICAL;(SOFT|HARD);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;WARNING;(SOFT|HARD);.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;UNKNOWN;(SOFT|HARD);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;OK;(SOFT|HARD);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;CRITICAL;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;WARNING;.*$
