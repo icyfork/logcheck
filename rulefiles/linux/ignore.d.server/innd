@@ -30,7 +30,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ exit articles [0-9]+ groups [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ artstats get [0-9]+ time [0-9]+ size [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ post ok \<.+@.+\>$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cnfsstat\[[0-9]+\]: Class (ARCHIV|SPOOL) for groups matching \"[^ ]+\" Buffer (ARCH|SPOOL)[0-9]+, len: [0-9]+  Mbytes, used: [0-9]+\.[0-9]+ Mbytes \([0-9 ]+\.[0-9]%\) [ 0-9]+ cycles$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cnfsstat\[[0-9]+\]: Class (ARCHIV|SPOOL) for groups matching \"[^[:space:]]+\" Buffer (ARCH|SPOOL)[0-9]+, len: [0-9]+  Mbytes, used: [0-9]+\.[0-9]+ Mbytes \([0-9 ]+\.[0-9]%\) [ 0-9]+ cycles$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: checking site [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: no articles for [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: batched articles for [^[:space:]]+$

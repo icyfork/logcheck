@@ -1,1 +1,1 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo:[[:space:]]+[_[:alnum:]-]+ : TTY=(unknown|pts/[0-9]+) ; PWD=[^ ]+ ; USER=[^ ]+ ; COMMAND=/(usr|etc|bin|sbin)/.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo:[[:space:]]+[_[:alnum:]-]+ : TTY=(unknown|pts/[0-9]+) ; PWD=[^[:space:]]+ ; USER=[^[:space:]]+ ; COMMAND=/(usr|etc|bin|sbin)/.*$
