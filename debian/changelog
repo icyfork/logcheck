@@ -12,7 +12,7 @@ logcheck (1.2.20) unstable; urgency=low
 logcheck (1.2.19-2) unstable; urgency=low
 
   maks:
-  * Add another -R flag (Closes: #247279)
+  * Add another chown -R flag. (Closes: #247279)
   todd:
   * Fix templates (Closes: #247466, #247467, #247424)
   * Lower debconf noroot message priority
