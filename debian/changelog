@@ -11,6 +11,7 @@ logcheck (1.2.34) unstable; urgency=low
   * Add pdns, fix scponly, fix gconfd SIGHUP rule.
   * Fix pam_winbind rule at level workstation. (Closes: #289866)
   * Ignore sudo "command continued" logline. (Closes: #290195)
+  * Add rule for daily sysklogd -r restart at level server. (Closes: #290511)
 
 --
 
