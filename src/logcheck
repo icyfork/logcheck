@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.50 2004/06/04 15:53:24 maks-guest Exp $
+# $Id: logcheck,v 1.51 2004/06/04 16:02:18 maks-guest Exp $
 
 
 # Set the umask
@@ -176,8 +176,9 @@ cleanrules() {
 	    if [ -f ${dir}/${rulefile} ]; then
 		debug "cleanrules: ${dir}/${rulefile}"
 		# pipe to cat on greps to get usable exit status
-		egrep --text -v '^\s*$|^#' $dir/$rulefile |cat>> $cleaned/$rulefile \
-		    || error "Could not append to $cleaned/$rulefile.  Disk Full?"
+		egrep --text -v '^\s*$|^#' $dir/$rulefile | cat \
+		    >> $cleaned/$rulefile \
+		    || error "Couldn't append to $cleaned/$rulefile. Disk Full?"
 	    fi
 	done
     elif [ -f $dir ]; then
@@ -195,7 +196,7 @@ report() {
 	if [ $SYSLOGSUMMARY -eq 1 ] && [ -x $SYSLOG_SUMMARY ]; then
 	    debug "report: running syslog-summary - $*"
 	    $SYSLOG_SUMMARY $TMPDIR/checked | \
-		egrep -v "^Summarizing "|cat >> $TMPDIR/report \
+		egrep -v "^Summarizing "| cat >> $TMPDIR/report \
 		    || error "Could not append to report.  Disk Full?"
 	else
 	    if [ $SYSLOGSUMMARY -eq 1 ] && [ ! -x $SYSLOG_SUMMARY ]; then
@@ -336,7 +337,7 @@ cleanchecked() {
 
     if [ -f $clean ]; then 
 	debug "cleanchecked - file: $clean"
-        egrep --text -v -f $clean $TMPDIR/checked |cat >> $TMPDIR/checked.1  \
+        egrep --text -v -f $clean $TMPDIR/checked | cat >> $TMPDIR/checked.1  \
 	    || error "Could not output to $TMPDIR/checked.1 Disk full?"
 	mv $TMPDIR/checked.1 $TMPDIR/checked \
 	    || error "Could not move $TMPDIR/checked.1 to $TMPDIR/checked"
@@ -344,7 +345,7 @@ cleanchecked() {
 	debug "cleanchecked - dir - $clean"
 	for file in $(ls -1 $clean/); do
 	debug "cleanchecked - dir - $clean/$file"
-	    egrep --text -v -f $clean/$file $TMPDIR/checked |cat \
+	    egrep --text -v -f $clean/$file $TMPDIR/checked | cat \
 		>> $TMPDIR/checked.1 \
 		    || error "Could not output to TMPDIR/checked.1 Disk Full?"
 	    mv $TMPDIR/checked.1 $TMPDIR/checked \
@@ -574,9 +575,9 @@ done
 # first sort the logs to remove duplicate lines (from different logfiles with
 # the same lines) and reduce CPU and memory usage afterwards.
 debug "Sorting logs"
-$SORT -m $TMPDIR/logoutput/* | uniq | sed -e 's/ *$//' |cat  \
+$SORT -m $TMPDIR/logoutput/* | uniq | sed -e 's/ *$//' | cat  \
     > $TMPDIR/logoutput-sorted \
-        ||error "Could not output to $TMPDIR/logoutput-sorted Disk Full?"
+        || error "Could not output to $TMPDIR/logoutput-sorted Disk Full?"
  
 
 # See if the tmp file exists and actually has data to check,
@@ -610,7 +611,7 @@ fi
 # Check for blatant cracking attempts
 if [ -d $TMPDIR/cracking ]; then
     if [ $SUPPORT_CRACKING_IGNORE -eq 1 ]; then
-	debug "Checking for security alerts and using ignores from cracking-ignore"
+	debug "Checking for security alerts and using cracking-ignore"
 	if [ -d $TMPDIR/cracking-ignore ]; then
 	    greplogoutput $TMPDIR/cracking "$ATTACKSUBJECT" \
 		$TMPDIR/cracking-ignore && ATTACK="1"
@@ -640,7 +641,7 @@ fi
 if [ -d $TMPDIR/ignore ]; then
     debug "Checking for system events"
     cp $TMPDIR/logoutput-sorted $TMPDIR/checked \
-    ||error "Could not copy $TMPDIR/logoutput-sorted to $TMPDIR/checked"
+    || error "Could not copy $TMPDIR/logoutput-sorted to $TMPDIR/checked"
     cleanchecked $TMPDIR/ignore
 
     if [ -s $TMPDIR/checked ]; then
