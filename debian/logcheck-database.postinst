@@ -60,6 +60,7 @@ rmfiles="ignore.d.workstation/dhclient \
          ignore.d.paranoid/exim \
          ignore.d.paranoid/portsentry \
          ignore.d.paranoid/qmail \
+         violations.ignore.d/su \
          violations.ignore.d/logcheck"
 
 secondrmfiles="violations.ignore.d/innd"
