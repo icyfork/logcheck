@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.90 2004/10/12 19:45:57 maks-guest Exp $
+# $Id: logcheck,v 1.91 2004/10/15 06:27:05 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -463,7 +463,7 @@ while getopts $GETOPTS opt; do
 	    NOCLEANUP=1
 	    ;;
 	v)
-	    echo -e "\n\tlogcheck $VERSION\n"
+	    echo "logcheck $VERSION"
 	    exit 0
 	    ;;
 	\?)

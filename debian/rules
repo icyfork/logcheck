@@ -54,6 +54,7 @@ binary-indep: build install
 	dh_strip
 	dh_compress
 	dh_fixperms --exclude etc/logcheck
+	chown -R root.logcheck debian/logcheck/etc/logcheck
 	dh_installdeb
 	dh_shlibdeps
 	dh_gencontrol
