@@ -19,7 +19,7 @@ set -e
 
 case "$1" in
     purge)
-	# remove the tmp dir
+	# remove the lib dir
 	if [ -d /var/lib/logcheck ]; then
 	    rm -r /var/lib/logcheck
 	fi
