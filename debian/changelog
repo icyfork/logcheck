@@ -5,6 +5,8 @@ logcheck (1.2.27) unstable; urgency=low
   (Closes: #268277)
   * Remove qmail rules because they have been added to qmail package.
   * Rule updates for spamd (Closes: #269318)
+  * Add note about avoiding file name confilcts in README.Maintainer
+  * Add violations ignore for courier-pop3d-ssl (Closes: 269959)
 
   -- 
 
