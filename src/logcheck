@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.18 2004/05/13 12:36:02 maks-guest Exp $
+# $Id: logcheck,v 1.19 2004/05/13 20:51:30 maks-guest Exp $
 
 
 # Set the umask
@@ -164,7 +164,8 @@ cleanrules() {
     cleaned=$2
 
     if [ -d $dir ]; then 
-	mkdir -p $cleaned
+	mkdir -p $cleaned \
+	    || error "Could not make dir for cleaned rulefiles"
 	for rulefile in $(run-parts --list $dir); do
 	    rulefile=$(basename $rulefile)
 	    if [ -f ${dir}/${rulefile} ]; then
@@ -520,7 +521,8 @@ fi
 
 # Get the list of log files from config file
 # Handle log rotation correctly, idea taken from Wiktor Niesiobedzki.
-mkdir $TMPDIR/logoutput
+mkdir $TMPDIR/logoutput \
+    || error "Could not mkdir for log files"
 for file in $(egrep --text -v "^#" $LOGFILE); do
     # There are some problems with this section.
     if [ -f $file ]; then
