@@ -2,7 +2,7 @@ Template: logcheck-database/rules-directories-note
 Type: note
 _Description: Local modifications should be put into .d directories
  From version 1.1.1-8, logcheck supports run-parts controled rule
- directories
+ directories:
  .
   - /etc/logcheck/cracking.d
   - /etc/logcheck/cracking.ignore.d [for local use only]
@@ -22,7 +22,7 @@ _Description: Local modifications should be put into .d directories
  Logcheck will then use rules collected from all the files found in the
  appropriate directories.
  .
- Please see /usr/share/doc/logcheck for more information.
+ Please see /usr/share/doc/logcheck for more details.
 
 Template: logcheck-database/standard-rename-note
 Type: note

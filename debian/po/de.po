@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck_1.2.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-05-24 01:09+0000\n"
-"PO-Revision-Date: 2004-05-05 20:50+0200\n"
+"POT-Creation-Date: 2004-05-25 16:06+0200\n"
+"PO-Revision-Date: 2004-05-25 16:07+0200\n"
 "Last-Translator: Maks Attems <debian@sternwelten.at>\n"
 "Language-Team: Debian-DE Project <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,10 +34,10 @@ msgstr "Ändern des Reportlevels oder der E-Mail-Adresse."
 #: ../logcheck.templates:3
 msgid ""
 "To change from the default report level (server) or the default email "
-"address (root) you need to edit /etc/logcheck/logcheck.conf"
+"address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
 msgstr ""
 "Um den voreingestellten Reportlevel (server) oder die voreingestellte E-Mail-"
-"Adresse (root) zu ändern, editieren Sie /etc/logcheck/logcheck.conf"
+"Adresse (root) zu ändern, editieren Sie »/etc/logcheck/logcheck.conf«."
 
 #. Type: note
 #. Description
@@ -50,10 +50,10 @@ msgstr "Änderung im Verhalten des ignore.d-Verzeichnisses"
 #: ../logcheck.templates:11
 msgid ""
 "Now the ignore.d directories function in an additive manner (i.e. higher "
-"levels also include the lower levels)"
+"levels also include the lower levels):"
 msgstr ""
 "Die ignore.d-Verzeichnisse funktionieren nun erweiternd (d.h. höhere Level "
-"enthalten auch die niedrigeren Level)"
+"enthalten auch die niedrigeren Level):"
 
 #. Type: note
 #. Description
@@ -79,7 +79,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:11
+#: ../logcheck.templates:11 ../logcheck-database.templates:3
 msgid "Please see /usr/share/doc/logcheck for more details."
 msgstr ""
 "Schauen Sie bitte in /usr/share/doc/logcheck für weitere Informationen nach."
@@ -94,10 +94,10 @@ msgstr "Lokale Änderungen sollten in .d-Verzeichnissen angelegt werden"
 #. Description
 #: ../logcheck-database.templates:3
 msgid ""
-"From version 1.1.1-8, logcheck supports run-parts controled rule directories"
+"From version 1.1.1-8, logcheck supports run-parts controled rule directories:"
 msgstr ""
 "Seit Version 1.1.1-8 unterstützt logcheck von run-parts gesteuerte "
-"Regelverzeichnisse."
+"Regelverzeichnisse:"
 
 #. Type: note
 #. Description
@@ -149,13 +149,6 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck-database.templates:3
-msgid "Please see /usr/share/doc/logcheck for more information."
-msgstr ""
-"Schauen Sie bitte in /usr/share/doc/logcheck für weitere Informationen nach."
-
-#. Type: note
-#. Description
 #: ../logcheck-database.templates:29
 msgid "Logcheck standard rulefiles renamed"
 msgstr "Standard-Regeldateien von Logcheck umbenannt"
@@ -198,6 +191,11 @@ msgid ""
 msgstr ""
 "Aufgrund dessen wurden viele Regeldateien aus dem Paket entfernt. Möchten "
 "Sie diese löschen?"
+
+#~ msgid "Please see /usr/share/doc/logcheck for more information."
+#~ msgstr ""
+#~ "Schauen Sie bitte in /usr/share/doc/logcheck für weitere Informationen "
+#~ "nach."
 
 #~ msgid "Logcheck no longer runs as root."
 #~ msgstr "Logcheck läuft nicht mehr als root."
