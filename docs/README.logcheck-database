@@ -30,16 +30,16 @@ normal egrep pattern-matches, applied in turn.
 	this means they are totally ignored - log messages handled
 	at one layer are not carried over to lower layers.
 
-2) the "SECURITY VIOLATIONS" layer, designed to detect less critical
+2) the "SECURITY EVENTS" layer, designed to detect less critical
 	events still considered worthy of special attention. 
 
    Patterns raising the alarm go in "/etc/logcheck/violations.d";
-	matches with these result in a "Security Violations" alert,
+	matches with these result in a "Security Events" alert,
 	with the relevant event moved to a special section.
 
    Patterns cancelling such alarms go in the standard directory
 	"/etc/logcheck/violations.ignore.d"; apparent "Security
-	Violations" that match with violations.ignore patterns are
+	Events" that match with violations.ignore patterns are
 	discarded as false alarms.
 
 3) the "SYSTEM EVENTS" layer, handling leftover log messages.
@@ -72,7 +72,7 @@ following kinds:
 	"$DATE $HOSTNAME fooserver[$PID]: $USER is up to no good"
 	then a line in "/etc/logcheck/violations.d/fooserver" with
 	an appropriate pattern will promote it from a mere "System
-	Event" to a full "Security Violation" in a subsection of
+	Event" to a full "Security Event" in a subsection of
 	the mailing headed "fooserver".  Or then again if that kind
 	of log message is more trivial than it looks (maybe "foo" is
 	a networked game of spy-and-counterspy) then a line in
@@ -80,13 +80,13 @@ following kinds:
 	a nonevent for all but the most assiduous of administrators.
 
 	Sometimes a package will have not only special alarm calls
-	which _do_ need to be "Security Violations" triggers but also
+	which _do_ need to be "Security Events" triggers but also
 	exceptional variants which _don't_ - maybe it logs either
 	"$DATE $HOSTNAME fooserver[$PID]: $USER barred" or
 	"$DATE $HOSTNAME fooserver[$PID]: none barred".  In this
 	situation the alarm can be overruled by a violations.ignore
 	rulefile named "fooserver" which filters "none barred".
-	This will _not_ affect other "Security Violations" featuring
+	This will _not_ affect other "Security Events" featuring
 	the words "none barred" (that might allow crackers to use
 	those words to cover attacks on ssh).  Instead, any
 	<packagename> ignore-files only affect the log messages that 
@@ -108,7 +108,7 @@ following kinds:
 	"$DATE $HOSTNAME fooserver[$PID]: 3 attempts 0 rejected"
 	then the standard keyword "reject" listed in the generic
 	"/etc/logcheck/violations.d/logcheck" file will trigger
-	frequent "Security Violation" reports.  Putting a filtering
+	frequent "Security Events" reports.  Putting a filtering
 	pattern in "/etc/logcheck/violations.ignore.d/fooserver"
 	won't help here!  The solution is to use a file named in
 	the specially-privileged ./logcheck-<packagename> format:
@@ -122,7 +122,7 @@ following kinds:
 	Sysadmins can use the "local*" filenames to create their own
 	additions to the "logcheck*" pattern lists.  If you have
 	"ippl" logging network connections verbosely into syslog
-	then you can put custom "Security Violations" keywords in
+	then you can put custom "Security Events" keywords in
 	"/etc/logcheck/violations.d/local-ippl" and exceptions in
 	"/etc/logcheck/violations.ignore.d/local-ippl".
 ======================================================================

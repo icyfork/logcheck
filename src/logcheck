@@ -20,7 +20,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.5 2004/04/27 05:48:53 maks-guest Exp $
+# $Id: logcheck,v 1.6 2004/04/27 08:12:29 maks-guest Exp $
 
 
 # Set the umask
@@ -53,7 +53,7 @@ REPORTLEVEL="paranoid"
 
 # Set the default subject lines
 ATTACKSUBJECT="Security Alerts"
-VIOLATIONSSUBJECT="Security Violations"
+VIOLATIONSSUBJECT="Security Events"
 EVENTSSUBJECT="System Events"
 
 # Set the default paths
@@ -587,7 +587,7 @@ if [ -d $TMPDIR/violations ]; then
     rm -f $TMPDIR/checked
 
     if [ $ATTACK -eq 1 ]; then
-	greplogoutput $TMPDIR/violations "Security Violations" \
+	greplogoutput $TMPDIR/violations "$VIOLATIONSSUBJECT" \
 	    $TMPDIR/violations-ignore $TMPDIR/cracking && VIOLATIONS="1"
     else
 	greplogoutput $TMPDIR/violations "$VIOLATIONSSUBJECT" \

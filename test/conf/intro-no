@@ -14,7 +14,7 @@ REPORTLEVEL="server"
 
 # Uncommenting the below will change the subject lines on the emails
 #ATTACKSUBJECT="Attack Alerts"
-#VIOLATIONSSUBJECT="Security Violations"
+#VIOLATIONSSUBJECT="Security Events"
 #EVENTSSUBJECT="System Events"
 
 # Uncomment the below to use sort -u, this will destory the 
