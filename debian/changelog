@@ -1,5 +1,6 @@
 logcheck (1.2.18) unstable; urgency=low
 
+  * Removed reference to old filename restriction. (Closes: #193485)
   * Better wording for -l switch. (Closes: #234383)
   * added Files section in manpage.
 
