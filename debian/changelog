@@ -10,6 +10,7 @@ logcheck (1.2.36) unstable; urgency=low
   * Add rule ignore.d.server/kernel for printer out of paper. 
     (Closes: #298291)
   * Add one more apm rule for useless gdm logout message.
+  * Add rules for 2 harmless dhcpd and dhclient messages.
   todd:
   * Add support for warnings in report
 
