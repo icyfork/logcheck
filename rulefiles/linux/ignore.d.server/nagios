@@ -10,6 +10,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;OK;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST ALERT: [._[:alnum:]-]+;DOWN;(SOFT|HARD);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST ALERT: [._[:alnum:]-]+;UP;(SOFT|HARD);.*$
+^\w{3} [ :0-9]{11} [-._[:alnum:]]+ nagios: HOST ALERT: [._[:alnum:]-]+;UNREACHABLE;(SOFT|HARD);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;DOWN;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;UP;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST DOWNTIME ALERT: [._[:alnum:]-]+;STOPPED;.*$

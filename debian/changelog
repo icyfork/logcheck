@@ -7,6 +7,8 @@ logcheck (1.2.37) unstable; urgency=low
     to Thomas Hood <jdthood@aglu.demon.nl> (Closes: #302678)
   * Add postfix rules for local procmail delivery. (Closes: #302744)
   * Fix logcheck su rule reporting valid `su -' use.
+  * Add nagios rule for UNREACHABLE messages. thanks for patch to
+    Geoff Crompton <geoff.crompton@strategicdata.com.au> (Closes: #298495)
 
  -- 
 
