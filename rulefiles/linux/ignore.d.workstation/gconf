@@ -3,3 +3,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ gconfd \([[:alnum:]-]+-[0-9]+\): Exiting$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ gconfd \([[:alnum:]-]+-[0-9]+\): Resolved address "[^[:space:]]+" to a read-only config source at position [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ gconfd \([[:alnum:]-]+-[0-9]+\): Resolved address "[^[:space:]]+" to a writable config source at position [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ gconfd \([[:alnum:]-]+-[0-9]+\): GConf server is not in use, shutting down.$
