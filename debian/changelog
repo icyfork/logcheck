@@ -29,6 +29,7 @@ logcheck (1.2.24) unstable; urgency=low
   * Added nearly 50 squid rules. (Closes: #213711)
   * Fix anacron Normal exit rule.
   * Move adduser from preinst to postinst (Closes: #258735)
+  * Update pump and dhclient rules.
 
  -- 
 

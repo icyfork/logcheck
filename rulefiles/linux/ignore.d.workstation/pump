@@ -11,4 +11,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: bresp: (opcode|hw|hwlength|hopcount|secs): [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: bresp: (hwaddr|servername|bootfile):$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: configured interface eth[0-9]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: renewed lease for interface$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: renewed lease for interface eth[0-9]$
