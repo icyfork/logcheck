@@ -16,6 +16,7 @@ ge-id=<.*>$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: TLS connection established (to|from) [^[:space:]]+: (TLSv1|SSLv[23]) with cipher [^[:space:]]+ \([/0-9]+ bits\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: TLS connection established (to|from) [^[:space:]]+: (TLSv1|SSLv[23]) with cipher [^[:space:]]+ \([/0-9]+ bits\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [A-Z0-9]+: reject: RCPT from [^[:space:]]+: [45][0-9][0-9] .*$
+'^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ Connection refused \(port [0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ No route to host \(port 25\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ Network is unreachable \(port 25\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ server refused mail service \(port 25\)$
