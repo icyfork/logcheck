@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.25 2004/05/15 08:41:08 ttroxell Exp $
+# $Id: logcheck,v 1.26 2004/05/15 09:52:47 maks-guest Exp $
 
 
 # Set the umask
@@ -521,7 +521,7 @@ fi
 
 # Create the secure temporary directory or exit
 TMPDIR=$(mktemp -d -p /var/tmp logcheck.XXXXXXXX) \
-TMPDIR=$(mktemp -d -p /tmp logcheck.XXXXXXXX) \
+    || TMPDIR=$(mktemp -d -p /tmp logcheck.XXXXXXXX) \
     || error "Could not create temporary directory"
 
 # Now clean the rulefiles in the directories
