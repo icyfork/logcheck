@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: lp[0-9]+ out of paper$
