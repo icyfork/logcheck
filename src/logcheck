@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.38 2004/05/20 21:42:54 maks-guest Exp $
+# $Id: logcheck,v 1.39 2004/05/25 15:53:05 maks-guest Exp $
 
 
 # Set the umask
@@ -372,11 +372,11 @@ cleanchecked() {
 usage() {
     debug "usage: Printing usage and exiting"
     cat<<EOF
-usage: logcheck [-c CFG] [-d] [-h] [-l LOG] [-o] [-r DIR] [-s|-p|-w] [-S] [-t]
+usage: logcheck [-c CFG] [-d] [-h] [-l CFG] [-o] [-r DIR] [-s|-p|-w] [-S] [-t]
  -c CFG       = overrule default configuration file
  -d           = debug mode
  -h           = print this usage guide and exit
- -l LOG       = overrule default logfiles list
+ -l CFG       = overrule default logfiles list
  -o           = stdout mode, not sending mail
  -p           = runlevel "paranoid"
  -r DIR       = overrule default rules directory
