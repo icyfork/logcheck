@@ -3,7 +3,7 @@
 logtail \- print log file lines that have not been read
 .SH SYNOPSIS
 .B logtail
-[\fIOPTION\fR]...
+[\fIOPTION\fR]... -f
 .I logfile
 .RI [ offsetfile ]
 .SH DESCRIPTION
@@ -44,6 +44,14 @@ is shorter than it was at the last run of
 .BR logtail ,
 it writes a warning message to the standard output.
 .SH OPTIONS
+.TP
+\fB\-f\fR
+.I logfile 
+to be read after offset
+.TP
+\fB\-o\fR
+.I offsetfile 
+stores offset of previous run
 .TP
 \fB\-t\fR
 test mode - do not change offset in
