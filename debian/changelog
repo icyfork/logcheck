@@ -6,6 +6,10 @@ logcheck (1.2.24) unstable; urgency=low
   * Added ntp, postfix rules.
   * Add lots of postfix rules at level workstation for those,
     who wants to include /var/log/mail.log (Closes: #206495)
+  * Generalize "nobody" to "[_[:alnum:]-]+" (Closes: #254681)
+  * Update rules ignore.d.paranoid/cron, ignore.d.paranoid/postfix.
+    New courier rules merged and simplified from imap, impd-ssl and pop3d-ssl.
+    thanks to Bastian Blank <waldi@debian.org> (Closes: #258759)
   todd:
   * Added 2 kernel rules for sparc workstations.
   * Added nearly 50 squid rules.
