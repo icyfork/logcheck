@@ -108,7 +108,7 @@ manpage.1: manpage.sgml
         <term><option>-l LOG</option>
         </term>
         <listitem>
-          <para>Overrule default logfile</para>
+          <para>Overrule default logfiles list.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
