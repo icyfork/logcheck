@@ -9,6 +9,7 @@ logcheck (1.2.25) unstable; urgency=low
   * Added violations.ignore.d/logcheck-spamd rule, (Closes: #262327)
   maks:
   * Re-format NEWS.Debian into Debian changelog format (Closes: #255932)
+  * Remove /var/state/logcheck from debian/logcheck.dirs.
 
  --
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.19 2004/07/21 02:57:15 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.20 2004/08/12 13:17:47 maks-guest Exp $
 
 set -e
 
@@ -42,7 +42,7 @@ case "$1" in
 	    fi
 	fi
 	# Remove unused old directory
-	if dpkg --compare-versions "$2" lt "1.2.24"; then
+	if dpkg --compare-versions "$2" lt "1.2.25"; then
 	    if [ -d /var/state/logcheck ]; then
 		rm -fr /var/state/logcheck
 	    fi
