@@ -1,1 +1,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: cdrom: This disc doesn't have any tracks I recognize!$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cracklib: updating dictionary [0-9]+ [0-9]+ words\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cracklib: updated dictionary \(read/written words: [0-9]+ [0-9]+\)\.$

@@ -3,7 +3,7 @@ logcheck (1.2.21) unstable; urgency=low
   maks:
   * Better description of logtail package.
   * Recommend use of an offsite email address in main conf.
-  * Added and updated innd, postfix, nntpcache, kernel rulefiles. 
+  * Added and updated cracklib, innd, postfix, nntpcache, kernel rulefiles. 
     (Closes: #248816)
   * Updated proftp rules. (Closes: #248409)
   * Added -v switch (outputs logcheck version).
