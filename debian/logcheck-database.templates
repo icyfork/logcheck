@@ -15,12 +15,12 @@ _Description: Local modifications should be put into .d directories
  The ignore.d.{workstation,server,paranoid} directory to be used is set by
  the REPORTLEVEL option in the file "/etc/logcheck/logcheck.conf".
  .
- These directories may contain files named "logcheck" (containing minimal
- generic alert/override patterns), "(packagename)" (containing patterns
- specific to that one package) or "local" (created by the local
- administrator to contain patterns tailored for a particular site).
- Logcheck will then use rules collected from all the files found in the
- appropriate directories.
+ These directories may contain files prefixed with "logcheck-" (containing
+ generic alert/override patterns), named "(packagename)" (containing patterns
+ specific to that one package), or named "local" respectively prefixed with
+ "local-" (created by the local administrator to contain patterns tailored for
+ a particular site).  Logcheck will then use rules collected from all the files
+ found in the appropriate directories.
  .
  Please see /usr/share/doc/logcheck for more details.
 
