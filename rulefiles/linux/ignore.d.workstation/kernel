@@ -1,4 +1,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: cdrom: This disc doesn't have any tracks I recognize!$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: cdrom: open failed\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: apm: overridden by ACPI\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: apm: BIOS version [.0-9]+ Flags [x0-9]+ \(Driver version [.[:alnum:]]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hd[[:lower:]]+: (ATAPI reset complete|drive not ready for command)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hd[[:lower:]]+: ATAPI [0-9]+X DVD-ROM CD-R/RW drive, [0-9]+kB Cache$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Uniform CD-ROM driver Revision: [0-9]\.[0-9]+$
@@ -24,6 +27,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hub\.c: new USB device [.:0-9-]+, assigned address [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [0-9]-[0-9]: USB disconnect, address [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: USB disconnect on device [.:0-9-]+ address [0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: USB device [0-9]+ \(vend/prod [x/[0-9]+\) is not claimed by any active driver\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage device found at [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Initializing USB Mass Storage driver\.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage support registered\.$
@@ -44,16 +48,20 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: SCSI device sd[a-z]: [0-9]+ 512-byte hdwr sectors \([0-9]+ MB\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Write Protect is off$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sr[0-9]+: [^[:space:]]+ drive: [ \/[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Vendor: [^[:space:]]+ +Model: [^[:space:]]+ [^[:space:]]+ +Rev: +[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Vendor: [^[:space:]]+ +Model: [[:alnum:][:space:]]+ [^[:space:]]+ +Rev: +[.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Type: +[^[:space:]]+ +ANSI SCSI revision: [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi CD-ROM sr[0-9]+ at scsi[0-9], channel [0-9], id [0-9], lun [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scsi.agent\[[0-9]+\]: cdrom at [\./:[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:  /dev/scsi/host[0-9]/bus[0-9]/target[0-9]/lun[0-9]: p[0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: keyboard: Too many NACKs -- noisy kbd cable\?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: keyboard.c: can't emulate rawmode for keycode [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ide-floppy driver [[:alnum:].]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ide: Assuming [0-9]+MHz system bus speed for PIO modes; override with idebus=xx$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Uniform Multi-Platform E-IDE driver Revision: [.[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ohci_hcd [.[:digit:]\:]+: wakeup$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb 1-1: new low speed USB device using address [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbcore: registered new driver [_[:lower:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: registered new driver [_[:lower:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: ctrl urb status [-[:digit:]]+ received$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: v[\:[:digit:].]+USB HID core driver$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+(evdev|evbug|joydev): (already loaded|loaded successfully|blacklisted)$

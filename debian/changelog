@@ -8,6 +8,7 @@ logcheck (1.2.35) unstable; urgency=low
   * Add rule violations.ignore.d/logcheck-ssh + rule ignore.d.server/ssh for the
     PARANOID wildcard in /etc/hosts.deny.
   * Match dots as dots aka '\.' in all rules.
+  * Add kernel rules at level workstation (annoying apm, usb storage)
   jamie:
   * Add rules for webmin (closes: #286307).
   * Add rules for postfix 2.2.
