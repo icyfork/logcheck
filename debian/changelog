@@ -23,6 +23,7 @@ logcheck (1.2.21) unstable; urgency=low
   * Move logtail.8 from debian to doc dir.
   * Added Japanese translation. thanks to Hideki Yamane (Closes: #251463)
   * Added French translation. thanks to Rémi Pannequin (Closes: #252173)
+  * Fix bashishm in preinst and postinst. (Closes: #251364)
   todd:
   * Add debconf to logcheck Depends:
   * Check the return values of all commands that write to disk.
