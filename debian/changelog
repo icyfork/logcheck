@@ -4,8 +4,7 @@ logcheck (1.2.28) unstable; urgency=low
   * Small fixes: join 2 lines in ignore.d.server/postfix, add '^' for 
     start-of-line ignore.d.server/scponly (Closes: #270398)
   * Small rule update oidentd (Closes: #271286)
-  * Exit with meaning full error if logcheck has not the permissions
-    to read its offsetfiles.
+  * Check if logcheck has the permissions to read the offsetfiles.
   * Allow Hostname for logcheck mail to be set by commandline switch
     for log hosts. thanks to Joerg Jaspert <joerg@debian.org>
   * Minor comment fixes for picky readers.
