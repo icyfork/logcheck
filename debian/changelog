@@ -3,6 +3,10 @@ logcheck (1.2.34) unstable; urgency=low
   todd:
   * Correct "Gandhi" spelling in docs/README.how.to.interpret.
     Thanks Satya <debbugs@thesatya.com> (closes: #289529)
+  * Set logtail to report errors on stderr instead of stdout. 
+    (closes: #289801)
+  * Adjust logcheck to redirect stdout and also stderr when reporting in order 
+    to maintain the current behavior of logcheck after the change above.
 
 --
 

@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.101 2005/01/08 10:04:53 ttroxell Exp $
+# $Id: logcheck,v 1.102 2005/01/11 06:18:10 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -391,7 +391,7 @@ logoutput() {
 	        # assume the log is rotated by savelog(8)
 		    debug "Running logtail on rotated: $file.0"
 		    $LOGTAIL -f $file.0 -o $offsetfile $LOGTAIL_OPTS > \
-			$TMPDIR/logoutput/$(basename $file) \
+			$TMPDIR/logoutput/$(basename $file) 2>&1 \
 			|| error "Could not run logtail or save output"
 		    rm -f $offsetfile \
 		        || error "Could not remove $offsetfile"
@@ -399,7 +399,7 @@ logoutput() {
 		# assume the log is rotated by logrotate(8)
 		    debug "Running logtail on rotated: $file.1"
 		    $LOGTAIL -f $file.1 -o $offsetfile $LOGTAIL_OPTS > \
-			$TMPDIR/logoutput/$(basename $file) \
+			$TMPDIR/logoutput/$(basename $file) 2>&1 \
 			|| error "Could not run logtail or save output"
 		    rm -f $offsetfile \
 		        || error "Could not remove $offsetfile"
@@ -408,7 +408,7 @@ logoutput() {
 	fi
 	debug "Running logtail: $file"
 	$LOGTAIL -f $file -o $offsetfile $LOGTAIL_OPTS \
-	    >> $TMPDIR/logoutput/$(basename $file) \
+	    >> $TMPDIR/logoutput/$(basename $file) 2>&1 \
 	    || error "Could not run logtail or save output"
     else
 	echo "E: File could not be read: $file" >> $TMPDIR/errors \

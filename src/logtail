@@ -30,7 +30,7 @@ my ($TEST_MODE) = 0;
 getopts("f:o:t", \%opts);
 
 if (! $opts{f}) {
-   print "No logfile to read. Use -f switch.\n";
+   print STDERR "No logfile to read. Use -f switch.\n";
    exit 66;
 } elsif ($opts{t}) {
     $TEST_MODE = 1;
@@ -39,7 +39,7 @@ if (! $opts{f}) {
 my ($logfile, $offsetfile) = ($opts{f}, $opts{o});
 
 if (! -f $logfile) {
-    print "File $logfile cannot be read.\n";
+    print STDERR "File $logfile cannot be read.\n";
     exit 66;
 }
 unless ($offsetfile) {
@@ -48,7 +48,7 @@ unless ($offsetfile) {
 }
 
 unless (open(LOGFILE, $logfile)) {
-    print "File $logfile cannot be read.\n";
+    print STDERR "File $logfile cannot be read.\n";
     exit 66;
 }
 
@@ -69,7 +69,7 @@ unless (not $offsetfile) {
     }
 
     unless ((undef,$ino,undef,undef,undef,undef,undef,$size) = stat $logfile) {
-        print "Cannot get $logfile file size.\n", $logfile;
+        print STDERR "Cannot get $logfile file size.\n", $logfile;
         exit 65;
     }
 
@@ -98,7 +98,7 @@ close LOGFILE;
 # update offset, unless test mode
 unless ($TEST_MODE) {
     unless (open(OFFSET, ">$offsetfile")) {
-        print "File $offsetfile cannot be created. Check your permissions.\n";
+        print STDERR "File $offsetfile cannot be created. Check your permissions.\n";
         exit 73;
     }
     print OFFSET "$ino\n$size\n";
