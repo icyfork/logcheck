@@ -1,5 +1,0 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ qmail: [0-9\.]+ status: local [0-9]+\/[0-9]+ remote [0-9]+\/[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ qmail: [0-9\.]+ (new|end) msg [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ qmail: [0-9\.]+ info msg [0-9]+: bytes [0-9]+ from .* qp [0-9]+ uid [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ qmail: [0-9\.]+ starting delivery [0-9]+: msg [0-9]+ to local [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ qmail: [0-9\.]+ delivery [0-9]+: success: did_[0-9+/]+$

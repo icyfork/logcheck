@@ -1,3 +1,14 @@
+logcheck (1.2.27) unstable; urgency=low
+
+  todd:
+  * Add pointer to README.logcheck-database.gz in logcheck man page.
+  (Closes: #268277)
+  * Remove qmail rules because they have been added to qmail package.
+  * Rule updates for spamd (Closes: #269318)
+
+  -- 
+
+
 logcheck (1.2.26) unstable; urgency=low
 
   maks:

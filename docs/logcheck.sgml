@@ -216,6 +216,8 @@ manpage.1: manpage.sgml
     <title>SEE ALSO</title>
 
     <para><command>logtail</command>(8)</para>
+    <para>For hints on how to maintain rules, see README.logcheck-database.gz
+    </para>
   </refsect1>
 
   <refsect1>
