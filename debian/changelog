@@ -7,6 +7,7 @@ logcheck (1.2.33) unstable; urgency=low
   * Add rbldnsd fules at level server from Rafael Jesus Alcantara Perez
     <rafa@dedaloingenieros.com>. (closes: #285602)
   * Add jabberd rules from Peter Palfrader <weasel@debian.org>.
+  * Add rule for weekly nmbd logrotate. (closes: #286329)
   todd:
   * Set rule directories setgid to simplify administration. (closes: #286230)
 
