@@ -1,5 +1,10 @@
 logcheck (1.2.26) unstable; urgency=low
 
+  maks:
+  * Fix multi-line build-depends lintian warning for source package.
+  * Add sudo usage hint a root check. thanks todd
+  * Small rules update dhcp, nagios, postfix, squid.
+
  --
 
 logcheck (1.2.25) unstable; urgency=low
