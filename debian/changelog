@@ -1,5 +1,8 @@
 logcheck (1.2.29) unstable; urgency=low
 
+  maks:
+  * Don't report sudo calls where pwd contains spaces (closes: 272969)
+
  --
 
 logcheck (1.2.28) unstable; urgency=low
