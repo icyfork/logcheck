@@ -8,6 +8,7 @@ logcheck (1.2.27) unstable; urgency=low
   * Add note about avoiding file name confilcts in README.Maintainer
   * Add violations ignore for courier-pop3d-ssl (Closes: #269959)
   * Add anon-proxy rules (Closes: #269310)
+  * Add perdition rules thanks to jamie@silverdream.org (Closes: #270191)
 
   -- 
 
