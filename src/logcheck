@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.45 2004/06/03 11:09:15 maks-guest Exp $
+# $Id: logcheck,v 1.46 2004/06/04 09:10:18 maks-guest Exp $
 
 
 # Set the umask
@@ -266,14 +266,15 @@ greplogoutput() {
     for grepfile in $(ls -1 $raise); do
 	debug "greplogoutput: $grepfile"
 
+	# Raise entries that match
 	egrep --text -f $raise/$grepfile $TMPDIR/logoutput-sorted | cat \
 	    > $TMPDIR/checked \
 	    || error "Could not output to $TMPDIR/checked.  Disk Full?"
 
+	# apply different ignore rules
 	if [ -s $TMPDIR/checked ]; then
 	    debug "greplogoutput: Entries in checked"
 	    
-	    # Raise entries that match
 	    if [ -n "$ignore" -a -f "$ignore/$(basename $grepfile)" ]; then
 		cleanchecked "$ignore/$(basename $grepfile)"
 	    fi
