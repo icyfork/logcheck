@@ -24,7 +24,7 @@ logcheck (1.2.32) unstable; urgency=low
   * Added new rules for messages from USB joystick use. (closes: #282378)
   * Fix spamd rule to match all hosts. (closes: #282842)
 
- --
+ -- Todd Troxell <ttroxell@debian.org>  Tuesday, 07 Dec 2004 10:57:39 -0500
 
 logcheck (1.2.31) unstable; urgency=low
 
