@@ -19,7 +19,7 @@ as well as the 'CHANGES' file.
 
 Copyright:
 
- Copyright (C) 2004      Debian Logcheck Team 
+ Copyright (C) 2004-2005 Debian Logcheck Team 
                          <logcheck-devel@lists.alioth.debian.org>
  Copyright (C) 2003      Steve Kemp <skx@debian.org> 
  Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>

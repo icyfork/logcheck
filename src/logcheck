@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2004	  Debian Logcheck Team 
+# Copyright (C) 2004-2005 Debian Logcheck Team 
 #                         <logcheck-devel@alioth.lists.debian.org>
 # Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>
 # Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.107 2005/03/23 16:27:12 maks-guest Exp $
+# $Id: logcheck,v 1.108 2005/03/24 01:32:16 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -123,6 +123,8 @@ warn () {
 		echo "$message" >> $TMPDIR/warnings \
 		  || error "Could not append to $TMPDIR/warnings."
 	fi
+	echo
+	return 0
 }
 
 # Mail error message to sysadmin
@@ -377,9 +379,10 @@ cleanchecked() {
 	debug "cleanchecked - dir - $clean"
 	for file in $(ls -1 $clean/); do
 	debug "cleanchecked - dir - $clean/$file"
-	    egrep --text -v -f $clean/$file $TMPDIR/checked | cat \
-		>> $TMPDIR/checked.1 \
-		    || error "Could not output to TMPDIR/checked.1 Disk Full?"
+	    (egrep --text -v -f $clean/$file $TMPDIR/checked \
+	        || warn  "Could not process file $file") | cat \
+	        >> $TMPDIR/checked.1 \
+	        || error "Could not output to $TMPDIR/checked.1 Disk Full?"
 	    mv $TMPDIR/checked.1 $TMPDIR/checked \
 	        || error "Could not move $TMPDIR/checked.1 to $TMPDIR/checked"
 	done
@@ -663,14 +666,6 @@ else
     debug "Not setting the Intro"
 fi
 
-# Add warnings to report
-if [ -f $TMPDIR/warnings ]; then
-	  printheader "Logcheck Warnings" >> $TMPDIR/report \
-	  || error "Cannot append warnings to report.  Disk Full?"
-	cat $TMPDIR/warnings >> $TMPDIR/report && echo >> $TMPDIR/report \
-	  || error "Cannot append warnings to report.  Disk full?"
-fi
-
 if [ -f $TMPDIR/errors ]; then
     { 
 	cat<<EOF
@@ -727,6 +722,14 @@ if [ -d $TMPDIR/ignore ]; then
 	cleanchecked $TMPDIR/violations
     fi
     report "$EVENTSSUBJECT" && SYSTEM="1"
+fi
+
+# Add warnings to report
+if [ -f $TMPDIR/warnings ]; then
+	  printheader "Logcheck Warnings" >> $TMPDIR/report \
+	  || error "Cannot append warnings to report.  Disk Full?"
+	cat $TMPDIR/warnings >> $TMPDIR/report && echo >> $TMPDIR/report \
+	  || error "Cannot append warnings to report.  Disk full?"
 fi
 
 # Include the footer if present.

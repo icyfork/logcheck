@@ -14,9 +14,11 @@ logcheck (1.2.36) unstable; urgency=low
   * Add cvsd, pam rules from Peter Palfrader <weasel@debian.org>.
   * Add ssh rule for timeout before authentification.
   * Check time of rotated logfile against already gzipped logfile. 
-    syslog-ng leaves old syslog.0 logfile in /var/log. (Closes: 296096)
+    syslog-ng leaves old syslog.0 logfile in /var/log. (Closes: #296096)
   todd:
   * Add support for warnings in report
+  * Update copyright dates
+  * Warn on invalid regex (Closes: #295560)
 
  --
 
