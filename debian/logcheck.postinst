@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.12 2004/05/18 19:52:39 eevans-guest Exp $
+# $Id: logcheck.postinst,v 1.13 2004/05/19 15:06:55 eevans-guest Exp $
 
 set -e
 
@@ -34,13 +34,13 @@ update_crontab()
     if [ -f $CRONTAB ] && [ "$1" == "daily" ] ; then
         sed -e "s/^[[:digit:]*,-/]\+[[:space:]]\+[[:digit:]*,-/]\+[[:space:]]\+[[:digit:]*,-/]\+[[:space:]]\+[[:alnum:]*,-/]\+[[:space:]]\+[[:alnum:]*,-/]\+\([[:space:]]\+.\+ \/usr\/sbin\/logcheck .\+$\)/2 0 * * *\1/g" $CRONTAB > $TMPCRON
 	cp $TMPCRON $CRONTAB
-	chown 644 $CRONTAB
+	chmod 644 $CRONTAB
     fi
     
     if [ -f $CRONTAB ] && [ "$1" == "weekly" ] ; then
         sed -e "s/^[[:digit:]*,-/]\+[[:space:]]\+[[:digit:]*,-/]\+[[:space:]]\+[[:digit:]*,-/]\+[[:space:]]\+[[:alnum:]*,-/]\+[[:space:]]\+[[:alnum:]*,-/]\+\([[:space:]]\+.\+ \/usr\/sbin\/logcheck .\+$\)/2 0 1 * *\1/g" $CRONTAB > $TMPCRON
 	cp $TMPCRON $CRONTAB
-	chown 644 $CRONTAB
+	chmod 644 $CRONTAB
     fi
     rm -f $TMPCRON
 }

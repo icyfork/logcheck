@@ -28,5 +28,4 @@ Default: hourly
 _Description: How often should logcheck run to generate reports?
  Logcheck is invoked by cron to periodically parse your log files and 
  generate an email report. Hourly is the default and recommended 
- interval for this, but you may also select from one of weekly or daily
- as well.
+ interval for, but you may also select from one of weekly or daily.
