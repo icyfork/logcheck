@@ -36,8 +36,8 @@ but install separate files into each level; note that it is no longer
 necessary anyway for rules to be repeated in each ignore.d.*
 directory.  We are now using run-parts (see run-parts(8) for more
 details) directly for listing the rulefiles, and this will ignore
-symlinks. If your contains .'s you should replace them with _'s so
-that the file will be included.
+symlinks. If your filename contains .'s you should replace them with _'s 
+so that the file will be included.
 
 The following directory is for local admin use only and packages
 should not install any files in this directory.
@@ -48,7 +48,7 @@ Also the local admin has to enable this support in logcheck.conf for
 any files to be parsed.
 
 If you are planning on adding rules for your package, please check to
-see if we have included them first.  If we allready have rules and you
+see if we have included them first.  If we already have rules and you
 would like to maintain your own, please let us know before you upload 
 so we can avoid filename confilcts.
 
