@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.34 2004/05/19 10:10:36 maks-guest Exp $
+# $Id: logcheck,v 1.35 2004/05/19 11:15:21 maks-guest Exp $
 
 
 # Set the umask
@@ -279,8 +279,9 @@ greplogoutput() {
 	    # Raise entries that match
 	    if [ -n "$ignore" -a -f "$ignore/$(basename $grepfile)" ]; then
 		cleanchecked "$ignore/$(basename $grepfile)"
-	    elif [ -n "$ignore" -a -f "$ignore/logcheck-$(basename $grepfile)" ]; then
-		# Now ignore all entries from the logcheck-<package> files
+	    fi
+	    # Now ignore all entries from the logcheck-<package> files
+	    if [ -n "$ignore" -a -f "$ignore/logcheck-$(basename $grepfile)" ]; then
 		cleanchecked "$ignore/logcheck-$(basename $grepfile)"
 	    fi
 	    
