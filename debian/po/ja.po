@@ -14,10 +14,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: logcheck 1.2.20a\n"
+"Project-Id-Version: logcheck 1.2.21\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-05-16 04:49+0900\n"
-"PO-Revision-Date: 2004-05-28 21:08+0900\n"
+"POT-Creation-Date: 2004-05-25 16:06+0200\n"
+"PO-Revision-Date: 2004-06-02 2:38+0900\n"
 "Last-Translator: Hideki Yamane <henrich@samba.gr.jp>\n"
 "Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -35,10 +35,11 @@ msgstr "レポートのレベルやレポート先のメールアドレスを変更する"
 #: ../logcheck.templates:3
 msgid ""
 "To change from the default report level (server) or the default email "
-"address (root) you need to edit /etc/logcheck/logcheck.conf"
+"address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
 msgstr ""
-"レポートのレベル (server) やメールアドレス (root) を標準から変更するに"
-"は、/etc/logcheck/logcheck.conf を編集する必要があります。"
+"レポートのレベル (デフォルトは server) やメールアドレス (デフォルトは root) "
+"を変更するには、\"/etc/logcheck/logcheck.conf\" を編集する必要があります。"
+
 
 #. Type: note
 #. Description
@@ -51,10 +52,10 @@ msgstr "ignore.d ディレクトリに関連する挙動の変更"
 #: ../logcheck.templates:11
 msgid ""
 "Now the ignore.d directories function in an additive manner (i.e. higher "
-"levels also include the lower levels)"
+"levels also include the lower levels):"
 msgstr ""
-"ignore.d ディレクトリは付加的な動作を行うようになりました (つまり、高レベル"
-"の設定は低レベルのものも含みます)"
+"ignore.d ディレクトリは付加的な動作を行うようになりました (つまり、高レベルの"
+"設定は低レベルのものも含みます)"
 
 #. Type: note
 #. Description
@@ -75,12 +76,12 @@ msgid ""
 "Also run-parts(8) now controls which rulefiles are included from the .d "
 "directories."
 msgstr ""
-"そして、run-parts(8) は .d ディレクトリに含まれているルールファイルを"
-"取り扱うようになります。"
+"そして、run-parts(8) は .d ディレクトリに含まれているルールファイルを取り扱う"
+"ようになります。"
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:11
+#: ../logcheck.templates:11 ../logcheck-database.templates:3
 msgid "Please see /usr/share/doc/logcheck for more details."
 msgstr "詳細は /usr/share/doc/logcheck を参照してください。"
 
@@ -93,11 +94,12 @@ msgstr "ローカルな変更は .d ディレクトリに配置する必要があります。"
 #. Type: note
 #. Description
 #: ../logcheck-database.templates:3
+#, fuzzy
 msgid ""
-"From version 1.1.1-8, logcheck supports run-parts controled rule directories"
+"From version 1.1.1-8, logcheck supports run-parts controled rule directories:"
 msgstr ""
-"バージョン 1.1.1-8 より、logcheck は run-parts がコントロールしているルール"
-"ディレクトリをサポートします。"
+"バージョン 1.1.1-8 より、logcheck は run-parts がコントロールしている以下のル"
+"ールディレクトリをサポートします: "
 
 #. Type: note
 #. Description
@@ -150,12 +152,6 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck-database.templates:3
-msgid "Please see /usr/share/doc/logcheck for more information."
-msgstr "詳細については /usr/share/doc/logcheck を参照してください。"
-
-#. Type: note
-#. Description
 #: ../logcheck-database.templates:29
 msgid "Logcheck standard rulefiles renamed"
 msgstr "logcheck の標準ルールファイル名が変更されました"
@@ -198,4 +194,3 @@ msgid ""
 msgstr ""
 "結果として、いくつかルールファイルがこのパッケージから削除されます。これらを"
 "削除しますか?"
-
