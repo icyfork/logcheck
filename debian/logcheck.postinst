@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.30 2005/01/08 01:39:11 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.31 2005/01/08 09:57:07 ttroxell Exp $
 
 set -e
 
@@ -36,12 +36,10 @@ case "$1" in
 	  touch /etc/cron.d/logcheck || true
     	elif dpkg --compare-versions "$2" eq 1.2.19; then
 	   usermod -d /var/lib/logcheck logcheck > /dev/null 2>&1 || true
-	   touch /etc/cron.d/logcheck || true
 	fi
 	# check for logcheck in adm group
 	if ! getent group adm | grep logcheck > /dev/null; then
 	  adduser --quiet logcheck adm || true
-	  touch /etc/cron.d/logcheck || true
 	fi  
 
 	# Remove old directory

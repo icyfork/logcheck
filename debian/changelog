@@ -25,7 +25,7 @@ logcheck (1.2.33) unstable; urgency=low
   * Update dh_installlogcheck, which has already been patched in debhelper.
     (closes: #287237)
 
- -- 
+ -- Todd Troxell <ttroxell@debian.org>  Saturday, 08 Jan 2005 04:56:00 -0500
 
 logcheck (1.2.32) unstable; urgency=low
 
