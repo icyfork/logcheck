@@ -14,6 +14,7 @@ logcheck (1.2.25) unstable; urgency=low
   * Ack woody security fix. (Closes: #193161)
   * Small rule updates for dhcpd, kernel, nagios, postfix, rsnapshot
     thanks to Peter Palfrader <weasel@debian.org>.
+  * Add gps policy server rules. (Closes: #265176)
 
  --
 
