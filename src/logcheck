@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.105 2005/03/09 03:10:43 ttroxell Exp $
+# $Id: logcheck,v 1.106 2005/03/22 23:03:19 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -398,16 +398,18 @@ logoutput() {
 	offsetfile="$STATEDIR/offset$(echo $file|tr / .)"
 	if [ -s $offsetfile -a -r $offsetfile ]; then
 	    if [[ $(wc -c < $file) -lt $(tail -n 1  $offsetfile) ]]; then
-		if [ -e $file.0 ]; then
 	        # assume the log is rotated by savelog(8)
+		# syslog-ng leaves old files here
+		if [ -e $file.0 -a $file.0 -nt $file.1.gz ]; then
 		    debug "Running logtail on rotated: $file.0"
 		    $LOGTAIL -f $file.0 -o $offsetfile $LOGTAIL_OPTS > \
 			$TMPDIR/logoutput/$(basename $file) 2>&1 \
 			|| error "Could not run logtail or save output"
 		    rm -f $offsetfile \
 		        || error "Could not remove $offsetfile"
-		elif [ -e $file.1 ]; then
 		# assume the log is rotated by logrotate(8)
+		# should also probably check if file is still fresh
+		elif [ -e $file.1 ]; then
 		    debug "Running logtail on rotated: $file.1"
 		    $LOGTAIL -f $file.1 -o $offsetfile $LOGTAIL_OPTS > \
 			$TMPDIR/logoutput/$(basename $file) 2>&1 \
