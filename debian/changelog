@@ -2,7 +2,7 @@ logcheck (1.2.20) unstable; urgency=low
 
 maks:
   * Updated gconfd rules. (Closes: #246695)
-  * Added and Updated ntpdate rules. (Closes: #246750)
+  * Added and Updated ntpd rules. (Closes: #246750)
 
 logcheck (1.2.19) unstable; urgency=low
 
