@@ -13,6 +13,7 @@ logcheck (1.2.32) unstable; urgency=low
   jamie:
   * Add rules for nagios, gps.
   * Added new rules for messages from USB joystick use. (closes: #282378)
+  * Fix spamd rule to match all hosts. (closes: #282842)
 
  --
 
