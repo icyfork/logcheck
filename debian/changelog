@@ -17,6 +17,7 @@ logcheck (1.2.21) unstable; urgency=low
   * Ignore normal use of su and sudo. (Closes: #182992, #192192)
   todd:
   * Add debconf to logcheck Depends:
+  * Check the return values of all commands.
   eevans:
   * Made addition of logcheck user and permissions/ownership changes a
     conditional of an upgrade from a version less than 1.2.19,
