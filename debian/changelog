@@ -13,6 +13,7 @@ logcheck (1.2.29) unstable; urgency=low
   * Add rules for kdm/wdm/xdm, kernel (usb, keyboard) on level workstation.
   * Only show "rules-directories-note" on upgrade.
   * Enhance ppp rules on level workstation. (closes: #270019)
+    Add pppoa3 rules to the ppp rules.
   todd:
   * Add 1 dovecot rule
 
