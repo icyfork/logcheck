@@ -9,6 +9,7 @@ logcheck (1.2.24) unstable; urgency=low
   todd:
   * Added 2 kernel rules for sparc workstations.
   * Added nearly 50 squid rules.
+  * Fix anacron Normal exit rule.
 
  -- 
 
