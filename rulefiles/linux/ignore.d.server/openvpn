@@ -15,4 +15,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TLS: tls_pre_decrypt: first response to initial packet from [0-9.]{7,15}:[0-9]+, sid=[0-9a-f]+ [0-9a-f]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TLS: tls_process: killed expiring key$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TLS: soft reset sec=[0-9]+ bytes=[0-9]+/[0-9]+ pkts=[0-9]+/[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TLS Error: Unknown data channel key ID or IP address received from [0-9.]{7,15}:[0-9]+: [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TLS Error: Unknown data channel key ID or IP address received from [0-9.]{7,15}:[0-9]+: [0-9]+ \(see FAQ for more info on this error\)$
