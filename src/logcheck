@@ -20,7 +20,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.2 2004/04/21 22:04:50 maks-guest Exp $
+# $Id: logcheck,v 1.3 2004/04/26 13:00:15 maks-guest Exp $
 
 
 # Set the umask
@@ -249,22 +249,25 @@ greplogoutput() {
 	    debug "greplogoutput: Entries in checked"
 	    
 	    # Raise entries that match
-	    if [ -f "$ignore/$(basename $grepfile)" -a \
-		-s $TMPDIR/checked ]; then
+	    if [ -n "$ignore" -a -f "$ignore/$(basename $grepfile)" ]; then
 		cleanchecked "$ignore/$(basename $grepfile)"
 	    fi
 	    
 	    # If it's the logcheck file, we do something special
 	    if [ "$(basename $grepfile)" = "logcheck" ]; then 
 
-		debug "Applying Logcheck override files"
 		# Now ignore all entries from the locgheck-<package> files
-		for file in $(ls -1 $ignore/ ) ; do
-		    debug "clean logcheck-<package>: $file"
-		    egrep --text -v -f $ignore/$file $TMPDIR/checked \
-			>> $TMPDIR/checked.1
-		    mv $TMPDIR/checked.1 $TMPDIR/checked
-		done
+		if [ -n "$ignore" ]; then
+		    debug "Applying Logcheck override files"
+		    for file in $(ls -1 $ignore/ ) ; do
+		        debug "clean logcheck-<package>: $file"
+		        egrep --text -v -f $ignore/$file $TMPDIR/checked \
+		       	   >> $TMPDIR/checked.1
+		        mv $TMPDIR/checked.1 $TMPDIR/checked
+		    done
+		else
+		    debug "No Logcheck override files" 
+		fi
 
 		debug "Cleaning logcheck"
 		# Remove any  entries already reported
@@ -283,14 +286,16 @@ greplogoutput() {
 	    fi
 
 	    # Apply local rules before we report
-	    if [ -f $ignore/local -a -s $TMPDIR/checked ]; then
-		cleanchecked "$ignore/local"
-	    fi
+	    if [ -n "$ignore" ]; then
+	        if [ -f $ignore/local -a -s $TMPDIR/checked ]; then
+		    cleanchecked "$ignore/local"
+	        fi
 
-	    # Now apply any local-* files
-	    for file in $(ls -1 $ignore/ | grep "local-.*") ; do
-		cleanchecked "$ignore/$file"
-	    done
+	        # Now apply any local-* files
+	        for file in $(ls -1 $ignore/ | grep "local-.*") ; do
+	    	    cleanchecked "$ignore/$file"
+	        done
+	    fi
 
 	    if [ "$(basename $grepfile)" = "logcheck" ]; then
 		report "${sectionstring}" && RETURN=0

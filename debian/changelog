@@ -1,4 +1,10 @@
 logcheck (1.2.18) unstable; urgency=low
+  * Greplogoutput used empty ignores when called with 2 arguments.
+    thanks to Mario Holbe for reporting and Paul Cassella for preliminary
+    patch (Closes: #243980)
+
+
+logcheck (1.2.18) unstable; urgency=low
   * New maintainer (Closes: #244271)
   * Updated debian/copyright with new upstream information. (Closes: #206022)
   * Updated sudo, oidentd rules.
