@@ -9,10 +9,8 @@ logcheck (1.2.20) unstable; urgency=low
   * Try secure TMPDIR in /tmp if /var/tmp fails. (Closes: #242284)
   * Initial german translation.
   * Set a sane DEFAULTLEVEL="server" in logcheck itself.
-  * Ignore crontab -l rule and list crontab -e for reportlevel=server.
-    (Closes: 243019)
-  * Added reference to logtail in manpage logcheck(8) in new Section SEE ALSO
-    and Debian logcheck Team + alioth link. (Closes: #215640)
+  * Better hantling of crontab.  (Closes: 243019)
+  * Enhanced manpage logcheck(8). (Closes: #215640)
   alfie:
   * Full german translation.
   * Updated pt_BR translation from André Luís Lopes.
@@ -20,7 +18,8 @@ logcheck (1.2.20) unstable; urgency=low
   * debian/logcheck.8 is generated, so get rid of it in clean target, too.
   todd:
   * Change logcheck home to /var/lib/logcheck. (Closes #247614)
-  * Change modes on /etc/logcheck. (Closes #247929, #209048)
+  * Change modes on /etc/logcheck. (Closes #247929) 
+  * Allow adm group to read logcheck rules. (Closes #209048)
   * Remove noroot template. (Closes #247360)
   * Remove useless chown to /var/tmp/logcheck* thanks to maks.
   * Remove bash depends.  Bash is marked essential.
