@@ -1,5 +1,9 @@
 logcheck (1.2.34) unstable; urgency=low
 
+  todd:
+  * Correct "Gandhi" spelling in docs/README.how.to.interpret.
+    Thanks Satya <debbugs@thesatya.com> (closes: #289529)
+
 --
 
 logcheck (1.2.33) unstable; urgency=low
