@@ -51,11 +51,11 @@ binary-indep: build install
 	dh_installman -p logcheck docs/logcheck.8
 	dh_installchangelogs
 	dh_installdebconf
-	dh_strip
+#	dh_strip
 	dh_compress
 	dh_fixperms --exclude etc/logcheck
 	dh_installdeb
-	dh_shlibdeps
+#	dh_shlibdeps
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb
