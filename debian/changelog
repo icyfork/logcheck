@@ -17,6 +17,7 @@ logcheck (1.2.20) unstable; urgency=low
   * Full german translation.
   * Updated pt_BR translation from André Luís Lopes.
   * Run debconf-updatepo.
+  * debian/logcheck.8 is generated, so get rid of it in clean target, too.
   todd:
   * Change logcheck home to /var/lib/logcheck. (Closes #247614)
   * Change modes on /etc/logcheck. (Closes #247929)

@@ -21,6 +21,7 @@ clean:
 	dh_testroot
 	-rm -f build-stamp install-stamp
 
+	-rm -f debian/logcheck.8
 	-$(MAKE) clean DESTDIR=$(CURDIR)/debian/tmp
 
 
