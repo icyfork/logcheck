@@ -6,6 +6,8 @@ logcheck (1.2.31) unstable; urgency=low
   * Add rule for tripwire run at level paranoid.
   alfie:
   * Fixed my non-fix in logcheck, sorry (closes: #279635)
+  todd:
+  * Fix segmented rules, thanks rloboda@bojko.krakow.pl
 
  -- 
 
