@@ -157,7 +157,7 @@ hostnames explicitly - hence "oempc" above, rather than the pattern
 
 A quick test for a new rule would be to grep aboves regex against
 its logfile, but it is safer to remove any trailing space before:
-sed -e 's/ *$//' /var/log/syslog | egrep \
+sed -e 's/[[:space:]]+$//' /var/log/syslog | egrep \
 '^\w{3} [ :0-9]{11} oempc wwwoffled\[[0-9]+\]: WWWOFFLE (On|Off)line\.$'
 
 Pass all rules files through "sort -u" to simplify maintenance, then

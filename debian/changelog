@@ -5,6 +5,7 @@ logcheck (1.2.29) unstable; urgency=low
   * Fix trailing space in perdition rule. (closes: #273433)
   * Small documentation update how to test rules without fiddling with
     trailing space.
+  * sed fine tuning to speed up + remove trailing tabs. thanks alfie
   * Don't use -m switch from sort, it basically disables sorting.
     Remove gratious call to uniq that should be done with SORTUNIQ.
     (closes: #270677)
