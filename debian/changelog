@@ -1,11 +1,12 @@
 logcheck (1.2.20) unstable; urgency=low
 
-maks:
+  maks:
   * Updated gconfd rules. (Closes: #246695)
   * Added and Updated ntpd rules. (Closes: #246750)
   * Added first cyrus rules. (Closes: #247047)
   * Updated pop3d-ssl rules.
   * Updated postfix rules. (Closes: #196258, #190696)
+  * Try secure TMPDIR in /tmp if /var/tmp fails. (Closes: #242284)
 
 logcheck (1.2.19-1) unstable; urgency=low
 
