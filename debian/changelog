@@ -19,6 +19,7 @@ logcheck (1.2.35) unstable; urgency=low
     username is missing(!) (closes: #295257).
   * Add rules in violations.ignore.d/logcheck-postfix for certificate
     verification failures.
+  * Add rule for courierpop3login (closes: 296014).
   
  -- 
 
