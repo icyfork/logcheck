@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.23 2004/05/14 10:55:47 maks-guest Exp $
+# $Id: logcheck,v 1.24 2004/05/15 08:28:21 ttroxell Exp $
 
 
 # Set the umask
@@ -129,6 +129,10 @@ error() {
     if [ $MAILOUT -eq 0 ]; then
 	{
 	    cat<<EOF
+Warning:  If you are seeing this message, you log files may not have
+been checked!
+
+Further detail:
 $message
 
 Check temporary directory: $TMPDIR
@@ -144,7 +148,8 @@ EOF
  # Add an identification line at the beginning of the sent mail
 setintro() {
     if [ -f /etc/logcheck/header.txt ] ; then
-       $CAT /etc/logcheck/header.txt >> $TMPDIR/report
+       $CAT /etc/logcheck/header.txt >> $TMPDIR/report \
+           || error "Could not append header to $TMPDIR/report  Disk full?"
     fi
 }
 
@@ -152,7 +157,8 @@ setintro() {
 # Add a footer to the report.
 setfooter() {
     if [ -f /etc/logcheck/footer.txt ] ; then
-       $CAT /etc/logcheck/footer.txt >> $TMPDIR/report
+       $CAT /etc/logcheck/footer.txt >> $TMPDIR/report \
+           || error "Could not append footer to $TMPDIR/report Disk full?"
     fi
 }
 
@@ -165,12 +171,13 @@ cleanrules() {
 
     if [ -d $dir ]; then 
 	mkdir -p $cleaned \
-	    || error "Could not make dir for cleaned rulefiles"
+	    || error "Could not make dir $cleaned for cleaned rulefiles."
 	for rulefile in $(run-parts --list $dir); do
 	    rulefile=$(basename $rulefile)
 	    if [ -f ${dir}/${rulefile} ]; then
 		debug "cleanrules: ${dir}/${rulefile}"
 		egrep --text -v '^\s*$|^#' $dir/$rulefile >> $cleaned/$rulefile
+#		    || error "Could not append to $cleaned/$rulefile.  Disk Full?"
 	    fi
 	done
     elif [ -f $dir ]; then
@@ -183,20 +190,23 @@ cleanrules() {
 report() {
     # Add any events to the report
     if [ -s $TMPDIR/checked ]; then
-	printheader "$*" >> $TMPDIR/report
+	printheader "$*" >> $TMPDIR/report \
+	    || error "Could not append to report.  Disk Full?"
 	if [ $SYSLOGSUMMARY -eq 1 ] && [ -x $SYSLOG_SUMMARY ]; then
 	    debug "report: running syslog-summary - $*"
 	    $SYSLOG_SUMMARY $TMPDIR/checked | \
-		egrep -v "^Summarizing " >> $TMPDIR/report
+		egrep -v "^Summarizing " >> $TMPDIR/report 
+#		|| "Could not append to report.  Disk Full?"
 	else
 	    if [ $SYSLOGSUMMARY -eq 1 ] && [ ! -x $SYSLOG_SUMMARY ]; then
 	    	debug "report : WARNING : can't exec $SYSLOG_SUMMARY. Running without summary"
 	    fi
 	    debug "report: cat'ing - $*"
 	    cat $TMPDIR/checked >> $TMPDIR/report \
-	        || error "Could not append events to report"
+	        || error "Could not append to report.  Disk full?"
 	fi
-	echo >> $TMPDIR/report
+	echo >> $TMPDIR/report \
+	    || error "Could not append to report.  Disk full?"
 	return 0
     else
 	return 1
@@ -257,7 +267,8 @@ greplogoutput() {
 	debug "greplogoutput: $grepfile"
 
 	egrep --text -f $raise/$grepfile $TMPDIR/logoutput-sorted \
-	    > $TMPDIR/checked
+	    > $TMPDIR/checked 
+#	    || error "Could not output to $TMPDIR/checked.  Disk Full?"
 
 	if [ -s $TMPDIR/checked ]; then
 	    debug "greplogoutput: Entries in checked"
@@ -276,8 +287,11 @@ greplogoutput() {
 		    for file in $(ls -1 $ignore/ ) ; do
 		        debug "clean logcheck-<package>: $file"
 		        egrep --text -v -f $ignore/$file $TMPDIR/checked \
-		       	   >> $TMPDIR/checked.1
-		        mv $TMPDIR/checked.1 $TMPDIR/checked
+		       	   >> $TMPDIR/checked.1 
+#			   || error "Could not output to $TMPDIR/checked.1" 
+		        mv $TMPDIR/checked.1 $TMPDIR/checked \
+			|| error "Could not move $TMPDIR/checked.1 to \
+			$TMPDIR/checked"
 		    done
 		else
 		    debug "No Logcheck override files" 
@@ -288,8 +302,11 @@ greplogoutput() {
 		for file in $(ls $raise/ | grep -v logcheck) ; do
 		    debug "Cleaning logcheck: $file"
 		    egrep --text -v -f $raise/$file $TMPDIR/checked \
-			>> $TMPDIR/checked.1
-		    mv $TMPDIR/checked.1 $TMPDIR/checked
+			>> $TMPDIR/checked.1 
+#			|| error "Could not output to $TMPDIR/checked.1"
+		    mv $TMPDIR/checked.1 $TMPDIR/checked \
+		    || error "Could not move $TMPDIR/checked.1 to \
+		    $TMPDIR/checked"
 		done
 	    fi
 
@@ -328,15 +345,19 @@ cleanchecked() {
 
     if [ -f $clean ]; then 
 	debug "cleanchecked - file: $clean"
-        egrep --text -v -f $clean $TMPDIR/checked >> $TMPDIR/checked.1
-	mv $TMPDIR/checked.1 $TMPDIR/checked
+        egrep --text -v -f $clean $TMPDIR/checked >> $TMPDIR/checked.1 
+#	|| error "Could not output to $TMPDIR/checked.1 Disk full?"
+	mv $TMPDIR/checked.1 $TMPDIR/checked \
+	|| error "Could not move $TMPDIR/checked.1 to $TMPDIR/checked"
     elif [ -d $clean ]; then
 	debug "cleanchecked - dir - $clean"
 	for file in $(ls -1 $clean/); do
 	debug "cleanchecked - dir - $clean/$file"
 	    egrep --text -v -f $clean/$file $TMPDIR/checked \
-		>> $TMPDIR/checked.1
-	    mv $TMPDIR/checked.1 $TMPDIR/checked
+		>> $TMPDIR/checked.1 
+#		|| error "Could not output to TMPDIR/checked.1 Disk Full?"
+	    mv $TMPDIR/checked.1 $TMPDIR/checked \
+	    || error "Could not move $TMPDIR/checked.1 to $TMPDIR/checked"
 	done
     else
 	error "cleanchecked: Not a file or a directory"
@@ -535,21 +556,27 @@ for file in $(egrep --text -v "^#" $LOGFILE); do
 		    debug "Running logtail on rotated: $file.0"
 		    $LOGTAIL -f $file.0 -o $offsetfile $LOGTAIL_OPTS > \
 			$TMPDIR/logoutput/$(basename $file)
-		    rm -f $offsetfile
+#			|| error "Could not run logtail or save output"
+		    rm -f $offsetfile \
+		    || error "Could not remove $offsetfile"
 		elif [ -e $file.1 ]; then
 		# assume the log is rotated by logrotate(8)
 		    debug "Running logtail on rotated: $file.1"
 		    $LOGTAIL -f $file.1 -o $offsetfile $LOGTAIL_OPTS > \
 			$TMPDIR/logoutput/$(basename $file)
-		    rm -f $offsetfile
+#			|| error "Could not run logtail or save output"
+		    rm -f $offsetfile \
+		    || error "Could not remove $offsetfile"
 		fi
 	    fi
 	fi
 	debug "Running logtail: $file"
 	$LOGTAIL -f $file -o $offsetfile $LOGTAIL_OPTS \
 	    >> $TMPDIR/logoutput/$(basename $file)
+#	    || error "Could not run logtail or save output"
     else
-	echo "E: File could not be read: $file" >> $TMPDIR/errors
+	echo "E: File could not be read: $file" >> $TMPDIR/errors \
+	|| error "Could not output to $TMPDIR/errors  Disk Full?"
     fi
 done 
 
@@ -557,7 +584,8 @@ done
 # the same lines) and reduce CPU and memory usage afterwards.
 debug "Sorting logs"
 $SORT -m $TMPDIR/logoutput/* | uniq | sed -e 's/ *$//' \
-    > $TMPDIR/logoutput-sorted
+    > $TMPDIR/logoutput-sorted \
+    ||error "Could not output to $TMPDIR/logoutput-sorted Disk Full?"
  
 
 # See if the tmp file exists and actually has data to check,
@@ -584,7 +612,8 @@ if [ -f $TMPDIR/errors ]; then
 $(cat $TMPDIR/errors)
 
 EOF
-    } >> $TMPDIR/report
+    } >> $TMPDIR/report \
+    || error "Could not output to $TMPDIR/report Disk Full?"
 fi
 
 # Check for blatant cracking attempts
@@ -605,7 +634,7 @@ fi
 # Check for security violations
 if [ -d $TMPDIR/violations ]; then
     debug "Checking for security volations"
-    rm -f $TMPDIR/checked
+    rm -f $TMPDIR/checked 
 
     if [ $ATTACK -eq 1 ]; then
 	greplogoutput $TMPDIR/violations "$SECURITYSUBJECT" \
@@ -619,7 +648,8 @@ fi
 # Do reverse grep on patterns we want to ignore
 if [ -d $TMPDIR/ignore ]; then
     debug "Checking for system events"
-    cp $TMPDIR/logoutput-sorted $TMPDIR/checked
+    cp $TMPDIR/logoutput-sorted $TMPDIR/checked \
+    ||error "Could not copy $TMPDIR/logoutput-sorted to $TMPDIR/checked"
     cleanchecked $TMPDIR/ignore
 
     if [ -s $TMPDIR/checked ]; then
