@@ -27,7 +27,7 @@ If during the normal operation of your package it produces syslog
 messages that are included by /etc/logcheck/violations.d/logcheck
 you can also include the following rulefile 
 
- - /etc/logcheck/violations.ignore.d/logcheck-<packagename>
+ - /etc/logcheck/violations.ignore.d/<packagename>
 
 so that they will be ignored.
 
