@@ -6,6 +6,13 @@ maks:
   * Added first cyrus rules. (Closes: #247047)
   * Updated pop3d-ssl rules.
 
+logcheck (1.2.19-1) unstable; urgency=low
+
+  todd:
+  * quick fix release to keep things working in unstable
+  * add -R flag to chmod in configure (Closes: #247230)
+
+ -- Todd Troxell <ttroxell@debian.org>  Monday, 03 May 2004 16:02:11 +0000
 
 logcheck (1.2.19) unstable; urgency=low
 
