@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.57 2004/06/08 06:47:11 maks-guest Exp $
+# $Id: logcheck,v 1.58 2004/06/08 06:59:09 maks-guest Exp $
 
 
 # Set the umask
@@ -304,12 +304,7 @@ greplogoutput() {
 		# Remove any  entries already reported
 		for file in $(ls $raise/ | grep -v '^logcheck') ; do
 		    debug "Cleaning logcheck: $file"
-		    egrep --text -v -f $raise/$file $TMPDIR/checked |cat \
-			>> $TMPDIR/checked.1 \
-			|| error "Could not output to $TMPDIR/checked.1"
-		    mv $TMPDIR/checked.1 $TMPDIR/checked \
-			|| error "Could not move $TMPDIR/checked.1 to \
-		    $TMPDIR/checked"
+		    cleanchecked "$raise/$file"
 		done
 	    fi
 
