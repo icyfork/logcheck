@@ -162,6 +162,13 @@ manpage.1: manpage.sgml
         </listitem>
       </varlistentry>
       <varlistentry>
+        <term><option>-u</option>
+        </term>
+        <listitem>
+          <para>Enable syslog-summary</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
         <term><option>-w</option>
         </term>
         <listitem>
