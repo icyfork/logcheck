@@ -1,5 +1,7 @@
 #!/bin/bash
 #
+# Copyright (C) 2004	  Debian Logcheck Team 
+#                         <logcheck-devel@alioth.lists.debian.org>
 # Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>
 # Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
 # Copyright (C) 1996-1997 Craig Rowland <crowland@psionic.com>
@@ -20,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.11 2004/05/03 16:21:21 maks-guest Exp $
+# $Id: logcheck,v 1.12 2004/05/03 19:32:58 maks-guest Exp $
 
 
 # Set the umask
