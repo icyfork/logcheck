@@ -23,7 +23,8 @@ logcheck (1.2.21) unstable; urgency=low
   * Move logtail.8 from debian to doc dir.
   todd:
   * Add debconf to logcheck Depends:
-  * Check the return values of all commands. (Closes: #174173)
+  * Check the return values of all commands that write to disk.
+    (Closes: #174173)
   * Add NEWS.Debian to logcheck.docs (Followup to #247360)
   eevans:
   * Made addition of logcheck user and permissions/ownership changes a
