@@ -1,7 +1,7 @@
 logcheck (1.2.25) unstable; urgency=low
 
   todd:
-  * Small rule updates for dhclient, ntp, bind
+  * Small rule updates for dhclient, ntp, bind, kernel, bonobo
   * Add line to logcheck.postinst to remove header.txt on purge
 
  --
