@@ -16,8 +16,9 @@ set -e
 
 case "$1" in
     install|upgrade)
-    	if dpkg --compare-versions "$2" lt 1.2.19; then
-	  deluser logcheck > /dev/null 2>&1 || true
+    	if dpkg --compare-versions "$2" eq 1.2.19; then
+	   usermod -d /var/lib/logcheck logcheck > /dev/null 2>&1 || true
+    	elif dpkg --compare-versions "$2" lt 1.2.19; then
 	  adduser --quiet --system --no-create-home --group \
 	      --home /var/lib/logcheck logcheck || true
 	  adduser --quiet logcheck adm || true
