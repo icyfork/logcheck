@@ -11,6 +11,7 @@ logcheck (1.2.20) unstable; urgency=low
   * Set a sane DEFAULTLEVEL="server" in logcheck itself.
   * Better hantling of crontab.  (Closes: #243019)
   * Enhanced manpage logcheck(8). (Closes: #215640)
+  * Add syslog-ng option for sysklogd dependency. (Closes: #248244)
   alfie:
   * Full german translation.
   * Updated pt_BR translation from André Luís Lopes.
