@@ -1,16 +1,16 @@
 logcheck (1.2.37) unstable; urgency=low
 
   maks:
-  * Fix warning on invalid regex. thanks for patch to Matthew Toseland
-    <toad@amphibian.dyndns.org> (Closes: #302689)
   * Fix routine message when resolvconf is installed. thanks for patch
     to Thomas Hood <jdthood@aglu.demon.nl> (Closes: #302678)
   * Add postfix rules for local procmail delivery. (Closes: #302744)
   * Fix logcheck su rule reporting valid `su -' use.
   * Add nagios rule for UNREACHABLE messages. thanks for patch to
     Geoff Crompton <geoff.crompton@strategicdata.com.au> (Closes: #298495)
+  todd:
+  * Revert warning on bad regex code (Closes: #302689)
 
- -- Todd Troxell <ttroxell@debian.org>  Saturday, 2 Apr 2005 17:04:00 -0500
+ -- Todd Troxell <ttroxell@debian.org>  Saturday, 2 Apr 2005 17:57:00 -0500
 
 logcheck (1.2.36) unstable; urgency=low
 
