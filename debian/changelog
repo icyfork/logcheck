@@ -27,6 +27,7 @@ logcheck (1.2.34) unstable; urgency=low
   jamie:
   * Update rules for nagios.
   * Add postfix rules for anvil in postfix 2.2.
+  * Modify rule for pure-ftpd logout messages. (Closes: #294612)
 
  -- Todd Troxell <ttroxell@debian.org>  Sunday, 23 Jan 2005 21:31:00 -0500
 
