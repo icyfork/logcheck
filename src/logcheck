@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.13 2004/05/03 23:39:54 ttroxell Exp $
+# $Id: logcheck,v 1.14 2004/05/03 23:54:34 ttroxell Exp $
 
 
 # Set the umask
@@ -48,7 +48,7 @@ else
 fi
 
 DATE="$(date +'%Y-%m-%d %H:%M')"
-VERSION="1.2.19"
+VERSION="1.2.20"
 
 # Set the default report level
 REPORTLEVEL="paranoid"
