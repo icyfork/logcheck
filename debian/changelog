@@ -16,7 +16,6 @@ logcheck (1.2.21) unstable; urgency=low
     thanks to Tobias Wolter <towo+bugs@ydal.de>
   * Ignore normal use of su and sudo. (Closes: #182992, #192192)
   todd:
-  * Additional INN rule from Mark Brown (Closes: #249181)
   * Add debconf to logcheck Depends:
   eevans:
   * Made addition of logcheck user and permissions/ownership changes a

@@ -4,4 +4,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: rejected [0-9]+ Too old -- "[0-9]+ \w{3} [0-9]{4} [0-9:]{8} ([A-Z]+|(\+|-)[0-9]{4})"$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: rejected [0-9]+ No colon-space in "("|x-no-archive:yes)" header$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [^[:space:]]+ posts received [0-9]+ rejected [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: offered <[^[:space:]]+> [._[:alnum:]-]+$
