@@ -22,8 +22,12 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.71 2004/07/24 07:11:37 ttroxell Exp $
+# $Id: logcheck,v 1.72 2004/08/02 18:49:36 ttroxell Exp $
 
+if [ $UID == 0 ]; then
+    echo "logcheck should not be run as root."
+    exit 1
+fi
 
 # Set the umask
 umask 077
