@@ -4,3 +4,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: subsystem request for sftp$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from [.0-9]+: [0-9]+: Client disconnect
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: syslogin_perform_logout: logout\(\) returned an error$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: nss_ldap: reconnect(ing|ed) to LDAP server(\.\.\.| after [0-9]+ attempt\(s\))$

@@ -6,7 +6,7 @@ logcheck (1.2.32) unstable; urgency=low
   * Default reportlevel is "server", correct logcheck.conf thanks koki.
   * Fix up space in newer xdm logging.
   * Add kernel rule for dvd combi drives at level workstation.
-  * Add nss_ldap rule for apache syslog line at level server.
+  * Add nss_ldap rule for apache, sshd syslog line at level server.
   alfie:
   * logtail.8: Fixed formating to be consistant, changed OPTION to -r (the
     only OPTION not mentioned yet :))
