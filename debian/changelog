@@ -19,7 +19,7 @@ logcheck (1.2.20) unstable; urgency=low
   * debian/logcheck.8 is generated, so get rid of it in clean target, too.
   todd:
   * Change logcheck home to /var/lib/logcheck. (Closes: #247614)
-  * Change modes on /etc/logcheck. (Closes: #247929) 
+  * Change modes on /etc/logcheck. (Closes: #247929, #248046) 
   * Allow adm group to read logcheck rules. (Closes: #209048)
   * Remove noroot template. (Closes: #247360)
   * Remove useless chown to /var/tmp/logcheck* thanks to maks.
