@@ -9,6 +9,7 @@ logcheck (1.2.32) unstable; urgency=low
   * Add nss_ldap rule for apache, sshd syslog line at level server.
   * Ignore also ssh disconnect from win clients on level server.
   * Have per package NEWS.Debian files, move them below debian/.
+    thanks alfie for hint dh_installchangelogs(1) for multiple NEWS.Debian.
   alfie:
   * logtail.8: Fixed formating to be consistant, changed OPTION to -r (the
     only OPTION not mentioned yet :))

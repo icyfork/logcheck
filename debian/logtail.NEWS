@@ -1,0 +1,6 @@
+logtail (1.2.24) unstable; urgency=low
+  logtail changed the way it parses the commandline.
+  The switch for the logfile '-f' is mandatory.
+  See manpage logtail(8) for further details on how to invoke logtail.
+
+ -- maximilian attems <max@nl.linux.org>  Sat, 27 Nov 2004 14:10:52 +0100
