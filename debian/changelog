@@ -20,7 +20,9 @@ logcheck (1.2.35) unstable; urgency=low
   * Add rules in violations.ignore.d/logcheck-postfix for certificate
     verification failures.
   * Add rule for courierpop3login (closes: 296014).
-  
+  * Add rule in violations.ignore.d/logcheck-pureftp for upload/download
+    messages (closes: #296110).
+
  -- 
 
 logcheck (1.2.34) unstable; urgency=low
