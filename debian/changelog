@@ -4,17 +4,17 @@ logcheck (1.2.24) unstable; urgency=low
   * Added violations ignore rule for squid (Closes: #257874)
   maks
   * Added dhcpd-client, kernel, ntp, postfix rules. (Closes: 259094)
-  * Add lots of postfix rules at level workstation for those,
-    who wants to include /var/log/mail.log (Closes: #206495)
-  * Generalize "nobody" to "[_[:alnum:]-]+" (Closes: #254681)
+  * Added lots of postfix rules at level workstation for those,
+    who wants to include /var/log/mail.log. (Closes: #206495)
+  * Generalize "nobody" to "[_[:alnum:]-]+" for su rule. (Closes: #254681)
   * Update rules ignore.d.paranoid/cron, ignore.d.paranoid/postfix.
     New courier rules merged and simplified from imap, impd-ssl and pop3d-ssl.
-    thanks to Bastian Blank <waldi@debian.org> (Closes: #258759)
+    thanks to Bastian Blank <waldi@debian.org>. (Closes: #258759)
   * Fix pid regex in cyrus rules. (Closes: #259092)
-  * Add cyrus rules for notifyd. (Closes: #259466)
+  * Added cyrus rules for notifyd. (Closes: #259466)
   * Make shure logtail gets a logfile to read, if not exit soon.
-    Add -o switch to logtail(8). (Closes: #259371)
-  * Add logcheck-devel mail to logtail(8) and copyright.
+    Added -o switch to logtail(8). (Closes: #259371)
+  * Added logcheck-devel mail to logtail(8) and copyright.
   todd:
   * Added 2 kernel rules for sparc workstations.
   * Added nearly 50 squid rules.
