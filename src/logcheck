@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.68 2004/07/20 08:16:49 maks-guest Exp $
+# $Id: logcheck,v 1.69 2004/07/20 08:27:44 maks-guest Exp $
 
 
 # Set the umask
@@ -403,19 +403,20 @@ logoutput() {
 usage() {
     debug "usage: Printing usage and exiting"
     cat<<EOF
-usage: logcheck [-c CFG] [-d] [-h] [-l CFG] [-o] [-r DIR] [-s|-p|-w] [-S] [-t]
+usage: logcheck [-c CFG] [-d] [-h] [-l LOG] [-L CFG] [-m MAIL] [-o] [-r DIR] 
+                [-s|-p|-w] [-R] [-S DIR] [-t] [-T] [-u]
  -c CFG       = overrule default configuration file
  -d           = debug mode
  -h           = print this usage guide and exit
  -l LOG       = run logfile through logcheck
  -L CFG       = overrule default logfiles list
- -m           = email the report to recipient
+ -m MAIL      = email the report to recipient
  -o           = stdout mode, not sending mail
  -p           = runlevel "paranoid"
  -r DIR       = overrule default rules directory
  -R           = adds Reboot: to email subject
  -s           = runlevel "server"
- -S           = overrule default state directory
+ -S DIR       = overrule default state directory
  -t           = testing mode
  -T           = do not remove the TMPDIR 
  -u           = enable syslog-summary
