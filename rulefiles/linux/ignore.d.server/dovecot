@@ -1,3 +1,3 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap-login: Login: [[:alnum:]-]+ \[[0-9\.]+\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap-login: Disconnected: Inactivity \[[0-9\.]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap-login: Login: [.[:alnum:]-]+ \[[0-9.]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap-login: Disconnected \[[0-9.]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap\([^[:space:]]+\): File isn't in mbox format: [^[:space:]]+$
