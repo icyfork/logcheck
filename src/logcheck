@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.47 2004/06/04 09:18:15 maks-guest Exp $
+# $Id: logcheck,v 1.48 2004/06/04 09:21:17 maks-guest Exp $
 
 
 # Set the umask
@@ -293,8 +293,6 @@ greplogoutput() {
 		    debug "No Logcheck override files" 
 		fi
  
- 		debug "Cleaning logcheck"
- 		# Remove any  entries already reported
 		debug "Cleaning logcheck"
 		# Remove any  entries already reported
 		for file in $(ls $raise/ | grep -v logcheck) ; do
