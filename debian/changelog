@@ -3,13 +3,15 @@ logcheck (1.2.21) unstable; urgency=low
   maks:
   * Better description of logtail package.
   * Recommend use of an offsite email address in main conf.
-  * Added and Updated innd and kernel rulefiles.
+  * Added and updated innd, postfix, nntpcache, kernel rulefiles. 
+    (Closes: #248816)
   * Updated proftp rules. (Closes: #248409)
   * Added -v switch (outputs logcheck version).
   * Harden permissions regarding world.
   * Added and updated arpwatch, bind, openvpn, postfix and spamd rules.
     thanks to Peter Palfrader <weasel@debian.org>.
   * New Config option for subject tags [logcheck].
+  * Lower all debconf messages priority.
 
  -- 
 
