@@ -1,0 +1,5 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: SUBMIT JOB [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: FIFO RECV \"Sclient/[0-9]+:[0-9]+\"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: JOB [0-9]+ \((ready|active) dest [0-9\+]+ pri [0-9]+ tts [0-9]+:[0-9]+ killtime [0-9]+:[0-9]+:[0-9]+\): (READY|PROCESS|ACTIVE|PREPARE START)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: LOCKWAIT$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: STATE CHANGE: RUNNING -> LOCKWAIT \(timeout [0-9]+\)$
