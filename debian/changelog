@@ -17,6 +17,10 @@ logcheck (1.2.21) unstable; urgency=low
   todd:
   * Additional INN rule from Mark Brown (Closes: #249181)
   * Add debconf to logcheck Depends:
+  eevans:
+  * Made addition of logcheck user and permissions/ownership changes a 
+    conditional of an upgrade from a version less than 1.2.19,
+    (Closes: #249324).
 
  -- 
 
