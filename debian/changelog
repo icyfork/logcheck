@@ -12,6 +12,7 @@ logcheck (1.2.33) unstable; urgency=low
     on level workstation. (closes: #286747)
   * Fix dovecot rules: dots in usernames + other breakage. (closes: #286306)
   * Fix gconfd rules for latest default english logging style.
+  * Logtail need to Depend on versioned perl not logcheck. (closes: #288580)
   todd:
   * Set rule directories setgid to simplify administration. (closes: #286230)
   * Add future package plans to TODO

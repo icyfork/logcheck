@@ -8,7 +8,7 @@ Build-Depends-Indep: debhelper (>= 4.1.13), docbook-to-man, debianutils (>= 1.16
 
 Package: logcheck
 Architecture: all
-Depends: adduser, debconf, exim4 | mail-transport-agent, cron (>=3.0pl1-68), sysklogd | system-log-daemon | syslog-ng, mailx, logtail (= ${Source-Version}), logcheck-database (= ${Source-Version}), debianutils (>= 1.16.9), lockfile-progs, ${misc:Depends}, perl (>= 5.8.0)
+Depends: adduser, debconf, exim4 | mail-transport-agent, cron (>=3.0pl1-68), sysklogd | system-log-daemon | syslog-ng, mailx, logtail (= ${Source-Version}), logcheck-database (= ${Source-Version}), debianutils (>= 1.16.9), lockfile-progs, ${misc:Depends}
 Suggests: syslog-summary
 Description: Mails anomalies in the system logfiles to the administrator
  Logcheck was part of the Abacus Project of security tools, but this
@@ -28,6 +28,7 @@ Description: A database of system log rules for the use of log checkers
 
 Package: logtail
 Architecture: all
+Depends: perl (>= 5.8.0)
 Replaces: logcheck (<= 1.1.1-9)
 Description: Print log file lines that have not been read
  This program will read in a standard text file and create an
