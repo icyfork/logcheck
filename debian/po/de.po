@@ -52,8 +52,8 @@ msgid ""
 "Now the ignore.d directories function in an additive manner (i.e. higher "
 "levels also include the lower levels)"
 msgstr ""
-"Die ignore.d-Verzeichnisse funktionieren nun auf erweiternde Art (d.h. "
-"höhere Levels enthalten auch die niedrigeren Levels)"
+"Die ignore.d-Verzeichnisse funktionieren nun erweiternd (d.h. höhere "
+"Level enthalten auch die niedrigeren Level)"
 
 #. Type: note
 #. Description
@@ -193,7 +193,7 @@ msgid ""
 "\"logcheck\" and the \"standard.postfix\" file has been renamed to "
 "\"logcheck-postfix\"."
 msgstr ""
-"Mit Version 1.2.1 wurde die »standard«-Regeldateien auf »logcheck« und die "
+"Mit Version 1.2.1 wurden die »standard«-Regeldateien auf »logcheck« und die "
 "»standard.postfix«-Datei auf »logcheck-postfix« umbenannt."
 
 #. Type: boolean
