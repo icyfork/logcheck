@@ -12,6 +12,7 @@ logcheck (1.2.29) unstable; urgency=low
   * Add violations.ignore.d/su on old logfiles to be removed on sarge upgrade.
   * Add rules for kdm/wdm/xdm, kernel (usb, keyboard) on level workstation.
   * Only show "rules-directories-note" on upgrade.
+  * Enhance ppp rules on level workstation. (closes: #270019)
   todd:
   * Add 1 dovecot rule
 

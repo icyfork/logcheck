@@ -1,4 +1,5 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Connect: ppp0 <--> [.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Connect: ppp0 <--> /dev/[pt]ts/[.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: (CH|P)AP authentication succeeded$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Connection terminated\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Device ttyS1 is locked by pid [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Exit\.$
@@ -9,6 +10,10 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Terminating on signal 15\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Using interface [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: kernel does not support PPP filtering$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: local IP address [.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Control thread ready$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Waiting for 1 child processes...$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: local  IP address [.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: pppd [^[:space:]]+ started by [^[:space:]]+, uid [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: remote IP address [.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: primary   DNS address [.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: secondary DNS address [.0-9]+$
