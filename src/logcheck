@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.46 2004/06/04 09:10:18 maks-guest Exp $
+# $Id: logcheck,v 1.47 2004/06/04 09:18:15 maks-guest Exp $
 
 
 # Set the umask
@@ -287,12 +287,7 @@ greplogoutput() {
 		    debug "Applying Logcheck override files"
 		    for file in $(ls -1 $ignore/) ; do
 		        debug "clean logcheck-<package>: $file"
-		        egrep --text -v -f $ignore/$file $TMPDIR/checked | cat \
-		       	   >> $TMPDIR/checked.1 \
-			   || error "Could not output to $TMPDIR/checked.1" 
-		        mv $TMPDIR/checked.1 $TMPDIR/checked \
-			    || error "Could not move $TMPDIR/checked.1 to \
-			$TMPDIR/checked"
+			cleanchecked "$ignore/$file"
 		    done
 		else
 		    debug "No Logcheck override files" 
@@ -304,12 +299,7 @@ greplogoutput() {
 		# Remove any  entries already reported
 		for file in $(ls $raise/ | grep -v logcheck) ; do
 		    debug "Cleaning logcheck: $file"
-		    egrep --text -v -f $raise/$file $TMPDIR/checked |cat \
-			>> $TMPDIR/checked.1 \
-			    || error "Could not output to $TMPDIR/checked.1"
-		    mv $TMPDIR/checked.1 $TMPDIR/checked \
-		        || error "Could not move $TMPDIR/checked.1 to \
-		    $TMPDIR/checked"
+	            cleanchecked "$ignore/$file"
 		done
 	    fi
 
