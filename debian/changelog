@@ -1,3 +1,10 @@
+logcheck (1.2.25) unstable; urgency=low
+
+  todd:
+  * Small rule updates for dhclient, ntp, bind
+
+ --
+
 logcheck (1.2.24) unstable; urgency=low
 
   eevans:
