@@ -3,7 +3,7 @@ logcheck (1.2.22a) unstable; urgency=low
   maks:
   * Fix broken cleancheck call. (Closes: #252966, #253075, #253260, #253486)
 
- -- Todd Troxell <ttroxell@debian.org>  Tuesday, 08 Jun 2004 10:00:00 -0500
+ -- Todd Troxell <ttroxell@debian.org>  Thursday, 10 Jun 2004 04:18:23 -0500
 
 logcheck (1.2.22) unstable; urgency=low
 
@@ -18,7 +18,7 @@ logcheck (1.2.22) unstable; urgency=low
   todd:
   * add MAILTO=root to logcheck.cron.d (Closes: #252597)
 
- -- Todd Troxell <ttroxell@debian.org> Saturday, 05 Jun 2004 14:02:47 -0500 
+ -- Todd Troxell <ttroxell@debian.org>  Saturday, 05 Jun 2004 14:02:47 -0500 
 
 logcheck (1.2.21) unstable; urgency=low
 
