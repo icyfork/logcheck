@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.54 2004/06/07 15:30:25 maks-guest Exp $
+# $Id: logcheck,v 1.55 2004/06/07 15:48:43 maks-guest Exp $
 
 
 # Set the umask
@@ -304,7 +304,7 @@ greplogoutput() {
 		# Remove any  entries already reported
 		for file in $(ls $raise/ | grep -v '^logcheck') ; do
 		    debug "Cleaning logcheck: $file"
-		    if[ -f "$ingore/$file" ]; then
+		    if[ -f "$ignore/$file" ]; then
 	                cleanchecked "$ignore/$file"
 		    fi
 		done
