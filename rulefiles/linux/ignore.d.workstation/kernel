@@ -25,6 +25,13 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: The root node is not cycle master capable; selecting a new root node and resetting\.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Error parsing configrom for node [-:0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: sbp2: Logged into SBP-2 device$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node [:0-9\-]+ Max speed \[S[0-9]+\] - Max payload \[[0-9]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: scsi2 : SCSI emulation for IEEE-1394 SBP-2 Devices$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sr[0-9]+: [^[:space:]]+ drive: [ \/[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Vendor: [^[:space:]]+ +Model: [^[:space:]]+ [^[:space:]]+ +Rev: +[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Type: +[^[:space:]]+ +ANSI SCSI revision: [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi CD-ROM sr[0-9]+ at scsi[0-9], channel [0-9], id [0-9], lun [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scsi.agent\[[0-9]+\]: cdrom at [\./:[:alnum:]-]+$
 # for sun machines
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sunmouse: Successfully adjusted to [0-9]+ baud\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: btaudio: driver version [0-9.]+ loaded \[digital\+analog\]$
