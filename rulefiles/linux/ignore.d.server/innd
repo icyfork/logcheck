@@ -28,17 +28,19 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ timeout$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ group [.[:alnum:]+-]+ [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: Auth strategy '[[:alnum:]]+' does not match client\.  Removing\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ (no_)?match_user [<>_[:alnum:]-]+@[._[:alnum:]-]+ [<>,_,\*,\![:alnum:][:punct:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ (no_)?match_user [<>_[:alnum:]-]+(@[._[:alnum:]-]+)? [<>,_,\*,\![:alnum:][:punct:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ res <[_[:alnum:]-]+>(@[._[:alnum:]-]+)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ time [0-9]+ idle [0-9]+\([0-9]+\) nntpwrite [0-9]+\([0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ time [0-9]+ idle [0-9]+\([0-9]+\) (readart [0-9]+\([0-9]+\) )?nntpwrite [0-9]+\([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ times user [.0-9]+ system [.0-9]+ idle [.0-9]+ elapsed [.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ exit articles [0-9]+ groups [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ artstats get [0-9]+ time [0-9]+ size [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ post ok \<.+@.+\>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ post ok <[[:graph:]]+@[._[:alnum:]-]+>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ \(unknown\) posttrack ok [[:graph:]]+<[[:graph:]]+@[._[:alnum:]-]+>$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ user [[:alnum:][:punct:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ Tracking Disabled \(unknown\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ auth authenticator successful, user [[:alnum:][:punct:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ auth starting authenticator [[:alnum:][:space:][:punct:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ no_access_realm$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cnfsstat\[[0-9]+\]: Class (ARCHIV|SPOOL) for groups matching \"[^[:space:]]+\" Buffer (ARCH|SPOOL)[0-9]+, len: [0-9]+  Mbytes, used: [0-9]+\.[0-9]+ Mbytes \([0-9 ]+\.[0-9]%\) [ 0-9]+ cycles$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: checking site [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: no articles for [^[:space:]]+$
