@@ -3,7 +3,8 @@ logcheck (1.2.26) unstable; urgency=low
   maks:
   * Fix multi-line build-depends lintian warning for source package.
   * Add sudo usage hint a root check. thanks todd
-  * Small rules update dhcp, nagios, postfix, squid. (Closes: #267587)
+  * Small rules updated and added dhcp, nagios, postfix, squid, winbind. 
+    (Closes: #267587, #266432)
 
  --
 
