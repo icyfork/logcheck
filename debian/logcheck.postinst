@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.22 2004/10/28 18:36:58 maks-guest Exp $
+# $Id: logcheck.postinst,v 1.23 2004/11/01 04:29:23 ttroxell Exp $
 
 set -e
 
@@ -36,7 +36,7 @@ case "$1" in
 	   usermod -d /var/lib/logcheck logcheck > /dev/null 2>&1 || true
 	fi
 	# check for logcheck in adm group
-	if ! getent group logcheck > /dev/null; then
+	if ! getent group adm |grep logcheck > /dev/null; then
 	  adduser --quiet logcheck adm || true
 	fi  
 	# Remove old directory
