@@ -7,9 +7,9 @@ logcheck (1.2.27) unstable; urgency=low
   * Rule updates for spamd (Closes: #269318)
   * Add note about avoiding file name confilcts in README.Maintainer
   * Add violations ignore for courier-pop3d-ssl (Closes: #269959)
+  * Add anon-proxy rules (Closes: #269310)
 
   -- 
-
 
 logcheck (1.2.26) unstable; urgency=low
 
