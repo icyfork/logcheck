@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.103 2005/02/01 12:54:43 maks-guest Exp $
+# $Id: logcheck,v 1.104 2005/03/09 02:56:37 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -109,9 +109,20 @@ cleanup() {
 
 # Log debug output to standard error
 debug() {
-    if [ $LOGCHECKDEBUG -eq 1 ]; then
-	echo "D: [$(date +%s)] $1" >&2 
-    fi
+	if [ $LOGCHECKDEBUG -eq 1 ]; then
+		echo "D: [$(date +%s)] $1" >&2 
+	fi
+}
+
+# Add warning
+warn () {
+	message=$1
+	debug "Warning - $message"
+
+	if [ -d $TMPDIR ]; then
+		echo "$message" >> $TMPDIR/warnings \
+		  || error "Could not append to $TMPDIR/warnings."
+	fi
 }
 
 # Mail error message to sysadmin
@@ -650,6 +661,13 @@ else
     debug "Not setting the Intro"
 fi
 
+# Add warnings to report
+if [ -f $TMPDIR/warnings ]; then
+	echo -e "Logcheck Warnings:\n=-=-=-=-=-=-=-=-" >> $TMPDIR/report \
+	  || error "Cannot append warnings to report.  Disk Full?"
+	cat $TMPDIR/warnings >> $TMPDIR/report && echo >> $TMPDIR/report \
+	  || error "Cannot append warnings to report.  Disk full?"
+fi
 
 if [ -f $TMPDIR/errors ]; then
     { 

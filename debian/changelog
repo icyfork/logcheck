@@ -8,6 +8,8 @@ logcheck (1.2.36) unstable; urgency=low
   * Add rules for cups-lpd at level server.
   * Add violations.ignore.d/logcheck-dcc for the nightly dccifd reporting.
   * Add rule ignore.d.server/kernel for printer out of paper.
+  todd:
+  * Add support for warnings in report
 
  --
 
