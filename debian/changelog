@@ -6,7 +6,7 @@ logcheck (1.2.26) unstable; urgency=low
   * Small rules updated and added dhcp, nagios, postfix, squid, winbind. 
     (Closes: #267587, #266432)
 
- --
+ -- Todd Troxell <ttroxell@debian.org>  Friday, 13 Aug 2004 22:54:13 -0500
 
 logcheck (1.2.25) unstable; urgency=low
 
