@@ -1,5 +1,6 @@
 logcheck (1.2.19) unstable; urgency=low
 
+  * Updated pump rules.
   * Updated uptimed rules. (Closes: #216204)
   * Logcheck used empty ignores when greplogoutput was called with 2 arguments.
     Thanks to Mario Holbe for reporting and Paul Cassella for preliminary
