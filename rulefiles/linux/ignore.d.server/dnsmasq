@@ -1,2 +1,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: read /etc/hosts - [[:digit:]]+ addresses$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: reading /etc/resolv.conf$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: using nameserver [.[:digit:]#]+$
