@@ -9,6 +9,7 @@ logcheck (1.2.32) unstable; urgency=low
     only OPTION not mentioned yet :))
   jamie:
   * Add rule for 'stale result' messages from nagios.
+  * Added new rules for messages from USB joystick use. (closes: #282378)
 
  --
 
