@@ -4,7 +4,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: For info, please visit http://www.isc.org/products/DHCP$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?:$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Listening on [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Sending on [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Sending on[[:space:]]+[^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: DHCPDISCOVER on [[:alnum:]]+ to [.0-9]+ port 67 interval [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: DHCP(ACK|OFFER) from [.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: DHCPREQUEST on [[:alnum:]]+ to [\.0-9]+ port 67$
