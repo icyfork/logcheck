@@ -106,6 +106,13 @@ manpage.1: manpage.sgml
         </listitem>
       </varlistentry>
       <varlistentry>
+        <term><option>-H</option>
+        </term>
+        <listitem>
+          <para>Use this hostname string in the logcheck mail.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
         <term><option>-l LOG</option>
         </term>
         <listitem>

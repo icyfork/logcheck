@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.77 2004/09/18 21:39:14 maks-guest Exp $
+# $Id: logcheck,v 1.78 2004/09/18 22:10:13 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -39,7 +39,7 @@ SECURITY=0
 ATTACK=0
 
 # Set the getopts string
-GETOPTS="c:dhl:L:m:opr:RsS:tTuvw"
+GETOPTS="c:dhH:l:L:m:opr:RsS:tTuvw"
 
 # Get the details for the email message
 # Hostname either fully qualified or not.
@@ -415,11 +415,12 @@ logoutput() {
 usage() {
     debug "usage: Printing usage and exiting"
     cat<<EOF
-usage: logcheck [-c CFG] [-d] [-h] [-l LOG] [-L CFG] [-m MAIL] [-o] [-r DIR] 
-                [-s|-p|-w] [-R] [-S DIR] [-t] [-T] [-u]
+usage: logcheck [-c CFG] [-d] [-h] [-H HOST] [-l LOG] [-L CFG] [-m MAIL] [-o] 
+                [-r DIR] [-s|-p|-w] [-R] [-S DIR] [-t] [-T] [-u]
  -c CFG       = overrule default configuration file
  -d           = debug mode
  -h           = print this usage guide and exit
+ -H HOST      = use this hostname for the mail
  -l LOG       = run logfile through logcheck
  -L CFG       = overrule default logfiles list
  -m MAIL      = email the report to recipient
@@ -497,6 +498,10 @@ fi
 # Now check for the other options
 while getopts $GETOPTS opt; do
     case "$opt" in
+    	H)
+	   debug "Setting HOSTNAME to $OPTARG"
+	   HOSTNAME="$OPTARG"
+	   ;;
 	l)
 	    debug "Setting LOGFILE to $OPTARG"
 	    LOGFILE="$OPTARG"

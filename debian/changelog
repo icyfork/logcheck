@@ -6,6 +6,9 @@ logcheck (1.2.28) unstable; urgency=low
   * Small rule update oidentd (Closes: #271286)
   * Exit with meaning full error if logcheck has not the permissions
     to read its offsetfiles.
+  * Allow Hostname for logcheck mail to be set by commandline switch
+    for log hosts. thanks to Joerg Jaspert <joerg@debian.org>
+
 
  -- 
 
