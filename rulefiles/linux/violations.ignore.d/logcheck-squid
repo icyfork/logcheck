@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: sslReadServer: FD [[:digit:]]+: read failure: \([[:digit:]]+\) Connection reset by peer$
