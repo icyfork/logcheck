@@ -49,6 +49,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi CD-ROM sr[0-9]+ at scsi[0-9], channel [0-9], id [0-9], lun [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scsi.agent\[[0-9]+\]: cdrom at [\./:[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: keyboard: Too many NACKs -- noisy kbd cable\?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: keyboard.c: can't emulate rawmode for keycode [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ide-floppy driver [[:alnum:].]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ohci_hcd [.[:digit:]\:]+: wakeup$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb 1-1: new low speed USB device using address [0-9]$
