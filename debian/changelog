@@ -3,7 +3,7 @@ logcheck (1.2.24) unstable; urgency=low
   eevans:
   * Added violations ignore rule for squid (Closes: #257874)
   maks
-  * Added kernel, ntp, postfix rules.
+  * Added dhcpd-client, kernel, ntp, postfix rules.
   * Add lots of postfix rules at level workstation for those,
     who wants to include /var/log/mail.log (Closes: #206495)
   * Generalize "nobody" to "[_[:alnum:]-]+" (Closes: #254681)
