@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.20 2004/08/12 13:17:47 maks-guest Exp $
+# $Id: logcheck.postinst,v 1.21 2004/10/27 17:25:53 maks-guest Exp $
 
 set -e
 
@@ -28,7 +28,12 @@ set -e
 case "$1" in
     configure)
 	# Add logcheck user
-    	if dpkg --compare-versions "$2" eq 1.2.19; then
+	# check for new installation, bad version without home and upgrade
+	if [ "$2" = "" ]; then
+	  adduser --quiet --system --no-create-home --group \
+	      --home /var/lib/logcheck logcheck || true
+	  adduser --quiet logcheck adm || true
+    	elif dpkg --compare-versions "$2" eq 1.2.19; then
 	   usermod -d /var/lib/logcheck logcheck > /dev/null 2>&1 || true
     	elif dpkg --compare-versions "$2" lt 1.2.24; then
 	  adduser --quiet --system --no-create-home --group \
@@ -50,7 +55,7 @@ case "$1" in
         if [ "$2" = "" -a ! -f /etc/logcheck/header.txt ]; then
           cp -p /usr/share/logcheck/header.txt /etc/logcheck
         fi
-	if dpkg --compare-versions "$2" lt 1.2.24; then
+	if [ -d /var/lib/logcheck -a -d /etc/logcheck ]; then
     	  # Fix Permissions
     	  chown -R logcheck:logcheck /var/lib/logcheck  || true
           chgrp -R logcheck /etc/logcheck || true
