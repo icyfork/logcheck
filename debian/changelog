@@ -26,6 +26,7 @@ logcheck (1.2.34) unstable; urgency=low
   * Add rule for daily sysklogd -r restart at level server. (Closes: #290511)
   jamie:
   * Update rules for nagios.
+  * Add postfix rules for anvil in postfix 2.2.
 
  -- Todd Troxell <ttroxell@debian.org>  Sunday, 23 Jan 2005 21:31:00 -0500
 
