@@ -7,6 +7,7 @@ logcheck (1.2.20) unstable; urgency=low
   * Updated pop3d-ssl rules.
   * Updated postfix rules. (Closes: #196258, #190696)
   * Try secure TMPDIR in /tmp if /var/tmp fails. (Closes: #242284)
+  * Added German Translation.
 
 logcheck (1.2.19-1) unstable; urgency=low
 
