@@ -17,7 +17,11 @@ logcheck (1.2.33) unstable; urgency=low
   * Set rule directories setgid to simplify administration. (closes: #286230)
   * Add future package plans to TODO
   * Remove dh_strip and dh_shlibdeps from debian/rules
-  * Set up postinst based post-adduser crontab de-commenter (closes: #284788)
+  * Touch cron.d/logcheck in postinst. (closes: #284788)
+  * Conditionally set permissions in postinst on version <1.2.33 
+    (closes: #287184)
+  * Update dh_installlogcheck, which has already been patched in debhelper.
+    (closes: #287184)
 
  -- 
 
