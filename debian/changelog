@@ -20,6 +20,7 @@ logcheck (1.2.23) unstable; urgency=low
   (Closes: #253998).
   * Add postfix rule for lmtp.
   * Add Rule for cyrus imap/SQUAT annoyance.
+  * Spamd update for unknown message id.
 
  -- 
 
