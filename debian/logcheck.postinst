@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.23 2004/11/01 04:29:23 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.24 2004/12/20 22:47:07 ttroxell Exp $
 
 set -e
 
@@ -58,13 +58,13 @@ case "$1" in
     	  # Fix Permissions
     	  chown -R logcheck:logcheck /var/lib/logcheck  || true
           chgrp -R logcheck /etc/logcheck || true
-          chmod 750 /etc/logcheck/ignore.d.paranoid || true
-          chmod 750 /etc/logcheck/ignore.d.workstation || true
-          chmod 750 /etc/logcheck/ignore.d.server || true
-          chmod 750 /etc/logcheck/cracking.d || true
-          chmod 750 /etc/logcheck/cracking.ignore.d || true
-          chmod 750 /etc/logcheck/violations.d || true
-          chmod 750 /etc/logcheck/violations.ignore.d || true
+          chmod 4750 /etc/logcheck/ignore.d.paranoid || true
+          chmod 4750 /etc/logcheck/ignore.d.workstation || true
+          chmod 4750 /etc/logcheck/ignore.d.server || true
+          chmod 4750 /etc/logcheck/cracking.d || true
+          chmod 4750 /etc/logcheck/cracking.ignore.d || true
+          chmod 4750 /etc/logcheck/violations.d || true
+          chmod 4750 /etc/logcheck/violations.ignore.d || true
     	  chmod -R g+rX /etc/logcheck || true
           # just in case
           chown logcheck /var/lock/logcheck > /dev/null 2>&1 || true
