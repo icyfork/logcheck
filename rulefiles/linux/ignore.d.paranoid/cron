@@ -1,4 +1,4 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ /USR/SBIN/CRON\[[0-9]+\]: \([-_[:alnum:]-]+\) CMD \(.*\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ /USR/SBIN/CRON\[[0-9]+\]: \([_[:alnum:]-]+\) CMD \(.*\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ /usr/sbin/cron\[[0-9]+\]: \(CRON\) STARTUP \(fork ok\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ /usr/sbin/cron\[[0-9]+\]: \([^[:space:]]+\) RELOAD \([^[:space:]]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ /usr/sbin/cron\[[0-9]+\]: \(CRON\) INFO \(pidfile fd = [0-9]+\)$
