@@ -11,6 +11,7 @@ logcheck (1.2.29) unstable; urgency=low
     (closes: #270677)
   * Add violations.ignore.d/su on old logfiles to be removed on sarge upgrade.
   * Minor doc change.
+  * Add rules for kdm/xdm on level workstation.
   todd:
   * Add 1 dovecot rule
 
