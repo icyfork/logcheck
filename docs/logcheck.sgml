@@ -193,6 +193,9 @@ manpage.1: manpage.sgml
   <refsect1>
     <title>AUTHOR</title>
 
+    <para>&dhpackage; is developed by Debian &dhpackage; Team at alioth: 
+    http://alioth.debian.org/projects/logcheck/</para>
+
     <para>This manual page was written by &dhusername;</para>
   </refsect1>
 </refentry>
