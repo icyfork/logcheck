@@ -10,7 +10,7 @@ logcheck (1.2.31) unstable; urgency=low
   todd:
   * Fix segmented rules, thanks rloboda@bojko.krakow.pl
 
- -- 
+ -- Todd Troxell <ttroxell@debian.org>  Tuesday, 09 Nov 2004 03:25:11 -0500
 
 logcheck (1.2.30) unstable; urgency=low
 
