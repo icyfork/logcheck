@@ -11,7 +11,7 @@ logcheck (1.2.32) unstable; urgency=low
   * Have per package NEWS.Debian files, move them below debian/.
     thanks alfie for hint dh_installchangelogs(1) for multiple NEWS.Debian.
     (closes: #281646)
-  * Add dnsmasq rule.
+  * Add and fix hostname match in dnsmasq ruleset. (closes: #283331)
   * Add rules for workstation related to removable media. (closes: #277644)
   * Remove kernel rules related to tainted modules.
   * Fix sudo ignore rule for tty usage.

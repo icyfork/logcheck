@@ -1,5 +1,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: read /etc/hosts - [[:digit:]]+ addresses$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: reading /etc/resolv.conf$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: using nameserver [.[:digit:]#]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: (DHCPDISCOVER|DHCPOFFER|DHCPREQUEST|DHCPACK|DHCPRELEASE|DHCPINFO|BOOTP)[()[:alnum:]]+ [ :[:alnum:].]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: (DHCPDISCOVER|DHCPOFFER|DHCPREQUEST|DHCPACK|DHCPRELEASE|DHCPINFO|BOOTP)\([[:alnum:]]+\) [ :[:alnum:]._-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: ignoring nameserver 127\.0\.0\.1 - local interface$
