@@ -1,5 +1,6 @@
 logcheck (1.2.18) unstable; urgency=low
-
+  * New maintainer (Closes: #244271)
+  * Updated debian/copyright with new upstream information. (Closes: #206022)
   * Updated sudo, oidentd rules.
   * Updated dhclient rules. (Closes: #202718) 
   * Updated ignore.d.server/ssh to match newest ssh logs. (Closes: #242217)
@@ -9,7 +10,9 @@ logcheck (1.2.18) unstable; urgency=low
   * Use standard ISO 8601 separator like "-" for date. (Closes: #226840)
   * Removed reference to old filename restriction. (Closes: #193485)
   * Better wording for -l switch. (Closes: #234383)
-  * added Files section in manpage.
+  * Added Files section in manpage.
+
+ -- Todd Troxell <ttroxell@debian.org>  Friday, 23 Apr 2004 20:04:21 +0000
 
 logcheck (1.2.17) unstable; urgency=low
 

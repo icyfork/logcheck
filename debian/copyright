@@ -1,14 +1,23 @@
-This package is now a native Debian package since the changes are 
-please read the following mails and subsequent threads:
+This package is a native Debian package.  It is currently maintained
+by the Debian Logcheck team consisting of:
+
+	Todd Troxell <ttroxell@debian.org>
+	Maximilian Attems <debian@sternwelten.at>
+	Gerfried Fuchs <alfie@debian.org>
+	Eric Evans <eevans@sym-link.com>
+
+The project is currently hosted on Alioth at:
+http://alioth.debian.org/projects/logcheck/
+
+Please read the following mails and subsequent threads:
 lists.debian.org/debian-devel/2001/debian-devel-200102/msg01235.html
 and
 http://lists.debian.org/debian-devel/2001/debian-devel-200111/msg01573.html
 as well as the 'CHANGES' file.
 
-Upstream Author: Steve Kemp <skx@debian.org> 
-
 Copyright:
 
+ Copyright (C) 2004      Todd Troxell <ttroxell@debian.org>
  Copyright (C) 2003      Steve Kemp <skx@debian.org> 
  Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>
  Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
@@ -41,11 +50,11 @@ Psionic's version developed by Craig Rowland
   |   .-----------------------------------------------------------^
   |   |
   |   |
-  |   .-- 1.2.13  .... 1.2.14
-  |    (current maintainer Steven Kemp, Apr 2003)
-  |
-  |
-  .--- 1.2  - 1.2.1 - 1.2.3
+  |   .-- 1.2.13  .... 1.2.17 ...................... 1.2.18
+  |    (New maintainer Steven Kemp, Apr 2003)   (Current maintainer
+  |                                             Todd Troxell, Apr
+  |                                             2004 - logcheck
+  .--- 1.2  - 1.2.1 - 1.2.3                     team formed.)
       (Doug Hunley, new fork from 
        upstream, June 2003, available at
        http://doug.hunley.homeip.net/tools/)
