@@ -10,16 +10,14 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPOFFER on [.0-9]+ to [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPREQUEST for [.0-9]+ (\([.0-9]+\) |)from [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPACK on [.0-9]+ to [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPINFORM from [.0-9]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPINFORM from [:[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPNAK on [:[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPRELEASE on [.0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPRELEASE of [.0-9]+ from [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+ \((not |)found\)$
 #Added for dhcp 3
-+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPDISCOVER from [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
-+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPOFFER on [.0-9]+ to [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
-+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPREQUEST for [.0-9]+ (\([.0-9]+\) |)from [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
-+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPACK on [.0-9]+ to [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
-+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPINFORM from [.0-9]+ via [[:alnum:]]+$
-+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPACK to [.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPDISCOVER from [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPOFFER on [.0-9]+ to [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPREQUEST for [.0-9]+ (\([.0-9]+\) |)from [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK on [.0-9]+ to [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPINFORM from [.0-9]+ via [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPRELEASE of [.0-9]+ from [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+ \((not |)found\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]+$
