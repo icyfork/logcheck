@@ -41,7 +41,6 @@ if (! -f $logfile) {
 }
 unless ($offsetfile) {
     # offsetfile not given, use .offset/$logfile in the same directory
-    # unless we're in test mode
     $offsetfile = $logfile . '.offset';
 }
 
