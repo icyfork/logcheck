@@ -5,7 +5,9 @@
 
 set -e
 
-adduser --quiet --system --no-create-home --group logcheck || true
+deluser logcheck &>/dev/null || true
+adduser --quiet --system --no-create-home --group --home /var/lib/logcheck \
+	logcheck || true
 adduser --quiet logcheck adm ||true
 
 # summary of how this script can be called:
