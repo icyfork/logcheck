@@ -1,2 +1,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: Cannot open bayes databases /home/[_[:alnum:]-]+/.spamassassin/bayes_\* R/W: lock failed: File exists$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: failed sanity check, [0-9]+ bytes claimed, [0-9-]+ bytes seen$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: processing message <.+> for .+:[0-9]+\.$
