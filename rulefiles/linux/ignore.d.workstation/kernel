@@ -11,8 +11,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]: New link status: AP (In|Out of) Range \([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]: New link status: (Disconnected|Connected) \([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: REJECT input_ext IN=[[:alnum:]]+ OUT= MAC=.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+evdev: already loaded$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+evdev: loaded sucessfully$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]+: Media Link (Off|On [0-9]+mbps (full|half)-duplex)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [0-9A-z]+: module license '[0-9A-z]+' taints kernel\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ISO 9660 Extensions: Microsoft Joliet Level [0-3]$
@@ -40,6 +38,14 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi CD-ROM sr[0-9]+ at scsi[0-9], channel [0-9], id [0-9], lun [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scsi.agent\[[0-9]+\]: cdrom at [\./:[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: keyboard: Too many NACKs -- noisy kbd cable\?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ohci_hcd [.[:digit:]\:]+: wakeup$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb 1-1: new low speed USB device using address [0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbcore: registered new driver [a-z]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: ctrl urb status [-[:digit:]]+ received$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: v[\:[:digit:].]+USB HID core driver$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[:0-9:]+\]:[[:space:]]+usbhid: loaded successfully$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+(evdev|evbug|joydev): (already loaded|loaded successfully|blacklisted)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: input: USB HID v[.[:digit:]]+ Joystick \[[ [:alnum:][:punct:]]+\] on usb-[\:[:digit:].-]+$
 # for sun machines
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sunmouse: Successfully adjusted to [0-9]+ baud\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: btaudio: driver version [0-9.]+ loaded \[digital\+analog\]$
