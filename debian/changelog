@@ -3,6 +3,8 @@ logcheck (1.2.37) unstable; urgency=low
   maks:
   * Fix warning on invalid regex. thanks for patch to Matthew Toseland
     <toad@amphibian.dyndns.org> (Closes: #302689)
+  * Fix routine message when resolvconf is installed. thanks for patch
+    to Thomas Hood <jdthood@aglu.demon.nl> (Closes: #302678)
 
  -- 
 
