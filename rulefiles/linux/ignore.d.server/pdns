@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: On retrieving question of packet from [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}, encountered error: Label claims to be longer than packet$
