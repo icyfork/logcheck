@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.37 2004/05/20 08:39:46 ttroxell Exp $
+# $Id: logcheck,v 1.38 2004/05/20 21:42:54 maks-guest Exp $
 
 
 # Set the umask
@@ -280,14 +280,28 @@ greplogoutput() {
 	    if [ -n "$ignore" -a -f "$ignore/$(basename $grepfile)" ]; then
 		cleanchecked "$ignore/$(basename $grepfile)"
 	    fi
-	    # Now ignore all entries from the logcheck-<package> files
-	    if [ -n "$ignore" -a -f "$ignore/logcheck-$(basename $grepfile)" ]; then
-		cleanchecked "$ignore/logcheck-$(basename $grepfile)"
-	    fi
 	    
 	    # If it's the logcheck file, we do something special
 	    if [ "$(basename $grepfile)" = "logcheck" ]; then 
 
+		# Now ignore all entries from the logcheck-<package> files
+		if [ -n "$ignore" ]; then
+		    debug "Applying Logcheck override files"
+		    for file in $(ls -1 $ignore/) ; do
+		        debug "clean logcheck-<package>: $file"
+		        egrep --text -v -f $ignore/$file $TMPDIR/checked | cat \
+		       	   >> $TMPDIR/checked.1 
+			   || error "Could not output to $TMPDIR/checked.1" 
+		        mv $TMPDIR/checked.1 $TMPDIR/checked \
+			    || error "Could not move $TMPDIR/checked.1 to \
+			$TMPDIR/checked"
+		    done
+		else
+		    debug "No Logcheck override files" 
+		fi
+ 
+ 		debug "Cleaning logcheck"
+ 		# Remove any  entries already reported
 		debug "Cleaning logcheck"
 		# Remove any  entries already reported
 		for file in $(ls $raise/ | grep -v logcheck) ; do
