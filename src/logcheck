@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.92 2004/10/18 08:24:45 maks-guest Exp $
+# $Id: logcheck,v 1.93 2004/10/19 15:11:06 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -188,7 +188,7 @@ cleanrules() {
 	    if [ -f ${dir}/${rulefile} ]; then
 		debug "cleanrules: ${dir}/${rulefile}"
 		# pipe to cat on greps to get usable exit status
-		egrep --text -v '^\s*$|^#' $dir/$rulefile | cat \
+		egrep --text -v '^[[:space:]]s*$|^#' $dir/$rulefile | cat \
 		    >> $cleaned/$rulefile \
 		    || error "Couldn't append to $cleaned/$rulefile. Disk Full?"
 	    fi
@@ -615,7 +615,7 @@ fi
 mkdir $TMPDIR/logoutput \
     || error "Could not mkdir for log files"
 if [ ! $LOGFILE ]; then
-    for file in $(egrep --text -v "(^#|^\s+$)" $LOGFILES_LIST); do
+    for file in $(egrep --text -v "(^#|^[[:space:]]+$)" $LOGFILES_LIST); do
 	logoutput "$file"
     done 
 elif [ $LOGFILE ]; then
