@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.29 2004/05/17 20:38:40 maks-guest Exp $
+# $Id: logcheck,v 1.30 2004/05/18 08:55:05 maks-guest Exp $
 
 
 # Set the umask
@@ -263,7 +263,7 @@ greplogoutput() {
 
     RETURN=1
 
-    for grepfile in $(ls -1 $raise ); do
+    for grepfile in $(ls -1 $raise); do
 	debug "greplogoutput: $grepfile"
 
 	egrep --text -f $raise/$grepfile $TMPDIR/logoutput-sorted \
@@ -276,15 +276,18 @@ greplogoutput() {
 	    # Raise entries that match
 	    if [ -n "$ignore" -a -f "$ignore/$(basename $grepfile)" ]; then
 		cleanchecked "$ignore/$(basename $grepfile)"
+	    elif [ -n "$ignore" -a -f
+	           "$ignore/logcheck-$(basename $grepfile)" ]; then
+		cleanchecked "$ignore/logcheck-$(basename $grepfile)"
 	    fi
 	    
 	    # If it's the logcheck file, we do something special
 	    if [ "$(basename $grepfile)" = "logcheck" ]; then 
 
-		# Now ignore all entries from the locgheck-<package> files
+		# Now ignore all entries from the logcheck-<package> files
 		if [ -n "$ignore" ]; then
 		    debug "Applying Logcheck override files"
-		    for file in $(ls -1 $ignore/ ) ; do
+		    for file in $(ls -1 $ignore/ | grep "logcheck-.*") ; do
 		        debug "clean logcheck-<package>: $file"
 		        egrep --text -v -f $ignore/$file $TMPDIR/checked \
 		       	   >> $TMPDIR/checked.1 

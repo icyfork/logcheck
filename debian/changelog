@@ -3,8 +3,8 @@ logcheck (1.2.21) unstable; urgency=low
   maks:
   * Better description of logtail package.
   * Recommend use of an offsite email address in main conf.
-  * Added and updated bind, cracklib, innd, postfix, nntpcache, kernel,
-    Login.app, proftp, pump, sendmail rulefiles.
+  * Added and updated bind, cracklib, innd, kernel, logcheck, nntpcache,
+    Login.app, proftp, postfix, pump, sendmail rulefiles.
     (Closes: #248816, #213709, #198767, #248409, #249074)
   * Added -v switch (outputs logcheck version).
   * Harden permissions regarding world.
@@ -15,6 +15,8 @@ logcheck (1.2.21) unstable; urgency=low
   * Added and updated oidentd rules. (Closes: #186849)
     thanks to Tobias Wolter <towo+bugs@ydal.de>
   * Ignore normal use of su and sudo. (Closes: #182992, #192192)
+  * Remove empty file innd.
+  * Add switches to logtails default arguments.
   todd:
   * Add debconf to logcheck Depends:
   * Check the return values of all commands.
