@@ -14,9 +14,14 @@ logcheck (1.2.21) unstable; urgency=low
   * Lower all debconf messages priority.
   * Added and updated oidentd rules. (Closes: #186849)
     thanks to Tobias Wolter <towo+bugs@ydal.de>
-  * Don't leave unused tmp dirs in /var/tmp.
 
  -- 
+
+logcheck (1.2.20a) unstable; urgency=low
+  maks:
+  * Fix bug where many extra TMPDIRs were being created and never removed
+
+ -- Todd Troxell <ttroxell@debian.org>  Sunday, 16 May 2004 02:21:00 -0500
 
 logcheck (1.2.20) unstable; urgency=low
 
