@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: spurious 8259A interrupt: IRQ7\.$
