@@ -1,3 +1,11 @@
+logcheck (1.2.31) unstable; urgency=low
+
+  jamie
+  * Fix rules for hylafax, thanks to Ross Boylan. (closes: #270018)
+   
+
+ -- 
+
 logcheck (1.2.30) unstable; urgency=low
 
   maks:
@@ -14,7 +22,7 @@ logcheck (1.2.30) unstable; urgency=low
   * Simplify logic in logcheck-postinst.
   jamie:
   * Add rules for dnsmasq. (closes: #277636)
-  * Add rules for hylafax, thanks to Ross Boylan. (closes: #270018)
+  * Add rules for hylafax.
   * Add violations.ignore.d rules for hylafax.
   alfie:
   * Fix sed error to really remove trailing spaces. (closes: #278337)
