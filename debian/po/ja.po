@@ -94,7 +94,6 @@ msgstr "ローカルな変更は .d ディレクトリに配置する必要があります。"
 #. Type: note
 #. Description
 #: ../logcheck-database.templates:3
-#, fuzzy
 msgid ""
 "From version 1.1.1-8, logcheck supports run-parts controled rule directories:"
 msgstr ""
