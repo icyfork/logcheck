@@ -25,6 +25,10 @@ case "$1" in
 	fi
 	# remove user and group
 	deluser --remove-home logcheck > /dev/null 2>&1 || true
+	# remove header
+	if [ -e /etc/logcheck/header.txt ]; then
+	    rm -f /etc/logcheck/header.txt
+	fi
 	;;
 
     remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
