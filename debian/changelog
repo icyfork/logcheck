@@ -23,6 +23,10 @@ logcheck (1.2.20) unstable; urgency=low
   * Remove noroot template. (Closes: #247360)
   * Remove useless chown to /var/tmp/logcheck* thanks to maks.
   * Remove bash depends.  Bash is marked essential.
+  * Change Maintainer field to Debian logcheck Team,
+    set ttroxell@debian.org as uploader.
+  * Bumped standards to 3.6.1.
+  * Removed Python from Build-Depends-Indep.  Thanks, Alfie.
 
  -- 
 
