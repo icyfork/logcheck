@@ -36,6 +36,10 @@
   get sane logic in greplogoutput() to prevent from duplicate ignore runs.
   logoutput needs too to be sanitized, eventually logtail will to more.
 
+  Add syslog-ng rotation support such that:
+  < weasel> i.e. rotating to syslog.1 and immediately compressing that
+  < weasel> so that we have  log/syslog  (current)  and  log/syslog.1.gz
+
 * Debian Package, post sarge
   Switch dh_movefiles to dh_install in rules, include header.
   Use package.manpages, call dh_installman once in rules. 
