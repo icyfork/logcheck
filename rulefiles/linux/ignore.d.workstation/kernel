@@ -26,7 +26,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage device found at [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Initializing USB Mass Storage driver\.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage support registered\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial support registered for Generic$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial Driver core [.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial support registered for [_[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]:[[:space:]]+[_[:alnum:]-]+: (loaded successfully|already loaded)$
