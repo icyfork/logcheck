@@ -20,7 +20,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.3 2004/04/26 13:00:15 maks-guest Exp $
+# $Id: logcheck,v 1.4 2004/04/26 21:56:17 eevans-guest Exp $
 
 
 # Set the umask
@@ -79,18 +79,24 @@ LOCKFILE="/var/lock/logcheck"
 cleanup() {
     # Carry out the clean up tasks
 
-    debug "cleanup: Killing lockfile-touch - $LOCK"
-    kill $LOCK
+    if [ -n "$LOCK" ]; then
+        debug "cleanup: Killing lockfile-touch - $LOCK"
+	kill $LOCK
+    fi
 
-    debug "cleanup: Removing lockfile: $LOCKFILE.lock"
-    lockfile-remove $LOCKFILE
+    if [ -f "$LOCKFILE.lock" ]; then
+        debug "cleanup: Removing lockfile: $LOCKFILE.lock"
+	lockfile-remove $LOCKFILE
+    fi
 
-    # Remove the tmp directory
-    if [ $NOCLEANUP -eq 0 ];then 
-	debug "Cleanup: Removing - $TMPDIR" 
-	rm -r $TMPDIR
-    else
-	debug "cleanup: Not removing - $TMPDIR"
+    if [ -d "$TMPDIR" ]; then
+        # Remove the tmp directory
+        if [ $NOCLEANUP -eq 0 ];then 
+    	    debug "Cleanup: Removing - $TMPDIR" 
+    	    rm -r $TMPDIR
+        else
+    	    debug "cleanup: Not removing - $TMPDIR"
+        fi
     fi
 }
 
@@ -459,6 +465,7 @@ else
     error "REPORTLEVEL is set to an unknown value" "noclean"
 fi
 
+trap 'cleanup' 0
                                                                                 
 debug "Trying to get lockfile: $LOCKFILE.lock"
 lockfile-create --retry 1 $LOCKFILE > /dev/null 2>&1
@@ -536,7 +543,6 @@ $SORT -m $TMPDIR/logoutput/* | uniq | sed -e 's/ *$//' \
 # if it doesn't we should erase it and exit as our job is done.
 if [ ! -s $TMPDIR/logoutput-sorted -a ! -f $TMPDIR/errors ]; then
     debug "Nothing to report"
-    cleanup
     exit 0
 elif [ ! -s $TMPDIR/logoutput-sorted -a -f $TMPDIR/errors ]; then
     error "$(cat $TMPDIR/errors)"
@@ -622,5 +628,3 @@ elif [ $VIOLATIONS -eq 1 ]; then
 elif [ $SYSTEM -eq 1 ]; then
     sendreport "$EVENTSSUBJECT"
 fi
-
-cleanup
