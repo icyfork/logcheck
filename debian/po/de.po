@@ -142,10 +142,10 @@ msgid ""
 msgstr ""
 "Diese Verzeichnisse können Dateien enthalten, die mit »logcheck-« beginnen "
 "(enthalten allgemeine Warnungs-/Aufhebungs-Muster), »(Paketname)« heißen "
-"(enthalten Paket-spezifische Muster), oder »local« heißen beziehungsweise mit "
-"»local-« beginnen (enthalten vom lokalen Administrator auf einen bestimmten "
-"Rechner zugeschnittene Muster). Logcheck wird dann alle Regeln gesammelt aus "
-"den Dateien im entsprechenden Verzeichnis verwenden."
+"(enthalten Paket-spezifische Muster), oder »local« heißen beziehungsweise "
+"mit »local-« beginnen (enthalten vom lokalen Administrator auf einen "
+"bestimmten Rechner zugeschnittene Muster). Logcheck wird dann alle Regeln "
+"gesammelt aus den Dateien im entsprechenden Verzeichnis verwenden."
 
 #. Type: note
 #. Description
