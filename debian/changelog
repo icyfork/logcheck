@@ -2,7 +2,8 @@ logcheck (1.2.23) unstable; urgency=low
 
   maks
   * Remove logcheck pre-dependency on logtail.
-  * Add imapproxy rules. (Closes: #253861).
+  * Added imapproxy rules. (Closes: #253861).
+  * Updated Inn rnews. (Closes: #253879).
 
  -- 
 
