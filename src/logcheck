@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.24 2004/05/15 08:28:21 ttroxell Exp $
+# $Id: logcheck,v 1.25 2004/05/15 08:41:08 ttroxell Exp $
 
 
 # Set the umask
@@ -129,8 +129,8 @@ error() {
     if [ $MAILOUT -eq 0 ]; then
 	{
 	    cat<<EOF
-Warning:  If you are seeing this message, you log files may not have
-been checked!
+Warning: If you are seeing this message, your log files may not have been
+checked!
 
 Further detail:
 $message
