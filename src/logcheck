@@ -20,7 +20,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.4 2004/04/26 21:56:17 eevans-guest Exp $
+# $Id: logcheck,v 1.5 2004/04/27 05:48:53 maks-guest Exp $
 
 
 # Set the umask
@@ -181,7 +181,7 @@ report() {
     if [ -s $TMPDIR/checked ]; then
 	printheader "$*" >> $TMPDIR/report
 	if [ $SYSLOGSUMMARY -eq 1 ] && [ -x $SYSLOG_SUMMARY ]; then
-	    debug "report: runnuing syslog-summary - $*"
+	    debug "report: running syslog-summary - $*"
 	    $SYSLOG_SUMMARY $TMPDIR/checked | \
 		egrep -v "^Summarizing " >> $TMPDIR/report
 	else
@@ -342,7 +342,7 @@ usage: logcheck [-c CFG] [-d] [-h] [-l LOG] [-o] [-r DIR] [-s|-p|-w] [-S] [-t]
  -c CFG = overrule default configuration file
  -d     = debug mode
  -h     = print this usage guide and exit
- -l LOG = overrule default logfile
+ -l LOG = overrule default logfiles list
  -o     = stdout mode, not sending mail
  -p     = runlevel "paranoid"
  -r DIR = overrule default rules directory
