@@ -12,6 +12,8 @@ logcheck (1.2.21) unstable; urgency=low
     thanks to Peter Palfrader <weasel@debian.org>.
   * New Config option for subject tags [logcheck].
   * Lower all debconf messages priority.
+  * Added and updated oidentd rules. (Closes: #186849)
+    thanks to Tobias Wolter <towo+bugs@ydal.de>
 
  -- 
 
