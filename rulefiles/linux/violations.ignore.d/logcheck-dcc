@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccifd\[[0-9]+\]: [.0-9]+ rejected messages to [0-9]+ targets and discarded messages to [0-9]+ targets among [0-9]+ total since [/0-9]{8} [:0-9]{8}$

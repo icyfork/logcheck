@@ -6,6 +6,7 @@ logcheck (1.2.36) unstable; urgency=low
   maks:
   * Add harmless pdns rule at server level.
   * Add rules for cups-lpd at level server.
+  * Add violations.ignore.d/logcheck-dcc for the nightly dccifd reporting.
 
  --
 
