@@ -67,3 +67,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: : SPF pass: smtp_comment=.*: [.[:alnum:]]+ MX [.[:alnum:]]+ A [0-9.]+, header_comment=[.[:alnum:]+: domain of [%[:punct:][:alnum:]]+@[.[:alnum:]]+ designates [.0-9]+ as permitted sender$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/anvil\[[0-9]+\]: statistics: max connection (count|rate) [/[:digit:]s]+ for \(smtp:[.[:digit:]]+\) at \w{3} [ :0-9]{11}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/anvil\[[0-9]+\]: statistics: max cache size [[:digit:]]+ at \w{3} [ :0-9]{11}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: [.0-9]+: hostname [^[:space:]]+ verification failed: Name or service not known$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: certificate verification failed for unknown: num=19:self signed certificate in certificate chain$
