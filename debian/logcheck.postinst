@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.9 2004/05/07 07:57:36 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.10 2004/05/09 23:57:05 ttroxell Exp $
 
 set -e
 
@@ -51,7 +51,7 @@ case "$1" in
         chmod 750 /etc/logcheck/cracking.ignore.d || true
         chmod 750 /etc/logcheck/violations.d || true
         chmod 750 /etc/logcheck/violations.ignore.d || true
-	chmod -R g+rx /etc/logcheck || true
+	chmod -R g+rX /etc/logcheck || true
         # just in case
         chown logcheck /var/lock/logcheck &> /dev/null || true
 

@@ -27,6 +27,8 @@ logcheck (1.2.20) unstable; urgency=low
     set ttroxell@debian.org as uploader.
   * Bumped standards to 3.6.1.
   * Removed Python from Build-Depends-Indep.  Thanks, Alfie.
+  * Changed chmod to /etc/logcheck in postinst to use X flag instead of x.
+    Thanks, Martin Waitz
 
  -- 
 
