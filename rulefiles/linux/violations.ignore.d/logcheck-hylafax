@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: NOTIFY: bin/notify \"doneq/q[[:digit:]]+\" \"failed\" \"[:0-9]{4,5}\"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: JOB [0-9]+ \(failed dest \+[[:digit:]]+ pri [0-9]+ tts [:0-9]{4,5} killtime [:0-9]{7,8}\): (DEAD|DELETE|SEND DONE: [:0-9]{4,5})$
+
