@@ -10,7 +10,7 @@ logcheck (1.2.37) unstable; urgency=low
   * Add nagios rule for UNREACHABLE messages. thanks for patch to
     Geoff Crompton <geoff.crompton@strategicdata.com.au> (Closes: #298495)
 
- -- 
+ -- Todd Troxell <ttroxell@debian.org>  Saturday, 2 Apr 2005 17:04:00 -0500
 
 logcheck (1.2.36) unstable; urgency=low
 
