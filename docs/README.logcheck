@@ -1,0 +1,69 @@
+######################################################################
+SYNOPSIS
+--------
+Logcheck compares recent log entries with a series of sets of egrep
+pattern-matching rules that flag them as urgent or filter them out
+as routine, and mails the results to the administrator. 
+======================================================================
+SCHEDULING
+----------
+By default logcheck runs every hour just off the hour, and after
+every reboot.  If this produces too many mailings then you can
+reduce the frequency, but it's often better to tune the filtering
+rules instead (see below on REPORTLEVELS).  On the other hand if you
+need to be sure of spotting security incidents while they're
+happening then the shorter the interval the better, as long as runs
+don't start overlapping. 
+======================================================================
+LOG ENTRIES
+-----------
+These are taken from a specified set of logfiles (usually syslog and
+auth.log); a special Perl utility named "logtail" is used which
+"bookmarks" its place in the logs, so that events aren't reported
+twice in successive logcheck runs.  The offset records are stored as
+(eg) "/var/lib/logcheck/offset.var.log.syslog"; lines to be
+considered by logcheck are copied into tempfiles in the working
+directory "/var/tmp/logcheck".  See the corresponding README for
+logtail for further notes on complications such as log-rotation.
+======================================================================
+RULES DIRECTORIES
+-----------------
+Installing "logcheck" should also have pulled in the package
+"logcheck-database", which provides pattern-matching "rules" files;
+see the corresponding README for that package for details of how
+they are organised. 
+======================================================================
+REPORTLEVEL
+-----------
+The config-file setting new users are most likely to need to modify
+is that of REPORTLEVEL.  This is a three-way division between high,
+medium and low "security ratings", not to be confused with the three
+filtering layers used by the logcheck-database directories.
+Reportlevels only affect the handling of the leftover log-messages
+of the final "System Events" layer, functioning rather like
+verbosity settings: 
+
+"paranoid" is "high verbosity" - meaning that only the minimal set
+	of filters in ignore.d.paranoid should be applied.  This is
+	appropriate for high-security machines such as firewalls,
+	which should anyway be running as few services as possible.
+
+"server" means that logcheck should then also go on to apply the
+	more selective set of filters in ignore.d.server; as the
+	name implies, this is intended to cut out the routine
+	messages such as "so-and-so logged in".
+
+"workstation" means that as well as applying the ignore.d.paranoid
+	and ignore.d.server filters, logcheck should run through
+	ignore.d.workstation.  This filters a great many everyday
+	log messages (such as anything matching "kernel:"), and is
+	only appropriate for relatively sheltered, non-critical
+	machines.
+
+Don't set the REPORTLEVEL to "paranoid" if the result is more output
+than you can handle - messages that aren't going to be read might as
+well have stayed in "/var/log/*".  However, as long as you're
+prepared to tune logcheck's output with local filters, a verbose
+REPORTLEVEL can be a valuable debugging aid even on an unnetworked
+home PC; see the logcheck-database README section on WRITING RULES.
+######################################################################

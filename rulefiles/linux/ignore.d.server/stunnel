@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ stunnel\[[0-9]+\]: SSL_read .*: Connection reset by peer$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ stunnel\[[0-9]+\]: .* connected from .*$

@@ -1,0 +1,70 @@
+.TH LOGTAIL 8 "Sun,  7 Apr 2002" "Debian" "logtail manual"
+.SH NAME
+logtail \- print log file lines that have not been read
+.SH SYNOPSIS
+.B logtail
+.I logfile
+.RI [ offsetfile ]
+.SH DESCRIPTION
+.B logtail
+reads a specified file (usually a log file) and writes
+to the standard output that part of it
+which has not been read by previous runs of
+.BR logtail .
+It prints the appropriate number of bytes from the end of
+.IR logfile ,
+assuming that all changes that are made to it are to add new
+characters to it. 
+.P
+.I logfile
+must be a plain file.  A symlink is not allowed.
+.P
+.B logtail
+stores the information about how much of it has already been read
+in a separate file called
+.IR offsetfile .
+.I offsetfile
+can be omitted.  If omitted, the file named
+.I logfile.offset
+in the same directory which contains
+.I logfile
+is used by default.
+.P
+If
+.I offsetfile
+is not empty, the inode of
+.I logfile
+is checked.  If the inode is changed,
+.B logtail
+simply prints the entire file.
+If the inode is not changed but
+.I logfile
+is shorter than it was at the last run of
+.BR logtail ,
+it writes a warning message to the standard output.
+.SH RETURN VALUES
+.IP 0
+successful
+.IP 65
+cannot get the size of
+.IR logfile ,
+or cannot set the permission of
+.I offsetfile
+to 0600
+.IP 66
+.I logfile
+does not exist, is not a plain file, or is not readable
+.IP 73
+cannot write
+.I offsetfile
+.SH AUTHOR
+The original
+.B logtail
+was written in C by Craig H. Rowland <crowland@psionic.com>.
+This version of
+.B logtail
+is a Perl reimplementation by Paul Slootman <paul@debian.org>.
+.P
+This manual was written by Oohara Yuuma <oohara@libra.interq.or.jp>.
+.SH SEE ALSO
+.BR logcheck (8)

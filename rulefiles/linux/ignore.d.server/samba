@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[[:digit:]]+: connect from$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[[:digit:]]+: .* find_.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+: connect from$

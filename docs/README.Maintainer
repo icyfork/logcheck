@@ -1,0 +1,50 @@
+Debian Maintainer Information for logcheck
+------------------------------------------
+
+Packages are encouraged to install their own logcheck rulefiles,
+because as the package maintainer you will always know best which
+messages can be ignored and which are serious violations.
+
+For this to work correctly, you can install in the following
+directories files named the same as the package itself, since the
+name of the file that generated cracking and violations messages
+will be included in the mail message and therefore should give a
+hint from which package those messages are caused. The possible
+files that a package can include are
+
+ - /etc/logcheck/cracking.d/<packagename>
+ - /etc/logcheck/violations.d/<packagename>
+ - /etc/logcheck/violations.ignore.d/<packagename>
+ - /etc/logcheck/ignore.d.paranoid/<packagename>
+ - /etc/logcheck/ignore.d.server/<packagename>
+ - /etc/logcheck/ignore.d.workstation/<packagename>
+
+As the higher level ignore.d directories include the lower levels
+(i.e. server = server + paranoid) you should try to split your 
+rulefile between the different ignore.d directories.
+
+If during the normal operation of your package it produces syslog
+messages that are included by /etc/logcheck/violations.d/logcheck
+you can also include the following rulefile 
+
+ - /etc/logcheck/violations.ignore.d/logcheck-<packagename>
+
+so that they will be ignored.
+
+Packages should not install symlinks between the ignore.d directories
+but install separate files into each level; note that it is no longer
+necessary anyway for rules to be repeated in each ignore.d.*
+directory.  We are now using run-parts (see run-parts(8) for more
+details) directly for listing the rulefiles, and this will ignore
+symlinks. If your contains .'s you should replace them with _'s so
+that the file will be included.
+
+The following directory is for local admin use only and packages
+should not install any files in this directory.
+
+ - /etc/logcheck/cracking.ignore.d/
+
+Also the local admin has to enable this support in logcheck.conf for
+any files to be parsed.
+
+-- Jon Middleton <jjm@debian.org>

@@ -1,0 +1,26 @@
+logcheck for Debian
+-------------------
+
+As of version 1.1.9.1 the Logcheck scripts has had a major overhaul by
+myself.  This extends the options in the config file that Rene
+Mayrhofer introduced in version 1.1.1-7.
+
+The major changes between 1.1.9.1 and 1.1.1-13.5 include the following
+ - Comments are now allowed in rulefiles
+ - Subdirectories in the rulefile directories are ignored
+ - Security violation mails now have a different subject
+ - There is now support for cracking.ignore (for local use only).
+   This needs to be enabled in the config file
+ - Lines logged in one section will not appear in any others
+ - Standard rulefiles are now stored in the .d directories
+ - We do not support symlinks in the .d directories any more
+ - Shortened report subjects (can be changed in the config file)
+ - Logcheck no longer installs any symlinks under /etc/logcheck
+ - Package-specific rulefiles in violations.ignore.d only filter
+   alarms raised by the corresponding violations.d entry
+ - Package-specific Security Violations now get separate sections
+
+I have made this a Debian native package now, due to the vast
+difference between upstream's 1.1.1 and Debian's version.
+
+-- Jon Middleton <jjm@debian.org>

@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ crontab\[[0-9]+\]: \([[:alnum:]-]+\) (BEGIN|END) EDIT \([[:alnum:]-]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ crontab\[[0-9]+\]: \([[:alnum:]-]+\) REPLACE \([[:alnum:]-]+\)$

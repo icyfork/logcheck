@@ -1,0 +1,91 @@
+#!/usr/bin/perl
+
+# Copyright (C) 2003 Jonathan Middleton <jjm@ixtab.org.uk
+# Copyright (C) 2001 Paul Slootman <paul@debian.org>
+
+# This file is part of Logcheck.
+
+# Logcheck is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+
+# Logcheck is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with Logcheck; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+my ($logfile, $offsetfile) = @ARGV;
+if (! -f $logfile) {
+    print "File $logfile cannot be read.\n";
+    exit 66;
+}
+unless ($offsetfile) {
+    # offsetfile not given, use .offset/$logfile in the same directory
+    $offsetfile = $logfile . '.offset';
+}
+
+unless (open(LOGFILE, $logfile)) {
+    print "File $logfile cannot be read.\n";
+    exit 66;
+}
+
+my ($inode, $offset) = (0, 0);
+
+if (open(OFFSET, $offsetfile)) {
+    $_ = <OFFSET>;
+    unless (! defined $_) {
+	chomp $_;
+	$inode = $_;
+	$_ = <OFFSET>;
+	unless (! defined $_) {
+	    chomp $_;
+	    $offset = $_;
+	}
+    }
+}
+
+my ($ino, $size);
+unless ((undef,$ino,undef,undef,undef,undef,undef,$size) = stat $logfile) {
+    print "Cannot get $logfile file size.\n", $logfile;
+    exit 65;
+}
+
+if ($inode == $ino) {
+    exit 0 if $offset == $size; # short cut
+    if ($offset > $size) {
+        $offset = 0;
+        print "***************\n";
+        print "*** WARNING ***: Log file $logfile is smaller than last time checked!\n";
+        print "*************** This could indicate tampering.\n";
+    }
+}
+if ($inode != $ino || $offset > $size) {
+    $offset = 0;
+}
+
+seek(LOGFILE, $offset, 0);
+
+while (<LOGFILE>) {
+    print $_;
+}
+
+$size = tell LOGFILE;
+close LOGFILE;
+
+unless (open(OFFSET, ">$offsetfile")) {
+    print "File $offsetfile cannot be created. Check your permissions.\n";
+    exit 73;
+}
+unless (chmod 0600, $offsetfile) {
+    print "Cannot set permissions on file $offsetfile\n";
+    exit 65;
+}
+print OFFSET "$ino\n$size\n";
+close OFFSET;
+
+exit 0;

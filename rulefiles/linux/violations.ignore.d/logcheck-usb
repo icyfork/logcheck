@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb-uhci: interrupt, status [0-9], frame # [0-9]+

@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: ns_forw: sendto\(\[[\.0-9]+\]\.[0-9]+\): Network is unreachable$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: deleting interface \[[\.0-9]+\]\.[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: listening on \[[\.0-9]+\]\.[0-9]+ \([^[:space:]+]\)$

@@ -1,0 +1,197 @@
+<!doctype refentry PUBLIC "-//OASIS//DTD DocBook V4.1//EN" [
+
+<!-- Process this file with docbook-to-man to generate an nroff manual
+     page: `docbook-to-man manpage.sgml > manpage.1'.  You may view
+     the manual page with: `docbook-to-man manpage.sgml | nroff -man |
+     less'.  A typical entry in a Makefile or Makefile.am is:
+
+manpage.1: manpage.sgml
+	docbook-to-man $< > $@
+
+    
+	The docbook-to-man binary is found in the docbook-to-man package.
+	Please remember that if you create the nroff version in one of the
+	debian/rules file targets (such as build), you will need to include
+	docbook-to-man in your Build-Depends control field.
+
+  -->
+
+  <!-- Fill in your name for FIRSTNAME and SURNAME. -->
+  <!ENTITY dhfirstname "<firstname>Jon</firstname>">
+  <!ENTITY dhsurname   "<surname>Middleton</surname>">
+  <!-- Please adjust the date whenever revising the manpage. -->
+  <!ENTITY dhdate      "<date>January 06, 2003</date>">
+  <!-- SECTION should be 1-8, maybe w/ subsection other parameters are
+       allowed: see man(7), man(1). -->
+  <!ENTITY dhsection   "<manvolnum>8</manvolnum>">
+  <!ENTITY dhemail     "<email>jjm@debian.org</email>">
+  <!ENTITY dhusername  "Jon Middleton">
+  <!ENTITY dhucpackage "<refentrytitle>Logcheck</refentrytitle>">
+  <!ENTITY dhpackage   "logcheck">
+
+  <!ENTITY debian      "<productname>Debian</productname>">
+  <!ENTITY gnu         "<acronym>GNU</acronym>">
+]>
+
+<refentry>
+  <refentryinfo>
+    <address>
+      &dhemail;
+    </address>
+    <author>
+      &dhfirstname;
+      &dhsurname;
+    </author>
+    <copyright>
+      <year>2002</year>
+      <holder>&dhusername;</holder>
+    </copyright>
+    &dhdate;
+  </refentryinfo>
+  <refmeta>
+    &dhucpackage;
+
+    &dhsection;
+  </refmeta>
+  <refnamediv>
+    <refname>&dhpackage;</refname>
+
+    <refpurpose>program to scan system logs for interesting lines</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <cmdsynopsis>
+      <command>&dhpackage;</command>
+
+      <arg><option>OPTIONS</option></arg>
+
+    </cmdsynopsis>
+  </refsynopsisdiv>
+  <refsect1>
+    <title>DESCRIPTION</title>
+
+    <para>This manual page documents briefly the
+      <command>logcheck</command> command.</para>
+
+    <para><command>&dhpackage;</command> is a program that scan system
+    logs and mails a report.</para>
+
+  </refsect1>
+  <refsect1>
+    <title>OPTIONS</title>
+
+    <para>These programs follow the usual GNU command line syntax. A
+      summary of options is included below.</para>
+
+    <variablelist>
+      <varlistentry>
+        <term><option>-c CFG</option>
+        </term>
+        <listitem>
+          <para>Overrule default configuration file.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-d</option>
+        </term>
+        <listitem>
+          <para>debug mode.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-h</option>
+        </term>
+        <listitem>
+          <para>Show usage information.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-l LOG</option>
+        </term>
+        <listitem>
+          <para>Overrule default logfile</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-o</option>
+        </term>
+        <listitem>
+          <para>STDOUT mode, not sending mail</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-p</option>
+        </term>
+        <listitem>
+          <para>Set the report level to "paranoid"</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-r DIR</option>
+        </term>
+        <listitem>
+          <para>Overrule default rules directory</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-R</option>
+        </term>
+        <listitem>
+          <para>Adds "Reboot:" to the email subject line</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-s</option>
+        </term>
+        <listitem>
+          <para>Set the report level to "server"</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-S DIR</option>
+        </term>
+        <listitem>
+          <para>Overrule default state directory</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-t</option>
+        </term>
+        <listitem>
+          <para>Do not remove the TMPDIR</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-w</option>
+        </term>
+        <listitem>
+          <para>Set the report level to "workstation"</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsect1>
+
+  <refsect1>
+    <title>AUTHOR</title>
+
+    <para>This manual page was written by &dhusername;</para>
+  </refsect1>
+</refentry>
+
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-omittag:t
+sgml-shorttag:t
+sgml-minimize-attributes:nil
+sgml-always-quote-attributes:t
+sgml-indent-step:2
+sgml-indent-data:t
+sgml-parent-document:nil
+sgml-default-dtd-file:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->
+
+

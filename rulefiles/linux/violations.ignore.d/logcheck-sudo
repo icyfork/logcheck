@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo: [ \t]+ [[:alnum:]]+ : TTY=pts/[0-9]+ ; PWD=[^ ]+ ; USER=[^ ]+ ; COMMAND=[^ ]+$

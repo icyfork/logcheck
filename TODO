@@ -1,0 +1,35 @@
+* Extend dh_installlogcheck
+
+  Check for invalid expressions at install time.
+
+  Detects if it is working against logcheck in sid or woody
+    1. For logcheck in sid, just output the files to their proper levels
+
+    1. For logcheck in woody, strip out comments and combine the levels
+       so as to emulate what logcheck in sid does with them
+
+* Re-write regression test suite
+
+   Use PyTest.
+   Expand the tests.
+
+* Overhaul Section titles
+
+   "Security Violations" is not very good change to "Notable Events"
+   or "Security Events" may be ?
+
+   Rename "Attack Alerts" to "Security Violations" ?
+
+   Rename some of the .d directories.
+
+* Re-write logtail
+
+   Needs to handle rotated files it self
+   Use a BDB (?) database for storing file offsets
+   Have roll back support
+   Store full path to the log file (unmodified)
+
+
+* Misc
+
+   Remove logcheck pre-depends for logtail

@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ssh\(pam_[[:alnum:]]+\)\[[0-9]+\]: session opened for user [[:alnum:]-]+ by \(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ssh\(pam_[[:alnum:]]+\)\[[0-9]+\]: session closed for user [[:alnum:]-]+$

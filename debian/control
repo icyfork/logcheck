@@ -1,0 +1,42 @@
+Source: logcheck
+Section: admin
+Priority: optional
+Maintainer: Steve Kemp <skx@debian.org>
+Standards-Version: 3.5.9.0
+Build-Depends-Indep: debhelper (>= 4), python, docbook-to-man, 
+ debianutils (>= 1.16.9)
+
+Package: logcheck
+Architecture: all
+Depends: exim4 | mail-transport-agent, cron (>=3.0pl1-68), sysklogd | system-log-daemon, mailx, logtail (= ${Source-Version}), logcheck-database (= ${Source-Version}), debianutils (>= 1.16.9), lockfile-progs, ${misc:Depends} 
+Pre-Depends: logtail (>= 1.1.9.1)
+Suggests: syslog-summary
+Description: Mails anomalies in the system logfiles to the administrator
+ Logcheck was part of the Abacus Project of security tools, but this
+ version has been rewritten. 
+ .
+ Logcheck helps spot problems and security violations in your logfiles
+ automatically and will send the results to you in e-mail.
+
+Package: logcheck-database
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: logcheck (<= 1.1.1-9)
+Description: A database of system log rules for the use of log checkers
+ This database is part of the Logcheck package, but might be used by others.
+ It brings a database of regular expressions for matching system log entries
+ after various criteria.
+
+Package: logtail
+Architecture: all
+Replaces: logcheck (<= 1.1.1-9)
+Description: Returns parts of logfiles that have not already been returned
+ This program will read in a standard text file and create an
+ offset marker when it reads the end. The offset marker is read
+ the next time logtail is run and the text file pointer is moved
+ to the offset location. This allows logtail to read in the next
+ lines of data following the marker. This is good for marking log
+ files for automatic log file checkers to monitor system events.
+ .
+ This program is mainly used by logcheck, because it returns only
+ parts of the system logfiles that have not already been checked.

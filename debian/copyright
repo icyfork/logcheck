@@ -1,0 +1,51 @@
+This package is now a native Debian package since the changes are 
+please read the following mails and subsequent threads:
+lists.debian.org/debian-devel/2001/debian-devel-200102/msg01235.html
+and
+http://lists.debian.org/debian-devel/2001/debian-devel-200111/msg01573.html
+as well as the 'CHANGES' file.
+
+Upstream Author: Steve Kemp <skx@debian.org> 
+
+Copyright:
+
+ Copyright (C) 2003      Steve Kemp <skx@debian.org> 
+ Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>
+ Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
+ Copyright (C) 1996-1997 Craig H. Rowland <crowland@psionic.com>
+
+This software is published under the terms of the GNU general public license.
+On Debian systems, a copy of the license can normally be found under 
+/usr/share/common-licenses/GPL.
+
+
+Notes on forks:
+---------------
+
+Notice that the freshmeat site (at freshmeat.net/projects/logcheck)
+points to a new version which is not currently related to Debian's logcheck.
+
+In order to clarify the currently available branches forked of the original
+upstream version please see the following graph:
+
+Psionic's version developed by Craig Rowland 
+1.1.1 (last release june 1997, stalled)
+  |
+  |--- 1.1.1-1 - ...... - 1.1.1-13.5      -  1.1.9.0  .... 1.2.12-.
+  |   (first Debian       (last version of  (New maintainer       |
+  |   package release,    Debian package,   converted to native   |
+  |   Rene Mayrhofer,     Rene Mayrhofer    Debian package        |
+  |   may 1999)           june 2002)          Jon Middleton       |
+  |                                           june 2002)          |
+  |                                                               |
+  |   .-----------------------------------------------------------^
+  |   |
+  |   |
+  |   .-- 1.2.13  .... 1.2.14
+  |    (current maintainer Steven Kemp, Apr 2003)
+  |
+  |
+  .--- 1.2  - 1.2.1 - 1.2.3
+      (Doug Hunley, new fork from 
+       upstream, June 2003, available at
+       http://doug.hunley.homeip.net/tools/)

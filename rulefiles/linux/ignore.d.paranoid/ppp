@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: (sent|rcvd) \[LCP EchoReq id=[[:alnum:]]+ magic=[ [:alnum:]]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: (sent|rcvd) \[LCP EchoRep id=[[:alnum:]]+ magic=[ [:alnum:]]+\]$

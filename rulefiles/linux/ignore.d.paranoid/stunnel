@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ stunnel\[[0-9]+\]: Connection (closed|reset): [0-9]+ bytes sent to SSL, [0-9]+ bytes sent to socket$

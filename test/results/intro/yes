@@ -1,0 +1,9 @@
+This email is sent by logcheck. If you wish to no-longer receive it,
+you can either deinstall the logcheck package or modify its
+configuration file (./conf/intro-yes).
+
+System Events
+=-=-=-=-=-=-=
+Dec 27 15:44:33 chac kernel: Uniform CD-ROM driver Revision: 3.12
+
+  This report was produced by logcheck version 1.2.14

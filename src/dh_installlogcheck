@@ -1,0 +1,59 @@
+#!/usr/bin/perl -w
+
+=head1 NAME
+
+dh_installlogcheck - install logcheck rulefiles into etc/logcheck/.*
+
+=cut
+
+use strict;
+use Debian::Debhelper::Dh_Lib;
+
+=head1 SYNOPSIS
+
+B<dh_installlogcheck> [S<B<debhelper options>>]
+
+=head1 DESCRIPTION
+
+dh_installlocgheck is a debhelper program that is responsible for
+installing logcheck rulefiles into etc/logcheck/.* in package build
+directories. The files debian/package.logcheck.cracking.d,
+debian/package.logcheck.violations.d,
+debian/package.logcheck.violations.ignore.d,
+debian/package.logcheck.ignore.d.workstation,
+debian/package.logcheck.ignore.d.server and
+debian/package.logcheck.ignore.d.paranoid are installed.
+
+=cut
+
+init();
+
+foreach my $package (@{$dh{DOPACKAGES}}) {
+    my $tmp=tmpdir($package);
+
+    foreach my $type (qw{ignore.d.workstation ignore.d.server
+			     ignore.d.paranoid cracking.d
+			     violations.d violations.ignore.d}) {
+	my $logcheck=pkgfile($package,"logcheck.$type");
+	if ($logcheck) {
+	    if (! -d "$tmp/etc/logcheck/$type.d") {
+		doit("install","-m",700,"-o",0,"-g",0,"-d","$tmp/etc/logcheck/$type");
+	    }
+	    doit("install","-m",644,$logcheck,"$tmp/etc/logcheck/$type/$package");
+	}
+    }
+}
+
+=head1 SEE ALSO
+
+L<debhelper(7)>
+
+This program is a part of debhelper.
+    
+=head1 AUTHOR
+
+Jon Middleton <jjm@debian.org>
+
+=cut
+
+

@@ -1,0 +1,67 @@
+#!/usr/bin/make -f
+# Made with the aid of dh_make, by Craig Small
+# Sample debian/rules that uses debhelper. GNU copyright 1997 by Joey Hess.
+# Some lines taken from debmake, by Cristoph Lameter.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+build: build-stamp
+build-stamp:
+	dh_testdir
+
+	/usr/bin/docbook-to-man docs/logcheck.sgml > \
+		debian/logcheck.8
+
+	make check
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	-rm -f build-stamp install-stamp
+
+	-$(MAKE) clean DESTDIR=$(CURDIR)/debian/tmp
+
+
+
+	dh_clean
+
+install: install-stamp
+install-stamp: build-stamp
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs
+
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+	touch install-stamp
+
+
+# Build architecture-independent files here.
+binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installdocs
+	dh_movefiles
+	dh_install debian/header.txt usr/share/logcheck
+	dh_installcron
+	dh_installman -p logtail debian/logtail.8
+	dh_installman -p logcheck debian/logcheck.8
+	dh_installchangelogs
+	dh_installdebconf
+	dh_strip
+	dh_compress
+	dh_fixperms --exclude etc/logcheck
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+# Build architecture-dependent files here.
+binary-arch: build install
+# We have nothing to do by default.
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary

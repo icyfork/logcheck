@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ uptimed: moving up to position [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ uptimed: milestone: [0-9]+$

@@ -1,0 +1,5 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: CSLIP: code copyright$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PPP: version$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PPP generic driver version [0-9.]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PPP line discipline registered$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: registered device ppp[0-9]+$

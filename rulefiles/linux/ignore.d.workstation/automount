@@ -1,0 +1,10 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: attempting to mount entry$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: lookup\(file\):$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: expanded entry:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: parse\(sun\):$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: do_mount$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\((nfs|generic)\): calling (mkdir|mount)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\(nfs\): [[:alnum:]]+ is local, symlinking$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\((nfs|generic)\): mounted$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: running expiration on path$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: expired$

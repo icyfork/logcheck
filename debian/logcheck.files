@@ -1,0 +1,4 @@
+usr/sbin/logcheck
+var/lib/logcheck/
+etc/logcheck/logcheck.logfiles
+etc/logcheck/logcheck.conf

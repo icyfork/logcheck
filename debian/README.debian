@@ -1,0 +1,24 @@
+logcheck for Debian
+-------------------
+
+Configuration settings for logcheck are set in the file
+/etc/logcheck/logcheck.conf. To change the email address you should
+change the line:
+	SENDMAILTO="root"
+to:
+	SENDMAILTO="emailaddress@some.domain.tld"
+
+The reportlevel (that is, the degree of filtering applied to "routine"
+system events) can be reduced from the default by changing the line:
+	REPORTLEVEL="server"
+to:
+	REPORTLEVEL="workstation"
+or the more secure:
+	REPORTLEVEL="paranoid"
+
+There are a number of other options which are documented in
+/etc/logcheck/logcheck.conf itself.
+
+The documentation is being updated as time allows.
+
+-- Jon Middleton <jjm@debian.org>

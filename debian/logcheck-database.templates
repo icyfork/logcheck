@@ -1,0 +1,42 @@
+Template: logcheck-database/rules-directories-note
+Type: note
+Description: Local modifications should be put into .d directories
+ From version 1.1.1-8, logcheck supports run-parts controled rule
+ directories
+ .
+  - /etc/logcheck/cracking.d
+  - /etc/logcheck/cracking.ignore.d [for local use only ]
+  - /etc/logcheck/violations.d
+  - /etc/logcheck/violations.ignore.d
+  - /etc/logcheck/ignore.d.workstation
+  - /etc/logcheck/ignore.d.server
+  - /etc/logcheck/ignore.d.paranoid
+ .
+ The ignore.d.{workstation,server,paranoid} directory to be used is set by the
+ REPORTLEVEL option in the file "/etc/logcheck/logcheck.conf".
+ .
+ These directories may contain files named "logcheck" (containing minimal
+ generic alert/override patterns), "(packagename)" (containing patterns
+ specific to that one package) or "local" (created by the local administrator
+ to contain patterns tailored for a particular site).  Logcheck will then use
+ rules collected from all the files found in the appropriate directories.
+ .
+ Please see /usr/share/doc/logcheck for more information.
+
+Template: logcheck-database/standard-rename-note
+Type: note
+Description: Logcheck standard rulefiles renamed
+ As of version 1.2.1, the "standard" rulefiles have been renamed to
+ "logcheck" and the "standard.postfix" file has been renamed to
+ "logcheck-postfix".
+
+Template: logcheck-database/conffile-cleanup
+Type: boolean
+Default: false
+Description: Delete obsolete conffiles
+ The rulefiles in logcheck-database have just been through an audit to
+ remove duplicate entries and to make them more specific - this also
+ reduces false negatives.
+ .
+ As a result of this a number of rulefiles have been removed from the package.
+ Would you like these to be deleted ?

@@ -1,0 +1,15 @@
+Logcheck Test suite
+===================
+
+This is the logcheck test suite, it needs to test the following.
+
+ * Enabling/disabling the intro message
+ * cracking
+ * cracking ignore support
+ * violations 
+ * violations ignore
+ * different reportlevels
+
+And it could test the following
+
+ * each ignore rule ?

@@ -1,0 +1,29 @@
+# Uncommet the following to change the date and time format for the 
+# subject of e-Mails to the format for your locale
+#DATE=$(/bin/date +'%X %x')
+
+# Uncomment to remove the introduction
+INTRO="yes"
+
+# Level of filtering for the emails
+REPORTLEVEL="server"
+
+# Uncomment the below line to enable debugging into to stderr
+# Setting it to 2 will not cleanup TMPDIR when logcheck has run
+#LOGCHECKDEBUG=1
+
+# Uncommenting the below will change the subject lines on the emails
+#ATTACKSUBJECT="Attack Alerts"
+#VIOLATIONSSUBJECT="Security Violations"
+#EVENTSSUBJECT="System Events"
+
+# Uncomment the below to use sort -u, this will destory the 
+# orginal log order
+#SORTUNIQ=1
+
+# To enable the cracking.ignore support uncomment the below line
+# And put your rulefiles in /etc/logcheck/cracking.ignore.d
+#SUPPORT_CRACKING_IGNORE=1
+
+# Where we send mailto
+SENDMAILTO="root"

@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/postfix-script: starting the Postfix mail system$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/postfix-script: stopping the Postfix mail system$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/master\[[0-9]+\]: terminating on signal 15$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/master\[[0-9]+\]: daemon started -- version [.[:alnum:]]+$

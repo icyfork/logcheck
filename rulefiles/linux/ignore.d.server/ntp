@@ -1,0 +1,2 @@
+ntpd\[.*\]: time reset .*
+ntpd\[.*\]: synchronisation lost

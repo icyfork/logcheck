@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: breq:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: bresp:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: renewed lease for interface$
