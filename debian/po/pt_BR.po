@@ -13,11 +13,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: logcheck_1.2.12\n"
+"Project-Id-Version: logcheck\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-05-05 14:44+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: André Luís Lopes <andrelop@ig.com.br>\n"
+"PO-Revision-Date: 2004-05-05 20:17-0300\n"
+"Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team: Debian-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
@@ -32,7 +32,6 @@ msgstr "Mudando o nível de relatório ou endereço de e-mail."
 #. Type: note
 #. Description
 #: ../logcheck.templates:3
-#, fuzzy
 msgid ""
 "To change from the default report level (server) or the default email "
 "address (root) you need to edit /etc/logcheck/logcheck.conf"
@@ -49,13 +48,12 @@ msgstr "Mudanças no comportamento do diretório ignore.d"
 #. Type: note
 #. Description
 #: ../logcheck.templates:11
-#, fuzzy
 msgid ""
 "Now the ignore.d directories function in an additive manner (i.e. higher "
 "levels also include the lower levels)"
 msgstr ""
-"Agora os diretórios ignore.d funcionam de maneira aditiva (ou seja,  níveis "
-"mais altos também incluem níveis mais baixos)"
+"Agora os diretórios ignore.d funcionam de maneira aditiva (ou seja, níveis "
+"mais altos também incluem os níveis mais baixos)"
 
 #. Type: note
 #. Description
@@ -72,26 +70,24 @@ msgstr ""
 #. Type: note
 #. Description
 #: ../logcheck.templates:11
-#, fuzzy
 msgid ""
 "Also run-parts(8) now controls which rulefiles are included from the .d "
 "directories."
 msgstr ""
-"Adicionalmente, o run-parts(8) agora controle quais arquivos de regras são "
+"Adicionalmente, o run-parts(8) agora controla quais arquivos de regras são "
 "incluídos dos diretórios .d ."
 
 #. Type: note
 #. Description
 #: ../logcheck.templates:11
-#, fuzzy
 msgid "Please see /usr/share/doc/logcheck for more details."
-msgstr "Por favor consulete /usr/share/doc/logcheck para maiores detalhes."
+msgstr "Por favor, consulte /usr/share/doc/logcheck para maiores detalhes."
 
 #. Type: note
 #. Description
 #: ../logcheck.templates:26
 msgid "Logcheck no longer runs as root."
-msgstr ""
+msgstr "O logcheck não é mais executado como root."
 
 #. Type: note
 #. Description
@@ -100,6 +96,9 @@ msgid ""
 "Logcheck now runs as user logcheck.  Your logs must be readable by this user "
 "if they are to be scanned by logcheck."
 msgstr ""
+"O logcheck agora é executado como o usuário logcheck. Seus logs devem poder "
+"ser lidos por esse usuário caso você queira que eles sejam considerados pelo "
+"logcheck."
 
 #. Type: note
 #. Description
@@ -107,6 +106,8 @@ msgstr ""
 msgid ""
 "If you have not altered your logcheck configuration, you need not worry this."
 msgstr ""
+"Caso você não tenha alterado sua configuração do logcheck, você não precisa "
+"se preocupar com isso."
 
 #. Type: note
 #. Description
@@ -126,7 +127,6 @@ msgstr ""
 #. Type: note
 #. Description
 #: ../logcheck-database.templates:3
-#, fuzzy
 msgid ""
 " - /etc/logcheck/cracking.d\n"
 " - /etc/logcheck/cracking.ignore.d [for local use only]\n"
@@ -157,7 +157,6 @@ msgstr ""
 #. Type: note
 #. Description
 #: ../logcheck-database.templates:3
-#, fuzzy
 msgid ""
 "These directories may contain files named \"logcheck\" (containing minimal "
 "generic alert/override patterns), \"(packagename)\" (containing patterns "
@@ -167,11 +166,11 @@ msgid ""
 "directories."
 msgstr ""
 "Esses diretórios podem conter arquivos de nome \"logcheck\" (contendo "
-"padrões mínimos de alerta/sobreescrita), \"(nome_do_pacote)\" (contendo "
-"padrões específicos para um pacote) ou \"local\" (criados pelo administrador "
-"local contendo padrões personalizados para o seu site em particular). O "
-"logcheck irá então usar regras colecionadas de todos os arquivos encontrados "
-"nos diretórios apropriados."
+"padrões genéricos mínimos de alerta/sobreescrita), \"(nome_do_pacote)"
+"\" (contendo padrões específicos para um pacote) ou \"local\" (criados pelo "
+"administrador local, contendo padrões personalizados para o seu site em "
+"particular). O logcheck irá então usar regras coletadas de todos os arquivos "
+"encontrados nos diretórios apropriados."
 
 #. Type: note
 #. Description
@@ -206,24 +205,21 @@ msgstr "Remover arquivos de configuração obsoletos"
 #. Type: boolean
 #. Description
 #: ../logcheck-database.templates:37
-#, fuzzy
 msgid ""
 "The rulefiles in logcheck-database have just been through an audit to remove "
 "duplicate entries and to make them more specific - this also reduces false "
 "negatives."
 msgstr ""
 "Os arquivos de regras na base de dados do logcheck passaram por uma "
-"auditoria para remover entradas duplicadas e torná-los mais específicos - "
-"isso também reduz falsos negativos."
+"auditoria para remoção de entradas duplicadas e para torná-los mais "
+"específicos - isso também reduz falsos negativos."
 
 #. Type: boolean
 #. Description
 #: ../logcheck-database.templates:37
-#, fuzzy
 msgid ""
 "As a result of this a number of rulefiles have been removed from the "
 "package.  Would you like these to be deleted?"
 msgstr ""
 "Como um resultado dessa auditoria, diversos arquivos de regras foram "
-"removidos do pacote do logcheck. Você gostaria de removê-los também de seu "
-"sistema ?"
+"removidos do pacote. Você gostaria de removê-los também de seu sistema ?"

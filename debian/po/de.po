@@ -36,8 +36,8 @@ msgid ""
 "To change from the default report level (server) or the default email "
 "address (root) you need to edit /etc/logcheck/logcheck.conf"
 msgstr ""
-"Um den voreingestellten Reportlevel (server) oder die voreingestellte "
-"E-Mail-Adresse (root) zu ändern, editieren Sie /etc/logcheck/logcheck.conf"
+"Um den voreingestellten Reportlevel (server) oder die voreingestellte E-Mail-"
+"Adresse (root) zu ändern, editieren Sie /etc/logcheck/logcheck.conf"
 
 #. Type: note
 #. Description
@@ -74,8 +74,8 @@ msgid ""
 "Also run-parts(8) now controls which rulefiles are included from the .d "
 "directories."
 msgstr ""
-"Ebenso steuert run-parts(8) jetzt, welche Regeldateien aus den "
-".d-Verzeichnissen eingebunden werden."
+"Ebenso steuert run-parts(8) jetzt, welche Regeldateien aus den .d-"
+"Verzeichnissen eingebunden werden."
 
 #. Type: note
 #. Description
@@ -151,9 +151,8 @@ msgid ""
 "The ignore.d.{workstation,server,paranoid} directory to be used is set by "
 "the REPORTLEVEL option in the file \"/etc/logcheck/logcheck.conf\"."
 msgstr ""
-"Das verwendete ignore.d.{workstation,server,paranoid}-Verzeichnis wird "
-"durch die Option REPORTLEVEL in der Datei »/etc/logcheck/logcheck.conf« "
-"gesetzt."
+"Das verwendete ignore.d.{workstation,server,paranoid}-Verzeichnis wird durch "
+"die Option REPORTLEVEL in der Datei »/etc/logcheck/logcheck.conf« gesetzt."
 
 #. Type: note
 #. Description
@@ -167,9 +166,9 @@ msgid ""
 "directories."
 msgstr ""
 "Diese Verzeichnisse können Dateien namens »logcheck« (enthalten minimale "
-"allgemeine Warnungs-/Aufhebungs-Muster), »(Paketname)« (enthalten "
-"Paket-spezifische Muster) oder »local« (enthalten vom lokalen Administrator "
-"auf einen bestimmten Rechner zugeschnittene Muster) enthalten. Logcheck wird "
+"allgemeine Warnungs-/Aufhebungs-Muster), »(Paketname)« (enthalten Paket-"
+"spezifische Muster) oder »local« (enthalten vom lokalen Administrator auf "
+"einen bestimmten Rechner zugeschnittene Muster) enthalten. Logcheck wird "
 "dann alle Regeln gesammelt aus den Dateien im entsprechenden Verzeichnis "
 "verwenden."
 

@@ -14,15 +14,17 @@ logcheck (1.2.20) unstable; urgency=low
   * Added reference to logtail in manpage logcheck(8) in new Section SEE ALSO
     and Debian logcheck Team + alioth link. (Closes: #215640)
   alfie:
-  * Run debconf-updatepo.
-  * Fixed broken german po file...
   * Full german translation.
+  * Updated pt_BR translation from André Luís Lopes.
+  * Run debconf-updatepo.
   todd:
   * Change logcheck home to /var/lib/logcheck. (Closes #247614)
   * Change modes on /etc/logcheck. (Closes #247929)
   * Remove noroot template. (Closes #247360)
   * Remove useless chown to /var/tmp/logcheck* thanks to maks.
   * Remove bash depends.  Bash is marked essential.
+
+ -- 
 
 logcheck (1.2.19-2) unstable; urgency=low
 
@@ -48,7 +50,7 @@ logcheck (1.2.19) unstable; urgency=low
   maks:
   * Rename "Security Violations" in "Security Events". (Closes: #182079)
   * Use the newer gettext-based debconf template translation system.
-    Patch with pt_BR translation from Andre Luis Lopes. (Closes: #187519)
+    Patch with pt_BR translation from André Luís Lopes. (Closes: #187519)
   * Documented -u switch in manpage.
   * Updated pump rules.
   * Updated uptimed rules. (Closes: #216204)
