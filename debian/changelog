@@ -1,3 +1,7 @@
+logcheck (1.2.26) unstable; urgency=low
+
+ --
+
 logcheck (1.2.25) unstable; urgency=low
 
   todd:
@@ -17,7 +21,7 @@ logcheck (1.2.25) unstable; urgency=low
   * Add gps policy server rules. (Closes: #265176)
   * Fix port match in oidentd rules. (Closes: #265588)
 
- --
+ -- Todd Troxell <ttroxell@debian.org>  Friday, 13 Aug 2004 22:54:13 -0500
 
 logcheck (1.2.24) unstable; urgency=low
 
