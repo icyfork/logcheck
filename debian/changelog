@@ -1,8 +1,8 @@
 logcheck (1.2.32) unstable; urgency=low
 
   maks:
-  * Add rules for jabberd, openvpn, rsnapshot, stunnel at level server
-    from Peter Palfrader <weasel@debian.org>.
+  * Add rules for jabberd, openvpn, rsnapshot, saslauthd, stunnel at 
+    level server from Peter Palfrader <weasel@debian.org>.
   * Default reportlevel is "server", correct logcheck.conf thanks koki.
   * Fix up space in newer xdm logging.
   * Add kernel rule for dvd combi drives at level workstation.

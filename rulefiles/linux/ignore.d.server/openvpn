@@ -26,7 +26,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TLS Error: local/remote TLS keys are out of sync: [0-9.]{7,15}:[0-9]+ \[1\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TLS Error: Received control packet from unexpected IP addr: [0-9.]{7,15}:[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TLS Error: TLS key negotiation failed to occur within 60 seconds \(check your network connectivity\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: read UDPv4 \[EHOSTUNREACH\]: No route to host \(code=113\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: (read|write) UDPv4 \[EHOSTUNREACH\]: No route to host \(code=113\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: read UDPv4 \[EHOSTUNREACH\|EHOSTUNREACH\]: No route to host \(code=113\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: read UDPv4 \[EHOSTUNREACH\|EHOSTUNREACH\|EHOSTUNREACH\]: No route to host \(code=113\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Adaptive compression state (OFF|ON)$
