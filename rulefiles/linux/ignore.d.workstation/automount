@@ -1,5 +1,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: attempting to mount entry$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: lookup\(file\): looking up [._[:alnum]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: lookup\(file\): looking up [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: expanded entry:$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: parse\(sun\):$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: do_mount$
