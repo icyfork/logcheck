@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.21 2004/10/27 17:25:53 maks-guest Exp $
+# $Id: logcheck.postinst,v 1.22 2004/10/28 18:36:58 maks-guest Exp $
 
 set -e
 
@@ -28,18 +28,17 @@ set -e
 case "$1" in
     configure)
 	# Add logcheck user
-	# check for new installation, bad version without home and upgrade
-	if [ "$2" = "" ]; then
+	# check for logcheck user or bad version without home
+	if ! getent passwd logcheck > /dev/null; then
 	  adduser --quiet --system --no-create-home --group \
 	      --home /var/lib/logcheck logcheck || true
-	  adduser --quiet logcheck adm || true
     	elif dpkg --compare-versions "$2" eq 1.2.19; then
 	   usermod -d /var/lib/logcheck logcheck > /dev/null 2>&1 || true
-    	elif dpkg --compare-versions "$2" lt 1.2.24; then
-	  adduser --quiet --system --no-create-home --group \
-	      --home /var/lib/logcheck logcheck || true
-	  adduser --quiet logcheck adm || true
 	fi
+	# check for logcheck in adm group
+	if ! getent group logcheck > /dev/null; then
+	  adduser --quiet logcheck adm || true
+	fi  
 	# Remove old directory
 	if dpkg --compare-versions "$2" lt "1.1.1-13.2"; then
 	    if [ -d /var/cache/logcheck ]; then
