@@ -1,18 +1,18 @@
 logcheck (1.2.29) unstable; urgency=low
 
   maks:
-  * Don't report sudo calls where pwd contains spaces (closes: #272969)
-  * Fix trailing space in perdition rule. (closes: #273433)
+  * Don't report sudo calls where pwd contains spaces (Closes: #272969)
+  * Fix trailing space in perdition rule. (Closes: #273433)
   * Small documentation update how to test rules without fiddling with
     trailing space.
   * sed fine tuning to speed up + remove trailing tabs. thanks alfie
   * Don't use -m switch from sort, it basically disables sorting.
     Remove gratious call to uniq that should be done with SORTUNIQ.
-    (closes: #270677)
+    (Closes: #270677)
   * Add violations.ignore.d/su on old logfiles to be removed on sarge upgrade.
   * Add rules for kdm/wdm/xdm, kernel (usb, keyboard) on level workstation.
   * Only show "rules-directories-note" on upgrade.
-  * Enhance ppp rules on level workstation. (closes: #270019)
+  * Enhance ppp rules on level workstation. (Closes: #270019)
     Add pppoa3 rules to the ppp rules.
   * Small update concerning reject messages in postfix + new rule.
   * Added pptpd rules at level workstation.
@@ -25,9 +25,9 @@ logcheck (1.2.29) unstable; urgency=low
   * Updated rules for innd, added rule for cleanfeed.
   * Small correction to gps rules.
   * Added SPF postfix policy server rule for 'SPF pass'. 
-  * Fix spelling mistake in dhcp rules. (closes: #276063)
+  * Fix spelling mistake in dhcp rules. (Closes: #276063)
   * Change dhcp rules to reflect ISC's change of name. 
-    Thanks to Dirk Prosdorf for the patch. (closes: #276317)
+    Thanks to Dirk Prosdorf for the patch. (Closes: #276317)
 
  --
 
