@@ -1,17 +1,17 @@
-#
+# 
 #    Translators, if you are not familiar with the PO format, gettext
 #    documentation is worth reading, especially sections dedicated to
 #    this format, e.g. by running:
 #         info -n '(gettext)PO Files'
 #         info -n '(gettext)Header Entry'
-#
+# 
 #    Some information specific to po-debconf are available at
 #            /usr/share/doc/po-debconf/README-trans
 #         or http://www.debian.org/intl/l10n/po-debconf/README-trans
-#
+# 
 #    Developers do not need to manually edit POT or PO files.
-#
-#
+# 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: logcheck 1.2.21\n"
@@ -39,7 +39,6 @@ msgid ""
 msgstr ""
 "レポートのレベル (デフォルトは server) やメールアドレス (デフォルトは root) "
 "を変更するには、\"/etc/logcheck/logcheck.conf\" を編集する必要があります。"
-
 
 #. Type: note
 #. Description
@@ -97,8 +96,8 @@ msgstr "ローカルな変更は .d ディレクトリに配置する必要があります。"
 msgid ""
 "From version 1.1.1-8, logcheck supports run-parts controled rule directories:"
 msgstr ""
-"バージョン 1.1.1-8 より、logcheck は run-parts がコントロールしている以下のル"
-"ールディレクトリをサポートします: "
+"バージョン 1.1.1-8 より、logcheck は run-parts がコントロールしている以下の"
+"ルールディレクトリをサポートします: "
 
 #. Type: note
 #. Description
