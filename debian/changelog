@@ -1,7 +1,8 @@
 logcheck (1.2.33) unstable; urgency=low
 
   maks:
-  * Enhance rules at level workstation for removable devices. (closes: #284505)
+  * Enhance rules at level workstation for removable devices. 
+    (closes: #284505, #284825)
   * Fix dnsmasq rule regarding DHCPINFORM. (closes: #286532)
   * Add rbldnsd fules at level server from Rafael Jesus Alcantara Perez
     <rafa@dedaloingenieros.com>. (closes: #285602)

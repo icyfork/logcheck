@@ -59,6 +59,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [-:0-9]+ PL-2303 converter now attached to ttyUSB[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PL-2303 ttyUSB[0-9]: PL-2303 converter now disconnected from ttyUSB[0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/pl2303.c: Prolific PL2303 USB to serial adaptor driver v[.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Bluetooth: HCI USB driver ver [.0-9]+$
 # for sun machines
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sunmouse: Successfully adjusted to [0-9]+ baud\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: btaudio: driver version [0-9.]+ loaded \[digital\+analog\]$
