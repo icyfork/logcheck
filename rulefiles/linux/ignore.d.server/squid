@@ -1,5 +1,5 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: storeDirWriteCleanLogs: Starting\.\.\. $
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]:   Finished\.  Wrote [0-9]+ entries\. $
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]:   Took [.0-9]+ seconds \([ .0-9]+ entries/sec\)\. $
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: logfileRotate: /var/log/squid/store\.log $
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: logfileRotate: /var/log/squid/access\.log $
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: storeDirWriteCleanLogs: Starting\.\.\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]:   Finished\.  Wrote [0-9]+ entries\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]:   Took [.0-9]+ seconds \([ .0-9]+ entries/sec\)\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: logfileRotate: /var/log/squid/store\.log$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: logfileRotate: /var/log/squid/access\.log$
