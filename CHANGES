@@ -18,7 +18,7 @@ The major changes between 1.1.9.1 and 1.1.1-13.5 include the following
  - Logcheck no longer installs any symlinks under /etc/logcheck
  - Package-specific rulefiles in violations.ignore.d only filter
    alarms raised by the corresponding violations.d entry
- - Package-specific Security Violations now get separate sections
+ - Package-specific Security Events now get separate sections
 
 I have made this a Debian native package now, due to the vast
 difference between upstream's 1.1.1 and Debian's version.

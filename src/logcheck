@@ -20,7 +20,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.6 2004/04/27 08:12:29 maks-guest Exp $
+# $Id: logcheck,v 1.7 2004/04/27 08:18:40 maks-guest Exp $
 
 
 # Set the umask
@@ -31,7 +31,7 @@ LC_CTYPE=""
 
 # Set the flag variables
 SYSTEM=0
-VIOLATIONS=0
+SECURITY=0
 ATTACK=0
 
 # Set the getopts string
@@ -53,7 +53,7 @@ REPORTLEVEL="paranoid"
 
 # Set the default subject lines
 ATTACKSUBJECT="Security Alerts"
-VIOLATIONSSUBJECT="Security Events"
+SECURITYSUBJECT="Security Events"
 EVENTSSUBJECT="System Events"
 
 # Set the default paths
@@ -587,11 +587,11 @@ if [ -d $TMPDIR/violations ]; then
     rm -f $TMPDIR/checked
 
     if [ $ATTACK -eq 1 ]; then
-	greplogoutput $TMPDIR/violations "$VIOLATIONSSUBJECT" \
-	    $TMPDIR/violations-ignore $TMPDIR/cracking && VIOLATIONS="1"
+	greplogoutput $TMPDIR/violations "$SECURITYSUBJECT" \
+	    $TMPDIR/violations-ignore $TMPDIR/cracking && SECURITY="1"
     else
-	greplogoutput $TMPDIR/violations "$VIOLATIONSSUBJECT" \
-	    $TMPDIR/violations-ignore && VIOLATIONS="1"
+	greplogoutput $TMPDIR/violations "$SECURITYSUBJECT" \
+	    $TMPDIR/violations-ignore && SECURITY="1"
     fi
 fi
 
@@ -623,8 +623,8 @@ fi
 # If there are results, mail them to sysadmin
 if [ $ATTACK -eq 1 ]; then
     sendreport "$ATTACKSUBJECT"
-elif [ $VIOLATIONS -eq 1 ]; then
-    sendreport "$VIOLATIONSSUBJECT"
+elif [ $SECURITY -eq 1 ]; then
+    sendreport "$SECURITYSUBJECT"
 elif [ $SYSTEM -eq 1 ]; then
     sendreport "$EVENTSSUBJECT"
 fi
