@@ -22,14 +22,11 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.43 2004/05/29 07:44:53 maks-guest Exp $
+# $Id: logcheck,v 1.44 2004/06/03 10:17:05 maks-guest Exp $
 
 
 # Set the umask
 umask 077
-
-# Make sure that we do not use utf-8 locale
-LC_CTYPE=""
 
 # Set the flag variables
 SYSTEM=0

@@ -1,3 +1,10 @@
+logcheck (1.2.22) unstable; urgency=low
+
+  maks:
+  * Remove broken attempt to avoid UTF-8. (Closes: #214117)
+
+ -- 
+
 logcheck (1.2.21) unstable; urgency=low
 
   maks:
