@@ -46,7 +46,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+: server dropped connection without sending the initial greeting \(port 25\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:alnum:]]+: to=\<.*\>, relay=[^[:space:]]+\], status=deferred \(host [^[:space:]]+\] said: .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: [.0-9]+: address not listed for hostname [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: [.0-9]+: hostname [^[:space:]]+ verification failed: Host name has no address$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: too many errors after RCPT from [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: valid_hostname: invalid character [0-9]+\(decimal\): .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: valid_hostname: empty hostname$
@@ -67,5 +66,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: : SPF pass: smtp_comment=.*: [.[:alnum:]]+ MX [.[:alnum:]]+ A [0-9.]+, header_comment=[.[:alnum:]+: domain of [%[:punct:][:alnum:]]+@[.[:alnum:]]+ designates [.0-9]+ as permitted sender$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/anvil\[[0-9]+\]: statistics: max connection (count|rate) [/[:digit:]s]+ for \(smtp:[.[:digit:]]+\) at \w{3} [ :0-9]{11}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/anvil\[[0-9]+\]: statistics: max cache size [[:digit:]]+ at \w{3} [ :0-9]{11}$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: [.0-9]+: hostname [^[:space:]]+ verification failed: Name or service not known$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: certificate verification failed for unknown: num=19:self signed certificate in certificate chain$
