@@ -74,7 +74,6 @@ binary: binary-indep binary-arch
 #
 #LOGCHECK_DEBVER=$(shell dpkg-parsechangelog | sed -n -e '/^Version:/s/^Version: //p')
 #LOGCHECK_CVSTAG=$(shell echo "$(LOGCHECK_DEBVER)" | sed -e 's/^/v/' -e 's/\./_/g')
-#LOGCHECK_DEBVER=$(shell head -n 1 debian/changelog | perl -ne 'print $1 =~s/\./_/g if $_ =~ m,\(([\w.]+)\),')
 LOGCHECK_DEBVER=$(shell head -n 1 debian/changelog | perl -lne 'print  m,\(([\w.]+)\),')
 LOGCHECK_CVSTAG=HEAD
 CVS_BUILDDIR=logcheck-$(LOGCHECK_DEBVER)
