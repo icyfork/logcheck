@@ -1,8 +1,9 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: skipped, still being delivered$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: from=<.*>, status=expired, returned to sender$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: message-id=<.*>( \(.*\))?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: message-id=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: removed$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:alnum:]]+: message-id=<.*>( \(.*\))?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: to=<[^[:space:]]+>, relay=none, delay=[0-9]+, status=deferred \(delivery temporarily suspended: connect to [^[:space:]]+: (Connection timed out|read timeout|Connection refused)\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:alnum:]]+: message-id=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: unable to open Berkeley db /etc/sasldb: No such file or directory$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: verify error:num=10:certificate has expired$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: verify error:num=27:certificate not trusted$
@@ -15,6 +16,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: Peer certificate could not be verified$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: TLS connection established (to|from) [^[:space:]]+: (TLSv1|SSLv[23]) with cipher [^[:space:]]+ \([/0-9]+ bits\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: setting up TLS connection from [._[:alnum:]-]+\[[0-9.]{7,15}\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: smtpd_peer_init: [0-9]+\.[0-9]+\.[0-9]+\.[0-9]+: address not listed for hostname [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: TLS connection established (to|from) [^[:space:]]+: (TLSv1|SSLv[23]) with cipher [^[:space:]]+ \([/0-9]+ bits\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: setting up TLS connection to [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: fingerprint=([0-9A-F]{2}:){15}[0-9A-F]{2}$
