@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ syslog-ng\[[0-9]+\]: STATS: dropped [0-9]+$
