@@ -18,6 +18,7 @@ logcheck (1.2.23) unstable; urgency=low
   * Update dhcp3 rules (Closes: #256549).
   * Change postinst script to set permissions on versions previous to 1.2.23
   (Closes: #253998).
+  * Add postfix rule for lmtp
 
  -- 
 
