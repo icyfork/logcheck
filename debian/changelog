@@ -1,3 +1,8 @@
+logcheck (1.2.18) unstable; urgency=low
+
+  * Better wording for -l switch. (Closes: #234383)
+  * added Files section in manpage.
+
 logcheck (1.2.17) unstable; urgency=low
 
   * Allow rules in ignore.d.violations to run regardless of filename
