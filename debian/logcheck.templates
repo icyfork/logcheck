@@ -23,8 +23,8 @@ _Description: Changes to ignore.d directory behaviour
 
 Template: logcheck/noroot
 Type: note
-_Description: Logcheck no longer runs as root
- Logcheck no longer runs as root.  Logcheck runs as user 'logcheck' your logs
- must be readable by this user if they are to be scanned by logcheck.
+_Description: Logcheck no longer runs as root.
+ Logcheck now runs as user logcheck.  Your logs must be readable by
+ this user if they are to be scanned by logcheck.
  .
  If you have not altered your logcheck configuration, you need not worry this.
