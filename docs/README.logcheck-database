@@ -119,8 +119,8 @@ following kinds:
 
 ./local or ./local-<packagename>
 
-	Sysadmins can use the "local*" filenames to create their own
-	additions to the "logcheck*" pattern lists.  If you have
+	Sysadmins can use the "local-*" filenames to create their own
+	additions to the "logcheck-*" pattern lists.  If you have
 	"ippl" logging network connections verbosely into syslog
 	then you can put custom "Security Events" keywords in
 	"/etc/logcheck/violations.d/local-ippl" and exceptions in

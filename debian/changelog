@@ -2,6 +2,7 @@ logcheck (1.2.30) unstable; urgency=low
 
   maks
   * Move pptpd rules to level server.
+  * Small typo fixes in README.logcheck-database.
 
  -- 
 
