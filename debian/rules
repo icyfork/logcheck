@@ -53,15 +53,15 @@ binary-indep: build install
 	dh_strip
 	dh_compress
 	dh_fixperms --exclude etc/logcheck
-	chown logcheck debian/mailman/var/lib/logcheck
-	chown logcheck debian/mailman/var/state/logcheck
-	chgrp logcheck debian/mailman/etc/logcheck/ignore.d.paranoid
-	chgrp logcheck debian/mailman/etc/logcheck/ignore.d.workstation
-	chgrp logcheck debian/mailman/etc/logcheck/ignore.d.server
-	chgrp logcheck debian/mailman/etc/logcheck/cracking.d
-	chgrp logcheck debian/mailman/etc/logcheck/cracking.ignore.d
-	chgrp logcheck debian/mailman/etc/logcheck/violations.d
-	chgrp logcheck debian/mailman/etc/logcheck/violations.ignore.d
+	chown logcheck debian/logcheck/var/lib/logcheck
+	chown logcheck debian/logcheck/var/state/logcheck
+	chgrp logcheck debian/logcheck/etc/logcheck/ignore.d.paranoid
+	chgrp logcheck debian/logcheck/etc/logcheck/ignore.d.workstation
+	chgrp logcheck debian/logcheck/etc/logcheck/ignore.d.server
+	chgrp logcheck debian/logcheck/etc/logcheck/cracking.d
+	chgrp logcheck debian/logcheck/etc/logcheck/cracking.ignore.d
+	chgrp logcheck debian/logcheck/etc/logcheck/violations.d
+	chgrp logcheck debian/logcheck/etc/logcheck/violations.ignore.d
 	dh_installdeb
 	dh_shlibdeps
 	dh_gencontrol
