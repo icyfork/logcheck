@@ -3,7 +3,6 @@ logcheck (1.2.30) unstable; urgency=low
   maks:
   * Move pptpd rules to level server.
   * Small typo fixes in docs.
-  * Set group ownership in Makefile for non debian installs.
   * New rules for bind, courier, cpqarrayd, dhcp, jabberd, nagios, ntp, 
     openvpn, postfix, slapd, smartd, smokeping, squid, ssh, thy, uptimed.
     all for level server thanks to Peter Palfrader <weasel@debian.org>.
