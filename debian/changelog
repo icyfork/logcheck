@@ -22,7 +22,7 @@ logcheck (1.2.30) unstable; urgency=low
   todd:
   * Remove chown from debian/rules.  (closes: #277782)
 
- -- 
+ -- Todd Troxell <ttroxell@debian.org>  Tuesday, 02 Nov 2004 00:21:41 -0500
 
 logcheck (1.2.29) unstable; urgency=low
 
