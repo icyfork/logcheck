@@ -3,7 +3,7 @@ logcheck (1.2.22) unstable; urgency=low
   maks:
   * Remove broken attempt to avoid UTF-8. (Closes: #214117)
   * Update automount, innd, kernel, openvpn, postfix rules. 
-    (Closes: #252216, #249474, #244172, #252174, #187496)
+    (Closes: #252216, #249474, #244172, #252174, #187496, #249181)
   * Better readability of greplogoutput() in logcheck.
   * Our Perl usage needs 5.8, add dependency. (Closes: #252078)
 
