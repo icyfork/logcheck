@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.16 2004/07/01 06:00:32 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.17 2004/07/19 09:54:54 maks-guest Exp $
 
 set -e
 
@@ -27,12 +27,14 @@ set -e
 
 case "$1" in
     configure)
-	# Remove old directory's
+	# Remove old directory
 	if dpkg --compare-versions "$2" lt "1.1.1-13.2"; then
-	    # Remove old directory's
 	    if [ -d /var/cache/logcheck ]; then
 		rm -fr /var/cache/logcheck
 	    fi
+	fi
+	# Remove unused old directory
+	if dpkg --compare-versions "$2" lt "1.2.24"; then
 	    if [ -d /var/state/logcheck ]; then
 		rm -fr /var/state/logcheck
 	    fi
@@ -43,7 +45,6 @@ case "$1" in
 	if dpkg --compare-versions "$2" lt 1.2.23; then
     	  # Fix Permissions
     	  chown -R logcheck:logcheck /var/lib/logcheck  || true
-          chown -R logcheck:logcheck /var/state/logcheck > /dev/null 2>&1 \
 	      || true
           chgrp -R logcheck /etc/logcheck || true
           chmod 750 /etc/logcheck/ignore.d.paranoid || true
