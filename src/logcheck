@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.60 2004/06/10 13:37:56 maks-guest Exp $
+# $Id: logcheck,v 1.61 2004/06/11 09:27:30 alfie Exp $
 
 
 # Set the umask
@@ -376,7 +376,7 @@ usage: logcheck [-c CFG] [-d] [-h] [-l CFG] [-o] [-r DIR] [-s|-p|-w] [-S] [-t]
  -R           = adds Reboot: to email subject
  -s           = runlevel "server"
  -S           = overrule default state directory
- -t	      = testing mode
+ -t           = testing mode
  -T           = do not remove the TMPDIR 
  -u           = enable syslog-summary
  -v           = print version
