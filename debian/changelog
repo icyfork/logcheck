@@ -14,6 +14,7 @@ logcheck (1.2.32) unstable; urgency=low
   * Add dnsmasq rule.
   * Add rules for workstation related to removable media. (closes: #277644)
   * Remove kernel rules related to tainted modules.
+  * Fix sudo ignore rule for tty usage.
   alfie:
   * logtail.8: Fixed formating to be consistant, changed OPTION to -r (the
     only OPTION not mentioned yet :))
