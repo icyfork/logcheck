@@ -13,7 +13,7 @@ system events) can be reduced from the default by changing the line:
 	REPORTLEVEL="server"
 to:
 	REPORTLEVEL="workstation"
-or the more secure:
+or:
 	REPORTLEVEL="paranoid"
 
 There are a number of other options which are documented in
