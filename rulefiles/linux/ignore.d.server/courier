@@ -5,3 +5,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap(login|d-ssl): DISCONNECTED, user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap(login|d-ssl): DISCONNECTED, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pop3(login|d-ssl): (LOGOUT|TIMEOUT), user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\], top=[0-9]+, retr=[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pop3d-ssl: Unexpected SSL connection shutdown\.$
