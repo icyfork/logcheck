@@ -1,3 +1,10 @@
+logcheck (1.2.38) unstable; urgency=low
+
+  maks:
+  * Generalise postfix rule concerning network_biopair_interop.
+
+ -- 
+
 logcheck (1.2.37) unstable; urgency=low
 
   maks:

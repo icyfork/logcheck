@@ -13,7 +13,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: host [^[:space:]]+ said: [45][0-9][0-9] .* \(in reply to (HELO|EHLO|MAIL FROM|RCPT TO|end of DATA) command\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: to=<[^[:space:]]+>, relay=[._[:alnum:]-]+\[[0-9.]{7,15}\], delay=[0-9]+, status=(deferred|bounced) \(host [._[:alnum:]-]+\[[0-9.]{7,15}\] said: [45][0-9][0-9] .* \(in reply to (HELO|EHLO|MAIL FROM|RCPT TO|end of DATA) command\)\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [A-Z0-9]+: to=<[^[:space:]]+>, relay=[^[:space:]]+, delay=[0-9]+, status=deferred \(host [^[:space:]]+ refused to talk to me: [^[:space:]]+ 554 Access denied\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Read failed in network_biopair_interop with errno=0: num_read=0, want_read=[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Read failed in network_biopair_interop with errno=[0-9]+: num_read=[0-9]+, want_read=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: handler sender_permitted_from: DUNNO$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: : SPF none: smtp_comment=SPF: domain of sender [^[:space:]]+ does not designate mailers, header_comment=[.[:lower:]]+: domain of [^[:space:]]+ does not designate permitted sender hosts$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=19:self signed certificate in certificate chain$
