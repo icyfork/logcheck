@@ -51,7 +51,7 @@ logcheck (1.2.21) unstable; urgency=low
   * Denote /etc/logcheck/logcheck.logfile as CFG in manpage and logcheck.
   * Move logtail.8 from debian to doc dir.
   * Added Japanese translation. thanks to Hideki Yamane (Closes: #251463)
-  * Added French translation. thanks to Rémi Pannequin (Closes: #252173)
+  * Added French translation. thanks to RÃ©mi Pannequin (Closes: #252173)
   * Fix bashishm in preinst and postinst. (Closes: #251364)
   todd:
   * Add debconf to logcheck Depends:
