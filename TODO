@@ -19,7 +19,7 @@
    Rename "Attack Alerts" to "Security Violations" ?
    Rename some of the .d directories.
 
-* Re-write logtail
+* Re-write logtail in c
 
    Needs to handle rotated files it self
    Use a BDB (?) database for storing file offsets
