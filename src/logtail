@@ -19,14 +19,28 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
+use Getopt::Std;
+
+# process args and switches
+
+my ($TEST_MODE) = 0;
+getopt();
+if ($opt_t) {
+    $TEST_MODE = 1;
+}
+
 my ($logfile, $offsetfile) = @ARGV;
+
 if (! -f $logfile) {
     print "File $logfile cannot be read.\n";
     exit 66;
 }
 unless ($offsetfile) {
     # offsetfile not given, use .offset/$logfile in the same directory
+    # unless we're in test mode
+    unless($TEST_MODE) {
     $offsetfile = $logfile . '.offset';
+    }
 }
 
 unless (open(LOGFILE, $logfile)) {
@@ -34,41 +48,42 @@ unless (open(LOGFILE, $logfile)) {
     exit 66;
 }
 
-my ($inode, $offset) = (0, 0);
+my ($inode, $ino, $offset) = (0, 0, 0);
 
-if (open(OFFSET, $offsetfile)) {
-    $_ = <OFFSET>;
-    unless (! defined $_) {
-	chomp $_;
-	$inode = $_;
-	$_ = <OFFSET>;
-	unless (! defined $_) {
-	    chomp $_;
-	    $offset = $_;
-	}
+unless ($TEST_MODE and not $offsetfile) {
+    if (open(OFFSET, $offsetfile)) {
+        $_ = <OFFSET>;
+        unless (! defined $_) {
+       	    chomp $_;
+	    $inode = $_;
+	    $_ = <OFFSET>;
+	    unless (! defined $_) {
+	        chomp $_;
+	        $offset = $_;
+	    }
+        }
     }
-}
 
-my ($ino, $size);
-unless ((undef,$ino,undef,undef,undef,undef,undef,$size) = stat $logfile) {
-    print "Cannot get $logfile file size.\n", $logfile;
-    exit 65;
-}
+    my ($size);
+    unless ((undef,$ino,undef,undef,undef,undef,undef,$size) = stat $logfile) {
+        print "Cannot get $logfile file size.\n", $logfile;
+        exit 65;
+    }
 
-if ($inode == $ino) {
-    exit 0 if $offset == $size; # short cut
-    if ($offset > $size) {
+    if ($inode == $ino) {
+        exit 0 if $offset == $size; # short cut
+        if ($offset > $size) {
+            $offset = 0;
+            print "***************\n";
+            print "*** WARNING ***: Log file $logfile is smaller than last time checked!\n";
+            print "*************** This could indicate tampering.\n";
+        }
+    }
+    if ($inode != $ino || $offset > $size) {
         $offset = 0;
-        print "***************\n";
-        print "*** WARNING ***: Log file $logfile is smaller than last time checked!\n";
-        print "*************** This could indicate tampering.\n";
     }
+    seek(LOGFILE, $offset, 0);
 }
-if ($inode != $ino || $offset > $size) {
-    $offset = 0;
-}
-
-seek(LOGFILE, $offset, 0);
 
 while (<LOGFILE>) {
     print $_;
@@ -77,15 +92,17 @@ while (<LOGFILE>) {
 $size = tell LOGFILE;
 close LOGFILE;
 
-unless (open(OFFSET, ">$offsetfile")) {
-    print "File $offsetfile cannot be created. Check your permissions.\n";
-    exit 73;
+# update offset, unless test mode
+unless ($TEST_MODE) {
+    unless (open(OFFSET, ">$offsetfile")) {
+        print "File $offsetfile cannot be created. Check your permissions.\n";
+        exit 73;
+    }
+    unless (chmod 0600, $offsetfile) {
+        print "Cannot set permissions on file $offsetfile\n";
+        exit 65;
+    }
+    print OFFSET "$ino\n$size\n";
+    close OFFSET;
 }
-unless (chmod 0600, $offsetfile) {
-    print "Cannot set permissions on file $offsetfile\n";
-    exit 65;
-}
-print OFFSET "$ino\n$size\n";
-close OFFSET;
-
 exit 0;

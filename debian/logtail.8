@@ -3,6 +3,7 @@
 logtail \- print log file lines that have not been read
 .SH SYNOPSIS
 .B logtail
+[\fIOPTION\fR]...
 .I logfile
 .RI [ offsetfile ]
 .SH DESCRIPTION
@@ -42,6 +43,11 @@ If the inode is not changed but
 is shorter than it was at the last run of
 .BR logtail ,
 it writes a warning message to the standard output.
+.SH OPTIONS
+.TP
+\fB\-t\fR
+test mode - do not change offset in
+.I offsetfile
 .SH RETURN VALUES
 .IP 0
 successful

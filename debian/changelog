@@ -13,7 +13,9 @@ eevans:
   * Added a trap to invoke cleanup() when shell exits. Thanks to Marc
     Staveley for the patch. (Closes: #207795)
   * Changed interpreter from /bin/sh to /bin/bash
-
+todd:
+  * Added -t flag to logtail and logtail.8 - used in test mode - see man page
+  * Added bash depends in debian/control - required by trap patch above
 
 logcheck (1.2.18) unstable; urgency=low
   * New maintainer (Closes: #244271)
