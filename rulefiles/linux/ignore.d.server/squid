@@ -3,3 +3,47 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]:   Took [.0-9]+ seconds \([ .0-9]+ entries/sec\)\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: logfileRotate: /var/log/squid/store\.log$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: logfileRotate: /var/log/squid/access\.log$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Waiting [0-9]+ seconds for active connections to finish$ 
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: FD [0-9]+ Closing HTTP connection$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: FD [0-9]+ Closing ICP connection$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Closing unlinkd pipe on FD [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Squid Cache \(Version [0-9.]+(STABLE)*[0-9]+\): Exiting normally\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Squid Parent: child process [0-9]+ exited with status 0$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Squid Parent: child process [0-9]+ started$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Starting Squid Cache version [0-9.]+(STABLE)*[0-9]+ for [[:alnum:]-]+\.\.\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Process ID [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: With [0-9]+ file descriptors available$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: DNS Socket created at [0-9.]+, port [0-9]+, FD [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Adding nameserver [0-9.]+ from /etc/resolv.conf$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: User-Agent logging is disabled\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Referer logging is disabled\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Unlinkd pipe opened on FD [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Swap maxSize [0-9]+ KB, estimated [0-9]+ objects$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Target number of buckets: [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Using [0-9]+ Store buckets$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Max Mem  size: [0-9]+ KB$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Max Swap size: [0-9]+ KB$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Local cache digest enabled; rebuild/rewrite every [0-9]+/[0-9]+ sec$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Rebuilding storage in [/._[:alnum:]-]+ \(CLEAN\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Using Least Load store dir selection$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Current Directory is [/._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Loaded Icons\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Accepting HTTP connections at [0-9.]+, port [0-9]+, FD [0-9]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Accepting ICP messages at [0-9.]+, port [0-9]+, FD [0-9]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: HTCP Disabled\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: WCCP Disabled\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Ready to serve requests\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Done reading [/._[:alnum:]-]+ swaplog \([0-9]+ entries\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Finished rebuilding storage from disk\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +[0-9]+ Entries scanned$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +[0-9]+ Invalid entries\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +[0-9]+ With invalid flags\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +[0-9]+ Objects (loaded|expired|cancelled)\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +[0-9]+ Swapfile clashes avoided\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +[0-9]+ Duplicate URLs purged\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +Took [0-9.]+ seconds \( [0-9.]+ objects/sec\)\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Beginning Validation Procedure$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +Completed Validation Procedure$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +Validated [0-9]+ Entries$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +store_swap_size = [0-9]+k$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: storeLateRelease: released [0-9]+ objects$
