@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.42 2004/05/28 10:09:03 maks-guest Exp $
+# $Id: logcheck,v 1.43 2004/05/29 07:44:53 maks-guest Exp $
 
 
 # Set the umask
@@ -170,8 +170,10 @@ cleanrules() {
     cleaned=$2
 
     if [ -d $dir ]; then 
-	mkdir -p $cleaned \
-	    || error "Could not make dir $cleaned for cleaned rulefiles."
+        if [ ! -d $cleaned ]; then
+	    mkdir $cleaned \
+	        || error "Could not make dir $cleaned for cleaned rulefiles."
+	fi
 	for rulefile in $(run-parts --list $dir); do
 	    rulefile=$(basename $rulefile)
 	    if [ -f ${dir}/${rulefile} ]; then
@@ -267,11 +269,9 @@ greplogoutput() {
     for grepfile in $(ls -1 $raise); do
 	debug "greplogoutput: $grepfile"
 
-	egrep --text -f $raise/$grepfile $TMPDIR/logoutput-sorted \
-	    > $TMPDIR/checked 
-	if [ ! -f $TMPDIR/checked ]; then
-	    error "Could not output to $TMPDIR/checked.  Disk Full?"
-	fi
+	egrep --text -f $raise/$grepfile $TMPDIR/logoutput-sorted | cat \
+	    > $TMPDIR/checked \
+	    || error "Could not output to $TMPDIR/checked.  Disk Full?"
 
 	if [ -s $TMPDIR/checked ]; then
 	    debug "greplogoutput: Entries in checked"
