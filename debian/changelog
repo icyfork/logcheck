@@ -10,6 +10,8 @@ logcheck (1.2.29) unstable; urgency=low
     Remove gratious call to uniq that should be done with SORTUNIQ.
     (closes: #270677)
   * Add violations.ignore.d/su on old logfiles to be removed on sarge upgrade.
+  * Add logcheck-database_parse script to docs, but may used in future
+    for deduplicating the rules. thanks to Michel Verdier <mverdier@thalix.com>
 
  --
 
