@@ -22,6 +22,8 @@ logcheck (1.2.23) unstable; urgency=low
   * Add Rule for cyrus imap/SQUAT annoyance.
   * Spamd update for unknown message id.
   * Add Kernel and bonobo rules for workstations.
+  eevans:
+  * Added violations ignore rule for squid (Closes: #257874)
 
  -- Todd Troxell <ttroxell@debian.org>  Thursday, 12 Jul 2004 22:55:19 -0500
 
