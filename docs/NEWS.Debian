@@ -1,10 +1,11 @@
-NEWS.Debian for Logcheck --
+logcheck (1.2.19-2) unstable; urgency=low
 
-[5/5/04]
-Version 1.2.19-2
+  * As of version 1.2.19, logcheck no longer runs as root.  
+    Logcheck runs as user logcheck which has been created 
+    and added to group adm upon configuration.
 
-As of version 1.2.19, logcheck no longer runs as root.  Logcheck runs as user
-logcheck which has been created and added to group adm upon configuration.
+    If you have customized your configuration, 
+    you will need to be sure that your
+    logs are readable by the logcheck user.
 
-If you have customized your configuration, you will need to be sure that your
-logs are readable by the logcheck user.
+ -- Todd Troxxell <todd@debian.org>  Wen, 05 May 2004 12:00:00 +0000
