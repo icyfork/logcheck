@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ tripwire\[[0-9]+\]: Integrity Check Complete: .+ TWReport [._[:alnum:]-]+ [0-9]{14} V:[0-9]+ S:[0-9]+ A:[0-9]+ R:[0-9]+ C:[0-9]+$
