@@ -6,17 +6,17 @@ BINDIR = usr/sbin
 install:
 	# Create the directories
 	install -d $(DESTDIR)/$(CONFDIR)
-	install -d $(DESTDIR)/var/lib/logcheck
-	install -d $(DESTDIR)/var/state/logcheck
+	install -o logcheck -d $(DESTDIR)/var/lib/logcheck
+	install -o logcheck -d $(DESTDIR)/var/state/logcheck
 	install -d $(DESTDIR)/usr/sbin
 
-	install -m 700 -d $(DESTDIR)/$(CONFDIR)/ignore.d.paranoid
-	install -m 700 -d $(DESTDIR)/$(CONFDIR)/ignore.d.workstation
-	install -m 700 -d $(DESTDIR)/$(CONFDIR)/ignore.d.server
-	install -m 700 -d $(DESTDIR)/$(CONFDIR)/cracking.d
-	install -m 700 -d $(DESTDIR)/$(CONFDIR)/cracking.ignore.d
-	install -m 700 -d $(DESTDIR)/$(CONFDIR)/violations.d
-	install -m 700 -d $(DESTDIR)/$(CONFDIR)/violations.ignore.d
+	install -g logcheck -m 750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.paranoid
+	install -g logcheck -m 750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.workstation
+	install -g logcheck -m 750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.server
+	install -g logcheck -m 750 -d $(DESTDIR)/$(CONFDIR)/cracking.d
+	install -g logcheck -m 750 -d $(DESTDIR)/$(CONFDIR)/cracking.ignore.d
+	install -g logcheck -m 750 -d $(DESTDIR)/$(CONFDIR)/violations.d
+	install -g logcheck -m 750 -d $(DESTDIR)/$(CONFDIR)/violations.ignore.d
 
 	# Install the scripts
 	install -m 755 src/logcheck $(DESTDIR)/$(BINDIR)/

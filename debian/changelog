@@ -16,6 +16,13 @@ eevans:
 todd:
   * Added -t flag to logtail and logtail.8 - used in test mode - see man page
   * Added bash depends in debian/control - required by trap patch above
+  * Added adduser depends, add logcheck user on preinst and remove in postrm
+  * Set to run as user logcheck (Closes: #97573)
+  * Changed permissions, uids, gids in Makefile to allow for use as user
+    logcheck 
+  * Set upgrade in preinst upgrade to fix file perms on on files from <1.2.18
+
+ --
 
 logcheck (1.2.18) unstable; urgency=low
   * New maintainer (Closes: #244271)

@@ -5,6 +5,9 @@
 
 set -e
 
+adduser --quiet --system --no-create-home --group logcheck || true
+adduser --quiet logcheck adm ||true
+
 # summary of how this script can be called:
 #        * <new-preinst> `install'
 #        * <new-preinst> `install' <old-version>
@@ -15,9 +18,31 @@ set -e
 # the debian-policy package
 
 case "$1" in
-    install|upgrade)
+    install)
 	;;
+    upgrade)
+    	# change perms - we don't run as root as of 1.2.19
+	chown logcheck $(DESTDIR)/var/lib/logcheck
+	chown logcheck $(DESTDIR)/var/state/logcheck
+	chgrp logcheck $(DESTDIR)/$(CONFDIR)/ignore.d.paranoid
+	chgrp logcheck $(DESTDIR)/$(CONFDIR)/ignore.d.workstation
+	chgrp logcheck $(DESTDIR)/$(CONFDIR)/ignore.d.server
+	chgrp logcheck $(DESTDIR)/$(CONFDIR)/cracking.d
+	chgrp logcheck $(DESTDIR)/$(CONFDIR)/cracking.ignore.d
+	chgrp logcheck $(DESTDIR)/$(CONFDIR)/violations.d
+	chgrp logcheck $(DESTDIR)/$(CONFDIR)/violations.ignore.d
 
+	chmod 750 $(DESTDIR)/$(CONFDIR)/ignore.d.paranoid
+	chmod 750 $(DESTDIR)/$(CONFDIR)/ignore.d.workstation
+	chmod 750 $(DESTDIR)/$(CONFDIR)/ignore.d.server
+	chmod 750 $(DESTDIR)/$(CONFDIR)/cracking.d
+	chmod 750 $(DESTDIR)/$(CONFDIR)/cracking.ignore.d
+	chmod 750 $(DESTDIR)/$(CONFDIR)/violations.d
+	chmod 750 $(DESTDIR)/$(CONFDIR)/violations.ignore.d
+	# just in case
+	chown -R logcheck $(DESTDIR)/var/tmp/logcheck* &> /dev/null
+	chown logcheck $(DESTDIR)/var/lock/logcheck &> /dev/null
+    	;;
     abort-upgrade)
 	;;
 
