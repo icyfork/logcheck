@@ -169,6 +169,12 @@ manpage.1: manpage.sgml
       </varlistentry>
     </variablelist>
   </refsect1>
+  <refsect1>
+    <title>FILES</title>
+
+    <para>/etc/logcheck/logcheck.conf is the main configuration file.</para>
+    <para>/etc/logcheck/logcheck.logfiles is the list of files to monitor.</para>
+  </refsect1>
 
   <refsect1>
     <title>AUTHOR</title>
