@@ -5,6 +5,9 @@ logcheck (1.2.23) unstable; urgency=low
   * Added imapproxy, scponly rules. (Closes: #253861).
   * Updated dhcpd, innd, sudo rules. (Closes: #253879, #244171, #190101).
   * Fix locale dependent regexes.
+  * Implemented testing mode to logcheck - doesn't update offset.
+  * Added -l LOG switch for test runs on new log files.
+    thanks todd for ideas and first work (Closes: #234385).
 
  -- 
 

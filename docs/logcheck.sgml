@@ -106,7 +106,14 @@ manpage.1: manpage.sgml
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><option>-l CFG</option>
+        <term><option>-l LOG</option>
+        </term>
+        <listitem>
+          <para>Run logfile through logcheck.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-L CFG</option>
         </term>
         <listitem>
           <para>Overrule default logfiles list.</para>

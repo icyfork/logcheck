@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.61 2004/06/11 09:27:30 alfie Exp $
+# $Id: logcheck,v 1.62 2004/06/12 18:31:32 maks-guest Exp $
 
 
 # Set the umask
@@ -34,7 +34,7 @@ SECURITY=0
 ATTACK=0
 
 # Set the getopts string
-GETOPTS="c:dhl:opr:RsS:tT:uvw"
+GETOPTS="c:dhl:L:opr:RsS:tT:uvw"
 
 # Get the details for the email message
 # Hostname either fully qualified or not.
@@ -60,7 +60,7 @@ ADDTAG="no"
 RULEDIR="/etc/logcheck"
 CONFFILE="/etc/logcheck/logcheck.conf"
 STATEDIR="/var/lib/logcheck"
-LOGFILE="/etc/logcheck/logcheck.logfiles"
+LOGFILES_LIST="/etc/logcheck/logcheck.logfiles"
 LOGTAIL="/usr/sbin/logtail"
 CAT="/bin/cat"
 SYSLOG_SUMMARY="/usr/bin/syslog-summary"
@@ -362,6 +362,44 @@ cleanchecked() {
     fi
 }
 
+logoutput() {
+    file=$1
+
+    # There are some problems with this section.
+    debug "logoutput called with file: $file"
+    if [ -f $file ]; then
+	offsetfile="$STATEDIR/offset$(echo $file|tr / .)"
+	if [ -s $offsetfile ]; then
+	    if [ $(wc -c < $file) -lt $(tail -n 1  $offsetfile) ]; then
+		if [ -e $file.0 ]; then
+	        # assume the log is rotated by savelog(8)
+		    debug "Running logtail on rotated: $file.0"
+		    $LOGTAIL -f $file.0 -o $offsetfile $LOGTAIL_OPTS > \
+			$TMPDIR/logoutput/$(basename $file) \
+			|| error "Could not run logtail or save output"
+		    rm -f $offsetfile \
+		        || error "Could not remove $offsetfile"
+		elif [ -e $file.1 ]; then
+		# assume the log is rotated by logrotate(8)
+		    debug "Running logtail on rotated: $file.1"
+		    $LOGTAIL -f $file.1 -o $offsetfile $LOGTAIL_OPTS > \
+			$TMPDIR/logoutput/$(basename $file) \
+			|| error "Could not run logtail or save output"
+		    rm -f $offsetfile \
+		        || error "Could not remove $offsetfile"
+		fi
+	    fi
+	fi
+	debug "Running logtail: $file"
+	$LOGTAIL -f $file -o $offsetfile $LOGTAIL_OPTS \
+	    >> $TMPDIR/logoutput/$(basename $file) \
+	    || error "Could not run logtail or save output"
+    else
+	echo "E: File could not be read: $file" >> $TMPDIR/errors \
+	    || error "Could not output to $TMPDIR/errors  Disk Full?"
+    fi
+}
+
 usage() {
     debug "usage: Printing usage and exiting"
     cat<<EOF
@@ -369,7 +407,8 @@ usage: logcheck [-c CFG] [-d] [-h] [-l CFG] [-o] [-r DIR] [-s|-p|-w] [-S] [-t]
  -c CFG       = overrule default configuration file
  -d           = debug mode
  -h           = print this usage guide and exit
- -l CFG       = overrule default logfiles list
+ -l LOG       = run logfile through logcheck
+ -L CFG       = overrule default logfiles list
  -o           = stdout mode, not sending mail
  -p           = runlevel "paranoid"
  -r DIR       = overrule default rules directory
@@ -447,6 +486,10 @@ while getopts $GETOPTS opt; do
 	    debug "Setting LOGFILE to $OPTARG"
 	    LOGFILE="$OPTARG"
 	    ;;
+	L)
+	    debug "Setting LOGFILES_LIST to $OPTARG"
+	    LOGFILES_LIST="$OPTARG"
+	    ;;
 	o)
 	    debug "Setting MAILOUT to 1"
 	    MAILOUT="1"
@@ -478,7 +521,6 @@ while getopts $GETOPTS opt; do
 	t)
 	    debug "Setting LOGTAIL_OPTS to -t"
 	    LOGTAIL_OPTS=' -t'
-	    debug "setting TESTFILE to $OPTARG"
 	    ;;
 	w)
 	    debug "Setting REPORTLEVEL to workstation"
@@ -543,40 +585,17 @@ fi
 # Handle log rotation correctly, idea taken from Wiktor Niesiobedzki.
 mkdir $TMPDIR/logoutput \
     || error "Could not mkdir for log files"
-for file in $(egrep --text -v "^#" $LOGFILE); do
-    # There are some problems with this section.
-    if [ -f $file ]; then
-	offsetfile="$STATEDIR/offset$(echo $file|tr / .)"
-	if [ -s $offsetfile ]; then
-	    if [ $(wc -c < $file) -lt $(tail -n 1  $offsetfile) ]; then
-		if [ -e $file.0 ]; then
-	        # assume the log is rotated by savelog(8)
-		    debug "Running logtail on rotated: $file.0"
-		    $LOGTAIL -f $file.0 -o $offsetfile $LOGTAIL_OPTS > \
-			$TMPDIR/logoutput/$(basename $file) \
-			|| error "Could not run logtail or save output"
-		    rm -f $offsetfile \
-		        || error "Could not remove $offsetfile"
-		elif [ -e $file.1 ]; then
-		# assume the log is rotated by logrotate(8)
-		    debug "Running logtail on rotated: $file.1"
-		    $LOGTAIL -f $file.1 -o $offsetfile $LOGTAIL_OPTS > \
-			$TMPDIR/logoutput/$(basename $file) \
-			|| error "Could not run logtail or save output"
-		    rm -f $offsetfile \
-		        || error "Could not remove $offsetfile"
-		fi
-	    fi
-	fi
-	debug "Running logtail: $file"
-	$LOGTAIL -f $file -o $offsetfile $LOGTAIL_OPTS \
-	    >> $TMPDIR/logoutput/$(basename $file) \
-	    || error "Could not run logtail or save output"
+if [ ! $LOGFILE ]; then
+    for file in $(egrep --text -v "(^#|^\s+$)" $LOGFILES_LIST); do
+	logoutput "$file"
+    done 
+elif [ $LOGFILE ]; then
+    if [ -f $LOGFILE ] && [ -r $LOGFILE ]; then
+        logoutput "$LOGFILE"
     else
-	echo "E: File could not be read: $file" >> $TMPDIR/errors \
-	    || error "Could not output to $TMPDIR/errors  Disk Full?"
+    	error "$LOGFILE don't exist or we do not have permissions to read it"
     fi
-done 
+fi
 
 # first sort the logs to remove duplicate lines (from different logfiles with
 # the same lines) and reduce CPU and memory usage afterwards.
