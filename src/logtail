@@ -26,10 +26,13 @@ use Getopt::Std;
 my %opts = ();
 
 # process args and switches
-
 my ($TEST_MODE) = 0;
 getopts("f:o:t", \%opts);
-if ($opts{t}) {
+
+if (! $opts{f}) {
+   print "No logfile to read. Use -f switch.\n";
+   exit 66;
+} elsif ($opts{t}) {
     $TEST_MODE = 1;
 }
 
