@@ -120,6 +120,13 @@ manpage.1: manpage.sgml
         </listitem>
       </varlistentry>
       <varlistentry>
+        <term><option>-m</option>
+        </term>
+        <listitem>
+          <para>Mail report to recipient.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
         <term><option>-o</option>
         </term>
         <listitem>

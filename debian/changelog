@@ -8,6 +8,7 @@ logcheck (1.2.23) unstable; urgency=low
   * Implemented testing mode to logcheck - doesn't update offset.
   * Added -l LOG switch for test runs on new log files.
     thanks todd for ideas and first work (Closes: #234385).
+  * Add -m switch to specify recipient. (Closes: #149567).
 
  -- 
 
