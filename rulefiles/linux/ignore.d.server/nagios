@@ -12,5 +12,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;DOWN;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;UP;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST DOWNTIME ALERT: [._[:alnum:]-]+;STOPPED;.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Warning: The results of service '[[:alnum:]]+' on host '[._[:alnum:]-]+' are stale by [[:digit:]]+ seconds \(threshold=[[:digit:]]+ seconds\).  I'm forcing an immediate check of the service.$
 # nrpe
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nrpe\[[0-9]+\]: Error: Could not complete SSL handshake. 5$
