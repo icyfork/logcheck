@@ -33,7 +33,7 @@ logcheck (1.2.24) unstable; urgency=low
   * Move adduser from preinst to postinst (Closes: #258735)
   * Update pump and dhclient rules.
 
- -- 
+ -- Todd Troxell <ttroxell@debian.org>  Friday, 23 Jul 2004 21:39:19 -0500
 
 logcheck (1.2.23) unstable; urgency=low
 
