@@ -1,5 +1,7 @@
 logcheck (1.2.19) unstable; urgency=low
 
+  * Use the newer gettext-based debconf template translation system.
+    Patch with pt_BR translation from Andre Luis Lopes. (Closes: #187519)
   * Documented -u switch in manpage.
   * Updated pump rules.
   * Updated uptimed rules. (Closes: #216204)

@@ -1,4 +1,4 @@
-.\" $Header: /var/lib/gforge/chroot/home/users/madduck/cvsroot.logcheck/debian/Attic/logcheck.8,v 1.2 2004/04/26 21:56:17 eevans-guest Exp $
+.\" $Header: /var/lib/gforge/chroot/home/users/madduck/cvsroot.logcheck/debian/Attic/logcheck.8,v 1.3 2004/04/27 07:37:51 maks-guest Exp $
 .\"
 .\"	transcript compatibility for postscript use.
 .\"
@@ -62,8 +62,9 @@ logcheck \(em program to scan system logs for interesting lines
 This manual page documents briefly the 
 \fBlogcheck\fR command. 
 .PP 
-\fBlogcheck\fR is a program that scan system 
-logs and mails a report. 
+\fBlogcheck\fR helps spot problems and security  
+violations in your logfiles automatically and will send the results to 
+you in e-mail. 
 .SH "OPTIONS" 
 .PP 
 These programs follow the usual GNU command line syntax. A 
@@ -75,7 +76,7 @@ debug mode.
 .IP "\fB-h\fP         " 10 
 Show usage information. 
 .IP "\fB-l LOG\fP         " 10 
-Overrule default logfile 
+Overrule default logfiles list. 
 .IP "\fB-o\fP         " 10 
 STDOUT mode, not sending mail 
 .IP "\fB-p\fP         " 10 
@@ -90,9 +91,16 @@ Set the report level to "server"
 Overrule default state directory 
 .IP "\fB-t\fP         " 10 
 Do not remove the TMPDIR 
+.IP "\fB-u\fP         " 10 
+Enable syslog-summary 
 .IP "\fB-w\fP         " 10 
 Set the report level to "workstation" 
+.SH "FILES" 
+.PP 
+/etc/logcheck/logcheck.conf is the main configuration file. 
+.PP 
+/etc/logcheck/logcheck.logfiles is the list of files to monitor. 
 .SH "AUTHOR" 
 .PP 
 This manual page was written by Jon Middleton 
-.\" created by instant / docbook-to-man, Tue 20 Apr 2004, 19:27 
+.\" created by instant / docbook-to-man, Tue 27 Apr 2004, 07:51 

@@ -1,0 +1,185 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: logcheck_1.2.12\n"
+"POT-Creation-Date: 2003-04-03 21:55-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: André Luís Lopes <andrelop@ig.com.br>\n"
+"Language-Team: Debian-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Description
+#: ../logcheck.templates:3
+msgid "Changing the report level or email address."
+msgstr "Mudando o nível de relatório ou endereço de e-mail."
+
+#. Description
+#: ../logcheck.templates:3
+msgid ""
+"To change from the default report level (server) or the default email "
+"address (root) you need to edit /etc/logcheck/logcheck.conf"
+msgstr ""
+"Para mudar o nível de relatório padrão (servidor) ou o endereço de "
+"e-mail padrão (root) você precisa editar o arquivo "
+"/etc/logcheck/logcheck.conf"
+
+#. Description
+#: ../logcheck.templates:11
+msgid "Changes to ignore.d directory behaviour"
+msgstr "Mudanças no comportamento do diretório ignore.d"
+
+#. Description
+#: ../logcheck.templates:11
+msgid ""
+"Now the ignore.d directories function in an additive manner (i.e. higher "
+"levels also include the lower levels)"
+msgstr ""
+"Agora os diretórios ignore.d funcionam de maneira aditiva (ou seja,  "
+"níveis mais altos também incluem níveis mais baixos)"
+
+#. Description
+#: ../logcheck.templates:11
+msgid ""
+" - workstation  = workstation + server + paranoid\n"
+" - server       = server + paranoid\n"
+" - paranoid     = paranoid"
+msgstr ""
+" - workstation  = workstation + server + paranoid\n"
+" - server       = server + paranoid\n"
+" - paranoid     = paranoid"
+
+#. Description
+#: ../logcheck.templates:11
+msgid ""
+"Also run-parts(8) now controls which rulefiles are included from the .d "
+"directories."
+msgstr ""
+"Adicionalmente, o run-parts(8) agora controle quais arquivos de regras "
+"são incluídos dos diretórios .d ."
+
+#. Description
+#: ../logcheck.templates:11
+msgid "Please see /usr/share/doc/logheck for more details."
+msgstr ""
+"Por favor consulete /usr/share/doc/logcheck para maiores detalhes."
+
+#. Description
+#: ../logcheck-database.templates:3
+msgid "Local modifications should be put into .d directories"
+msgstr "Modificações locais devem ser colocadas nos diretórios .d ."
+
+#. Description
+#: ../logcheck-database.templates:3
+msgid ""
+"From version 1.1.1-8, logcheck supports run-parts controled rule directories"
+msgstr ""
+"Iniciando com a versão 1.1.1-8 o logcheck suporta diretórios de regras "
+"controlados pelo run-parts."
+
+#. Description
+#: ../logcheck-database.templates:3
+msgid ""
+" - /etc/logcheck/cracking.d\n"
+" - /etc/logcheck/cracking.ignore.d [for local use only ]\n"
+" - /etc/logcheck/violations.d\n"
+" - /etc/logcheck/violations.ignore.d\n"
+" - /etc/logcheck/ignore.d.workstation\n"
+" - /etc/logcheck/ignore.d.server\n"
+" - /etc/logcheck/ignore.d.paranoid"
+msgstr ""
+" - /etc/logcheck/cracking.d\n"
+" - /etc/logcheck/cracking.ignore.d [somente para uso local]\n"
+" - /etc/logcheck/violations.d\n"
+" - /etc/logcheck/violations.ignore.d\n"
+" - /etc/logcheck/ignore.d.workstation\n"
+" - /etc/logcheck/ignore.d.server\n"
+" - /etc/logcheck/ignore.d.paranoid"
+
+#. Description
+#: ../logcheck-database.templates:3
+msgid ""
+"The ignore.d.{workstation,server,paranoid} directory to be used is set by "
+"the REPORTLEVEL option in the file \"/etc/logcheck/logcheck.conf\"."
+msgstr ""
+"O diretório ignore.d.{workstation,server,paranoid} a ser usado é "
+"definido pela opção REPORTLEVEL no arquivo "
+"\"/etc/logcheck/logcheck.conf\"."
+
+#. Description
+#: ../logcheck-database.templates:3
+msgid ""
+"These directories may contain files named \"logcheck\" (containing minimal "
+"generic alert/override patterns), \"(packagename)\" (containing patterns "
+"specific to that one package) or \"local\" (created by the local "
+"administrator to contain patterns tailored for a particular site).  Logcheck "
+"will then use rules collected from all the files found in the appropriate "
+"directories."
+msgstr ""
+"Esses diretórios podem conter arquivos de nome \"logcheck\" (contendo "
+"padrões mínimos de alerta/sobreescrita), \"(nome_do_pacote)\" (contendo "
+"padrões específicos para um pacote) ou \"local\" (criados pelo "
+"administrador local contendo padrões personalizados para o seu site em "
+"particular). O logcheck irá então usar regras colecionadas de todos os "
+"arquivos encontrados nos diretórios apropriados."
+
+#. Description
+#: ../logcheck-database.templates:3
+msgid "Please see /usr/share/doc/logcheck for more information."
+msgstr ""
+"Por favor consulte /usr/share/doc/logcheck para maiores informaões."
+
+#. Description
+#: ../logcheck-database.templates:29
+msgid "Logcheck standard rulefiles renamed"
+msgstr "Arquivos de regras padrões do logcheck renomeados"
+
+#. Description
+#: ../logcheck-database.templates:29
+msgid ""
+"As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
+"\"logcheck\" and the \"standard.postfix\" file has been renamed to "
+"\"logcheck-postfix\"."
+msgstr ""
+"Iniciando com a versão 1.2.1, o arquivo de regras \"standard\" foi "
+"renomeado para \"logcheck\" e o arquivo \"standard.postfix\" foi "
+"renomeadopara \"logcheck.postfix\"."
+
+#. Description
+#: ../logcheck-database.templates:37
+msgid "Delete obsolete conffiles"
+msgstr "Remover arquivos de configuração obsoletos"
+
+#. Description
+#: ../logcheck-database.templates:37
+msgid ""
+"The rulefiles in logcheck-database have just been though an audit to remove "
+"duplicate entries and to make them more specific - this also reduces false "
+"negatives."
+msgstr ""
+"Os arquivos de regras na base de dados do logcheck passaram por uma "
+"auditoria para remover entradas duplicadas e torná-los mais específicos "
+"- isso também reduz falsos negativos."
+
+#. Description
+#: ../logcheck-database.templates:37
+msgid ""
+"As a result of this a number of rulefiles have been removed from the "
+"package. Would you like these to be deleted ?"
+msgstr ""
+"Como um resultado dessa auditoria, diversos arquivos de regras foram "
+"removidos do pacote do logcheck. Você gostaria de removê-los também de "
+"seu sistema ?"
