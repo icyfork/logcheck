@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.108 2005/03/24 01:32:16 ttroxell Exp $
+# $Id: logcheck,v 1.109 2005/04/02 19:54:27 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -52,7 +52,7 @@ else
 fi
 
 DATE="$(date +'%Y-%m-%d %H:%M')"
-VERSION="1.2.36"
+VERSION="1.2.37"
 
 # Set the default report level
 REPORTLEVEL="server"
@@ -380,8 +380,8 @@ cleanchecked() {
 	for file in $(ls -1 $clean/); do
 	debug "cleanchecked - dir - $clean/$file"
 	    (egrep --text -v -f $clean/$file $TMPDIR/checked \
-	        || warn  "Could not process file $file") | cat \
-	        >> $TMPDIR/checked.1 \
+	        if [[ $? == 2 ]]; then warn "Could not process file $file"; fi)\
+		| cat >> $TMPDIR/checked.1 \
 	        || error "Could not output to $TMPDIR/checked.1 Disk Full?"
 	    mv $TMPDIR/checked.1 $TMPDIR/checked \
 	        || error "Could not move $TMPDIR/checked.1 to $TMPDIR/checked"
