@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.31 2005/01/08 09:57:07 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.32 2005/01/20 18:27:59 ttroxell Exp $
 
 set -e
 
@@ -57,17 +57,17 @@ case "$1" in
         if [ "$2" = "" -a ! -f /etc/logcheck/header.txt ]; then
           cp -p /usr/share/logcheck/header.txt /etc/logcheck
         fi
-	if dpkg --compare-versions "$2" lt "1.2.33"; then
+	if dpkg --compare-versions "$2" lt "1.2.34"; then
     	  # Fix Permissions
     	  chown -R logcheck:logcheck /var/lib/logcheck  || true
           chgrp -R logcheck /etc/logcheck || true
-          chmod 4750 /etc/logcheck/ignore.d.paranoid || true
-          chmod 4750 /etc/logcheck/ignore.d.workstation || true
-          chmod 4750 /etc/logcheck/ignore.d.server || true
-          chmod 4750 /etc/logcheck/cracking.d || true
-          chmod 4750 /etc/logcheck/cracking.ignore.d || true
-          chmod 4750 /etc/logcheck/violations.d || true
-          chmod 4750 /etc/logcheck/violations.ignore.d || true
+          chmod 2750 /etc/logcheck/ignore.d.paranoid || true
+          chmod 2750 /etc/logcheck/ignore.d.workstation || true
+          chmod 2750 /etc/logcheck/ignore.d.server || true
+          chmod 2750 /etc/logcheck/cracking.d || true
+          chmod 2750 /etc/logcheck/cracking.ignore.d || true
+          chmod 2750 /etc/logcheck/violations.d || true
+          chmod 2750 /etc/logcheck/violations.ignore.d || true
     	  chmod -R g+rX /etc/logcheck || true
           # just in case
           chown logcheck /var/lock/logcheck > /dev/null 2>&1 || true
