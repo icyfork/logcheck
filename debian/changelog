@@ -5,6 +5,7 @@ logcheck (1.2.33) unstable; urgency=low
   * Fix dnsmasq rule regarding DHCPINFORM. (closes: #286532)
   * Add rbldnsd fules at level server from Rafael Jesus Alcantara Perez
     <rafa@dedaloingenieros.com>. (closes: #285602)
+  * Add jabberd rules from Peter Palfrader <weasel@debian.org>.
 
  -- 
 
