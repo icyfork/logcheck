@@ -13,6 +13,7 @@ logcheck (1.2.30) unstable; urgency=low
   * Added rules for perdition, postfix, pure-ftpd, snmpd.
     thanks to Brendon Baumgartner <brendon@brendon.com>
   * Small enhancment courier rule.
+  * Fix sed error to really remove trailing spaces. (Closes 278337)
   jamie:
   * Added new rules for dnsmasq. (Closes: 277636)
   * Added rules for hylafax.

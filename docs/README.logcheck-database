@@ -158,7 +158,7 @@ hostnames explicitly - hence "oempc" above, rather than the pattern
 To test new rules, you can grep your log file, and remove trailing
 space with something like this:
 
-sed -e 's/[[:space:]]+$//' /var/log/syslog | egrep \
+sed -e 's/[[:space:]]*$//' /var/log/syslog | egrep \
 '^\w{3} [ :0-9]{11} oempc wwwoffled\[[0-9]+\]: WWWOFFLE (On|Off)line\.$'
 
 If the log line is displayed, then your regex works.
