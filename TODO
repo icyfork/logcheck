@@ -26,6 +26,10 @@
    Have roll back support
    Store full path to the log file (unmodified)
 
+* Makefile
+
+   Add DOCDIR
+   Enhance it for non Debian Distribution
 
 * Misc
 
