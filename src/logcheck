@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.66 2004/07/20 08:10:12 maks-guest Exp $
+# $Id: logcheck,v 1.67 2004/07/20 08:12:32 maks-guest Exp $
 
 
 # Set the umask
@@ -34,7 +34,7 @@ SECURITY=0
 ATTACK=0
 
 # Set the getopts string
-GETOPTS="c:dhl:L:m:opr:RsS:tT:uvw"
+GETOPTS="c:dhl:L:m:opr:RsS:tTuvw"
 
 # Get the details for the email message
 # Hostname either fully qualified or not.
