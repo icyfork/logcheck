@@ -16,6 +16,9 @@ logcheck (1.2.29) unstable; urgency=low
     Add pppoa3 rules to the ppp rules.
   todd:
   * Add 1 dovecot rule
+  jamie:
+  * Updated rules for innd, added rule for cleanfeed.
+  * Small correction to gps rules.
 
  --
 
