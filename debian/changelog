@@ -21,6 +21,7 @@ logcheck (1.2.29) unstable; urgency=low
   * Updated rules for innd, added rule for cleanfeed.
   * Small correction to gps rules.
   * Added SPF postfix policy server rule for 'SPF pass'. 
+  * Fix spelling mistake in dhcp rules. (closes: #276063)
 
  --
 
