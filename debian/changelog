@@ -21,6 +21,7 @@ logcheck (1.2.23) unstable; urgency=low
   * Add postfix rule for lmtp.
   * Add Rule for cyrus imap/SQUAT annoyance.
   * Spamd update for unknown message id.
+  * Add Kernel and bonobo rules for workstations.
 
  -- 
 

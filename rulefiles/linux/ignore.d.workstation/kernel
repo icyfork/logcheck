@@ -9,3 +9,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+evdev: already loaded$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+evdev: loaded sucessfully$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]+: Media Link (Off|On [0-9]+mbps (full|half)-duplex)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [0-9A-z]+: module license '[0-9A-z]+' taints kernel\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ISO 9660 Extensions: Microsoft Joliet Level [0-3]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ISO 9660 Extensions: [_[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: agpgart: Found an AGP [0-9.]+ compliant device at [0-9:.]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: agpgart: Putting AGP V[0-9] device at [0-9:.]+ into [0-9]x mode$
