@@ -14,4 +14,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\(bind\): mounted [^[:space:]]+ type bind on [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: running expiration on path [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: expired [^[:space:]]+$
-
