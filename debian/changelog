@@ -2,6 +2,7 @@ logcheck (1.2.35) unstable; urgency=low
 
   maks:
   * logtail fix invocation without switches (compat to old versions).
+  * Add smartd rule, whitespace fix openvpn rule, merge old smartd rules.
   jamie:
   * Add rules for webmin (closes: #286307).
 
