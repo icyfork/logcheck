@@ -13,7 +13,7 @@ logcheck (1.2.29) unstable; urgency=low
   * Only show "rules-directories-note" on upgrade.
   * Enhance ppp rules on level workstation. (closes: #270019)
     Add pppoa3 rules to the ppp rules.
-  * Small update concerning reject messages in postfix.
+  * Small update concerning reject messages in postfix + new rule.
   * Added pptpd rules at level workstation.
     thanks to Erich Schubert <erich@debian.org>
   * Added first pure-ftpd rules at level server.
