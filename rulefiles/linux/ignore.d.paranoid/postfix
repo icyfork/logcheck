@@ -7,10 +7,9 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:alnum:]]+: client=[^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: disconnect from [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: connect from [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/local\[[0-9]+\]: [[:alnum:]]+: to=[^[:space:]]+, relay=[^[:space:]]+, delay=[0-9]+, status=[[:alnum:]]+ \(.*\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/local\[[0-9]+\]: [[:alnum:]]+: to=[^[:space:]]+, orig_to=[^[:space:]]+, relay=[^[:space:]]+, delay=[0-9]+, status=[[:alnum:]]+ \(.*\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/pipe\[[0-9]+\]: [[:alnum:]]+: to=[^[:space:]]+, relay=[^[:space:]]+, delay=[0-9]+, status=[[:alnum:]]+ \(.*\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/pipe\[[0-9]+\]: [[:alnum:]]+: to=[^[:space:]]+, orig_to=[^[:space:]]+, relay=[^[:space:]]+, delay=[0-9]+, status=[[:alnum:]]+ \(.*\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(local|pipe|virtual)\[[0-9]+\]:
++[[:alnum:]]+: to=[^[:space:]]+, (orig_to=[^[:space:]]+, |)relay=[^[:space:]]+,
++delay=[0-9]+, status=[[:alnum:]]+ \(.*\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: alias database\.\*rebuilt$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: aliases\.\*longest$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: from=[^[:space:]]+$
