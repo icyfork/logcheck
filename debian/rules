@@ -11,7 +11,7 @@ build-stamp:
 	dh_testdir
 
 	/usr/bin/docbook-to-man docs/logcheck.sgml > \
-		debian/logcheck.8
+		docs/logcheck.8
 
 	make check
 	touch build-stamp
@@ -21,7 +21,7 @@ clean:
 	dh_testroot
 	-rm -f build-stamp install-stamp
 
-	-rm -f debian/logcheck.8
+	-rm -f docs/logcheck.8
 	-$(MAKE) clean DESTDIR=$(CURDIR)/debian/tmp
 
 
@@ -47,8 +47,8 @@ binary-indep: build install
 	dh_movefiles
 	dh_install debian/header.txt usr/share/logcheck
 	dh_installcron
-	dh_installman -p logtail debian/logtail.8
-	dh_installman -p logcheck debian/logcheck.8
+	dh_installman -p logtail docs/logtail.8
+	dh_installman -p logcheck docs/logcheck.8
 	dh_installchangelogs
 	dh_installdebconf
 	dh_strip
