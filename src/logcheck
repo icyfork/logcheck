@@ -20,7 +20,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.7 2004/04/27 08:18:40 maks-guest Exp $
+# $Id: logcheck,v 1.8 2004/04/27 08:39:05 ttroxell Exp $
 
 
 # Set the umask
@@ -35,7 +35,7 @@ SECURITY=0
 ATTACK=0
 
 # Set the getopts string
-GETOPTS="c:dhl:opr:RsS:tuw"
+GETOPTS="c:dhl:opr:RsS:tT:uw"
 
 # Get the details for the email message
 # Hostname either fully qualified or not.
@@ -339,19 +339,21 @@ usage() {
     debug "usage: Printing usage and exiting"
     cat<<EOF
 usage: logcheck [-c CFG] [-d] [-h] [-l LOG] [-o] [-r DIR] [-s|-p|-w] [-S] [-t]
- -c CFG = overrule default configuration file
- -d     = debug mode
- -h     = print this usage guide and exit
- -l LOG = overrule default logfiles list
- -o     = stdout mode, not sending mail
- -p     = runlevel "paranoid"
- -r DIR = overrule default rules directory
- -R     = adds Reboot: to email subject
- -s     = runlevel "server"
- -S     = overrule default state directory
- -t     = Do not remove the TMPDIR 
- -u     = Enable syslog-summary
- -w     = runlevel "workstation"
+ -c CFG       = overrule default configuration file
+ -d           = debug mode
+ -h           = print this usage guide and exit
+ -l LOG       = overrule default logfiles list
+ -o           = stdout mode, not sending mail
+ -p           = runlevel "paranoid"
+ -r DIR       = overrule default rules directory
+ -R           = adds Reboot: to email subject
+ -s           = runlevel "server"
+ -S           = overrule default state directory
+ -t           = do not remove the TMPDIR 
+ -T LOGFILE   = test LOGFILE with current ruleset
+                (Does not alter logwatch offset)
+ -u           = enable syslog-summary
+ -w           = runlevel "workstation"
 EOF
 }
 
@@ -442,6 +444,12 @@ while getopts $GETOPTS opt; do
 	    debug "Setting SYSLOGSUMMARY to 1"
 	    SYSLOGSUMMARY="1"
 	    ;;
+	T)
+	    debug "Setting LOGTAIL_OPTS to -t"
+	    LOGTAIL_OPTS=' -t'
+	    debug "setting TESTFILE to $OPTARG"
+	    TESTFILE="$OPTARG"
+	    ;;
 	w)
 	    debug "Setting REPORTLEVEL to workstation"
 	    REPORTLEVEL="workstation"
@@ -512,20 +520,20 @@ for file in $(egrep --text -v "^#" $LOGFILE); do
 		if [ -e $file.0 ]; then
 	        # assume the log is rotated by savelog(8)
 		    debug "Running logtail on rotated: $file.0"
-		    $LOGTAIL $file.0 $offsetfile > \
+		    $LOGTAIL $file.0 $offsetfile $LOGTAIL_OPTS > \
 			$TMPDIR/logoutput/$(basename $file)
 		    rm -f $offsetfile
 		elif [ -e $file.1 ]; then
 		# assume the log is rotated by logrotate(8)
 		    debug "Running logtail on rotated: $file.1"
-		    $LOGTAIL $file.1 $offsetfile > \
+		    $LOGTAIL $file.1 $offsetfile $LOGTAIL_OPTS > \
 			$TMPDIR/logoutput/$(basename $file)
 		    rm -f $offsetfile
 		fi
 	    fi
 	fi
 	debug "Running logtail: $file"
-	$LOGTAIL $file $offsetfile \
+	$LOGTAIL $file $offsetfile $LOGTAIL_OPTS \
 	    >> $TMPDIR/logoutput/$(basename $file)
     else
 	echo "E: File could not be read: $file" >> $TMPDIR/errors
