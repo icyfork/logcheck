@@ -19,7 +19,7 @@ logcheck (1.2.21) unstable; urgency=low
   * Add switches to logtails default arguments.
   todd:
   * Add debconf to logcheck Depends:
-  * Check the return values of all commands.
+  * Check the return values of all commands. (Closes: #174173)
   eevans:
   * Made addition of logcheck user and permissions/ownership changes a
     conditional of an upgrade from a version less than 1.2.19,
