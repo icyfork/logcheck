@@ -72,8 +72,9 @@ manpage.1: manpage.sgml
     <para>This manual page documents briefly the
       <command>logcheck</command> command.</para>
 
-    <para><command>&dhpackage;</command> is a program that scan system
-    logs and mails a report.</para>
+    <para><command>&dhpackage;</command> helps spot problems and security 
+    violations in your logfiles automatically and will send the results to
+    you in e-mail.</para>
 
   </refsect1>
   <refsect1>
