@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.64 2004/07/10 15:19:07 maks-guest Exp $
+# $Id: logcheck,v 1.65 2004/07/20 07:56:42 maks-guest Exp $
 
 
 # Set the umask
@@ -433,6 +433,7 @@ while getopts $GETOPTS opt; do
 	    ;;
 	d)
 	    LOGCHECKDEBUG=1
+	    debug "Turning debug mode on"
 	    ;;
 	h)
 	    usage
