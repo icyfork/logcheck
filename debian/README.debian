@@ -19,9 +19,7 @@ or the more secure:
 There are a number of other options which are documented in
 /etc/logcheck/logcheck.conf itself.
 
-The documentation is being updated as time allows.
-
 By default logcheck is set to run once an hour. This can be changed by
 editing /etc/cron.d/logcheck.
 
--- Jon Middleton <jjm@debian.org>
+The documentation is being updated as time allows.
