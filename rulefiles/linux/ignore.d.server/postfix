@@ -27,10 +27,16 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ No route to host \(port 25\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ Network is unreachable \(port 25\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ server refused mail service \(port 25\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ read timeout \(port 25\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ \[[.0-9]+\]: read timeout \(port 25\)$
+# Postfix 2.1
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ server dropped connection without sending the initial SMTP greeting \(port 25\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: host [^[:space:]]+ refused to talk to me: [45][0-9][0-9].*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [A-Z0-9]+: lost connection with [^[:space:]]+ while sending (MAIL FROM|RCPT TO)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [A-Z0-9]+: host [^[:space:]]+ said: .* \(in reply to (HELO|EHLO|MAIL FROM|RCPT TO|end of DATA) command\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: no MX host for [^[:space:]]+ has a valid A record$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: host [^[:space:]]+ greeted me with my own hostname [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: host [^[:space:]]+ replied to HELO/EHLO with my own hostname [._[:alnum:]-]+$
+# Postfix < 2.1
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+: server dropped connection without sending the initial greeting \(port 25\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:alnum:]]+: to=\<.*\>, relay=[^[:space:]]+\], status=deferred \(host [^[:space:]]+\] said: .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: [.0-9]+: address not listed for hostname [^[:space:]]+$
