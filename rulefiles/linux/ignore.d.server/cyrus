@@ -1,2 +1,2 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cyrus/imapd\[[0-9]\]: SQUAT returned [0-9]+ messages$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cyrus/squatter\[[0-9]\]: (skipping|indexing) mailbox [a-zA-Z^\.]+...$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cyrus/squatter\[[0-9]\]: (skipping|indexing) mailbox [[:alpha:]^\.]+...$

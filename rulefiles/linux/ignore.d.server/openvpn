@@ -7,7 +7,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Inactivity timeout \(--ping-restart\), restarting$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Closing TCP/UDP socket$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Re-using SSL/TLS context$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: (Data|Control) Channel MTU parms \[[A-Z:0-9 ]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: (Data|Control) Channel MTU parms \[[[:upper:]:0-9 ]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Preserving previous TUN/TAP instance: [[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Local Options hash \(VER=V3\): '[0-9a-f]+'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: (Local|Expected Remote) Options hash \(VER=V3\): '[0-9a-f]+'$
