@@ -16,6 +16,7 @@ logcheck (1.2.29) unstable; urgency=low
   * Small update concerning reject messages in postfix.
   * Added pptpd rules at level workstation.
     thanks to Erich Schubert <erich@debian.org>
+  * Added first pure-ftpd rules at level server.
   todd:
   * Add 1 dovecot rule
   jamie:
