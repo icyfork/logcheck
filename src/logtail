@@ -98,10 +98,6 @@ unless ($TEST_MODE) {
         print "File $offsetfile cannot be created. Check your permissions.\n";
         exit 73;
     }
-    unless (chmod 0600, $offsetfile) {
-        print "Cannot set permissions on file $offsetfile\n";
-        exit 65;
-    }
     print OFFSET "$ino\n$size\n";
     close OFFSET;
 }
