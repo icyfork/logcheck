@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck_1.2.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-05-19 15:00+0000\n"
+"POT-Creation-Date: 2004-05-24 01:09+0000\n"
 "PO-Revision-Date: 2004-05-05 20:50+0200\n"
 "Last-Translator: Maks Attems <debian@sternwelten.at>\n"
 "Language-Team: Debian-DE Project <debian-l10n-german@lists.debian.org>\n"
@@ -83,21 +83,6 @@ msgstr ""
 msgid "Please see /usr/share/doc/logcheck for more details."
 msgstr ""
 "Schauen Sie bitte in /usr/share/doc/logcheck für weitere Informationen nach."
-
-#. Type: select
-#. Description
-#: ../logcheck.templates:28
-msgid "How often should logcheck run to generate reports?"
-msgstr ""
-
-#. Type: select
-#. Description
-#: ../logcheck.templates:28
-msgid ""
-"Logcheck is invoked by cron to periodically parse your log files and  "
-"generate an email report. Hourly is the default and recommended  interval "
-"for, but you may also select from one of weekly or daily."
-msgstr ""
 
 #. Type: note
 #. Description

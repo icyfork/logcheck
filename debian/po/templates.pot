@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-05-19 15:00+0000\n"
+"POT-Creation-Date: 2004-05-24 01:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,21 +73,6 @@ msgstr ""
 #. Description
 #: ../logcheck.templates:11
 msgid "Please see /usr/share/doc/logcheck for more details."
-msgstr ""
-
-#. Type: select
-#. Description
-#: ../logcheck.templates:28
-msgid "How often should logcheck run to generate reports?"
-msgstr ""
-
-#. Type: select
-#. Description
-#: ../logcheck.templates:28
-msgid ""
-"Logcheck is invoked by cron to periodically parse your log files and  "
-"generate an email report. Hourly is the default and recommended  interval "
-"for, but you may also select from one of weekly or daily."
 msgstr ""
 
 #. Type: note
