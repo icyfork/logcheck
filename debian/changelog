@@ -11,6 +11,7 @@ logcheck (1.2.25) unstable; urgency=low
   * Re-format NEWS.Debian into Debian changelog format (Closes: #255932)
   * Remove /var/state/logcheck from debian/logcheck.dirs.
   * Small rule updates for pdns, pop3d-ssl, postfix, scponly.
+  * Ack woody security fix. (Closes: #193161)
 
  --
 
