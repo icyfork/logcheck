@@ -23,7 +23,7 @@ logcheck (1.2.19) unstable; urgency=low
     running as user logcheck
   * Removed chmod from logtail. (Closes: #189822)
 
- --
+ -- Todd Troxell <ttroxell@debian.org>  Monday, 03 May 2004 09:59:29 +0000
 
 logcheck (1.2.18) unstable; urgency=low
 
