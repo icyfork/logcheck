@@ -21,6 +21,7 @@ logcheck (1.2.21) unstable; urgency=low
   * Added cvs-build, cvs-clean debian/rules - stolen from apt.
   * Denote /etc/logcheck/logcheck.logfile as CFG in manpage and logcheck.
   * Move logtail.8 from debian to doc dir.
+  * Added japanese translation. thanks to Hideki Yamane (Closes: #251463)
   todd:
   * Add debconf to logcheck Depends:
   * Check the return values of all commands that write to disk.
