@@ -6,7 +6,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: MODEM [.[:space:][:alnum:]/]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ HylaFAX\[[0-9]+\]: Filesystem has SysV-style file creation semantics\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: ANSWER: Can not lock modem device$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: NOTIFY: bin/notify \"doneq/q[[:digit:]]+\" \"done\" \"[:[:digit:]]{4,5}\"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: NOTIFY: bin/notify \"doneq/q[[:digit:]]+\" \"done\" \"[[:digit:]]+:[[:digit:]]{2}\"$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: NOTIFY exit status: 0 \([[:digit:]]+\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxSend\[[0-9]+\]: SEND FAX: JOB [[:digit:]]+1 DEST [ [:digit:]()-]+ COMMID \w+ DEVICE '[/[:alnum:]]+'$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxSend\[[0-9]+\]: SEND FAX: JOB [[:digit:]]+1 SENT in [[:digit:]:]{4,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxSend\[[0-9]+\]: SEND FAX: JOB [[:digit:]]+ DEST [ [:digit:]()-]+ COMMID \w+ DEVICE '[/[:alnum:]]+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxSend\[[0-9]+\]: SEND FAX: JOB [[:digit:]]+ SENT in [[:digit:]]+:[[:digit:]]{2}$
