@@ -36,6 +36,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: no MX host for [^[:space:]]+ has a valid A record$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: host [^[:space:]]+ greeted me with my own hostname [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: host [^[:space:]]+ replied to HELO/EHLO with my own hostname [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]:
+decided action=DUNNO$
 # Postfix < 2.1
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+: server dropped connection without sending the initial greeting \(port 25\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:alnum:]]+: to=\<.*\>, relay=[^[:space:]]+\], status=deferred \(host [^[:space:]]+\] said: .*$
