@@ -14,6 +14,7 @@ logcheck (1.2.21) unstable; urgency=low
   * Lower all debconf messages priority.
   * Added and updated oidentd rules. (Closes: #186849)
     thanks to Tobias Wolter <towo+bugs@ydal.de>
+  * Ignore normal use of su and sudo. (Closes: #182992, #192192)
   todd:
   * Additional INN rule from Mark Brown (Closes: #249181)
   * Add debconf to logcheck Depends:
