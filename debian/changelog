@@ -9,6 +9,8 @@ logcheck (1.2.20) unstable; urgency=low
   * Try secure TMPDIR in /tmp if /var/tmp fails. (Closes: #242284)
   * Initial german translation.
   * Set a sane DEFAULTLEVEL="server" in logcheck itself.
+  * Ignore crontab -l rule and list crontab -e for reportlevel=server.
+    (Closes: 243019)
   alfie:
   * Run debconf-updatepo.
   * Fixed broken german po file...
