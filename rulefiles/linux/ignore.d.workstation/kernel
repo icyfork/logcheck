@@ -61,6 +61,16 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PL-2303 ttyUSB[0-9]: PL-2303 converter now disconnected from ttyUSB[0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/pl2303.c: Prolific PL2303 USB to serial adaptor driver v[.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Bluetooth: HCI USB driver ver [.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers\/usb\/class\/audio\.c: v[.0-9]+:USB Audio Class driver$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: assuming that a stereo channel connected directly to a mixer is missing in search \(got .*\?\)\. Should be fine\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: constructing mixer for Terminal [0-9]+ type 0x[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: device [0-9] audiocontrol interface [0-9] has [0-9] input and [0-9] output AudioStreaming interfaces$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: device [0-9]+ interface [0-9]+ altsetting [0-9]+: format 0x[0-9]+ sratelo [0-9]+ sratehi [0-9]+ attributes 0x[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb_audio_parsecontrol: usb_audio_state at [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: (registered|unregister) (dsp|mixer) [,0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: valid (in|out)put sample rate [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: warning: found [0-9] of [0-9] logical channels\.$
+
 # for sun machines
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sunmouse: Successfully adjusted to [0-9]+ baud\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: btaudio: driver version [0-9.]+ loaded \[digital\+analog\]$

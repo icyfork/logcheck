@@ -8,6 +8,8 @@ logcheck (1.2.33) unstable; urgency=low
     <rafa@dedaloingenieros.com>. (closes: #285602)
   * Add jabberd rules from Peter Palfrader <weasel@debian.org>.
   * Add rule for weekly nmbd logrotate. (closes: #286329)
+  * Add rules from Lee Maguire <lee-debian@hexkey.co.uk> for usb headset
+    on level workstation. (closes: #286747)
   todd:
   * Set rule directories setgid to simplify administration. (closes: #286230)
   * Add future package plans to TODO
