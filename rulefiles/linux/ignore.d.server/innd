@@ -2,7 +2,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (expire|expireover|ctlinnd|nnrpd)\[[0-9]+\]: Reading config from /etc/news/inn\.conf$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: offered <[^[:space:]]+> [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: localhost connected [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: localhost connected [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alpha:]]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alpha:]]:$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alpha:]]:[-[:alnum:]]+$
