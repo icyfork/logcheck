@@ -23,5 +23,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: pool [0-9a-f]{7} [.0-9]+/[:[:alnum:]]+  total [:[:alnum:]]+  free [:[:alnum:]]+  backup [:[:alnum:]]+  lts [:[:alnum:]]+$
 # Dyndns support
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: [Aa]dded (new )?(forward|rewerse) map from [._[:alnum:]-]+ to [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: [Aa]dded (new )?(forward|reverse) map from [._[:alnum:]-]+ to [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: Can't update forward map [._[:alnum:]-]+ to [.0-9]+: no such RRset$
