@@ -10,6 +10,7 @@ logcheck (1.2.30) unstable; urgency=low
   * Logcheck/rules: Don't take locale for granted use character class instead.
   * Fix 2 samba rules at level server. (closes: #277635)
   * Fix imapd rule at level paranoid. (closes: #277696)
+  * Small enhancment courier rule.
   jamie:
   * Added new rules for dnsmasq. (Closes: 277636)
   * Added rules for hylafax.
