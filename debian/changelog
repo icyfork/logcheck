@@ -21,7 +21,7 @@ logcheck (1.2.33) unstable; urgency=low
   * Conditionally set permissions in postinst on version <1.2.33 
     (closes: #287184)
   * Update dh_installlogcheck, which has already been patched in debhelper.
-    (closes: #287184)
+    (closes: #287237)
 
  -- 
 
