@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.104 2005/03/09 02:56:37 ttroxell Exp $
+# $Id: logcheck,v 1.105 2005/03/09 03:10:43 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -663,7 +663,7 @@ fi
 
 # Add warnings to report
 if [ -f $TMPDIR/warnings ]; then
-	echo -e "Logcheck Warnings:\n=-=-=-=-=-=-=-=-" >> $TMPDIR/report \
+	  printheader "Logcheck Warnings" >> $TMPDIR/report \
 	  || error "Cannot append warnings to report.  Disk Full?"
 	cat $TMPDIR/warnings >> $TMPDIR/report && echo >> $TMPDIR/report \
 	  || error "Cannot append warnings to report.  Disk full?"
