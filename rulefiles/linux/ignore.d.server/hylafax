@@ -1,5 +1,12 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: SUBMIT JOB [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: FIFO RECV \"Sclient/[0-9]+:[0-9]+\"$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: JOB [0-9]+ \((ready|active) dest [0-9\+]+ pri [0-9]+ tts [0-9]+:[0-9]+ killtime [0-9]+:[0-9]+:[0-9]+\): (READY|PROCESS|ACTIVE|PREPARE START)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: SUBMIT JOB [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: FIFO RECV \"Sclient/[[:digit:]]+:[[:digit:]]+\"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: JOB [[:digit:]]+ \((ready|active) dest [[:digit:]\+]+ pri [[:digit:]]+ tts [[:digit:]]+:[[:digit:]]+ killtime [[:digit:]]+:[[:digit:]]+:[[:digit:]]+\): (READY|PROCESS|ACTIVE|PREPARE START)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: LOCKWAIT$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: STATE CHANGE: RUNNING -> LOCKWAIT \(timeout [0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: STATE CHANGE: RUNNING -> LOCKWAIT \(timeout [[:digit:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: MODEM [.[:space:][:alnum:]/]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ HylaFAX\[[0-9]+\]: Filesystem has SysV-style file creation semantics\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: ANSWER: Can not lock modem device$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: NOTIFY: bin/notify \"doneq/q[[:digit:]]+\" \"done\" \"[:[:digit:]]{4,5}\"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: NOTIFY exit status: 0 \([[:digit:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxSend\[[0-9]+\]: SEND FAX: JOB [[:digit:]]+1 DEST [ [:digit:]()-]+ COMMID \w+ DEVICE '[/[:alnum:]]+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxSend\[[0-9]+\]: SEND FAX: JOB [[:digit:]]+1 SENT in [[:digit:]:]{4,5}$
