@@ -1,6 +1,6 @@
 logcheck (1.2.19) unstable; urgency=low
 
-maks:
+  maks:
   * Rename "Security Violations" in "Security Events". (Closes: #182079)
   * Use the newer gettext-based debconf template translation system.
     Patch with pt_BR translation from Andre Luis Lopes. (Closes: #187519)
@@ -9,11 +9,11 @@ maks:
   * Updated uptimed rules. (Closes: #216204)
   * Logcheck used empty ignores when greplogoutput was called with 2 arguments.
     Thanks to Paul Cassella for preliminary patch. (Closes: #243980)
-eevans:
+  eevans:
   * Added a trap to invoke cleanup() when shell exits. Thanks to Marc
     Staveley for the patch. (Closes: #207795)
   * Changed interpreter from /bin/sh to /bin/bash
-todd:
+  todd:
   * Added -t flag to logtail and logtail.8 - used in test mode - see man page
   * Added bash depends in debian/control - required by trap patch above
   * Added adduser depends, add logcheck user on preinst and remove in postrm
@@ -25,6 +25,7 @@ todd:
  --
 
 logcheck (1.2.18) unstable; urgency=low
+
   * New maintainer (Closes: #244271)
   * Updated debian/copyright with new upstream information. (Closes: #206022)
   * Updated sudo, oidentd rules.
@@ -89,7 +90,7 @@ logcheck (1.2.15) unstable; urgency=low
     (Closes: #198922)
 
  -- Steve Kemp <skx@debian.org>  Thursday, 07 Aug 2003 11:08:45 +0000
-	
+
 logcheck (1.2.14) unstable; urgency=low
 
   * Improved lockfile handling, thanks to Nicholas Francois 
@@ -112,7 +113,7 @@ logcheck (1.2.13) unstable; urgency=low
   * New maintainer.
 
  -- Steve Kemp <skx@debian.org>  Mon, 07 Apr 2003 10:17:20 +0000
-	
+
 logcheck (1.2.12) unstable; urgency=low
 
   * Add the /etc/logcheck/cracking.ignore.d directory to
@@ -881,5 +882,3 @@ logcheck (1.1-1) unstable; urgency=low
   * Initial Release.
 
  -- Rene Mayrhofer <rmayr@vianova.at>  Mon, 10 May 1999 23:13:20 +0200
-
-
