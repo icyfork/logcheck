@@ -2,7 +2,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Lame server on '[^[:space:]]+' \(in '[^[:space:]]+'\?\): \[[\.0-9]+\]\.[0-9]+ '[^[:space:]]+'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Response from$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: reloading$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Cleaned cache of [0-9]+ RRsets$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Cleaned cache of [0-9]+ RRsets?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Sent NOTIFY for [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: approved AXFR from [^[:space:]]+ for [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone transfer \(AXFR\) of [^[:space:]]+ to [^[:space:]]+$
