@@ -1,6 +1,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/nqmgr\[[0-9]+\]: [[:alnum:]]+: skipped, still being delivered$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/nqmgr\[[0-9]+\]: [[:alnum:]]+: from=<.*>, status=expired, returned to sender$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/nqmgr\[[0-9]+\]: [[:alnum:]]+: message-id=<.*>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/nqmgr\[[0-9]+\]: [[:alnum:]]+: message-id=<.*>( \(.*\))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:alnum:]]+: message-id=<.*>$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: unable to open Berkeley db /etc/sasldb: No such file or directory$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: verify error:num=10:certificate has expired$
