@@ -13,7 +13,7 @@ logcheck (1.2.24) unstable; urgency=low
   * Fix pid regex in cyrus rules. (Closes: #259092)
   * Added cyrus rules for notifyd. (Closes: #259466)
   * Make shure logtail gets a logfile to read, if not exit soon.
-    Added -o switch to logtail(8). (Closes: #259371)
+    Documented -o switch in logtail(8). (Closes: #259371)
   * Added logcheck-devel mail to logtail(8) and copyright.
   * Added userv rules. (Closes: #260105)
   * Generalize user match in spamd rule. (Closes: #260103)
