@@ -6,6 +6,8 @@ logcheck (1.2.22) unstable; urgency=low
     (Closes: #252216, #249474, #244172, #252174, #187496, #249181)
   * Better readability of greplogoutput() in logcheck.
   * Our Perl usage needs 5.8, add dependency. (Closes: #252078)
+  todd:
+  * add MAILTO=root to logcheck.cron.d (Closes: #252597)
 
  -- 
 
