@@ -4,4 +4,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ \([._[:alnum:]-]+-[0-9]+\): Resolved address "[^[:space:]]+" to a read-only configuration source at position [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ \([._[:alnum:]-]+-[0-9]+\): Resolved address "[^[:space:]]+" to a writable configuration source at position [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ \([._[:alnum:]-]+-[0-9]+\): GConf server is not in use, shutting down.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ \([._[:alnum:]-]+-[0-9]+\): Reloading all databases$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ \([._[:alnum:]-]+-[0-9]+\):  SIGHUP received, reloading all databases$
