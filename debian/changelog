@@ -2,7 +2,7 @@ logcheck (1.2.23) unstable; urgency=low
 
   maks:
   * Remove logcheck pre-dependency on logtail.
-  * Added imapproxy, nfs, scponly rules. 
+  * Added imapproxy, kernel, nfs, scponly rules. 
   * Updated dhcpd, innd, postfix, su, sudo rules. 
     (Closes: #253879, #244171, #190101, #254681, #253861, #186372, #255560).
   * Fix locale dependent regexes.
