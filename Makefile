@@ -5,38 +5,38 @@ BINDIR = usr/sbin
 
 install:
 	# Create the directories
-	install -m 750 -g logcheck -d $(DESTDIR)/$(CONFDIR)
-	install -d -g logcheck -o logcheck $(DESTDIR)/var/lib/logcheck
+	install -m 750 -d $(DESTDIR)/$(CONFDIR)
+	install -d $(DESTDIR)/var/lib/logcheck
 	install -d $(DESTDIR)/usr/sbin
 
-	install -m 750 -g logcheck -d $(DESTDIR)/$(CONFDIR)/ignore.d.paranoid
-	install -m 750 -g logcheck -d $(DESTDIR)/$(CONFDIR)/ignore.d.workstation
-	install -m 750 -g logcheck -d $(DESTDIR)/$(CONFDIR)/ignore.d.server
-	install -m 750 -g logcheck -d $(DESTDIR)/$(CONFDIR)/cracking.d
-	install -m 750 -g logcheck -d $(DESTDIR)/$(CONFDIR)/cracking.ignore.d
-	install -m 750 -g logcheck -d $(DESTDIR)/$(CONFDIR)/violations.d
-	install -m 750 -g logcheck -d $(DESTDIR)/$(CONFDIR)/violations.ignore.d
+	install -m 750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.paranoid
+	install -m 750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.workstation
+	install -m 750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.server
+	install -m 750 -d $(DESTDIR)/$(CONFDIR)/cracking.d
+	install -m 750 -d $(DESTDIR)/$(CONFDIR)/cracking.ignore.d
+	install -m 750 -d $(DESTDIR)/$(CONFDIR)/violations.d
+	install -m 750 -d $(DESTDIR)/$(CONFDIR)/violations.ignore.d
 
 	# Install the scripts
 	install -m 755 src/logcheck $(DESTDIR)/$(BINDIR)/
 	install -m 755 src/logtail $(DESTDIR)/$(BINDIR)/
 
 	# Install the config files
-	install -m 640 -g logcheck etc/logcheck.logfiles $(DESTDIR)/$(CONFDIR)
-	install -m 640 -g logcheck etc/logcheck.conf $(DESTDIR)/$(CONFDIR)
+	install -m 640 etc/logcheck.logfiles $(DESTDIR)/$(CONFDIR)
+	install -m 640 etc/logcheck.conf $(DESTDIR)/$(CONFDIR)
 
 	# Install the rulefiles
-	install -m 640 -g logcheck rulefiles/linux/ignore.d.paranoid/* \
+	install -m 640 rulefiles/linux/ignore.d.paranoid/* \
 		$(DESTDIR)/$(CONFDIR)/ignore.d.paranoid/
-	install -m 640 -g logcheck rulefiles/linux/ignore.d.server/* \
+	install -m 640 rulefiles/linux/ignore.d.server/* \
 		$(DESTDIR)/$(CONFDIR)/ignore.d.server/
-	install -m 640 -g logcheck rulefiles/linux/ignore.d.workstation/* \
+	install -m 640 rulefiles/linux/ignore.d.workstation/* \
 		$(DESTDIR)/$(CONFDIR)/ignore.d.workstation/
-	install -m 640 -g logcheck rulefiles/linux/violations.d/* \
+	install -m 640 rulefiles/linux/violations.d/* \
 		$(DESTDIR)/$(CONFDIR)/violations.d/
-	install -m 640 -g logcheck rulefiles/linux/violations.ignore.d/* \
+	install -m 640 rulefiles/linux/violations.ignore.d/* \
 		$(DESTDIR)/$(CONFDIR)/violations.ignore.d/
-	install -m 640 -g logcheck rulefiles/linux/cracking.d/* \
+	install -m 640 rulefiles/linux/cracking.d/* \
 		$(DESTDIR)/$(CONFDIR)/cracking.d/
 
 clean:
