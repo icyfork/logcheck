@@ -4,7 +4,8 @@ logcheck (1.2.31) unstable; urgency=low
   * Fix rules for hylafax, thanks to Ross Boylan. (closes: #270018)
   max
   * Add rule for tripwire run at level paranoid.
-   
+  alfie:
+  * Fixed my non-fix in logcheck, sorry (closes: #279635)
 
  -- 
 
