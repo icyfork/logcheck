@@ -26,6 +26,8 @@ logcheck (1.2.29) unstable; urgency=low
   * Small correction to gps rules.
   * Added SPF postfix policy server rule for 'SPF pass'. 
   * Fix spelling mistake in dhcp rules. (closes: #276063)
+  * Change dhcp rules to reflect ISC's change of name. 
+    Thanks to Dirk Prosdorf for the patch. (closes: #276317)
 
  --
 
