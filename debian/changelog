@@ -1,3 +1,10 @@
+logcheck (1.2.23) unstable; urgency=low
+  
+  maks:
+  * Fix broken cleancheck call. (Closes: #252966, #253075)
+
+ -- 
+
 logcheck (1.2.22) unstable; urgency=low
 
   maks:
