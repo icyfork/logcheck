@@ -185,6 +185,12 @@ manpage.1: manpage.sgml
   </refsect1>
 
   <refsect1>
+    <title>SEE ALSO</title>
+
+    <para><command>logtail</command>(8)</para>
+  </refsect1>
+
+  <refsect1>
     <title>AUTHOR</title>
 
     <para>This manual page was written by &dhusername;</para>

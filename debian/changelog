@@ -11,6 +11,7 @@ logcheck (1.2.20) unstable; urgency=low
   * Set a sane DEFAULTLEVEL="server" in logcheck itself.
   * Ignore crontab -l rule and list crontab -e for reportlevel=server.
     (Closes: 243019)
+  * Added refernce to logtail in manpage logcheck(8).
   alfie:
   * Run debconf-updatepo.
   * Fixed broken german po file...
