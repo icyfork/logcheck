@@ -21,6 +21,8 @@
 
 * Re-write logtail
 
+   Add testing mode were no offset is update.
+   Pass logfile as arg -l from logcheck.
    Needs to handle rotated files it self
    Use a BDB (?) database for storing file offsets
    Have roll back support

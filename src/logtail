@@ -42,9 +42,7 @@ if (! -f $logfile) {
 unless ($offsetfile) {
     # offsetfile not given, use .offset/$logfile in the same directory
     # unless we're in test mode
-    unless($TEST_MODE) {
     $offsetfile = $logfile . '.offset';
-    }
 }
 
 unless (open(LOGFILE, $logfile)) {
@@ -54,7 +52,7 @@ unless (open(LOGFILE, $logfile)) {
 
 my ($inode, $ino, $offset) = (0, 0, 0);
 
-unless ($TEST_MODE and not $offsetfile) {
+unless (not $offsetfile) {
     if (open(OFFSET, $offsetfile)) {
         $_ = <OFFSET>;
         unless (! defined $_) {

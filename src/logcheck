@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.58 2004/06/08 06:59:09 maks-guest Exp $
+# $Id: logcheck,v 1.59 2004/06/10 09:24:59 maks-guest Exp $
 
 
 # Set the umask
@@ -376,7 +376,8 @@ usage: logcheck [-c CFG] [-d] [-h] [-l CFG] [-o] [-r DIR] [-s|-p|-w] [-S] [-t]
  -R           = adds Reboot: to email subject
  -s           = runlevel "server"
  -S           = overrule default state directory
- -t           = do not remove the TMPDIR 
+ -t	      = testing mode
+ -T           = do not remove the TMPDIR 
  -u           = enable syslog-summary
  -v           = print version
  -w           = runlevel "workstation"
@@ -397,7 +398,7 @@ while getopts $GETOPTS opt; do
 	    usage
 	    exit 0
 	    ;;
-	t)
+	T)
 	    debug "Setting NOCLEANUP to 1"
 	    NOCLEANUP=1
 	    ;;
@@ -474,11 +475,10 @@ while getopts $GETOPTS opt; do
 	    debug "Setting SYSLOGSUMMARY to 1"
 	    SYSLOGSUMMARY="1"
 	    ;;
-	T)
+	t)
 	    debug "Setting LOGTAIL_OPTS to -t"
 	    LOGTAIL_OPTS=' -t'
 	    debug "setting TESTFILE to $OPTARG"
-	    TESTFILE="$OPTARG"
 	    ;;
 	w)
 	    debug "Setting REPORTLEVEL to workstation"

@@ -158,6 +158,13 @@ manpage.1: manpage.sgml
         <term><option>-t</option>
         </term>
         <listitem>
+          <para>Testing mode does not update offset.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-T</option>
+        </term>
+        <listitem>
           <para>Do not remove the TMPDIR.</para>
         </listitem>
       </varlistentry>
