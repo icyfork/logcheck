@@ -1,3 +1,15 @@
+logcheck (1.2.21) unstable; urgency=low
+
+  maks:
+  * Better description of logtail package.
+  * Recommend use of an offsite email address in main conf.
+  * Added and Updated innd and kernel rulefiles.
+  * Updated proftp rules. (Closes: #248409)
+  * Added -v switch (outputs logcheck version).
+  * Harden permissions regarding world.
+
+ -- 
+
 logcheck (1.2.20) unstable; urgency=low
 
   maks:
@@ -31,7 +43,7 @@ logcheck (1.2.20) unstable; urgency=low
   * Changed chmod to /etc/logcheck in postinst to use X flag instead of x.
     Thanks, Martin Waitz
 
- -- 
+ -- Todd Troxell <ttroxell@debian.org>  Wednesday, 12 May 2004 04:49:00 +0000
 
 logcheck (1.2.19-2) unstable; urgency=low
 
