@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>
 # Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
@@ -20,7 +20,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.8 2004/04/27 08:39:05 ttroxell Exp $
+# $Id: logcheck,v 1.9 2004/04/28 17:52:27 eevans-guest Exp $
 
 
 # Set the umask

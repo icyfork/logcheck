@@ -12,6 +12,7 @@ maks:
 eevans:
   * Added a trap to invoke cleanup() when shell exits. Thanks to Marc
     Staveley for the patch. (Closes: #207795)
+  * Changed interpreter from /bin/sh to /bin/bash
 
 
 logcheck (1.2.18) unstable; urgency=low
