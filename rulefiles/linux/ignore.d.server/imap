@@ -1,6 +1,0 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imaplogin: Connection, ip=\[[.:[:alnum:]]+\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imaplogin: LOGIN, user=[[:alnum:]]+, ip=\[[.:[:alnum:]]+\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imaplogin: LOGOUT, user=[[:alnum:]]+, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imaplogin: LOGOUT, ip=\[[.:[:alnum:]]+\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imaplogin: DISCONNECTED, user=[[:alnum:]]+, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imaplogin: DISCONNECTED, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$

@@ -1,6 +1,0 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd-ssl: Connection, ip=\[[.:[:alnum:]]+\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd-ssl: LOGIN, user=[[:alnum:]]+, ip=\[[.:[:alnum:]]+\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd-ssl: DISCONNECTED, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd-ssl: DISCONNECTED, user=[[:alnum:]]+, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd-ssl: LOGOUT, user=[[:alnum:]]+, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd-ssl: LOGOUT, ip=\[[.:[:alnum:]]+\]$
