@@ -25,6 +25,9 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage device found at [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Initializing USB Mass Storage driver\.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage support registered\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial support registered for Generic$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial Driver core [.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial support registered for [_[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]:[[:space:]]+usb-storage: loaded successfully$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node changed: [-:0-9]+ -> [-:0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node (suspended|resumed): ID:BUS\[[-:0-9]+\]  GUID\[[0-9a-f]+\]$
@@ -47,7 +50,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ide-floppy driver [[:alnum:].]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ohci_hcd [.[:digit:]\:]+: wakeup$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb 1-1: new low speed USB device using address [0-9]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbcore: registered new driver [[:lower:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbcore: registered new driver [_[:lower:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: ctrl urb status [-[:digit:]]+ received$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: v[\:[:digit:].]+USB HID core driver$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[:0-9:]+\]:[[:space:]]+usbhid: loaded successfully$
