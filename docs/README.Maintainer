@@ -47,4 +47,4 @@ should not install any files in this directory.
 Also the local admin has to enable this support in logcheck.conf for
 any files to be parsed.
 
--- Jon Middleton <jjm@debian.org>
+-- Debian Logcheck Team <logcheck-devel@lists.alioth.debian.org>
