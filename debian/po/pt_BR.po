@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-05-05 14:44+0200\n"
+"POT-Creation-Date: 2004-05-19 15:00+0000\n"
 "PO-Revision-Date: 2004-05-05 20:17-0300\n"
 "Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team: Debian-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
@@ -83,31 +83,20 @@ msgstr ""
 msgid "Please see /usr/share/doc/logcheck for more details."
 msgstr "Por favor, consulte /usr/share/doc/logcheck para maiores detalhes."
 
-#. Type: note
+#. Type: select
 #. Description
-#: ../logcheck.templates:26
-msgid "Logcheck no longer runs as root."
-msgstr "O logcheck não é mais executado como root."
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:26
-msgid ""
-"Logcheck now runs as user logcheck.  Your logs must be readable by this user "
-"if they are to be scanned by logcheck."
+#: ../logcheck.templates:28
+msgid "How often should logcheck run to generate reports?"
 msgstr ""
-"O logcheck agora é executado como o usuário logcheck. Seus logs devem poder "
-"ser lidos por esse usuário caso você queira que eles sejam considerados pelo "
-"logcheck."
 
-#. Type: note
+#. Type: select
 #. Description
-#: ../logcheck.templates:26
+#: ../logcheck.templates:28
 msgid ""
-"If you have not altered your logcheck configuration, you need not worry this."
+"Logcheck is invoked by cron to periodically parse your log files and  "
+"generate an email report. Hourly is the default and recommended  interval "
+"for, but you may also select from one of weekly or daily."
 msgstr ""
-"Caso você não tenha alterado sua configuração do logcheck, você não precisa "
-"se preocupar com isso."
 
 #. Type: note
 #. Description
@@ -223,3 +212,21 @@ msgid ""
 msgstr ""
 "Como um resultado dessa auditoria, diversos arquivos de regras foram "
 "removidos do pacote. Você gostaria de removê-los também de seu sistema ?"
+
+#~ msgid "Logcheck no longer runs as root."
+#~ msgstr "O logcheck não é mais executado como root."
+
+#~ msgid ""
+#~ "Logcheck now runs as user logcheck.  Your logs must be readable by this "
+#~ "user if they are to be scanned by logcheck."
+#~ msgstr ""
+#~ "O logcheck agora é executado como o usuário logcheck. Seus logs devem "
+#~ "poder ser lidos por esse usuário caso você queira que eles sejam "
+#~ "considerados pelo logcheck."
+
+#~ msgid ""
+#~ "If you have not altered your logcheck configuration, you need not worry "
+#~ "this."
+#~ msgstr ""
+#~ "Caso você não tenha alterado sua configuração do logcheck, você não "
+#~ "precisa se preocupar com isso."

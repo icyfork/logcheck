@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.13 2004/05/19 15:06:55 eevans-guest Exp $
+# $Id: logcheck.postinst,v 1.14 2004/05/24 01:28:22 eevans-guest Exp $
 
 set -e
 
@@ -24,26 +24,6 @@ set -e
 
 # Source debconf library.
 . /usr/share/debconf/confmodule
-
-# Update the logcheck crontab to one of the alternate intervals
-update_crontab()
-{
-    CRONTAB=/etc/cron.d/logcheck
-    TMPCRON=`mktemp /var/tmp/logcheck-cron.XXXXXX`
-    
-    if [ -f $CRONTAB ] && [ "$1" == "daily" ] ; then
-        sed -e "s/^[[:digit:]*,-/]\+[[:space:]]\+[[:digit:]*,-/]\+[[:space:]]\+[[:digit:]*,-/]\+[[:space:]]\+[[:alnum:]*,-/]\+[[:space:]]\+[[:alnum:]*,-/]\+\([[:space:]]\+.\+ \/usr\/sbin\/logcheck .\+$\)/2 0 * * *\1/g" $CRONTAB > $TMPCRON
-	cp $TMPCRON $CRONTAB
-	chmod 644 $CRONTAB
-    fi
-    
-    if [ -f $CRONTAB ] && [ "$1" == "weekly" ] ; then
-        sed -e "s/^[[:digit:]*,-/]\+[[:space:]]\+[[:digit:]*,-/]\+[[:space:]]\+[[:digit:]*,-/]\+[[:space:]]\+[[:alnum:]*,-/]\+[[:space:]]\+[[:alnum:]*,-/]\+\([[:space:]]\+.\+ \/usr\/sbin\/logcheck .\+$\)/2 0 1 * *\1/g" $CRONTAB > $TMPCRON
-	cp $TMPCRON $CRONTAB
-	chmod 644 $CRONTAB
-    fi
-    rm -f $TMPCRON
-}
 
 case "$1" in
     configure)
@@ -77,16 +57,6 @@ case "$1" in
           chown logcheck /var/lock/logcheck &> /dev/null || true
 	fi
 
-	db_get logcheck/cron
-	CRON="$RET"
-	case "$RET" in
-	    daily)
-	        update_crontab daily
-            ;;
-	    weekly)
-	        update_crontab weekly
-	    ;;
-	esac
 	;;
     
     abort-upgrade|abort-remove|abort-deconfigure)

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck_1.2.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-05-05 14:44+0200\n"
+"POT-Creation-Date: 2004-05-19 15:00+0000\n"
 "PO-Revision-Date: 2004-05-05 20:50+0200\n"
 "Last-Translator: Maks Attems <debian@sternwelten.at>\n"
 "Language-Team: Debian-DE Project <debian-l10n-german@lists.debian.org>\n"
@@ -52,8 +52,8 @@ msgid ""
 "Now the ignore.d directories function in an additive manner (i.e. higher "
 "levels also include the lower levels)"
 msgstr ""
-"Die ignore.d-Verzeichnisse funktionieren nun erweiternd (d.h. höhere "
-"Level enthalten auch die niedrigeren Level)"
+"Die ignore.d-Verzeichnisse funktionieren nun erweiternd (d.h. höhere Level "
+"enthalten auch die niedrigeren Level)"
 
 #. Type: note
 #. Description
@@ -84,30 +84,20 @@ msgid "Please see /usr/share/doc/logcheck for more details."
 msgstr ""
 "Schauen Sie bitte in /usr/share/doc/logcheck für weitere Informationen nach."
 
-#. Type: note
+#. Type: select
 #. Description
-#: ../logcheck.templates:26
-msgid "Logcheck no longer runs as root."
-msgstr "Logcheck läuft nicht mehr als root."
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:26
-msgid ""
-"Logcheck now runs as user logcheck.  Your logs must be readable by this user "
-"if they are to be scanned by logcheck."
+#: ../logcheck.templates:28
+msgid "How often should logcheck run to generate reports?"
 msgstr ""
-"Logcheck läuft nun als Benutzer logcheck. Ihre Log-Dateien müssen für diesen "
-"Benutzer lesbar sein, wenn sie von logcheck geprüft werden sollen."
 
-#. Type: note
+#. Type: select
 #. Description
-#: ../logcheck.templates:26
+#: ../logcheck.templates:28
 msgid ""
-"If you have not altered your logcheck configuration, you need not worry this."
+"Logcheck is invoked by cron to periodically parse your log files and  "
+"generate an email report. Hourly is the default and recommended  interval "
+"for, but you may also select from one of weekly or daily."
 msgstr ""
-"Falls Sie Ihre logcheck-Konfiguration nicht geändert haben, müssen Sie sich "
-"darum nicht kümmern."
 
 #. Type: note
 #. Description
@@ -223,3 +213,20 @@ msgid ""
 msgstr ""
 "Aufgrund dessen wurden viele Regeldateien aus dem Paket entfernt. Möchten "
 "Sie diese löschen?"
+
+#~ msgid "Logcheck no longer runs as root."
+#~ msgstr "Logcheck läuft nicht mehr als root."
+
+#~ msgid ""
+#~ "Logcheck now runs as user logcheck.  Your logs must be readable by this "
+#~ "user if they are to be scanned by logcheck."
+#~ msgstr ""
+#~ "Logcheck läuft nun als Benutzer logcheck. Ihre Log-Dateien müssen für "
+#~ "diesen Benutzer lesbar sein, wenn sie von logcheck geprüft werden sollen."
+
+#~ msgid ""
+#~ "If you have not altered your logcheck configuration, you need not worry "
+#~ "this."
+#~ msgstr ""
+#~ "Falls Sie Ihre logcheck-Konfiguration nicht geändert haben, müssen Sie "
+#~ "sich darum nicht kümmern."

@@ -26,8 +26,6 @@ logcheck (1.2.21) unstable; urgency=low
   * Made addition of logcheck user and permissions/ownership changes a
     conditional of an upgrade from a version less than 1.2.19,
     (Closes: #249324).
-  * Prompt with debconf, (priority low), for the frequency to run 
-    logcheck, (Closes: #222240, #226937). 
   alfie:
   * src/logcheck: test also for readability for the header.txt and footer.txt.
   * debian/changelog: stripped all trailing whitespace from the file.
