@@ -43,9 +43,9 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: checking site [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: no articles for [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: batched articles for [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [a-zA-Z0-9\.]+ spooling no active connections$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [a-zA-Z0-9\.]+:[0-9]+ connected$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [a-zA-Z0-9\.]+ remote MODE STREAM$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [a-zA-Z0-9\.]+ (final|checkpoint) seconds [0-9]+ spooled [0-9]+ on_close [0-9]+ sleeping [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [.[:alnum:]]+ spooling no active connections$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [.[:alnum:]]+:[0-9]+ connected$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [.[:alnum:]]+ remote MODE STREAM$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [.[:alnum:]]+ (final|checkpoint) seconds [0-9]+ spooled [0-9]+ on_close [0-9]+ sleeping [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: ME articles (active|total) [0-9]+ bytes [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: rejecting\[perl\] <[_.[:alnum:]-]+@[.[:alnum:]-]+> [0-9]+ [[:alnum:] ]+ \([[:alnum:].]+\)$

@@ -7,7 +7,7 @@ logcheck (1.2.30) unstable; urgency=low
   * New rules for bind, courier, cpqarrayd, dhcp, jabberd, nagios, ntp, 
     openvpn, postfix, slapd, smartd, smokeping, squid, ssh, thy, uptimed.
     all for level server thanks to Peter Palfrader <weasel@debian.org>.
-  * Logcheck s#\s#[[:space:]]# for the egrep invocations.
+  * Logcheck/rules: Don't take locale for granted use character class instead.
 
  -- 
 
