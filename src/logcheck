@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.82 2004/09/20 21:57:03 maks-guest Exp $
+# $Id: logcheck,v 1.83 2004/09/20 22:13:02 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -224,6 +224,7 @@ report() {
     fi
 }
 
+# Add eventual section titles to the report
 printheader() {
     char="="
     header="$1"
@@ -349,6 +350,7 @@ greplogoutput() {
     return $RETURN
 }
 
+# Process a logfile snippet with egrep.
 cleanchecked() {
     clean=$1
 
@@ -373,6 +375,7 @@ cleanchecked() {
     fi
 }
 
+# Get the yet unseen part of one logfile.
 logoutput() {
     file=$1
 
@@ -411,6 +414,7 @@ logoutput() {
     fi
 }
 
+# Show all the cli options to our users.
 usage() {
     debug "usage: Printing usage and exiting"
     cat<<EOF
