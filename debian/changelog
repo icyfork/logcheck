@@ -3,7 +3,8 @@ logcheck (1.2.35) unstable; urgency=low
   maks:
   * logtail fix invocation without switches (compat to old versions).
   * Add smartd rule, whitespace fix openvpn rule, merge old smartd rules.
-  * Add rule for imaplogin disconnected message (closes: #294950)
+  * Add rule for imaplogin disconnected + lougout messages. 
+    (closes: #294950, #295418)
   * Add rule violations.ignore.d/logcheck-ssh + rule ignore.d.server/ssh for the
     PARANOID wildcard in /etc/hosts.deny.
   * Match dots as dots aka '\.' in all rules.
