@@ -7,11 +7,12 @@ logcheck (1.2.20) unstable; urgency=low
   * Updated pop3d-ssl rules.
   * Updated postfix rules. (Closes: #196258, #190696)
   * Try secure TMPDIR in /tmp if /var/tmp fails. (Closes: #242284)
-  * Added German Translation.
+  * Initial german translation.
   * Set a sane DEFAULTLEVEL="server" in logcheck itself.
   alfie:
   * Run debconf-updatepo.
   * Fixed broken german po file...
+  * Full german translation.
   todd:
   * Change logcheck home to /var/lib/logcheck. (Closes #247614)
   * Change modes on /etc/logcheck. (Closes #247929)
