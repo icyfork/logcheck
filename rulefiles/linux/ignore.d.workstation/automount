@@ -1,10 +1,15 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: attempting to mount entry$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: lookup\(file\): looking up [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: expanded entry:$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: parse\(sun\):$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: parse\(sun\): multimount: croak:[^ ]+ on [^ ]+ with options fstype=[[:alnum:]]+(,[[:alnum:]]+)*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: parse\(sun\): mounting root [^ ]+, mountpoint [^ ]+, what [^ ]+, fstype [[:alnum:]]+, options [[:alnum:]]+(,[[:alnum:]]+)*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: do_mount$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\((nfs|generic)\): calling (mkdir|mount)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\((nfs|generic)\):   root=[^ ]+ name=[^ ]+ what=[^ ]+, fstype=[[:alnum:]]+, options=[[:alnum:]]+(,[[:alnum:]]+)*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\((nfs|generic)\): (nfs|generic) options=[[:alnum:]]+(,[[:alnum:]]+)*, nosymlink=0$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\((nfs|generic)\): calling mkdir_path [^ ]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\((nfs|generic)\): calling mount -t [[:alnum:]]+ -s -o [[:alnum:]]+(,[[:alnum:]]+)* [^ ]+ [^ ]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\(nfs\): [[:alnum:]]+ is local, symlinking$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\((nfs|generic)\): mounted$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: mount\((nfs|generic)\): mounted [^ ]+ on [^ ]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: running expiration on path$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ automount\[[0-9]+\]: expired$
