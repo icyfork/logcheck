@@ -47,3 +47,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +Validated [0-9]+ Entries$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: +store_swap_size = [0-9]+k$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: storeLateRelease: released [0-9]+ objects$
+# squidguard
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: helperOpenServers: Starting [0-9]+ 'squidGuard' processes$
