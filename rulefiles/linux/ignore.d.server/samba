@@ -7,4 +7,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[0-9]+\]: +.* current master browser = .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[0-9]+\]: +.* [0-9a-f]+ \(.*\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: connect from$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[[:digit:]]+\]:[[:space:]]+Got SIGHUP dumping debug info\.$
