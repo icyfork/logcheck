@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rngd: stats: FIPS 140-2 failures: [0-9]$
