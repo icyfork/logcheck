@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.52 2004/06/05 16:54:09 maks-guest Exp $
+# $Id: logcheck,v 1.53 2004/06/06 11:15:46 maks-guest Exp $
 
 
 # Set the umask
@@ -358,7 +358,7 @@ cleanchecked() {
 	        || error "Could not move $TMPDIR/checked.1 to $TMPDIR/checked"
 	done
     else
-	error "cleanchecked: Not a file or a directory"
+	error "cleanchecked: Not a file or a directory $clean"
     fi
 }
 
