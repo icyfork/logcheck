@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone [._[:alnum:]-]+/IN: transferred serial [0-9]+$

@@ -1,1 +1,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: spurious 8259A interrupt: IRQ7\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: icmpv6: msg of unknown type$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: i2c_adapter i2c-0: sendbytes: error - bailout\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: msp34xx: I/O error #1 \((read|write) 0x[0-9a-fA-F]+/0x[0-9a-fA-F]+\)$
