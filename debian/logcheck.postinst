@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.24 2004/12/20 22:47:07 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.25 2004/12/28 08:43:15 ttroxell Exp $
 
 set -e
 
@@ -68,6 +68,13 @@ case "$1" in
     	  chmod -R g+rX /etc/logcheck || true
           # just in case
           chown logcheck /var/lock/logcheck > /dev/null 2>&1 || true
+	fi
+	
+	# Uncomment cron job
+	# This procedure was set up to fix #284788
+	if grep -q '^##ENABLED_IN_POSTINST##' /etc/cron.d/logcheck; then
+	  sed 's/^##ENABLED_IN_POSTINST## //' logcheck.cron.d \
+	  > /etc/cron.d/logcheck
 	fi
 
 	;;

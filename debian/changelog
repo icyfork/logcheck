@@ -10,6 +10,9 @@ logcheck (1.2.33) unstable; urgency=low
   * Add rule for weekly nmbd logrotate. (closes: #286329)
   todd:
   * Set rule directories setgid to simplify administration. (closes: #286230)
+  * Add future package plans to TODO
+  * Remove dh_strip and dh_shlibdeps from debian/rules
+  * Set up postinst based post-adduser crontab de-commenter (closes: #284788)
 
  -- 
 
