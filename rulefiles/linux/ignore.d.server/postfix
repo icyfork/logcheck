@@ -54,3 +54,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:alnum:]]+: client=[^[:space:]]+, sasl_sender=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: numeric result [.0-9]+ in address->name lookup for [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Illegal address syntax from [^[:space:]]+ in (MAIL|RCPT) command: <.*>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/lmtp\[[0-9]+\]: [0-9A-F]: to=<[^[:space:]]+>, orig_to=<[^[:space:]]+>, relay=[^[:space:]]+\], delay=[0-9]+ status=sent \(250 2\.1\.5 Ok\)$
