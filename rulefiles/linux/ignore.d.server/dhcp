@@ -15,3 +15,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPNAK on [:[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2.2.x|): DHCPRELEASE on [.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPRELEASE of [.0-9]+ from [:[:alnum:]]+ (\([[:alnum:]]+\) |)via [[:alnum:]]+ \((not |)found\)$
