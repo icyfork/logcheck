@@ -21,7 +21,7 @@
 
 use strict;
 use warnings;
-my ($size);
+my ($size, $logfile, $offsetfile);
 use Getopt::Std;
 my %opts = ();
 
@@ -29,14 +29,22 @@ my %opts = ();
 my ($TEST_MODE) = 0;
 getopts("f:o:t", \%opts);
 
-if (! $opts{f}) {
-   print STDERR "No logfile to read. Use -f switch.\n";
+# try to detect plain logtail invocation without switches
+if (!$opts{f} && $#ARGV != 0 && $#ARGV != 1) {
+   print STDERR "No logfile to read. Use -f [LOGFILE].\n";
    exit 66;
-} elsif ($opts{t}) {
+} elsif ($#ARGV == 0) {
+   $logfile = $ARGV[0];
+} elsif ($#ARGV == 1) {
+   ($logfile, $offsetfile) = ($ARGV[0], $ARGV[1]);
+} else {
+   ($logfile, $offsetfile) = ($opts{f}, $opts{o});
+}
+
+if ($opts{t}) {
     $TEST_MODE = 1;
 }
 
-my ($logfile, $offsetfile) = ($opts{f}, $opts{o});
 
 if (! -f $logfile) {
     print STDERR "File $logfile cannot be read.\n";
