@@ -8,6 +8,9 @@ logcheck (1.2.20) unstable; urgency=low
   * Updated postfix rules. (Closes: #196258, #190696)
   * Try secure TMPDIR in /tmp if /var/tmp fails. (Closes: #242284)
   * Added German Translation.
+  alfie:
+  * Run debconf-updatepo.
+  * Fixed broken german po file...
 
 logcheck (1.2.19-2) unstable; urgency=low
 

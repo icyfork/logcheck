@@ -14,33 +14,38 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: logcheck_1.2.20\n"
-"POT-Creation-Date: 2004-05-04 14:29-0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-05-05 14:44+0200\n"
+"PO-Revision-Date: 2004-05-05 14:45+0200\n"
 "Last-Translator: Maks Attems <debian@sternwelten.at>\n"
 "Language-Team: Debian-DE Project <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. Type: note
 #. Description
 #: ../logcheck.templates:3
 msgid "Changing the report level or email address."
 msgstr "Einstellung des Reportlevels und der Email Adresse."
 
+#. Type: note
 #. Description
 #: ../logcheck.templates:3
 msgid ""
 "To change from the default report level (server) or the default email "
 "address (root) you need to edit /etc/logcheck/logcheck.conf"
 msgstr ""
-"Um den standardmäßigen Reportlevel (server) oder die standardmaßige"
-"Email Adresse (root) zu ändern, editiere /etc/logcheck/logcheck.conf."
+"Um den standardmäßigen Reportlevel (server) oder die standardmaßigeEmail "
+"Adresse (root) zu ändern, editiere /etc/logcheck/logcheck.conf."
 
+#. Type: note
 #. Description
 #: ../logcheck.templates:11
 msgid "Changes to ignore.d directory behaviour"
 msgstr "Einstellung der Funktionsweise des ignore.d Verzeichnisses"
 
+#. Type: note
 #. Description
 #: ../logcheck.templates:11
 msgid ""
@@ -50,6 +55,7 @@ msgstr ""
 "Nun verhält sich das ignore.d Verzeichnis in aufsteigender Abfolge (d.h. "
 "höhre Levels beinhalten ebenso darunterliegende Levels)."
 
+#. Type: note
 #. Description
 #: ../logcheck.templates:11
 msgid ""
@@ -61,26 +67,51 @@ msgstr ""
 " - server       = server + paranoid\n"
 " - paranoid     = paranoid"
 
+#. Type: note
 #. Description
 #: ../logcheck.templates:11
 msgid ""
 "Also run-parts(8) now controls which rulefiles are included from the .d "
 "directories."
 msgstr ""
-"Ebenso steuert run-parts(8) nun welche Regeldateien der .d Verzeichnisse"
-"eingebunden werden."
+"Ebenso steuert run-parts(8) nun welche Regeldateien der .d "
+"Verzeichnisseeingebunden werden."
 
+#. Type: note
 #. Description
 #: ../logcheck.templates:11
-msgid "Please see /usr/share/doc/logheck for more details."
-msgstr ""
-"Nachzusehen in /usr/share/doc/logcheck für mehr Einzelheiten."
+#, fuzzy
+msgid "Please see /usr/share/doc/logcheck for more details."
+msgstr "Nachzusehen in /usr/share/doc/logcheck für mehr Einzelheiten."
 
+#. Type: note
+#. Description
+#: ../logcheck.templates:26
+msgid "Logcheck no longer runs as root."
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../logcheck.templates:26
+msgid ""
+"Logcheck now runs as user logcheck.  Your logs must be readable by this user "
+"if they are to be scanned by logcheck."
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../logcheck.templates:26
+msgid ""
+"If you have not altered your logcheck configuration, you need not worry this."
+msgstr ""
+
+#. Type: note
 #. Description
 #: ../logcheck-database.templates:3
 msgid "Local modifications should be put into .d directories"
 msgstr "Lokale Veränderungen sollten in .d Verzeichnissen angelegt werden."
 
+#. Type: note
 #. Description
 #: ../logcheck-database.templates:3
 msgid ""
@@ -89,11 +120,13 @@ msgstr ""
 "Seit version 1.1.1-8 unterstützt logcheck run-parts gesteuerte "
 "Regelverzeichnisse."
 
+#. Type: note
 #. Description
 #: ../logcheck-database.templates:3
+#, fuzzy
 msgid ""
 " - /etc/logcheck/cracking.d\n"
-" - /etc/logcheck/cracking.ignore.d [for local use only ]\n"
+" - /etc/logcheck/cracking.ignore.d [for local use only]\n"
 " - /etc/logcheck/violations.d\n"
 " - /etc/logcheck/violations.ignore.d\n"
 " - /etc/logcheck/ignore.d.workstation\n"
@@ -108,43 +141,49 @@ msgstr ""
 " - /etc/logcheck/ignore.d.server\n"
 " - /etc/logcheck/ignore.d.paranoid"
 
+#. Type: note
 #. Description
 #: ../logcheck-database.templates:3
 msgid ""
 "The ignore.d.{workstation,server,paranoid} directory to be used is set by "
 "the REPORTLEVEL option in the file \"/etc/logcheck/logcheck.conf\"."
 msgstr ""
-"Das verwendete ignore.d.{workstation,server,paranoid} Verzeichnis wird durch"
-"die Option REPORTLEVEL in der Datei\ "/etc/logcheck/logcheck.conf\" gesetzt."
+"Das verwendete ignore.d.{workstation,server,paranoid} Verzeichnis wird "
+"durchdie Option REPORTLEVEL in der Datei \"/etc/logcheck/logcheck.conf\" "
+"gesetzt."
 
+#. Type: note
 #. Description
 #: ../logcheck-database.templates:3
+#, fuzzy
 msgid ""
 "These directories may contain files named \"logcheck\" (containing minimal "
 "generic alert/override patterns), \"(packagename)\" (containing patterns "
 "specific to that one package) or \"local\" (created by the local "
-"administrator to contain patterns tailored for a particular site).  Logcheck "
+"administrator to contain patterns tailored for a particular site). Logcheck "
 "will then use rules collected from all the files found in the appropriate "
 "directories."
 msgstr ""
 "Dateien in diesen Verzeichnissen können mit \"logcheck\" (enthalten minimale "
 "grundlegende Warnungs-/Aufhebungs-Schemata), \"(packetname)\" (enthalten "
-"Packet spezifische Schemata) oder \"lokale\" (vom lokalen Administrator "
-"für einen bestimmten Einsatzort erstellten maßgescheiderte Schemata) "
-"beginnen. Logcheck wird alle in den Dateien gefundenen gesammelten Regeln "
-"der unterschiedlichen Verzeichnisse verwenden."
+"Packet spezifische Schemata) oder \"lokale\" (vom lokalen Administrator für "
+"einen bestimmten Einsatzort erstellten maßgescheiderte Schemata) beginnen. "
+"Logcheck wird alle in den Dateien gefundenen gesammelten Regeln der "
+"unterschiedlichen Verzeichnisse verwenden."
 
+#. Type: note
 #. Description
 #: ../logcheck-database.templates:3
 msgid "Please see /usr/share/doc/logcheck for more information."
-msgstr ""
-"Nachzusehen in /usr/share/doc/logcheck für mehr Einzelheiten."
+msgstr "Nachzusehen in /usr/share/doc/logcheck für mehr Einzelheiten."
 
+#. Type: note
 #. Description
 #: ../logcheck-database.templates:29
 msgid "Logcheck standard rulefiles renamed"
 msgstr "Umbennung der Logcheck Regeldateien"
 
+#. Type: note
 #. Description
 #: ../logcheck-database.templates:29
 msgid ""
@@ -152,30 +191,35 @@ msgid ""
 "\"logcheck\" and the \"standard.postfix\" file has been renamed to "
 "\"logcheck-postfix\"."
 msgstr ""
-"Ab version 1.2.1, wurden die \"standard\" Regeldateien in \"logcheck\" "
-"und die \"stadard.postfix\" Datei in \"logcheck-postfix\" umbenannt."
+"Ab version 1.2.1, wurden die \"standard\" Regeldateien in \"logcheck\" und "
+"die \"stadard.postfix\" Datei in \"logcheck-postfix\" umbenannt."
 
+#. Type: boolean
 #. Description
 #: ../logcheck-database.templates:37
 msgid "Delete obsolete conffiles"
 msgstr "Lösche überholte Konfigurationsdateien"
 
+#. Type: boolean
 #. Description
 #: ../logcheck-database.templates:37
+#, fuzzy
 msgid ""
-"The rulefiles in logcheck-database have just been though an audit to remove "
+"The rulefiles in logcheck-database have just been through an audit to remove "
 "duplicate entries and to make them more specific - this also reduces false "
 "negatives."
 msgstr ""
 "Die Regeldateien von logcheck-database wurden überprüft, um doppelte "
-"Einträge zu entfernen und präzisere Treffer zu erhalten - dies reduziert "
-"die Anzahl falscher Negativer."
+"Einträge zu entfernen und präzisere Treffer zu erhalten - dies reduziert die "
+"Anzahl falscher Negativer."
 
+#. Type: boolean
 #. Description
 #: ../logcheck-database.templates:37
+#, fuzzy
 msgid ""
 "As a result of this a number of rulefiles have been removed from the "
-"package. Would you like these to be deleted ?"
+"package.  Would you like these to be deleted?"
 msgstr ""
-"Auf Grund dessen wurden viele Regeldateien vom Packet enfernt. "
-"Möchten Sie diese löschen?"
+"Auf Grund dessen wurden viele Regeldateien vom Packet enfernt. Möchten Sie "
+"diese löschen?"
