@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.59 2004/06/10 09:24:59 maks-guest Exp $
+# $Id: logcheck,v 1.60 2004/06/10 13:37:56 maks-guest Exp $
 
 
 # Set the umask
@@ -45,7 +45,7 @@ else
 fi
 
 DATE="$(date +'%Y-%m-%d %H:%M')"
-VERSION="1.2.22"
+VERSION="1.2.23"
 
 # Set the default report level
 REPORTLEVEL="server"
