@@ -33,4 +33,6 @@
 
 * Misc
 
+  get sane logic in greplogoutput() to prevent from duplicate ignore runs.
+  logoutput needs too to be sanitized, eventually logtail will to more.
 

@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.81 2004/09/19 09:18:09 maks-guest Exp $
+# $Id: logcheck,v 1.82 2004/09/20 21:57:03 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -81,8 +81,8 @@ SUPPORT_CRACKING_IGNORE=0
 SYSLOGSUMMARY=0
 LOCKFILE="/var/lock/logcheck"
 
+# Carry out the clean up tasks
 cleanup() {
-    # Carry out the clean up tasks
 
     if [ -n "$LOCK" ]; then
         debug "cleanup: Killing lockfile-touch - $LOCK"
@@ -105,15 +105,15 @@ cleanup() {
     fi
 }
 
+# Log debug output to standard error
 debug() {
-    # Log debug output to standard error
     if [ $LOGCHECKDEBUG -eq 1 ]; then
 	echo "D: [$(date +%s)] $1" >&2 
     fi
 }
 
+# Mail error message to sysadmin
 error() {
-    # Mail error message to sysadmin
     message=$1
 
     if [ "$2" = "noclean" ]; then
@@ -170,9 +170,9 @@ setfooter() {
 }
 
 
+# Clean a directory (or single file) to a cleaned tmp version
+# takes two args: directory and cleaned file
 cleanrules() {
-    # Clean a directory (or single file) to a cleaned tmp version
-    # takes two args: directory and cleaned file
     dir=$1
     cleaned=$2
 
@@ -198,8 +198,8 @@ cleanrules() {
     fi
 }
 
+# Add any events to the report
 report() {
-    # Add any events to the report
     if [ -s $TMPDIR/checked ]; then
 	printheader "$*" >> $TMPDIR/report \
 	    || error "Could not append to report.  Disk Full?"
@@ -244,8 +244,8 @@ printheader() {
     echo "$line"
 }
 
+# Mail the report
 sendreport() {
-    # Mail the report
     if [ $REBOOT -eq 1 ]; then
 	subject="Reboot: $HOSTNAME $DATE $*"
     else
@@ -265,8 +265,8 @@ sendreport() {
     fi
 }
 
+# clean the report to level for type
 greplogoutput() {
-    # clean the report to level for type
     raise="$1"
     sectionstring="$2"
     ignore="$3"
