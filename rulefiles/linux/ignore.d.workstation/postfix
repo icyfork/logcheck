@@ -6,7 +6,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/virtual\[[0-9]+\]: [[:alnum:]]+: to=[^[:space:]]+, relay=[^[:space:]]+, delay=[0-9]+, status=[[:alnum:]]+ \(.*\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/virtual\[[0-9]+\]: [[:alnum:]]+: to=[^[:space:]]+, orig_to=[^[:space:]]+, relay=[^[:space:]]+, delay=[0-9]+, status=[[:alnum:]]+ \(.*\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: starting TLS engine$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: lost connection after (AUTH|CONNECT|DATA|MAIL|RCPT) from unknown\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: SSL_accept:before/accept initialization$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: SSL_accept:before/accept initialization$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: SSL_accept:(error in )?SSL(v2/v3|v3) read client (hello|certificate) (A|B)$

@@ -21,4 +21,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPINFORM from [.0-9]+ via [[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPRELEASE of [.0-9]+ from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [[:alnum:]]+ \((not |)found\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: pool [0-9a-f]{7} [.0-9]+/[:[:alnum:]]+ total [:[:alnum:]]+  free [:[:alnum:]]+  backup [:[:alnum:]]+  lts [:[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: pool [0-9a-f]{7} [.0-9]+/[:[:alnum:]]+  total [:[:alnum:]]+  free [:[:alnum:]]+  backup [:[:alnum:]]+  lts [:[:alnum:]]+$
+
