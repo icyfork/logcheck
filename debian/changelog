@@ -9,6 +9,17 @@ logcheck (1.2.20) unstable; urgency=low
   * Try secure TMPDIR in /tmp if /var/tmp fails. (Closes: #242284)
   * Added German Translation.
 
+logcheck (1.2.19-2) unstable; urgency=low
+
+  maks:
+  * Add another -R flag (Closes: #247279)
+  todd:
+  * Fix templates (Closes: #247466, #247467, #247424)
+  * Lower debconf noroot message priority
+  * Add NEWS.Debian to make some progress on 247360
+
+ -- Todd Troxell <ttroxell@debian.org>  Wednesday, 05 May 2004 01:39:00 +0000
+
 logcheck (1.2.19-1) unstable; urgency=low
 
   todd:
