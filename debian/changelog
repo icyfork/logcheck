@@ -9,7 +9,7 @@ logcheck (1.2.32) unstable; urgency=low
   * logtail.8: Fixed formating to be consistant, changed OPTION to -r (the
     only OPTION not mentioned yet :))
   jamie:
-  * Add rule for 'stale result' messages from nagios.
+  * Add rules for nagios, gps.
   * Added new rules for messages from USB joystick use. (closes: #282378)
 
  --
