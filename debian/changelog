@@ -17,7 +17,7 @@ logcheck (1.2.34) unstable; urgency=low
   jamie:
   * Update rules for nagios.
 
--- Todd Troxell <ttroxell@debian.org>  Sunday, 23 Jan 2005 21:31:00 -0500
+ -- Todd Troxell <ttroxell@debian.org>  Sunday, 23 Jan 2005 21:31:00 -0500
 
 logcheck (1.2.33) unstable; urgency=low
 
