@@ -17,7 +17,9 @@ logcheck (1.2.35) unstable; urgency=low
   * Add rule for pure-ftpd timeout messages (closes: #295254).
   * Modify rule for pure-ftpd logout messages to match even if
     username is missing(!) (closes: #295257).
-
+  * Add rules in violations.ignore.d/logcheck-postfix for certificate
+    verification failures.
+  
  -- 
 
 logcheck (1.2.34) unstable; urgency=low
