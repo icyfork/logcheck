@@ -1,5 +1,5 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[[:digit:]]+: connect from$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[[:digit:]]+: .* find_.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[[:digit:]]+\]: connect from$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[[:digit:]]+\]: .* find_.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[0-9]+\]: \[[0-9 \/:,]+\] nmbd/nmbd.c:process\([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[0-9]+\]: \[[0-9 \/:,]+\] nmbd/nmbd_workgroupdb.c:dump_workgroups\([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nmbd\[[0-9]+\]: +dump_workgroups\(\)$

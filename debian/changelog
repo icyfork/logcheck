@@ -8,6 +8,7 @@ logcheck (1.2.30) unstable; urgency=low
     openvpn, postfix, slapd, smartd, smokeping, squid, ssh, thy, uptimed.
     all for level server thanks to Peter Palfrader <weasel@debian.org>.
   * Logcheck/rules: Don't take locale for granted use character class instead.
+  * Fix 2 samba rules. (closes: #277635)
 
  -- 
 
