@@ -2,7 +2,7 @@ logcheck (1.2.25) unstable; urgency=low
 
   todd:
   * Small rule updates for dhclient, ntp, bind, kernel, bonobo, uw-imapd,
-    ntpd, gconf, dovecot
+    ntpd, gconf, dovecot, samba
   * Add line to logcheck.postinst to remove header.txt on purge
   eevans:
   * Added violations.ignore.d/logcheck-spamd rule, (Closes: #262327)
