@@ -15,6 +15,8 @@ logcheck (1.2.23) unstable; urgency=low
     template and got updates for all translations. Thanks for fast responses!
   todd:
   * Update innfeed rules (Closes: #254133).
+  * Change postinst script to set permissions on versions previous to 1.2.23
+  (Closes: #253998).
 
  -- 
 
