@@ -12,7 +12,7 @@ logcheck (1.2.36) unstable; urgency=low
   * Add one more apm rule for useless gdm logout message.
   * Add rules for 2 harmless dhcpd and dhclient messages.
   * Add cvsd, pam rules from Peter Palfrader <weasel@debian.org>.
-  * Add ssh rule for timeout before authentification.
+  * Add ssh rule for timeout before authentication.
   * Check time of rotated logfile against already gzipped logfile. 
     syslog-ng leaves old syslog.0 logfile in /var/log. (Closes: #296096)
   todd:
@@ -21,7 +21,7 @@ logcheck (1.2.36) unstable; urgency=low
   * Warn on invalid regex (Closes: #295560)
   * Update udev for directories (Matt Brubeck) (Closes: #301415)
 
- --
+ -- Todd Troxell <ttroxell@debian.org>  Wednesday, 30 Mar 2005 20:04:00 -0600
 
 logcheck (1.2.35) unstable; urgency=low
 
