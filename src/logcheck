@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.26 2004/05/15 09:52:47 maks-guest Exp $
+# $Id: logcheck,v 1.27 2004/05/16 08:33:59 ttroxell Exp $
 
 
 # Set the umask
@@ -148,8 +148,8 @@ EOF
  # Add an identification line at the beginning of the sent mail
 setintro() {
     if [ -f /etc/logcheck/header.txt ] ; then
-       $CAT /etc/logcheck/header.txt >> $TMPDIR/report \
-           || error "Could not append header to $TMPDIR/report  Disk full?"
+       # This might fail, but the header is not critical
+       $CAT /etc/logcheck/header.txt >> $TMPDIR/report
     fi
 }
 
@@ -157,8 +157,8 @@ setintro() {
 # Add a footer to the report.
 setfooter() {
     if [ -f /etc/logcheck/footer.txt ] ; then
-       $CAT /etc/logcheck/footer.txt >> $TMPDIR/report \
-           || error "Could not append footer to $TMPDIR/report Disk full?"
+       # This might fail, but the footer is not critical
+       $CAT /etc/logcheck/footer.txt >> $TMPDIR/report
     fi
 }
 
@@ -584,8 +584,8 @@ done
 # the same lines) and reduce CPU and memory usage afterwards.
 debug "Sorting logs"
 $SORT -m $TMPDIR/logoutput/* | uniq | sed -e 's/ *$//' \
-    > $TMPDIR/logoutput-sorted \
-    ||error "Could not output to $TMPDIR/logoutput-sorted Disk Full?"
+    > $TMPDIR/logoutput-sorted 
+#    ||error "Could not output to $TMPDIR/logoutput-sorted Disk Full?"
  
 
 # See if the tmp file exists and actually has data to check,
