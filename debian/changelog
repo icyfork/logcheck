@@ -3,6 +3,7 @@ logcheck (1.2.35) unstable; urgency=low
   maks:
   * logtail fix invocation without switches (compat to old versions).
   * Add smartd rule, whitespace fix openvpn rule, merge old smartd rules.
+  * Add rule for imaplogin disconnected message (closes: #294950)
   jamie:
   * Add rules for webmin (closes: #286307).
   * Add rules for postfix 2.2.
