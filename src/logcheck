@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.76 2004/09/01 03:15:00 ttroxell Exp $
+# $Id: logcheck,v 1.77 2004/09/18 21:39:14 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -379,7 +379,7 @@ logoutput() {
     debug "logoutput called with file: $file"
     if [ -f $file ]; then
 	offsetfile="$STATEDIR/offset$(echo $file|tr / .)"
-	if [ -s $offsetfile ]; then
+	if [ -s $offsetfile -a -r $offsetfile ]; then
 	    if [ $(wc -c < $file) -lt $(tail -n 1  $offsetfile) ]; then
 		if [ -e $file.0 ]; then
 	        # assume the log is rotated by savelog(8)
@@ -399,6 +399,8 @@ logoutput() {
 		        || error "Could not remove $offsetfile"
 		fi
 	    fi
+	else
+	    error "Could not read $offsetfile"
 	fi
 	debug "Running logtail: $file"
 	$LOGTAIL -f $file -o $offsetfile $LOGTAIL_OPTS \
