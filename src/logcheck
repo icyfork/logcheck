@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.16 2004/05/05 17:27:44 maks-guest Exp $
+# $Id: logcheck,v 1.17 2004/05/12 07:37:24 maks-guest Exp $
 
 
 # Set the umask
@@ -37,7 +37,7 @@ SECURITY=0
 ATTACK=0
 
 # Set the getopts string
-GETOPTS="c:dhl:opr:RsS:tT:uw"
+GETOPTS="c:dhl:opr:RsS:tT:uvw"
 
 # Get the details for the email message
 # Hostname either fully qualified or not.
@@ -48,7 +48,7 @@ else
 fi
 
 DATE="$(date +'%Y-%m-%d %H:%M')"
-VERSION="1.2.20"
+VERSION="1.2.21"
 
 # Set the default report level
 REPORTLEVEL="server"
@@ -353,6 +353,7 @@ usage: logcheck [-c CFG] [-d] [-h] [-l LOG] [-o] [-r DIR] [-s|-p|-w] [-S] [-t]
  -S           = overrule default state directory
  -t           = do not remove the TMPDIR 
  -u           = enable syslog-summary
+ -v           = print version
  -w           = runlevel "workstation"
 EOF
 }
@@ -374,6 +375,10 @@ while getopts $GETOPTS opt; do
 	t)
 	    debug "Setting NOCLEANUP to 1"
 	    NOCLEANUP=1
+	    ;;
+	v)
+	    echo -e "\n\tlogcheck $VERSION\n"
+	    exit 0
 	    ;;
 	\?)
 	    usage

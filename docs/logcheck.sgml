@@ -169,6 +169,13 @@ manpage.1: manpage.sgml
         </listitem>
       </varlistentry>
       <varlistentry>
+        <term><option>-v</option>
+        </term>
+        <listitem>
+          <para>Print current version</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
         <term><option>-w</option>
         </term>
         <listitem>
