@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.20 2004/05/13 21:36:28 maks-guest Exp $
+# $Id: logcheck,v 1.21 2004/05/13 22:03:09 maks-guest Exp $
 
 
 # Set the umask
@@ -230,7 +230,7 @@ sendreport() {
 	subject="$HOSTNAME $DATE $*"
     fi
     if [ $ADDTAG = "yes" ]; then
-        subject=[logcheck] $subject"
+        subject="[logcheck] $subject"
     fi
 
     if [ $MAILOUT -eq 1 ]; then
