@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.21 2004/05/13 22:03:09 maks-guest Exp $
+# $Id: logcheck,v 1.22 2004/05/13 22:28:06 maks-guest Exp $
 
 
 # Set the umask
@@ -193,7 +193,8 @@ report() {
 	    	debug "report : WARNING : can't exec $SYSLOG_SUMMARY. Running without summary"
 	    fi
 	    debug "report: cat'ing - $*"
-	    cat $TMPDIR/checked >> $TMPDIR/report
+	    cat $TMPDIR/checked >> $TMPDIR/report \
+	        || error "Could not append events to report"
 	fi
 	echo >> $TMPDIR/report
 	return 0
