@@ -5,7 +5,8 @@ logcheck (1.2.21) unstable; urgency=low
   * Recommend use of an offsite email address in main conf.
   * Added and updated bind, cracklib, innd, kernel, logcheck, nntpcache,
     Login.app, proftp, postfix, pump, sendmail rulefiles.
-    (Closes: #248816, #213709, #198767, #248409, #249074, #250374, #250373)
+    (Closes: #248816, #213709, #198767, #248409, #249074, #250374, #250373, 
+     #249181)
   * Added -v switch (outputs logcheck version).
   * Harden permissions regarding world.
   * Added and updated arpwatch, bind, gconf, gdm, kernel, openvpn, postfix,
