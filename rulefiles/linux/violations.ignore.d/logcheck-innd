@@ -5,3 +5,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: rejected [0-9]+ No colon-space in "("|x-no-archive:yes)" header$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: offered <[^[:space:]]+> [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [^[:space:]]+ posts received [0-9]+ rejected [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: \? reverse lookup for [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3} failed: Unknown host -- using IP address for access$
