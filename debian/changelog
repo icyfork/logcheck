@@ -23,7 +23,7 @@ logcheck (1.2.23) unstable; urgency=low
   * Spamd update for unknown message id.
   * Add Kernel and bonobo rules for workstations.
 
- -- 
+ -- Todd Troxell <ttroxell@debian.org>  Thursday, 12 Jul 2004 22:55:19 -0500
 
 logcheck (1.2.22a) unstable; urgency=low
   
