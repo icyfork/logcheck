@@ -13,8 +13,9 @@ logcheck (1.2.30) unstable; urgency=low
     thanks to Brendon Baumgartner <brendon@brendon.com>
   * Small enhancment courier rule.
   jamie:
-  * Added new rules for dnsmasq. (closes: #277636)
-  * Added rules for hylafax.
+  * Add rules for dnsmasq. (closes: #277636)
+  * Add rules for hylafax.
+  * Add violations.ignore.d rules for hylafax.
   alfie:
   * Fix sed error to really remove trailing spaces. (closes: #278337)
   * Add myself to uploaders field because of stable releases.
