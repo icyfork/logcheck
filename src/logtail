@@ -19,17 +19,20 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
+use strict;
+my ($size);
 use Getopt::Std;
+my %opts = ();
 
 # process args and switches
 
 my ($TEST_MODE) = 0;
-getopt();
-if ($opt_t) {
+getopts("f:o:t", \%opts);
+if ($opts{t}) {
     $TEST_MODE = 1;
 }
 
-my ($logfile, $offsetfile) = @ARGV;
+my ($logfile, $offsetfile) = ($opts{f}, $opts{o});
 
 if (! -f $logfile) {
     print "File $logfile cannot be read.\n";
@@ -64,7 +67,6 @@ unless ($TEST_MODE and not $offsetfile) {
         }
     }
 
-    my ($size);
     unless ((undef,$ino,undef,undef,undef,undef,undef,$size) = stat $logfile) {
         print "Cannot get $logfile file size.\n", $logfile;
         exit 65;

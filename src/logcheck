@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.22 2004/05/13 22:28:06 maks-guest Exp $
+# $Id: logcheck,v 1.23 2004/05/14 10:55:47 maks-guest Exp $
 
 
 # Set the umask
@@ -533,20 +533,20 @@ for file in $(egrep --text -v "^#" $LOGFILE); do
 		if [ -e $file.0 ]; then
 	        # assume the log is rotated by savelog(8)
 		    debug "Running logtail on rotated: $file.0"
-		    $LOGTAIL $file.0 $offsetfile $LOGTAIL_OPTS > \
+		    $LOGTAIL -f $file.0 -o $offsetfile $LOGTAIL_OPTS > \
 			$TMPDIR/logoutput/$(basename $file)
 		    rm -f $offsetfile
 		elif [ -e $file.1 ]; then
 		# assume the log is rotated by logrotate(8)
 		    debug "Running logtail on rotated: $file.1"
-		    $LOGTAIL $file.1 $offsetfile $LOGTAIL_OPTS > \
+		    $LOGTAIL -f $file.1 -o $offsetfile $LOGTAIL_OPTS > \
 			$TMPDIR/logoutput/$(basename $file)
 		    rm -f $offsetfile
 		fi
 	    fi
 	fi
 	debug "Running logtail: $file"
-	$LOGTAIL $file $offsetfile $LOGTAIL_OPTS \
+	$LOGTAIL -f $file -o $offsetfile $LOGTAIL_OPTS \
 	    >> $TMPDIR/logoutput/$(basename $file)
     else
 	echo "E: File could not be read: $file" >> $TMPDIR/errors
