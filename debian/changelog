@@ -25,7 +25,7 @@ logcheck (1.2.24) unstable; urgency=low
     (Closes: #260096)
   * Added cs Translation. thanks Jan Outrata. (Closes: #260382)
   * Remove duplicate postfix rules, fix for remote string add lmtp rule.
-    (Closes: #260810, #259603)
+    (Closes: #260810)
   * Move adduser from preinst to postinst (Closes: #258735)
   * Update pump and dhclient rules.
 
