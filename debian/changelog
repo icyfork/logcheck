@@ -17,6 +17,7 @@ logcheck (1.2.21) unstable; urgency=low
   * Ignore normal use of su and sudo. (Closes: #182992, #192192)
   * Remove empty file innd.
   * Add switches to logtails default arguments.
+  * Added cvs-build, cvs-clean debian/rules - stolen from apt.
   todd:
   * Add debconf to logcheck Depends:
   * Check the return values of all commands. (Closes: #174173)
@@ -30,9 +31,7 @@ logcheck (1.2.21) unstable; urgency=low
   * src/logcheck: test also for readability for the header.txt and footer.txt.
   * debian/changelog: stripped all trailing whitespace from the file.
 
- --
 
-logcheck (1.2.20a) unstable; urgency=low
 
   maks:
   * Fix bug where many extra TMPDIRs were being created and never removed

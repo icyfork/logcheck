@@ -66,3 +66,22 @@ binary-arch: build install
 
 binary: binary-indep binary-arch
 .PHONY: build clean binary-indep binary-arch binary
+
+# Done by the uploader:
+# cvs update..
+# edit debian/changelog
+# debian/rules cvs-build
+#
+LOGCHECK_DEBVER=$(shell dpkg-parsechangelog | sed -n -e '/^Version:/s/^Version: //p')
+#LOGCHECK_CVSTAG=$(shell echo "$(LOGCHECK_DEBVER)" | sed -e 's/^/v/' -e 's/\./_/g')
+LOGCHECK_CVSTAG=HEAD
+CVS_BUILDDIR=logcheck-$(LOGCHECK_DEBVER)
+CVS_ROOT=$(shell cat CVS/Root)
+CVS_MODULE=$(shell cat CVS/Repository)
+cvs-build: 
+	rm -rf debian/cvs-build
+	mkdir -p debian/cvs-build
+	(cd debian/cvs-build;cvs -d $(CVS_ROOT) export -r $(LOGCHECK_CVSTAG) -d $(CVS_BUILDDIR) $(CVS_MODULE))
+cvs-clean: 
+	-rm -rf debian/cvs-build
+
