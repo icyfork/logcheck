@@ -1,9 +1,10 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/resolver\[[0-9]+\]: \[[._[:alnum:]-]+\] resolved to \[?[0-9.]{7,15}:[0-9]+\]? \([0-9]+ seconds to live\)$
 
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9.]{7,15}, port=[0-9]+\] (dis)?connect$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: (incoming|outgoing) route '[._[:alnum:]-]+/[._[:alnum:]-]+' is now valid; (source|destination)=[0-9.]{7,15}, port [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: (incoming|outgoing) route '[._[:alnum:]-]+/[._[:alnum:]-]+' is now (in)?valid; (source|destination)=[0-9.]{7,15}, port [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] error: Stream error \(\(null\)\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] write error: Connection refused \(111\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] write error: Connection timed out \(110\)$
 
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/sm\[[0-9]+\]: session (replaced|ended|started): jid=[._[:alnum:]-]+@[._[:alnum:]-]+/[._[:alnum:]-]+$
 
