@@ -4,6 +4,7 @@ maks:
   * Updated gconfd rules. (Closes: #246695)
   * Added and Updated ntpd rules. (Closes: #246750)
   * Added first cyrus rules. (Closes: #247047)
+  * Updated pop3d-ssl rules.
 
 
 logcheck (1.2.19) unstable; urgency=low

@@ -1,3 +1,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pop3d-ssl: Connection, ip=\[[.:[:alnum:]]+\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pop3d-ssl: LOGIN, user=[[:alnum:]]+, ip=\[[.:[:alnum:]]+\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pop3d-ssl: LOGOUT, user=[[:alnum:]]+, ip=\[[.:[:alnum:]]+\], top=[0-9]+, retr=[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pop3d-ssl: LOGIN, user=[[:alnum:].*]+, ip=\[[.:[:alnum:]]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pop3d-ssl: (LOGOUT|TIMEOUT), user=[[:alnum:]@.]+, ip=\[[.:[:alnum:]]+\], top=[0-9]+, retr=[0-9]+$
