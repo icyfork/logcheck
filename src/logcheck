@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.48 2004/06/04 09:21:17 maks-guest Exp $
+# $Id: logcheck,v 1.49 2004/06/04 09:25:58 maks-guest Exp $
 
 
 # Set the umask
@@ -314,7 +314,7 @@ greplogoutput() {
 	        fi
 
 	        # Now apply any local-* files
-	        for file in $(ls -1 $ignore/ | grep "local-.*") ; do
+	        for file in $(ls -1 $ignore/ | grep "local-") ; do
 	    	    cleanchecked "$ignore/$file"
 	        done
 	    fi
