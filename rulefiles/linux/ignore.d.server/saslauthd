@@ -1,1 +1,1 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saslauthd+\[[0-9]+\]: Domain/Realm not available.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saslauthd+\[[0-9]+\]: Domain/Realm not available\.$
