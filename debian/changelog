@@ -19,6 +19,7 @@ logcheck (1.2.20) unstable; urgency=low
   todd:
   * Change logcheck home to /var/lib/logcheck. (Closes #247614)
   * Change modes on /etc/logcheck. (Closes #247929)
+  * Remove noroot template (Closes #247360)
 
 logcheck (1.2.19-2) unstable; urgency=low
 
