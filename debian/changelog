@@ -14,6 +14,7 @@ logcheck (1.2.24) unstable; urgency=low
   * Add cyrus rules for notifyd. (Closes: #259466)
   * Make shure logtail gets a logfile to read, if not exit soon.
     Add -o switch to logtail(8). (Closes: #259371)
+  * Add logcheck-devel mail to logtail(8) and copyright.
   todd:
   * Added 2 kernel rules for sparc workstations.
   * Added nearly 50 squid rules.
