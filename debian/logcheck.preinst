@@ -5,11 +5,6 @@
 
 set -e
 
-deluser logcheck &>/dev/null || true
-adduser --quiet --system --no-create-home --group --home /var/lib/logcheck \
-	logcheck || true
-adduser --quiet logcheck adm ||true
-
 # summary of how this script can be called:
 #        * <new-preinst> `install'
 #        * <new-preinst> `install' <old-version>
@@ -21,6 +16,12 @@ adduser --quiet logcheck adm ||true
 
 case "$1" in
     install|upgrade)
+    	if dpkg --compare-versions "$2" lt 1.2.19; then
+	  deluser logcheck &>/dev/null || true
+	  adduser --quiet --system --no-create-home --group \
+	      --home /var/lib/logcheck logcheck || true
+	  adduser --quiet logcheck adm || true
+	fi
 	;;
     abort-upgrade)
 	;;
@@ -37,5 +38,3 @@ esac
 #DEBHELPER#
 
 exit 0
-
-

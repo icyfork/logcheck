@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.10 2004/05/09 23:57:05 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.11 2004/05/16 21:19:56 eevans-guest Exp $
 
 set -e
 
@@ -40,20 +40,22 @@ case "$1" in
         if [ "$2" = "" -a ! -f /etc/logcheck/header.txt ]; then
           cp -p /usr/share/logcheck/header.txt /etc/logcheck
         fi
-	# Fix Permissions
-	chown -R logcheck:logcheck /var/lib/logcheck  || true
-        chown -R logcheck:logcheck /var/state/logcheck &> /dev/null || true
-        chgrp -R logcheck /etc/logcheck || true
-        chmod 750 /etc/logcheck/ignore.d.paranoid || true
-        chmod 750 /etc/logcheck/ignore.d.workstation || true
-        chmod 750 /etc/logcheck/ignore.d.server || true
-        chmod 750 /etc/logcheck/cracking.d || true
-        chmod 750 /etc/logcheck/cracking.ignore.d || true
-        chmod 750 /etc/logcheck/violations.d || true
-        chmod 750 /etc/logcheck/violations.ignore.d || true
-	chmod -R g+rX /etc/logcheck || true
-        # just in case
-        chown logcheck /var/lock/logcheck &> /dev/null || true
+	if dpkg --compare-versions "$2" lt 1.2.19; then
+    	  # Fix Permissions
+    	  chown -R logcheck:logcheck /var/lib/logcheck  || true
+          chown -R logcheck:logcheck /var/state/logcheck &> /dev/null || true
+          chgrp -R logcheck /etc/logcheck || true
+          chmod 750 /etc/logcheck/ignore.d.paranoid || true
+          chmod 750 /etc/logcheck/ignore.d.workstation || true
+          chmod 750 /etc/logcheck/ignore.d.server || true
+          chmod 750 /etc/logcheck/cracking.d || true
+          chmod 750 /etc/logcheck/cracking.ignore.d || true
+          chmod 750 /etc/logcheck/violations.d || true
+          chmod 750 /etc/logcheck/violations.ignore.d || true
+    	  chmod -R g+rX /etc/logcheck || true
+          # just in case
+          chown logcheck /var/lock/logcheck &> /dev/null || true
+	fi
 
 	;;
     
