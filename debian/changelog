@@ -20,7 +20,7 @@ logcheck (1.2.24) unstable; urgency=low
   * Added a ippl rule at level workstation. (Closes: #260102)
   * Updated logcheck help message to all existent switches.
     Corrected logcheck command line parsing, -T needs no args.
-    Use 6 'X' for mktemp(1) template. (Closes: #260330)
+    Use 6 'X' for mktemp(1) template. Better lock handling. (Closes: #260330)
   * Do not create unused /var/state/logcheck and really get rid of it. 
     (Closes: #260096)
   * Added cs Translation. thanks Jan Outrata. (Closes: #260382)
