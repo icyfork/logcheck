@@ -16,6 +16,7 @@ logcheck (1.2.24) unstable; urgency=low
     Added -o switch to logtail(8). (Closes: #259371)
   * Added logcheck-devel mail to logtail(8) and copyright.
   * Added userv rules. (Closes: #260105)
+  * Generalize user match in spamd rule. (Closes: #260103)
   todd:
   * Added 2 kernel rules for sparc workstations.
   * Added nearly 50 squid rules.
