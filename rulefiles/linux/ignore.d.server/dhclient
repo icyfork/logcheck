@@ -1,5 +1,5 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Internet Software Consortium DHCP Client [.[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Copyright 1995-[0-9]+ Internet Software Consortium\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Internet (Software|Systems) Consortium DHCP Client [.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Copyright [0-9]+ Internet Systems Consortium\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: All rights reserved\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: For info, please visit http://www.isc.org/products/DHCP$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?:$
