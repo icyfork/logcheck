@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.83 2004/09/20 22:13:02 maks-guest Exp $
+# $Id: logcheck,v 1.84 2004/09/20 22:15:46 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -266,7 +266,7 @@ sendreport() {
     fi
 }
 
-# clean the report to level for type
+# Clean the report to level for type
 greplogoutput() {
     raise="$1"
     sectionstring="$2"
@@ -624,7 +624,7 @@ elif [ $LOGFILE ]; then
     fi
 fi
 
-# first sort the logs to remove duplicate lines (from different logfiles with
+# First sort the logs to remove duplicate lines (from different logfiles with
 # the same lines) and reduce CPU and memory usage afterwards.
 debug "Sorting logs"
 $SORT -m $TMPDIR/logoutput/* | uniq | sed -e 's/ *$//' | cat  \
