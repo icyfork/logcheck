@@ -15,6 +15,8 @@ logcheck (1.2.29) unstable; urgency=low
   * Enhance ppp rules on level workstation. (closes: #270019)
     Add pppoa3 rules to the ppp rules.
   * Small update concerning reject messages in postfix.
+  * Added pptpd rules at level workstation.
+    thanks to Erich Schubert <erich@debian.org>
   todd:
   * Add 1 dovecot rule
   jamie:
