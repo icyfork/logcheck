@@ -5,6 +5,7 @@ logcheck (1.2.38) unstable; urgency=low
   jamie:
   * Add rule in violations.ignore.d/logcheck-postfix for postgrey
     (Closes: #30088)
+  * Modify bind notify rule for bind 9.3.x (Closes: #303176)
 
  -- 
 
