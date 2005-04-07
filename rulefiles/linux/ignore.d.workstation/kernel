@@ -36,6 +36,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial Driver core [.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial support registered for [_[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]:[[:space:]]+[_[:alnum:]-]+: (loaded successfully|already loaded)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]: Keeping default configuration with [[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node changed: [-:0-9]+ -> [-:0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node (suspended|resumed): ID:BUS\[[-:0-9]+\]  GUID\[[0-9a-f]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: The root node is not cycle master capable; selecting a new root node and resetting\.\.\.$
@@ -49,10 +50,10 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: SCSI device sd[a-z]: [0-9]+ 512-byte hdwr sectors \([0-9]+ MB\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Write Protect is off$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sr[0-9]+: [^[:space:]]+ drive: [ \/[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Vendor: [^[:space:]]+ +Model: [[:alnum:][:space:]]+ [^[:space:]]+ +Rev: +[.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Vendor: [^[:space:]]+ +Model: [[:alnum:][:space:]]+ ([^[:space:]]+)?+Rev: +[.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Type: +[^[:space:]]+ +ANSI SCSI revision: [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi CD-ROM sr[0-9]+ at scsi[0-9], channel [0-9], id [0-9], lun [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scsi.agent\[[0-9]+\]: cdrom at [\./:[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scsi.agent\[[0-9]+\]: (disk|cdrom) at [\./:[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:  /dev/scsi/host[0-9]/bus[0-9]/target[0-9]/lun[0-9]: p[0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: keyboard: Too many NACKs -- noisy kbd cable\?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: keyboard.c: can't emulate rawmode for keycode [0-9]+$
@@ -81,6 +82,11 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: (registered|unregister) (dsp|mixer) [,0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: valid (in|out)put sample rate [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: warning: found [0-9] of [0-9] logical channels\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]: Keeping default configuration with [\./:[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb 1-1: configuration #[0-9]+ chosen from [0-9]+ choices$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Write Protect is off$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: assuming (Write Enabled|drive cache: write through)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: SCSI subsystem initialized$
 
 # for sun machines
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sunmouse: Successfully adjusted to [0-9]+ baud\.$
