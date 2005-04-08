@@ -2,6 +2,7 @@ logcheck (1.2.38) unstable; urgency=low
 
   maks:
   * Generalise postfix rule concerning network_biopair_interop.
+  * Add rule for ntp message about valid/infalid peers. (Closes #303661)
   jamie:
   * Add rule in violations.ignore.d/logcheck-postfix for postgrey
     (Closes: #30088)
