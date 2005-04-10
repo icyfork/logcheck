@@ -12,6 +12,7 @@ logcheck (1.2.38) unstable; urgency=low
   * Modify rsync rule to match module names with '.', '-' and '_'.
     Thanks to SATOH Fumiyasu <fumiya@samba.gr.jp> for the patch
     (Closes: #295352)
+  * Add nagios rule for UNKNOWN state service notification.
 
  -- 
 
