@@ -1,18 +1,10 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Auto-save of retention data completed successfully\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: LOG ROTATION: (DAILY|WEEKLY|MONTHLY)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Nagios 1\.1 starting\.\.\. \(PID=[0-9]+\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;CRITICAL;(SOFT|HARD);.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;WARNING;(SOFT|HARD);.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;UNKNOWN;(SOFT|HARD);.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;OK;(SOFT|HARD);.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;CRITICAL;.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;WARNING;.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;OK;.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST ALERT: [._[:alnum:]-]+;DOWN;(SOFT|HARD);.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST ALERT: [._[:alnum:]-]+;UP;(SOFT|HARD);.*$
-^\w{3} [ :0-9]{11} [-._[:alnum:]]+ nagios: HOST ALERT: [._[:alnum:]-]+;UNREACHABLE;(SOFT|HARD);.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;DOWN;.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;UP;.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;(CRITICAL|WARNING|OK|UNKNOWN);(SOFT|HARD);.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;(CRITICAL|WARNING|OK|UNKNOWN);.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST ALERT: [._[:alnum:]-]+;(DOWN|UP|UNREACHABLE);(SOFT|HARD);.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;(DOWN|UP);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST DOWNTIME ALERT: [._[:alnum:]-]+;STOPPED;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Warning: The results of service '[ [:alnum:][:punct:]]+' on host '[._[:alnum:]-]+' are stale by [[:digit:]]+ seconds \(threshold=[[:digit:]]+ seconds\).  I'm forcing an immediate check of the service\.$
 # nrpe
