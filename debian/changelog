@@ -13,6 +13,8 @@ logcheck (1.2.38) unstable; urgency=low
     Thanks to SATOH Fumiyasu <fumiya@samba.gr.jp> for the patch
     (Closes: #295352)
   * Add nagios rule for UNKNOWN state service notification.
+  * Modify postfix anvil rule for 'max connection' statistics
+    messages to match smtps connections too.
 
  -- 
 
