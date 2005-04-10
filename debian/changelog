@@ -9,6 +9,9 @@ logcheck (1.2.38) unstable; urgency=low
   * Modify bind notify rule for bind 9.3.x (Closes: #303176)
   * Add various workstation kernel/udev rules for removable devices
     (Closes: #297995)
+  * Modify rsync rule to match module names with '.', '-' and '_'.
+    Thanks to SATOH Fumiyasu <fumiya@samba.gr.jp> for the patch
+    (Closes: #295352)
 
  -- 
 
