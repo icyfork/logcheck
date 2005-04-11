@@ -15,6 +15,7 @@ logcheck (1.2.38) unstable; urgency=low
   * Add nagios rule for UNKNOWN state service notification.
   * Modify postfix anvil rule for 'max connection' statistics
     messages to match smtps connections too.
+  * Add new rules for policyd, a postfix policy daemon.
 
  -- 
 
