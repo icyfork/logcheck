@@ -6,7 +6,7 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-.PHONY: build clean binary-indep binary-arch binary cvs-build checkpo
+.PHONY: build clean binary-indep binary-arch binary cvs-build checkpo help
 
 build: build-stamp
 build-stamp:
