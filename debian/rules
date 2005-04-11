@@ -6,7 +6,7 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-.PHONY: build clean binary-indep binary-arch binary cvs-build
+.PHONY: build clean binary-indep binary-arch binary cvs-build checkpo
 
 build: build-stamp
 build-stamp:
@@ -67,6 +67,14 @@ binary-arch: build install
 # We have nothing to do by default.
 
 binary: binary-indep binary-arch
+
+# check the debconf translations
+checkpo:
+	for i in debian/po/*.po; do \
+		echo \"Checking: $$i\"; \
+		msgmerge -U $$i debian/po/templates.pot; \
+		msgfmt -o /dev/null -c --statistics $$i; \
+	done
 
 # Done by the uploader:
 # cvs update..
