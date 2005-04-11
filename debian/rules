@@ -68,6 +68,21 @@ binary-arch: build install
 
 binary: binary-indep binary-arch
 
+help:
+	@echo
+	@echo 'Cleaning targets:'
+	@echo '  clean         -   remove generated files'
+	@echo '  cvs-clean     -   remove cvs checkout'
+	@echo
+	@echo 'Logcheck packaging:'
+	@echo '  cvs-build     -   checkout current logcheck cvs'
+	@echo '  binary        -   build debian package'
+	@echo
+	@echo 'Analysing:'
+	@echo '  checkpo       -   prints translation status'
+	@echo
+	@echo 'Execute debian/rules file'
+
 # check the debconf translations
 checkpo:
 	for i in debian/po/*.po; do \
