@@ -6,6 +6,8 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+.PHONY: build clean binary-indep binary-arch binary cvs-build
+
 build: build-stamp
 build-stamp:
 	dh_testdir
@@ -65,7 +67,6 @@ binary-arch: build install
 # We have nothing to do by default.
 
 binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary
 
 # Done by the uploader:
 # cvs update..
