@@ -50,7 +50,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: SCSI device sd[a-z]: [0-9]+ 512-byte hdwr sectors \([0-9]+ MB\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Write Protect is off$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sr[0-9]+: [^[:space:]]+ drive: [ \/[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Vendor: [^[:space:]]+ +Model: [[:alnum:][:space:]]+ ([^[:space:]]+)?+Rev: +[.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Vendor: [^[:space:]]+ +Model: [[:alnum:][:space:]]+ ([^[:space:]]+[[:space:]]+)?+Rev: +[.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Type: +[^[:space:]]+ +ANSI SCSI revision: [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi CD-ROM sr[0-9]+ at scsi[0-9], channel [0-9], id [0-9], lun [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scsi.agent\[[0-9]+\]: (disk|cdrom) at [\./:[:alnum:]-]+$
