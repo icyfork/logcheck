@@ -21,6 +21,7 @@ logcheck (1.2.38) unstable; urgency=low
   * Add more postfix rules for certificate verification failure
     messages.
   * Add new rules for postfix scache (connection cache server).
+  * Add rule for bind 9.3 'unexpected RCODE' messages.
 
  -- 
 
