@@ -20,6 +20,7 @@ logcheck (1.2.38) unstable; urgency=low
   * Add new rules for policyd, a postfix policy daemon.
   * Add more postfix rules for certificate verification failure
     messages.
+  * Add new rules for postfix scache (connection cache server).
 
  -- 
 
