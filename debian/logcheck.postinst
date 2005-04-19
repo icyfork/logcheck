@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.33 2005/02/06 18:02:51 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.34 2005/04/19 03:10:42 ttroxell Exp $
 
 set -e
 
@@ -61,6 +61,7 @@ case "$1" in
 	if dpkg --compare-versions "$2" lt "1.2.34"; then
     	  # Fix Permissions
     	  chown -R logcheck:logcheck /var/lib/logcheck  || true
+	  chown -R logcheck:logcheck /var/lock/logcheck || true
           chgrp -R logcheck /etc/logcheck || true
           chmod 2750 /etc/logcheck/ignore.d.paranoid || true
           chmod 2750 /etc/logcheck/ignore.d.workstation || true
