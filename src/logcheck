@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.112 2005/04/19 02:58:41 ttroxell Exp $
+# $Id: logcheck,v 1.113 2005/04/19 03:40:30 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -81,7 +81,7 @@ REBOOT=0
 SORTUNIQ=0
 SUPPORT_CRACKING_IGNORE=0
 SYSLOGSUMMARY=0
-LOCKFILE="/var/lock/logcheck/logcheck"
+LOCKFILE="/var/lock/logcheck"
 
 # Carry out the clean up tasks
 cleanup() {
@@ -91,8 +91,8 @@ cleanup() {
 	kill $LOCK && unset LOCK
     fi
 
-    if [ -f "$LOCKFILE" ]; then
-        debug "cleanup: Removing lockfile: $LOCKFILE"
+    if [ -f "$LOCKFILE.lock" ]; then
+        debug "cleanup: Removing lockfile: $LOCKFILE.lock"
 	lockfile-remove $LOCKFILE
     fi
 
@@ -139,8 +139,8 @@ error() {
 	    kill $LOCK && unset LOCK
 	fi
 
-       if [ -f "$LOCKFILE" ]; then
-           debug "error: Removing lockfile: $LOCKFILE"
+       if [ -f "$LOCKFILE.lock" ]; then
+           debug "error: Removing lockfile: $LOCKFILE.lock"
            lockfile-remove $LOCKFILE
        fi
 	
@@ -591,14 +591,14 @@ fi
 
 trap 'cleanup' 0
                                                                                 
-debug "Trying to get lockfile: $LOCKFILE"
+debug "Trying to get lockfile: $LOCKFILE.lock"
 lockfile-create --retry 1 $LOCKFILE > /dev/null 2>&1
 
 
 if [ $? -eq 1 ]; then 
-    error "Failed to get lockfile: $LOCKFILE" "noclean"
+    error "Failed to get lockfile: $LOCKFILE.lock" "noclean"
 else 
-    debug "Running lockfile-touch $LOCKFILE"
+    debug "Running lockfile-touch $LOCKFILE.lock"
     lockfile-touch $LOCKFILE &
     LOCK="$!"
 fi
