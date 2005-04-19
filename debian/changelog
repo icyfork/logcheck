@@ -10,7 +10,7 @@ logcheck (1.2.38) unstable; urgency=low
 
   maks:
   * Generalise postfix rule concerning network_biopair_interop.
-  * Add rule for ntp message about valid/infalid peers. (Closes #303661)
+  * Add rule for ntp message about valid/infalid peers. (Closes: #303661)
   * Improve rules .PHONY target + add checkpo rule for the translation check.
   * Add help target to debian/rules documenting the syntax.
   jamie:
