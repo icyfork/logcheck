@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.34 2005/04/19 03:10:42 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.35 2005/04/19 15:54:49 ttroxell Exp $
 
 set -e
 
@@ -57,11 +57,15 @@ case "$1" in
         if [ "$2" = "" -a ! -f /etc/logcheck/header.txt ]; then
           cp -p /usr/share/logcheck/header.txt /etc/logcheck
         fi
+
+	if dpkg --compare-versions "$2" lt "1.2.39"; then
+          chown -R logcheck:logcheck /var/lock/logcheck || true
+        fi
+
 	# This gets executed even if there is no $2.
 	if dpkg --compare-versions "$2" lt "1.2.34"; then
     	  # Fix Permissions
     	  chown -R logcheck:logcheck /var/lib/logcheck  || true
-	  chown -R logcheck:logcheck /var/lock/logcheck || true
           chgrp -R logcheck /etc/logcheck || true
           chmod 2750 /etc/logcheck/ignore.d.paranoid || true
           chmod 2750 /etc/logcheck/ignore.d.workstation || true
