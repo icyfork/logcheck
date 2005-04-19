@@ -24,6 +24,12 @@ logcheck (1.2.38) unstable; urgency=low
   * Add rule for bind 9.3 'unexpected RCODE' messages.
   * Modify dnsmasq rule to match '/var/run/dnsmasq/resolv.conf'
     too. (Closes: #302678)
+  todd:
+  * Change lockfile location from /var/lock/logcheck to
+    /var/lock/logcheck/logcheck (Thanks Rainer Zocholl) to avoid 
+    potential DoS condition. (Closes: #304978)
+  * Make lockfile debug messages refer to the correct files.
+  * Add note about dh_installlogcheck permissions. (See #302379)
 
  -- 
 

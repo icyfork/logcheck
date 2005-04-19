@@ -22,4 +22,8 @@ There are a number of other options which are documented in
 By default logcheck is set to run once an hour. This can be changed by
 editing /etc/cron.d/logcheck.
 
+Please note that the permissions of rulefiles installed with dh_installlogcheck after installing logcheck will differ from those included in logcheck-database.
+This is because dh_installlogcheck cannot yet assume that the logcheck user
+exists.  This may be changed in a future version of Debian.
+
 The documentation is being updated as time allows.
