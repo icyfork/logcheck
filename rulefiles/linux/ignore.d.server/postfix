@@ -6,24 +6,22 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: to=<[^[:space:]]+>, relay=none, delay=[0-9]+, status=deferred \(delivery temporarily suspended: Host or domain name not found. Name service error for name=[^[:space:]]+ type=MX: Host not found, try again\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:alnum:]]+: message-id=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: unable to open Berkeley db /etc/sasldb: No such file or directory$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: verify error:num=10:certificate has expired$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: verify error:num=18:self signed certificate$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: verify error:num=19:self signed certificate in certificate chain$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: verify error:num=20:unable to get local issuer certificate$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: verify error:num=21:unable to verify the first certificate$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: verify error:num=24:invalid CA certificate$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: verify error:num=26:unsupported certificate purpose$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: verify error:num=27:certificate not trusted$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: cert has expired$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: (Peer|Server) certificate could not be verified$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: TLS connection established (to|from) [^[:space:]]+: (TLSv1|SSLv[23]) with cipher [^[:space:]]+ \([/0-9]+ bits\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: setting up TLS connection from [._[:alnum:]-]+\[[0-9.]{7,15}\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=10:certificate has expired$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=18:self signed certificate$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=19:self signed certificate in certificate chain$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=20:unable to get local issuer certificate$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=21:unable to verify the first certificate$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=24:invalid CA certificate$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=26:unsupported certificate purpose$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=27:certificate not trusted$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: cert has expired$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: (Peer|Server) certificate could not be verified$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: smtpd_peer_init: [0-9]+\.[0-9]+\.[0-9]+\.[0-9]+: address not listed for hostname [._[:alnum:]-]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: TLS connection established (to|from) [^[:space:]]+: (TLSv1|SSLv[23]) with cipher [^[:space:]]+ \([/0-9]+ bits\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: setting up TLS connection to [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: TLS connection established (to|from) [^[:space:]]+: (TLSv1|SSLv[23]) with cipher [^[:space:]]+ \([/0-9]+ bits\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: setting up TLS connection to [._[:alnum:]-]+(\[[0.9.]{7,15}\])?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: fingerprint=([0-9A-F]{2}:){15}[0-9A-F]{2}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: Verified: subject_CN=.*, issuer=.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(smtp|smtpd)\[[0-9]+\]: Unverified: subject_CN=.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: Unverified: subject_CN=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: OTP unavailable because can't read/write key database /etc/opiekeys: No such file or directory$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:upper:]0-9]+: reject: (RCPT|MAIL) from [._[:alnum:]-]+\[[0-9.]{7,15}\]: [45][0-9][0-9] .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ Connection refused \(port [0-9]+\)$
