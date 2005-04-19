@@ -1,3 +1,11 @@
+logcheck (1.2.39) unstable; urgency=low
+
+  todd:
+  * Fix logcheck upgrade script to set owner on lock directory properly
+    Thanks Marco Valli, Maks
+
+ -- Todd Troxell <ttroxell@debian.org>  Tuesday, 19 Apr 2005 11:53:00 -0500
+
 logcheck (1.2.38) unstable; urgency=low
 
   maks:
@@ -31,7 +39,7 @@ logcheck (1.2.38) unstable; urgency=low
   * Make lockfile debug messages refer to the correct files.
   * Add note about dh_installlogcheck permissions. (See #302379)
 
- -- 
+ -- Todd Troxell <ttroxell@debian.org>  Monday, 18 Apr 2005 23:45:00 -0500
 
 logcheck (1.2.37) unstable; urgency=low
 
