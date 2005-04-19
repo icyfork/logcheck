@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.113 2005/04/19 03:40:30 ttroxell Exp $
+# $Id: logcheck,v 1.114 2005/04/19 03:43:44 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -81,7 +81,7 @@ REBOOT=0
 SORTUNIQ=0
 SUPPORT_CRACKING_IGNORE=0
 SYSLOGSUMMARY=0
-LOCKFILE="/var/lock/logcheck"
+LOCKFILE="/var/lock/logcheck/logcheck"
 
 # Carry out the clean up tasks
 cleanup() {
