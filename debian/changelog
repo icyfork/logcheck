@@ -3,6 +3,9 @@ logcheck (1.2.39) unstable; urgency=low
   todd:
   * Fix logcheck upgrade script to set owner on lock directory properly
     Thanks Marco Valli, Maks
+  jamie:
+  * Improve postfix rules in ignore.d.server/postfix and
+    violations.ignore.d/logcheck-postfix. (Closes: #305350)
 
  -- Todd Troxell <ttroxell@debian.org>  Tuesday, 19 Apr 2005 11:53:00 -0500
 
