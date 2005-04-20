@@ -3,6 +3,8 @@ logcheck (1.2.40) unstable; urgency=low
   jamie:
   * Improve postfix rules in ignore.d.server/postfix and
     violations.ignore.d/logcheck-postfix. (Closes: #305350)
+  * Add postfix rule for "Temporary failure in name resolution"
+    messages.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
