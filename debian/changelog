@@ -5,6 +5,7 @@ logcheck (1.2.40) unstable; urgency=low
     violations.ignore.d/logcheck-postfix. (Closes: #305350)
   maks:
   * Add some pppd rules for pppoatm usage.
+  * Fix hostname match in cvsd rules.
 
  -- 
 
