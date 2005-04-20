@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.115 2005/04/19 15:56:10 ttroxell Exp $
+# $Id: logcheck,v 1.116 2005/04/20 14:25:08 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -52,7 +52,7 @@ else
 fi
 
 DATE="$(date +'%Y-%m-%d %H:%M')"
-VERSION="1.2.39"
+VERSION="1.2.40"
 
 # Set the default report level
 REPORTLEVEL="server"
