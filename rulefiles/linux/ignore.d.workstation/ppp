@@ -1,4 +1,4 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Connect: ppp0 <--> /dev/[pt]ts/[.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Connect: ppp0 <--> (/dev/[pt]ts/[.0-9]+|[0-9]+\.[0-9]+)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: (CH|P)AP authentication succeeded$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Connection terminated\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Device ttyS1 is locked by pid [0-9]+$
@@ -16,6 +16,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: remote IP address [.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: primary   DNS address [.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: secondary DNS address [.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Plugin pppoatm.so loaded\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: PPPoATM plugin_init$
 # pppoa support
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppoa3\[[0-9]+\]: pppoa3 version [.[:alnum:]-]+ started by [_[:alnum:]-]+ \(uid [0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppoa3\[[0-9]+\]: Control thread ready$

@@ -3,6 +3,8 @@ logcheck (1.2.40) unstable; urgency=low
   jamie:
   * Improve postfix rules in ignore.d.server/postfix and
     violations.ignore.d/logcheck-postfix. (Closes: #305350)
+  maks:
+  * Add some pppd rules for pppoatm usage.
 
  -- 
 
