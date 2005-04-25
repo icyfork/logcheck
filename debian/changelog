@@ -5,6 +5,7 @@ logcheck (1.2.40) unstable; urgency=low
     violations.ignore.d/logcheck-postfix. (Closes: #305350)
   * Add postfix rule for "Temporary failure in name resolution"
     messages.
+  * Add rules for policyd, add comma to throttle rule.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
