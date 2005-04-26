@@ -10,11 +10,12 @@ logcheck (1.2.40) unstable; urgency=low
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
   * Add some first preliminary iptables rules for iptables REJECT logging
-    in gnore.d.server/kernel for UDP packets.
+    ignore.d.server/kernel for UDP packets.
   * Add jabberd, ssh, rsync rules from Peter Palfrader <weasel@debian.org>.
     The ssh rule ignores network scanning noise (not the account brutforcing).
   * Added dot to username match in scponly rule.
   * Match more strictly ipv4 address in dhcpd + dhclient rules.
+  * Add to ignore.d.server/dhcpd initial udhcpd lines. (Closes: #306388)
 
  -- 
 
