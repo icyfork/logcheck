@@ -14,6 +14,7 @@ logcheck (1.2.40) unstable; urgency=low
   * Add jabberd, ssh, rsync rules from Peter Palfrader <weasel@debian.org>.
     The ssh rule ignores network scanning noise (not the account brutforcing).
   * Added dot to username match in scponly rule.
+  * Match more strictly ipv4 address in dhcpd + dhclient rules.
 
  -- 
 
