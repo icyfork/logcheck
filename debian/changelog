@@ -6,6 +6,8 @@ logcheck (1.2.40) unstable; urgency=low
   * Add postfix rule for "Temporary failure in name resolution"
     messages.
   * Add rules for policyd, add comma to throttle rule.
+  * Add nagios rules for PROCESS_SERVICE_CHECK_RESULT messages.
+    (Closes: #306695)
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
