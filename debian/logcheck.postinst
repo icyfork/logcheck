@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.35 2005/04/19 15:54:49 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.36 2005/04/30 06:53:24 maks-guest Exp $
 
 set -e
 
@@ -62,11 +62,13 @@ case "$1" in
           chown -R logcheck:logcheck /var/lock/logcheck || true
         fi
 
+	# need to be done on install and on upgrade for new rule files
+	chgrp -R logcheck /etc/logcheck || true
+
 	# This gets executed even if there is no $2.
 	if dpkg --compare-versions "$2" lt "1.2.34"; then
     	  # Fix Permissions
     	  chown -R logcheck:logcheck /var/lib/logcheck  || true
-          chgrp -R logcheck /etc/logcheck || true
           chmod 2750 /etc/logcheck/ignore.d.paranoid || true
           chmod 2750 /etc/logcheck/ignore.d.workstation || true
           chmod 2750 /etc/logcheck/ignore.d.server || true
