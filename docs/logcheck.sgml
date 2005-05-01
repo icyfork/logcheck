@@ -69,19 +69,26 @@ manpage.1: manpage.sgml
   <refsect1>
     <title>DESCRIPTION</title>
 
-    <para>This manual page documents briefly the
-      <command>logcheck</command> command.</para>
-
-    <para><command>&dhpackage;</command> helps spot problems and security 
+    <para>This manual page documents the <command>logcheck</command>.
+    The <command>&dhpackage;</command> programm helps spot problems and security
     violations in your logfiles automatically and will send the results to
-    you in e-mail.</para>
+    you in e-mail. By default logcheck runs every hour just off the hour,
+    and after every reboot.</para>
+
+    <para><command>&dhpackage;</command> supports three level of filtering:
+    "paranoid" is for high-security machines running as few services
+    as possible. Don't use it if you can handle its verbose messages.
+    "server" is the default and contains rules for may different daemons.
+    "workstation" is for sheltered machines and filters most of the messages.
+    The ignore rules work in additive manner. "paranoid" rules are also
+    included at level "server" and "workstation.</para>
+    
 
   </refsect1>
   <refsect1>
     <title>OPTIONS</title>
 
-    <para>These programs follow the usual GNU command line syntax. A
-      summary of options is included below.</para>
+    <para>A summary of options is included below.</para>
 
     <variablelist>
       <varlistentry>
@@ -223,7 +230,7 @@ manpage.1: manpage.sgml
     <title>SEE ALSO</title>
 
     <para><command>logtail</command>(8)</para>
-    <para>For hints on how to maintain rules, see README.logcheck-database.gz
+    <para>For hints on how to maintain rules, see README.logcheck-database.gz.
     </para>
   </refsect1>
 
@@ -231,9 +238,9 @@ manpage.1: manpage.sgml
     <title>AUTHOR</title>
 
     <para>&dhpackage; is developed by Debian &dhpackage; Team at alioth: 
-    http://alioth.debian.org/projects/logcheck/</para>
+    <url>http://alioth.debian.org/projects/logcheck/</url>.</para>
 
-    <para>This manual page was written by &dhusername;</para>
+    <para>This manual page was written by &dhusername;.</para>
   </refsect1>
 </refentry>
 

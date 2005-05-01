@@ -19,6 +19,7 @@ logcheck (1.2.40) unstable; urgency=low
   * Match more strictly ipv4 address in dhcpd + dhclient rules.
   * Add to ignore.d.server/dhcpd initial udhcpd lines. (Closes: #306388)
   * Set group ownership on install and on upgrade to catch new rule files.
+  * Minor additions to logcheck(8).
 
  -- 
 
