@@ -69,11 +69,11 @@ manpage.1: manpage.sgml
   <refsect1>
     <title>DESCRIPTION</title>
 
-    <para>This manual page documents the <command>logcheck</command>.
-    The <command>&dhpackage;</command> programm helps spot problems and security
+    <para>This manual page documents the <command>logcheck</command> command.
+    The <command>&dhpackage;</command> program helps spot problems and security
     violations in your logfiles automatically and will send the results to
-    you in e-mail. By default logcheck runs every hour just off the hour,
-    and after every reboot.</para>
+    you periodically in an e-mail. By default logcheck runs every hour just 
+    off the hour and after every reboot.</para>
 
     <para><command>&dhpackage;</command> supports three level of filtering:
     "paranoid" is for high-security machines running as few services
@@ -102,7 +102,7 @@ manpage.1: manpage.sgml
         <term><option>-d</option>
         </term>
         <listitem>
-          <para>debug mode.</para>
+          <para>Debug mode.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
