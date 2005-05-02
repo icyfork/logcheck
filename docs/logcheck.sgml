@@ -77,11 +77,11 @@ manpage.1: manpage.sgml
 
     <para><command>&dhpackage;</command> supports three level of filtering:
     "paranoid" is for high-security machines running as few services
-    as possible. Don't use it if you can handle its verbose messages.
+    as possible. Don't use it if you can't handle its verbose messages.
     "server" is the default and contains rules for may different daemons.
     "workstation" is for sheltered machines and filters most of the messages.
     The ignore rules work in additive manner. "paranoid" rules are also
-    included at level "server" and "workstation.</para>
+    included at level "server" and "workstation".</para>
     
 
   </refsect1>
