@@ -20,7 +20,7 @@ manpage.1: manpage.sgml
   <!ENTITY dhfirstname "<firstname>Jon</firstname>">
   <!ENTITY dhsurname   "<surname>Middleton</surname>">
   <!-- Please adjust the date whenever revising the manpage. -->
-  <!ENTITY dhdate      "<date>April 27, 2004</date>">
+  <!ENTITY dhdate      "<date>May 3, 2005</date>">
   <!-- SECTION should be 1-8, maybe w/ subsection other parameters are
        allowed: see man(7), man(1). -->
   <!ENTITY dhsection   "<manvolnum>8</manvolnum>">
@@ -82,6 +82,11 @@ manpage.1: manpage.sgml
     "workstation" is for sheltered machines and filters most of the messages.
     The ignore rules work in additive manner. "paranoid" rules are also
     included at level "server" and "workstation".</para>
+
+    <para>The reported messages are sorted in three different layers.
+    The system events verbosity is governed by aboves level choice.
+    The security events and the so called attack alerts are reported 
+    anyway independently of aboves choosen level.</para>
     
 
   </refsect1>
@@ -238,7 +243,7 @@ manpage.1: manpage.sgml
     <title>AUTHOR</title>
 
     <para>&dhpackage; is developed by Debian &dhpackage; Team at alioth: 
-    <url>http://alioth.debian.org/projects/logcheck/</url>.</para>
+    http://alioth.debian.org/projects/logcheck/.</para>
 
     <para>This manual page was written by &dhusername;.</para>
   </refsect1>
