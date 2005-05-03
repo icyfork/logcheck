@@ -8,6 +8,8 @@ logcheck (1.2.40) unstable; urgency=low
   * Add nagios rules for PROCESS_SERVICE_CHECK_RESULT messages. 
     (Closes: #306695)
   * Add more ntp rules for "adjusting local clock" messages. (Closes: #303661)
+  * Add postfix rule for "unknown SPF result" messages when using the
+    libspf2 patch.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
