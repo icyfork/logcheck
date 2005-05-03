@@ -83,11 +83,11 @@ manpage.1: manpage.sgml
     The ignore rules work in additive manner. "paranoid" rules are also
     included at level "server" and "workstation".</para>
 
-    <para>The reported messages are sorted in three different layers.
-    The system events verbosity is governed by aboves level choice.
-    The security events and the so called attack alerts are reported 
-    anyway independently of aboves choosen level.</para>
-    
+    <para>The messages reported are sorted into two layers, system events and
+    security events. The verbosity of system events is controlled by which
+    level you choose, paranoid, server or workstation. However, security events 
+    and attack alerts are not affected by this.</para>
+
 
   </refsect1>
   <refsect1>
