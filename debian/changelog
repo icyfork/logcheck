@@ -10,6 +10,7 @@ logcheck (1.2.40) unstable; urgency=low
   * Add more ntp rules for "adjusting local clock" messages. (Closes: #303661)
   * Add postfix rule for "unknown SPF result" messages when using the
     libspf2 patch.
+  * Add rule for bind 9.3 'FORMERR resolving' messages.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
