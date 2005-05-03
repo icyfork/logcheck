@@ -11,6 +11,8 @@ logcheck (1.2.40) unstable; urgency=low
   * Add postfix rule for "unknown SPF result" messages when using the
     libspf2 patch.
   * Add rule for bind 9.3 'FORMERR resolving' messages.
+  * Add more nagios rules for SERVICE_FLAPPING messages and 
+    ENABLE_*_NOTIFICATIONS messages.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
