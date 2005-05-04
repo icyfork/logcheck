@@ -15,6 +15,7 @@ logcheck (1.2.40) unstable; urgency=low
     ENABLE_*_NOTIFICATIONS messages.
   * Fix udev rules to match alphanumeric device names and subdirectories in
     front of %k. (Closes: #307588)
+  * Add bind rule to suppress NSTATS messages. (Closes: #307675)
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
