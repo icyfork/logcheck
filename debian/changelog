@@ -10,12 +10,13 @@ logcheck (1.2.40) unstable; urgency=low
   * Add more ntp rules for "adjusting local clock" messages. (Closes: #303661)
   * Add postfix rule for "unknown SPF result" messages when using the
     libspf2 patch.
-  * Add rule for bind 9.3 'FORMERR resolving' messages.
+  * Add rule for bind 9.3 "FORMERR resolving" messages.
   * Add more nagios rules for SERVICE_FLAPPING messages and 
     ENABLE_*_NOTIFICATIONS messages.
   * Fix udev rules to match alphanumeric device names and subdirectories in
     front of %k. (Closes: #307588)
   * Add bind rule to suppress NSTATS messages. (Closes: #307675)
+  * Add nagios rule for "HOST EVENT HANDLER" messages.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
