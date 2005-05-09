@@ -17,6 +17,7 @@ logcheck (1.2.40) unstable; urgency=low
     front of %k. (Closes: #307588)
   * Add bind rule to suppress NSTATS messages. (Closes: #307675)
   * Add nagios rule for "HOST EVENT HANDLER" messages.
+  * Add cyrus rules to match notifyd messages.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
