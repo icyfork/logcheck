@@ -19,6 +19,8 @@ logcheck (1.2.40) unstable; urgency=low
   * Add nagios rule for "HOST EVENT HANDLER" messages.
   * Add cyrus rules to match notifyd messages.
   * Add first rule for grinch, an open relay checker for postfix.
+  * Set a default for FQDN and only set the value of HOSTNAME once we've read
+    logcheck.conf. The FQDN option now works. (Closes: #308249)
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
