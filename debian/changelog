@@ -23,6 +23,7 @@ logcheck (1.2.40) unstable; urgency=low
     logcheck.conf. The FQDN option now works. (Closes: #308249)
   * Minor changes to innd rules. Add rule to match innfeed "Connection
     refused" messages.
+  * Add nagios rule for ENABLE_NOTIFICATIONS messages.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
