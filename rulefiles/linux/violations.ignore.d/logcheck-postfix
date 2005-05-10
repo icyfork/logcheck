@@ -14,6 +14,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Read failed in network_biopair_interop with errno=[0-9]+: num_read=[0-9]+, want_read=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: handler sender_permitted_from: DUNNO$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: : SPF none: smtp_comment=SPF: domain of sender [^[:space:]]+ does not designate mailers, header_comment=[.[:lower:]]+: domain of [^[:space:]]+ does not designate permitted sender hosts$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+:( num=10:)?certificate has expired$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=18:self signed certificate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=19:self signed certificate in certificate chain$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=20:unable to get local issuer certificate$
