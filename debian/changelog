@@ -21,6 +21,8 @@ logcheck (1.2.40) unstable; urgency=low
   * Add first rule for grinch, an open relay checker for postfix.
   * Set a default for FQDN and only set the value of HOSTNAME once we've read
     logcheck.conf. The FQDN option now works. (Closes: #308249)
+  * Minor changes to innd rules. Add rule to match innfeed "Connection
+    refused" messages.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
