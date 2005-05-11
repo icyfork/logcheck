@@ -25,6 +25,7 @@ logcheck (1.2.40) unstable; urgency=low
     refused" messages.
   * Add nagios rule for ENABLE_NOTIFICATIONS messages.
   * Add postfix rule to suppress "certificate has expired" messages.
+  * Add postfix rule for "misplaced delimiter" hostname warnings.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
