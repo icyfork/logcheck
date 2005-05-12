@@ -40,6 +40,8 @@ logcheck (1.2.40) unstable; urgency=low
   * Minor additions to logcheck(8).
   * Add rule for cron nss_ldap message in ignore.d.server/cron.
   * Generalise kernel message no IPv6 routers present level workstation.
+  * Update rsync daemon rule thanks Paul Slootman <paul@debian.org> 
+    (Closes: #308800)
 
  -- 
 
