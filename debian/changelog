@@ -44,6 +44,7 @@ logcheck (1.2.40) unstable; urgency=low
   * Update rsync daemon rule thanks Paul Slootman <paul@debian.org> 
     (Closes: #308800)
   * Update postfix peer verification rule match. (Closes: #307889)
+  * Beautify logcheck.postinst don't call dpkg --compare-versions when no $2.
 
  -- 
 
