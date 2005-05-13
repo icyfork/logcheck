@@ -6,12 +6,13 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE FLAPPING ALERT: [._[:alnum:]-]+;[^;]+;STOPPED; Service appears to have stopped flapping \([.[:digit:]]+% change < [.[:digit:]]+% threshold\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST ALERT: [._[:alnum:]-]+;(DOWN|UP|UNREACHABLE);(SOFT|HARD);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;(DOWN|UP);.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST DOWNTIME ALERT: [._[:alnum:]-]+;STOPPED;.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST DOWNTIME ALERT: [._[:alnum:]-]+;(STARTED|STOPPED);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST EVENT HANDLER: [._[:alnum:]-]+;DOWN;(SOFT|HARD);[0-9]+;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: EXTERNAL COMMAND: ENABLE_NOTIFICATIONS;[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;[._[:alnum:]-]+;[^;]+;[0-9]+;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: EXTERNAL COMMAND: ENABLE_(HOST_|HOST_SVC_)?NOTIFICATIONS;[._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: EXTERNAL COMMAND: (ADD_SVC_COMMENT|ACKNOWLEDGE_SVC_PROBLEM);[._[:alnum:]-]+;[[:alnum:]]+;[0-9]+;([[:alnum:]]+;)?.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: EXTERNAL COMMAND: SCHEDULE_HOST_DOWNTIME;[._[:alnum:]-]+;[0-9;]+;[[:alnum:]]+;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Warning: The results of service '[ [:alnum:][:punct:]]+' on host '[._[:alnum:]-]+' are stale by [[:digit:]]+ seconds \(threshold=[[:digit:]]+ seconds\).  I'm forcing an immediate check of the service\.$
 # nrpe
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nrpe\[[0-9]+\]: Error: Could not complete SSL handshake. 5$
