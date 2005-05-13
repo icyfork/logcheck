@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.37 2005/05/13 11:16:02 maks-guest Exp $
+# $Id: logcheck.postinst,v 1.38 2005/05/13 15:29:48 maks-guest Exp $
 
 set -e
 
@@ -42,22 +42,24 @@ case "$1" in
 	  adduser --quiet logcheck adm || true
 	fi  
 
-	# Remove old directory
-	if [ ! -n "$2" ] || dpkg --compare-versions "$2" lt "1.1.1-13.2"; then
+	# Remove old directory on upgrade
+	if [ -n "$2" ] && dpkg --compare-versions "$2" lt "1.1.1-13.2"; then
 	    if [ -d /var/cache/logcheck ]; then
 		rm -fr /var/cache/logcheck
 	    fi
 	fi
-	# Remove unused old directory
-	if [ ! -n "$2" ] || dpkg --compare-versions "$2" lt "1.2.25"; then
+	# Remove unused old directory on upgrade
+	if [ -n "$2" ] && dpkg --compare-versions "$2" lt "1.2.25"; then
 	    if [ -d /var/state/logcheck ]; then
 		rm -fr /var/state/logcheck
 	    fi
 	fi
+	# Add logcheck mail header on install
         if [ ! -n "$2" ] && [ ! -f /etc/logcheck/header.txt ]; then
           cp -p /usr/share/logcheck/header.txt /etc/logcheck
         fi
 
+	# Fix permissions for lcok on install or upgrade
 	if [ ! -n "$2" ] || dpkg --compare-versions "$2" lt "1.2.39"; then
           chown -R logcheck:logcheck /var/lock/logcheck || true
         fi
@@ -65,7 +67,7 @@ case "$1" in
 	# need to be done on install and on upgrade for new rule files
 	chgrp -R logcheck /etc/logcheck || true
 
-    	# Fix Permissions
+    	# Fix Permissions on install or upgrade
 	if [ ! -n "$2" ] || dpkg --compare-versions "$2" lt "1.2.34"; then
     	  chown -R logcheck:logcheck /var/lib/logcheck  || true
           chmod 2750 /etc/logcheck/ignore.d.paranoid || true
