@@ -28,6 +28,8 @@ logcheck (1.2.40) unstable; urgency=low
   * Add postfix rule for "misplaced delimiter" hostname warnings.
   * Add nagios rules to match ACKNOWLEDGEMENT, ADD_SVC_COMMENT, HOST_DOWNTIME 
     and DISABLE_SVC_NOTIFICATIONS messages.
+  * Add the first rules for qpopper and qpopper-drac. (Closes: #125794,
+    #191637)
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
