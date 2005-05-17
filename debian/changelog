@@ -32,6 +32,8 @@ logcheck (1.2.40) unstable; urgency=low
     #191637)
   * Fix innd rules in violations.ignore.d/logcheck-innd for innfeed to match 
     "global/final seconds.." messages.
+  * Correct innd rule for perl filter rejection messages to match hostnames with
+    hyphens and underscores too.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
