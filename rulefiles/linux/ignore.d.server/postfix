@@ -67,7 +67,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/lmtp\[[0-9]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)* relay=[^[:space:]]+(\]|\[[^[:space:]]+\]), delay=[0-9]+, status=sent \(250 [0-9\.]+ Ok(, id=[-0-9]+, from MTA: 250 Ok: queued as [0-9A-F]+)*\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/local\[[0-9]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)* relay=local, delay=[0-9]+, status=sent \(delivered to command: exec /usr/bin/procmail\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: : SPF pass: smtp_comment=.*: [.[:alnum:]]+ MX [.[:alnum:]]+ A [0-9.]+, header_comment=[.[:alnum:]+: domain of [%[:punct:][:alnum:]]+@[.[:alnum:]]+ designates [.0-9]+ as permitted sender$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/anvil\[[0-9]+\]: statistics: max connection (count|rate) [/[:digit:]s]+ for \(smtp(s)?:[.[:digit:]]+\) at \w{3} [ :0-9]{11}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/anvil\[[0-9]+\]: statistics: max connection (count|rate) [/[:digit:]s]+ for \((smtp(s)?|587):[.[:digit:]]+\) at \w{3} [ :0-9]{11}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/anvil\[[0-9]+\]: statistics: max cache size [[:digit:]]+ at \w{3} [ :0-9]{11}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/scache\[[0-9]+\]: statistics: start interval \w{3} [ :0-9]{11}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/scache\[[0-9]+\]: statistics: (domain|address) lookup hits=[0-9]+ miss=[0-9]+ success=[0-9]+%$
