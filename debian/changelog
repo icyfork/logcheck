@@ -34,6 +34,8 @@ logcheck (1.2.40) unstable; urgency=low
     "global/final seconds.." messages.
   * Correct innd rule for perl filter rejection messages to match hostnames with
     hyphens and underscores too.
+  * Adjust the anvil rule to match "max connection" messages with port 587
+    (submission).
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
