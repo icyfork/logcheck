@@ -36,6 +36,7 @@ logcheck (1.2.40) unstable; urgency=low
     hyphens and underscores too.
   * Adjust the anvil rule to match "max connection" messages with port 587
     (submission).
+  * Add section to README.logcheck-database about submitting rules.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
