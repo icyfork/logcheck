@@ -175,4 +175,21 @@ collates all the applicable rules uses "run-parts", the standard
 Debian utility also used for iterating through "/etc/cron.d",
 "/etc/ppp/ip-up.d" etcetera.  It therefore automatically ignores
 files with names such as "fooserver.disabled" or "local~".
+======================================================================
+SUBMITTING RULES
+----------------
+If there are messages which are not ignored by logcheck that should be,
+file a bug against the package logcheck-database in the Debian Bug
+Tracking System (BTS).
+
+If you're new to the reporting bugs using the Debian BTS, you can
+learn more at:
+	http://www.debian.org/Bugs/Reporting
+
+Unfortunately, we don't have the time to add and update rules for 
+everything, therefore the following exceptions apply:
+	* Debug messages
+	* Messages produced by software not included in Debian
+
+Please do not file bugs related to these messages.
 ######################################################################
