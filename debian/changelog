@@ -37,6 +37,8 @@ logcheck (1.2.40) unstable; urgency=low
   * Adjust the anvil rule to match "max connection" messages with port 587
     (submission).
   * Add section to README.logcheck-database about submitting rules.
+  * Modify rules for dovecot to also match messages from the pop3 daemon.
+    (Closes: #310423)
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
