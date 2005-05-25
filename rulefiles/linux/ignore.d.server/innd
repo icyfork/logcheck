@@ -8,12 +8,13 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alpha:]]:Expiring process [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alpha:]]:Flushing log and syslog files$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alpha:]]:/var/log/news/expire\.lowmark$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [-[:alnum:]]+ flush$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [-[:alnum:]]+ opened [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [-[:alnum:]]+ closed$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [-[:alnum:].]+:[0-9]+ inactive [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [-[:alnum:].]+:[0-9]+ NCmode \"mode stream\" received$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [-[:alnum:].]+ connected [0-9]+ streaming allowed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+ flush$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+ opened [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+ closed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+:[0-9]+ readclose$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+:[0-9]+ inactive [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+:[0-9]+ NCmode \"mode stream\" received$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+ connected [0-9]+ streaming allowed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: ME HISstats [0-9]+ hitpos [0-9]+ hitneg [0-9]+ missed [0-9]+ dne$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: ME time [0-9]+ hishave [0-9]+\([0-9]+\) hiswrite [0-9]+\([0-9]+\) hissync [0-9]+\([0-9]+\) idle [0-9]+\([0-9]+\) artclean [0-9]+\([0-9]+\) artwrite [0-9]+\([0-9]+\) artcncl [0-9]+\([0-9]+\) hishave/artcncl [0-9]+\([0-9]+\) hisgrep/artcncl [0-9]+\([0-9]+\) artlog/artcncl [0-9]+\([0-9]+\) hiswrite/artcncl [0-9]+\([0-9]+\) sitesend [0-9]+\([0-9]+\) overv [0-9]+\([0-9]+\) perl [0-9]+\([0-9]+\) nntpread [0-9]+\([0-9]+\) artparse [0-9]+\([0-9]+\)( artlog/artparse [0-9]+\([0-9]+\))? artlog [0-9]+\([0-9]+\) datamove [0-9]+\([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: SERVER (servermode|flushlogs) (running|paused)$
