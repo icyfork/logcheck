@@ -20,5 +20,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=20:unable to get local issuer certificate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=21:unable to verify the first certificate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=27:certificate not trusted$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate peer name verification failed for [^[:space:]]+: [[:digit:]]+ dNSNames in certificate found, but none matches
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate peer name verification failed for [^[:space:]]+: CommonName mis-match: [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:upper:]0-9]+: reject: RCPT from [^[:space:]]+: [45][0-9][0-9] <[^[:space:]]+>: Client host rejected: Greylisted for 300 seconds \(see http://isg.ee.ethz.ch/tools/postgrey/help/sythos.net.html\); from=<[^[:space:]]*> to=<[^[:space:]]+> proto=(ESMTP|SMTP) helo=<[^[:space:]]+>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/qmgr\[[0-9]+\]: [[:alnum:]]+: from=<([^[:space:]]+|)>, size=[0-9]+, nrcpt=[0-9]+ \(queue active\)$
