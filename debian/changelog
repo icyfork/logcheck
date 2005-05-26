@@ -40,6 +40,8 @@ logcheck (1.2.40) unstable; urgency=low
   * Modify rules for dovecot to also match messages from the pop3 daemon.
     (Closes: #310423)
   * Minor changes to innd rules. Add rule for readclose messages.
+  * Add postfix rule in violations.ignore.d/logcheck-postfix to suppress
+    dNSNames mismatch messages.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
