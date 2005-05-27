@@ -42,6 +42,7 @@ logcheck (1.2.40) unstable; urgency=low
   * Minor changes to innd rules. Add rule for readclose messages.
   * Add postfix rule in violations.ignore.d/logcheck-postfix to suppress
     dNSNames mismatch messages.
+  * Add innd rule for innfeed hostChkCxns messages.
   maks:
   * Add some pppd rules for pppoatm usage.
   * Fix hostname match in cvsd rules.
