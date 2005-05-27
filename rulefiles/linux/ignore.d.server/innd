@@ -50,5 +50,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+:[0-9]+ connected$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+ remote MODE STREAM$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+ (final|checkpoint) seconds [0-9]+ spooled [0-9]+ on_close [0-9]+ sleeping [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+ hostChkCxns - maxConnections was [0-9]+ now [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: ME articles (active|total) [0-9]+ bytes [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+:[0-9]+ cxnsleep connect: Connection refused$
