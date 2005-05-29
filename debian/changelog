@@ -65,8 +65,10 @@ logcheck (1.2.40) unstable; urgency=low
   * Beautify logcheck.postinst don't call dpkg --compare-versions when no $2.
   * Correct proftpd rules thanks to  Tilman Koschnick <til@subnetz.org>
     (Closes: #309084)
+  todd:
+  * Add Eric Evans as an uploader.
 
- -- 
+ -- Todd Troxell <ttroxell@debian.org>  Sunday, 29 May 2005 00:24:00 -0500
 
 logcheck (1.2.39) unstable; urgency=low
 
