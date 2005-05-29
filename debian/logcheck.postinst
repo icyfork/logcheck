@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.38 2005/05/13 15:29:48 maks-guest Exp $
+# $Id: logcheck.postinst,v 1.39 2005/05/29 04:20:30 ttroxell Exp $
 
 set -e
 
@@ -65,9 +65,16 @@ case "$1" in
         fi
 
 	# need to be done on install and on upgrade for new rule files
-	chgrp -R logcheck /etc/logcheck || true
+	# (Cant do this; breaks policy! -todd)
+	# TODO: Get logcheck user in Debian base.
+	# chgrp -R logcheck /etc/logcheck || true
 
-    	# Fix Permissions on install or upgrade
+	# This gets executed even if there is no $2.
+	if dpkg --compare-versions "$2" lt "1.2.34"; then
+	  chgrp -R logcheck /etc/logcheck || true
+	fi
+
+    	# Set Permissions on install or upgrade
 	if [ ! -n "$2" ] || dpkg --compare-versions "$2" lt "1.2.34"; then
     	  chown -R logcheck:logcheck /var/lib/logcheck  || true
           chmod 2750 /etc/logcheck/ignore.d.paranoid || true
