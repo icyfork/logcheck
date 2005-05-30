@@ -16,7 +16,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+:[0-9]+ NCmode \"mode stream\" received$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+ connected [0-9]+ streaming allowed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: ME HISstats [0-9]+ hitpos [0-9]+ hitneg [0-9]+ missed [0-9]+ dne$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: ME time [0-9]+ hishave [0-9]+\([0-9]+\) hiswrite [0-9]+\([0-9]+\) hissync [0-9]+\([0-9]+\) idle [0-9]+\([0-9]+\) artclean [0-9]+\([0-9]+\) artwrite [0-9]+\([0-9]+\) artcncl [0-9]+\([0-9]+\) hishave/artcncl [0-9]+\([0-9]+\) hisgrep/artcncl [0-9]+\([0-9]+\) artlog/artcncl [0-9]+\([0-9]+\) hiswrite/artcncl [0-9]+\([0-9]+\) sitesend [0-9]+\([0-9]+\) overv [0-9]+\([0-9]+\) perl [0-9]+\([0-9]+\) nntpread [0-9]+\([0-9]+\) artparse [0-9]+\([0-9]+\)( artlog/artparse [0-9]+\([0-9]+\))? artlog [0-9]+\([0-9]+\) datamove [0-9]+\([0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: ME time [0-9]+ hishave [0-9]+\([0-9]+\) hiswrite [0-9]+\([0-9]+\) hissync [0-9]+\([0-9]+\) idle [0-9]+\([0-9]+\) artclean [0-9]+\([0-9]+\) artwrite [0-9]+\([0-9]+\) artcncl [0-9]+\([0-9]+\) hishave/artcncl [0-9]+\([0-9]+\) his(grep|write)/artcncl [0-9]+\([0-9]+\) artlog/artcncl [0-9]+\([0-9]+\) his(write|grep)/artcncl [0-9]+\([0-9]+\) sitesend [0-9]+\([0-9]+\) overv [0-9]+\([0-9]+\) perl [0-9]+\([0-9]+\) nntpread [0-9]+\([0-9]+\) artparse [0-9]+\([0-9]+\)( artlog/artparse [0-9]+\([0-9]+\))? artlog [0-9]+\([0-9]+\) datamove [0-9]+\([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: SERVER (servermode|flushlogs) (running|paused)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: SERVER paused Flushing log and syslog files$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: SERVER running$
@@ -46,6 +46,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: checking site [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: no articles for [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: batched articles for [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: ME time [0-9]+ idle [0-9]+\([0-9]+\) blstats [0-9]+\([0-9]+\) stsfile [0-9]+\([0-9]+\) newart [0-9]+\([0-9]+\) readart [0-9]+\([0-9]+\) prepart [0-9]+\([0-9]+\) read [0-9]+\([0-9]+\) write [0-9]+\([0-9]+\) cb [0-9]+\([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+ spooling no active connections$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+:[0-9]+ connected$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+ remote MODE STREAM$
