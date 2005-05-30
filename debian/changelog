@@ -5,6 +5,7 @@ logcheck (1.2.41) unstable; urgency=low
   * Fix innd rule for "ME time" messages, add rule for innfeed "ME time"
     messages.
   * Fix rules for gps to match messages with the null sender (<>).
+  * Update cyrus rule to match destination folders and subfolders too.
 
 --
 
