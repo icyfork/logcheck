@@ -4,6 +4,7 @@ logcheck (1.2.41) unstable; urgency=low
   * Fix postfix rule to match "setting up TLS connection" messages again.
   * Fix innd rule for "ME time" messages, add rule for innfeed "ME time"
     messages.
+  * Fix rules for gps to match messages with the null sender (<>).
 
 --
 
