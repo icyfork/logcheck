@@ -1,3 +1,10 @@
+logcheck (1.2.41) unstable; urgency=low
+
+  jamie:
+  * Fix postfix rule to match "setting up TLS connection" messages again.
+
+--
+
 logcheck (1.2.40) unstable; urgency=low
 
   jamie:
