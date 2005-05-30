@@ -190,6 +190,7 @@ Unfortunately, we don't have the time to add and update rules for
 everything, therefore the following exceptions apply:
 	* Debug messages
 	* Messages produced by software not included in Debian
+	* Temporary messages which are due to a bug in the package
 
 Please do not file bugs related to these messages.
 ######################################################################
