@@ -13,6 +13,7 @@ logcheck (1.2.41) unstable; urgency=low
     UBE and viruses.
   * Fix bug in the squid rule for "found whitespace" messages which caused 
     grep to choke due to unescaped { and } characters. (Closes: #311216)
+  * Update innd nnrpd rule for latest version of INN.
 
 --
 
