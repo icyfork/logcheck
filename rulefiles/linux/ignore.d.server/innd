@@ -31,7 +31,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: Auth strategy '[[:alnum:]]+' does not match client\.  Removing\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ (no_)?match_user [<>_[:alnum:]-]+(@[._[:alnum:]-]+)? [<>,_,\*,\![:alnum:][:punct:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ res <[_[:alnum:]-]+>(@[._[:alnum:]-]+)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ time [0-9]+ idle [0-9]+\([0-9]+\) (readart [0-9]+\([0-9]+\) )?nntpwrite [0-9]+\([0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ time [0-9]+ (hisgrep [0-9]+\([0-9]+\) )?idle [0-9]+\([0-9]+\) (readart [0-9]+\([0-9]+\) )?nntpwrite [0-9]+\([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ times user [.0-9]+ system [.0-9]+ idle [.0-9]+ elapsed [.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ exit articles [0-9]+ groups [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ artstats get [0-9]+ time [0-9]+ size [0-9]+$
