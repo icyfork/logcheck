@@ -20,6 +20,8 @@ logcheck (1.2.41) unstable; urgency=low
   * Fix minor typo in logcheck-database.templates. (Closes: #312598)
   * Modify rules for successful ssh login messages to match when ssh/ssh2 is
     not specified at the end. (Closes: #312729)
+  * Modified ignore.d.workstation/kernel to ignore nfs warnings about mount
+    version. (Closes: #313601)
 
 --
 
