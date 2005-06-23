@@ -24,6 +24,7 @@ logcheck (1.2.41) unstable; urgency=low
     version. (Closes: #313601)
   maks
   * Suppress error message if hostname not set. (Closes: #314951)
+  * Add another sshd rule for PARANOID /etc/hosts.deny setting.
 
 --
 
