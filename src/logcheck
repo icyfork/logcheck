@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.117 2005/05/09 01:12:02 jlps-guest Exp $
+# $Id: logcheck,v 1.118 2005/06/23 08:14:20 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -45,7 +45,7 @@ GETOPTS="c:dhH:l:L:m:opr:RsS:tTuvw"
 
 # Get the details for the email message
 DATE="$(date +'%Y-%m-%d %H:%M')"
-VERSION="1.2.40"
+VERSION="1.2.41"
 
 # Set the default report level
 REPORTLEVEL="server"
@@ -511,9 +511,9 @@ fi
 
 # Hostname either fully qualified or not.
 if [ $FQDN -eq 1 ]; then
-        HOSTNAME="$(hostname --fqdn)"
+        HOSTNAME="$(hostname --fqdn)" > /dev/null 2>&1
 else
-        HOSTNAME="$(hostname --short)"
+        HOSTNAME="$(hostname --short)" > /dev/null 2>&1
 fi
 		
 # Now check for the other options
