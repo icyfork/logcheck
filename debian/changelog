@@ -1,6 +1,6 @@
 logcheck (1.2.41) unstable; urgency=low
 
-  jamie:
+  [ Jamie Penman-Smithson ]
   * Fix postfix rule to match "setting up TLS connection" messages again.
   * Fix innd rule for "ME time" messages, add rule for innfeed "ME time"
     messages.
@@ -11,7 +11,7 @@ logcheck (1.2.41) unstable; urgency=low
     doesn't increase.
   * Update postfix lmtp rule to match messages given by amavis when discarding
     UBE and viruses.
-  * Fix bug in the squid rule for "found whitespace" messages which caused 
+  * Fix bug in the squid rule for "found whitespace" messages which caused
     grep to choke due to unescaped { and } characters. (Closes: #311216)
   * Update innd nnrpd rule for latest version of INN.
   * Add a versioned dependency on grep to prevent bugs like #311216 happening
@@ -24,14 +24,15 @@ logcheck (1.2.41) unstable; urgency=low
     version. (Closes: #313601)
   * Fix postfix anvil rules to match max message/recipient rate and count
     messages.
-  maks
+
+  [ Maximilian Attems ]
   * Suppress error message if hostname not set. (Closes: #314951)
   * Add another sshd rule for PARANOID /etc/hosts.deny setting.
   * Fix postfix rule concerning Service unavailable. (Closes: #315507)
   * Add some initial support for exim4 log messages. Pretty rudimentary
     stuff still, will need further refinements. (Closes: #316612)
 
---
+ -- maximilian attems <debian@sternwelten.at>  Thu,  7 Jul 2005 00:48:57 +0200
 
 logcheck (1.2.40) unstable; urgency=low
 
