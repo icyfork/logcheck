@@ -31,6 +31,7 @@ logcheck (1.2.41) unstable; urgency=low
   * Fix postfix rule concerning Service unavailable. (Closes: #315507)
   * Add some initial support for exim4 log messages. Pretty rudimentary
     stuff still, will need further refinements. (Closes: #316612)
+  * First rule for amandad. (Closes: #313603)
 
  -- maximilian attems <debian@sternwelten.at>  Thu,  7 Jul 2005 00:48:57 +0200
 
