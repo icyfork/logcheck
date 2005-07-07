@@ -24,6 +24,8 @@ logcheck (1.2.41) unstable; urgency=low
     version. (Closes: #313601)
   * Fix postfix anvil rules to match max message/recipient rate and count
     messages.
+  * Add the first rules for dkfilter, which implements domainkeys signing and
+    verification for postfix.
 
   [ Maximilian Attems ]
   * Suppress error message if hostname not set. (Closes: #314951)
