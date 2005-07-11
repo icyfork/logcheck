@@ -88,6 +88,17 @@ manpage.1: manpage.sgml
     controlled by which level you choose, paranoid, server or workstation. 
     However, security events and attack alerts are not affected by this.</para>
 
+  </refsect1>
+  <refsect1>
+    <title>EXAMPLES</title>
+
+
+    <para><command>&dhpackage;</command> can be invoked directly thanks
+    to su(8) or sudo(8), which change the user ID:</para>
+
+    <para><command>&dhpackage;</command> -o -t
+    Check the logfiles without updating the offset. 
+    Print everything to STDOUT</para>
 
   </refsect1>
   <refsect1>
