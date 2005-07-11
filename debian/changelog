@@ -37,6 +37,8 @@ logcheck (1.2.41) unstable; urgency=low
   * Remention how to invoke logcheck with sudo.
   * Add an examples section to the manpage with my most usual invocation.
   * Fix rules for gconfd loglines.
+  * Add rule for mailman admin loglines in violations.ignore.d/logcheck-postfix
+    thanks toby cabot <toby@caboteria.org>. (Closes: #317772)
 
  -- maximilian attems <debian@sternwelten.at>  Thu,  7 Jul 2005 00:48:57 +0200
 
