@@ -36,6 +36,7 @@ logcheck (1.2.41) unstable; urgency=low
   * First rule for amandad. (Closes: #313603)
   * Remention how to invoke logcheck with sudo.
   * Add an examples section to the manpage with my most usual invocation.
+  * Fix rules for gconfd loglines.
 
  -- maximilian attems <debian@sternwelten.at>  Thu,  7 Jul 2005 00:48:57 +0200
 
