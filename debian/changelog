@@ -41,8 +41,9 @@ logcheck (1.2.41) unstable; urgency=low
     thanks toby cabot <toby@caboteria.org>. (Closes: #317772)
   * Fix hostname match in rbldnsd rule thanks sistemas@dedaloingenieros.com.
     (Closes: #317741)
+  * Unifiy gdm rules, add a rule for X restart.
 
- -- maximilian attems <max@sputnik.stro.at>  Tue, 12 Jul 2005 10:58:35 +0200
+ -- maximilian attems <debian@sternwelten.at>  Tue, 12 Jul 2005 10:58:35 +0200
 
 logcheck (1.2.40) unstable; urgency=low
 
