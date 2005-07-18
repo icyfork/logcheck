@@ -33,7 +33,7 @@ normal egrep pattern-matches, applied in turn.
 	at one layer are not carried over to lower layers.
 
 2. the "SECURITY EVENTS" layer, designed to detect less critical
-	events still considered worthy of special attention. 
+	events still considered worthy of special attention.
 
    Patterns raising the alarm go in "/etc/logcheck/violations.d";
 	matches with these result in a "Security Events" alert,
@@ -71,63 +71,63 @@ following kinds:
 
 ./<packagename>
 
-Contains filters relevant to only one Debian package - for example 
+Contains filters relevant to only one Debian package - for example
 if "fooserver" logs suspicious events like this:
 "$DATE $HOSTNAME fooserver[$PID]: $USER is up to no good"
-then a line in "/etc/logcheck/violations.d/fooserver" with an 
-appropriate pattern will promote it from a mere "System Event" 
-to a full "Security Event" in a subsection of the mailing headed 
-"fooserver".  Or then again if that kind of log message is more 
-trivial than it looks (maybe "foo" is a networked game of 
-spy-and-counterspy) then a line in 
-"/etc/logcheck/ignore.d.server/fooserver" will turn it into a 
+then a line in "/etc/logcheck/violations.d/fooserver" with an
+appropriate pattern will promote it from a mere "System Event"
+to a full "Security Event" in a subsection of the mailing headed
+"fooserver".  Or then again if that kind of log message is more
+trivial than it looks (maybe "foo" is a networked game of
+spy-and-counterspy) then a line in
+"/etc/logcheck/ignore.d.server/fooserver" will turn it into a
 nonevent for all but the most assiduous of administrators.
 
 Sometimes a package will have not only special alarm calls which
 _do_ need to be "Security Events" triggers but also exceptional
-variants which _don't_ - maybe it logs either 
-    "$DATE $HOSTNAME fooserver[$PID]: $USER barred" 
+variants which _don't_ - maybe it logs either
+    "$DATE $HOSTNAME fooserver[$PID]: $USER barred"
 or
-    "$DATE $HOSTNAME fooserver[$PID]: none barred".  
-In this situation the alarm can be overruled by a 
-violations.ignore rulefile named "fooserver" which filters 
+    "$DATE $HOSTNAME fooserver[$PID]: none barred". 
+In this situation the alarm can be overruled by a
+violations.ignore rulefile named "fooserver" which filters
 "none barred".  This will _not_ affect other "Security Events"
 featuring the words "none barred" (that might allow crackers to
-use those words to cover attacks on ssh).  Instead, any 
-<packagename> ignore-files only affect the log messages that 
-would have been in that package-specific report section.  Apart 
-from anything else this limitation reduces the number of rules 
+use those words to cover attacks on ssh).  Instead, any
+<packagename> ignore-files only affect the log messages that
+would have been in that package-specific report section.  Apart
+from anything else this limitation reduces the number of rules
 that need to be processed.
 
 ./logcheck or ./logcheck-<packagename>
 
-Standard "generic" rules go in each directory's "./logcheck" file; 
-thus for instance any log message at all matching "ATTACK" 
-(listed in "/etc/logcheck/cracking.d/logcheck") _always_ triggers 
-an "Attack Alert", unless you deliberately tamper with 
+Standard "generic" rules go in each directory's "./logcheck" file;
+thus for instance any log message at all matching "ATTACK"
+(listed in "/etc/logcheck/cracking.d/logcheck") _always_ triggers
+an "Attack Alert", unless you deliberately tamper with
 "cracking.ignore.d" rules.
 
 Remember that package-specific "ignore" filters will _not_ override
-non-package-specific "flagging" patterns!  Thus for instance if 
-"fooserver" outputs syslog messages like this: 
+non-package-specific "flagging" patterns!  Thus for instance if
+"fooserver" outputs syslog messages like this:
     "$DATE $HOSTNAME fooserver[$PID]: 3 attempts 0 rejected"
 then the standard keyword "reject" listed in the generic
-"/etc/logcheck/violations.d/logcheck" file will trigger frequent 
-"Security Events" reports.  Putting a filtering pattern in 
+"/etc/logcheck/violations.d/logcheck" file will trigger frequent
+"Security Events" reports.  Putting a filtering pattern in
 "/etc/logcheck/violations.ignore.d/fooserver" won't help here!
-The solution is to use a file named in the specially-privileged 
+The solution is to use a file named in the specially-privileged
 ./logcheck-<packagename> format:
 "/etc/logcheck/violations.ignore.d/logcheck-fooserver".
-This can contain patterns provided by that particular package 
+This can contain patterns provided by that particular package
 which nonetheless need to take precedence over the generic rules.
 
 ./local or ./local-<packagename>
 
-Sysadmins can use the "local-*" filenames to create their own 
+Sysadmins can use the "local-*" filenames to create their own
 additions to the "logcheck-*" pattern lists.  If you have "ippl"
 logging network connections verbosely into syslog then you can put
-custom "Security Events" keywords in 
-"/etc/logcheck/violations.d/local-ippl" and exceptions in 
+custom "Security Events" keywords in
+"/etc/logcheck/violations.d/local-ippl" and exceptions in
 "/etc/logcheck/violations.ignore.d/local-ippl".
 
 
@@ -142,12 +142,12 @@ The objective in logcheck rules is to match precisely the target log
 messages and no more, using all the resources of Extended Regular
 Expressions.  If you're sick of reading log messages like this:
 
-Apr  6 19:30:24 oempc wwwoffled[11763]: WWWOFFLE Online.
-Apr  6 19:31:54 oempc wwwoffled[11763]: WWWOFFLE Offline.
+    Apr  6 19:30:24 oempc wwwoffled[11763]: WWWOFFLE Online.
+    Apr  6 19:31:54 oempc wwwoffled[11763]: WWWOFFLE Offline.
 
 ...then the local ignore pattern you need is something like this:
 
-^\w{3} [ :0-9]{11} oempc wwwoffled\[[0-9]+\]: WWWOFFLE (On|Off)line\.$
+    ^\w{3} [ :0-9]{11} oempc wwwoffled\[[0-9]+\]: WWWOFFLE (On|Off)line\.$
 
 The characters ".?*+[](){}^$|\" are "special" in extended-regexps,
 so they need to be escaped if intended literally (like the final
@@ -178,7 +178,7 @@ ensure they have a final end-of-line carriage return so that they
 "cat" nicely.  Since System Events aren't subdivided by package, it
 makes no difference whether ignore.d.*/local rules are split up into
 "local-x", "local-y" and "local-z" or merged into one "local" file;
-use whatever's convenient. 
+use whatever's convenient.
 
 Another safety-net is provided by the fact that the process that
 collates all the applicable rules uses "run-parts", the standard
@@ -196,9 +196,9 @@ Tracking System (BTS).
 
 If you're new to the reporting bugs using the Debian BTS, you can
 learn more at:
-	http://www.debian.org/Bugs/Reporting
+http://www.debian.org/Bugs/Reporting
 
-Unfortunately, we don't have the time to add and update rules for 
+Unfortunately, we don't have the time to add and update rules for
 everything, therefore the following exceptions apply:
 
 *  Debug messages
