@@ -4,6 +4,7 @@ SYNOPSIS
 Logcheck-database provides the egrep patterns required by the
 package "logcheck"; they are used to filter recent log messages
 (collected using "logtail") into a mailed news summary.
+
 ======================================================================
 SETS OF RULES
 -------------
@@ -59,6 +60,7 @@ normal egrep pattern-matches, applied in turn.
 
 When _no_ logged events make it through the filters no report is
 mailed.
+
 ======================================================================
 FILES WITHIN EACH DIRECTORY
 ---------------------------
@@ -125,6 +127,7 @@ following kinds:
 	then you can put custom "Security Events" keywords in
 	"/etc/logcheck/violations.d/local-ippl" and exceptions in
 	"/etc/logcheck/violations.ignore.d/local-ippl".
+
 ======================================================================
 WRITING RULES
 -------------
@@ -175,6 +178,7 @@ collates all the applicable rules uses "run-parts", the standard
 Debian utility also used for iterating through "/etc/cron.d",
 "/etc/ppp/ip-up.d" etcetera.  It therefore automatically ignores
 files with names such as "fooserver.disabled" or "local~".
+
 ======================================================================
 SUBMITTING RULES
 ----------------
