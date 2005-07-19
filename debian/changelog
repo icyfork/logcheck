@@ -46,8 +46,9 @@ logcheck (1.2.41) unstable; urgency=low
   * Unifiy gdm rules, add a rule for X restart.
   * Beautify README.logcheck-database, uses markdown(1) syntax now.
     Added testing rules header to carify sections. (Closes: #317642, #318731)
+  * Small manpage fixes.
 
- -- maximilian attems <debian@sternwelten.at>  Mon, 18 Jul 2005 23:36:14 +0200
+ -- maximilian attems <max@sternwelten.at>  Tue, 19 Jul 2005 14:41:45 +0200
 
 logcheck (1.2.40) unstable; urgency=low
 

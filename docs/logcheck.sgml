@@ -69,16 +69,15 @@ manpage.1: manpage.sgml
   <refsect1>
     <title>DESCRIPTION</title>
 
-    <para>This manual page documents the <command>logcheck</command> command.
-    The <command>&dhpackage;</command> program helps spot problems and security
-    violations in your logfiles automatically and will send the results to
-    you periodically in an e-mail. By default logcheck runs every hour just 
-    off the hour and after every reboot.</para>
+    <para>The <command>&dhpackage;</command> program helps spot problems and
+    security violations in your logfiles automatically and will send the
+    results to you periodically in an e-mail. By default logcheck runs as 
+    an hourly cronjob just off the hour and after every reboot.</para>
 
     <para><command>&dhpackage;</command> supports three level of filtering:
     "paranoid" is for high-security machines running as few services
     as possible. Don't use it if you can't handle its verbose messages.
-    "server" is the default and contains rules for may different daemons.
+    "server" is the default and contains rules for many different daemons.
     "workstation" is for sheltered machines and filters most of the messages.
     The ignore rules work in additive manner. "paranoid" rules are also
     included at level "server" and "workstation".</para>
