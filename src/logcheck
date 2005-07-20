@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.121 2005/07/20 14:56:15 maks-guest Exp $
+# $Id: logcheck,v 1.122 2005/07/20 15:09:57 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -216,7 +216,7 @@ report() {
 	if [ $SYSLOGSUMMARY -eq 1 ] && [ -x $SYSLOG_SUMMARY ]; then
 	    debug "report: running syslog-summary - $*"
 	    $SYSLOG_SUMMARY $TMPDIR/checked | \
-		egrep -v "^Summarizing "| cat >> $TMPDIR/report \
+		egrep -v "^Summarizing " | cat >> $TMPDIR/report \
 		    || error "Could not append to report.  Disk Full?"
 	else
 	    if [ $SYSLOGSUMMARY -eq 1 ] && [ ! -x $SYSLOG_SUMMARY ]; then
@@ -392,7 +392,7 @@ logoutput() {
     # There are some problems with this section.
     debug "logoutput called with file: $file"
     if [ -f $file ]; then
-	offsetfile="$STATEDIR/offset$(echo $file|tr / .)"
+	offsetfile="$STATEDIR/offset$(echo $file | tr / .)"
 	if [ -s $offsetfile -a -r $offsetfile ]; then
 	    if [[ $(wc -c < $file) -lt $(tail -n 1  $offsetfile) ]]; then
 	        # assume the log is rotated by savelog(8)
