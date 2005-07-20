@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.122 2005/07/20 15:09:57 maks-guest Exp $
+# $Id: logcheck,v 1.123 2005/07/20 15:49:27 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -374,7 +374,7 @@ cleanchecked() {
 	debug "cleanchecked - dir - $clean"
 	for file in $(ls -1 $clean/); do
 	debug "cleanchecked - dir - $clean/$file"
-	    egrep --text -v -f $clean/$file $TMPDIR/checked | cat \
+	    egrep --text -v -f "$clean/$file" $TMPDIR/checked | cat \
 		>> $TMPDIR/checked.1 \
 		    || error "Could not output to TMPDIR/checked.1 Disk Full?"
 	    mv $TMPDIR/checked.1 $TMPDIR/checked \
@@ -391,34 +391,34 @@ logoutput() {
 
     # There are some problems with this section.
     debug "logoutput called with file: $file"
-    if [ -f $file ]; then
+    if [ -f "$file" ]; then
 	offsetfile="$STATEDIR/offset$(echo $file | tr / .)"
-	if [ -s $offsetfile -a -r $offsetfile ]; then
-	    if [[ $(wc -c < $file) -lt $(tail -n 1  $offsetfile) ]]; then
+	if [ -s "$offsetfile" -a -r "$offsetfile" ]; then
+	    if [[ $(wc -c < "$file") -lt $(tail -n 1  "$offsetfile") ]]; then
 	        # assume the log is rotated by savelog(8)
 		# syslog-ng leaves old files here
-		if [ -e $file.0 -a $file.0 -nt $file.1.gz ]; then
+		if [ -e "$file.0" -a "$file.0" -nt "$file.1.gz" ]; then
 		    debug "Running logtail on rotated: $file.0"
-		    $LOGTAIL -f $file.0 -o $offsetfile $LOGTAIL_OPTS > \
-			$TMPDIR/logoutput/$(basename $file) 2>&1 \
+		    $LOGTAIL -f "$file.0" -o "$offsetfile" $LOGTAIL_OPTS > \
+			$TMPDIR/logoutput/$(basename "$file") 2>&1 \
 			|| error "Could not run logtail or save output"
-		    rm -f $offsetfile \
+		    rm -f "$offsetfile" \
 		        || error "Could not remove $offsetfile"
 		# assume the log is rotated by logrotate(8)
 		# should also probably check if file is still fresh
-		elif [ -e $file.1 ]; then
+		elif [ -e "$file.1" ]; then
 		    debug "Running logtail on rotated: $file.1"
-		    $LOGTAIL -f $file.1 -o $offsetfile $LOGTAIL_OPTS > \
-			$TMPDIR/logoutput/$(basename $file) 2>&1 \
+		    $LOGTAIL -f "$file.1" -o "$offsetfile" $LOGTAIL_OPTS > \
+			$TMPDIR/logoutput/$(basename "$file") 2>&1 \
 			|| error "Could not run logtail or save output"
-		    rm -f $offsetfile \
+		    rm -f "$offsetfile" \
 		        || error "Could not remove $offsetfile"
 		fi
 	    fi
 	fi
 	debug "Running logtail: $file"
-	$LOGTAIL -f $file -o $offsetfile $LOGTAIL_OPTS \
-	    >> $TMPDIR/logoutput/$(basename $file) 2>&1 \
+	$LOGTAIL -f "$file" -o "$offsetfile" $LOGTAIL_OPTS \
+	    >> $TMPDIR/logoutput/$(basename "$file") 2>&1 \
 	    || error "Could not run logtail or save output"
     else
 	echo "E: File could not be read: $file" >> $TMPDIR/errors \
