@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.120 2005/07/20 14:48:58 maks-guest Exp $
+# $Id: logcheck,v 1.121 2005/07/20 14:56:15 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -611,20 +611,20 @@ TMPDIR=$(mktemp -d -p /tmp logcheck.XXXXXX) \
     || error "Could not create temporary directory"
 
 # Now clean the rulefiles in the directories
-cleanrules $RULEDIR/cracking.d $TMPDIR/cracking
-cleanrules $RULEDIR/violations.d $TMPDIR/violations
-cleanrules $RULEDIR/violations.ignore.d $TMPDIR/violations-ignore
+cleanrules "$RULEDIR/cracking.d" $TMPDIR/cracking
+cleanrules "$RULEDIR/violations.d" $TMPDIR/violations
+cleanrules "$RULEDIR/violations.ignore.d" $TMPDIR/violations-ignore
 
 # Now clean the ignore rulefiles for the report levels
 for level in $REPORTLEVELS; do 
-    cleanrules $RULEDIR/ignore.d.$level $TMPDIR/ignore
+    cleanrules "$RULEDIR/ignore.d.$level" $TMPDIR/ignore
 done
 
 # The following cracking.ignore directory will only be used if
 # $SUPPORT_CRACKING_IGNORE is set to 1 in the configuration file.
 # This is *only* for local admin use.
 if [ $SUPPORT_CRACKING_IGNORE -eq 1 ]; then
-    cleanrules $RULEDIR/cracking.ignore.d $TMPDIR/cracking-ignore
+    cleanrules "$RULEDIR/cracking.ignore.d" $TMPDIR/cracking-ignore
 fi
 
 # Get the list of log files from config file
