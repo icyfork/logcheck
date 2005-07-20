@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.119 2005/07/11 11:51:18 maks-guest Exp $
+# $Id: logcheck,v 1.120 2005/07/20 14:48:58 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -91,7 +91,7 @@ cleanup() {
 	lockfile-remove $LOCKFILE
     fi
 
-    if [ -d "$TMPDIR" ]; then
+    if [ -d $TMPDIR ]; then
         # Remove the tmp directory
         if [ $NOCLEANUP -eq 0 ];then 
     	    debug "Cleanup: Removing - $TMPDIR" 
