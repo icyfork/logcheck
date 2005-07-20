@@ -47,6 +47,7 @@ logcheck (1.2.41) unstable; urgency=low
   * Beautify README.logcheck-database, uses markdown(1) syntax now.
     Added testing rules header to carify sections. (Closes: #317642, #318731)
   * Small manpage fixes.
+  * Add 2 courier rules for ACCEPTED usernames and the started client module.
 
  -- maximilian attems <max@sternwelten.at>  Tue, 19 Jul 2005 14:41:45 +0200
 
