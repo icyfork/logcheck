@@ -28,6 +28,8 @@ logcheck (1.2.41) unstable; urgency=low
     verification for postfix.
   * Add rule for openssh-krb5 and add gssapi-with-mic to the list of auth
     alternatives. (Closes: #318500)
+  * Add ovpn-tunnel rule to suppress "VERIFY OK: nsCertType=SERVER" messages.
+    Thanks to Martin Lohmeier <martin@mein-horde.de>. (Closes: #320009)
 
   [ Maximilian Attems ]
   * Suppress error message if hostname not set. (Closes: #314951)
