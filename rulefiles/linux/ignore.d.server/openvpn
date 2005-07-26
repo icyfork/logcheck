@@ -4,6 +4,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Control Channel: TLSv1, cipher TLSv1/SSLv3 [[:alnum:]-]+, [0-9]+ bit RSA$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: VERIFY SCRIPT OK: depth=[0-9]+, .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: VERIFY OK: depth=[0-9]+, .*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: VERIFY OK: nsCertType=SERVER$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Inactivity timeout \(--ping-restart\), restarting$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Closing TCP/UDP socket$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Re-using SSL/TLS context$
