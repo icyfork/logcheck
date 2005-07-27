@@ -6,3 +6,4 @@
 ^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ <= [@._[:alnum:]-]+ U=[_[:alnum:]-]+ P=local S=[0-9]+( id=[@._[:alnum:]-]+)?$
 ^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ <= [@._[:alnum:]-]+ H=[._[:alnum:]-]+ \[[.0-9]{7,15}\]( U=[_[:alnum:]-]+)? P=esmtp S=[0-9]+ id=[@._[:alnum:]-]+$
 ^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ <= <> R=[_[:alnum:]-]+ U=[_[:alnum:]-]+ P=local S=[0-9]+$
+^[-0-9]{10} [0-9:]{8} SMTP command timeout on connection from [._[:alnum:]-]+ \[[.0-9]{7,15}\]$
