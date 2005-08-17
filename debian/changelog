@@ -51,6 +51,8 @@ logcheck (1.2.41) unstable; urgency=low
   * Small manpage fixes.
   * Add 2 courier rules for ACCEPTED usernames and the started client module.
   * Add pdns rule for duplicate packets from recursor.
+  * Fix cvs rule for exit code != 0. thanks Martin Lohmeier
+    <martin@mein-horde.de> (Closes: #321506)
 
  -- maximilian attems <max@sternwelten.at>  Tue, 19 Jul 2005 14:41:45 +0200
 
