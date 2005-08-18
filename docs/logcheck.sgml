@@ -62,7 +62,7 @@ manpage.1: manpage.sgml
     <cmdsynopsis>
       <command>&dhpackage;</command>
 
-      <arg><option>OPTIONS</option></arg>
+      <arg>OPTIONS</arg>
 
     </cmdsynopsis>
   </refsynopsisdiv>
