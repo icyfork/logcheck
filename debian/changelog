@@ -55,6 +55,8 @@ logcheck (1.2.41) unstable; urgency=low
     <martin@mein-horde.de> (Closes: #321506)
   * Fix hostname match in cups-lpd rules thanks Gilbert Laycock
     <gtl1@mcs.le.ac.uk> (Closes: #322179)
+  * Add horde3 rules for users login/logout thanks Martin Lohmeier
+    <martin@mein-horde.de> (Closes: #322570) 
 
  -- maximilian attems <max@sternwelten.at>  Tue, 19 Jul 2005 14:41:45 +0200
 
