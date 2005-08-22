@@ -59,7 +59,10 @@ logcheck (1.2.41) unstable; urgency=low
     <martin@mein-horde.de> (Closes: #322570) 
   * Fix logcheck.8 rendering of docbook-to-man. (Closes: #322036)
 
- -- maximilian attems <max@sternwelten.at>  Tue, 19 Jul 2005 14:41:45 +0200
+  [Todd Troxell]
+  * Tweak descriptions to satisfy litian.
+
+ -- Todd Troxell <ttroxell@debian.org>  Mon, 22 Aug 2005 15:27:45 -0500
 
 logcheck (1.2.40) unstable; urgency=low
 
