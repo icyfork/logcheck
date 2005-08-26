@@ -1,3 +1,10 @@
+logcheck (1.2.42) unstable; urgency=low
+
+  [ Maximilian Attems ]
+  * Add dccproc timeout rule.
+
+ -- 
+
 logcheck (1.2.41) unstable; urgency=low
 
   [ Jamie Penman-Smithson ]
