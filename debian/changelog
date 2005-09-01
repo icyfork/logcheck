@@ -10,6 +10,7 @@ logcheck (1.2.42) unstable; urgency=low
   * Enhance bind rules ignore NSTATS loglines, remove dup. (Closes: #324751)
   * Add rule for recent nfs mountd messages. 
     Thanks to toby cabot <toby@caboteria.org>. (Closes: #325800)
+  * Move imap file to server level, not appropriate for paranoid.
 
   [ Jamie Penman-Smithson ]
   * Add the first rules for mon. Thanks to Robbert Muller <muller@muze.nl>.
