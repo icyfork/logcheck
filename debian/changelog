@@ -7,6 +7,7 @@ logcheck (1.2.42) unstable; urgency=low
   * Default to sent mail to local root otherwise messages go to Nirvana.
   * Check if conffile with list of logfiles is readable.
   * Fallback to read syslog if no logfile is provided.
+  * Enhance bind rules ignore NSTATS loglines, remove dup. (Closes: #324751)
 
   [ Jamie Penman-Smithson ]
   * Add the first rules for mon. Thanks to Robbert Muller <muller@muze.nl>.

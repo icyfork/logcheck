@@ -8,7 +8,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone transfer \(AXFR\) of [^[:space:]]+ to [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: suppressing duplicate notify$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: USAGE [0-9]+ [0-9]+ CPU=[\.0-9]+u/[\.0-9]+s CHILDCPU=[\.0-9]+u/[\.0-9]+s$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: NSTATS [0-9]+ [0-9]+( (A|CNAME|SOA|PTR|MX|TXT|AAAA|38|IXFR|AXFR|ANY)=[0-9]+)+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: NSTATS [0-9]+ [0-9]+( (A|CNAME|SOA|NS|PTR|MX|TXT|AAAA|SRV|38|IXFR|AXFR|ANY|NAPTR)=[0-9]+)+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: XSTATS [0-9]+ [0-9]+( (RR|RNXD|RFwdR|RDupR|RFail|RFErr|RErr|RAXFR|RLame|ROpts|SSysQ|SAns|SFwdQ|SDupQ|SErr|RQ|RIQ|RFwdQ|RDupQ|RTCP|SFwdR|SFail|SFErr|SNaAns|SNXD|RUQ|RURQ|RUXFR|RUUpd)=[0-9]+)+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: lame server resolving '[^[:space:]]+' \(in '[^[:space:]]+'\?\): [\.0-9.]+#[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Received NOTIFY answer$
