@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mon\[[0-9]+\]: client connection from [.[:digit:]]+:[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mon\[[0-9]+\]: client command "(protid [0-9]+|list disabled|disable watch websites)"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mon\[[0-9]+\]: authenticated monuser$
