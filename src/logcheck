@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.125 2005/09/01 16:32:39 maks-guest Exp $
+# $Id: logcheck,v 1.126 2005/09/01 16:38:47 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -391,8 +391,7 @@ cleanchecked() {
 
 # Get the yet unseen part of one logfile.
 logoutput() {
-    file=$@
-	echo "E: called with $file" >> $TMPDIR/errors
+    file=$1
 
     # There are some problems with this section.
     debug "logoutput called with file: $file"
