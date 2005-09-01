@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.123 2005/07/20 15:49:27 maks-guest Exp $
+# $Id: logcheck,v 1.124 2005/09/01 16:15:08 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -387,7 +387,8 @@ cleanchecked() {
 
 # Get the yet unseen part of one logfile.
 logoutput() {
-    file=$1
+    file=$@
+	echo "E: called with $file" >> $TMPDIR/errors
 
     # There are some problems with this section.
     debug "logoutput called with file: $file"
@@ -489,7 +490,9 @@ OPTIND=1
 debug "Sourcing - $CONFFILE"
 
 # Now source the config file - before things that should not be changed
-. $CONFFILE
+if [ -r $CONFFILE ]; then
+	. $CONFFILE
+fi
 
 # Setup the compatibility for the old style of setting $INTRO
 # And handle it being set to ""

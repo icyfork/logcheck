@@ -2,6 +2,8 @@ logcheck (1.2.42) unstable; urgency=low
 
   [ Maximilian Attems ]
   * Add dccproc timeout rule.
+  * Only source the conffile if we can read it. Should enable logcheck runs
+    directly out of the logcheck source.
 
  -- 
 
