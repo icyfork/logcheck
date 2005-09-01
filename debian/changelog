@@ -1,20 +1,21 @@
 logcheck (1.2.42) unstable; urgency=low
 
-  [ Maximilian Attems ]
+  [ maximilian attems ]
   * Add dccproc timeout rule.
   * Only source the conffile if we can read it. Should enable logcheck runs
     directly out of the logcheck source.
   * Default to sent mail to local root otherwise messages go to Nirvana.
   * Check if conffile with list of logfiles is readable.
-  * Fallback to read syslog if no lofile is provided.
+  * Fallback to read syslog if no logfile is provided.
+
   [ Jamie Penman-Smithson ]
   * Add the first rules for mon. Thanks to Robbert Muller <muller@muze.nl>.
     (Closes: #324451)
+
   [ Todd Troxell ]
   * Add check for lockfile-progs to aid non-debian installations.
 
-
- -- 
+ -- maximilian attems <debian@sternwelten.at>  Thu,  1 Sep 2005 19:56:36 +0200
 
 logcheck (1.2.41) unstable; urgency=low
 
