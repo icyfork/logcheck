@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.124 2005/09/01 16:15:08 maks-guest Exp $
+# $Id: logcheck,v 1.125 2005/09/01 16:32:39 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -51,6 +51,9 @@ VERSION="1.2.41"
 # Set the default report level
 REPORTLEVEL="server"
 
+# default to sent mails to local root
+SENDMAILTO="root"
+
 # Set the default subject lines
 ATTACKSUBJECT="Security Alerts"
 SECURITYSUBJECT="Security Events"
@@ -62,6 +65,7 @@ RULEDIR="/etc/logcheck"
 CONFFILE="/etc/logcheck/logcheck.conf"
 STATEDIR="/var/lib/logcheck"
 LOGFILES_LIST="/etc/logcheck/logcheck.logfiles"
+LOGFILE_FALLBACK="/var/log/syslog"
 LOGTAIL="/usr/sbin/logtail"
 CAT="/bin/cat"
 SYSLOG_SUMMARY="/usr/bin/syslog-summary"
@@ -634,7 +638,7 @@ fi
 # Handle log rotation correctly, idea taken from Wiktor Niesiobedzki.
 mkdir $TMPDIR/logoutput \
     || error "Could not mkdir for log files"
-if [ ! $LOGFILE ]; then
+if [ ! $LOGFILE ] && [ -r $LOGFILES_LIST ]; then
     for file in $(egrep --text -v "(^#|^[[:space:]]*$)" $LOGFILES_LIST); do
 	logoutput "$file"
     done 
@@ -644,6 +648,10 @@ elif [ $LOGFILE ]; then
     else
     	error "$LOGFILE don't exist or we do not have permissions to read it"
     fi
+elif [ -r $LOGFILE_FALLBACK ]; then
+        logoutput "$LOGFILE_FALLBACK"
+else
+    error "Gave up no Logfile exist or we do not have permissions to read it"
 fi
 
 # First sort the logs to remove duplicate lines (from different logfiles with

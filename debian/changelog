@@ -4,6 +4,10 @@ logcheck (1.2.42) unstable; urgency=low
   * Add dccproc timeout rule.
   * Only source the conffile if we can read it. Should enable logcheck runs
     directly out of the logcheck source.
+  * Default to sent mail to local root otherwise messages go to Nirvana.
+  * Check if conffile with list of logfiles is readable.
+  * Fallback to read syslog if no lofile is provided.
+
 
  -- 
 
