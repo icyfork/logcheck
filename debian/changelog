@@ -13,6 +13,7 @@ logcheck (1.2.42) unstable; urgency=low
   * Move imap file to server level, not appropriate for paranoid.
   * Add imap ignore rule for moved bytes, seems pretty normal imap usage.
     Thanks to toby cabot <toby@caboteria.org>. (Closes: #325801)
+  * Add rule for Postboned keyboard-interactive ssh logins.
 
   [ Jamie Penman-Smithson ]
   * Add the first rules for mon. Thanks to Robbert Muller <muller@muze.nl>.
