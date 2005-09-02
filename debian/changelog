@@ -21,6 +21,9 @@ logcheck (1.2.42) unstable; urgency=low
 
   [ Todd Troxell ]
   * Add check for lockfile-progs to aid non-debian installations.
+  * Set logcheck to remove cleanup trap if an error occours while getting
+    lockfile.  This will prevent many confusing error messages.
+  * Add error reporting on -o option
 
  -- maximilian attems <debian@sternwelten.at>  Thu,  1 Sep 2005 19:56:36 +0200
 

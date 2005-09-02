@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.128 2005/09/02 01:03:38 ttroxell Exp $
+# $Id: logcheck,v 1.129 2005/09/02 06:38:22 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -169,6 +169,11 @@ $(export)
 EOF
 	} | mail -s "Logcheck: $HOSTNAME $DATE exiting due to errors" \
 	    $SENDMAILTO
+    
+    elif [ $MAILOUT -eq 1 ]; then
+          {
+	      echo "Error: $message."
+	  }
     fi
     exit 1
 }
@@ -611,6 +616,7 @@ lockfile-create --retry 1 $LOCKFILE > /dev/null 2>&1
 
 
 if [ $? -eq 1 ]; then 
+    trap 0
     error "Failed to get lockfile: $LOCKFILE.lock" "noclean"
 else 
     debug "Running lockfile-touch $LOCKFILE.lock"
