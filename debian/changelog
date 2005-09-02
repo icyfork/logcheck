@@ -14,6 +14,7 @@ logcheck (1.2.42) unstable; urgency=low
   * Add imap ignore rule for moved bytes, seems pretty normal imap usage.
     Thanks to toby cabot <toby@caboteria.org>. (Closes: #325801)
   * Add rule for Postboned keyboard-interactive ssh logins.
+  * Update some usb rules for usb-storage device.
 
   [ Jamie Penman-Smithson ]
   * Add the first rules for mon. Thanks to Robbert Muller <muller@muze.nl>.
