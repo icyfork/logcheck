@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.127 2005/09/01 16:57:00 ttroxell Exp $
+# $Id: logcheck,v 1.128 2005/09/02 01:03:38 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -37,6 +37,7 @@ if [ ! -f /usr/bin/lockfile-create -o \
      ! -f /usr/bin/lockfile-remove -o \
      ! -f /usr/bin/lockfile-touch ]; then
     echo "fatal: lockfile-progs is a prerequisite for logcheck, and was not found."
+    exit 1
 fi
 
 # Set the umask
