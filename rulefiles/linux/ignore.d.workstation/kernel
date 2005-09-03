@@ -30,7 +30,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: USB disconnect on device [.:0-9-]+ address [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: USB device [0-9]+ \(vend/prod [x/[0-9]+\) is not claimed by any active driver\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage device found at [0-9]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb-storage: (device found at [0-9]|waiting for device to settle before scanning)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb-storage: (device found at [0-9]|waiting for device to settle before scanning|device scan complete)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Initializing USB Mass Storage driver\.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage support registered\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: WARNING: USB Mass Storage data integrity not assured$
@@ -51,10 +51,11 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: SCSI device sd[a-z]: [0-9]+ 512-byte hdwr sectors \([0-9]+ MB\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Write Protect is off$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sr[0-9]+: [^[:space:]]+ drive: [ \/[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Vendor: [^[:space:]]+ +Model: [[:alnum:][:space:]]+ ([^[:space:]]+[[:space:]]+)?+Rev: +[.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Vendor: [.+ +Model: [[:alnum:][:space:]]+ ([^[:space:]]+[[:space:]]+)?+Rev: +[.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Type: +[^[:space:]]+ +ANSI SCSI revision: [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi CD-ROM sr[0-9]+ at scsi[0-9], channel [0-9], id [0-9], lun [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scsi.agent\[[0-9]+\]: (disk|cdrom) at [\./:[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scsi.agent\[[0-9]+\]:[[:space:]]+ sd_mod: loaded successfully \(for disk\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:  /dev/scsi/host[0-9]/bus[0-9]/target[0-9]/lun[0-9]: p[0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: keyboard: Too many NACKs -- noisy kbd cable\?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: keyboard.c: can't emulate rawmode for keycode [0-9]+$
@@ -72,6 +73,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: pl2303 [-:0-9.]+ PL-2303 converter detected$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [-:0-9]+ PL-2303 converter now attached to ttyUSB[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PL-2303 ttyUSB[0-9]: PL-2303 converter now disconnected from ttyUSB[0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: cdc_acm [-:0-9.]+ ttyACM[0-9]: USB ACM device$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/pl2303.c: Prolific PL2303 USB to serial adaptor driver v[.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Bluetooth: HCI USB driver ver [.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers\/usb\/class\/audio\.c: v[.0-9]+:USB Audio Class driver$
@@ -86,6 +88,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb 1-1: configuration #[0-9]+ chosen from [0-9]+ choices$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Write Protect is off$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: assuming (Write Enabled|drive cache: write through)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Mode Sense: [[:alnum:]]{2} [[:alnum:]]{2} [[:alnum:]]{2} [[:alnum:]]{2}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: SCSI subsystem initialized$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: nfs warning: mount version (older|newer) than kernel$
 # for sun machines
