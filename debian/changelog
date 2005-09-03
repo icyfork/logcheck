@@ -15,7 +15,7 @@ logcheck (1.2.42) unstable; urgency=low
     Thanks to toby cabot <toby@caboteria.org>. (Closes: #325801)
   * Add rule for Postboned keyboard-interactive ssh logins.
   * Update some usb rules for usb-storage and phone devices. (Closes: #324347)
-  * Update hord3 rules the identifier can be changed by the user to any char.
+  * Update horde3 rules the identifier can be changed by the user to any char.
     Thanks to Martin Lohmeier <martin@mein-horde.de> (Closes: #324613)
   * Add imp4 rule for succesffull logins. Thanks to
     Martin Lohmeier <martin@mein-horde.de> (Closes: #324615)
