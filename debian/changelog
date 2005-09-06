@@ -19,6 +19,7 @@ logcheck (1.2.42) unstable; urgency=low
     Thanks to Martin Lohmeier <martin@mein-horde.de> (Closes: #324613)
   * Add imp4 rule for succesffull logins. Thanks to
     Martin Lohmeier <martin@mein-horde.de> (Closes: #324615)
+  * Bumped standards to 3.6.2.
 
   [ Jamie Penman-Smithson ]
   * Add the first rules for mon. Thanks to Robbert Muller <muller@muze.nl>.
