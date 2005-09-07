@@ -24,6 +24,7 @@ logcheck (1.2.42) unstable; urgency=low
   [ Jamie Penman-Smithson ]
   * Add the first rules for mon. Thanks to Robbert Muller <muller@muze.nl>.
     (Closes: #324451)
+  * Modify dovecot rules to match ipv6 addresses too. (Closes: #327088)
 
   [ Todd Troxell ]
   * Add check for lockfile-progs to aid non-debian installations.
