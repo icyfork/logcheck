@@ -239,14 +239,13 @@ manpage.1: manpage.sgml
 
     <para>/etc/logcheck/logcheck.conf is the main configuration file.</para>
     <para>/etc/logcheck/logcheck.logfiles is the list of files to monitor.</para>
+    <para>/usr/share/doc/logcheck-database/README.logcheck-database.gz for hints on how to write, test and maintain rules.</para>
   </refsect1>
 
   <refsect1>
     <title>SEE ALSO</title>
 
     <para><command>logtail</command>(8)</para>
-    <para>For hints on how to maintain rules, see README.logcheck-database.gz.
-    </para>
   </refsect1>
 
   <refsect1>
