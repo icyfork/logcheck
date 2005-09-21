@@ -8,7 +8,7 @@ logcheck (1.2.42) unstable; urgency=low
   * Check if conffile with list of logfiles is readable.
   * Fallback to read syslog if no logfile is provided.
   * Enhance bind rules ignore NSTATS loglines, remove dup. (Closes: #324751)
-  * Add rule for recent nfs mountd messages. 
+  * Add rule for recent nfs mountd messages.
     Thanks to toby cabot <toby@caboteria.org>. (Closes: #325800)
   * Move imap file to server level, not appropriate for paranoid.
   * Add imap ignore rule for moved bytes, seems pretty normal imap usage.
@@ -20,6 +20,7 @@ logcheck (1.2.42) unstable; urgency=low
   * Add imp4 rule for succesffull logins. Thanks to
     Martin Lohmeier <martin@mein-horde.de> (Closes: #324615)
   * Bumped standards to 3.6.2.
+  * Fix exim4 rule for more modern tls string.
 
   [ Jamie Penman-Smithson ]
   * Add the first rules for mon. Thanks to Robbert Muller <muller@muze.nl>.
@@ -32,7 +33,7 @@ logcheck (1.2.42) unstable; urgency=low
     lockfile.  This will prevent many confusing error messages.
   * Add error reporting on -o option
 
- -- maximilian attems <debian@sternwelten.at>  Thu,  1 Sep 2005 19:56:36 +0200
+ -- maximilian attems <maks@sternwelten.at>  Wed, 14 Sep 2005 12:05:59 +0200
 
 logcheck (1.2.41) unstable; urgency=low
 

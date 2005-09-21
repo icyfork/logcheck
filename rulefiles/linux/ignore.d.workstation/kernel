@@ -24,7 +24,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: agpgart: Putting AGP V[0-9] device at [0-9:.]+ into [0-9]x mode$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hub [0-9]+-[0-9]+:[0-9]+\.[0-9]+: (USB hub found|[0-9]+ ports detected)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hub [0-9]+-[0-9]+:[0-9]+\.[0-9]+: over-current change on port [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [0-9]+-[0-9]+: new (full|high) speed USB device using ([_[:alnum:]-]+ and )?address [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [0-9]+-[0-9]+: new (low|full|high) speed USB device using ([_[:alnum:]-]+ and )?address [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hub\.c: new USB device [.:0-9-]+, assigned address [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [0-9]-[0-9]: USB disconnect, address [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: USB disconnect on device [.:0-9-]+ address [0-9]$
@@ -36,6 +36,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: WARNING: USB Mass Storage data integrity not assured$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial Driver core [.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial support registered for [_[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/class/usblp.c: usblp[0-9]: removed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/class/usblp.c: usblp[0-9]: USB Bidirectional printer dev [0-9] if [0-9] alt [0-9] proto [0-9] vid [[:alnum:]]+ pid [[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]:[[:space:]]+[_[:alnum:]-]+: (loaded successfully|already loaded)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]: Keeping default configuration with [\./:[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node changed: [-:0-9]+ -> [-:0-9]+$
@@ -63,7 +65,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ide: Assuming [0-9]+MHz system bus speed for PIO modes; override with idebus=xx$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Uniform Multi-Platform E-IDE driver Revision: [.[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ohci_hcd [.[:digit:]\:]+: wakeup$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb 1-1: new low speed USB device using address [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbcore: registered new driver [_[:lower:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: registered new driver [_[:lower:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: ctrl urb status [-[:digit:]]+ received$
