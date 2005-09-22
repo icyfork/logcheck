@@ -1,0 +1,19 @@
+Logcheck Installation
+---------------------
+
+If you are running Debian, you will benefit from installing the .debs
+Otherwise, perform a manual install like this.
+
+! These instructions are likely incomplete.  If you had to do something
+different, please contact the logcheck team at 
+logcheck-devel@lists.alioth.debian.org.
+
+-Extract logcheck and run make install.
+-Add an unpriviliged user for running logcheck. (typicallly named "logcheck")
+-chown -R logcheck /etc/logcheck /var/lock/logcheck 
+-Be sure this user can access your log files
+-Edit logcheck configuration files in /etc/logcheck.  Most importantly
+logcheck.conf.  logcheck.logfiles contains a list of logfiles to be scanned.
+-Install logcheck cron job.  There is a sample in debian/logcheck.cron.d
+
+To test your installation run "logcheck -ot"

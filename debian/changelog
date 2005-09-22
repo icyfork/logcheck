@@ -38,6 +38,7 @@ logcheck (1.2.42) unstable; urgency=low
     <mnencia@prato.linux.it> (Closes: #327100)
   * Add IPV6 support to postfix rules.  Thanks Marco Nenciarin
     <mnencia@prato.linux.it> (Closes: #327114)
+  * Add INSTALL documentation for manual/non-Debian installation.
 
  -- maximilian attems <maks@sternwelten.at>  Wed, 14 Sep 2005 12:05:59 +0200
 
