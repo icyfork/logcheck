@@ -34,6 +34,10 @@ logcheck (1.2.42) unstable; urgency=low
   * Set logcheck to remove cleanup trap if an error occours while getting
     lockfile.  This will prevent many confusing error messages.
   * Add error reporting on -o option
+  * Add IPv6 support to bind rules Thanks Marco Nenciarin
+    <mnencia@prato.linux.it> (Closes: #327100)
+  * Add IPV6 support to postfix rules.  Thanks Marco Nenciarin
+    <mnencia@prato.linux.it> (Closes: #327114)
 
  -- maximilian attems <maks@sternwelten.at>  Wed, 14 Sep 2005 12:05:59 +0200
 
