@@ -39,6 +39,7 @@ logcheck (1.2.42) unstable; urgency=low
   * Add IPV6 support to postfix rules.  Thanks Marco Nenciarin
     <mnencia@prato.linux.it> (Closes: #327114)
   * Add INSTALL documentation for manual/non-Debian installation.
+  * Add 5 receive rules for hylafax's FaxGetty
 
  -- maximilian attems <maks@sternwelten.at>  Wed, 14 Sep 2005 12:05:59 +0200
 
