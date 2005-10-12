@@ -1,3 +1,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (imap|pop3)-login: Login: [.[:alnum:]@-]+ \[(::ffff:)?[0-9.]+\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (imap|pop3)-login: Disconnected \[(::ffff:)?[0-9.]+\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (imap|pop3)\([^[:space:]]+\): File isn't in mbox format: [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (dovecot: )?(imap|pop3)-login: Disconnected \[(::ffff:)?[0-9.]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (dovecot: )?(imap|pop3)\([^[:space:]]+\): File isn't in mbox format: [^[:space:]]+$
+# dovecot 1.0
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dovecot: (imap|pop3)-login: Login: user=<[.[:alnum:]@-]+>, method=(PLAIN|LOGIN|(CRAM|DIGEST)-MD5), rip=(::ffff:)?[.[:digit:]]+, lip=(::ffff:)?[.[:digit:]]+(, TLS)?$
