@@ -32,6 +32,8 @@ logcheck (1.2.42) unstable; urgency=low
     messages. (Closes: #331282)
   * Add first rules for tftpd, suppress 'connect' and 'get file' messages.
     (Closes: #333456)
+  * Fix dovecot rules to match the new format log messages in 1.0. (Closes:
+    #327088, #332707)
 
   [ Todd Troxell ]
   * Add check for lockfile-progs to aid non-debian installations.
