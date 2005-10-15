@@ -5,7 +5,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;(ACKNOWLEDGEMENT \()?(CRITICAL|WARNING|OK|UNKNOWN)(\))?;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE FLAPPING ALERT: [._[:alnum:]-]+;[^;]+;STOPPED; Service appears to have stopped flapping \([.[:digit:]]+% change < [.[:digit:]]+% threshold\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST ALERT: [._[:alnum:]-]+;(DOWN|UP|UNREACHABLE);(SOFT|HARD);.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;(DOWN|UP);.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;(DOWN|UP|UNREACHABLE);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST DOWNTIME ALERT: [._[:alnum:]-]+;(STARTED|STOPPED);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST EVENT HANDLER: [._[:alnum:]-]+;DOWN;(SOFT|HARD);[0-9]+;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;[._[:alnum:]-]+;[^;]+;[0-9]+;.*$
