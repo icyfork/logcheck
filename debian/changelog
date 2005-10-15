@@ -36,6 +36,8 @@ logcheck (1.2.42) unstable; urgency=low
     (Closes: #332707, #333461)
   * Fix proftpd rules to match ipv6 addresses. Thanks to Elmar Hoffmann
     <elho@elho.net> (Closes: #332807)
+  * Update ssh rules to suppress reverse DNS warnings. Thanks to Elmar
+    Hoffmann <elho@elho.net> (Closes: #333233)
 
   [ Todd Troxell ]
   * Add check for lockfile-progs to aid non-debian installations.
