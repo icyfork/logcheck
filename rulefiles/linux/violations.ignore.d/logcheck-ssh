@@ -1,2 +1,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: warning: /etc/hosts.deny, line [0-9]+: can't verify hostname: getaddrinfo\([._[:alnum:]-]+, AF_INET\) failed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: warning: /etc/hosts.deny, line [0-9]+: host name/name mismatch: [._[:alnum:]-]+ != [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: reverse mapping checking getaddrinfo for [._[:alnum:]-]+ failed - POSSIBLE BREAKIN ATTEMPT!$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Address [._[:alnum:]-]+ maps to [._[:alnum:]-]+, but this does not map back to the address - POSSIBLE BREAKIN ATTEMPT!$
