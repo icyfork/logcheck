@@ -1,4 +1,4 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([._[:alnum:]-]+\[[0-9.]{7,15}\]\) (- )FTP session (opened|closed)\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([._[:alnum:]-]+\[[0-9.]{7,15}\]\) (- )USER [._[:alnum:]-]+: Login successful\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([.:_[:alnum:]-]+\[[0-9a-f.:]+\]\) (- )FTP session (opened|closed)\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([.:_[:alnum:]-]+\[[0-9a-f.:]+\]\) (- )USER [._[:alnum:]-]+: Login successful\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd: \(pam_unix\) session (opened|closed) for user [._[:alnum:]-]+( by \(uid=[0-9]+\))?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([._[:alnum:]-]+\[[0-9.]{7,15}\]\) (- )mod_delay/[0-9]\.[0-9]: delaying for [0-9]+ usecs$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([.:_[:alnum:]-]+\[[0-9a-f.:]+\]\) (- )mod_delay/[0-9]\.[0-9]: delaying for [0-9]+ usecs$
