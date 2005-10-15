@@ -40,6 +40,7 @@ logcheck (1.2.42) unstable; urgency=low
     Hoffmann <elho@elho.net> (Closes: #333233)
   * Update nagios rules to match host UNREACHABLE notification messages.
     (Closes: #325874)
+  * Add the first rules for popa3d. (Closes: #328251)
 
   [ Todd Troxell ]
   * Add check for lockfile-progs to aid non-debian installations.
