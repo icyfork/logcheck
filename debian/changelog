@@ -41,6 +41,8 @@ logcheck (1.2.42) unstable; urgency=low
   * Update nagios rules to match host UNREACHABLE notification messages.
     (Closes: #325874)
   * Add the first rules for popa3d. (Closes: #328251)
+  * Fix the permissions for /var/lock/logcheck on install or upgrade so
+    logcheck can be executed by the logcheck group. (Closes: #330208)
 
   [ Todd Troxell ]
   * Add check for lockfile-progs to aid non-debian installations.
