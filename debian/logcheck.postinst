@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.39 2005/05/29 04:20:30 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.40 2005/10/15 23:04:40 jlps-guest Exp $
 
 set -e
 
@@ -59,9 +59,10 @@ case "$1" in
           cp -p /usr/share/logcheck/header.txt /etc/logcheck
         fi
 
-	# Fix permissions for lcok on install or upgrade
+	# Fix permissions for lock on install or upgrade
 	if [ ! -n "$2" ] || dpkg --compare-versions "$2" lt "1.2.39"; then
           chown -R logcheck:logcheck /var/lock/logcheck || true
+	  chmod 775 /var/lock/logcheck || true
         fi
 
 	# need to be done on install and on upgrade for new rule files
