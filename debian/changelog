@@ -4,7 +4,7 @@ logcheck (1.2.42) unstable; urgency=low
   * Add dccproc timeout rule.
   * Only source the conffile if we can read it. Should enable logcheck runs
     directly out of the logcheck source.
-  * Default to sent mail to local root otherwise messages go to Nirvana.
+  * Default to send mail to local root otherwise messages go to Nirvana.
   * Check if conffile with list of logfiles is readable.
   * Fallback to read syslog if no logfile is provided.
   * Enhance bind rules ignore NSTATS loglines, remove dup. (Closes: #324751)
@@ -13,11 +13,11 @@ logcheck (1.2.42) unstable; urgency=low
   * Move imap file to server level, not appropriate for paranoid.
   * Add imap ignore rule for moved bytes, seems pretty normal imap usage.
     Thanks to toby cabot <toby@caboteria.org>. (Closes: #325801)
-  * Add rule for Postboned keyboard-interactive ssh logins.
+  * Add rule for Postponed keyboard-interactive ssh logins.
   * Update some usb rules for usb-storage and phone devices. (Closes: #324347)
   * Update horde3 rules the identifier can be changed by the user to any char.
     Thanks to Martin Lohmeier <martin@mein-horde.de> (Closes: #324613)
-  * Add imp4 rule for succesffull logins. Thanks to
+  * Add imp4 rule for successful logins. Thanks to
     Martin Lohmeier <martin@mein-horde.de> (Closes: #324615)
   * Bumped standards to 3.6.2.
   * Fix exim4 rule for more modern tls string.
@@ -32,20 +32,22 @@ logcheck (1.2.42) unstable; urgency=low
     messages. (Closes: #331282)
   * Add first rules for tftpd, suppress 'connect' and 'get file' messages.
     (Closes: #333456)
-  * Fix dovecot rules to match the new format log messages in 1.0. (Closes:
-    #332707, #333461)
+  * Fix dovecot rules to match the new format log messages in 1.0. 
+    (Closes: #332707, #333461)
+  * Fix proftpd rules to match ipv6 addresses. Thanks to Elmar Hoffmann
+    <elho@elho.net> (Closes: #332807)
 
   [ Todd Troxell ]
   * Add check for lockfile-progs to aid non-debian installations.
   * Set logcheck to remove cleanup trap if an error occours while getting
-    lockfile.  This will prevent many confusing error messages.
+    lockfile. This will prevent many confusing error messages.
   * Add error reporting on -o option
-  * Add IPv6 support to bind rules Thanks Marco Nenciarin
+  * Add IPv6 support to bind rules. Thanks Marco Nenciarin
     <mnencia@prato.linux.it> (Closes: #327100)
   * Add IPV6 support to postfix rules.  Thanks Marco Nenciarin
     <mnencia@prato.linux.it> (Closes: #327114)
   * Add INSTALL documentation for manual/non-Debian installation.
-  * Add 5 receive rules for hylafax's FaxGetty
+  * Add 5 receive rules for hylafax's FaxGetty.
 
  -- maximilian attems <maks@sternwelten.at>  Wed, 14 Sep 2005 12:05:59 +0200
 
