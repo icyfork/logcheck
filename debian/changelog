@@ -47,6 +47,7 @@ logcheck (1.2.42) unstable; urgency=low
     (Closes: #334415)
   * Fix anvil max rate rule to match statistics messages when postfix is bound
     to a specific IP. (Closes: #334342)
+  * Modify spamd rules to match log message format in 3.1. (Closes: #335021)
 
   [ Todd Troxell ]
   * Add check for lockfile-progs to aid non-debian installations.
