@@ -21,7 +21,7 @@ logcheck (1.2.42) unstable; urgency=low
     Martin Lohmeier <martin@mein-horde.de> (Closes: #324615)
   * Bumped standards to 3.6.2.
   * Fix exim4 rule for more modern tls string.
-  * logcheck.8 fix add full path to README.logcheck-database.gz. 
+  * logcheck.8 fix add full path to README.logcheck-database.gz.
     (Closes: #328632)
 
   [ Jamie Penman-Smithson ]
@@ -32,7 +32,7 @@ logcheck (1.2.42) unstable; urgency=low
     messages. (Closes: #331282)
   * Add first rules for tftpd, suppress 'connect' and 'get file' messages.
     (Closes: #333456)
-  * Fix dovecot rules to match the new format log messages in 1.0. 
+  * Fix dovecot rules to match the new format log messages in 1.0.
     (Closes: #332707, #333461)
   * Fix proftpd rules to match ipv6 addresses. Thanks to Elmar Hoffmann
     <elho@elho.net> (Closes: #332807)
@@ -60,8 +60,9 @@ logcheck (1.2.42) unstable; urgency=low
     <mnencia@prato.linux.it> (Closes: #327114)
   * Add INSTALL documentation for manual/non-Debian installation.
   * Add 5 receive rules for hylafax's FaxGetty.
+  * Call adduser without --home flag in postinst. (Closes: #312393)
 
- -- maximilian attems <maks@sternwelten.at>  Wed, 14 Sep 2005 12:05:59 +0200
+ -- Todd Troxell <ttroxell@debian.org>  Sat, 22 Oct 2005 23:14:54 -0400
 
 logcheck (1.2.41) unstable; urgency=low
 
