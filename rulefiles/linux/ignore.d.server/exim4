@@ -8,4 +8,5 @@
 ^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ <= <> R=[_[:alnum:]-]+ U=[_[:alnum:]-]+ P=local S=[0-9]+$
 ^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ <= <> H=[._[:alnum:]-]+ \[[.0-9]{7,15}\] P=esmtp S=[0-9]+ id=[^[:space:]]+$
 ^[-0-9]{10} [0-9:]{8} SMTP command timeout on connection from [._[:alnum:]-]+ \[[.0-9]{7,15}\]$
+^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ == [@._[:alnum:]-]+ <?[@._[:alnum:]-]+>? R=dnslookup T=remote_smtp defer \(-53\): retry time not reached for any host$
 ^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ SMTP error from remote mailer after initial connection: host [._[:alnum:]-]+ \[[.0-9]{7,15}\]: 421 gluck.debian.org: Too many concurrent SMTP connections; please try again later\.$

@@ -1,3 +1,10 @@
+logcheck (1.2.43) unstable; urgency=low
+
+  [ maximilian attems ]
+  * Add exim4 rule for defered messages.
+
+ -- maximilian attems <maks@sternwelten.at>  Thu, 27 Oct 2005 13:57:40 +0200
+
 logcheck (1.2.42) unstable; urgency=low
 
   [ maximilian attems ]
