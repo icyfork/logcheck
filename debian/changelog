@@ -2,8 +2,9 @@ logcheck (1.2.43) unstable; urgency=low
 
   [ maximilian attems ]
   * Add exim4 rule for defered messages.
+  * Fix ssh rule for valid session.
 
- -- maximilian attems <maks@sternwelten.at>  Thu, 27 Oct 2005 13:57:40 +0200
+ -- maximilian attems <maks@sternwelten.at>  Mon,  7 Nov 2005 15:36:13 +0100
 
 logcheck (1.2.42) unstable; urgency=low
 
