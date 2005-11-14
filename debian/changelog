@@ -4,6 +4,9 @@ logcheck (1.2.43) unstable; urgency=low
   * Add exim4 rule for defered messages.
   * Fix ssh rule for valid session.
 
+  [ Todd Troxell ]
+  * Correct hylafax receive rule.
+
  -- maximilian attems <maks@sternwelten.at>  Mon,  7 Nov 2005 15:36:13 +0100
 
 logcheck (1.2.42) unstable; urgency=low
