@@ -7,6 +7,10 @@ logcheck (1.2.43) unstable; urgency=low
   [ Todd Troxell ]
   * Correct hylafax receive rule.
 
+  [ Jamie Penman-Smithson ]
+  * Fix snmpd rules to match new "Connection from UDP" messages. Thanks to
+    Ralf Hildebrandt <ralf.hildebrandt@charite.de>. (Closes: #337916)
+
  -- maximilian attems <maks@sternwelten.at>  Mon,  7 Nov 2005 15:36:13 +0100
 
 logcheck (1.2.42) unstable; urgency=low
