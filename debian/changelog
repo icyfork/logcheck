@@ -12,6 +12,8 @@ logcheck (1.2.43) unstable; urgency=low
     Ralf Hildebrandt <ralf.hildebrandt@charite.de>. (Closes: #337916)
   * Update dovecot rule to match new log format - lowercase method - yet
     again. (Closes: #337517)
+  * Add various new kernel rules at workstation level. Thanks to Dave Vehrs
+    <lowkeyfs@gmail.com>. (Closes: #337998)
 
  -- maximilian attems <maks@sternwelten.at>  Mon,  7 Nov 2005 15:36:13 +0100
 
