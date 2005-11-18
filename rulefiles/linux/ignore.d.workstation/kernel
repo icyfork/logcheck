@@ -24,10 +24,10 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: agpgart: Putting AGP V[0-9] device at [0-9:.]+ into [0-9]x mode$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hub [0-9]+-[0-9]+:[0-9]+\.[0-9]+: (USB hub found|[0-9]+ ports detected)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hub [0-9]+-[0-9]+:[0-9]+\.[0-9]+: over-current change on port [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [0-9]+-[0-9]+: new (low|full|high) speed USB device using ([_[:alnum:]-]+ and )?address [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [0-9]+-[.[:digit:]]+: new (low|full|high) speed USB device using ([_[:alnum:]-]+ and )?address [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hub\.c: new USB device [.:0-9-]+, assigned address [0-9]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [0-9]-[0-9]: USB disconnect, address [0-9]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: USB disconnect on device [.:0-9-]+ address [0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [0-9]-[.[:digit:]]+: USB disconnect, address [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: USB disconnect on device [.:0-9-]+ address [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: USB device [0-9]+ \(vend/prod [x/[0-9]+\) is not claimed by any active driver\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage device found at [0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb-storage: (device found at [0-9]|waiting for device to settle before scanning|device scan complete)$
@@ -69,8 +69,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: registered new driver [_[:lower:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: ctrl urb status [-[:digit:]]+ received$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: v[\:[:digit:].]+USB HID core driver$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+(evdev|evbug|joydev): (already loaded|loaded successfully|blacklisted)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: input: USB HID v[.[:digit:]]+ Joystick \[[ [:alnum:][:punct:]]+\] on usb-[\:[:digit:].-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+((mouse|ts|ev|joy)dev|evbug): (already loaded|loaded successfully|blacklisted)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: input: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:digit:].-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: pl2303 [-:0-9.]+ PL-2303 converter detected$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [-:0-9]+ PL-2303 converter now attached to ttyUSB[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PL-2303 ttyUSB[0-9]: PL-2303 converter now disconnected from ttyUSB[0-9]$
