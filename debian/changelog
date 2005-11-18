@@ -10,6 +10,8 @@ logcheck (1.2.43) unstable; urgency=low
   [ Jamie Penman-Smithson ]
   * Add snmpd rule to match new "Connection from UDP" messages. Thanks to
     Ralf Hildebrandt <ralf.hildebrandt@charite.de>. (Closes: #337916)
+  * Update dovecot rule to match new log format - lowercase method - yet
+    again. (Closes: #337517)
 
  -- maximilian attems <maks@sternwelten.at>  Mon,  7 Nov 2005 15:36:13 +0100
 
