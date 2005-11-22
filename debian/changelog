@@ -6,6 +6,8 @@ logcheck (1.2.43) unstable; urgency=low
 
   [ Todd Troxell ]
   * Correct hylafax receive rule.
+  * Add /var/lib/logcheck to INSTALL, Thanks to Jonathan Adamczewski
+    <jonathan@narrowp.ath.cx>
 
   [ Jamie Penman-Smithson ]
   * Add snmpd rule to match new "Connection from UDP" messages. Thanks to

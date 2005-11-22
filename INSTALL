@@ -10,7 +10,7 @@ logcheck-devel@lists.alioth.debian.org.
 
 -Extract logcheck and run make install.
 -Add an unpriviliged user for running logcheck. (typicallly named "logcheck")
--chown -R logcheck /etc/logcheck /var/lock/logcheck 
+-chown -R logcheck /etc/logcheck /var/lock/logcheck /var/lib/logcheck
 -Be sure this user can access your log files
 -Edit logcheck configuration files in /etc/logcheck.  Most importantly
 logcheck.conf.  logcheck.logfiles contains a list of logfiles to be scanned.
