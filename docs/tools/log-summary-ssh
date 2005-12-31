@@ -1,0 +1,68 @@
+#!/usr/bin/perl -wT
+
+# log-summary-ssh
+# Selects two lines that are very common with ssh scans.
+# This script removes those from output and prints out aggregate 
+# statistics for those (both by host and by attempted user names).
+#
+# Reads from stdin or from command line arguments and prints to stdout.
+#
+# If you want to use this with logcheck, copy this to 
+# /usr/local/sbin/log-summary-ssh and add following lines to 
+# /etc/logcheck/logcheck.conf (or your config file):
+#
+# SYSLOGSUMMARY=1
+# SYSLOG_SUMMARY=/usr/local/sbin/log-summary-ssh
+#
+# If you want to use both syslog-summary and this script, you need to 
+# write a some kind of wrapper around those.
+# #!/bin/sh
+# syslog-summary $* | log-summary-sh
+#
+# Markus Peuhkuri <puhuri@iki.fi> 2005  
+# Use of this file is unrestricted.
+
+use strict;
+use Text::Wrap qw/wrap/;
+
+my %h;				# hosts for failed attempts
+my %u;				# user names for failed attemts
+my $sshc = 0;			# flag values
+my %inv;			# failed ip => host mappings
+my $invf = 0;			# flag values
+
+while (<>) {
+  if (m/^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Illegal user (.*) from (.*)$/) {
+    my $ip = $2;
+    chomp $ip;
+    $h{$ip} ++;
+    $u{$1} ++;
+    $sshc++;
+  } elsif (m/^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Address (.*) maps to (.*), but this does not map back to the address - POSSIBLE BREAKIN ATTEMPT!/) {
+    $inv{$1}{$2}++;
+    $invf++;
+ } else {
+    print $_;			# just print
+  }
+}
+
+if ($sshc > 0) {
+  printf "\nInvalid SSH login attempts: %d\n", $sshc;
+  for (sort {$h{$b} <=> $h{$a}} keys %h) {
+    printf "% 4d %s\n", $h{$_}, $_;
+  }
+  my @users;
+  for (sort keys %u) {
+    push @users, sprintf("%s (%d)", $_, $u{$_});
+  }
+  print "\nUser names tried:\n", wrap(" ", " ", join(", ", @users)), "\n";
+}
+
+if ($invf > 0) {
+  printf "\nInverse mapping failures: %d\n", $invf;
+  for my $ip (sort keys %inv) {
+    for (sort keys %{$inv{$ip}}) {
+      printf "% 5d %s !=> %s\n", $inv{$ip}{$_}, $ip, $_;
+    }
+  }
+}
