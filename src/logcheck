@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2004-2005 Debian Logcheck Team 
+# Copyright (C) 2004-2006 Debian Logcheck Team 
 #                         <logcheck-devel@alioth.lists.debian.org>
 # Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>
 # Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.130 2005/12/31 11:22:21 ttroxell Exp $
+# $Id: logcheck,v 1.131 2006/01/02 08:51:01 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -475,6 +475,9 @@ while getopts $GETOPTS opt; do
 	c)
 	    debug "Setting CONFFILE to $OPTARG"
 	    CONFFILE="$OPTARG"
+            if [ ! -r $CONFFILE ]; then
+                 error "Config file $CONFFILE unreadable or does not exists"
+            fi
 	    ;;
 	d)
 	    LOGCHECKDEBUG=1
@@ -507,7 +510,7 @@ debug "Sourcing - $CONFFILE"
 # Now source the config file - before things that should not be changed
 if [ -r $CONFFILE ]; then
 	. $CONFFILE
-else
+elif [ -f $CONFFILE ]; then
 	error  "Config file $CONFFILE could not be read"
 fi
 
