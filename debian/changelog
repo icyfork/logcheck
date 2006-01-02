@@ -14,6 +14,8 @@ logcheck (1.2.43) unstable; urgency=low
   * Correct Postfix rule for "address not listed for hostname"
     (Closes: #344620)
   * Update copyright year to 2006
+  * Add Dutch Debconf translation, thanks Frans Pop <aragorn@tiscali.nl>
+    (Closes: #344716)
 
   [ Jamie Penman-Smithson ]
   * Add snmpd rule to match new "Connection from UDP" messages. Thanks to
