@@ -3,6 +3,7 @@ logcheck (1.2.43) unstable; urgency=low
   [ maximilian attems ]
   * Add exim4 rule for defered messages.
   * Fix ssh rule for valid session.
+  * Add some kernel rules for some sony device.
 
   [ Todd Troxell ]
   * Correct hylafax receive rule.
@@ -25,7 +26,7 @@ logcheck (1.2.43) unstable; urgency=low
   * Add various new kernel rules at workstation level. Thanks to Dave Vehrs
     <lowkeyfs@gmail.com>. (Closes: #337998)
 
- -- maximilian attems <maks@sternwelten.at>  Mon,  7 Nov 2005 15:36:13 +0100
+ -- maximilian attems <maks@sternwelten.at>  Sat,  7 Jan 2006 21:38:27 +0100
 
 logcheck (1.2.42) unstable; urgency=low
 

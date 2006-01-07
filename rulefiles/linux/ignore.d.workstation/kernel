@@ -49,9 +49,10 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: XFS mounting filesystem [[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Ending clean XFS mount for filesystem: [[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: scsi[0-9]+ : SCSI emulation for (IEEE-1394 SBP-2 Devices|USB Mass Storage devices)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi removable disk sd[a-z] at scsi[0-9], channel [0-9], id [0-9], lun [0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi removable disk sd[a-z]( at scsi[0-9], channel [0-9], id [0-9], lun [0-9])?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: SCSI device sd[a-z]: [0-9]+ 512-byte hdwr sectors \([0-9]+ MB\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Write Protect is off$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: sd[a-z]1$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sr[0-9]+: [^[:space:]]+ drive: [ \/[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Vendor: .+ +Model: [[:alnum:][:space:]]+ ([^[:space:]]+[[:space:]]+)?+Rev: +[.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: +Type: +[^[:space:]]+ +ANSI SCSI revision: [0-9]+$
@@ -69,6 +70,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb.c: registered new driver [_[:lower:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: ctrl urb status [-[:digit:]]+ received$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/input/hid-core.c: v[\:[:digit:].]+USB HID core driver$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/class/cdc-acm.c: v[\:[:digit:].]+USB Abstract Control Model driver for USB modems and ISDN adapters$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+((mouse|ts|ev|joy)dev|evbug): (already loaded|loaded successfully|blacklisted)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: input: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:digit:].-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: pl2303 [-:0-9.]+ PL-2303 converter detected$
