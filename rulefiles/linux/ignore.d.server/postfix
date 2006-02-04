@@ -72,3 +72,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/anvil\[[0-9]+\]: statistics: max cache size [[:digit:]]+ at \w{3} [ :0-9]{11}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/scache\[[0-9]+\]: statistics: start interval \w{3} [ :0-9]{11}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/scache\[[0-9]+\]: statistics: (domain|address) lookup hits=[0-9]+ miss=[0-9]+ success=[0-9]+%$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: initializing the server-side TLS engine$
