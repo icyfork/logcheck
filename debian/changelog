@@ -29,6 +29,7 @@ logcheck (1.2.43) unstable; urgency=low
     <lowkeyfs@gmail.com>. (Closes: #337998)
   * Fix postfix rules to match "initializing server-side TLS engine"
     messages. (Closes: #347227)
+  * Update su rules for login 4.0.x. (Closes: #346502)
 
  -- maximilian attems <maks@sternwelten.at>  Sat,  7 Jan 2006 21:38:27 +0100
 
