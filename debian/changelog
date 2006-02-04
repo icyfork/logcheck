@@ -27,6 +27,8 @@ logcheck (1.2.43) unstable; urgency=low
     again. (Closes: #337517)
   * Add various new kernel rules at workstation level. Thanks to Dave Vehrs
     <lowkeyfs@gmail.com>. (Closes: #337998)
+  * Fix postfix rules to match "initializing server-side TLS engine"
+    messages. (Closes: #347227)
 
  -- maximilian attems <maks@sternwelten.at>  Sat,  7 Jan 2006 21:38:27 +0100
 
