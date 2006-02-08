@@ -93,11 +93,10 @@ manpage.1: manpage.sgml
 
 
     <para><command>&dhpackage;</command> can be invoked directly thanks
-    to su(8) or sudo(8), which change the user ID:</para>
+    to su(8) or sudo(8), which change the user ID. The following example checks the logfiles
+    without updating the offset and outputs everything to STDOUT.</para>
 
-    <para><command>&dhpackage;</command> -o -t
-    Check the logfiles without updating the offset. 
-    Print everything to STDOUT</para>
+    <para>sudo -u logcheck <command>&dhpackage;</command> -o -t</para>
 
   </refsect1>
   <refsect1>
