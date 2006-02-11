@@ -32,6 +32,7 @@ logcheck (1.2.43) unstable; urgency=low
   * Update su rules for login 4.0.x. (Closes: #346502)
   * Reword EXAMPLES section in the logcheck manpage. Thanks to
     Jari Aalto <jari.aalto@cante.net>. (Closes: #351669)
+  * Update postfix/lmtp rule to match new log format in postfix 2.3.
 
  -- maximilian attems <maks@sternwelten.at>  Sat,  7 Jan 2006 21:38:27 +0100
 
