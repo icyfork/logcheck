@@ -44,6 +44,8 @@ logcheck (1.2.43) unstable; urgency=low
   * Fix ntp rules to match ipv6 addresses too. Thanks to Beat Bolli
     <bbolli@ewanet.ch>. (Closes: #336079)
   * Add first rule for cvs-pserver. (Closes: #338732)
+  * Modify dhcp rules to match dhcpd output when no client hostname is
+    returned and '(none)' is used. (Closes: #346350)
 
  -- maximilian attems <maks@sternwelten.at>  Sat,  7 Jan 2006 21:38:27 +0100
 
