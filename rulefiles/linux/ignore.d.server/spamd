@@ -1,6 +1,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?connection from [._[:alnum:]-]+ \[[\.[:digit:]]+\] at port [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?info: setuid to [[:alnum:]-]+ succeeded$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?(info: )?setuid to [[:alnum:]-]+ succeeded$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?(checking|processing) message [^[:space:]]+ for [._[:alnum:]-]+:[0-9]+(\.)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?clean message \([0-9.-]+/[0-9.]+\) for [._[:alnum:]-]+:[0-9]+ in [0-9.]+ seconds, [0-9]+ bytes\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?identified spam \([0-9.-]+/[0-9.]+\) for [._[:alnum:]-]+:[0-9]+ in [0-9.]+ seconds, [0-9]+ bytes\.$
-Oct 21 13:06:02 localhost spamd[5468]: spamd: processing message (unknown) for siaco:1000
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: child states: I+$

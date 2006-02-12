@@ -1,3 +1,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: Cannot open bayes databases /home/[_[:alnum:]-]+/.spamassassin/bayes_\* R/W: lock failed: File exists$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: failed sanity check, [0-9]+ bytes claimed, [0-9-]+ bytes seen$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: processing message <.+> for .+:[0-9]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?(checking|processing) message <[^[:space:]]+> for [._[:alnum:]-]+:[0-9]+(\.)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?result: (.|Y|N) [ [:digit:]-]+ - [._[:alnum:],]+ scantime=[0-9.]+,size=[0-9]+,mid=<[^[:space:]]+>,(bayes=(0|1),)?autolearn=(ham|spam|no)$
