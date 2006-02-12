@@ -43,6 +43,7 @@ logcheck (1.2.43) unstable; urgency=low
     Karl Chen <quarl@cs.berkeley.edu>. (Closes: #336558)
   * Fix ntp rules to match ipv6 addresses too. Thanks to Beat Bolli
     <bbolli@ewanet.ch>. (Closes: #336079)
+  * Add first rule for cvs-pserver. (Closes: #338732)
 
  -- maximilian attems <maks@sternwelten.at>  Sat,  7 Jan 2006 21:38:27 +0100
 
