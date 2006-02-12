@@ -41,6 +41,8 @@ logcheck (1.2.43) unstable; urgency=low
     scache messages.
   * Update spamd rules. Thanks to Russ Allbery <rra@stanford.edu> &
     Karl Chen <quarl@cs.berkeley.edu>. (Closes: #336558)
+  * Fix ntp rules to match ipv6 addresses too. Thanks to Beat Bolli
+    <bbolli@ewanet.ch>. (Closes: #336079)
 
  -- maximilian attems <maks@sternwelten.at>  Sat,  7 Jan 2006 21:38:27 +0100
 
