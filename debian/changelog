@@ -35,6 +35,8 @@ logcheck (1.2.43) unstable; urgency=low
   * Update postfix/lmtp rule to match new log format in postfix 2.3.
   * Use 'find' instead of 'run-parts' to list the contents of
     directories since 'run-parts' cannot handle filenames with periods.
+    Update control to depend on findutils.
+  * Exit with an error if a rule file is unreadable. (Closes: #340226)
 
  -- maximilian attems <maks@sternwelten.at>  Sat,  7 Jan 2006 21:38:27 +0100
 
