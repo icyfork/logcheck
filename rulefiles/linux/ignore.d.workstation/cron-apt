@@ -1,0 +1,17 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: CRON-APT RUN \[[-[:alnum:]/]+\]: \w{3} \w{3} [ [:digit:]]+ [:[:digit:]]{8} \w{3} [[:digit:]]{4}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: CRON-APT SLEEP: [[:digit:]]+, \w{3} \w{3} [ [:digit:]]+ [:[:digit:]]{8} \w{3} [[:digit:]]{4}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: CRON-APT ACTION: (0-update|3-download)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: CRON-APT LINE: /usr/bin/apt-get dist-upgrade -d -y -o APT::Get::Show-Upgraded=true$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Reading package lists...$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Building dependency tree...$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: The following NEW packages will be installed:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: The following packages will be REMOVED:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: The following packages have been kept back:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: The following packages will be upgraded:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: {3}[ .+[:alnum:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: [[:digit:]]+ upgraded, [[:digit:]]+ newly installed, [[:digit:]]+ to remove and [[:digit:]]+ not upgraded.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Need to get [[:digit:].]+(kB|MB)(/[.[:digit:]]+(kB|MB))* of archives.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: After unpacking [[:digit:].]+(kB|MB) (of additional disk space will be used|disk space will be freed).$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Get:[[:digit:]]+ http://[.[:alnum:]/_]+ [/[:alnum:]]+ [-[:alnum:]_]+[ +.:[:alnum:]-]+ \[[.[:digit:]]+(kB|MB)\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Fetched [[:digit:].]+(kB|MB) in [[:digit:]ms]+ \([[:digit:]]+kB/s\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Download complete and in download only mode$
