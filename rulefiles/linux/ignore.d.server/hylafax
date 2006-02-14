@@ -3,7 +3,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: JOB [[:digit:]]+ \((ready|active) dest [[:digit:]\+]+ pri [[:digit:]]+ tts [[:digit:]]+:[[:digit:]]+ killtime [[:digit:]]+:[[:digit:]]+:[[:digit:]]+\): (READY|PROCESS|ACTIVE|PREPARE START)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: LOCKWAIT$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: STATE CHANGE: RUNNING -> LOCKWAIT \(timeout [[:digit:]]+\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: MODEM [.[:space:][:alnum:]/]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ HylaFAX\[[0-9]+\]: Filesystem has SysV-style file creation semantics\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: ANSWER: Can not lock modem device$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: ANSWER: FAX CONNECTION  DEVICE '[^[:space:]]+'$

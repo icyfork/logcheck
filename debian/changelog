@@ -19,6 +19,7 @@ logcheck (1.2.43) unstable; urgency=low
     (Closes: #344716)
   * Patch from Bill Wohler <wohler@newt.com> to sudo vc ignore rules
     (Closes: #343631)
+  * Remove redundant hylafax mdoem string rule
 
   [ Jamie Penman-Smithson ]
   * Add snmpd rule to match new "Connection from UDP" messages. Thanks to
