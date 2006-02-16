@@ -40,7 +40,7 @@ case "$1" in
 		newaliases=`which newaliases`
 		if [ $newaliases ] && [ -x $newaliases ]; then
 		    newaliases || true
-               	fi
+		fi
 	    fi
 	fi													    
     	;;
