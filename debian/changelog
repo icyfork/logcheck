@@ -50,6 +50,7 @@ logcheck (1.2.43) unstable; urgency=low
   * Add the first rules for cron-apt. Thanks to Dave Vehrs <dvehrs@gmail.com>.
     (Closes: #338003)
   * Add logcheck to /etc/aliases during install. (Closes: #353148)
+  * Add the first rules for dspam.
 
  -- maximilian attems <maks@sternwelten.at>  Sat,  7 Jan 2006 21:38:27 +0100
 
