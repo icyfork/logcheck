@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.134 2006/02/16 17:38:45 jlps-guest Exp $
+# $Id: logcheck,v 1.135 2006/02/19 13:52:26 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -53,7 +53,7 @@ GETOPTS="c:dhH:l:L:m:opr:RsS:tTuvw"
 
 # Get the details for the email message
 DATE="$(date +'%Y-%m-%d %H:%M')"
-VERSION="1.2.43"
+VERSION="1.2.43a"
 
 # Set the default report level
 REPORTLEVEL="server"

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.43 2006/02/16 17:37:50 jlps-guest Exp $
+# $Id: logcheck.postinst,v 1.44 2006/02/19 13:52:26 ttroxell Exp $
 
 set -e
 
@@ -81,9 +81,11 @@ case "$1" in
 	# chgrp -R logcheck /etc/logcheck || true
 
 	# This gets executed even if there is no $2.
-	if dpkg --compare-versions "$2" lt "1.2.34"; then
-	  chgrp -R logcheck /etc/logcheck || true
-	fi
+	#if dpkg --compare-versions "$2" lt "1.2.34"; then
+
+	# Unconditionalizing this for now as we have files that are
+	# unreadable upon upgrade.  <ttroxell@debian.org>
+	chgrp -R logcheck /etc/logcheck || true
 
     	# Set Permissions on install or upgrade
 	if [ ! -n "$2" ] || dpkg --compare-versions "$2" lt "1.2.34"; then

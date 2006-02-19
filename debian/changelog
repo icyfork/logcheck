@@ -1,3 +1,11 @@
+logcheck (1.2.43a) unstable; urgency=low
+
+  * Bugfix release.  Unconditionalize chgrp -R of /etc/logceck as our
+    new logfile-unreadability tests revaled some unreadable rule files
+    upon upgrade.
+
+ -- Todd Troxell <ttroxell@debian.org>  Sun, 19 Feb 2006 08:32:20 -0500
+
 logcheck (1.2.43) unstable; urgency=low
 
   [ maximilian attems ]
