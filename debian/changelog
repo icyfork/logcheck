@@ -1,7 +1,15 @@
+logcheck (1.2.44) unstable; urgency=low
+
+  [ Jamie Penman-Smithson ]
+  * Add kernel rules for 'Device not ready' and 'BIOS EDD' messages.
+    (Closes: #353510)
+
+ --
+
 logcheck (1.2.43a) unstable; urgency=low
 
   * Bugfix release.  Unconditionalize chgrp -R of /etc/logceck as our
-    new logfile-unreadability tests revaled some unreadable rule files
+    new logfile-unreadability tests revealed some unreadable rule files
     upon upgrade.
   * This release also includes changes I forgot to include in the previous
     release, listed in the prior changelog entry.
