@@ -240,6 +240,10 @@ manpage.1: manpage.sgml
     <para>/etc/logcheck/logcheck.logfiles is the list of files to monitor.</para>
     <para>/usr/share/doc/logcheck-database/README.logcheck-database.gz for hints on how to write, test and maintain rules.</para>
   </refsect1>
+  <refsect1>
+    <title>EXIT STATUS</title>
+    <para>0 upon success; 1 upon failure</para>
+  </refsect1>
 
   <refsect1>
     <title>SEE ALSO</title>

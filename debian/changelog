@@ -20,6 +20,7 @@ logcheck (1.2.43) unstable; urgency=low
   * Patch from Bill Wohler <wohler@newt.com> to sudo vc ignore rules
     (Closes: #343631)
   * Remove redundant hylafax mdoem string rule
+  * Add exit status section to manpage
 
   [ Jamie Penman-Smithson ]
   * Add snmpd rule to match new "Connection from UDP" messages. Thanks to
@@ -52,7 +53,7 @@ logcheck (1.2.43) unstable; urgency=low
   * Add logcheck to /etc/aliases during install. (Closes: #353148)
   * Add the first rules for dspam.
 
- -- maximilian attems <maks@sternwelten.at>  Sat,  7 Jan 2006 21:38:27 +0100
+ -- Todd Troxell <ttroxell@debian.org>>  Sun, 19 Feb 2006 07:55:46 -0500
 
 logcheck (1.2.42) unstable; urgency=low
 
