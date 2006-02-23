@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.44 2006/02/19 13:52:26 ttroxell Exp $
+# $Id: logcheck.postinst,v 1.45 2006/02/23 22:03:03 maks-guest Exp $
 
 set -e
 
@@ -34,7 +34,7 @@ case "$1" in
 	  adduser --quiet --system --no-create-home --group logcheck ||true
 	  touch /etc/cron.d/logcheck || true
     	elif dpkg --compare-versions "$2" eq 1.2.19; then
-	   usermod -d /var/lib/logcheck logcheck > /dev/null 2>&1 || true
+	   usermod -d /var/lib/logcheck logcheck > /dev/null || true
 	fi
 	# check for logcheck in adm group
 	if ! getent group adm | grep logcheck > /dev/null; then
@@ -99,7 +99,7 @@ case "$1" in
           chmod 2750 /etc/logcheck/violations.ignore.d || true
     	  chmod -R g+rX /etc/logcheck || true
           # just in case
-          chown logcheck /var/lock/logcheck > /dev/null 2>&1 || true
+          chown logcheck /var/lock/logcheck > /dev/null || true
 	fi
 
 	;;

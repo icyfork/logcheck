@@ -4,7 +4,11 @@ logcheck (1.2.44) unstable; urgency=low
   * Add kernel rules for 'Device not ready' and 'BIOS EDD' messages.
     (Closes: #353510)
 
- --
+  [ maximilian attems ]
+  * debian/logcheck.postrm, debian/logcheck.postinst: Don't hide errors
+    in postinst.
+
+ -- maximilian attems <maks@sternwelten.at>  Thu, 23 Feb 2006 22:56:21 +0100
 
 logcheck (1.2.43a) unstable; urgency=low
 
