@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.136 2006/02/19 14:53:42 jlps-guest Exp $
+# $Id: logcheck,v 1.137 2006/03/10 00:27:45 maks-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -168,7 +168,7 @@ Check temporary directory: $TMPDIR
 $(export)
 EOF
 	} | mail -s "Logcheck: $HOSTNAME $DATE exiting due to errors" \
-	    $SENDMAILTO
+	    "$SENDMAILTO"
     
     elif [ $MAILOUT -eq 1 ]; then
           {
@@ -292,7 +292,7 @@ sendreport() {
 	debug "Sent report to STDOUT"
     else
 	debug "Sending report: '$subject' to $SENDMAILTO"
-	cat $TMPDIR/report | mail -s "$subject" $SENDMAILTO
+	cat $TMPDIR/report | mail -s "$subject" "$SENDMAILTO"
     fi
 }
 
