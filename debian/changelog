@@ -18,8 +18,10 @@ logcheck (1.2.44) unstable; urgency=low
   * ignore.d.server/smartd: Ignore smartd temperature messages within
     the normal operating range between 5-50 degrees C - thanks to
     Adam Porter <adam@alphapapa.net> for the patch. (closes: #355085)
+  * it.po: Add Italian debconf translation. Thanks to Luca Monducci
+    <luca.mo@tiscali.it>. (closes: #356737)
 
- -- maximilian attems <maks@sternwelten.at>  Sat, 18 Mar 2006 18:43:07 +0100
+ -- maximilian attems <maks@sternwelten.at>  Sat, 18 Mar 2006 18:49:32 +0100
 
 logcheck (1.2.43a) unstable; urgency=low
 
