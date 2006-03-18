@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.45 2006/02/23 22:03:03 maks-guest Exp $
+# $Id: logcheck.postinst,v 1.46 2006/03/18 17:34:54 maks-guest Exp $
 
 set -e
 
@@ -72,7 +72,7 @@ case "$1" in
 	# Fix permissions for lock on install or upgrade
 	if [ ! -n "$2" ] || dpkg --compare-versions "$2" lt "1.2.39"; then
           chown -R logcheck:logcheck /var/lock/logcheck || true
-	  chmod 775 /var/lock/logcheck || true
+	  chmod 755 /var/lock/logcheck || true
         fi
 
 	# need to be done on install and on upgrade for new rule files
