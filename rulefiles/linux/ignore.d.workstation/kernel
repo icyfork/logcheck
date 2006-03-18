@@ -34,8 +34,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Initializing USB Mass Storage driver\.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: USB Mass Storage support registered\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: WARNING: USB Mass Storage data integrity not assured$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial Driver core [.[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial support registered for [_[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial Driver core( [.[:alnum:]]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial support registered for [_[:alnum:][:space:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/class/usblp.c: usblp[0-9]: removed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/class/usblp.c: usblp[0-9]: USB Bidirectional printer dev [0-9] if [0-9] alt [0-9] proto [0-9] vid [[:alnum:]]+ pid [[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]:[[:space:]]+[_[:alnum:]-]+: (loaded successfully|already loaded)$
