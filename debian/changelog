@@ -13,8 +13,10 @@ logcheck (1.2.44) unstable; urgency=low
     purges lock dir on startup. Thanks Dave Love <fx@gnu.org> for the patch.
     (closes: #357039)
   * debian/logcheck.postinst: 755 is fine as permissions for $LOCKFILEDIR.
+  * ignore.d.server/ntp: Catch negative corrections too - thanks to 
+    Robert Edmonds <edmonds@debian.org>. (closes: #355649)
 
- -- maximilian attems <maks@sternwelten.at>  Sat, 18 Mar 2006 18:27:13 +0100
+ -- maximilian attems <maks@sternwelten.at>  Sat, 18 Mar 2006 18:37:45 +0100
 
 logcheck (1.2.43a) unstable; urgency=low
 
