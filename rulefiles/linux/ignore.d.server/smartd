@@ -1,2 +1,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/hd[[:lower:]], starting scheduled (Long|Short) Self-Test\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/sd[[:lower:]] \[3ware_disk_0[0-9]\], starting scheduled (Short|Long) Self-Test\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[[:alpha:]]{3}, SMART Usage Attribute: 194 Temperature_Celsius changed from ([5-9]|[1-4][0-9]|50) to ([5-9]|[1-4][0-9]|50)$
