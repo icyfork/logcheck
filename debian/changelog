@@ -20,8 +20,10 @@ logcheck (1.2.44) unstable; urgency=low
     Adam Porter <adam@alphapapa.net> for the patch. (closes: #355085)
   * it.po: Add Italian debconf translation. Thanks to Luca Monducci
     <luca.mo@tiscali.it>. (closes: #356737)
+  * ignore.d.server/postfix: Ignore noise buffer length postfix logline -
+    thanks to Karl Chen for the patch. (closes: #356754)
 
- -- maximilian attems <maks@sternwelten.at>  Sat, 18 Mar 2006 18:49:32 +0100
+ -- maximilian attems <maks@sternwelten.at>  Sat, 18 Mar 2006 18:52:57 +0100
 
 logcheck (1.2.43a) unstable; urgency=low
 
