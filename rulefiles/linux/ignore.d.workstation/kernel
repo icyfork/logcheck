@@ -38,6 +38,9 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/usb-serial\.c: USB Serial support registered for [_[:alnum:][:space:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/class/usblp.c: usblp[0-9]: removed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/class/usblp.c: usblp[0-9]: USB Bidirectional printer dev [0-9] if [0-9] alt [0-9] proto [0-9] vid [[:alnum:]]+ pid [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/ipaq.c: USB PocketPC PDA driver v[.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ipaq [-0-9.:]+ PocketPC PDA converter detected$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ipaq [-0-9.:]+ device disconnected$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]:[[:space:]]+[_[:alnum:]-]+: (loaded successfully|already loaded)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usb.agent\[[0-9]+\]: Keeping default configuration with [\./:[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ieee1394: Node changed: [-:0-9]+ -> [-:0-9]+$
@@ -74,8 +77,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+((mouse|ts|ev|joy)dev|evbug): (already loaded|loaded successfully|blacklisted)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: input: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:digit:].-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: pl2303 [-:0-9.]+ PL-2303 converter detected$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [-:0-9]+ PL-2303 converter now attached to ttyUSB[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PL-2303 ttyUSB[0-9]: PL-2303 converter now disconnected from ttyUSB[0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [-:0-9]+ [-[:alnum:][:space:]]+ converter now attached to ttyUSB[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [-[:alnum:]]+ ttyUSB[0-9]: [-[:alnum:][:space:]]+ converter now disconnected from ttyUSB[0-9]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: cdc_acm [-:0-9.]+ ttyACM[0-9]: USB ACM device$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: drivers/usb/serial/pl2303.c: Prolific PL2303 USB to serial adaptor driver v[.0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Bluetooth: HCI USB driver ver [.0-9]+$
@@ -100,3 +103,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sunmouse: Successfully adjusted to [0-9]+ baud\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: btaudio: driver version [0-9.]+ loaded \[digital\+analog\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]: tx interrupt but no status$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: CSLIP: code copyright 1989 Regents of the University of California$
