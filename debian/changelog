@@ -3,6 +3,7 @@ logcheck (1.2.44) UNRELEASED; urgency=low
   [ Jamie Penman-Smithson ]
   * Add kernel rules for 'Device not ready' and 'BIOS EDD' messages.
     (Closes: #353510)
+  * Update postfix rules to match new log format in 2.2.
 
   [ maximilian attems ]
   * debian/logcheck.postrm, debian/logcheck.postinst: Don't hide errors
