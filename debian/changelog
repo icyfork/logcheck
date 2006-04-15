@@ -24,8 +24,9 @@ logcheck (1.2.44) UNRELEASED; urgency=low
   * ignore.d.server/postfix: Ignore noise buffer length postfix logline -
     thanks to Karl Chen for the patch. (closes: #356754)
   * ignore.d.server/kernel: Ignore ECP dmesg logline. (closes: #355092)
+  * ignore.d.server/dhclient: Fix typo, add rule match.
 
- -- maximilian attems <maks@sternwelten.at>  Sat, 18 Mar 2006 19:41:46 +0100
+ -- maximilian attems <maks@sternwelten.at>  Sat, 15 Apr 2006 09:30:29 +0200
 
 logcheck (1.2.43a) unstable; urgency=low
 
