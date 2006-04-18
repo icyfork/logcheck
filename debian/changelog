@@ -25,8 +25,11 @@ logcheck (1.2.44) UNRELEASED; urgency=low
     thanks to Karl Chen for the patch. (closes: #356754)
   * ignore.d.server/kernel: Ignore ECP dmesg logline. (closes: #355092)
   * ignore.d.server/dhclient: Fix typo, add rule match.
+  * ignore.d.server/popa3d: Take into account multiple messages.
+    Thanks Robbert Kouprie <robbert@radium.jvb.tudelft.nl> for the patch.
+    (closes: #363336)
 
- -- maximilian attems <maks@sternwelten.at>  Sat, 15 Apr 2006 09:30:29 +0200
+ -- maximilian attems <maks@sternwelten.at>  Tue, 18 Apr 2006 17:47:50 +0200
 
 logcheck (1.2.43a) unstable; urgency=low
 
