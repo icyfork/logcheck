@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.138 2006/03/18 17:34:50 maks-guest Exp $
+# $Id: logcheck,v 1.139 2006/04/25 01:46:09 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -208,7 +208,7 @@ cleanrules() {
 	    mkdir $cleaned \
 	        || error "Could not make dir $cleaned for cleaned rulefiles."
 	fi
-	for rulefile in $(find $dir); do
+	for rulefile in $(run-parts --list $dir); do
 	    rulefile=$(basename $rulefile)
 	    if [ -f ${dir}/${rulefile} ]; then
 		debug "cleanrules: ${dir}/${rulefile}"

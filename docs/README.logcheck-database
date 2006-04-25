@@ -71,6 +71,10 @@ following kinds:
 
 ./<packagename>
 
+The rule filename must only contain characters compatible with 
+run-parts(8).  As of this writing, this includes alphanumeric characters,
+underscore, and hyphen.
+
 Contains filters relevant to only one Debian package - for example
 if "fooserver" logs suspicious events like this:
 "$DATE $HOSTNAME fooserver[$PID]: $USER is up to no good"
