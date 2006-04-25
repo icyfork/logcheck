@@ -4,6 +4,8 @@ logcheck (1.2.44) UNRELEASED; urgency=low
   * Add kernel rules for 'Device not ready' and 'BIOS EDD' messages.
     (Closes: #353510)
   * Update postfix rules to match new log format in 2.2.
+  * Modify exim4 rules to match messages with multiple recipients.
+    (Closes: #359878)
 
   [ maximilian attems ]
   * debian/logcheck.postrm, debian/logcheck.postinst: Don't hide errors
