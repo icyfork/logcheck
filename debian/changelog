@@ -30,6 +30,7 @@ logcheck (1.2.44) UNRELEASED; urgency=low
   * ignore.d.server/popa3d: Take into account multiple messages.
     Thanks Robbert Kouprie <robbert@radium.jvb.tudelft.nl> for the patch.
     (closes: #363336)
+  * ignore.d.workstation/kernel: Add various kernel rules. (Closes: #353815)
 
   [ Todd Troxell ]
   * Switch back to using run-parts as it created confusion for users with
