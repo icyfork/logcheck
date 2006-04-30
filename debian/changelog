@@ -36,7 +36,7 @@ logcheck (1.2.44) UNRELEASED; urgency=low
   * Switch back to using run-parts as it created confusion for users with
     files like #rulefile# and .rulefile.swp in their tree. (closes: #353793)
 
- -- maximilian attems <maks@sternwelten.at>  Tue, 18 Apr 2006 17:47:50 +0200
+ -- Todd Troxell <ttroxell@debian.org>  Sat, 29 Apr 2006 22:48:350 +0200
 
 logcheck (1.2.43a) unstable; urgency=low
 
