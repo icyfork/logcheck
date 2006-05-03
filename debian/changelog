@@ -3,6 +3,9 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   [ Todd Troxell ]
   * Increment version
 
+  [ Jamie Penman-Smithson ]
+  * ignore.d.server/smartd: Add rule to match normal temperature changes.
+
  -- Todd Troxell <ttroxell@debian.org>  Sat, 29 Apr 2006 22:58:39 -0400
 
 logcheck (1.2.44) UNRELEASED; urgency=low
