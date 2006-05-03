@@ -5,6 +5,8 @@ logcheck (1.2.45) UNRELEASED; urgency=low
 
   [ Jamie Penman-Smithson ]
   * ignore.d.server/smartd: Add rule to match normal temperature changes.
+  * violations.ignore.d/logcheck-sudo: Ignore invocation of sudoedit too.
+    Thanks to Jan Braun <janbraun@gmx.net>. (Closes: #360120)
 
  -- Todd Troxell <ttroxell@debian.org>  Sat, 29 Apr 2006 22:58:39 -0400
 
