@@ -8,7 +8,21 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * violations.ignore.d/logcheck-sudo: Ignore invocation of sudoedit too.
     Thanks to Jan Braun <janbraun@gmx.net>. (Closes: #360120)
 
- -- Todd Troxell <ttroxell@debian.org>  Sat, 29 Apr 2006 22:58:39 -0400
+  [ maximilian attems ]
+  * ignore.d.server/dovecot: Add rule for aborted logins.
+  * ignore.d.workstation/kdm: Ignore kdm-greeter logline.
+  * ignore.d.server/nagios: Improve existing rules, add newer for service
+    flapping and ping logging.
+  * ignore.d.server/sympa: Add impressive ruleset on common ml operations.
+  * ignore.d.server/stunnel: New rules.
+  * ignore.d.server/squid: Add 2 rules for cachemgr.
+  * ignore.d.server/rsync: Add 2 rules for common rsyncd failures.
+  * ignore.d.server/rsnapshot: Add 2 rules for casual rsnapshort warnings.
+  * ignore.d.server/proftpd: Add 3 rules about usual ftpd operations.
+  * ignore.d.server/ntp: Ignore to many recvbufs.
+    Thanks to all the above rules to Peter Palfrader <weasel@debian.org>.
+
+ -- maximilian attems <maks@sternwelten.at>  Wed, 24 May 2006 23:41:30 +0200
 
 logcheck (1.2.44) UNRELEASED; urgency=low
 

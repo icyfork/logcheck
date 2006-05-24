@@ -1,9 +1,10 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Auto-save of retention data completed successfully\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: LOG ROTATION: (DAILY|WEEKLY|MONTHLY)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Nagios 1\.1 starting\.\.\. \(PID=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Nagios 1\.[0-9] starting\.\.\. \(PID=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Caught SIGHUP, restarting\.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;(CRITICAL|WARNING|OK|UNKNOWN);(SOFT|HARD);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;(ACKNOWLEDGEMENT \()?(CRITICAL|WARNING|OK|UNKNOWN)(\))?;.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE FLAPPING ALERT: [._[:alnum:]-]+;[^;]+;STOPPED; Service appears to have stopped flapping \([.[:digit:]]+% change < [.[:digit:]]+% threshold\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE FLAPPING ALERT: [._[:alnum:]-]+;[._[:alnum:]-]+;(STARTED|STOPPED); Service appears to have (started|stopped) flapping \([0-9.]+% change [<>] [.[:digit:]]+% threshold\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST ALERT: [._[:alnum:]-]+;(DOWN|UP|UNREACHABLE);(SOFT|HARD);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;(DOWN|UP|UNREACHABLE);.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: HOST DOWNTIME ALERT: [._[:alnum:]-]+;(STARTED|STOPPED);.*$
@@ -13,5 +14,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: EXTERNAL COMMAND: (ADD_SVC_COMMENT|ACKNOWLEDGE_SVC_PROBLEM);[._[:alnum:]-]+;[[:alnum:]]+;[0-9]+;([[:alnum:]]+;)?.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: EXTERNAL COMMAND: SCHEDULE_HOST_DOWNTIME;[._[:alnum:]-]+;[0-9;]+;[[:alnum:]]+;.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: Warning: The results of service '[ [:alnum:][:punct:]]+' on host '[._[:alnum:]-]+' are stale by [[:digit:]]+ seconds \(threshold=[[:digit:]]+ seconds\).  I'm forcing an immediate check of the service\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios: SERVICE ALERT: [[:alnum:]]+;PING;(WARNING|OK).*$
 # nrpe
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nrpe\[[0-9]+\]: Error: Could not complete SSL handshake. 5$

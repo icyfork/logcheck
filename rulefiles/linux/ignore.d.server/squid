@@ -54,3 +54,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: ctx: exit level  0$
 # squidguard
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: helperOpenServers: Starting [0-9]+ 'squidGuard' processes$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'storedir'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'counters'$
