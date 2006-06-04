@@ -19,6 +19,7 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     (Closes: #369263)
   * ignore.d.server/smartd: Minor change to rule for "Temperature changed"
     messages.
+  * ignore.d.server/xinetd: Add the first rules for xinetd.
 
   [ maximilian attems ]
   * ignore.d.server/dovecot: Add rule for aborted logins.

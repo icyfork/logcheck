@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: START: [[:alpha:]]+ pid=[0-9]+ from=[0-9a-f.:]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: USERID: [[:alpha:]]+ UNIX : [[:alpha:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: EXIT: [[:alpha:]]+ pid=[0-9]+ duration=[0-9]+\(sec\)$
+
