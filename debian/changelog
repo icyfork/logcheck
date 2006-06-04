@@ -28,6 +28,8 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     (Closes: #368318)
   * violations.ignore.d/logcheck-postfix: Add rule to suppress smtpd '554
     Access denied' messages. (Closes: #368313)
+  * ignore.d.server/postfix: Fix rule to really match 'read timeout' messages.
+    (Closes: #367781)
 
   [ maximilian attems ]
   * ignore.d.server/dovecot: Add rule for aborted logins.
