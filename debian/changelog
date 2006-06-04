@@ -7,7 +7,10 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.server/smartd: Add rule to match normal temperature changes.
   * violations.ignore.d/logcheck-sudo: Ignore invocation of sudoedit too.
     Thanks to Jan Braun <janbraun@gmx.net>. (Closes: #360120)
-  * Match new DHCP log format with IPv6 addresses. (Closes: #369603)
+  * ignore.d.server/dhcp: Match new DHCP log format with IPv6 addresses. 
+    (Closes: #369603)
+  * violations.ignore.d/logcheck-ssh: Match new log format in openssh
+    4.3. (Closes: #369497)
 
   [ maximilian attems ]
   * ignore.d.server/dovecot: Add rule for aborted logins.
