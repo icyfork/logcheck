@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# $Id: logcheck,v 1.139 2006/04/25 01:46:09 ttroxell Exp $
+# $Id: logcheck,v 1.140 2006/06/04 22:48:07 jlps-guest Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
@@ -453,24 +453,24 @@ usage() {
     cat<<EOF
 usage: logcheck [-c CFG] [-d] [-h] [-H HOST] [-l LOG] [-L CFG] [-m MAIL] [-o] 
                 [-r DIR] [-s|-p|-w] [-R] [-S DIR] [-t] [-T] [-u]
- -c CFG       = overrule default configuration file
+ -c CFG       = override default configuration file
  -d           = debug mode
- -h           = print this usage guide and exit
- -H HOST      = use this hostname for the mail
- -l LOG       = run logfile through logcheck
- -L CFG       = overrule default logfiles list
- -m MAIL      = email the report to recipient
- -o           = stdout mode, not sending mail
- -p           = runlevel "paranoid"
- -r DIR       = overrule default rules directory
- -R           = adds Reboot: to email subject
- -s           = runlevel "server"
- -S DIR       = overrule default state directory
- -t           = testing mode
+ -h           = print this usage information and exit
+ -H HOST      = use this hostname in the subject of any generated mail
+ -l LOG       = check the specified logfile
+ -L CFG       = override default logfiles list
+ -m MAIL      = send the report to the specified recipient
+ -o           = send the report to stdout, no mail will be sent
+ -p           = use the "paranoid" runlevel
+ -r DIR       = override default rules directory
+ -R           = adds "Reboot:" to email subject
+ -s           = use the "server" runlevel
+ -S DIR       = override default state directory
+ -t           = testing mode, don't update the logfile offsets
  -T           = do not remove the TMPDIR 
  -u           = enable syslog-summary
  -v           = print version
- -w           = runlevel "workstation"
+ -w           = use the "workstation" runlevel
 EOF
 }
 
