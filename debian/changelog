@@ -20,6 +20,8 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.server/smartd: Minor change to rule for "Temperature changed"
     messages.
   * ignore.d.server/xinetd: Add the first rules for xinetd.
+  * ignore.d.server/smartd: Merge two rules for self-test messages into one.
+    (Closes: #368878)
 
   [ maximilian attems ]
   * ignore.d.server/dovecot: Add rule for aborted logins.
