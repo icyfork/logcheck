@@ -35,6 +35,7 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * Minor changes to usage summary and explanation of FQDN option.
     (Closes: #365565)
   * ignore.d.server/dkfilter: Minor fix to rules for dkfilter.out.
+    Match 'wrong sender domain' messages from dkfilter.out.
 
   [ maximilian attems ]
   * ignore.d.server/dovecot: Add rule for aborted logins.
