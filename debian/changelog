@@ -32,6 +32,8 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     (Closes: #367781)
   * ignore.d.server/spamd: Merge in rules from the spamassassin package.
     (Closes: #366364)
+  * Minor changes to usage summary and explanation of FQDN option.
+    (Closes: #365565)
 
   [ maximilian attems ]
   * ignore.d.server/dovecot: Add rule for aborted logins.
