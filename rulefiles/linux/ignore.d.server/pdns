@@ -3,3 +3,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Ignoring packet: question too short from [.0-9]{7,15}, [0-9]+>=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Error sending reply with sendto \(socket=[0-9]\): Invalid argument$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Received packet from recursor backend with id [0-9] which is a duplicate$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns_recursor\[[0-9]+\]: Refreshed [0-9]+ records$
