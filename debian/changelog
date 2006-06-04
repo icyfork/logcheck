@@ -15,6 +15,8 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     Elmar Hoffmann <elho@elho.net> for the patch. (Closes: #369294)
   * ignore.d.server/oidentd: Remove superfluous rule for connections from
     localhost.
+  * ignore.d.server/pdns: Ignore 'Refreshed n records' messages. 
+    (Closes: #369263)
 
   [ maximilian attems ]
   * ignore.d.server/dovecot: Add rule for aborted logins.
