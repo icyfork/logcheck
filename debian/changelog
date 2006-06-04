@@ -11,6 +11,8 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     (Closes: #369603)
   * violations.ignore.d/logcheck-ssh: Match new log format in openssh
     4.3. (Closes: #369497)
+  * ignore.d.server/oidentd: Match IPv6 addresses too. Thanks to 
+    Elmar Hoffmann <elho@elho.net> for the patch. (Closes: #369294)
 
   [ maximilian attems ]
   * ignore.d.server/dovecot: Add rule for aborted logins.
