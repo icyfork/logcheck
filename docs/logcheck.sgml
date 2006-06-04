@@ -130,7 +130,7 @@ manpage.1: manpage.sgml
         <term><option>-H</option>
         </term>
         <listitem>
-          <para>Use this hostname string in the logcheck mail.</para>
+          <para>Use this hostname string in the subject of logcheck mail.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
