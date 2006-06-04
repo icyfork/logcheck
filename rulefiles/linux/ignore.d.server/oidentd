@@ -1,4 +1,3 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ oidentd\[[0-9]+\]: Connection from localhost \(127.0.0.1\):[0-9]{1,5}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ oidentd\[[0-9]+\]: Connection from [._[:alnum:]-]+ \([0-9a-f.:]+\):[0-9]{1,5}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ oidentd\[[0-9]+\]: Connection from [0-9a-f.:]+:[0-9]{1,5}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ oidentd\[[0-9]+\]: \[[0-9a-f.:]+\.[0-9]{1,3}\] Successful lookup \(by forward\): [0-9]+ \([0-9]+\) , [0-9]+ : [_[:alnum:]-]+$
