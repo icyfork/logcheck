@@ -18,7 +18,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK on [.0-9]{7,15} to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPINFORM from [.0-9]{7,15} via [.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPRELEASE of [.0-9]{7,15} from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+ \((not |)found\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]{7,15}( \([:[:alnum:]]+\) via [.[:alnum:]]+)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: pool [0-9a-f]{7} [.0-9]{7,15}/[:[:alnum:]]+ total [:[:alnum:]]+  free [:[:alnum:]]+  backup [:[:alnum:]]+  lts [:[:alnum:]-]+$
 # Dyndns support
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: [Aa]dded (new )?(forward|reverse) map from [._[:alnum:]-]+ to [._[:alnum:]-]+$
