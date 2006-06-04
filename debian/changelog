@@ -26,6 +26,8 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     (Closes: #368652)
   * violations.ignore.d/logcheck-postfix: Update rules for postgrey.
     (Closes: #368318)
+  * violations.ignore.d/logcheck-postfix: Add rule to suppress smtpd '554
+    Access denied' messages. (Closes: #368313)
 
   [ maximilian attems ]
   * ignore.d.server/dovecot: Add rule for aborted logins.
