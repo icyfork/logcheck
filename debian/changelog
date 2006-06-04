@@ -22,6 +22,8 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.server/xinetd: Add the first rules for xinetd.
   * ignore.d.server/smartd: Merge two rules for self-test messages into one.
     (Closes: #368878)
+  * ignore.d.server/saslauthd: Add rule to suppress 'client step' messages.
+    (Closes: #368652)
 
   [ maximilian attems ]
   * ignore.d.server/dovecot: Add rule for aborted logins.
