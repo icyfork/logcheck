@@ -36,6 +36,7 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     (Closes: #365565)
   * ignore.d.server/dkfilter: Minor fix to rules for dkfilter.out.
     Match 'wrong sender domain' messages from dkfilter.out.
+  * ignore.d.workstation/anacron: Move to ignore.d.server. (Closes: #368900)
 
   [ maximilian attems ]
   * ignore.d.server/dovecot: Add rule for aborted logins.
