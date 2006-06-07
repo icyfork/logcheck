@@ -7,15 +7,15 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.server/smartd: Add rule to match normal temperature changes.
   * violations.ignore.d/logcheck-sudo: Ignore invocation of sudoedit too.
     Thanks to Jan Braun <janbraun@gmx.net>. (Closes: #360120)
-  * ignore.d.server/dhcp: Match new DHCP log format with IPv6 addresses. 
+  * ignore.d.server/dhcp: Match new DHCP log format with IPv6 addresses.
     (Closes: #369603)
   * violations.ignore.d/logcheck-ssh: Match new log format in openssh
     4.3. (Closes: #369497)
-  * ignore.d.server/oidentd: Match IPv6 addresses too. Thanks to 
+  * ignore.d.server/oidentd: Match IPv6 addresses too. Thanks to
     Elmar Hoffmann <elho@elho.net> for the patch. (Closes: #369294)
   * ignore.d.server/oidentd: Remove superfluous rule for connections from
     localhost.
-  * ignore.d.server/pdns: Ignore 'Refreshed n records' messages. 
+  * ignore.d.server/pdns: Ignore 'Refreshed n records' messages.
     (Closes: #369263)
   * ignore.d.server/smartd: Minor change to rule for "Temperature changed"
     messages.
@@ -51,8 +51,9 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.server/proftpd: Add 3 rules about usual ftpd operations.
   * ignore.d.server/ntp: Ignore to many recvbufs.
     Thanks to all the above rules to Peter Palfrader <weasel@debian.org>.
+  * ignore.d.workstation/kernel: Add rules to reduce noise on swsusp.
 
- -- maximilian attems <maks@sternwelten.at>  Wed, 24 May 2006 23:41:30 +0200
+ -- maximilian attems <maks@sternwelten.at>  Wed,  7 Jun 2006 20:22:01 +0200
 
 logcheck (1.2.44) UNRELEASED; urgency=low
 
