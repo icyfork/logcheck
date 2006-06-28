@@ -53,7 +53,11 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     Thanks to all the above rules to Peter Palfrader <weasel@debian.org>.
   * ignore.d.workstation/kernel: Add rules to reduce noise on swsusp.
 
- -- maximilian attems <maks@sternwelten.at>  Wed,  7 Jun 2006 20:22:01 +0200
+  [ Gerfried Fuchs ]
+  * debian/control: move debhelper dependency to Build-Depends due to policy
+    requirements.
+
+ -- Gerfried Fuchs <alfie@debian.org>  Wed, 28 Jun 2006 09:18:35 -0500
 
 logcheck (1.2.44) UNRELEASED; urgency=low
 
