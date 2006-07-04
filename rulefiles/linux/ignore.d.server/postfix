@@ -77,3 +77,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: reply length [0-9]+ > buffer length 4096 for name=[^[:space:]]+ type=[A-Z]+$
 # postfix 2.2
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:xdigit:]]+: replace: header [-[:alnum:]]+: .+: [-[:alnum:]]+: .+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: Peer verification: [[:digit:]]+ dNSNames in certificate found, but no one does match [-_.[:alnum:]]+$

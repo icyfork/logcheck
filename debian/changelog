@@ -84,8 +84,10 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     (closes: #376489).
   * ignore.d.server/postfix: extending rule for "too many errors" to cover all
     SMTP commands (closes: #376472).
+  * ignore.d.server/postfix: ignoring dNSNames complaints (closes: #376469,
+    and parts of 369487).
 
- -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 23:21:41 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 23:34:03 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
