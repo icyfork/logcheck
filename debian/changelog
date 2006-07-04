@@ -65,8 +65,9 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * debian/logtail.preinst: Remove old dpkg-divert handling.
   * debian/control: Remove useless versioned depends on debianutils and
     po-debconf. Versions are satisfied on Sarge.
+  * debian/control: Conform to policy 3.7.2 without changes.
 
- -- maximilian attems <maks@sternwelten.at>  Tue,  4 Jul 2006 19:12:04 +0200
+ -- maximilian attems <maks@sternwelten.at>  Tue,  4 Jul 2006 19:17:18 +0200
 
 logcheck (1.2.44) UNRELEASED; urgency=low
 

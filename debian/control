@@ -3,7 +3,7 @@ Section: admin
 Priority: optional
 Maintainer: Debian logcheck Team <logcheck-devel@lists.alioth.debian.org>
 Uploaders: Todd Troxell <ttroxell@debian.org>, Gerfried Fuchs <alfie@debian.org>, Eric Evans <eevans@debian.org>
-Standards-Version: 3.6.2
+Standards-Version: 3.7.2
 Build-Depends: debhelper (>= 4.1.13)
 Build-Depends-Indep: docbook-to-man, debianutils, po-debconf
 
