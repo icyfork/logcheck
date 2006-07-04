@@ -45,7 +45,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+: server dropped connection without sending the initial greeting \(port 25\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:alnum:]]+: to=\<.*\>, relay=[^[:space:]]+\], status=deferred \(host [^[:space:]]+\] said: .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: ([0-9a-f.:]{3,39})+: address not listed for hostname [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: too many errors after RCPT from [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: too many errors after [[:upper:]]{4} from [._[:alnum:]-]+\[[.[:digit:]]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: valid_hostname: invalid character [0-9]+\(decimal\): .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: valid_hostname: misplaced delimiter: .$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: valid_hostname: empty hostname$
