@@ -108,3 +108,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: btaudio: driver version [0-9.]+ loaded \[digital\+analog\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]: tx interrupt but no status$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: CSLIP: code copyright 1989 Regents of the University of California$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: atkbd.c: Keyboard on isa0060/serio0 reports too many keys pressed\.$
