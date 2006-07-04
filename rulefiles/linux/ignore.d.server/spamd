@@ -3,6 +3,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?clean message \([0-9.-]+/[0-9.]+\) for [._[:alnum:]-]+:[0-9]+ in [0-9.]+ seconds, [0-9]+ bytes\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?identified spam \([0-9.-]+/[0-9.]+\) for [._[:alnum:]-]+:[0-9]+ in [0-9.]+ seconds, [0-9]+ bytes\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: child states: [A-Z]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?got connection over [/[:alnum:]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?got connection over [/[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?handled cleanup of child pid [0-9]+ due to SIGCHHLD$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?server successfully spawned child process, pid [0-9]+$
