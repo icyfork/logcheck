@@ -63,10 +63,10 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * debian/logcheck-database.preinst, debian/logcheck-database.postinst:
     Remove checks against old woody symlinkfarm.
   * debian/logtail.preinst: Remove old dpkg-divert handling.
-  * Remove useless versioned depends on debianutils and po-debconf.
-    Versions are satisfied on Sarge.
+  * debian/control: Remove useless versioned depends on debianutils and
+    po-debconf. Versions are satisfied on Sarge.
 
- -- maximilian attems <maks@sternwelten.at>  Tue,  4 Jul 2006 19:05:02 +0200
+ -- maximilian attems <maks@sternwelten.at>  Tue,  4 Jul 2006 19:12:04 +0200
 
 logcheck (1.2.44) UNRELEASED; urgency=low
 
