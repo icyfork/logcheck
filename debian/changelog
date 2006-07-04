@@ -90,7 +90,7 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     noticing that the other rule of the bugs has already been fixed
     (closes: #372541).
   * ignore.d.server/smartd: don't be so selective about temperature filtering
-    (closes: #368878).
+    (closes: #355085).
   * ignore.d.server/squid: folded in some filters for operational messages and
     updated squidGuard spawn message to include all eventHelper messages.
   * ignore.d.server/ssh: ignore messages about missing shadow information
@@ -100,8 +100,9 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.server/ssh: ignore SSH disconnects (closes: #376474).
   * ignore.d.server/dhclient: even 3.0 sleeps when no lease in persistent
     database.
+  * violations.ignore.d/logcheck-pdns: ignore denied AXFR requests.
 
- -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 00:33:15 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 00:43:39 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
