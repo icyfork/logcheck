@@ -33,8 +33,7 @@ confdir="/etc/logcheck"
 
 case "$1" in
     install|upgrade)
-	# The symlink is no longer used, so delete it when
-	# upgrading from a version less than 1.1.9.1
+	# upgrading 
 	if [ -n "$2" ]; then
 	    # The standard files were renamed in 1.2.1 release, so
 	    # we'll move it to the new name.
