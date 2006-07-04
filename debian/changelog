@@ -69,16 +69,15 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   [ martin f. krafft ]
   * debian/control: recommend logcheck-database instead of depending on it
     (closes: #376739).
-  * ignore.d.server/kernel: now ignores failed IPv6 router solicitation
-    messages.
   * ignore.d.workstation/ssh: ignore messages about missing shadow information
     for NOUSER (when there was a NULL user passed in the SSH protocol).
   * ignore.d.workstation/cron: added rules to ignore begin/end of crontab
     edits (closes: #356681).
   * ignore.d.workstation/cron: added crontab-specific lines from
     ignore.d.server/cron (and removed them there).
+  * ignore.d.server/workstation: Added/updated dovecot 1.0 rules.
 
- -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 20:35:21 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 22:54:33 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 

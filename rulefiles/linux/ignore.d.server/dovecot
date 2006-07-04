@@ -2,5 +2,13 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (dovecot: )?(imap|pop3)-login: Disconnected \[(::ffff:)?[:0-9a-f.]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (dovecot: )?(imap|pop3)\([^[:space:]]+\): File isn't in mbox format: [^[:space:]]+$
 # dovecot 1.0
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dovecot: (imap|pop3)-login: Login: user=<[.[:alnum:]@-]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|cram|DIGEST|digest)-(MD5|md5)), rip=(::ffff:)?[:.[:digit:]]+, lip=(::ffff:)?[:0-9a-f.]+(, TLS)?$
-^\w{3} [ :0-9]{11} thetis imap-login: Aborted login \[(::ffff:)?[:0-9a-f.]+]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Login: user=<[-_.@[:alnum:]]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|cram|DIGEST|digest)-(MD5|md5)), rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS)?$ 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (imap|pop3)-login: Aborted login \[(::ffff:)?[:0-9a-f.]+]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Too many invalid commands: rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Logged out$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login: rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: POP3\([-_.@[:alnum:]]+\): Disconnected: Logged out top=[[:digit:]]+/[[:digit:]]+, retr=[[:digit:]]+/[[:digit:]]+, del=[[:digit:]]+/[[:digit:]]+, size=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Disconnected(: Logged out| for inactivity)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-build-param: SSLparameters regeneration completed$
+
