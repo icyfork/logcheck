@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Reconfiguring Squid Cache \(version [.[:alnum:]]+\)\.\.\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Cache dir '[/[:alnum:]]+' size remains unchanged at [[:digit:]]+ KB$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: squidaio_queue_request: WARNING - Queue congestion$

@@ -88,8 +88,15 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     and parts of 369487).
   * ignore.d.[ws]*/ppp: adding/updating rules to ignore informational
     messages.
+  * ignore.d.server/proftpd: adding ANON command to successful login rule and
+    noticing that the other rule of the bugs has already been fixed
+    (closes: #372541).
+  * ignore.d.server/smartd: don't be so selective about temperature filtering
+    (closes: #368878).
+  * ignore.d.server/squid: folded in some filters for operational messages and
+    updated squidGuard spawn message to include all eventHelper messages.
 
- -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 23:45:59 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 00:12:05 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
