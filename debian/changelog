@@ -52,6 +52,15 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.server/ntp: Ignore to many recvbufs.
     Thanks to all the above rules to Peter Palfrader <weasel@debian.org>.
   * ignore.d.workstation/kernel: Add rules to reduce noise on swsusp.
+  * debian/logcheck.postinst: Remove old check against woody version
+    removing /var/cache/logcheck.
+  * debian/logcheck-database.preinst, debian/logcheck-database.postinst:
+    Remove checks against old woody symlinkfarm.
+  * debian/logtail.preinst: Remove old dpkg-divert handling.
+  * debian/control: Remove useless versioned depends on debianutils and
+    po-debconf. Versions are satisfied on Sarge.
+  * debian/control: Conform to policy 3.7.2 without changes.
+  * ignore.d.server/dhcp: Properly escape dots.
 
   [ Gerfried Fuchs ]
   * debian/control: move debhelper dependency to Build-Depends due to policy
@@ -64,19 +73,12 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     messages.
   * ignore.d.workstation/ssh: ignore messages about missing shadow information
     for NOUSER (when there was a NULL user passed in the SSH protocol).
+  * ignore.d.workstation/cron: added rules to ignore begin/end of crontab
+    edits (closes: #356681).
+  * ignore.d.workstation/cron: added crontab-specific lines from
+    ignore.d.server/cron (and removed them there).
 
-  [ maximilian attems ]
-  * debian/logcheck.postinst: Remove old check against woody version
-    removing /var/cache/logcheck.
-  * debian/logcheck-database.preinst, debian/logcheck-database.postinst:
-    Remove checks against old woody symlinkfarm.
-  * debian/logtail.preinst: Remove old dpkg-divert handling.
-  * debian/control: Remove useless versioned depends on debianutils and
-    po-debconf. Versions are satisfied on Sarge.
-  * debian/control: Conform to policy 3.7.2 without changes.
-  * ignore.d.server/dhcp: Properly escape dots.
-
- -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 20:31:20 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 20:35:21 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
