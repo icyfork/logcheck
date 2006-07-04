@@ -80,8 +80,10 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     warnings.
   * ignore.d.server/pdns: added many rules for standard pdns operational
     messages.
+  * ignore.d.server/postfix: ignoring cleanup header_checks REPLACE messages
+    (closes: #376489).
 
- -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 23:12:34 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 23:18:47 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 

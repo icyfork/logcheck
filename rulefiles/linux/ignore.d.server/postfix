@@ -75,3 +75,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/scache\[[0-9]+\]: statistics: max simultaneous domains=[0-9]+ addresses=[0-9]+ connection=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: initializing the server-side TLS engine$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: reply length [0-9]+ > buffer length 4096 for name=[^[:space:]]+ type=[A-Z]+$
+# postfix 2.2
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:xdigit:]]+: replace: header [-[:alnum:]]+: .+: [-[:alnum:]]+: .+$
