@@ -69,8 +69,6 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   [ martin f. krafft ]
   * debian/control: recommend logcheck-database instead of depending on it
     (closes: #376739).
-  * ignore.d.workstation/ssh: ignore messages about missing shadow information
-    for NOUSER (when there was a NULL user passed in the SSH protocol).
   * ignore.d.workstation/cron: added rules to ignore begin/end of crontab
     edits (closes: #356681).
   * ignore.d.workstation/cron: added crontab-specific lines from
@@ -95,8 +93,13 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     (closes: #368878).
   * ignore.d.server/squid: folded in some filters for operational messages and
     updated squidGuard spawn message to include all eventHelper messages.
+  * ignore.d.server/ssh: ignore messages about missing shadow information
+    for NOUSER (when there was a NULL user passed in the SSH protocol).
+  * ignore.d.server/ssh: make sure that we never get bothered by scans again
+    (closes: #376461, #354820).
+  * ignore.d.server/ssh: ignore SSH disconnects (closes: #376474).
 
- -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 00:12:05 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 00:24:34 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
