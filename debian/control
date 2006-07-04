@@ -5,11 +5,11 @@ Maintainer: Debian logcheck Team <logcheck-devel@lists.alioth.debian.org>
 Uploaders: Todd Troxell <ttroxell@debian.org>, Gerfried Fuchs <alfie@debian.org>, Eric Evans <eevans@debian.org>
 Standards-Version: 3.6.2
 Build-Depends: debhelper (>= 4.1.13)
-Build-Depends-Indep: docbook-to-man, debianutils (>= 1.16.9), po-debconf (>= 0.5.0)
+Build-Depends-Indep: docbook-to-man, debianutils, po-debconf
 
 Package: logcheck
 Architecture: all
-Depends: adduser, debconf, grep (>= 2.5.1-1), exim4 | mail-transport-agent, cron (>=3.0pl1-68), sysklogd | system-log-daemon | syslog-ng, mailx, logtail (= ${Source-Version}), logcheck-database (= ${Source-Version}), debianutils (>= 1.16.9), lockfile-progs, ${misc:Depends}
+Depends: adduser, debconf, grep (>= 2.5.1-1), exim4 | mail-transport-agent, cron (>=3.0pl1-68), sysklogd | system-log-daemon | syslog-ng, mailx, logtail (= ${Source-Version}), logcheck-database (= ${Source-Version}), debianutils, lockfile-progs, ${misc:Depends}
 Suggests: syslog-summary
 Description: mails anomalies in the system logfiles to the administrator
  Logcheck was part of the Abacus Project of security tools, but this
