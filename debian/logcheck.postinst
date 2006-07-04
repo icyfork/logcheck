@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.46 2006/03/18 17:34:54 maks-guest Exp $
+# $Id: logcheck.postinst,v 1.47 2006/07/04 16:46:20 maks-guest Exp $
 
 set -e
 
@@ -52,12 +52,6 @@ case "$1" in
 	    fi
 	fi
 
-	# Remove old directory on upgrade
-	if [ -n "$2" ] && dpkg --compare-versions "$2" lt "1.1.1-13.2"; then
-	    if [ -d /var/cache/logcheck ]; then
-		rm -fr /var/cache/logcheck
-	    fi
-	fi
 	# Remove unused old directory on upgrade
 	if [ -n "$2" ] && dpkg --compare-versions "$2" lt "1.2.25"; then
 	    if [ -d /var/state/logcheck ]; then

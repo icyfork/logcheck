@@ -57,7 +57,11 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * debian/control: move debhelper dependency to Build-Depends due to policy
     requirements.
 
- -- Gerfried Fuchs <alfie@debian.org>  Wed, 28 Jun 2006 09:18:35 -0500
+  [ maximilian attems ]
+  * debian/logcheck.postinst: Remove old check against woody version
+    removing /var/cache/logcheck.
+
+ -- maximilian attems <maks@sternwelten.at>  Tue,  4 Jul 2006 18:41:10 +0200
 
 logcheck (1.2.44) UNRELEASED; urgency=low
 
