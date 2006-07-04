@@ -86,8 +86,10 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     SMTP commands (closes: #376472).
   * ignore.d.server/postfix: ignoring dNSNames complaints (closes: #376469,
     and parts of 369487).
+  * ignore.d.[ws]*/ppp: adding/updating rules to ignore informational
+    messages.
 
- -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 23:34:03 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 23:45:59 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
