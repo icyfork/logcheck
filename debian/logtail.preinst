@@ -17,19 +17,7 @@ set -e
 
 case "$1" in
     install|upgrade)
-	if [ -n "$2" ]; then 
-	    if dpkg --compare-versions "$2" lt "1.1.9.4"; then
-		dpkg-divert --package logtail --add --rename \
-		    /usr/share/man/man8/logtail.8.gz
-	    elif dpkg --compare-versions "$2" gt "1.1.9.5"; then
-		if grep /usr/share/man/man8/logtail.8.gz /var/lib/dpkg/diversions > /dev/null; then
-		    rm -f /usr/share/man/man8/logtail.8.gz.distrib
-		    dpkg-divert --package logtail --remove \
-			/usr/share/man/man8/logtail.8.gz
-		fi
-	    fi
-	fi
-	;;
+    ;;
 
     abort-upgrade)
     ;;

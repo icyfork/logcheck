@@ -60,10 +60,11 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   [ maximilian attems ]
   * debian/logcheck.postinst: Remove old check against woody version
     removing /var/cache/logcheck.
-  * logcheck-database.preinst, debian/logcheck-database.postinst: Remove checks
-    against old woody symlinkfarm.
+  * debian/logcheck-database.preinst, debian/logcheck-database.postinst:
+    Remove checks against old woody symlinkfarm.
+  * debian/logtail.preinst: Remove old dpkg-divert handling.
 
- -- maximilian attems <maks@sternwelten.at>  Tue,  4 Jul 2006 18:48:14 +0200
+ -- maximilian attems <maks@sternwelten.at>  Tue,  4 Jul 2006 18:59:20 +0200
 
 logcheck (1.2.44) UNRELEASED; urgency=low
 
