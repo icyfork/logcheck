@@ -101,8 +101,10 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.server/dhclient: even 3.0 sleeps when no lease in persistent
     database.
   * violations.ignore.d/logcheck-pdns: ignore denied AXFR requests.
+  * violations.ignore.d/logcheck-postfix: ignore invalid SASL logins, PAM
+    will complain with more details (closes: #369487).
 
- -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 00:43:39 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 00:46:03 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
