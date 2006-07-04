@@ -62,6 +62,8 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     (closes: #376739).
   * ignore.d.server/kernel: now ignores failed IPv6 router solicitation
     messages.
+  * ignore.d.workstation/ssh: ignore messages about missing shadow information
+    for NOUSER (when there was a NULL user passed in the SSH protocol).
 
   [ maximilian attems ]
   * debian/logcheck.postinst: Remove old check against woody version
@@ -74,7 +76,7 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * debian/control: Conform to policy 3.7.2 without changes.
   * ignore.d.server/dhcp: Properly escape dots.
 
- -- maximilian attems <maks@sternwelten.at>  Tue,  4 Jul 2006 19:22:51 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 20:31:20 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
