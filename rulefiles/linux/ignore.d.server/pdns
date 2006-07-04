@@ -4,3 +4,30 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Error sending reply with sendto \(socket=[0-9]\): Invalid argument$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Received packet from recursor backend with id [0-9] which is a duplicate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns_recursor\[[0-9]+\]: Refreshed [0-9]+ records$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: [[:digit:]]+ domains? for which we are master needs? notifications$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Not authoritative for '[-_.[:alnum:]]+', sending servfail to [.[:digit:]]{7,15}( \(recursion was desired\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: (No|[[:digit:]]+) master domains? needs? notifications$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: [[:digit:]]+ slave domains? needs? checking$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Domain [-_.[:alnum:]]+ is fresh$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: All slave domains are fresh$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received a malformed qdomain from [.[:digit:]]{7,15}, '.+': dropping$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Queued notification of domain '[-_.[:alnum:]]+' to [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for [-_.[:alnum:]]+ from [.[:digit:]]{7,15} which is not a master$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for [-_.[:alnum:]]+ from [.[:digit:]]{7,15}, we are up to date: [[:digit:]]+<=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received valid NOTIFY for [-_.[:alnum:]]+ from master [.[:digit:]]{7,15}: [[:digit:]]+ > [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received unsuccesful notification report for '[-_.[:alnum:]]+' from [.[:digit:]]{7,15}, rcode: [25]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received spurious notify answer for '[-_.[:alnum:]]+' from [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received an unknown opcode [[:digit:]]+ from from [.[:digit:]]{7,15} for( [-_.[:alnum:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for ([-_.[:alnum:]]+)? from [.[:digit:]]{7,15} for which we are not authoritative$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Error resolving SOA or NS for '' at [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Removed from notification list: '[-_.[:alnum:]]+' to [.[:digit:]]{7,15}( \(was acknowledged\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Notification request for domain '[-_.[:alnum:]]+' received from operator$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Recursive query for remote [.[:digit:]]{7,15} with internal id [[:digit:]]+ was not answered by backend within timeout, reusing id$
+# pgsql
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gpgsql Connection succesful$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' initiated by [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' to [.[:digit:]]{7,15} finished$
+# sqlite 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gsqlite: connection to '[-._/[:alnum:]]+' Connection succesful$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR started for '[-_.[:alnum:]]+', transaction started$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR done for '[-_.[:alnum:]]+', zone committed$

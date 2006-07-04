@@ -78,8 +78,10 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.workstation/dovecot: Added/updated dovecot 1.0 rules.
   * ignore.d.workstation/kernel: added rules to ignore martian and ll header
     warnings.
+  * ignore.d.server/pdns: added many rules for standard pdns operational
+    messages.
 
- -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 23:05:12 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 23:12:34 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
