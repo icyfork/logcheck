@@ -1,5 +1,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: lp[0-9]+ out of paper$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: lp[0-9]+: ECP mode$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:alnum:]]+: no IPv6 routers present$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: .*IN=[[:alpha:]]+[0-9]+ OUT= MAC=[[:alnum:]:]+ SRC=[.0-9]{7,15} DST=[.0-9]{7,15} LEN=[0-9]+ TOS=0x[0-9]+ PREC=0x[0-9]+ TTL=[0-9]+ ID=[0-9]+ (DF )?PROTO=UDP SPT=[0-9]+ DPT=[0-9]+ LEN=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: .*IN=[[:alpha:]]+[0-9]+ OUT= MAC=[[:alnum:]:]+ SRC=[[:alnum:]:]+ DST=[[:alnum:]:]+ LEN=[0-9]+ TC=0 HOPLIMIT=255 FLOWLBL=0 PROTO=UDP SPT=5353 DPT=5353 LEN=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: .*IN=[[:alpha:]]+[0-9]+ OUT= MAC=[[:alnum:]:]+ SRC=[[:alnum:]:]+ DST=[[:alnum:]:]+ LEN=[0-9]+ TC=0 HOPLIMIT=255 FLOWLBL=0 PROTO=UDP SPT=49342 DPT=5353 LEN=[0-9]+$
