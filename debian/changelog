@@ -57,6 +57,12 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * debian/control: move debhelper dependency to Build-Depends due to policy
     requirements.
 
+  [ martin f. krafft ]
+  * debian/control: recommend logcheck-database instead of depending on it
+    (closes: #376739).
+  * ignore.d.server/kernel: now ignores failed IPv6 router solicitation
+    messages.
+
   [ maximilian attems ]
   * debian/logcheck.postinst: Remove old check against woody version
     removing /var/cache/logcheck.
