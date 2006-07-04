@@ -67,21 +67,6 @@ secondrmfiles="violations.ignore.d/innd"
 
 case "$1" in
     configure)
-	# The symlink is no longer used, so delete it when
-	# upgrading from a version less than 1.1.9.0
-	if dpkg --compare-versions "$2" lt "1.1.9.0"; then
-	    if [ -h $confdir/ignore.d ]; then
-		echo -n "Removing $confdir/ignore.d symlink: "
-		rm -f $confdir/ignore.d
-		echo "Done"
-	    fi
-	    if [ -h $confdir/logcheck.ignore ]; then
-		echo -n "Removing $confdir/logcheck.ignore symlink: "
-		rm -f $confdir/logcheck.ignore
-		echo "Done"		
-	    fi
-	fi
-
 	if dpkg --compare-versions "$2" lt "1.2.6"; then
 	    db_get logcheck-database/conffile-cleanup
 	    if [ "$RET" = true ]; then

@@ -36,48 +36,6 @@ case "$1" in
 	# The symlink is no longer used, so delete it when
 	# upgrading from a version less than 1.1.9.1
 	if [ -n "$2" ]; then
-	    if dpkg --compare-versions "$2" lt "1.1.9.1"; then
-		echo -n "Removing old symlinks from /etc/logcheck/ignore.d.workstation: "
-		for file in $workstation; do
-		    if [ -h $confdir/ignore.d.workstation/$file ]; then
-			rm -f $confdir/ignore.d.workstation/$file
-		    fi
-		done
-		echo "Done"
-		echo -n "Removing old symlinks from /etc/logcheck/ignore.d.server: "
-		for file in $server; do
-		    if [ -h $confdir/ignore.d.server/$file ]; then
-			rm -f $confdir/ignore.d.server/$file
-		    fi
-		done
-		echo "Done"
-		echo -n "Moving default rulefiles to new location: "
-		if [ -f $confdir/logcheck.cracking ]; then
-		    mv $confdir/logcheck.cracking $confdir/cracking.d/standard
-		fi
-		if [ -f $confdir/logcheck.ignore.paranoid ]; then
-		    mv $confdir/logcheck.ignore.paranoid \
-			$confdir/ignore.d.paranoid/standard
-		fi
-		if [ -f $confdir/logcheck.ignore.server ]; then
-		    mv $confdir/logcheck.ignore.server \
-			$confdir/ignore.d.server/standard
-		fi
-		if [ -f $confdir/logcheck.ignore.workstation ]; then
-		    mv $confdir/logcheck.ignore.workstation \
-			$confdir/ignore.d.workstation/standard
-		fi
-		if [ -f $confdir/logcheck.violations ]; then
-		    mv $confdir/logcheck.violations \
-			$confdir/violations.d/standard
-		fi
-		if [ -f $confdir/logcheck.violations.ignore ]; then
-		    mv $confdir/logcheck.violations.ignore \
-			$confdir/violations.ignore.d/standard
-		fi
-		echo "Done"
-	    fi
-
 	    # The standard files were renamed in 1.2.1 release, so
 	    # we'll move it to the new name.
 	    if dpkg --compare-versions "$2" lt "1.2.1"; then
