@@ -75,9 +75,11 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     edits (closes: #356681).
   * ignore.d.workstation/cron: added crontab-specific lines from
     ignore.d.server/cron (and removed them there).
-  * ignore.d.server/workstation: Added/updated dovecot 1.0 rules.
+  * ignore.d.workstation/dovecot: Added/updated dovecot 1.0 rules.
+  * ignore.d.workstation/kernel: added rules to ignore martian and ll header
+    warnings.
 
- -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 22:54:33 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue,  4 Jul 2006 23:05:12 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 

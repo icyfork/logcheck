@@ -103,6 +103,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: nfs warning: mount version (older|newer) than kernel$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Device not ready. Make sure there is a disc in the drive.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: BIOS EDD facility v[.0-9]+ [0-9]+-\w{3}-[0-9]+, [0-9]+ devices found$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: ll header: [:[:xdigit:]]+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: martian source 255\.255\.255\.255 from [.[:digit:]]{7,15} on dev [[:alnum:]]+$
 # for sun machines
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sunmouse: Successfully adjusted to [0-9]+ baud\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: btaudio: driver version [0-9.]+ loaded \[digital\+analog\]$
