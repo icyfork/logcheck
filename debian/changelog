@@ -75,8 +75,8 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.server/dhclient: even 3.0 sleeps when no lease in persistent
     database.
   * ignore.d.workstation/dovecot: Added/updated dovecot 1.0 rules.
-  * ignore.d.workstation/kernel: added rules to ignore martian and ll header
-    warnings.
+  * ignore.d.server/kernel: added rules to ignore martian, ll header, and
+    icmpv6_send warnings.
   * ignore.d.server/pdns: added many rules for standard pdns operational
     messages.
   * violations.ignore.d/logcheck-pdns: ignore denied AXFR requests.
@@ -116,7 +116,7 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * debian/control: recommend logcheck-database instead of depending on it
     (closes: #376739).
 
- -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 23:31:58 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 23:42:57 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
