@@ -105,8 +105,10 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     will complain with more details (closes: #369487).
   * src/logcheck: if called as root, now echoes the options back to the user
     for easier cut-n-paste.
+  * ignore.d.server/postfix: ignoring bounce message about sender non-delivery
+    notification.
 
- -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 01:59:34 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 18:25:45 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
