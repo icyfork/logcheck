@@ -100,6 +100,9 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     attempts.
   * ignore.d.server/smartd: don't be so selective about temperature filtering
     (closes: #355085).
+  * ignore.d.server/smartd, violations.ignore.d/logcheck-smartd: ignore usage
+    and prefailure attribute changes given that smartd will send separate mail
+    when things go bad anyway.
   * ignore.d.server/spamd: fixing several of the spamd rules wrt email
     addresses, and added new rules for newer spamd versions.
   * ignore.d.server/squid: folded in some filters for operational messages and
@@ -116,7 +119,7 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * debian/control: recommend logcheck-database instead of depending on it
     (closes: #376739).
 
- -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 23:42:57 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 23:57:26 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 

@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[hs]d[[:lower:]]( \[3ware_disk_0[[:digit:]]\])?, SMART Prefailure Attribute: [[:digit:]]+ [_[:alnum:]]+ changed from [[:digit:]]+ to [[:digit:]]+$
