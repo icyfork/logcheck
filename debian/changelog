@@ -90,6 +90,8 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     notification.
   * violations.ignore.d/logcheck-postfix: ignore invalid SASL logins, PAM
     will complain with more details (closes: #369487).
+  * violations.ignore.d/logcheck-postfix: ignore HELO access check rejections
+    (closes: #376968).
   * ignore.d.[ws]*/ppp: adding/updating rules to ignore informational
     messages.
   * ignore.d.server/proftpd: adding ANON command to successful login rule and
@@ -119,7 +121,7 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * debian/control: recommend logcheck-database instead of depending on it
     (closes: #376739).
 
- -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 23:57:26 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu,  6 Jul 2006 01:55:47 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
