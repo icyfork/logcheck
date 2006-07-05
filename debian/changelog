@@ -107,8 +107,10 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     for easier cut-n-paste.
   * ignore.d.server/postfix: ignoring bounce message about sender non-delivery
     notification.
+  * ignore.d.server/spamd: fixing several of the spamd rules wrt email
+    addresses, and added new rules for newer spamd versions.
 
- -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 18:25:45 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 18:26:59 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
