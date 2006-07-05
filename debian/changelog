@@ -87,8 +87,9 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.[ws]*/ppp: adding/updating rules to ignore informational
     messages.
   * ignore.d.server/proftpd: adding ANON command to successful login rule and
-    noticing that the other rule of the bugs has already been fixed
+    noticing that the other rule of the bug has already been fixed
     (closes: #372541).
+  * ignore.d.server/proftpd: ignoring logins with unknown users.
   * ignore.d.server/smartd: don't be so selective about temperature filtering
     (closes: #355085).
   * ignore.d.server/squid: folded in some filters for operational messages and
@@ -112,7 +113,7 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * ignore.d.*/cron-apt: moved cron-apt rules from workstation to server.
   * ignore.d.*/cron: moved cron rules from workstation to server.
 
- -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 20:22:27 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 22:44:21 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
