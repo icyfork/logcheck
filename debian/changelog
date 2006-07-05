@@ -109,9 +109,10 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     notification.
   * ignore.d.server/spamd: fixing several of the spamd rules wrt email
     addresses, and added new rules for newer spamd versions.
-  * ignore.d.*/cron-apt: moved cron-apt from workstation to server.
+  * ignore.d.*/cron-apt: moved cron-apt rules from workstation to server.
+  * ignore.d.*/cron: moved cron rules from workstation to server.
 
- -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 20:20:03 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed,  5 Jul 2006 20:22:27 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
