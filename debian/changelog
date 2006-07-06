@@ -1,4 +1,4 @@
-logcheck (1.2.45) UNRELEASED; urgency=low
+logcheck (1.2.45) unstable; urgency=low
 
   [ Todd Troxell ]
   * Increment version
@@ -123,7 +123,7 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * debian/control: recommend logcheck-database instead of depending on it
     (closes: #376739).
 
- -- martin f. krafft <madduck@debian.org>  Thu,  6 Jul 2006 10:05:10 +0200
+ -- Todd Troxell <ttroxell@debian.org>  Thu,  6 Jul 2006 06:13:19 -0500
 
 logcheck (1.2.44) unstable; urgency=low
 
