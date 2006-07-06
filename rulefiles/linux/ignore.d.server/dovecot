@@ -11,4 +11,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: POP3\([-_.@[:alnum:]]+\): Disconnected: Logged out top=[[:digit:]]+/[[:digit:]]+, retr=[[:digit:]]+/[[:digit:]]+, del=[[:digit:]]+/[[:digit:]]+, size=[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Disconnected(: Logged out| for inactivity)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-build-param: SSLparameters regeneration completed$
-
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\(-_.[[:alnum:]]+\): (pg|my)sql: Connected to [-_.[:alnum:]]+$
