@@ -7,10 +7,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: FD [0-9]+ Closing HTTP connection$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: FD [0-9]+ Closing ICP connection$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Closing unlinkd pipe on FD [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Squid Cache \(Version [0-9.]+(STABLE)*[0-9]+\): Exiting normally\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Squid Parent: child process [0-9]+ exited with status 0$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Squid Parent: child process [0-9]+ started$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Starting Squid Cache version [0-9.]+(STABLE)*[0-9]+ for [[:alnum:]-]+\.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Process ID [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: With [0-9]+ file descriptors available$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: DNS Socket created at [0-9.]+, port [0-9]+, FD [0-9]+$
@@ -53,6 +51,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: WARNING: found whitespace in HTTP header name \{Cache Control: no-cache\}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: ctx: exit level  0$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: helperOpenServers: Starting [[:digit:]]+ '[-._[:alnum:]]+' processes$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Cache dir '[/[:alnum:]]+' size remains unchanged at [[:digit:]]+ KB$
 # squidguard
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'storedir'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'counters'$

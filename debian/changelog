@@ -107,7 +107,9 @@ logcheck (1.2.45) UNRELEASED; urgency=low
     when things go bad anyway.
   * ignore.d.server/spamd: fixing several of the spamd rules wrt email
     addresses, and added new rules for newer spamd versions.
-  * ignore.d.server/squid: folded in some filters for operational messages and
+  * ignore.d.[ws]*/squid: moved messages about server stop/start/reconfigure
+    to workstation, and those about unchanged cache dir sizes to server.
+  * ignore.d.*/squid: folded in some filters for operational messages and
     updated squidGuard spawn message to include all eventHelper messages.
   * ignore.d.server/ssh: ignore messages about missing shadow information
     for NOUSER (when there was a NULL user passed in the SSH protocol).
@@ -121,7 +123,7 @@ logcheck (1.2.45) UNRELEASED; urgency=low
   * debian/control: recommend logcheck-database instead of depending on it
     (closes: #376739).
 
- -- martin f. krafft <madduck@debian.org>  Thu,  6 Jul 2006 01:55:47 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu,  6 Jul 2006 10:00:16 +0200
 
 logcheck (1.2.44) unstable; urgency=low
 
