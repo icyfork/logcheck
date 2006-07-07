@@ -1,3 +1,10 @@
+logcheck (1.2.46) UNRELEASED; urgency=low
+
+  * ignore.d.server/ssh: fixed regression related to "Did not receive
+    identification string" warning. Sorry about that (closes: #377276).
+
+ -- martin f. krafft <madduck@debian.org>  Fri,  7 Jul 2006 21:36:08 +0200
+
 logcheck (1.2.45) unstable; urgency=low
 
   [ Todd Troxell ]
