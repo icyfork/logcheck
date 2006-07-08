@@ -1,9 +1,10 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (imap|pop3)-login: Login: [.[:alnum:]@-]+ \[(::ffff:)?[:0-9a-f.]+\]$
+# pre 1.0
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dovecot: (imap|pop3)-login: Login: [.[:alnum:]@-]+ \[(::ffff:)?[:0-9a-f.]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (dovecot: )?(imap|pop3)-login: Disconnected \[(::ffff:)?[:0-9a-f.]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (dovecot: )?(imap|pop3)\([^[:space:]]+\): File isn't in mbox format: [^[:space:]]+$
-# dovecot 1.0
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Login: user=<[-_.@[:alnum:]]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS)?$ 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (imap|pop3)-login: Aborted login \[(::ffff:)?[:0-9a-f.]+]$
+# 1.0 and beyond
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Login: user=<[-_.@[:alnum:]]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login \[(::ffff:)?[:0-9a-f.]+]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Too many invalid commands: rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Logged out$
