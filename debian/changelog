@@ -1657,7 +1657,7 @@ logcheck (1.1.1-10) unstable; urgency=medium
     not generated from diffs to logcheck.ignore.paranoid anymore.
     Closes: #86726
 
- -- Rene Mayrhofer <rmayr@debian.org>  S1t, 25 Aug 2001 13:17:45 +0200
+ -- Rene Mayrhofer <rmayr@debian.org>  Sat, 25 Aug 2001 13:17:45 +0200
 
 logcheck (1.1.1-9) unstable; urgency=low
 

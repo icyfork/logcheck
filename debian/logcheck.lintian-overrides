@@ -1,0 +1,2 @@
+logcheck binary: non-standard-file-perm etc/logcheck/logcheck.logfiles 0640 != 0644
+logcheck binary: non-standard-file-perm etc/logcheck/logcheck.conf 0640 != 0644
