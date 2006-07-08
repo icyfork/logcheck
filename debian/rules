@@ -21,9 +21,9 @@ build-stamp:
 clean:
 	dh_testdir
 	dh_testroot
-	-rm -f build-stamp install-stamp
+	rm -f build-stamp install-stamp
 
-	-rm -f docs/logcheck.8
+	rm -f docs/logcheck.8
 	-$(MAKE) clean DESTDIR=$(CURDIR)/debian/tmp
 
 
@@ -31,15 +31,20 @@ clean:
 	dh_clean
 
 install: install-stamp
+install-stamp: DESTDIR=$(CURDIR)/debian/tmp
 install-stamp: build-stamp
 	dh_testdir
 	dh_testroot
 	dh_clean -k
 	dh_installdirs
 
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
-	touch install-stamp
+	$(MAKE) install DESTDIR=$(DESTDIR)
 
+	mkdir -p $(DESTDIR)/usr/share/lintian/overrides
+	install -m644 debian/logcheck-database.lintian-overrides \
+		$(DESTDIR)/usr/share/lintian/overrides/logcheck-database
+
+	touch install-stamp
 
 # Build architecture-independent files here.
 binary-indep: build install
