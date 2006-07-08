@@ -5,8 +5,10 @@ logcheck (1.2.46) UNRELEASED; urgency=low
   * ignore.d.server/ssh, violations.ignore.d/logcheck-ssh: extended the regexp
     matching usernames to anything non-whitespace in filters about nonexistent
     users -- today someone tried to log in as '!@#$%^&*()_+' here!
+  * ignore.d.server/pdns: ignoring warnings about overly large packets, or
+    packates otherwise of the wrong size.
 
- -- martin f. krafft <madduck@debian.org>  Sat,  8 Jul 2006 11:24:43 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat,  8 Jul 2006 12:36:01 +0200
 
 logcheck (1.2.45) unstable; urgency=low
 

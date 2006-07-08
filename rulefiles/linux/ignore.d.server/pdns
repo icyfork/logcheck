@@ -1,5 +1,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: On retrieving question of packet from [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}, encountered error: Label claims to be longer than packet$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Ignoring packet: too short from [.0-9]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Ignoring packet: question too short from [.0-9]{7,15}, offset [[:digit:]]+>=[[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Ignoring packet: question too short from [.0-9]{7,15}, [0-9]+>=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Error sending reply with sendto \(socket=[0-9]\): Invalid argument$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Received packet from recursor backend with id [0-9] which is a duplicate$
@@ -23,6 +24,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Removed from notification list: '[-_.[:alnum:]]+' to [.[:digit:]]{7,15}( \(was acknowledged\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Notification request for domain '[-_.[:alnum:]]+' received from operator$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Recursive query for remote [.[:digit:]]{7,15} with internal id [[:digit:]]+ was not answered by backend within timeout, reusing id$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received an overly large question from [.[:digit:]]{7,15}, dropping$
 # pgsql
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gpgsql Connection succesful$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' initiated by [.[:digit:]]{7,15}$
