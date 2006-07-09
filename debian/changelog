@@ -1,8 +1,9 @@
 logcheck (1.2.47) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Added further lintian and linda overrides (non-standard-dir-perm).
 
- -- martin f. krafft <madduck@debian.org>  Sun,  9 Jul 2006 15:06:28 +0200
+ -- martin f. krafft <madduck@debian.org>  Sun,  9 Jul 2006 15:33:02 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 

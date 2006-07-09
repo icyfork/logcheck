@@ -143,3 +143,10 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/sysklogd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/telnetd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/tripwire 0640 != 0644
+logcheck-database binary: non-standard-dir-perm etc/logcheck/ 0700 != 0755
+logcheck-database binary: non-standard-dir-perm etc/logcheck/cracking.d/ 0700 != 0755
+logcheck-database binary: non-standard-dir-perm etc/logcheck/violations.d/ 0700 != 0755
+logcheck-database binary: non-standard-dir-perm etc/logcheck/violations.ignore.d/ 0700 != 0755
+logcheck-database binary: non-standard-dir-perm etc/logcheck/ignore.d.workstation/ 0700 != 0755
+logcheck-database binary: non-standard-dir-perm etc/logcheck/ignore.d.server/ 0700 != 0755
+logcheck-database binary: non-standard-dir-perm etc/logcheck/ignore.d.paranoid/ 0700 != 0755
