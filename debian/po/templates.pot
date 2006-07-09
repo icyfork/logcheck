@@ -1,22 +1,14 @@
-#
-#    Translators, if you are not familiar with the PO format, gettext
-#    documentation is worth reading, especially sections dedicated to
-#    this format, e.g. by running:
-#         info -n '(gettext)PO Files'
-#         info -n '(gettext)Header Entry'
-#
-#    Some information specific to po-debconf are available at
-#            /usr/share/doc/po-debconf/README-trans
-#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
-#
-#    Developers do not need to manually edit POT or PO files.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-15 14:36+0200\n"
+"Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
+"POT-Creation-Date: 2006-07-09 15:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +18,13 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:3
-msgid "Changing the report level or email address."
+#: ../logcheck.templates:1001
+msgid "Changing the report level or email address"
 msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:3
+#: ../logcheck.templates:1002
 msgid ""
 "To change from the default report level (server) or the default email "
 "address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
@@ -40,13 +32,21 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:11
+#. Type: note
+#. Description
+#: ../logcheck.templates:1003 ../logcheck.templates:2005
+msgid "Please see /usr/share/doc/logcheck for more details."
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../logcheck.templates:2001
 msgid "Changes to ignore.d directory behaviour"
 msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:11
+#: ../logcheck.templates:2002
 msgid ""
 "Now the ignore.d directories function in an additive manner (i.e. higher "
 "levels also include the lower levels):"
@@ -54,7 +54,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:11
+#: ../logcheck.templates:2003
 msgid ""
 " - workstation  = workstation + server + paranoid\n"
 " - server       = server + paranoid\n"
@@ -63,7 +63,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:11
+#: ../logcheck.templates:2004
 msgid ""
 "Also run-parts(8) now controls which rulefiles are included from the .d "
 "directories."
@@ -71,65 +71,13 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:11 ../logcheck-database.templates:3
-msgid "Please see /usr/share/doc/logcheck for more details."
-msgstr ""
-
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:3
-msgid "Local modifications should be put into .d directories"
-msgstr ""
-
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:3
-msgid ""
-"From version 1.1.1-8, logcheck supports run-parts controled rule directories:"
-msgstr ""
-
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:3
-msgid ""
-" - /etc/logcheck/cracking.d\n"
-" - /etc/logcheck/cracking.ignore.d [for local use only]\n"
-" - /etc/logcheck/violations.d\n"
-" - /etc/logcheck/violations.ignore.d\n"
-" - /etc/logcheck/ignore.d.workstation\n"
-" - /etc/logcheck/ignore.d.server\n"
-" - /etc/logcheck/ignore.d.paranoid"
-msgstr ""
-
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:3
-msgid ""
-"The ignore.d.{workstation,server,paranoid} directory to be used is set by "
-"the REPORTLEVEL option in the file \"/etc/logcheck/logcheck.conf\"."
-msgstr ""
-
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:3
-msgid ""
-"These directories may contain files prefixed with \"logcheck-\" (containing "
-"generic alert/override patterns), named \"(packagename)\" (containing "
-"patterns specific to that one package), or named \"local\" respectively "
-"prefixed with \"local-\" (created by the local administrator to contain "
-"patterns tailored for a particular site).  Logcheck will then use rules "
-"collected from all the files found in the appropriate directories."
-msgstr ""
-
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:29
+#: ../logcheck-database.templates:1001
 msgid "Logcheck standard rulefiles renamed"
 msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck-database.templates:29
+#: ../logcheck-database.templates:1002
 msgid ""
 "As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
 "\"logcheck\" and the \"standard.postfix\" file has been renamed to "
@@ -138,13 +86,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:37
-msgid "Delete obsolete conffiles"
+#: ../logcheck-database.templates:2001
+msgid "Would you like to delete obsolete conffiles?"
 msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:37
+#: ../logcheck-database.templates:2002
 msgid ""
 "The rulefiles in logcheck-database have just been through an audit to remove "
 "duplicate entries and to make them more specific - this also reduces false "
@@ -153,8 +101,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:37
+#: ../logcheck-database.templates:2003
 msgid ""
-"As a result of this a number of rulefiles have been removed from the "
-"package.  Would you like these to be deleted?"
+"As a result of this a number of rulefiles have been removed from the package."
 msgstr ""
