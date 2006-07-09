@@ -1,3 +1,9 @@
+logcheck (1.2.47) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- martin f. krafft <madduck@debian.org>  Sun,  9 Jul 2006 15:06:28 +0200
+
 logcheck (1.2.46) unstable; urgency=low
 
   * ignore.d.server/ssh: fixed regression related to "Did not receive
