@@ -1,6 +1,14 @@
 logcheck for Debian
 -------------------
 
+Resources
+~~~~~~~~~
+Homepage: http://logcheck.alioth.debian.org/
+Wiki: http://wiki.logcheck.org/
+Lists: http://logcheck.alioth.debian.org/lists.html
+
+Configuration
+~~~~~~~~~~~~~
 Logcheck configuration is done in the file /etc/logcheck/logcheck.conf.
 To change the email address to which reports are sent, change the line:
 	SENDMAILTO="root"
