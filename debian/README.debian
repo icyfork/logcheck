@@ -1,29 +1,48 @@
 logcheck for Debian
 -------------------
 
-Configuration settings for logcheck are set in the file
-/etc/logcheck/logcheck.conf. To change the email address you should
-change the line:
+Logcheck configuration is done in the file /etc/logcheck/logcheck.conf.
+To change the email address to which reports are sent, change the line:
 	SENDMAILTO="root"
 to:
 	SENDMAILTO="emailaddress@some.domain.tld"
 
-The reportlevel (that is, the degree of filtering applied to "routine"
-system events) can be reduced from the default by changing the line:
+The reportlevel (that is, the degree of filtering applied to "routine" system
+events) can be reduced from the default by changing the line:
 	REPORTLEVEL="server"
 to:
 	REPORTLEVEL="workstation"
-or:
+or increased:
 	REPORTLEVEL="paranoid"
+
+Note that "server" includes "paranoid" and "workstation" includes "server"
+(which includes "paranoid").
 
 There are a number of other options which are documented in
 /etc/logcheck/logcheck.conf itself.
 
-By default logcheck is set to run once an hour. This can be changed by
-editing /etc/cron.d/logcheck.
+By default logcheck is set to run once an hour. This can be changed by editing
+/etc/cron.d/logcheck.
 
-Please note that the permissions of rulefiles installed with dh_installlogcheck after installing logcheck will differ from those included in logcheck-database.
-This is because dh_installlogcheck cannot yet assume that the logcheck user
-exists.  This may be changed in a future version of Debian.
+Please note that the permissions of rulefiles installed with
+dh_installlogcheck after installing logcheck will differ from those included
+in logcheck-database. This is because dh_installlogcheck cannot yet assume
+that the logcheck user exists.  This may be changed in a future version of
+Debian.
 
-The documentation is being updated as time allows.
+Getting the source/contributing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Debian logcheck package is now maintained in Subversion:
+  anonymous:    svn://svn.debian.org/svn/logcheck
+  write access: svn+ssh://aliothuser@svn.debian.org/svn/logcheck
+  web svn:      http://svn.debian.org/wsvn/logcheck
+
+Instructions how to use SVN and how to build packages from the source:
+  http://lists.alioth.debian.org/pipermail/logcheck-devel/2006-July/002743.html
+  http://lists.alioth.debian.org/pipermail/logcheck-devel/2006-July/002746.html
+
+You should be able to import this into an SVK checkout even without write
+access, so submitting patches has just become even easier. Submissions for
+documentation welcome, watch this space.
+
+ -- martin f. krafft <madduck@debian.org>  Sun, 09 Jul 2006 14:06:04 +0200

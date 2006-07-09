@@ -10,8 +10,10 @@ logcheck (1.2.46) UNRELEASED; urgency=low
   * ignore.d.server/cron-apt: fixing rules wrt sarge and cleaning up.
   * ignore.d.server/dovecot: fixing filter for dovecot 1.0 logins by removing
     the space at the end of the line. Gargh!
+  * We're now maintaining logcheck in SVN. See README.Debian file (which also
+    received other minor updates).
 
- -- martin f. krafft <madduck@debian.org>  Sat,  8 Jul 2006 13:43:43 +0200
+ -- martin f. krafft <madduck@debian.org>  Sun,  9 Jul 2006 14:08:37 +0200
 
 logcheck (1.2.45) unstable; urgency=low
 
