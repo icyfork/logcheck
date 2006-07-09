@@ -2,8 +2,10 @@ logcheck (1.2.47) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * Added further lintian and linda overrides (non-standard-dir-perm).
+  * ignore.d.server/pdns: minor corrections to better ignore notifies --
+    I think pdns 1.9.20 introduced a new format.
 
- -- martin f. krafft <madduck@debian.org>  Sun,  9 Jul 2006 15:33:02 +0200
+ -- martin f. krafft <madduck@debian.org>  Sun,  9 Jul 2006 18:06:32 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 

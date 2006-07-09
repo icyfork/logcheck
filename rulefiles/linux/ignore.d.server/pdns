@@ -14,8 +14,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received a malformed qdomain from [.[:digit:]]{7,15}, '.+': dropping$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Queued notification of domain '[-_.[:alnum:]]+' to [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for [-_.[:alnum:]]+ from [.[:digit:]]{7,15} which is not a master$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for [-_.[:alnum:]]+ from [.[:digit:]]{7,15}, we are up to date: [[:digit:]]+<=[[:digit:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received valid NOTIFY for [-_.[:alnum:]]+ from master [.[:digit:]]{7,15}: [[:digit:]]+ > [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for [-_.[:alnum:]]+ from master [.[:digit:]]{7,15}, we are up to date: [[:digit:]]+<=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received valid NOTIFY for [-_.[:alnum:]]+ (\(id=[[:digit:]]+\) )?from master [.[:digit:]]{7,15}: [[:digit:]]+ > [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received unsuccesful notification report for '[-_.[:alnum:]]+' from [.[:digit:]]{7,15}, rcode: [25]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received spurious notify answer for '[-_.[:alnum:]]+' from [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received an unknown opcode [[:digit:]]+ from [.[:digit:]]{7,15} for( [-_.[:alnum:]]+)?$
@@ -30,6 +30,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' initiated by [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' to [.[:digit:]]{7,15} finished$
 # sqlite 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gsqlite: connection to '[-._/[:alnum:]]+' Connection succesful$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gsqlite: connection to '[-._/[:alnum:]]+' succesful$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR started for '[-_.[:alnum:]]+', transaction started$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR done for '[-_.[:alnum:]]+', zone committed$
