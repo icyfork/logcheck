@@ -1,131 +1,113 @@
 # Vietnamese Translation for logcheck.
-# Copyright © 2005 Free Software Foundation, Inc.
-# Clytie Siddall <clytie@riverland.net.au>, 2005.
+# Copyright © 2006 Free Software Foundation, Inc.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2006.
 # 
 msgid ""
-msgstr ""
-"Project-Id-Version: logcheck 1.2.40\n"
+""
+msgstr "Project-Id-Version: logcheck 1.2.47\n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
 "POT-Creation-Date: 2006-07-09 15:57+0200\n"
-"PO-Revision-Date: 2005-06-09 14:02+0930\n"
+"PO-Revision-Date: 2006-07-10 15:26+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
-"Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
-#. Type: note
-#. Description
+#.Type: note
+#.Description
 #: ../logcheck.templates:1001
-#, fuzzy
 msgid "Changing the report level or email address"
-msgstr "Sửa đổi mức độ thông báo hay địa chỉ thư."
+msgstr "Chuyển đổi cấp thông báo hay địa chỉ thư"
 
-#. Type: note
-#. Description
+#.Type: note
+#.Description
 #: ../logcheck.templates:1002
 msgid ""
 "To change from the default report level (server) or the default email "
 "address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
-msgstr ""
-"Để sửa đổi mức độ thông báo mặc định (server: máy phục vụ) hay địa chỉ thư "
-"mặc định (root: người dùng chủ) thì bạn hãy hiệu chỉnh tập tin «/etc/"
-"logcheck/logcheck.conf»."
+msgstr "Để chuyển đổi từ cấp thông báo mặc định (máy phục vụ) hay địa chỉ thư mặc định (chủ), bạn cần phải sửa đổi tập tin cấu hình </etc/logcheck/logcheck.conf>."
 
-#. Type: note
-#. Description
-#. Type: note
-#. Description
-#: ../logcheck.templates:1003 ../logcheck.templates:2005
+#.Type: note
+#.Description
+#.Type: note
+#.Description
+#: ../logcheck.templates:1003
+#: ../logcheck.templates:2005
 msgid "Please see /usr/share/doc/logcheck for more details."
-msgstr "Hãy xem «/usr/share/doc/logcheck» để tìm chi tiết."
+msgstr "Hãy xem </usr/share/doc/logcheck> để tìm chi tiết."
 
-#. Type: note
-#. Description
+#.Type: note
+#.Description
 #: ../logcheck.templates:2001
 msgid "Changes to ignore.d directory behaviour"
-msgstr "Hành vì thư mục ignore.d đã thay đổi rồi."
+msgstr "Thay đổi của ứng xử thư mục <ignore.d>"
 
-#. Type: note
-#. Description
+#.Type: note
+#.Description
 #: ../logcheck.templates:2002
 msgid ""
 "Now the ignore.d directories function in an additive manner (i.e. higher "
 "levels also include the lower levels):"
-msgstr ""
-"Mới sửa đổi chức năng thư mục ignore.d, để mà những thư mục ấy cũng gồm các "
-"mức độ thấp hơn:"
+msgstr "Lúc bây giờ những thư mục <ignore.d> hoạt động bằng cách để thêm vào (tức là cấp cao hơn cũng chứa những cấp thấp hơn):"
 
-#. Type: note
-#. Description
+#.Type: note
+#.Description
 #: ../logcheck.templates:2003
 msgid ""
 " - workstation  = workstation + server + paranoid\n"
 " - server       = server + paranoid\n"
 " - paranoid     = paranoid"
-msgstr ""
-" • workstation  = workstation + server + paranoid\n"
-" • server       = server + paranoid\n"
-" • paranoid     = paranoid\n"
-"(workstation - máy trạm; server - mạy phục vụ; paranoid - cẩn thận lắm)"
+msgstr " • workstation		= workstation + server + paranoid\n"
+" • server       		= server + paranoid\n"
+" • paranoid     	= paranoid\n"
+"(workstation - máy trạm; server - mạy phục vụ; paranoid - rất cẩn thận)"
 
-#. Type: note
-#. Description
+#.Type: note
+#.Description
 #: ../logcheck.templates:2004
 msgid ""
 "Also run-parts(8) now controls which rulefiles are included from the .d "
 "directories."
-msgstr ""
-"Hơn nữa, mới sửa đổi «run-parts(8)» để điều khiển gồm tập tin quy tắc nào từ "
-"những thư mục .d"
+msgstr "Hơn nữa, tiến trình run-parts(8) (chạy phần) lúc bây giờ điều kiển những tập tin quy tắc nào được gồm từ những thư mục kiểu « .d »."
 
-#. Type: note
-#. Description
+#.Type: note
+#.Description
 #: ../logcheck-database.templates:1001
 msgid "Logcheck standard rulefiles renamed"
-msgstr "Đã sửa đổi tên của tập tin quy tắc chuẩn Logcheck rồi."
+msgstr "Mỗi tập tin quy tắc chuẩn Logcheck (kiểm tra bản ghi) có tên mới"
 
-#. Type: note
-#. Description
+#.Type: note
+#.Description
 #: ../logcheck-database.templates:1002
 msgid ""
 "As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
 "\"logcheck\" and the \"standard.postfix\" file has been renamed to "
 "\"logcheck-postfix\"."
-msgstr ""
-"Từ phiên bản 1.2.1, đã sửa đổi tên của các tập tin quy tắc "
-"«standard» (chuẩn) thành «logcheck», và tập tin «standard.postfix» thành "
-"«logcheck-postfix»."
+msgstr "Kể từ phiên bản 1.2.1, những tập tin quy tắc « chuẩn » đã được thay đổi tên thành « logcheck » còn tập tin « standard.postfix » đã được thay đổi tên thành « logcheck-postfix »."
 
-#. Type: boolean
-#. Description
+#.Type: boolean
+#.Description
 #: ../logcheck-database.templates:2001
-#, fuzzy
 msgid "Would you like to delete obsolete conffiles?"
-msgstr "Xóa bỏ các tập tin cấu hình cũ"
+msgstr "Bạn có muốn xoá bỏ các tập tin cấu hình cũ kỹ không?"
 
-#. Type: boolean
-#. Description
+#.Type: boolean
+#.Description
 #: ../logcheck-database.templates:2002
 msgid ""
 "The rulefiles in logcheck-database have just been through an audit to remove "
 "duplicate entries and to make them more specific - this also reduces false "
 "negatives."
-msgstr ""
-"Mới kiểm tra những tập tin quy tắc trong logcheck-database (cơ sở dữ liệu "
-"logcheck) để xóa bỏ mọi mục nhập trùng, và tạo mục nhập dứt khoát hơn: cũng "
-"giảm tổng số âm giả."
+msgstr "Những tập tin quy tắc nằm trong co sở dữ liệu logcheck-database mới được kiểm tra để gỡ bỏ mục nhập trùng nào và làm cho dứt khoát hơn — mà cũng giảm số âm giả."
 
-#. Type: boolean
-#. Description
+#.Type: boolean
+#.Description
 #: ../logcheck-database.templates:2003
-#, fuzzy
 msgid ""
 "As a result of this a number of rulefiles have been removed from the package."
-msgstr ""
-"Vì vậy một số tập tin quy tắc bị loại bỏ ra gói tin ấy. Bạn có muốn xóa bỏ "
-"chúng không?"
+msgstr "Một kết quả là một số tập tin quy tắc đã bị gỡ bỏ ra gói này."
 
 #~ msgid "Local modifications should be put into .d directories"
 #~ msgstr "Hãy chèn mọi bản sửa đổi địa phương vào thư mục .d"
@@ -133,8 +115,7 @@ msgstr ""
 #~ msgid ""
 #~ "From version 1.1.1-8, logcheck supports run-parts controled rule "
 #~ "directories:"
-#~ msgstr ""
-#~ "Từ phiên bản 1.1.1-8, trình logcheck hỗ trợ thư mục quy tắc do phần chạy "
+#~ msgstr "Từ phiên bản 1.1.1-8, trình logcheck hỗ trợ thư mục quy tắc do phần chạy "
 #~ "(run-parts) điều khiển:"
 
 #~ msgid ""
@@ -145,8 +126,7 @@ msgstr ""
 #~ " - /etc/logcheck/ignore.d.workstation\n"
 #~ " - /etc/logcheck/ignore.d.server\n"
 #~ " - /etc/logcheck/ignore.d.paranoid"
-#~ msgstr ""
-#~ " • /etc/logcheck/cracking.d\n"
+#~ msgstr " • /etc/logcheck/cracking.d\n"
 #~ " • /etc/logcheck/cracking.ignore.d [chỉ cho phép dùng địa phương]\n"
 #~ " • /etc/logcheck/violations.d\n"
 #~ " • /etc/logcheck/violations.ignore.d\n"
@@ -159,8 +139,7 @@ msgstr ""
 #~ msgid ""
 #~ "The ignore.d.{workstation,server,paranoid} directory to be used is set by "
 #~ "the REPORTLEVEL option in the file \"/etc/logcheck/logcheck.conf\"."
-#~ msgstr ""
-#~ "Tùy chọn REPORTLEVEL (mức độ thông báo) trong tập tin «/etc/logcheck/"
+#~ msgstr "Tùy chọn REPORTLEVEL (mức độ thông báo) trong tập tin «/etc/logcheck/"
 #~ "logcheck.conf» lập thư mục ignore.d.{workstation,server,paranoid} cần "
 #~ "dùng."
 
@@ -172,8 +151,7 @@ msgstr ""
 #~ "to contain patterns tailored for a particular site).  Logcheck will then "
 #~ "use rules collected from all the files found in the appropriate "
 #~ "directories."
-#~ msgstr ""
-#~ "Những thư mục này có lẽ chứa tập tin:\n"
+#~ msgstr "Những thư mục này có lẽ chứa tập tin:\n"
 #~ "• có tên bắt đầu với «logcheck-» (chứa mẫu báo động/đè chung chung\n"
 #~ "• có tên «(tên gói tin)» (chứa mẫu đặc trưng cho gói tin riêng ấy), hay\n"
 #~ "• có tên «local» (địa phương), riêng từng tập tin có tên bắt đầu với "

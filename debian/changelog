@@ -6,8 +6,10 @@ logcheck (1.2.47) UNRELEASED; urgency=low
     I think pdns 1.9.20 introduced a new format.
   * ignore.d.server/dovecot: minor correction to ignore SSL parameter
     regeneration.
+  * Updated debconf translations:
+    - Vietnamese, thanks to Clytie Siddall!
 
- -- martin f. krafft <madduck@debian.org>  Sun,  9 Jul 2006 18:59:38 +0200
+ -- martin f. krafft <madduck@debian.org>  Mon, 10 Jul 2006 08:07:59 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 
