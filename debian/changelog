@@ -10,7 +10,7 @@ logcheck (1.2.47) UNRELEASED; urgency=low
     - Vietnamese, thanks to Clytie Siddall!
   * Added further lintian and linda overrides (non-standard-dir-perm).
 
- -- martin f. krafft <madduck@debian.org>  Mon, 10 Jul 2006 08:09:11 +0200
+ -- martin f. krafft <madduck@debian.org>  Mon, 10 Jul 2006 14:24:10 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 
