@@ -1,6 +1,6 @@
 logcheck (1.2.47) UNRELEASED; urgency=low
 
-  * NOT RELEASED YET
+  [ martin f. krafft ]
   * ignore.d.server/pdns: minor corrections to better ignore notifies --
     I think pdns 1.9.20 introduced a new format.
   * ignore.d.server/dovecot: minor correction to ignore SSL parameter
@@ -11,7 +11,10 @@ logcheck (1.2.47) UNRELEASED; urgency=low
     - Swedish, thanks to Daniel Nylander!
   * Added further lintian and linda overrides (non-standard-dir-perm).
 
- -- martin f. krafft <madduck@debian.org>  Mon, 10 Jul 2006 16:51:37 +0200
+  [ maximilian attems ]
+  * Updated de debconf translation.
+
+ -- maximilian attems <maks@sternwelten.at>  Mon, 10 Jul 2006 21:39:05 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 
