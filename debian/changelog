@@ -17,8 +17,10 @@ logcheck (1.2.47) UNRELEASED; urgency=low
   [ martin f. krafft ]
   * violations.ignore.d/logcheck-ssh: ignoring "Connection reset by peer"
     messages.
+  * ignore.d.server/postfix: improved filters for postfix 2.3 lmtp
+    connections.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 11 Jul 2006 13:20:54 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 11 Jul 2006 13:24:27 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 
