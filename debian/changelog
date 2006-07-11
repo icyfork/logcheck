@@ -19,8 +19,11 @@ logcheck (1.2.47) UNRELEASED; urgency=low
     messages.
   * ignore.d.server/postfix: improved filters for postfix 2.3 lmtp
     connections.
+  * violations.ignore.d/logcheck-ssh: ignore also new-style "BREAK-IN"
+    messages (with the hyphen) when it's a clear fake (IP maps to A, which does
+    not map to IP).
 
- -- martin f. krafft <madduck@debian.org>  Tue, 11 Jul 2006 13:24:27 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 11 Jul 2006 13:25:34 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 
