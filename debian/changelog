@@ -25,8 +25,9 @@ logcheck (1.2.47) UNRELEASED; urgency=low
   * ignore.d.workstation/kernel: ignore messages about unknown keys pressed.
     This information is interesting, but by the time logcheck delivers the
     mail, no user will remember which key s/he pressed.
+  * ignore.d.server/cron-apt: fix filter to hide download lines.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 11 Jul 2006 20:39:58 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 12 Jul 2006 07:59:09 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 
