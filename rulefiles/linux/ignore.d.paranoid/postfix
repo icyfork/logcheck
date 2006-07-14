@@ -1,7 +1,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/pickup\[[0-9]+\]: [[:alnum:]]+: uid=[0-9]+ from=[^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:alnum:]]+: (resent-|)message-id=<([^[:space:]]+|)>$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/qmgr\[[0-9]+\]: [[:alnum:]]+: from=<([^[:space:]]+|)>, size=[0-9]+, nrcpt=[0-9]+ \(queue active\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/nqmgr\[[0-9]+\]: [[:alnum:]]+: from=<([^[:space:]]+|)>, size=[0-9]+, nrcpt=[0-9]+ \(queue active\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:alnum:]]+: (resent-|)message-id=<[[:alnum:].]+@[-_.[:alnum:]]>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/qmgr\[[0-9]+\]: [[:alnum:]]+: from=<[^[:space:]]*>, size=[0-9]+, nrcpt=[0-9]+ \(queue active\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/nqmgr\[[0-9]+\]: [[:alnum:]]+: from=<[^[:space:]]*>, size=[0-9]+, nrcpt=[0-9]+ \(queue active\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:alnum:]]+: to=[^[:space:]]+, relay=[^[:space:]]+, delay=[.0-9]+, (delays=[.0-9/]+, dsn=[.0-9]+, )?status=[[:alnum:]]+ \(.*\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:alnum:]]+: to=[^[:space:]]+, orig_to=[^[:space:]]+, relay=[^[:space:]]+, delay=[.0-9]+, (delays=[.0-9/]+, dsn=[.0-9]+, )?status=[[:alnum:]]+ \(.*\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:alnum:]]+: client=[^[:space:]]+$
@@ -12,7 +12,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: aliases\.\*longest$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: from=[^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: lost input channel$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: message-id=<([^[:space:]]+|)>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: message-id=<[[:alnum:].]+@[-_.[:alnum:]]>$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: putoutmsg$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: status=[^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: timeout waiting$
