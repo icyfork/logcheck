@@ -1,33 +1,29 @@
 logcheck (1.2.47) UNRELEASED; urgency=low
 
-  [ martin f. krafft ]
   * ignore.d.server/pdns: minor corrections to better ignore notifies --
     I think pdns 1.9.20 introduced a new format.
   * ignore.d.server/dovecot: minor correction to ignore SSL parameter
     regeneration.
-  * ignore.d.server/cron-apt: also ignore echo of update line.
-  * Updated debconf translations:
-    - Vietnamese, thanks to Clytie Siddall!
-    - Swedish, thanks to Daniel Nylander!
-  * Added further lintian and linda overrides (non-standard-dir-perm).
-
-  [ maximilian attems ]
-  * Updated de debconf translation.
-
-  [ martin f. krafft ]
+  * ignore.d.server/cron-apt: ignore echo of update line, permit distribution
+    names with a hyphen ("sarge-backports"), and ignore the summary message
+    about failed fetching of index files.
   * violations.ignore.d/logcheck-ssh: ignoring "Connection reset by peer"
     messages.
-  * ignore.d.server/postfix: improved filters for postfix 2.3 lmtp
-    connections.
   * violations.ignore.d/logcheck-ssh: ignore also new-style "BREAK-IN"
     messages (with the hyphen) when it's a clear fake (IP maps to A, which does
     not map to IP).
+  * ignore.d.server/postfix: improved filters for postfix 2.3 lmtp
+    connections.
   * ignore.d.workstation/kernel: ignore messages about unknown keys pressed.
     This information is interesting, but by the time logcheck delivers the
     mail, no user will remember which key s/he pressed.
-  * ignore.d.server/cron-apt: fix filter to hide download lines.
+  * Added further lintian and linda overrides (non-standard-dir-perm).
+  * Updated debconf translations:
+    - Vietnamese, thanks to Clytie Siddall!
+    - Swedish, thanks to Daniel Nylander!
+    - German, thanks to maximilian attems!
 
- -- martin f. krafft <madduck@debian.org>  Wed, 12 Jul 2006 07:59:09 +0200
+ -- martin f. krafft <madduck@debian.org>  Fri, 14 Jul 2006 09:16:59 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 

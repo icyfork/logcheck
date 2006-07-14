@@ -16,3 +16,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Get:[[:digit:]]+ ((ht|f)tp|file)://[.[:alnum:]/_-]+ [/[:alnum:]-]+ [-[:alnum:]_]+[ +.:[:alnum:]-]+ \[[.[:digit:]]+(k|M)B\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Fetched [[:digit:].]+([kM]?B) in [[:digit:]ms]+ \([[:digit:]]+kB/s\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Download complete and in download only mode$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: E: Some index files failed to download, they have been ignored, or old ones used instead\.$
