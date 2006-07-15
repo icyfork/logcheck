@@ -22,8 +22,9 @@ logcheck (1.2.47) UNRELEASED; urgency=low
     - Vietnamese, thanks to Clytie Siddall!
     - Swedish, thanks to Daniel Nylander!
     - German, thanks to maximilian attems!
+    - Japanese, thanks to Hideki Yamane!
 
- -- martin f. krafft <madduck@debian.org>  Fri, 14 Jul 2006 09:16:59 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 15 Jul 2006 12:19:32 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 
