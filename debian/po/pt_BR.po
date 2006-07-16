@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck\n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-07-09 15:57+0200\n"
+"POT-Creation-Date: 2006-07-16 14:33+0200\n"
 "PO-Revision-Date: 2004-06-15 22:39-0300\n"
 "Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team: Debian-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
@@ -32,7 +32,7 @@ msgstr "Mudando o nível de relatório ou endereço de e-mail."
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:1002
+#: ../logcheck.templates:1001
 msgid ""
 "To change from the default report level (server) or the default email "
 "address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
@@ -44,7 +44,7 @@ msgstr ""
 #. Description
 #. Type: note
 #. Description
-#: ../logcheck.templates:1003 ../logcheck.templates:2005
+#: ../logcheck.templates:1001 ../logcheck.templates:2001
 msgid "Please see /usr/share/doc/logcheck for more details."
 msgstr "Por favor, consulte /usr/share/doc/logcheck para maiores detalhes."
 
@@ -56,7 +56,7 @@ msgstr "Mudanças no comportamento do diretório ignore.d"
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2002
+#: ../logcheck.templates:2001
 msgid ""
 "Now the ignore.d directories function in an additive manner (i.e. higher "
 "levels also include the lower levels):"
@@ -66,7 +66,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2003
+#: ../logcheck.templates:2001
 msgid ""
 " - workstation  = workstation + server + paranoid\n"
 " - server       = server + paranoid\n"
@@ -78,7 +78,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2004
+#: ../logcheck.templates:2001
 msgid ""
 "Also run-parts(8) now controls which rulefiles are included from the .d "
 "directories."
@@ -94,7 +94,7 @@ msgstr "Arquivos de regras padrões do logcheck renomeados"
 
 #. Type: note
 #. Description
-#: ../logcheck-database.templates:1002
+#: ../logcheck-database.templates:1001
 msgid ""
 "As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
 "\"logcheck\" and the \"standard.postfix\" file has been renamed to "
@@ -113,7 +113,7 @@ msgstr "Remover arquivos de configuração obsoletos"
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2002
+#: ../logcheck-database.templates:2001
 msgid ""
 "The rulefiles in logcheck-database have just been through an audit to remove "
 "duplicate entries and to make them more specific - this also reduces false "
@@ -125,7 +125,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2003
+#: ../logcheck-database.templates:2001
 #, fuzzy
 msgid ""
 "As a result of this a number of rulefiles have been removed from the package."

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck \n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-07-09 15:57+0200\n"
+"POT-Creation-Date: 2006-07-16 14:33+0200\n"
 "PO-Revision-Date: 2006-07-10 16:30+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
@@ -30,16 +30,20 @@ msgstr "Ändring av rapporteringsnivå eller e-postadress"
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:1002
-msgid "To change from the default report level (server) or the default email address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
-msgstr "För att ändra från standardnivån för rapporter (server) eller standard e-postadress (root) behöver du göra ändringar i \"/etc/logcheck/logcheck.conf\"."
+#: ../logcheck.templates:1001
+msgid ""
+"To change from the default report level (server) or the default email "
+"address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
+msgstr ""
+"För att ändra från standardnivån för rapporter (server) eller standard e-"
+"postadress (root) behöver du göra ändringar i \"/etc/logcheck/logcheck.conf"
+"\"."
 
 #. Type: note
 #. Description
 #. Type: note
 #. Description
-#: ../logcheck.templates:1003
-#: ../logcheck.templates:2005
+#: ../logcheck.templates:1001 ../logcheck.templates:2001
 msgid "Please see /usr/share/doc/logcheck for more details."
 msgstr "Se /usr/share/doc/logcheck för mer information."
 
@@ -51,13 +55,17 @@ msgstr "Ändringar i beteendet för katalogen ignore.d"
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2002
-msgid "Now the ignore.d directories function in an additive manner (i.e. higher levels also include the lower levels):"
-msgstr "Nu fungerar katalogerna under ignore.d i ett tillsatt beteende (alltså högre nivåer inkluderar även de lägre nivåerna):"
+#: ../logcheck.templates:2001
+msgid ""
+"Now the ignore.d directories function in an additive manner (i.e. higher "
+"levels also include the lower levels):"
+msgstr ""
+"Nu fungerar katalogerna under ignore.d i ett tillsatt beteende (alltså högre "
+"nivåer inkluderar även de lägre nivåerna):"
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2003
+#: ../logcheck.templates:2001
 msgid ""
 " - workstation  = workstation + server + paranoid\n"
 " - server       = server + paranoid\n"
@@ -69,9 +77,13 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2004
-msgid "Also run-parts(8) now controls which rulefiles are included from the .d directories."
-msgstr "Även run-parts(8) kontrollerar nu vilka regelfiler som ska inkluderas från .d-katalogerna."
+#: ../logcheck.templates:2001
+msgid ""
+"Also run-parts(8) now controls which rulefiles are included from the .d "
+"directories."
+msgstr ""
+"Även run-parts(8) kontrollerar nu vilka regelfiler som ska inkluderas från ."
+"d-katalogerna."
 
 #. Type: note
 #. Description
@@ -81,9 +93,15 @@ msgstr "Logchecks standardregelfil har bytt namn"
 
 #. Type: note
 #. Description
-#: ../logcheck-database.templates:1002
-msgid "As of version 1.2.1, the \"standard\" rulefiles have been renamed to \"logcheck\" and the \"standard.postfix\" file has been renamed to \"logcheck-postfix\"."
-msgstr "Från och med version 1.2.1 har \"standard\"-regelfilerna bytt namn till \"logcheck\" och filen \"standard.postfix\" bytt namn till \"logcheck-postfix\"."
+#: ../logcheck-database.templates:1001
+msgid ""
+"As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
+"\"logcheck\" and the \"standard.postfix\" file has been renamed to "
+"\"logcheck-postfix\"."
+msgstr ""
+"Från och med version 1.2.1 har \"standard\"-regelfilerna bytt namn till "
+"\"logcheck\" och filen \"standard.postfix\" bytt namn till \"logcheck-postfix"
+"\"."
 
 #. Type: boolean
 #. Description
@@ -93,24 +111,35 @@ msgstr "Vill du ta bort föråldrade konfigurationfiler?"
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2002
-msgid "The rulefiles in logcheck-database have just been through an audit to remove duplicate entries and to make them more specific - this also reduces false negatives."
-msgstr "Regelfilerna i logcheck-databasen har precis genomgått en granskning för att ta bort dubbletter och göra de mer specifika - detta har också minskat antal falska negativa."
+#: ../logcheck-database.templates:2001
+msgid ""
+"The rulefiles in logcheck-database have just been through an audit to remove "
+"duplicate entries and to make them more specific - this also reduces false "
+"negatives."
+msgstr ""
+"Regelfilerna i logcheck-databasen har precis genomgått en granskning för att "
+"ta bort dubbletter och göra de mer specifika - detta har också minskat antal "
+"falska negativa."
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2003
-msgid "As a result of this a number of rulefiles have been removed from the package."
-msgstr "Som ett resultat av detta har ett antal regelfiler tagits bort från detta paket."
+#: ../logcheck-database.templates:2001
+msgid ""
+"As a result of this a number of rulefiles have been removed from the package."
+msgstr ""
+"Som ett resultat av detta har ett antal regelfiler tagits bort från detta "
+"paket."
 
 #~ msgid "Local modifications should be put into .d directories"
 #~ msgstr "Lokala modifieringar bör läggas i .d-mapparna"
+
 #~ msgid ""
 #~ "From version 1.1.1-8, logcheck supports run-parts controled rule "
 #~ "directories:"
 #~ msgstr ""
 #~ "Från version 1.1.1-8 har logcheck nu stöd för run-parts kontrollerade "
 #~ "regelmappar:"
+
 #~ msgid ""
 #~ " - /etc/logcheck/cracking.d\n"
 #~ " - /etc/logcheck/cracking.ignore.d [for local use only]\n"
@@ -127,12 +156,14 @@ msgstr "Som ett resultat av detta har ett antal regelfiler tagits bort från dett
 #~ " - /etc/logcheck/ignore.d.workstation\n"
 #~ " - /etc/logcheck/ignore.d.server\n"
 #~ " - /etc/logcheck/ignore.d.paranoid"
+
 #~ msgid ""
 #~ "The ignore.d.{workstation,server,paranoid} directory to be used is set by "
 #~ "the REPORTLEVEL option in the file \"/etc/logcheck/logcheck.conf\"."
 #~ msgstr ""
 #~ "Mappen ignore.d.{workstation,server,paranoid} används för att sätta "
 #~ "inställningen REPORTLEVEL i filen \"/etc/logcheck/logcheck.conf\"."
+
 #~ msgid ""
 #~ "These directories may contain files prefixed with \"logcheck-"
 #~ "\" (containing generic alert/override patterns), named \"(packagename)"
@@ -149,4 +180,3 @@ msgstr "Som ett resultat av detta har ett antal regelfiler tagits bort från dett
 #~ "för att innehålla skräddarsydda mönster för just det systemet).  Logcheck "
 #~ "kommer att använda regler som samlats från alla filer som hittats i de "
 #~ "lämpliga mapparna."
-
