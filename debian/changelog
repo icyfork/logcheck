@@ -16,6 +16,10 @@ logcheck (1.2.47) UNRELEASED; urgency=low
     a 'none' method.
   * ignore.d.server/postfix: improved filters for postfix 2.3 lmtp
     connections.
+  * violations.ignore.d/logcheck-proftpd: ignoring extra PAM messages for
+    failed logins.
+  * violations.ignore.d/logcheck-proftpd: ignoring denied and failed logins
+    due to limit specification.
   * ignore.d.server/kernel: ignore interface link status changes. If they are
     important, we would not be able to get mail about them anyway.
   * ignore.d.workstation/kernel: ignore messages about unknown keys pressed.
@@ -28,7 +32,7 @@ logcheck (1.2.47) UNRELEASED; urgency=low
     - German, thanks to maximilian attems!
     - Japanese, thanks to Hideki Yamane!
 
- -- martin f. krafft <madduck@debian.org>  Sun, 16 Jul 2006 15:15:26 +0200
+ -- martin f. krafft <madduck@debian.org>  Sun, 16 Jul 2006 21:37:58 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 
