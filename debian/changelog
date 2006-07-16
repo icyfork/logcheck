@@ -14,6 +14,8 @@ logcheck (1.2.47) UNRELEASED; urgency=low
     not map to IP).
   * ignore.d.server/postfix: improved filters for postfix 2.3 lmtp
     connections.
+  * ignore.d.server/kernel: ignore interface link status changes. If they are
+    important, we would not be able to get mail about them anyway.
   * ignore.d.workstation/kernel: ignore messages about unknown keys pressed.
     This information is interesting, but by the time logcheck delivers the
     mail, no user will remember which key s/he pressed.
@@ -24,7 +26,7 @@ logcheck (1.2.47) UNRELEASED; urgency=low
     - German, thanks to maximilian attems!
     - Japanese, thanks to Hideki Yamane!
 
- -- martin f. krafft <madduck@debian.org>  Sat, 15 Jul 2006 12:19:32 +0200
+ -- martin f. krafft <madduck@debian.org>  Sun, 16 Jul 2006 09:05:42 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 
