@@ -12,6 +12,8 @@ logcheck (1.2.47) UNRELEASED; urgency=low
   * violations.ignore.d/logcheck-ssh: ignore also new-style "BREAK-IN"
     messages (with the hyphen) when it's a clear fake (IP maps to A, which does
     not map to IP).
+  * violations.ignore.d/logcheck-ssh: ignore logins as invalid user which have
+    a 'none' method.
   * ignore.d.server/postfix: improved filters for postfix 2.3 lmtp
     connections.
   * ignore.d.server/kernel: ignore interface link status changes. If they are
@@ -26,7 +28,7 @@ logcheck (1.2.47) UNRELEASED; urgency=low
     - German, thanks to maximilian attems!
     - Japanese, thanks to Hideki Yamane!
 
- -- martin f. krafft <madduck@debian.org>  Sun, 16 Jul 2006 09:05:42 +0200
+ -- martin f. krafft <madduck@debian.org>  Sun, 16 Jul 2006 15:15:26 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 
