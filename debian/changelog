@@ -5,8 +5,8 @@ logcheck (1.2.47) UNRELEASED; urgency=low
   * ignore.d.server/dovecot: minor correction to ignore SSL parameter
     regeneration.
   * ignore.d.server/cron-apt: ignore echo of update line, permit distribution
-    names with a hyphen ("sarge-backports"), and ignore the summary message
-    about failed fetching of index files.
+    names with a hyphen ("sarge-backports"), allow ~ in versions, and ignore
+    the summary message about failed fetching of index files.
   * violations.ignore.d/logcheck-ssh: ignoring "Connection reset by peer"
     messages.
   * violations.ignore.d/logcheck-ssh: ignore also new-style "BREAK-IN"
