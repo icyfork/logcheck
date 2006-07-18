@@ -1,3 +1,9 @@
+logcheck (1.2.46bpo1) sarge-backports; urgency=low
+
+  * Rebuilt for sarge.
+
+ -- martin f. krafft <madduck@debian.org>  Tue, 18 Jul 2006 07:38:25 +0200
+
 logcheck (1.2.47) unstable; urgency=low
 
   * ignore.d.server/pdns: minor corrections to better ignore notifies --
