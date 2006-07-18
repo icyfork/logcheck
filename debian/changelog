@@ -1,4 +1,4 @@
-logcheck (1.2.47) UNRELEASED; urgency=low
+logcheck (1.2.47) unstable; urgency=low
 
   * ignore.d.server/pdns: minor corrections to better ignore notifies --
     I think pdns 1.9.20 introduced a new format.
@@ -32,7 +32,7 @@ logcheck (1.2.47) UNRELEASED; urgency=low
     - German, thanks to maximilian attems!
     - Japanese, thanks to Hideki Yamane!
 
- -- martin f. krafft <madduck@debian.org>  Sun, 16 Jul 2006 21:37:58 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 18 Jul 2006 07:24:18 +0200
 
 logcheck (1.2.46) unstable; urgency=low
 
