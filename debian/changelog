@@ -13,8 +13,9 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   * ignore.d.server/sa-exim: Add 2 rules for sa-exim. Thanks
     Ross Boylan <ross@biostat.ucsf.edu> (closes: 359787).
   * ignore.d.workstation/kernel: Add more rules for swsusp.
+  * ignore.d.workstation/kernel: Ignore loop module loading.
 
- -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 11:19:18 +0200
+ -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 21:08:31 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
