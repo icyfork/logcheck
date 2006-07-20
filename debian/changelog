@@ -5,8 +5,9 @@ logcheck (1.2.48) unstable; urgency=low
   * Updated debconf translations:
     - fr.po (myself)
     - nl.po thanks Frans Pop <elendil@planet.nl>
+    - it.po thanks Luca Monducci <luca.mo@tiscali.it>
 
- -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 10:38:50 +0200
+ -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 10:41:35 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
