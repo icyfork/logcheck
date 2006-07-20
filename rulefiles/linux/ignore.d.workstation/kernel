@@ -111,3 +111,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: atkbd\.c: Keyboard on isa0060/serio0 reports too many keys pressed\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: atkbd\.c: Unknown key released \(translated set [[:digit:]]+, code 0x[[:xdigit:]]+ on isa0060/serio0\)\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: atkbd\.c: Use 'setkeycodes [[:xdigit:]]+ <keycode>' to make it known\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: swsusp: Need to copy [0-9]+ pages$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: swsusp: Restoring Highmem$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ACPI: PCI Interrupt [[:alnum:]:.]+\[[[:upper:]]\] -> GSI [0-9]+ \(level, low\) -> IRQ [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PM: Writing back config space on device [[:alnum:]:.]+ at offset [0-9] \(was [0-9]+, writing [0-9]+\)$
