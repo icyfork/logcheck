@@ -1,8 +1,10 @@
 logcheck (1.2.48) unstable; urgency=low
 
   * Add update to fr.po.
+  * ignore.d.server/postfix: Fix cleanup rule and remove duplicate.
+    Thanks Paul Aurich <paul+debian@aurich.com> (closes: 378976)
 
- -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 10:32:47 +0200
+ -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 10:35:42 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
