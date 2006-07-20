@@ -4,10 +4,12 @@ logcheck (1.2.48) unstable; urgency=low
     Thanks Paul Aurich <paul+debian@aurich.com> (closes: 378976)
   * Updated debconf translations:
     - fr.po (myself)
-    - nl.po thanks Frans Pop <elendil@planet.nl>
-    - it.po thanks Luca Monducci <luca.mo@tiscali.it>
+    - nl.po thanks Frans Pop <elendil@planet.nl> (closes: 377605)
+    - it.po thanks Luca Monducci <luca.mo@tiscali.it> (closes: 377874)
+  * violations.ignore.d/logcheck-ssh, violations.ignore.d/logcheck-postfix:
+    Move to postfix rules to the later. (closes: 377139)
 
- -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 10:41:35 +0200
+ -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 10:57:44 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
