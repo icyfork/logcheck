@@ -8,8 +8,10 @@ logcheck (1.2.48) unstable; urgency=low
     - it.po thanks Luca Monducci <luca.mo@tiscali.it> (closes: 377874)
   * violations.ignore.d/logcheck-ssh, violations.ignore.d/logcheck-postfix:
     Move to postfix rules to the later. (closes: 377139)
+  * ignore.d.server/courier: Ignore authdaemon ldap reconnections.
+    Thanks Tilman Koschnick <til@subnetz.org> for the patch (closes: 372286).
 
- -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 10:57:44 +0200
+ -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 11:01:45 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
