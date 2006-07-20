@@ -1,3 +1,9 @@
+logcheck (1.2.48) unstable; urgency=low
+
+  * Add update to fr.po.
+
+ -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 10:32:47 +0200
+
 logcheck (1.2.47) unstable; urgency=low
 
   * ignore.d.server/pdns: minor corrections to better ignore notifies --
