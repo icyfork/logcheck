@@ -10,8 +10,10 @@ logcheck (1.2.48) unstable; urgency=low
     Move to postfix rules to the later. (closes: 377139)
   * ignore.d.server/courier: Ignore authdaemon ldap reconnections.
     Thanks Tilman Koschnick <til@subnetz.org> for the patch (closes: 372286).
+  * ignore.d.server/sa-exim: Add 2 rules for sa-exim. Thanks
+    Ross Boylan <ross@biostat.ucsf.edu> (closes: 359787).
 
- -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 11:01:45 +0200
+ -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 11:06:10 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
