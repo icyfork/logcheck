@@ -14,8 +14,10 @@ logcheck (1.2.48) UNRELEASED; urgency=low
     Ross Boylan <ross@biostat.ucsf.edu> (closes: 359787).
   * ignore.d.workstation/kernel: Add more rules for swsusp.
   * ignore.d.workstation/kernel: Ignore loop module loading.
+  * Add catalan debconf translation (closes: 379131)
+    - Thanks for ca.po to Jordà Polo <jorda@ettin.org>
 
- -- maximilian attems <maks@sternwelten.at>  Thu, 20 Jul 2006 21:08:31 +0200
+ -- maximilian attems <maks@sternwelten.at>  Fri, 21 Jul 2006 21:45:21 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
