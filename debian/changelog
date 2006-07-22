@@ -3,7 +3,7 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   * ignore.d.server/postfix: Fix cleanup rule and remove duplicate.
     Thanks Paul Aurich <paul+debian@aurich.com> (closes: 378976)
   * Updated debconf translations:
-    - fr.po (myself)
+    - fr.po thanks Michel Grentzinger <mic.grentz@online.fr> (closes: 379215)
     - nl.po thanks Frans Pop <elendil@planet.nl> (closes: 377605)
     - it.po thanks Luca Monducci <luca.mo@tiscali.it> (closes: 377874)
   * violations.ignore.d/logcheck-ssh, violations.ignore.d/logcheck-postfix:
@@ -17,7 +17,7 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   * Add catalan debconf translation (closes: 379131)
     - Thanks for ca.po to Jordà Polo <jorda@ettin.org>
 
- -- maximilian attems <maks@sternwelten.at>  Fri, 21 Jul 2006 21:45:21 +0200
+ -- maximilian attems <maks@sternwelten.at>  Sun, 23 Jul 2006 00:09:46 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
