@@ -25,6 +25,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Notification request for domain '[-_.[:alnum:]]+' received from operator$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Recursive query for remote [.[:digit:]]{7,15} with internal id [[:digit:]]+ was not answered by backend within timeout, reusing id$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received an overly large question from [.[:digit:]]{7,15}, dropping$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Unable to determine SOA serial for ([-_.[:alnum:]]+)? at potential supermaster [.[:digit:]]{7,15}
 # pgsql
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gpgsql Connection succesful$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' initiated by [.[:digit:]]{7,15}$

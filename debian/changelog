@@ -1,5 +1,6 @@
 logcheck (1.2.48) UNRELEASED; urgency=low
 
+  [ maximilian attems ]
   * ignore.d.server/postfix: Fix cleanup rule and remove duplicate.
     Thanks Paul Aurich <paul+debian@aurich.com> (closes: 378976)
   * Updated debconf translations:
@@ -17,7 +18,11 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   * Add catalan debconf translation (closes: 379131)
     - Thanks for ca.po to Jordà Polo <jorda@ettin.org>
 
- -- maximilian attems <maks@sternwelten.at>  Sun, 23 Jul 2006 00:09:46 +0200
+  [ martin f. krafft ]
+  * ignore.d.server/pdns: ignore failure to get SOA serial from supermasters
+    that send wrong notifies.
+
+ -- martin f. krafft <madduck@debian.org>  Sun, 23 Jul 2006 07:25:25 +0100
 
 logcheck (1.2.47) unstable; urgency=low
 
