@@ -116,3 +116,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ACPI: PCI Interrupt [[:alnum:]:.]+\[[[:upper:]]\] -> GSI [0-9]+ \(level, low\) -> IRQ [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PM: Writing back config space on device [[:alnum:]:.]+ at offset [0-9] \(was [0-9]+, writing [0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: loop: loaded \(max [0-9]+ devices\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: oprofile: using NMI interrupt\.$
