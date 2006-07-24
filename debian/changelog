@@ -18,6 +18,8 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   * Add catalan debconf translation (closes: 379131)
     - Thanks for ca.po to Jordà Polo <jorda@ettin.org>
   * ignore.d.workstation/kernel: Ignore oprofile loading.
+  * ignore.d.workstation/kernel: Ignore removable device plugging.
+  * ignore.d.server/dhclient: Ignore recorded leas output and bound renewal.
 
   [ martin f. krafft ]
   * ignore.d.server/pdns: ignore failure to get SOA serial from supermasters
@@ -25,7 +27,7 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   * ignore.d.server/cron-apt: fixed several rules for corner cases.
   * ignore.d.server/postfix: added rule for server greeting timeout.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 24 Jul 2006 08:18:09 +0100
+ -- maximilian attems <maks@sternwelten.at>  Mon, 24 Jul 2006 22:28:29 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 

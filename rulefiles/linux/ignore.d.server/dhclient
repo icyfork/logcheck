@@ -8,8 +8,9 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: DHCPDISCOVER on [[:alnum:]]+ to [.0-9]{7,15} port 67 interval [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: DHCP(NAK|ACK|OFFER) from [.0-9]{7,15}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: DHCP(REQUEST|RELEASE) on [[:alnum:]]+ to [.0-9]{7,15} port 67$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: bound to [.0-9]{7,15} -- renewal in [0-9]+ seconds\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: bound(:| to [.0-9]{7,15} --) renewal in [0-9]+ seconds\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: [[:lower:]]+[0-9]: unknown hardware address type [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Trying recorded lease [.0-9]{7,15}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: No working leases in persistent database( - sleeping)?\.$
 # dhcp-client 2.0
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Copyright (199[5-9],? ){5}(The )?Internet Software Consortium\.$

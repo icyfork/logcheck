@@ -57,6 +57,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Ending clean XFS mount for filesystem: [[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: scsi[0-9]+ : SCSI emulation for (IEEE-1394 SBP-2 Devices|USB Mass Storage devices)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Attached scsi removable disk sd[a-z]( at scsi[0-9], channel [0-9], id [0-9], lun [0-9])?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd [0-9:]+ Attached scsi removable disk sd[a-z]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: SCSI device sd[a-z]: [0-9]+ 512-byte hdwr sectors \([0-9]+ MB\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Write Protect is off$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: sd[a-z]1$
@@ -95,7 +96,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: (registered|unregister) (dsp|mixer) [,0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: valid (in|out)put sample rate [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbaudio: warning: found [0-9] of [0-9] logical channels\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb 1-1: configuration #[0-9]+ chosen from [0-9]+ choices$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [0-9]-[0-9]: configuration #[0-9]+ chosen from [0-9]+ choices?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Write Protect is off$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: assuming (Write Enabled|drive cache: write through)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd[a-z]: Mode Sense: [[:alnum:]]{2} [[:alnum:]]{2} [[:alnum:]]{2} [[:alnum:]]{2}$
