@@ -22,10 +22,10 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   [ martin f. krafft ]
   * ignore.d.server/pdns: ignore failure to get SOA serial from supermasters
     that send wrong notifies.
-  * ignore.d.server/cron-apt: fixed rule for line about throughput summary.
+  * ignore.d.server/cron-apt: fixed several rules for corner cases.
   * ignore.d.server/postfix: added rule for server greeting timeout.
 
- -- maximilian attems <maks@sternwelten.at>  Sun, 23 Jul 2006 21:49:58 +0200
+ -- martin f. krafft <madduck@debian.org>  Mon, 24 Jul 2006 08:18:09 +0100
 
 logcheck (1.2.47) unstable; urgency=low
 
