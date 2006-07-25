@@ -21,6 +21,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]: New link status: (Disconnected|Connected) \([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: REJECT input_ext IN=[[:alnum:]]+ OUT= MAC=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]+: Media Link (Off|On [0-9]+mbps (full|half)-duplex)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:alnum:]]+: eth[0-9]: Link is down\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ISO 9660 Extensions: Microsoft Joliet Level [0-3]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ISO 9660 Extensions: [_[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ISOFS: changing to secondary root$
