@@ -111,6 +111,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/rb
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/rpc_statd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/rsnapshot 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/rsync 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/sa-exim 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/samba 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/saslauthd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/scponly 0640 != 0644
