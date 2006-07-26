@@ -6,4 +6,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: ll header: [:[:xdigit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: martian source 255\.255\.255\.255 from [.[:digit:]]{7,15} on dev [[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: icmpv6_send: no reply to icmp error$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: [[:alnum:]]+: link (up|down)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: [[:alnum:]]+: link up\.$
