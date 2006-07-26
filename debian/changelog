@@ -29,11 +29,11 @@ logcheck (1.2.48) UNRELEASED; urgency=low
     that send wrong notifies.
   * ignore.d.server/cron-apt: fixed several rules for corner cases.
   * ignore.d.server/postfix: added rule for server greeting timeout.
+  * ignore.d.server/spamd: fixed rule for config location message.
   * ignore.d.server/kernel: partially undo link status message filter, now
     only filters up messages, not the down ones. By nature of the link status,
     the messages will come in pairs or not at all anyway.
 
-<<<<<<< .mine
  -- martin f. krafft <madduck@debian.org>  Wed, 26 Jul 2006 09:40:30 +0100
 
 logcheck (1.2.47) unstable; urgency=low
