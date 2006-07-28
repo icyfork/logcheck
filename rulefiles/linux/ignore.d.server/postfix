@@ -1,6 +1,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: skipped, still being delivered$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: from=<.*>, status=expired, returned to sender$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: message-id=.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(n?qmgr|cleanup)\[[0-9]+\]: [[:alnum:]]+: message-id=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: removed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: to=<[^[:space:]]+>, relay=none, delay=[0-9]+, status=deferred \(delivery temporarily suspended: connect to [^[:space:]]+: (Connection timed out|read timeout|Connection refused)\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: to=<[^[:space:]]+>, relay=none, delay=[0-9]+, status=deferred \(delivery temporarily suspended: Host or domain name not found. Name service error for name=[^[:space:]]+ type=MX: Host not found, try again\)$
