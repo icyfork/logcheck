@@ -12,12 +12,12 @@ SETS OF RULES
 There are three layers of sets of filtering rules, all of which are
 normal egrep pattern-matches, applied in turn.
 
-1. the "ATTACK ALERTS" layer, designed to detect the traces of active
+1. the "SECURITY ALERTS" layer, designed to detect the traces of active
 	intrusion attempts.
 
    Patterns raising the alarm go in "/etc/logcheck/cracking.d"; any
 	event that matches one of these patterns turns the report
-	into an urgent "Attack Alerts" report, with the relevant
+	into an urgent "Security Alerts" report, with the relevant
 	event moved to a special section.  The cracking.d standard
 	keywords file is seeded with known symptoms of hostile
 	activity (see logcheck's README.keywords file).
@@ -108,7 +108,7 @@ that need to be processed.
 Standard "generic" rules go in each directory's "./logcheck" file;
 thus for instance any log message at all matching "ATTACK"
 (listed in "/etc/logcheck/cracking.d/logcheck") _always_ triggers
-an "Attack Alert", unless you deliberately tamper with
+a "Security Alert", unless you deliberately tamper with
 "cracking.ignore.d" rules.
 
 Remember that package-specific "ignore" filters will _not_ override

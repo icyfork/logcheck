@@ -1,3 +1,9 @@
+logcheck (1.2.47a~madduck.2) sarge-backports; urgency=low
+
+  * Test release.
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 29 Jul 2006 10:19:08 +0100
+
 logcheck (1.2.48) UNRELEASED; urgency=low
 
   [ maximilian attems ]
