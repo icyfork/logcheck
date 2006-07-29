@@ -8,6 +8,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-dcc 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-hylafax 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-innd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-login 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-mon 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-nagios 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-openvpn 0640 != 0644
@@ -33,6 +34,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstati
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/gdm 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/hald 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/hcid 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/ifplugd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/ippl 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/kdm 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/kernel 0640 != 0644
