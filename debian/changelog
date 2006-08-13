@@ -35,7 +35,12 @@ logcheck (1.2.48) UNRELEASED; urgency=low
     only filters up messages, not the down ones. By nature of the link status,
     the messages will come in pairs or not at all anyway.
 
- -- martin f. krafft <madduck@debian.org>  Fri, 28 Jul 2006 20:50:10 +0100
+  [ maximilian attems ]
+  * debian/logcheck-database.postinst: Make logcheck-database piuparts clean,
+    on upgrade. Remove moved configfiles if they are unchanged. 
+    Thanks Lars Wirzenius <liw@iki.fi> for report (closes: #355701).
+
+ -- maximilian attems <maks@sternwelten.at>  Sun, 13 Aug 2006 12:21:49 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 

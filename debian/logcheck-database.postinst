@@ -77,6 +77,25 @@ case "$1" in
 		echo "Done"
 	    fi
 	fi
+
+	# Remove old sarge mv logcheck-data configfiles if unchanged
+	if [ -n "$2" ] && dpkg --compare-versions "$2" lt "1.2.48"; then
+		proftpd_sum=$(sha1sum '/etc/logcheck/ignore.d.paranoid/proftpd'\
+			| awk '{print $1}')
+		imap_sum=$(sha1sum '/etc/logcheck/ignore.d.paranoid/imap' \
+			| awk '{print $1}')
+		anacron_sum=$(sha1sum '/etc/logcheck/ignore.d.workstation/anacron'\
+			| awk '{print $1}')
+		if [ "${proftpd_sum}" = "da39a3ee5e6b4b0d3255bfef95601890afd80709" ]; then
+			rm -rf /etc/logcheck/ignore.d.paranoid/proftpd
+		fi
+		if [ "${imap_sum}" = "9d4e9db1bd0c5cdd5ea3ba8875e628bf50cf1f5f" ]; then
+			rm -rf /etc/logcheck/ignore.d.paranoid/imap
+		fi
+		if [ "${anacron_sum}" = "78e753ffeff32474a805a7654aa99a07076b6975" ]; then
+			rm -rf /etc/logcheck/ignore.d.workstation/anacron
+		fi
+	fi
 	;;
     
     abort-upgrade|abort-remove|abort-deconfigure)
