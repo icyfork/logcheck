@@ -32,6 +32,8 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   * ignore.d.server/postfix: also add msgid status messages by cleanup daemon.
   * ignore.d.server/proftpd: fixed rule to ignore unknown user logins.
   * ignore.d.server/spamd: fixed rule for config location message.
+  * ignore.d.server/ssh: duplicate possible breakin messages from
+    violations.ignore.d.
   * ignore.d.server/kernel: partially undo link status message filter, now
     only filters up messages, not the down ones. By nature of the link status,
     the messages will come in pairs or not at all anyway.
