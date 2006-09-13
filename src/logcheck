@@ -29,7 +29,7 @@ if [ $UID == 0 ]; then
     echo "su -s /bin/bash -c \"/usr/sbin/logcheck${@:+ $@}\" logcheck"
     echo "Or use sudo: sudo -u logcheck logcheck${@:+ $@}."
     # you may want to uncomment that hack to let logcheck invoke itself.
-    # su -s /bin/bash -c  "$0 $*" logcheck
+    # su -s /bin/bash -c "$0 $*" logcheck
     exit 1
 fi
 
@@ -183,7 +183,7 @@ EOF
 setintro() {
     if [ -f /etc/logcheck/header.txt -a -r /etc/logcheck/header.txt ] ; then
        $CAT /etc/logcheck/header.txt >> $TMPDIR/report \
-           || error "Could not append header to $TMPDIR/report  Disk full?"
+           || error "Could not append header to $TMPDIR/report."
     fi
 }
 
@@ -192,7 +192,7 @@ setintro() {
 setfooter() {
     if [ -f /etc/logcheck/footer.txt -a -r /etc/logcheck/footer.txt ] ; then
        $CAT /etc/logcheck/footer.txt >> $TMPDIR/report \
-           || error "Could not append footer to $TMPDIR/report Disk full?"
+           || error "Could not append footer to $TMPDIR/report."
     fi
 }
 
@@ -216,7 +216,7 @@ cleanrules() {
 			# pipe to cat on greps to get usable exit status
 			egrep --text -v '^[[:space:]]*$|^#' $dir/$rulefile | cat \
 		    		>> $cleaned/$rulefile \
-		    	|| error "Couldn't append to $cleaned/$rulefile. Disk Full?"
+		    	|| error "Couldn't append to $cleaned/$rulefile."
 		else
 			error "Couldn't read $dir/$rulefile"
 		fi
@@ -233,22 +233,22 @@ cleanrules() {
 report() {
     if [ -s $TMPDIR/checked ]; then
 	printheader "$*" >> $TMPDIR/report \
-	    || error "Could not append to report.  Disk Full?"
+	    || error "Could not append to report."
 	if [ $SYSLOGSUMMARY -eq 1 ] && [ -x $SYSLOG_SUMMARY ]; then
 	    debug "report: running syslog-summary - $*"
 	    $SYSLOG_SUMMARY $TMPDIR/checked | \
 		egrep -v "^Summarizing " | cat >> $TMPDIR/report \
-		    || error "Could not append to report.  Disk Full?"
+		    || error "Could not append to report."
 	else
 	    if [ $SYSLOGSUMMARY -eq 1 ] && [ ! -x $SYSLOG_SUMMARY ]; then
 	    	debug "report : WARNING : can't exec $SYSLOG_SUMMARY. Running without summary"
 	    fi
 	    debug "report: cat'ing - $*"
 	    cat $TMPDIR/checked >> $TMPDIR/report \
-	        || error "Could not append to report.  Disk full?"
+	        || error "Could not append to report."
 	fi
 	echo >> $TMPDIR/report \
-	    || error "Could not append to report.  Disk full?"
+	    || error "Could not append to report."
 	return 0
     else
 	return 1
@@ -312,7 +312,7 @@ greplogoutput() {
 	# Raise entries that match
 	egrep --text -f $raise/$grepfile $TMPDIR/logoutput-sorted | cat \
 	    > $TMPDIR/checked \
-	    || error "Could not output to $TMPDIR/checked.  Disk Full?"
+	    || error "Could not output to $TMPDIR/checked."
 
 	# apply different ignore rules
 	if [ -s $TMPDIR/checked ]; then
@@ -388,7 +388,7 @@ cleanchecked() {
     if [ -f $clean ]; then 
 	debug "cleanchecked - file: $clean"
         egrep --text -v -f $clean $TMPDIR/checked | cat >> $TMPDIR/checked.1  \
-	    || error "Could not output to $TMPDIR/checked.1 Disk full?"
+	    || error "Could not output to $TMPDIR/checked.1."
 	mv $TMPDIR/checked.1 $TMPDIR/checked \
 	    || error "Could not move $TMPDIR/checked.1 to $TMPDIR/checked"
     elif [ -d $clean ]; then
@@ -397,7 +397,7 @@ cleanchecked() {
 	debug "cleanchecked - dir - $clean/$file"
 	    egrep --text -v -f "$clean/$file" $TMPDIR/checked | cat \
 		>> $TMPDIR/checked.1 \
-		    || error "Could not output to TMPDIR/checked.1 Disk Full?"
+		    || error "Could not output to TMPDIR/checked.1."
 	    mv $TMPDIR/checked.1 $TMPDIR/checked \
 	        || error "Could not move $TMPDIR/checked.1 to $TMPDIR/checked"
 	done
@@ -443,7 +443,7 @@ logoutput() {
 	    || error "Could not run logtail or save output"
     else
 	echo "E: File could not be read: $file" >> $TMPDIR/errors \
-	    || error "Could not output to $TMPDIR/errors  Disk Full?"
+	    || error "Could not output to $TMPDIR/errors."
     fi
 }
 
@@ -684,7 +684,7 @@ fi
 debug "Sorting logs"
 $SORT $TMPDIR/logoutput/* | sed -e 's/[[:space:]]\+$//' | cat  \
     > $TMPDIR/logoutput-sorted \
-        || error "Could not output to $TMPDIR/logoutput-sorted Disk Full?"
+        || error "Could not output to $TMPDIR/logoutput-sorted."
  
 
 # See if the tmp file exists and actually has data to check,
@@ -711,7 +711,7 @@ $(cat $TMPDIR/errors)
 
 EOF
     } >> $TMPDIR/report \
-    || error "Could not output to $TMPDIR/report Disk Full?"
+    || error "Could not output to $TMPDIR/report."
 fi
 
 # Check for blatant cracking attempts
@@ -764,9 +764,9 @@ fi
 # Add warnings to report
 if [ -f $TMPDIR/warnings ]; then
 	  printheader "Logcheck Warnings" >> $TMPDIR/report \
-	  || error "Cannot append warnings to report.  Disk Full?"
+	  || error "Cannot append warnings to report."
 	cat $TMPDIR/warnings >> $TMPDIR/report && echo >> $TMPDIR/report \
-	  || error "Cannot append warnings to report.  Disk full?"
+	  || error "Cannot append warnings to report."
 fi
 
 # Include the footer if present.
