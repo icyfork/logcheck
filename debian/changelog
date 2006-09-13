@@ -23,6 +23,9 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   * violations.ignore.d/logcheck-login: Ignore successful root logins on tty's.
   * ignore.d.workstation/ifplugd: Ignore link beat loose.
   * ignore.d.workstation/kernel: detto.
+  * debian/logcheck-database.postinst: Make logcheck-database piuparts clean,
+    on upgrade. Remove moved configfiles if they are unchanged.
+    Thanks Lars Wirzenius <liw@iki.fi> for report (closes: #355701).
 
   [ martin f. krafft ]
   * ignore.d.server/pdns: ignore failure to get SOA serial from supermasters
@@ -36,16 +39,15 @@ logcheck (1.2.48) UNRELEASED; urgency=low
     violations.ignore.d.
   * ignore.d.server/ssh: duplicate invalid user messages from
     violations.ignore.d, and also cater for zero-length usernames.
+  * ignore.d.server/smartd, violations.ignore.d/logcheck-smartd: revert to
+    reporting drastic changes in attributes.
+  * ignore.d.server/smartd, violations.ignore.d/logcheck-smartd: now works
+    with almost arbitrary disk names.
   * ignore.d.server/kernel: partially undo link status message filter, now
     only filters up messages, not the down ones. By nature of the link status,
     the messages will come in pairs or not at all anyway.
 
-  [ maximilian attems ]
-  * debian/logcheck-database.postinst: Make logcheck-database piuparts clean,
-    on upgrade. Remove moved configfiles if they are unchanged. 
-    Thanks Lars Wirzenius <liw@iki.fi> for report (closes: #355701).
-
- -- maximilian attems <maks@sternwelten.at>  Sun, 13 Aug 2006 12:21:49 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 13 Sep 2006 18:46:43 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
