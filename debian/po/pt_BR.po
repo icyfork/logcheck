@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck\n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-09-15 20:47+0200\n"
+"POT-Creation-Date: 2006-09-15 20:55+0200\n"
 "PO-Revision-Date: 2004-06-15 22:39-0300\n"
 "Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team: Debian-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
@@ -26,37 +26,12 @@ msgstr ""
 #. Type: note
 #. Description
 #: ../logcheck.templates:1001
-#, fuzzy
-msgid "Changing the report level or email address"
-msgstr "Mudando o nível de relatório ou endereço de e-mail."
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid ""
-"To change from the default report level (server) or the default email "
-"address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
-msgstr ""
-"Para mudar o nível de relatório padrão (servidor) ou o endereço de e-mail "
-"padrão (root) você precisa editar o arquivo \"/etc/logcheck/logcheck.conf\"."
-
-#. Type: note
-#. Description
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001 ../logcheck.templates:2001
-msgid "Please see /usr/share/doc/logcheck for more details."
-msgstr "Por favor, consulte /usr/share/doc/logcheck para maiores detalhes."
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:2001
 msgid "Changes to ignore.d directory behaviour"
 msgstr "Mudanças no comportamento do diretório ignore.d"
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2001
+#: ../logcheck.templates:1001
 msgid ""
 "Now the ignore.d directories function in an additive manner (i.e. higher "
 "levels also include the lower levels):"
@@ -66,7 +41,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2001
+#: ../logcheck.templates:1001
 msgid ""
 " - workstation  = workstation + server + paranoid\n"
 " - server       = server + paranoid\n"
@@ -78,13 +53,19 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2001
+#: ../logcheck.templates:1001
 msgid ""
 "Also run-parts(8) now controls which rulefiles are included from the .d "
 "directories."
 msgstr ""
 "Adicionalmente, o run-parts(8) agora controla quais arquivos de regras são "
 "incluídos dos diretórios .d ."
+
+#. Type: note
+#. Description
+#: ../logcheck.templates:1001
+msgid "Please see /usr/share/doc/logcheck for more details."
+msgstr "Por favor, consulte /usr/share/doc/logcheck para maiores detalhes."
 
 #. Type: boolean
 #. Description
@@ -114,6 +95,18 @@ msgid ""
 msgstr ""
 "Como um resultado dessa auditoria, diversos arquivos de regras foram "
 "removidos do pacote. Você gostaria de removê-los também de seu sistema ?"
+
+#, fuzzy
+#~ msgid "Changing the report level or email address"
+#~ msgstr "Mudando o nível de relatório ou endereço de e-mail."
+
+#~ msgid ""
+#~ "To change from the default report level (server) or the default email "
+#~ "address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
+#~ msgstr ""
+#~ "Para mudar o nível de relatório padrão (servidor) ou o endereço de e-mail "
+#~ "padrão (root) você precisa editar o arquivo \"/etc/logcheck/logcheck.conf"
+#~ "\"."
 
 #~ msgid "Logcheck standard rulefiles renamed"
 #~ msgstr "Arquivos de regras padrões do logcheck renomeados"

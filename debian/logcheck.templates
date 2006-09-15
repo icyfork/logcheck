@@ -1,11 +1,3 @@
-Template: logcheck/install-note
-Type: note
-_Description: Changing the report level or email address
- To change from the default report level (server) or the default email
- address (root) you need to edit "/etc/logcheck/logcheck.conf".
- .
- Please see /usr/share/doc/logcheck for more details.
-
 Template: logcheck/changes
 Type: note
 _Description: Changes to ignore.d directory behaviour

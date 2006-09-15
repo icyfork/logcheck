@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck \n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-09-15 20:47+0200\n"
+"POT-Creation-Date: 2006-09-15 20:55+0200\n"
 "PO-Revision-Date: 2006-07-10 16:30+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
@@ -25,37 +25,12 @@ msgstr ""
 #. Type: note
 #. Description
 #: ../logcheck.templates:1001
-msgid "Changing the report level or email address"
-msgstr "Ändring av rapporteringsnivå eller e-postadress"
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid ""
-"To change from the default report level (server) or the default email "
-"address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
-msgstr ""
-"För att ändra från standardnivån för rapporter (server) eller standard e-"
-"postadress (root) behöver du göra ändringar i \"/etc/logcheck/logcheck.conf"
-"\"."
-
-#. Type: note
-#. Description
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001 ../logcheck.templates:2001
-msgid "Please see /usr/share/doc/logcheck for more details."
-msgstr "Se /usr/share/doc/logcheck för mer information."
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:2001
 msgid "Changes to ignore.d directory behaviour"
 msgstr "Ändringar i beteendet för katalogen ignore.d"
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2001
+#: ../logcheck.templates:1001
 msgid ""
 "Now the ignore.d directories function in an additive manner (i.e. higher "
 "levels also include the lower levels):"
@@ -65,7 +40,7 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2001
+#: ../logcheck.templates:1001
 msgid ""
 " - workstation  = workstation + server + paranoid\n"
 " - server       = server + paranoid\n"
@@ -77,13 +52,19 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../logcheck.templates:2001
+#: ../logcheck.templates:1001
 msgid ""
 "Also run-parts(8) now controls which rulefiles are included from the .d "
 "directories."
 msgstr ""
 "Även run-parts(8) kontrollerar nu vilka regelfiler som ska inkluderas från ."
 "d-katalogerna."
+
+#. Type: note
+#. Description
+#: ../logcheck.templates:1001
+msgid "Please see /usr/share/doc/logcheck for more details."
+msgstr "Se /usr/share/doc/logcheck för mer information."
 
 #. Type: boolean
 #. Description
@@ -111,6 +92,17 @@ msgid ""
 msgstr ""
 "Som ett resultat av detta har ett antal regelfiler tagits bort från detta "
 "paket."
+
+#~ msgid "Changing the report level or email address"
+#~ msgstr "Ändring av rapporteringsnivå eller e-postadress"
+
+#~ msgid ""
+#~ "To change from the default report level (server) or the default email "
+#~ "address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
+#~ msgstr ""
+#~ "För att ändra från standardnivån för rapporter (server) eller standard e-"
+#~ "postadress (root) behöver du göra ändringar i \"/etc/logcheck/logcheck."
+#~ "conf\"."
 
 #~ msgid "Logcheck standard rulefiles renamed"
 #~ msgstr "Logchecks standardregelfil har bytt namn"

@@ -48,9 +48,11 @@ logcheck (1.2.48) UNRELEASED; urgency=low
     the messages will come in pairs or not at all anyway.
 
   [ maximilian attems ]
-  * Remove old spammy low priority debconf template.
+  * Remove old useless logcheck/changes low priority debconf template.
+  * Remove logcheck/install-note as logcheck.conf is self explantory.
+    (closes: 377618) Thanks Thomas Huriaux <thomas.huriaux@gmail.com>.
 
- -- maximilian attems <maks@sternwelten.at>  Fri, 15 Sep 2006 20:44:38 +0200
+ -- maximilian attems <maks@sternwelten.at>  Fri, 15 Sep 2006 20:57:12 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
