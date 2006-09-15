@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.2.47\n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-07-16 14:33+0200\n"
+"POT-Creation-Date: 2006-09-15 20:47+0200\n"
 "PO-Revision-Date: 2006-07-21 17:17+0200\n"
 "Last-Translator: Jordà Polo <jorda@ettin.org>\n"
 "Language-Team: Català <debian-l10n-catalan@lists.debian.org>\n"
@@ -79,32 +79,15 @@ msgstr ""
 "A més, run-parts(8) controla ara quins fitxers de regles dels directoris .d "
 "són inclosos."
 
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:1001
-msgid "Logcheck standard rulefiles renamed"
-msgstr "Canvi de nom dels fitxers de regles estàndard de logcheck"
-
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:1001
-msgid ""
-"As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
-"\"logcheck\" and the \"standard.postfix\" file has been renamed to "
-"\"logcheck-postfix\"."
-msgstr ""
-"Des de la versió 1.2.1, s'ha canviat el nom dels fitxers de regles \"standard"
-"\" a \"logcheck\", i el fitxer \"standard.postfix\" a \"logcheck-postfix\"."
-
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 msgid "Would you like to delete obsolete conffiles?"
 msgstr "Voleu esborrar els fitxers de configuració obsolets?"
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 msgid ""
 "The rulefiles in logcheck-database have just been through an audit to remove "
 "duplicate entries and to make them more specific - this also reduces false "
@@ -116,8 +99,19 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 msgid ""
 "As a result of this a number of rulefiles have been removed from the package."
-msgstr ""
-"Com a conseqüència s'han suprimit alguns fitxers de regles del paquet."
+msgstr "Com a conseqüència s'han suprimit alguns fitxers de regles del paquet."
+
+#~ msgid "Logcheck standard rulefiles renamed"
+#~ msgstr "Canvi de nom dels fitxers de regles estàndard de logcheck"
+
+#~ msgid ""
+#~ "As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
+#~ "\"logcheck\" and the \"standard.postfix\" file has been renamed to "
+#~ "\"logcheck-postfix\"."
+#~ msgstr ""
+#~ "Des de la versió 1.2.1, s'ha canviat el nom dels fitxers de regles "
+#~ "\"standard\" a \"logcheck\", i el fitxer \"standard.postfix\" a "
+#~ "\"logcheck-postfix\"."

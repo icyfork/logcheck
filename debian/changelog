@@ -47,7 +47,10 @@ logcheck (1.2.48) UNRELEASED; urgency=low
     only filters up messages, not the down ones. By nature of the link status,
     the messages will come in pairs or not at all anyway.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 13 Sep 2006 18:46:43 +0200
+  [ maximilian attems ]
+  * Remove old spammy low priority debconf template.
+
+ -- maximilian attems <maks@sternwelten.at>  Fri, 15 Sep 2006 20:44:38 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 

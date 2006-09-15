@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck 1.2.47\n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-07-16 14:33+0200\n"
+"POT-Creation-Date: 2006-09-15 20:47+0200\n"
 "PO-Revision-Date: 2006-07-14 20:24+0900\n"
 "Last-Translator: Hideki Yamane (Debian-JP) <henrich@debian.or.jp>\n"
 "Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
@@ -86,32 +86,15 @@ msgstr ""
 "そして、run-parts(8) は .d ディレクトリに含まれているルールファイルを取り扱う"
 "ようになります。"
 
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:1001
-msgid "Logcheck standard rulefiles renamed"
-msgstr "logcheck の標準ルールファイル名が変更されました"
-
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:1001
-msgid ""
-"As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
-"\"logcheck\" and the \"standard.postfix\" file has been renamed to "
-"\"logcheck-postfix\"."
-msgstr ""
-"バージョン 1.2.1 の時点で、\"standard\" ルールファイルは \"logcheck\" に、"
-"\"standard.postfix\" は \"logcheck-postfix\" に名前を変更されました。"
-
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 msgid "Would you like to delete obsolete conffiles?"
 msgstr "不要になった設定ファイルを削除しますか？"
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 msgid ""
 "The rulefiles in logcheck-database have just been through an audit to remove "
 "duplicate entries and to make them more specific - this also reduces false "
@@ -123,10 +106,21 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 msgid ""
 "As a result of this a number of rulefiles have been removed from the package."
 msgstr "この結果、ルールファイルのうち幾つかがこのパッケージから削除されます。"
+
+#~ msgid "Logcheck standard rulefiles renamed"
+#~ msgstr "logcheck の標準ルールファイル名が変更されました"
+
+#~ msgid ""
+#~ "As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
+#~ "\"logcheck\" and the \"standard.postfix\" file has been renamed to "
+#~ "\"logcheck-postfix\"."
+#~ msgstr ""
+#~ "バージョン 1.2.1 の時点で、\"standard\" ルールファイルは \"logcheck\" に、"
+#~ "\"standard.postfix\" は \"logcheck-postfix\" に名前を変更されました。"
 
 #~ msgid "Local modifications should be put into .d directories"
 #~ msgstr "ローカルな変更は .d ディレクトリに配置する必要があります。"

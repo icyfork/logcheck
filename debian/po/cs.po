@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck\n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-07-16 14:33+0200\n"
+"POT-Creation-Date: 2006-09-15 20:47+0200\n"
 "PO-Revision-Date: 2004-07-16 14:55+0200\n"
 "Last-Translator: Jan Outrata <outrataj@upcase.inf.upol.cz>\n"
 "Language-Team: Czech <provoz@debian.cz>\n"
@@ -86,33 +86,16 @@ msgstr ""
 "Také run-parts(8) nyní urèuje, které soubory pravidel z adresáøù .d jsou "
 "zahrnuty."
 
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:1001
-msgid "Logcheck standard rulefiles renamed"
-msgstr "Standardní soubory pravidel programu logcheck byly pøejmenovány"
-
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:1001
-msgid ""
-"As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
-"\"logcheck\" and the \"standard.postfix\" file has been renamed to "
-"\"logcheck-postfix\"."
-msgstr ""
-"Od verze 1.2.1 byly soubory pravidel \"standard\" pøejmenovány na \"logcheck"
-"\" a soubor \"standard.postfix\" byl pøejmenován na \"logcheck-postfix\"."
-
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 #, fuzzy
 msgid "Would you like to delete obsolete conffiles?"
 msgstr "Smazat zastaralé konfiguraèní soubory"
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 msgid ""
 "The rulefiles in logcheck-database have just been through an audit to remove "
 "duplicate entries and to make them more specific - this also reduces false "
@@ -124,13 +107,25 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 #, fuzzy
 msgid ""
 "As a result of this a number of rulefiles have been removed from the package."
 msgstr ""
 "Jako výsledek tohoto sna¾ení bylo z balíèku odstranìno nìkolik souborù "
 "pravidel. Chcete je smazat?"
+
+#~ msgid "Logcheck standard rulefiles renamed"
+#~ msgstr "Standardní soubory pravidel programu logcheck byly pøejmenovány"
+
+#~ msgid ""
+#~ "As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
+#~ "\"logcheck\" and the \"standard.postfix\" file has been renamed to "
+#~ "\"logcheck-postfix\"."
+#~ msgstr ""
+#~ "Od verze 1.2.1 byly soubory pravidel \"standard\" pøejmenovány na "
+#~ "\"logcheck\" a soubor \"standard.postfix\" byl pøejmenován na \"logcheck-"
+#~ "postfix\"."
 
 #~ msgid "Local modifications should be put into .d directories"
 #~ msgstr "Lokální zmìny by mìly být ulo¾eny do adresáøù .d"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck 1.2.47\n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-07-16 14:33+0200\n"
+"POT-Creation-Date: 2006-09-15 20:47+0200\n"
 "PO-Revision-Date: 2006-07-10 15:26+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -79,33 +79,15 @@ msgstr ""
 "Hơn nữa, tiến trình run-parts(8) (chạy phần) lúc bây giờ điều kiển những tập "
 "tin quy tắc nào được gồm từ những thư mục kiểu « .d »."
 
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:1001
-msgid "Logcheck standard rulefiles renamed"
-msgstr "Mỗi tập tin quy tắc chuẩn Logcheck (kiểm tra bản ghi) có tên mới"
-
-#. Type: note
-#. Description
-#: ../logcheck-database.templates:1001
-msgid ""
-"As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
-"\"logcheck\" and the \"standard.postfix\" file has been renamed to "
-"\"logcheck-postfix\"."
-msgstr ""
-"Kể từ phiên bản 1.2.1, những tập tin quy tắc « chuẩn » đã được thay đổi tên "
-"thành « logcheck » còn tập tin « standard.postfix » đã được thay đổi tên "
-"thành « logcheck-postfix »."
-
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 msgid "Would you like to delete obsolete conffiles?"
 msgstr "Bạn có muốn xoá bỏ các tập tin cấu hình cũ kỹ không?"
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 msgid ""
 "The rulefiles in logcheck-database have just been through an audit to remove "
 "duplicate entries and to make them more specific - this also reduces false "
@@ -117,10 +99,22 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../logcheck-database.templates:2001
+#: ../logcheck-database.templates:1001
 msgid ""
 "As a result of this a number of rulefiles have been removed from the package."
 msgstr "Một kết quả là một số tập tin quy tắc đã bị gỡ bỏ ra gói này."
+
+#~ msgid "Logcheck standard rulefiles renamed"
+#~ msgstr "Mỗi tập tin quy tắc chuẩn Logcheck (kiểm tra bản ghi) có tên mới"
+
+#~ msgid ""
+#~ "As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
+#~ "\"logcheck\" and the \"standard.postfix\" file has been renamed to "
+#~ "\"logcheck-postfix\"."
+#~ msgstr ""
+#~ "Kể từ phiên bản 1.2.1, những tập tin quy tắc « chuẩn » đã được thay đổi "
+#~ "tên thành « logcheck » còn tập tin « standard.postfix » đã được thay đổi "
+#~ "tên thành « logcheck-postfix »."
 
 #~ msgid "Local modifications should be put into .d directories"
 #~ msgstr "Hãy chèn mọi bản sửa đổi địa phương vào thư mục .d"
