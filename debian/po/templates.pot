@@ -8,50 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-09-15 20:55+0200\n"
+"POT-Creation-Date: 2006-09-16 08:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid "Changes to ignore.d directory behaviour"
-msgstr ""
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid ""
-"Now the ignore.d directories function in an additive manner (i.e. higher "
-"levels also include the lower levels):"
-msgstr ""
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid ""
-" - workstation  = workstation + server + paranoid\n"
-" - server       = server + paranoid\n"
-" - paranoid     = paranoid"
-msgstr ""
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid ""
-"Also run-parts(8) now controls which rulefiles are included from the .d "
-"directories."
-msgstr ""
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid "Please see /usr/share/doc/logcheck for more details."
-msgstr ""
 
 #. Type: boolean
 #. Description

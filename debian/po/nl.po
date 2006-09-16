@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck_1.2.47\n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-09-15 20:55+0200\n"
+"POT-Creation-Date: 2006-09-16 08:51+0200\n"
 "PO-Revision-Date: 2006-07-10 12:23+0200\n"
 "Last-Translator: Frans Pop <aragorn@tiscali.nl>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
@@ -24,50 +24,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid "Changes to ignore.d directory behaviour"
-msgstr "Werking van de 'ignore.d'-map wijzigen"
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid ""
-"Now the ignore.d directories function in an additive manner (i.e. higher "
-"levels also include the lower levels):"
-msgstr ""
-"De regels in de 'ignore.d'-mappen zijn nu cumulatief; dat wil zeggen dat "
-"hogere niveaus ook de lagere niveaus toepassen:"
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid ""
-" - workstation  = workstation + server + paranoid\n"
-" - server       = server + paranoid\n"
-" - paranoid     = paranoid"
-msgstr ""
-" - workstation  = workstation + server + paranoid\n"
-" - server       = server + paranoid\n"
-" - paranoid     = paranoid"
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid ""
-"Also run-parts(8) now controls which rulefiles are included from the .d "
-"directories."
-msgstr ""
-"Daarnaast wordt nu door run-parts(8) bepaald welke bestanden met regels uit "
-"de '.d'-mappen worden uitgevoerd."
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid "Please see /usr/share/doc/logcheck for more details."
-msgstr "Raadpleeg '/usr/share/doc/logcheck' voor nadere informatie."
 
 #. Type: boolean
 #. Description
@@ -94,6 +50,35 @@ msgid ""
 "As a result of this a number of rulefiles have been removed from the package."
 msgstr ""
 "Als gevolg hiervan is een aantal regelbestanden uit het pakket vervallen."
+
+#~ msgid "Changes to ignore.d directory behaviour"
+#~ msgstr "Werking van de 'ignore.d'-map wijzigen"
+
+#~ msgid ""
+#~ "Now the ignore.d directories function in an additive manner (i.e. higher "
+#~ "levels also include the lower levels):"
+#~ msgstr ""
+#~ "De regels in de 'ignore.d'-mappen zijn nu cumulatief; dat wil zeggen dat "
+#~ "hogere niveaus ook de lagere niveaus toepassen:"
+
+#~ msgid ""
+#~ " - workstation  = workstation + server + paranoid\n"
+#~ " - server       = server + paranoid\n"
+#~ " - paranoid     = paranoid"
+#~ msgstr ""
+#~ " - workstation  = workstation + server + paranoid\n"
+#~ " - server       = server + paranoid\n"
+#~ " - paranoid     = paranoid"
+
+#~ msgid ""
+#~ "Also run-parts(8) now controls which rulefiles are included from the .d "
+#~ "directories."
+#~ msgstr ""
+#~ "Daarnaast wordt nu door run-parts(8) bepaald welke bestanden met regels "
+#~ "uit de '.d'-mappen worden uitgevoerd."
+
+#~ msgid "Please see /usr/share/doc/logcheck for more details."
+#~ msgstr "Raadpleeg '/usr/share/doc/logcheck' voor nadere informatie."
 
 #~ msgid "Changing the report level or email address"
 #~ msgstr "Het rapportageniveau of mailadres wijzigen"

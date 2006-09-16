@@ -15,60 +15,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logcheck 1.2.46\n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-09-15 20:55+0200\n"
+"POT-Creation-Date: 2006-09-16 08:51+0200\n"
 "PO-Revision-Date: 2006-07-19 20:01+0200\n"
 "Last-Translator: Rémi Pannequin <remi.pannequin@laposte.net>\n"
 "Language-Team: French <debian-l10n-french@debian.list.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid "Changes to ignore.d directory behaviour"
-msgstr "Changements dans le comportement de ignore.d"
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid ""
-"Now the ignore.d directories function in an additive manner (i.e. higher "
-"levels also include the lower levels):"
-msgstr ""
-"Les répertoires ignore.d fonctionnent maintenant de manière additive (les "
-"sous-répertoires sont inclus) :"
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid ""
-" - workstation  = workstation + server + paranoid\n"
-" - server       = server + paranoid\n"
-" - paranoid     = paranoid"
-msgstr ""
-" - workstation  = workstation + server + paranoid\n"
-"                  (poste de travail + serveur + paranoïaque)\n"
-" - server       = server + paranoid\n"
-" - paranoid     = paranoid"
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid ""
-"Also run-parts(8) now controls which rulefiles are included from the .d "
-"directories."
-msgstr ""
-"De même, run-parts(8) gère maintenant le choix des fichiers de règles à "
-"inclure depuis les répertoires « .d »."
-
-#. Type: note
-#. Description
-#: ../logcheck.templates:1001
-msgid "Please see /usr/share/doc/logcheck for more details."
-msgstr ""
-"Pour plus d'informations, veuillez consulter les documents placés dans /usr/"
-"share/doc/logcheck."
 
 #. Type: boolean
 #. Description
@@ -96,6 +49,38 @@ msgid ""
 msgstr ""
 "En conséquence, un certain nombre de fichiers de règles ont été supprimés du "
 "paquet."
+
+#~ msgid "Changes to ignore.d directory behaviour"
+#~ msgstr "Changements dans le comportement de ignore.d"
+
+#~ msgid ""
+#~ "Now the ignore.d directories function in an additive manner (i.e. higher "
+#~ "levels also include the lower levels):"
+#~ msgstr ""
+#~ "Les répertoires ignore.d fonctionnent maintenant de manière additive (les "
+#~ "sous-répertoires sont inclus) :"
+
+#~ msgid ""
+#~ " - workstation  = workstation + server + paranoid\n"
+#~ " - server       = server + paranoid\n"
+#~ " - paranoid     = paranoid"
+#~ msgstr ""
+#~ " - workstation  = workstation + server + paranoid\n"
+#~ "                  (poste de travail + serveur + paranoïaque)\n"
+#~ " - server       = server + paranoid\n"
+#~ " - paranoid     = paranoid"
+
+#~ msgid ""
+#~ "Also run-parts(8) now controls which rulefiles are included from the .d "
+#~ "directories."
+#~ msgstr ""
+#~ "De même, run-parts(8) gère maintenant le choix des fichiers de règles à "
+#~ "inclure depuis les répertoires « .d »."
+
+#~ msgid "Please see /usr/share/doc/logcheck for more details."
+#~ msgstr ""
+#~ "Pour plus d'informations, veuillez consulter les documents placés dans /"
+#~ "usr/share/doc/logcheck."
 
 #~ msgid "Changing the report level or email address"
 #~ msgstr ""
