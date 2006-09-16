@@ -53,8 +53,9 @@ logcheck (1.2.48) UNRELEASED; urgency=low
     (closes: 377618) Thanks Thomas Huriaux <thomas.huriaux@gmail.com>.
   * Move logcheck/changes retroactively to logcheck.News. Thus cleanup
     logcheck.control, no debconf left.
+  * logcheck-database.config fix bashism.
 
- -- maximilian attems <maks@sternwelten.at>  Sat, 16 Sep 2006 08:49:51 +0200
+ -- maximilian attems <maks@sternwelten.at>  Sat, 16 Sep 2006 09:05:33 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
