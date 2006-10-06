@@ -57,8 +57,9 @@ logcheck (1.2.48) UNRELEASED; urgency=low
 
   [ martin f. krafft ]
   * ignore.d.server/dovecot: ignoring inactivity logouts.
+  * ignore.d.server/pdns: ignoring message about new superslave zones.
 
- -- martin f. krafft <madduck@debian.org>  Fri,  6 Oct 2006 16:46:02 +0200
+ -- martin f. krafft <madduck@debian.org>  Fri,  6 Oct 2006 16:52:56 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
