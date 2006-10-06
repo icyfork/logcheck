@@ -35,6 +35,7 @@ logcheck (1.2.48~unreleased.1) unstable; urgency=low
 
   [ martin f. krafft ]
   * moved po-debconf build-dep to arch-dependent list due to clean target.
+  * removed logcheck debconf files, only logcheck-database has debconf.
   * ignore.d.server/pdns: ignore failure to get SOA serial from supermasters
     that send wrong notifies.
   * ignore.d.server/cron-apt: fixed several rules for corner cases.
