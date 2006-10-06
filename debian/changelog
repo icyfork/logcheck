@@ -1,4 +1,4 @@
-logcheck (1.2.48) UNRELEASED; urgency=low
+logcheck (1.2.48) unstable; urgency=low
 
   [ maximilian attems ]
   * ignore.d.server/postfix: Fix cleanup rule and remove duplicate.
@@ -26,6 +26,12 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   * debian/logcheck-database.postinst: Make logcheck-database piuparts clean,
     on upgrade. Remove moved configfiles if they are unchanged.
     Thanks Lars Wirzenius <liw@iki.fi> for report (closes: #355701).
+  * Remove old useless logcheck/changes low priority debconf template.
+  * Remove logcheck/install-note as logcheck.conf is self explantory.
+    (closes: 377618) Thanks Thomas Huriaux <thomas.huriaux@gmail.com>.
+  * Move logcheck/changes retroactively to logcheck.News. Thus cleanup
+    logcheck.control, no debconf left.
+  * logcheck-database.config fix bashism.
 
   [ martin f. krafft ]
   * ignore.d.server/pdns: ignore failure to get SOA serial from supermasters
@@ -46,16 +52,6 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   * ignore.d.server/kernel: partially undo link status message filter, now
     only filters up messages, not the down ones. By nature of the link status,
     the messages will come in pairs or not at all anyway.
-
-  [ maximilian attems ]
-  * Remove old useless logcheck/changes low priority debconf template.
-  * Remove logcheck/install-note as logcheck.conf is self explantory.
-    (closes: 377618) Thanks Thomas Huriaux <thomas.huriaux@gmail.com>.
-  * Move logcheck/changes retroactively to logcheck.News. Thus cleanup
-    logcheck.control, no debconf left.
-  * logcheck-database.config fix bashism.
-
-  [ martin f. krafft ]
   * ignore.d.server/dovecot: ignoring inactivity logouts.
   * ignore.d.server/pdns: ignoring message about new superslave zones.
   * ignore.d.server/spamd: correcting typo in SIGCHLD cleanup rule.
@@ -63,7 +59,7 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   * ignore.d.server/pdns: ignore messages about not being authoritative for
     just about anything.
 
- -- martin f. krafft <madduck@debian.org>  Fri,  6 Oct 2006 17:03:03 +0200
+ -- martin f. krafft <madduck@debian.org>  Fri,  6 Oct 2006 17:04:11 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
