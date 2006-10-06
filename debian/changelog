@@ -55,7 +55,10 @@ logcheck (1.2.48) UNRELEASED; urgency=low
     logcheck.control, no debconf left.
   * logcheck-database.config fix bashism.
 
- -- maximilian attems <maks@sternwelten.at>  Sat, 16 Sep 2006 09:05:33 +0200
+  [ martin f. krafft ]
+  * ignore.d.server/dovecot: ignoring inactivity logouts.
+
+ -- martin f. krafft <madduck@debian.org>  Fri,  6 Oct 2006 16:46:02 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
