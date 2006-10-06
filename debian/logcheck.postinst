@@ -22,9 +22,6 @@ set -e
 #     installation fails and the `postinst' is called with `abort-upgrade',
 #     `abort-remove' or `abort-deconfigure'.
 
-# Source debconf library.
-. /usr/share/debconf/confmodule
-
 case "$1" in
     configure)
 	# Add logcheck user
