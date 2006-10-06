@@ -58,9 +58,12 @@ logcheck (1.2.48) UNRELEASED; urgency=low
   [ martin f. krafft ]
   * ignore.d.server/dovecot: ignoring inactivity logouts.
   * ignore.d.server/pdns: ignoring message about new superslave zones.
+  * ignore.d.server/spamd: correcting typo in SIGCHLD cleanup rule.
   * ignore.d.server/ssh: ignoring ssh_msg_recv failure messages.
+  * ignore.d.server/pdns: ignore messages about not being authoritative for
+    just about anything.
 
- -- martin f. krafft <madduck@debian.org>  Fri,  6 Oct 2006 17:01:23 +0200
+ -- martin f. krafft <madduck@debian.org>  Fri,  6 Oct 2006 17:03:03 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
