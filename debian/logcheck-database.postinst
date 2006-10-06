@@ -80,11 +80,11 @@ case "$1" in
 
 	# Remove old sarge mv logcheck-data configfiles if unchanged
 	if [ -n "$2" ] && dpkg --compare-versions "$2" lt "1.2.48"; then
-		proftpd_sum=$(sha1sum '/etc/logcheck/ignore.d.paranoid/proftpd'\
+		proftpd_sum=$(sha1sum '/etc/logcheck/ignore.d.paranoid/proftpd' 2>/dev/null \
 			| awk '{print $1}')
-		imap_sum=$(sha1sum '/etc/logcheck/ignore.d.paranoid/imap' \
+		imap_sum=$(sha1sum '/etc/logcheck/ignore.d.paranoid/imap' 2>/dev/null \
 			| awk '{print $1}')
-		anacron_sum=$(sha1sum '/etc/logcheck/ignore.d.workstation/anacron'\
+		anacron_sum=$(sha1sum '/etc/logcheck/ignore.d.workstation/anacron' 2>/dev/null \
 			| awk '{print $1}')
 		if [ "${proftpd_sum}" = "da39a3ee5e6b4b0d3255bfef95601890afd80709" ]; then
 			rm -rf /etc/logcheck/ignore.d.paranoid/proftpd
