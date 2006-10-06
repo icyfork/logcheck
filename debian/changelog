@@ -1,4 +1,4 @@
-logcheck (1.2.48) unstable; urgency=low
+logcheck (1.2.48~unreleased.1) unstable; urgency=low
 
   [ maximilian attems ]
   * ignore.d.server/postfix: Fix cleanup rule and remove duplicate.
@@ -34,6 +34,7 @@ logcheck (1.2.48) unstable; urgency=low
   * logcheck-database.config fix bashism.
 
   [ martin f. krafft ]
+  * moved po-debconf build-dep to arch-dependent list due to clean target.
   * ignore.d.server/pdns: ignore failure to get SOA serial from supermasters
     that send wrong notifies.
   * ignore.d.server/cron-apt: fixed several rules for corner cases.
@@ -59,7 +60,7 @@ logcheck (1.2.48) unstable; urgency=low
   * ignore.d.server/pdns: ignore messages about not being authoritative for
     just about anything.
 
- -- martin f. krafft <madduck@debian.org>  Fri,  6 Oct 2006 17:04:11 +0200
+ -- martin f. krafft <madduck@debian.org>  Fri,  6 Oct 2006 17:12:11 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
