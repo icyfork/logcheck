@@ -1,4 +1,4 @@
-logcheck (1.2.48~unreleased.1) unstable; urgency=low
+logcheck (1.2.48) unstable; urgency=low
 
   [ maximilian attems ]
   * ignore.d.server/postfix: Fix cleanup rule and remove duplicate.
@@ -30,7 +30,7 @@ logcheck (1.2.48~unreleased.1) unstable; urgency=low
   * Remove logcheck/install-note as logcheck.conf is self explantory.
     (closes: 377618) Thanks Thomas Huriaux <thomas.huriaux@gmail.com>.
   * Move logcheck/changes retroactively to logcheck.News. Thus cleanup
-    logcheck.control, no debconf left.
+    logcheck.control, no debconf left (closes: #388924).
   * logcheck-database.config fix bashism.
 
   [ martin f. krafft ]
@@ -60,6 +60,8 @@ logcheck (1.2.48~unreleased.1) unstable; urgency=low
   * ignore.d.server/ssh: ignoring ssh_msg_recv failure messages.
   * ignore.d.server/pdns: ignore messages about not being authoritative for
     just about anything.
+  * ignore.d.server/cron-apt: fixed rule to properly treat lines with packages
+    whose names have dots (closes: #381983).
 
  -- martin f. krafft <madduck@debian.org>  Fri,  6 Oct 2006 17:12:11 +0200
 
