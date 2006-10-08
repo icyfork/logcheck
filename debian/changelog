@@ -62,8 +62,10 @@ logcheck (1.2.48) unstable; urgency=low
     just about anything.
   * ignore.d.server/cron-apt: fixed rule to properly treat lines with packages
     whose names have dots (closes: #381983).
+  * Do not remove the logcheck user on purge as it may still own files
+    (closes: #383243).
 
- -- martin f. krafft <madduck@debian.org>  Fri,  6 Oct 2006 17:12:11 +0200
+ -- martin f. krafft <madduck@debian.org>  Sun,  8 Oct 2006 16:16:19 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 

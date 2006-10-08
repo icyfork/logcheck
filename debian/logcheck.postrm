@@ -24,7 +24,7 @@ case "$1" in
 	    rm -r /var/lib/logcheck
 	fi
 	# remove user and group
-	deluser --quiet --remove-home logcheck > /dev/null || true
+	#deluser --quiet --remove-home logcheck > /dev/null || true
 	# remove header
 	if [ -e /etc/logcheck/header.txt ]; then
 	    rm -f /etc/logcheck/header.txt
