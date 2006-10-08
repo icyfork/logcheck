@@ -1,3 +1,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, starting scheduled (Long|Short) Self-Test\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, SMART Usage Attribute: 194 Temperature_Celsius changed from ([5-9]|[1-4][0-9]|50) to ([5-9]|[1-4][0-9]|50)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, SMART Usage Attribute: 9 Power_On_Hours changed from [0-9]+ to [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, Temperature changed (-|\+)?[1-3]+ Celsius to ([5-9]|[1-4][0-9]|50) Celsius since last report$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, did test of type L in current hour, skipping test of type S$

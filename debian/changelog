@@ -65,8 +65,10 @@ logcheck (1.2.48) unstable; urgency=low
   * Do not remove the logcheck user on purge as it may still own files
     (closes: #383243).
   * Updated nl debconf translation, thanks to Frans Pop (closes: #386768).
+  * Added patches by Elmar Hoffman to ignore power on time usage attribute and
+    messages about self-tests.
 
- -- martin f. krafft <madduck@debian.org>  Sun,  8 Oct 2006 16:27:10 +0200
+ -- martin f. krafft <madduck@debian.org>  Sun,  8 Oct 2006 17:15:43 +0200
 
 logcheck (1.2.47) unstable; urgency=low
 
