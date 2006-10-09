@@ -1,3 +1,9 @@
+logcheck (1.2.49) unstable; urgency=low
+
+  * ignore.d.server/postfix: ignore warning about non-SMTP commands.
+
+ -- martin f. krafft <madduck@debian.org>  Mon,  9 Oct 2006 12:44:15 +0200
+
 logcheck (1.2.48) unstable; urgency=low
 
   [ maximilian attems ]
