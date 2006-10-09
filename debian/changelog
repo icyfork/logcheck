@@ -1,8 +1,11 @@
 logcheck (1.2.49) unstable; urgency=low
 
   * ignore.d.server/postfix: ignore warning about non-SMTP commands.
+  * ignore.d.server/cron-apt: ignore regular messages about downgrades; they
+    are not going to take place anyway, and an error message is emitted
+    nevertheless.
 
- -- martin f. krafft <madduck@debian.org>  Mon,  9 Oct 2006 12:44:15 +0200
+ -- martin f. krafft <madduck@debian.org>  Mon,  9 Oct 2006 12:46:35 +0200
 
 logcheck (1.2.48) unstable; urgency=low
 

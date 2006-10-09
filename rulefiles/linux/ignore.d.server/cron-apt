@@ -6,11 +6,10 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Reading [pP]ackage [lL]ists\.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Building [dD]ependency [tT]ree\.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: The following NEW packages will be installed:$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: The following packages will be REMOVED:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: The following packages will be (upgraded|REMOVED|DOWNGRADED):$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: The following packages have been kept back:$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: The following packages will be upgraded:$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: {3}[ .+[:alnum:]-]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: [[:digit:]]+ upgraded, [[:digit:]]+ newly installed, [[:digit:]]+ to remove and [[:digit:]]+ not upgraded\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: [[:digit:]]+ upgraded, [[:digit:]]+ newly installed, ([[:digit:]]+ downgraded, )?[[:digit:]]+ to remove and [[:digit:]]+ not upgraded\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Need to get [[:digit:].]+([kM]?B)(/[.[:digit:]]+([kM]?B))* of archives\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: After unpacking [[:digit:].]+([kM]?B) (of additional disk space will be used|disk space will be freed)\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Get:[[:digit:]]+ ((ht|f)tp|file)://[.[:alnum:]/_-]+ [/[:alnum:]-]+ [-[:alnum:]_.]+ [+.:~[:alnum:]-]+ \[[.[:digit:]]+[kM]?B\]$
