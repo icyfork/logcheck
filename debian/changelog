@@ -2,8 +2,10 @@ logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
 
   * Add note about read permissions on log files to the error ourput generated
     by logcheck in case of problems (closes: #382858).
+  * ignore.d.server/dhcp: ignore messages about NAK due to portable client
+    from other network requesting old lease.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 23:55:02 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 00:11:55 +0200
 
 logcheck (1.2.49~unreleased.2) UNRELEASED; urgency=low
 
