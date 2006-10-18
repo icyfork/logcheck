@@ -124,6 +124,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/sm
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/smokeping 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/snmpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/spamd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/spamc 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/squid 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/ssh 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/stunnel 0640 != 0644
