@@ -22,8 +22,9 @@ logcheck (1.2.49) unstable; urgency=low
     a NIDS.
   * ignore.d.server/spamc: ignore warning about max message size limitation.
   * ignore.d.server/dovecot: ignore more messages about inactivity disonnects.
+  * ignore.d.server/dovecot: ignore PAM auth messages about unknown users.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 21:59:05 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 22:01:22 +0200
 
 logcheck (1.2.48) unstable; urgency=low
 
