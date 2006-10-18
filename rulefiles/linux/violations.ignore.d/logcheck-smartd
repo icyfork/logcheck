@@ -3,5 +3,10 @@
 
 ## some drives (such as Maxtor) use the Fahrenheit scale to report temperature
 ## changes, and thus require you to uncomment the following filter, which
-## filters everything less than 131:
-# ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, SMART Usage Attribute: 194 Temperature_Celsius changed from [[:digit:]]+ to (([0-9]?|1[0-2])[0-9]|130)
+## filters everything less than 131.
+## NOTE: your warranty will be void if you operate your drive at excessive
+##       temperatures!
+#^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, SMART Usage Attribute: 194 Temperature_Celsius changed from [[:digit:]]+ to (([0-9]?|1[0-2])[0-9]|130)$
+## if that still does not work and your drive reports higher values even though
+## you are sure that it's okay, enable the following rule.
+#^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, SMART Usage Attribute: 194 Temperature_Celsius changed from [[:digit:]]+ to [[:digit:]]+$
