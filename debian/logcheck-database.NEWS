@@ -2,9 +2,9 @@ logcheck-database (1.2.49) unstable; urgency=low
 
   logcheck-database now filters all SMART attribute changes reported by
   smartd, except for temperature changes (attribute 194) if the target value
-  is greater than or equal to 55 (these will be reported as system
-  alerts / violations.d), and changes to the following four attributes, which
-  will be reported as security alerts (cracking.d):
+  is greater than or equal to 55, which will be reported as security events
+  (violations.d), and changes to the following four attributes, which will be
+  reported as security alerts (cracking.d):
 
         Reallocated_Sector_Ct
         Current_Pending_Sector  (when > 0 only)
@@ -25,6 +25,11 @@ logcheck-database (1.2.49) unstable; urgency=low
      attributes whose values simply oscillate.
 
   [0] http://marc.theaimsgroup.com/?t=116015459000003&r=1&w=2
+
+  Unfortunately, some harddrives manufactures in the USA use the Fahrenheit
+  scale for the temperature values (braindeadedness!), so these will generate
+  spurious security events which you will have to filter out by uncommenting
+  the appropriate line in /etc/logcheck/violations.ignore.d/logcheck-smartd.
 
  -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 19:57:18 +0200
 
