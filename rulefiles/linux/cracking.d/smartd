@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, SMART Usage Attribute: 5 Reallocated_Sector_Ct changed from [[:digit:]]+ to [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, SMART Usage Attribute: 197 Current_Pending_Sector changed from [[:digit:]]+ to [1-9][[:digit:]]*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, SMART Usage Attribute: 198 Offline_Uncorrectable changed from [[:digit:]]+ to [1-9][[:digit:]]*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, SMART Usage Attribute: 199 UDMA_CRC_Error_Count changed from [[:digit:]]+ to [[:digit:]]+$

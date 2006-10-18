@@ -1,3 +1,33 @@
+logcheck-database (1.2.49) unstable; urgency=low
+
+  logcheck-database now filters all SMART attribute changes reported by
+  smartd, except for temperature changes (attribute 194) if the target value
+  is greater than or equal to 55 (these will be reported as system
+  alerts / violations.d), and changes to the following four attributes, which
+  will be reported as security alerts (cracking.d):
+
+        Reallocated_Sector_Ct
+        Current_Pending_Sector  (when > 0 only)
+        Offline_Uncorrectable   (when > 0 only)
+        UDMA_CRC_Error_Count
+
+  This decision was made based on several arguments, which have been brought
+  up as part of a mailing list discussion [0]. Among these were:
+
+  1. smartd can send warning mails and is configured to do so by default on
+     Debian.
+
+  2. attribute values are not standardised, so it is not possible to sensibly
+     filter out truly informational messages which are of no interest to the
+     administrator.
+
+  3. logcheck does not have any context information and can thus not filter
+     attributes whose values simply oscillate.
+
+  [0] http://marc.theaimsgroup.com/?t=116015459000003&r=1&w=2
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 19:57:18 +0200
+
 logcheck-database (1.1.1-8) unstable; urgency=low
 
   [This message was previously issued with debconf and has now been moved to

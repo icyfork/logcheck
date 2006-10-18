@@ -1,1 +1,2 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, SMART Prefailure Attribute: [[:digit:]]+ [_[:alnum:]]+ changed from [[:digit:]]+ to [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, SMART Usage Attribute: 194 Temperature_Celsius changed from [[:digit:]]+ to ([0-4]?[0-9]|5[0-4])$

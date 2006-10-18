@@ -6,8 +6,13 @@ logcheck (1.2.49) unstable; urgency=low
     nevertheless.
   * ignore.d.server/smartd: ignore messages smartd generates when sending
     warning mail; thanks to Elmar Hoffmann (closes: #393938).
+  * */*smartd: now filters all smartd attribute changes except for temperature
+    changes to values higher than and equal to 55, and changes to the
+    attributes Reallocated_Sector_Ct, Current_Pending_Sector,
+    Offline_Uncorrectable, and UDMA_CRC_Error_Count. See
+    /usr/share/doc/logcheck-database/NEWS.Debian.gz .
 
- -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 19:12:21 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 19:56:29 +0200
 
 logcheck (1.2.48) unstable; urgency=low
 
