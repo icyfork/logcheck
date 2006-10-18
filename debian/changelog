@@ -3,6 +3,8 @@ logcheck (1.2.49) unstable; urgency=low
   * ignore.d.server/postfix: ignore warning about non-SMTP commands.
   * ignore.d.server/postfix: ignore warning about lost connections after
     initial server greeting.
+  * ignore.d.server/postfix: ignore warning about lost connections any type of
+    upper case SMTP command.
   * ignore.d.server/cron-apt: ignore regular messages about downgrades; they
     are not going to take place anyway, and an error message is emitted
     nevertheless.
@@ -20,7 +22,7 @@ logcheck (1.2.49) unstable; urgency=low
     a NIDS.
   * ignore.d.server/spamc: ignore warning about max message size limitation.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 21:57:13 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 21:58:09 +0200
 
 logcheck (1.2.48) unstable; urgency=low
 

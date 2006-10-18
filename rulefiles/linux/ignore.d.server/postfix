@@ -36,7 +36,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: lost connection with [^[:space:]]+ while sending (MAIL FROM|RCPT TO)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: lost connection with [^[:space:]]+ while receiving the initial (SMTP|server) greeting$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: lost connection with [^[:space:]]+ while sending end of data -- message may be sent more than once$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: lost connection after (AUTH|CONNECT|DATA|EHLO|HELO|MAIL|RCPT|RSET) from [._[:alnum:]-]+\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: lost connection after [[:upper:]]+ from [._[:alnum:]-]+\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: host [^[:space:]]+ said: .* \(in reply to (HELO|EHLO|MAIL FROM|RCPT TO|end of DATA) command\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: no MX host for [^[:space:]]+ has a valid A record$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: host [^[:space:]]+ greeted me with my own hostname [._[:alnum:]-]+$
