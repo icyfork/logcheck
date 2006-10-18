@@ -14,8 +14,9 @@ logcheck (1.2.49) unstable; urgency=low
     attributes Reallocated_Sector_Ct, Current_Pending_Sector,
     Offline_Uncorrectable, and UDMA_CRC_Error_Count. See
     /usr/share/doc/logcheck-database/NEWS.Debian.gz .
+  * ignore.d.server/proftpd: ignore messages about login access limited.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 21:03:12 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 21:05:32 +0200
 
 logcheck (1.2.48) unstable; urgency=low
 
