@@ -1,4 +1,11 @@
-logcheck (1.2.49) unstable; urgency=low
+logcheck (1.2.49~unreleased.2) UNRELEASED; urgency=low
+
+  * violations.d/smartd: elevate messages about uncorrectable and unreadable
+    sectors (closes: #392679).
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 23:12:22 +0200
+
+logcheck (1.2.49~unreleased.1) UNRELEASED; urgency=low
 
   * ignore.d.server/postfix: ignore warning about non-SMTP commands.
   * ignore.d.server/postfix: ignore warning about lost connections after
@@ -26,7 +33,7 @@ logcheck (1.2.49) unstable; urgency=low
   * ignore.d.server/dovecot: ignore PAM auth messages about unknown users.
   * ignore.d.server/squid: ignore warning about missing PTR record.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 22:09:30 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 22:11:06 +0200
 
 logcheck (1.2.48) unstable; urgency=low
 
