@@ -34,7 +34,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ server dropped connection without sending the initial SMTP greeting \(port 25\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: host [^[:space:]]+ refused to talk to me: [45][0-9][0-9].*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: lost connection with [^[:space:]]+ while sending (MAIL FROM|RCPT TO)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: lost connection with [^[:space:]]+ while receiving the initial SMTP greeting$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: lost connection with [^[:space:]]+ while receiving the initial (SMTP|server) greeting$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: lost connection with [^[:space:]]+ while sending end of data -- message may be sent more than once$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: lost connection after (AUTH|CONNECT|DATA|EHLO|HELO|MAIL|RCPT|RSET) from [._[:alnum:]-]+\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: host [^[:space:]]+ said: .* \(in reply to (HELO|EHLO|MAIL FROM|RCPT TO|end of DATA) command\)$

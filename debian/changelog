@@ -1,6 +1,8 @@
 logcheck (1.2.49) unstable; urgency=low
 
   * ignore.d.server/postfix: ignore warning about non-SMTP commands.
+  * ignore.d.server/postfix: ignore warning about lost connections after
+    initial server greeting.
   * ignore.d.server/cron-apt: ignore regular messages about downgrades; they
     are not going to take place anyway, and an error message is emitted
     nevertheless.
