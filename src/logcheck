@@ -166,6 +166,9 @@ $message
 
 Check temporary directory: $TMPDIR
 
+Also verify that the logcheck user can read all files referenced in
+/etc/logcheck/logcheck.logfiles!
+
 $(export)
 EOF
 	} | mail -s "Logcheck: $HOSTNAME $DATE exiting due to errors" \
