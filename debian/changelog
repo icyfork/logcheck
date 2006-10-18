@@ -6,6 +6,7 @@ logcheck (1.2.49) unstable; urgency=low
   * ignore.d.server/cron-apt: ignore regular messages about downgrades; they
     are not going to take place anyway, and an error message is emitted
     nevertheless.
+  * ignore.d.server/cron-apt: handle situations when fetching takes minutes.
   * ignore.d.server/smartd: ignore messages smartd generates when sending
     warning mail; thanks to Elmar Hoffmann (closes: #393938).
   * */*smartd: now filters all smartd attribute changes except for temperature
@@ -14,7 +15,7 @@ logcheck (1.2.49) unstable; urgency=low
     Offline_Uncorrectable, and UDMA_CRC_Error_Count. See
     /usr/share/doc/logcheck-database/NEWS.Debian.gz .
 
- -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 19:56:29 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 21:03:12 +0200
 
 logcheck (1.2.48) unstable; urgency=low
 
