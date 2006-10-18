@@ -40,13 +40,10 @@ case "$1" in
 
 	# add logcheck to /etc/aliases
 	if [ -f /etc/aliases ] || [ -L /etc/aliases ]; then
-	    if ! grep -qi "^logcheck" /etc/aliases; then
-		echo "logcheck: root" >> /etc/aliases
-		newaliases=`which newaliases`
-		if [ $newaliases ] && [ -x $newaliases ]; then
-		    newaliases || true
-		fi
-	    fi
+    if ! grep -qi "^logcheck[[:space:]]*:" /etc/aliases; then
+      echo "logcheck: root" >> /etc/aliases
+      test -x "$(command -v newaliases)" && newaliases || :
+    fi
 	fi
 
 	# Remove unused old directory on upgrade

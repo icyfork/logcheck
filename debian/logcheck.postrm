@@ -32,18 +32,8 @@ case "$1" in
 	;;
 
     remove)
-	# remove logcheck from /etc/aliases
-	if [ -f /etc/aliases ] || [ -L /etc/aliases ]; then
-	    if grep -qi "^logcheck" /etc/aliases; then
-	    	grep -v "^logcheck" /etc/aliases > /etc/aliases.new
-		mv /etc/aliases.new /etc/aliases
-		newaliases=`which newaliases`
-		if [ $newaliases ] && [ -x $newaliases ]; then
-		    newaliases || true
-		fi
-	    fi
-	fi													    
-    	;;
+    :
+    ;;
 
     upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
 
