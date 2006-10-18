@@ -5,6 +5,7 @@ logcheck (1.2.49) unstable; urgency=low
     initial server greeting.
   * ignore.d.server/postfix: ignore warning about lost connections any type of
     upper case SMTP command.
+  * ignore.d.server/postfix: again ignore warning about failed SASL auth.
   * ignore.d.server/cron-apt: ignore regular messages about downgrades; they
     are not going to take place anyway, and an error message is emitted
     nevertheless.
@@ -24,7 +25,7 @@ logcheck (1.2.49) unstable; urgency=low
   * ignore.d.server/dovecot: ignore more messages about inactivity disonnects.
   * ignore.d.server/dovecot: ignore PAM auth messages about unknown users.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 22:01:22 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 22:08:14 +0200
 
 logcheck (1.2.48) unstable; urgency=low
 
