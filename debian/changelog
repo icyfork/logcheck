@@ -1,9 +1,5 @@
-logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
+logcheck (1.2.49~unreleased.4) UNRELEASED; urgency=low
 
-  * Add note about read permissions on log files to the error ourput generated
-    by logcheck in case of problems (closes: #382858).
-  * ignore.d.server/dhcp: ignore messages about NAK due to portable client
-    from other network requesting old lease.
   * ignore.d.server/postfix-policyd: added rules by Bernd Zeimetz
     (closes: #387008).
   * ignore.d.server/spamd, violations.ignore.d/logcheck-spamd: update rule to
@@ -35,8 +31,18 @@ logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
     is not yet known; thanks to Micah Anderson (closes: #382442).
   * violations.ignore.d/logcheck-postfix: do not ever report security warnings
     about mail which has been sent (closes: #382440).
+  * ignore.d.server/dovecot: properly handle IPv6 addresses (closes: #327088).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 10:45:35 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 10:55:09 +0200
+
+logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
+
+  * Add note about read permissions on log files to the error ourput generated
+    by logcheck in case of problems (closes: #382858).
+  * ignore.d.server/dhcp: ignore messages about NAK due to portable client
+    from other network requesting old lease.
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 23:56:02 +0200
 
 logcheck (1.2.49~unreleased.2) UNRELEASED; urgency=low
 
