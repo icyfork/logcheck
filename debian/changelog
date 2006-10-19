@@ -6,8 +6,10 @@ logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
     from other network requesting old lease.
   * ignore.d.server/postfix-policyd: added rules by Bernd Zeimetz
     (closes: #387008).
+  * ignore.d.server/spamd, violations.ignore.d/logcheck-spamd: update rule to
+    ignore checking messages (closes: #382805).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 09:35:37 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 09:39:23 +0200
 
 logcheck (1.2.49~unreleased.2) UNRELEASED; urgency=low
 

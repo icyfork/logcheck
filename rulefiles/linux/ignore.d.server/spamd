@@ -7,4 +7,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]:( spamd:)? handled cleanup of child pid [0-9]+ due to SIGCHLD$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]:( spamd:)? server successfully spawned child process, pid [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]:( spamd:)? using default config for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]:( spamd:)? processing message <[^>]+> for [-._+=[:alnum:]]+@[-.[:alnum:]]+:[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]:( spamd:)? (process|check)ing message <[^>]+>( aka <[^>]+>)? for [-._+=[:alnum:]]+(@[-.[:alnum:]]+:[[:digit:]]+|:[[:digit:]]+)$
