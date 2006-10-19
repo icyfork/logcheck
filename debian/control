@@ -6,6 +6,7 @@ Uploaders: Todd Troxell <ttroxell@debian.org>, Gerfried Fuchs <alfie@debian.org>
 Standards-Version: 3.7.2
 Build-Depends: debhelper (>= 4.1.13), po-debconf
 Build-Depends-Indep: docbook-to-man
+XS-Vcs-Svn: svn://svn.debian.org/svn/logcheck/logcheck/trunk
 
 Package: logcheck
 Architecture: all
