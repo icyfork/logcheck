@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: DEBUG: auth_pam: pam_authenticate failed: User not known to the underlying authentication module$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: do_auth[[:space:]]*: auth failure: \[user=[._[:alnum:]-]+\] \[service=smtp\] \[realm=[._[:alnum:]-]+\] \[mech=pam\] \[reason=PAM auth error\]$

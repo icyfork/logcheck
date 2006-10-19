@@ -1,2 +1,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saslauthd+\[[0-9]+\]: Domain/Realm not available\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saslauthd+\[[0-9]+\]: DIGEST-MD5 client step [0-9]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: \(pam_unix\) check pass; user unknown$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: do_request[[:space:]]*: NULL password received$
