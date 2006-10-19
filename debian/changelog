@@ -14,8 +14,10 @@ logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
     CONNECT; thanks to Martin Lohmeier (closes: #373174).
   * ignore.d.server/saslauthd, violations-ignore.d/logcheck-saslauthd: ignore
     messages about unknown users or invalid passwords (closes: #369486).
+  * violations.ignore.d/logcheck-nagios, ignore.d.server/nagios: extended
+    rules to support nagios2; thanks to Cyril Chaboisseau (closes: #355364).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 09:48:41 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 09:50:33 +0200
 
 logcheck (1.2.49~unreleased.2) UNRELEASED; urgency=low
 
