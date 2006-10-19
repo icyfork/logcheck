@@ -16,8 +16,10 @@ logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
     messages about unknown users or invalid passwords (closes: #369486).
   * violations.ignore.d/logcheck-nagios, ignore.d.server/nagios: extended
     rules to support nagios2; thanks to Cyril Chaboisseau (closes: #355364).
+  * ignore.d.server/innd: ignoring new message about flushing messages by
+    send-uucp; thanks to Thomas Parmelan (closes: #387272).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 09:50:33 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 09:55:50 +0200
 
 logcheck (1.2.49~unreleased.2) UNRELEASED; urgency=low
 
