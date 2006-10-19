@@ -107,6 +107,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/pe
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/policyd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/popa3d 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/postfix 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/postfix-policyd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/ppp 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/pptpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/proftpd 0640 != 0644
