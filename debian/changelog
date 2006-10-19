@@ -23,8 +23,10 @@ logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
   * violations.ignore.d/logcheck-bind: ignoring messages for unexpected
     RCODEs; thanks to Ingo Theiss (closes: #378333).
   * ignore.d.server/imapproxy: allow usernames with @ (closes: #373190).
+  * ignore.d.server/postfix: handle LMTP submissions from localhost; thanks to
+    Marco Nenciarini (closes: #389047).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 10:31:20 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 10:31:30 +0200
 
 logcheck (1.2.49~unreleased.2) UNRELEASED; urgency=low
 
