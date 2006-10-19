@@ -53,6 +53,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: helperOpenServers: Starting [[:digit:]]+ '[-._[:alnum:]]+' processes$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Cache dir '[/[:alnum:]]+' size remains unchanged at [[:digit:]]+ KB$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: fqdncacheParse: No PTR record for '[.[:digit:]]{7,15}'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: aioSync: flushing pending I/O operations$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: aioSync: done$
 # squidguard
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'storedir'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'counters'$

@@ -27,8 +27,14 @@ logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
     Marco Nenciarini (closes: #389047).
   * ignore.d.server/postfix: ignore lost connections after any SMTP command;
     thanks to Micah Anderson (closes: #387000).
+  * ignore.d.server/postfix: also ignore bare port 25 in log messages; thanks
+    to Bernd Zeimetz (closes: #385001).
+  * ignore.d.server/squid: ignore informational aioSync messages; thanks to
+    Elmar Hoffmann (closes: #385982).
+  * violations.ignore.d/logcheck-postfix: also filter rejections even if rcpt
+    is not yet known; thanks to Micah Anderson (closes: #382442).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 10:32:31 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 10:40:33 +0200
 
 logcheck (1.2.49~unreleased.2) UNRELEASED; urgency=low
 
