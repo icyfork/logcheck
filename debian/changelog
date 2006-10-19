@@ -10,8 +10,10 @@ logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
     ignore checking messages (closes: #382805).
   * ignore.d.server/kernel: also ignore outgoing iptables log entries
     (closes: #377381).
+  * violations.ignore.d/logcheck-postfix: ignore generic 554 messages during
+    CONNECT; thanks to Martin Lohmeier (closes: #373174).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 09:41:21 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 09:46:43 +0200
 
 logcheck (1.2.49~unreleased.2) UNRELEASED; urgency=low
 

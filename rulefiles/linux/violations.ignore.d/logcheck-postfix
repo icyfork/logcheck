@@ -26,6 +26,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:upper:]0-9]+: reject: RCPT from [^[:space:]]+: [45][0-9][0-9] <[^[:space:]]+>: Client host rejected: Greylisted for [0-9]+ (seconds|minutes)( \(see http://isg.ee.ethz.ch/tools/postgrey/help/[.[:alnum:]-]+.html\))?; from=<[^[:space:]]+> to=<[^[:space:]]+> proto=(ESMTP|SMTP) helo=<[^[:space:]]+>$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/qmgr\[[0-9]+\]: [[:alnum:]]+: from=<[^[:space:]]*>, size=[0-9]+, nrcpt=[0-9]+ \(queue active\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/local\[[0-9]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)* relay=local, delay=[0-9]+, status=sent \(delivered to command: /var/lib/mailman/mail/mailman admin [._[:alnum:]-]+\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: NOQUEUE: reject: RCPT from [^[:space:]]+: 554 <[^[:space:]]+>: Client host rejected: Access denied; from=<[^[:space:]]+> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: NOQUEUE: reject: [[:upper:]]+ from [^[:space:]]+: 554 <[^[:space:]]+>: Client host rejected: Access denied;( from=<[^[:space:]]+> to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [-._[:alnum:]]+\[[.[:digit:]]+\]: SASL (LOGIN|PLAIN|(DIGEST|CRAM)-MD5|APOP) authentication failed:?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: SASL authentication failure: Password verification failed$
