@@ -18,8 +18,12 @@ logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
     rules to support nagios2; thanks to Cyril Chaboisseau (closes: #355364).
   * ignore.d.server/innd: ignoring new message about flushing messages by
     send-uucp; thanks to Thomas Parmelan (closes: #387272).
+  * violations.ignore.d/logcheck-postfix: updated filter for generic smtp
+    status messages to postfix 2.3 (closes: #376533).
+  * violations.ignore.d/logcheck-bind: ignoring messages for unexpected
+    RCODEs; thanks to Ingo Theiss (closes: #378333).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 09:55:50 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 10:17:10 +0200
 
 logcheck (1.2.49~unreleased.2) UNRELEASED; urgency=low
 
