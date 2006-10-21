@@ -64,6 +64,7 @@ logcheck (1.2.49) unstable; urgency=low
   * violations.d/smartd: elevate messages about uncorrectable and unreadable
     sectors (closes: #392679).
   * ignore.d.server/smartd: ignore messages smartd generates when sending
+    warning mail; thanks to Elmar Hoffmann (closes: #393938).
   * */*smartd: now filters all smartd attribute changes except for temperature
     changes to values higher than and equal to 55, and changes to the
     attributes Reallocated_Sector_Ct, Current_Pending_Sector,
@@ -73,7 +74,6 @@ logcheck (1.2.49) unstable; urgency=low
     are not going to take place anyway, and an error message is emitted
     nevertheless.
   * ignore.d.server/cron-apt: handle situations when fetching takes minutes.
-    warning mail; thanks to Elmar Hoffmann (closes: #393938).
   * ignore.d.server/proftpd: ignore messages about login access limited.
 
  -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 22:11:06 +0200
