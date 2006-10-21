@@ -8,8 +8,9 @@ logcheck (1.2.49~unreleased.5) UNRELEASED; urgency=low
     mark.
   * ignore.d.server/postfix: ignore messages about missing issuer
     certificates.
+  * ignore.d.server/squid: ignore message about oversized URLs.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 21 Oct 2006 10:18:59 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 21 Oct 2006 10:21:26 +0200
 
 logcheck (1.2.49~unreleased.4) UNRELEASED; urgency=low
 
