@@ -9,6 +9,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=18:self signed certificate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=19:self signed certificate in certificate chain$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=20:unable to get local issuer certificate$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=2:unable to get issuer certificate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=21:unable to verify the first certificate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=24:invalid CA certificate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: verify error:num=26:unsupported certificate purpose$
@@ -21,6 +22,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: fingerprint=([0-9A-F]{2}:){15}[0-9A-F]{2}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: Verified: subject_CN=.*, issuer=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: Unverified: subject_CN=.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: issuer=[[:space:]]*/O=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: OTP unavailable because can't read/write key database /etc/opiekeys: No such file or directory$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:upper:]0-9]+: reject: (RCPT|MAIL) from [._[:alnum:]-]+\[[0-9a-f.:]{3,39}\]: [45][0-9][0-9] .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ Connection refused \(port [0-9]+\)$
