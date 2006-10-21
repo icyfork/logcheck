@@ -2,8 +2,10 @@ logcheck (1.2.49~unreleased.5) UNRELEASED; urgency=low
 
   * violations.ignore.d/logcheck-postfix: fixed rule to filter generic bounces
     by the smtp client.
+  * violations.ignore.d/logcheck-postfix: allow messages about
+    network_biopair_interop failures to report negative num_read counts.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 21 Oct 2006 09:56:49 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 21 Oct 2006 10:05:28 +0200
 
 logcheck (1.2.49~unreleased.4) UNRELEASED; urgency=low
 
