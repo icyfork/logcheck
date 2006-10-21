@@ -1,100 +1,80 @@
-logcheck (1.2.49~unreleased.5) UNRELEASED; urgency=low
+logcheck (1.2.49) unstable; urgency=low
 
+  * Add note about read permissions on log files to the error ourput generated
+    by logcheck in case of problems (closes: #382858).
+  * Safer adding of logcheck alias to /etc/aliases; now does *not* remove the
+    alias on remove/purge anymore since mail may still arrive at a later point
+    (closes: #392637).
+  * ignore.d.server/kernel: also ignore outgoing iptables log entries
+    (closes: #377381).
+  * ignore.d.server/kernel: ignore TCP treason uncloaked messages since the
+    kernel apparently knows how to handle them anyway and we're really not
+    a NIDS.
   * violations.ignore.d/logcheck-postfix: fixed rule to filter generic bounces
     by the smtp client.
   * violations.ignore.d/logcheck-postfix: allow messages about
     network_biopair_interop failures to report negative num_read counts.
-  * ignore.d.server/courier,squid: fix rules with space after the $ line-end
-    mark.
-  * ignore.d.server/postfix: ignore messages about missing issuer
-    certificates.
-  * ignore.d.server/squid: ignore message about oversized URLs.
-
- -- martin f. krafft <madduck@debian.org>  Sat, 21 Oct 2006 10:21:26 +0200
-
-logcheck (1.2.49~unreleased.4) UNRELEASED; urgency=low
-
-  * ignore.d.server/postfix-policyd: added rules by Bernd Zeimetz
-    (closes: #387008).
-  * ignore.d.server/spamd, violations.ignore.d/logcheck-spamd: update rule to
-    ignore checking messages (closes: #382805).
-  * ignore.d.server/kernel: also ignore outgoing iptables log entries
-    (closes: #377381).
   * violations.ignore.d/logcheck-postfix: ignore generic 554 messages during
     CONNECT; thanks to Martin Lohmeier (closes: #373174).
-  * ignore.d.server/saslauthd, violations-ignore.d/logcheck-saslauthd: ignore
-    messages about unknown users or invalid passwords (closes: #369486).
-  * violations.ignore.d/logcheck-nagios, ignore.d.server/nagios: extended
-    rules to support nagios2; thanks to Cyril Chaboisseau (closes: #355364).
-  * ignore.d.server/innd: ignoring new message about flushing messages by
-    send-uucp; thanks to Thomas Parmelan (closes: #387272).
   * violations.ignore.d/logcheck-postfix: updated filter for generic smtp
     status messages to postfix 2.3 (closes: #376533).
-  * violations.ignore.d/logcheck-bind: ignoring messages for unexpected
-    RCODEs; thanks to Ingo Theiss (closes: #378333).
-  * ignore.d.server/imapproxy: allow usernames with @ (closes: #373190).
-  * ignore.d.server/postfix: handle LMTP submissions from localhost; thanks to
-    Marco Nenciarini (closes: #389047).
-  * ignore.d.server/postfix: ignore lost connections after any SMTP command;
-    thanks to Micah Anderson (closes: #387000).
-  * ignore.d.server/postfix: also ignore bare port 25 in log messages; thanks
-    to Bernd Zeimetz (closes: #385001).
-  * ignore.d.server/squid: ignore informational aioSync messages; thanks to
-    Elmar Hoffmann (closes: #385982).
   * violations.ignore.d/logcheck-postfix: also filter rejections even if rcpt
     is not yet known; thanks to Micah Anderson (closes: #382442).
   * violations.ignore.d/logcheck-postfix: do not ever report security warnings
     about mail which has been sent (closes: #382440).
-  * ignore.d.server/dovecot: properly handle IPv6 addresses (closes: #327088).
-
- -- martin f. krafft <madduck@debian.org>  Thu, 19 Oct 2006 10:55:09 +0200
-
-logcheck (1.2.49~unreleased.3) UNRELEASED; urgency=low
-
-  * Add note about read permissions on log files to the error ourput generated
-    by logcheck in case of problems (closes: #382858).
-  * ignore.d.server/dhcp: ignore messages about NAK due to portable client
-    from other network requesting old lease.
-
- -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 23:56:02 +0200
-
-logcheck (1.2.49~unreleased.2) UNRELEASED; urgency=low
-
-  * violations.d/smartd: elevate messages about uncorrectable and unreadable
-    sectors (closes: #392679).
-  * Safer adding of logcheck alias to /etc/aliases; now does *not* remove the
-    alias on remove/purge anymore since mail may still arrive at a later point
-    (closes: #392637).
-
- -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 23:21:30 +0200
-
-logcheck (1.2.49~unreleased.1) UNRELEASED; urgency=low
-
+  * ignore.d.server/postfix: ignore messages about missing issuer
+    certificates.
+  * ignore.d.server/postfix: handle LMTP submissions from localhost; thanks to
+    Marco Nenciarini (closes: #389047).
+  * ignore.d.server/postfix: ignore lost connections after any SMTP command;
+    thanks to Micah Anderson (closes: #387000).
   * ignore.d.server/postfix: ignore warning about non-SMTP commands.
   * ignore.d.server/postfix: ignore warning about lost connections after
     initial server greeting.
   * ignore.d.server/postfix: ignore warning about lost connections any type of
     upper case SMTP command.
   * ignore.d.server/postfix: again ignore warning about failed SASL auth.
-  * ignore.d.server/cron-apt: ignore regular messages about downgrades; they
-    are not going to take place anyway, and an error message is emitted
-    nevertheless.
-  * ignore.d.server/cron-apt: handle situations when fetching takes minutes.
+  * ignore.d.server/postfix: also ignore bare port 25 in log messages; thanks
+    to Bernd Zeimetz (closes: #385001).
+  * ignore.d.server/postfix-policyd: added rules by Bernd Zeimetz
+    (closes: #387008).
+  * ignore.d.server/saslauthd, violations-ignore.d/logcheck-saslauthd: ignore
+    messages about unknown users or invalid passwords (closes: #369486).
+  * ignore.d.server/spamd, violations.ignore.d/logcheck-spamd: update rule to
+    ignore checking messages (closes: #382805).
+  * ignore.d.server/spamc: ignore warning about max message size limitation.
+  * ignore.d.server/imapproxy: allow usernames with @ (closes: #373190).
+  * ignore.d.server/dovecot: properly handle IPv6 addresses (closes: #327088).
+  * ignore.d.server/dovecot: ignore more messages about inactivity disonnects.
+  * ignore.d.server/dovecot: ignore PAM auth messages about unknown users.
+  * ignore.d.server/innd: ignoring new message about flushing messages by
+    send-uucp; thanks to Thomas Parmelan (closes: #387272).
+  * ignore.d.server/courier,squid: fix rules with space after the $ line-end
+    mark.
+  * ignore.d.server/squid: ignore message about oversized URLs.
+  * ignore.d.server/squid: ignore informational aioSync messages; thanks to
+    Elmar Hoffmann (closes: #385982).
+  * ignore.d.server/squid: ignore warning about missing PTR record.
+  * violations.ignore.d/logcheck-nagios, ignore.d.server/nagios: extended
+    rules to support nagios2; thanks to Cyril Chaboisseau (closes: #355364).
+  * violations.ignore.d/logcheck-bind: ignoring messages for unexpected
+    RCODEs; thanks to Ingo Theiss (closes: #378333).
+  * ignore.d.server/dhcp: ignore messages about NAK due to portable client
+    from other network requesting old lease.
+  * violations.d/smartd: elevate messages about uncorrectable and unreadable
+    sectors (closes: #392679).
   * ignore.d.server/smartd: ignore messages smartd generates when sending
-    warning mail; thanks to Elmar Hoffmann (closes: #393938).
   * */*smartd: now filters all smartd attribute changes except for temperature
     changes to values higher than and equal to 55, and changes to the
     attributes Reallocated_Sector_Ct, Current_Pending_Sector,
     Offline_Uncorrectable, and UDMA_CRC_Error_Count. See
     /usr/share/doc/logcheck-database/NEWS.Debian.gz .
+  * ignore.d.server/cron-apt: ignore regular messages about downgrades; they
+    are not going to take place anyway, and an error message is emitted
+    nevertheless.
+  * ignore.d.server/cron-apt: handle situations when fetching takes minutes.
+    warning mail; thanks to Elmar Hoffmann (closes: #393938).
   * ignore.d.server/proftpd: ignore messages about login access limited.
-  * ignore.d.server/kernel: ignore TCP treason uncloaked messages since the
-    kernel apparently knows how to handle them anyway and we're really not
-    a NIDS.
-  * ignore.d.server/spamc: ignore warning about max message size limitation.
-  * ignore.d.server/dovecot: ignore more messages about inactivity disonnects.
-  * ignore.d.server/dovecot: ignore PAM auth messages about unknown users.
-  * ignore.d.server/squid: ignore warning about missing PTR record.
 
  -- martin f. krafft <madduck@debian.org>  Wed, 18 Oct 2006 22:11:06 +0200
 
