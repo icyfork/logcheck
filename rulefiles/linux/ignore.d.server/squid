@@ -3,7 +3,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]:   Took [.0-9]+ seconds \([ .0-9]+ entries/sec\)\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: logfileRotate: /var/log/squid/store\.log$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: logfileRotate: /var/log/squid/access\.log$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Waiting [0-9]+ seconds for active connections to finish$ 
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Waiting [0-9]+ seconds for active connections to finish$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: FD [0-9]+ Closing HTTP connection$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: FD [0-9]+ Closing ICP connection$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Closing unlinkd pipe on FD [0-9]+$

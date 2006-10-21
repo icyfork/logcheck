@@ -1,7 +1,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (imap|pop3)(login|d-ssl): Connection, ip=\[[.:[:alnum:]]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (imap|pop3)(login|d-ssl): LOGIN, user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (imap|pop3)(login|d-ssl): LOGIN, user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\], protocol=IMAP$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (imap|pop3)(login|d-ssl): authdaemon: starting client module$ 
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (imap|pop3)(login|d-ssl): authdaemon: starting client module$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (imap|pop3)(login|d-ssl): authdaemon: ACCEPT, username [@._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap(login|d-ssl): LOGOUT, user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap(login|d-ssl): LOGOUT, ip=\[[.:[:alnum:]]+\]$
