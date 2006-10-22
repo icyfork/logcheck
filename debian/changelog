@@ -1,3 +1,10 @@
+logcheck (1.2.50) unstable; urgency=low
+
+  * chgrp the entire /etc/logcheck tree to group logcheck if it exists during
+    logcheck-database's configuration (closes: #391665).
+
+ -- martin f. krafft <madduck@debian.org>  Sun, 22 Oct 2006 19:44:08 +0200
+
 logcheck (1.2.49) unstable; urgency=low
 
   * Add note about read permissions on log files to the error ourput generated

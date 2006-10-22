@@ -96,6 +96,10 @@ case "$1" in
 			rm -rf /etc/logcheck/ignore.d.workstation/anacron
 		fi
 	fi
+
+  if getent group logcheck >/dev/null; then
+    chgrp -R logcheck /etc/logcheck
+  fi
 	;;
     
     abort-upgrade|abort-remove|abort-deconfigure)
