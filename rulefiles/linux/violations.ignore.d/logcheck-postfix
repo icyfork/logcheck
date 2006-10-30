@@ -30,3 +30,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/[ls]mtp\[[0-9]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)* relay=[^[:space:]]+,( conn_use=[[:digit:]]+,)? delay=[.0-9]+,( delays=[.0-9/]+, dsn=[0-9.]+,)? status=sent \(250 [0-9.]+ Ok((, id=[-0-9]+, from MTA(\([^[:space:]]+\))?: 250 ([0-9.]+ )?Ok: queued as [0-9A-F]+|, discarded, UBE, id=[-0-9]+))*\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [-._[:alnum:]]+\[[.[:digit:]]+\]: SASL (LOGIN|PLAIN|(DIGEST|CRAM)-MD5|APOP) authentication failed:?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: SASL authentication failure: Password verification failed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/local\[[[:digit:]]+\]: warning: maildir access problem for UID/GID=[[:digit:]]+/[[:digit:]]+: create [/.[:alnum:]]+: Permission denied$
