@@ -6,8 +6,12 @@ logcheck (1.2.50) unstable; urgency=low
     component name (local repos).
   * ignore.d.server/postfix, violations.ignore.d/logcheck-postfix: ignore
     redundant messages about missing maildirs (closes: #354821).
+  * ignore.d.server/ppp: ignore messages about modem hangups due to remote
+    connection drops. You're not going to see these anyway if pppd does your
+    connection, and there will be plenty other messages alerting you to the
+    lack of connectivity.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 30 Oct 2006 08:47:26 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu,  2 Nov 2006 22:00:26 +0100
 
 logcheck (1.2.49) unstable; urgency=low
 
