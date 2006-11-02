@@ -56,6 +56,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstati
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/wdm 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/winbind 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/xdm 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/mldonkey-server 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/amandad 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/anacron 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/anon-proxy 0640 != 0644
