@@ -10,8 +10,10 @@ logcheck (1.2.50) unstable; urgency=low
     connection drops. You're not going to see these anyway if pppd does your
     connection, and there will be plenty other messages alerting you to the
     lack of connectivity.
+  * ignore.d.server/dhcp: ignore message about leased addresses which respond
+    to ping requests.
 
- -- martin f. krafft <madduck@debian.org>  Thu,  2 Nov 2006 22:00:26 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu,  2 Nov 2006 22:03:17 +0100
 
 logcheck (1.2.49) unstable; urgency=low
 
