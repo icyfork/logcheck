@@ -8,4 +8,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: TCP: Treason uncloaked! Peer [.[:digit:]]{7,15}:[[:digit:]]{1,5}/[[:digit:]]{1,5} shrinks window [[:digit:]]+:[[:digit:]]+\. Repaired\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: device-mapper: [-.[:alnum:]]+ \([-[:digit:]]{10}\) initialised: dm-devel@redhat\.com$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ACPI: PCI interrupt for device [[:alnum:]:.]+ disabled$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ACPI: PCI Interrupt [[:alnum:]:.]+\[A\] -> GSI [0-9]+ \(level, low\) -> IRQ [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ACPI: PCI Interrupt [[:alnum:]:.]+\[[AB]\] (-> Link \[LNK[AB]\] )?-> GSI [0-9]+ \(level, low\) -> IRQ [0-9]+$
