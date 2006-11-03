@@ -103,6 +103,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: nfs warning: mount version (older|newer) than kernel$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Device not ready. Make sure there is a disc in the drive.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: BIOS EDD facility v[.0-9]+ [0-9]+-\w{3}-[0-9]+, [0-9]+ devices found$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: intel8x0_measure_ac97_clock: measured [[:digit:]]+ usecs$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: intel8x0: clocking to [[:digit:]]+$
 # this stuff is from pmounts autodetection
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: UDF-fs: No VRS found$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Unable to identify CD-ROM format\.$
