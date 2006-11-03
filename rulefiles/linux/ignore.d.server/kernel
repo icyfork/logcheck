@@ -9,3 +9,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: device-mapper: [-.[:alnum:]]+ \([-[:digit:]]{10}\) initialised: dm-devel@redhat\.com$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ACPI: PCI interrupt for device [[:alnum:]:.]+ disabled$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ACPI: PCI Interrupt [[:alnum:]:.]+\[[AB]\] (-> Link \[LNK[AB]\] )?-> GSI [0-9]+ \(level, low\) -> IRQ [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:alnum:]]+: no IPv6 routers present$

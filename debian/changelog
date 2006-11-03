@@ -9,8 +9,10 @@ logcheck (1.2.51) unstable; urgency=low
     ACPI PCI interrupt remappings and disabling to server level.
   * ignore.d.workstation/kernel: ignore intel8x0 (soundcard) initialisation
     messages.
+  * ignore.d.server/kernel, ignore.d.workstation/kernel: move messages about
+    lack of IPv6 routers to server level.
 
- -- martin f. krafft <madduck@debian.org>  Fri,  3 Nov 2006 18:48:37 +0100
+ -- martin f. krafft <madduck@debian.org>  Fri,  3 Nov 2006 19:38:34 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
