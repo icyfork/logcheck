@@ -1,9 +1,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: cdrom: This disc doesn't have any tracks I recognize!$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: cdrom: open failed\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: apm: overridden by ACPI\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ACPI: PCI interrupt for device [[:alnum:]:.]+ disabled$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Intel machine check (architecture supported|reporting enabled on CPU#[0-9])\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ACPI: PCI Interrupt [[:alnum:]:.]+\[A\] -> GSI [0-9]+ \(level, low\) -> IRQ [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PCI: Setting latency timer of device [[:alnum:]:.]+ to [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: apm: BIOS version [.0-9]+ Flags [x0-9]+ \(Driver version [.[:alnum:]]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ modprobe: FATAL: Error inserting apm \([^[:space:]]+\): No such device$

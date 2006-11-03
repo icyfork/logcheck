@@ -5,8 +5,10 @@ logcheck (1.2.51) unstable; urgency=low
     hotplugged storage devices.
   * violations.ignore.d/logcheck-su: ignore redundant message about
     authentication failure, which provides no additional information.
+  * ignore.d.server/kernel, ignore.d.workstation/kernel: move messages about
+    ACPI PCI interrupt remappings and disabling to server level.
 
- -- martin f. krafft <madduck@debian.org>  Fri,  3 Nov 2006 18:44:55 +0100
+ -- martin f. krafft <madduck@debian.org>  Fri,  3 Nov 2006 18:46:21 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
