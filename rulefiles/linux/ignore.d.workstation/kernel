@@ -105,6 +105,25 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: nfs warning: mount version (older|newer) than kernel$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Device not ready. Make sure there is a disc in the drive.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: BIOS EDD facility v[.0-9]+ [0-9]+-\w{3}-[0-9]+, [0-9]+ devices found$
+# this stuff is from pmounts autodetection
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: UDF-fs: No VRS found$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Unable to identify CD-ROM format\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: FAT: bogus number of reserved sectors$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: VFS: Can't find a valid FAT filesystem on dev [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: NTFS driver [.[:digit:]]+ \[Flags: R/W MODULE\]\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: NTFS-fs error \(device [^[:space:]]+\): read_ntfs_boot_sector\(\): Primary boot sector is invalid\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: NTFS-fs error \(device [^[:space:]]+\): read_ntfs_boot_sector\(\): Mount option [^[:space:]]+ not used\. Aborting without trying to recover\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: NTFS-fs error \(device [^[:space:]]+\): ntfs_fill_super\(\): Not an NTFS volume\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hfs: unable to find HFS\+ superblock$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: hfs: can't find a HFS filesystem on dev [^[:space:]]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: kjournald starting\.  Commit interval [[:digit:]]+ seconds$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: EXT3 FS on [^[:space:]]+, internal journal$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: EXT3-fs: mounted filesystem with ordered data mode\.$
+# connection of usb devices
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [-.[:digit:]]+: reset full speed USB device using ohci_hcd and address [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [-.[:digit:]]+: not running at top speed; connect to a high speed hub$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb-storage: device found at [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Vendor: [-_. [:alnum:]]+Model: [-_. [:alnum:]]+Rev: [-_. [:alnum:]]+$
 # for sun machines
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sunmouse: Successfully adjusted to [0-9]+ baud\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: btaudio: driver version [0-9.]+ loaded \[digital\+analog\]$

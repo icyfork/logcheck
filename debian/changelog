@@ -1,8 +1,10 @@
 logcheck (1.2.51) unstable; urgency=low
 
   * ignore.d.server/kernel: ignore message about device-mapper loading.
+  * ignore.d.workstation/kernel: ignore messages related to pmount and USB
+    hotplugged storage devices.
 
- -- martin f. krafft <madduck@debian.org>  Fri,  3 Nov 2006 18:32:01 +0100
+ -- martin f. krafft <madduck@debian.org>  Fri,  3 Nov 2006 18:44:03 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
