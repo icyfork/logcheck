@@ -13,8 +13,10 @@ logcheck (1.2.51) unstable; urgency=low
     lack of IPv6 routers to server level.
   * violations.ignore.d/logcheck-cron-apt: ignore redundant summary error
     message about index files that failed to download.
+  * ignore.d.server/logcheck: ignore pam_unix opened and closed sessions with
+    empty progname (gconf mainly).
 
- -- martin f. krafft <madduck@debian.org>  Thu,  9 Nov 2006 20:54:53 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu,  9 Nov 2006 20:58:51 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
