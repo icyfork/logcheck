@@ -37,6 +37,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Unable to determine SOA serial for ([-_.[:alnum:]]+)? at potential supermaster [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Created new slave zone '[-_.[:alnum:]]+' from supermaster [.[:digit:]]{7,15}, queued axfr$
 # pgsql
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: This is module gpgsqlbackend\.so reporting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gpgsql Connection succesful$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' initiated by [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' to [.[:digit:]]{7,15} finished$
