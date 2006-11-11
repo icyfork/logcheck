@@ -15,8 +15,10 @@ logcheck (1.2.51) unstable; urgency=low
     message about index files that failed to download.
   * ignore.d.server/logcheck: ignore pam_unix opened and closed sessions with
     empty progname (gconf mainly).
+  * ignore.d.server/pdns: added more filters to silence recent versions of
+    pdns (except for startup/shutdown).
 
- -- martin f. krafft <madduck@debian.org>  Thu,  9 Nov 2006 20:58:51 +0100
+ -- martin f. krafft <madduck@debian.org>  Sat, 11 Nov 2006 18:53:24 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 

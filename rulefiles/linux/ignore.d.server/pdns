@@ -5,6 +5,15 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Error sending reply with sendto \(socket=[0-9]\): Invalid argument$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Received packet from recursor backend with id [0-9] which is a duplicate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns_recursor\[[0-9]+\]: Refreshed [0-9]+ records$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Listening on controlsocket in '/var/run/pdns\.controlsocket'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: This is a guarded instance of pdns$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: (UD|TC)P server bound to [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: PowerDNS comes with ABSOLUTELY NO WARRANTY\. This is free software, and you are welcome to redistribute it according to the terms of the GPL version 2\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Set effective (user|group) id to [[:digit:]]{1,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: DNS Proxy launched, local port [[:digit:]]{1,5}, remote [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Creating backend connection for TCP$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Master/slave communicator launching$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: About to create [[:digit:]]+ backend threads for UDP$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: [[:digit:]]+ domains? for which we are master needs? notifications$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Not authoritative for '[^']*', sending servfail to [.[:digit:]]{7,15}( \(recursion was desired\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: (No|[[:digit:]]+) master domains? needs? notifications$
@@ -32,6 +41,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' initiated by [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' to [.[:digit:]]{7,15} finished$
 # sqlite 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gsqlite: connection to '[-._/[:alnum:]]+' succesful$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: This is module gsqlite reporting$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gsqlite: connection to '[-._/[:alnum:]]+' success?ful$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR started for '[-_.[:alnum:]]+', transaction started$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR done for '[-_.[:alnum:]]+', zone committed$
