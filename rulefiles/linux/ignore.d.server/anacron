@@ -4,5 +4,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ anacron\[[0-9]+\]: Will run job `[._[:alnum:]-]+' in [0-9]+ min\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ anacron\[[0-9]+\]: Job `[._[:alnum:]-]+' started$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ anacron\[[0-9]+\]: Job `[._[:alnum:]-]+' terminated$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ anacron\[[0-9]+\]: Job `[._[:alnum:]-]+' terminated \(mailing output\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ anacron\[[0-9]+\]: Job `[._[:alnum:]-]+' terminated (\(exit status: [[:digit:]]+\) )?\(mailing output\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ anacron\[[0-9]+\]: Updated timestamp for job `[._[:alnum:]-]+' to [0-9-]+$
