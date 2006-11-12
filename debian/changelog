@@ -18,8 +18,10 @@ logcheck (1.2.51) unstable; urgency=low
   * ignore.d.server/pdns: added more filters to silence recent versions of
     pdns (except for startup/shutdown).
   * ignore.d.server/anacron: also ignore messages with exit status.
+  * ignore.d.server/smartd, violations.d/smartd: ignore messages about
+    temperature changes, but escalate those reaching limits.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 11 Nov 2006 18:53:24 +0100
+ -- martin f. krafft <madduck@debian.org>  Sun, 12 Nov 2006 16:37:23 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
