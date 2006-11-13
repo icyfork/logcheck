@@ -37,3 +37,9 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+[rt]x-checksum:[[:space:]]+(en|dis)abled$
 # skge output
 skge [[:alnum:]]+: Link is up at 100?0? Mbps, (full|half) duplex, flow control tx and rx
+# ipmi
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ipmi message handler version [.[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ipmi device interface$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Copyright \(C\) 20[[:digit:]]+( ?- ?[[:digit:]]+)? MontaVista Software - IPMI Powerdown via sys_reboot\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: IPMI System Interface driver\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: IPMI Watchdog: driver initialized$
