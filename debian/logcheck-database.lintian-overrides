@@ -66,6 +66,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/ap
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/arpwatch 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/automount 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/bind 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/bluez-utils 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/courier 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cpqarrayd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cron 0640 != 0644

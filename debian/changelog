@@ -25,8 +25,10 @@ logcheck (1.2.51) unstable; urgency=low
   * ignore.d.server/kernel: ignore startup banners by tun/tap driver.
   * violations.d/kernel: added to elevate messages about media errors.
   * ignore.d.server/kernel: ignore startup configuration printout by sk98lin.
+  * ignore.d.server/ppp: filtering messages about connections to pppd.
+  * ignore.d.server/bluez-utils: added to filter dund connection messages.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 13 Nov 2006 16:22:04 +0100
+ -- martin f. krafft <madduck@debian.org>  Mon, 13 Nov 2006 16:27:13 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
