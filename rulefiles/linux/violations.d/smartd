@@ -3,3 +3,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, [[:digit:]]+ Offline uncorrectable sectors$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, Temperature changed [-+][[:digit:]] Celsius to [[:digit:]]+ Celsius \(Min/Max [[:digit:]]+/[[:digit:]]+!\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, Temperature [[:digit:]]+ Celsius reached limit of [[:digit:]]+ Celsius \(Min/Max [[:digit:]]+/[[:digit:]]+!\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, Temperature [[:digit:]]+ Celsius reached critical limit of [[:digit:]]+ Celsius \(Min/Max [[:digit:]]+/[[:digit:]]+\)$
