@@ -124,11 +124,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PM: Writing back config space on device [[:alnum:]:.]+ at offset [0-9] \(was [0-9]+, writing [0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: loop: loaded \(max [0-9]+ devices\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: oprofile: using NMI interrupt\.$
-# sk98lin output
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+speed:[[:space:]]+100?0?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+autonegotiation:[[:space:]]+(yes|no)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+duplex mode:[[:space:]]+(full|half)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+flowctrl:[[:space:]]+a?symmetric$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+irq moderation:[[:space:]]+(en|dis)abled$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+scatter-gather:[[:space:]]+(en|dis)abled$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+[rt]x-checksum:[[:space:]]+(en|dis)abled$

@@ -27,3 +27,13 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]+: Media Link (Off|On [0-9]+mbps (full|half)-duplex)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: SCSI subsystem initialized$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: BIOS EDD facility v[.0-9]+ [0-9]+-\w{3}-[0-9]+, [0-9]+ devices found$
+# sk98lin output
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+speed:[[:space:]]+100?0?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+autonegotiation:[[:space:]]+(yes|no)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+duplex mode:[[:space:]]+(full|half)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+flowctrl:[[:space:]]+a?symmetric$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+irq moderation:[[:space:]]+(en|dis)abled$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+scatter-gather:[[:space:]]+(en|dis)abled$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+[rt]x-checksum:[[:space:]]+(en|dis)abled$
+# skge output
+skge [[:alnum:]]+: Link is up at 100?0? Mbps, (full|half) duplex, flow control tx and rx
