@@ -12,6 +12,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: [[:lower:]]+[0-9]: unknown hardware address type [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Trying recorded lease [.0-9]{7,15}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: No working leases in persistent database( - sleeping)?\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: send_packet: Network is unreachable$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: send_packet: please consult README file regarding broadcast address\.$
 # dhcp-client 2.0
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Copyright (199[5-9],? ){5}(The )?Internet Software Consortium\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Please contribute if you find this software useful\.$
