@@ -5,4 +5,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: removing (chargen|(day)?time|echo)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: xinetd Version [.[:digit:]]+ started with libwrap loadavg options compiled in\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: Started working: [[:digit:]]+ available services$
-
