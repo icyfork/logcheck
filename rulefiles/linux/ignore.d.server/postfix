@@ -1,3 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/postfix-script: refreshing the Postfix mail system$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: skipped, still being delivered$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: from=<.*>, status=expired, returned to sender$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(n?qmgr|cleanup)\[[0-9]+\]: [[:alnum:]]+: message-id=.*$
