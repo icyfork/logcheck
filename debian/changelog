@@ -47,8 +47,11 @@ logcheck (1.2.51) unstable; urgency=medium
   * ignore.d.server/xinetd: ignore messages about conf files read and services
     removed, as well as startup banner.
   * ignore.d.server/saned: ignore most messages.
+  * ignore.d.server/squid: ignore messages resulting from clients firing
+    unsupported request methods at the server, which may happen in situations
+    where transparent proxying is in use. GNUTELLA is one offendant.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 00:40:40 +0100
+ -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 00:49:28 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 

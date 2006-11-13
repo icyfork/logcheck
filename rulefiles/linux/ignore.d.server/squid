@@ -56,6 +56,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: aioSync: flushing pending I/O operations$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: aioSync: done$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: urlParse: URL too large \([[:digit:]]+ bytes\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: parseHttpRequest: Unsupported method '[[:upper:]]+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: clientReadRequest: FD [[:digit:]]+ Invalid Request$
 # squidguard
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'storedir'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'counters'$
