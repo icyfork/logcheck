@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hpiod: channel cleanup ci=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hpiod: device cleanup uri=hp:/[-?=/_.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hpiod: service busy uri:hp:/[-?=/_.[:alnum:]]+ Device::ChannelOpen: HP-SCAN io/hpiod/device\.cpp [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hpiod: device active clientcnt=[[:digit:]]+ channelcnt=[[:digit:]]+ uri=hp:/[-?=/_.[:alnum:]]+$
