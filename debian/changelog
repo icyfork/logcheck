@@ -34,8 +34,9 @@ logcheck (1.2.51) unstable; urgency=low
   * ignore.d.server/postfix: ignore redundant message about reload by
     postfix-script as master also logs.
   * ignore.d.server/kernel: ignore startup messages by ipmi driver.
+  * ignore.d.server/postfix: ignore errors about virtual users not found.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 13 Nov 2006 23:17:09 +0100
+ -- martin f. krafft <madduck@debian.org>  Mon, 13 Nov 2006 23:24:41 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 

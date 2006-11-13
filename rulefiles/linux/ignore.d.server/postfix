@@ -85,3 +85,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: peer certificate has no subject CN$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: non-SMTP command from [^[:space:]]+\[[0-9a-f.:]{3,39}\]: .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/local\[[[:digit:]]+\]: warning: perhaps you need to create the maildirs in advance$
+# postfix 2.3
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/error\[[0-9]+\]: [[:alnum:]]+: to=<[^[:space:]]+>, relay=none, delay=[.0-9]+,( delays=[.0-9/]+,)? dsn=[45]\.0\.0, status=bounced \(User unknown in virtual alias table\)$
