@@ -10,7 +10,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Writing PID \([[:digit:]]+\) to pidfile: /var/run/mldonkey/mlnet\.pid$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Launching MLnet process$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Launching MLnet std(err|out) logger$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Terminate process$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: (Terminate|Respawn) process$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: (Process stopped PID|Stopping processes PID) \( ([[:digit:]]+ )+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Waiting termination of process [[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Process [[:digit:]]+ terminated
