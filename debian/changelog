@@ -46,8 +46,9 @@ logcheck (1.2.51) unstable; urgency=medium
     hpiod/hpijs.
   * ignore.d.server/xinetd: ignore messages about conf files read and services
     removed, as well as startup banner.
+  * ignore.d.server/saned: ignore most messages.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 00:30:31 +0100
+ -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 00:40:40 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
