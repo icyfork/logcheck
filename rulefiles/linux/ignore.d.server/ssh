@@ -1,7 +1,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Accepted (gssapi(-with-mic)?|rsa|dsa|password|publickey|keyboard-interactive/pam) for [^[:space:]]+ from [^[:space:]]+ port [0-9]+( (ssh|ssh2))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Postponed keyboard-interactive(/pam)? for [^[:space:]]+ from [^[:space:]]+ port [0-9]+( (ssh|ssh2))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: PAM pam_putenv: delete non-existent entry; [[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Server listening on [:[:xdigit:].]+ port 22\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Server listening on [:[:xdigit:].]+ port [[:digit:]]+\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: subsystem request for sftp$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from [:[:xdigit:].]+: [0-9]+: Client disconnect$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from [:[:xdigit:].]+: [0-9]+: Disconnect requested by Windows SSH Client\.$
