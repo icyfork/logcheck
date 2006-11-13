@@ -1,5 +1,8 @@
-logcheck (1.2.51) unstable; urgency=low
+logcheck (1.2.51) unstable; urgency=medium
 
+  * medium urgency to increase the chance of making etch as per agreement with
+    Steve Langasek, release manager. Rationale: arch-indep and only new
+    regexps in this version.
   * ignore.d.server/kernel: ignore message about device-mapper loading.
   * ignore.d.workstation/kernel: ignore messages related to pmount and USB
     hotplugged storage devices.
@@ -42,7 +45,7 @@ logcheck (1.2.51) unstable; urgency=low
   * ignore.d.server/hplip: added to filter information messages from
     hpiod/hpijs.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 13 Nov 2006 23:41:02 +0100
+ -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 00:25:10 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
