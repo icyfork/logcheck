@@ -10,3 +10,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ACPI: PCI interrupt for device [[:alnum:]:.]+ disabled$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ACPI: PCI Interrupt [[:alnum:]:.]+\[[AB]\] (-> Link \[LNK[AB]\] )?-> GSI [0-9]+ \(level, low\) -> IRQ [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:alnum:]]+: no IPv6 routers present$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: tun: Universal TUN/TAP device driver, [.[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: tun: \(C\) 1999-2[[:digit:]]+ Max Krasnyansky <maxk@qualcomm.com>$

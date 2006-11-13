@@ -22,8 +22,9 @@ logcheck (1.2.51) unstable; urgency=low
     temperature changes, but escalate those reaching limits.
   * ignore.d.workstation/kernel: ignore more messages related to USB hotplug.
   * ignore.d.server/ssh: ignore listening notices for all ports, not just 22.
+  * ignore.d.server/kernel: ignore startup banners by tun/tap driver.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 13 Nov 2006 16:08:59 +0100
+ -- martin f. krafft <madduck@debian.org>  Mon, 13 Nov 2006 16:10:12 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
