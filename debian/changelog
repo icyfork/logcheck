@@ -20,8 +20,9 @@ logcheck (1.2.51) unstable; urgency=low
   * ignore.d.server/anacron: also ignore messages with exit status.
   * ignore.d.server/smartd, violations.d/smartd: ignore messages about
     temperature changes, but escalate those reaching limits.
+  * ignore.d.workstation/kernel: ignore more messages related to USB hotplug.
 
- -- martin f. krafft <madduck@debian.org>  Sun, 12 Nov 2006 16:37:23 +0100
+ -- martin f. krafft <madduck@debian.org>  Mon, 13 Nov 2006 16:07:52 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
