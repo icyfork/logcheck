@@ -27,8 +27,10 @@ logcheck (1.2.51) unstable; urgency=low
   * ignore.d.server/kernel: ignore startup configuration printout by sk98lin.
   * ignore.d.server/ppp: filtering messages about connections to pppd.
   * ignore.d.server/bluez-utils: added to filter dund connection messages.
+  * ignore.d.{workstation,server}/kernel: moved several messages to server
+    class as they also apply to servers.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 13 Nov 2006 16:27:13 +0100
+ -- martin f. krafft <madduck@debian.org>  Mon, 13 Nov 2006 16:31:11 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 

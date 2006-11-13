@@ -12,3 +12,18 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:alnum:]]+: no IPv6 routers present$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: tun: Universal TUN/TAP device driver, [.[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: tun: \(C\) 1999-2[[:digit:]]+ Max Krasnyansky <maxk@qualcomm.com>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: kjournald starting\.  Commit interval [[:digit:]]+ seconds$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: EXT3 FS on [^[:space:]]+, internal journal$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: EXT3-fs: mounted filesystem with ordered data mode\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: XFS mounting filesystem [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Ending clean XFS mount for filesystem: [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: apm: overridden by ACPI\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Intel machine check (architecture supported|reporting enabled on CPU#[0-9])\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PCI: Setting latency timer of device [[:alnum:]:.]+ to [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: apm: BIOS version [.0-9]+ Flags [x0-9]+ \(Driver version [.[:alnum:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ modprobe: FATAL: Error inserting apm \([^[:space:]]+\): No such device$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: IPv6 over IPv4 tunneling driver$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: NET: Registered protocol family [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: eth[0-9]+: Media Link (Off|On [0-9]+mbps (full|half)-duplex)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: SCSI subsystem initialized$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: BIOS EDD facility v[.0-9]+ [0-9]+-\w{3}-[0-9]+, [0-9]+ devices found$
