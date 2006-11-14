@@ -91,7 +91,7 @@ logcheck (1.2.51~unreleased.3) UNRELEASED; urgency=medium
 
   * ignore.d.server/ntp: ignore debug messages from signal_no_reset.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 12:27:18 +0100
+ -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 19:44:06 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
