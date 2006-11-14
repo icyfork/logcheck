@@ -52,8 +52,11 @@ logcheck (1.2.51) unstable; urgency=medium
     where transparent proxying is in use. GNUTELLA is one offendant.
   * ignore.d.server/dhclient: filtering send_packet messages which are purely
     informational or redundant without any extra info.
+  * ignore.d.server/postfix, violations.ignore.d: ignoring more messages about
+    rejects the admin does not care about;
+    thanks to Russ Allbery (closes: #397097).
 
- -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 00:54:50 +0100
+ -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 01:13:01 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
