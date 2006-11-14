@@ -1,4 +1,4 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: smartd version [.[:digit:]]+ \[[-_[:alnum:]]+\] Copyright \(C\) 2002-[[:digit:]]+ Bruce Allen$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: smartd version [.[:digit:]]+ (\[[-_[:alnum:]]+\] )?Copyright \(C\) 2002-[[:digit:]]+ Bruce Allen$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Home page is http://smartmontools\.sourceforge\.net/$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Opened configuration file /etc/smartd\.conf$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Configuration file /etc/smartd.conf parsed\.$
