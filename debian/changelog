@@ -55,8 +55,10 @@ logcheck (1.2.51) unstable; urgency=medium
   * ignore.d.server/postfix, violations.ignore.d: ignoring more messages about
     rejects the admin does not care about;
     thanks to Russ Allbery (closes: #397097).
+  * ignore.d.server/proftpd: support IPv6 addresses with UseReverseDNS off;
+    thanks to Gregor Hermens (closes: 397466).
 
- -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 01:13:01 +0100
+ -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 01:18:35 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
