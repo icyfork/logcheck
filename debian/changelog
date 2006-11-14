@@ -57,8 +57,10 @@ logcheck (1.2.51) unstable; urgency=medium
     thanks to Russ Allbery (closes: #397097).
   * ignore.d.server/proftpd: support IPv6 addresses with UseReverseDNS off;
     thanks to Gregor Hermens (closes: 397466).
+  * */*postfix: also ignore [-_] in local part of message-id; thanks to
+    Alexander Gerasiov (closes: #398163).
 
- -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 01:18:35 +0100
+ -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 01:20:08 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
