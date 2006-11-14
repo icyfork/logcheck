@@ -60,7 +60,7 @@ logcheck (1.2.51~unreleased.3) UNRELEASED; urgency=medium
   * ignore.d.server/dhcp: updated for latest BOOTP messages.
 
   * ignore.d.server/hplip: added to filter information messages from
-    hpiod/hpijs.
+    hpiod/hpijs/hpssd.
 
   * ignore.d.server/xinetd: ignore messages about conf files read and services
     removed, as well as startup banner.
@@ -91,7 +91,7 @@ logcheck (1.2.51~unreleased.3) UNRELEASED; urgency=medium
 
   * ignore.d.server/ntp: ignore debug messages from signal_no_reset.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 19:44:06 +0100
+ -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 19:48:34 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
