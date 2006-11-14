@@ -1,4 +1,4 @@
-logcheck (1.2.51~unreleased.2) UNRELEASED; urgency=medium
+logcheck (1.2.51~unreleased.3) UNRELEASED; urgency=medium
 
   * medium urgency to increase the chance of making etch as per agreement with
     Steve Langasek, release manager. Rationale: arch-indep and only new
@@ -50,7 +50,7 @@ logcheck (1.2.51~unreleased.2) UNRELEASED; urgency=medium
   * ignore.d.server/postfix, violations.ignore.d: ignoring more messages about
     rejects the admin does not care about;
     thanks to Russ Allbery (closes: #397097).
-  * */*postfix: also ignore [-_] in local part of message-id; thanks to
+  * */*postfix: also ignore [-_$] in local part of message-id; thanks to
     Alexander Gerasiov (closes: #398163).
 
   * ignore.d.{workstation,server}/mldonkey: moved to server category.
