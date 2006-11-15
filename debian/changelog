@@ -1,4 +1,4 @@
-logcheck (1.2.51~unreleased.3) UNRELEASED; urgency=medium
+logcheck (1.2.51) unstable; urgency=medium
 
   * medium urgency to increase the chance of making etch as per agreement with
     Steve Langasek, release manager. Rationale: arch-indep and only new
@@ -95,7 +95,7 @@ logcheck (1.2.51~unreleased.3) UNRELEASED; urgency=medium
 
   * ignore.d.server/ntp: ignore debug messages from signal_no_reset.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 15 Nov 2006 10:07:07 +0100
+ -- martin f. krafft <madduck@debian.org>  Wed, 15 Nov 2006 10:08:40 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
