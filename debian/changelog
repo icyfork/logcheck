@@ -38,6 +38,10 @@ logcheck (1.2.51) unstable; urgency=medium
 
   * ignore.d.server/anacron: also ignore messages with exit status.
 
+  * violations.ignore.d/logcheck-ssh: ignore authentication error messages by
+    pam_unix: if there's no user name, the attempt is pathetically harmless
+    anyway; if there's a username, sshd logs another message with more
+    information.
   * ignore.d.server/ssh: ignore listening notices for all ports, not just 22.
 
   * ignore.d.server/ppp: filtering messages about connections to pppd.
@@ -95,7 +99,7 @@ logcheck (1.2.51) unstable; urgency=medium
 
   * ignore.d.server/ntp: ignore debug messages from signal_no_reset.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 15 Nov 2006 16:39:27 +0100
+ -- martin f. krafft <madduck@debian.org>  Wed, 15 Nov 2006 22:06:10 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 

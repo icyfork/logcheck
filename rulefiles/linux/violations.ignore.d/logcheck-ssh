@@ -7,3 +7,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: PAM: User not known to the underlying authentication module for i(llegal|nvalid) user [^[:space:]]+ from ([:.[:xdigit:]]+|UNKNOWN)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: I(llegal|nvalid) user [^[:space:]]+ from ([:.[:xdigit:]]+|UNKNOWN)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Failed (keyboard-interactive/pam|password|none) for i(llegal|nvalid) user [^[:space:]]+ from ([:.[:xdigit:]]+|UNKNOWN) port [[:digit:]]{1,5} ssh2?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_unix\) authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=[^[:space:]]+([[:space:]]+user=[^[:space:]]+)?$
