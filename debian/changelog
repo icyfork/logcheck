@@ -42,6 +42,8 @@ logcheck (1.2.51~unreleased.3) UNRELEASED; urgency=medium
 
   * ignore.d.server/ppp: filtering messages about connections to pppd.
 
+  * violations.ignore.d/logcheck-bluez-utils: ignore non-critical failure
+    messages about connections that failed.
   * ignore.d.server/bluez-utils: added to filter dund connection messages.
 
   * violations.ignore.d/postfix: ignore unsupported SSL cert purpose.
@@ -93,7 +95,7 @@ logcheck (1.2.51~unreleased.3) UNRELEASED; urgency=medium
 
   * ignore.d.server/ntp: ignore debug messages from signal_no_reset.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 15 Nov 2006 09:55:59 +0100
+ -- martin f. krafft <madduck@debian.org>  Wed, 15 Nov 2006 10:07:07 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 

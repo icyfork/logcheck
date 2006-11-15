@@ -6,6 +6,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/violations.d/smart
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.d/su 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.d/sudo 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-bind 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-bluez-utils 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-courier 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-cyrus 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-dcc 0640 != 0644
