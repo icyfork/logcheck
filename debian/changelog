@@ -5,6 +5,8 @@ logcheck (1.2.51~unreleased.3) UNRELEASED; urgency=medium
     regexps in this version.
 
   * violations.d/kernel: added to elevate messages about media errors.
+  * violations.ignore.d/kernel: ignore some non-critical messages by device
+    drivers, such as USB stuff.
   * ignore.d.server/kernel: ignore message about device-mapper loading.
   * ignore.d.server/kernel: ignore startup banners by tun/tap driver.
   * ignore.d.server/kernel: ignore startup configuration printout by sk98lin.
@@ -91,7 +93,7 @@ logcheck (1.2.51~unreleased.3) UNRELEASED; urgency=medium
 
   * ignore.d.server/ntp: ignore debug messages from signal_no_reset.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 14 Nov 2006 19:48:34 +0100
+ -- martin f. krafft <madduck@debian.org>  Wed, 15 Nov 2006 09:55:59 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 

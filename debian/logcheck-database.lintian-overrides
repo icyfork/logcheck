@@ -12,6 +12,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-dovecot 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-hylafax 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-innd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-kernel 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-login 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-mon 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-nagios 0640 != 0644

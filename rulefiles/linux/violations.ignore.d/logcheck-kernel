@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usbmon: debugfs is not available$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:alnum:][:space:]]+: probe of [:.[:xdigit:]]+ failed with error [-[:digit:]]+$
