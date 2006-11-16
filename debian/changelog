@@ -60,6 +60,7 @@ logcheck (1.2.51) unstable; urgency=medium
     thanks to Russ Allbery (closes: #397097).
   * */*postfix: also ignore [-_$] in local part of message-id; thanks to
     Alexander Gerasiov (closes: #398163).
+  * ignore.d.server/postfix: ignore messages about changed hash tables.
 
   * ignore.d.{workstation,server}/mldonkey: moved to server category.
 
@@ -102,7 +103,7 @@ logcheck (1.2.51) unstable; urgency=medium
 
   * Added README.backports.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 16 Nov 2006 16:32:55 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 16 Nov 2006 16:39:14 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
