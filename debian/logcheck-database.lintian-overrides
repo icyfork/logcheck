@@ -101,6 +101,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/is
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/jabberd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/kernel 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/logcheck 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/maradns 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/mldonkey-server 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/mon 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/nagios 0640 != 0644
