@@ -1,0 +1,62 @@
+logcheck backports
+==================
+
+Following a stable Debian release, logcheck rules will be updated and
+backported (at irregular intervals) to install cleanly on systems running the
+stable release. You can obtain these backports from backports.org, following
+these instructions:
+
+  http://backports.org/dokuwiki/doku.php?id=instructions
+
+In short, you need to make these changes:
+
+---8<---
+# cat <<_eof >> /etc/apt/sources.list
+## unless you have backports already enabled:
+deb http://www.backports.org/debian sarge-backports main
+_eof
+# cat <<_eof >> /etc/apt/preferences
+Package: logcheck
+Pin: release a=etch-backports
+Pin-Priority: 600
+
+Package: logcheck-database
+Pin: release a=etch-backports
+Pin-Priority: 600
+
+Package: logtail
+Pin: release a=etch-backports
+Pin-Priority: 600
+_eof
+# apt-get update; apt-get upgrade
+---8<---
+
+Even newer packages are available from my own archive:
+
+---8<---
+# cat <<_eof >> /etc/apt/sources.list
+deb http://debian.madduck.net/repo sarge-backports main
+_eof
+# cat <<_eof >> /etc/apt/preferences
+Package: *
+Pin: release a=etch-backports, release o=madduck
+Pin-Priority: 50
+
+Package: logcheck
+Pin: release a=etch-backports, release o=madduck
+Pin-Priority: 600
+
+Package: logcheck-database
+Pin: release a=etch-backports, release o=madduck
+Pin-Priority: 600
+
+Package: logtail
+Pin: release a=etch-backports, release o=madduck
+Pin-Priority: 600
+_eof
+# apt-get update; apt-get upgrade
+---8<---
+
+ -- martin f. krafft <madduck@debian.org>  Thu, 16 Nov 2006 14:58:55 +0100
+
+$Id:$

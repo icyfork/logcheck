@@ -38,6 +38,10 @@ in logcheck-database. This is because dh_installlogcheck cannot yet assume
 that the logcheck user exists.  This may be changed in a future version of
 Debian.
 
+Backports
+~~~~~~~~~
+See /usr/local/share/logcheck-database/README.backports.gz .
+
 Getting the source/contributing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The Debian logcheck package is now maintained in Subversion:
