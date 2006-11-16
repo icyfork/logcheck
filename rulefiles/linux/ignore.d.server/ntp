@@ -9,4 +9,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: adjusting local clock by -?[.0-9]+s$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: adjust time server -?[.0-9]+ offset$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: too many recvbufs allocated \([0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: Listening on interface [[:alnum:]]+, [:.[:xdigit:]]+#[[:digit:]]{1,5} (En|Dis)abled$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd(_initres)?\[[0-9]+\]: signal_no_reset: signal [[:digit:]]+ had flags [[:xdigit:]]+$

@@ -98,10 +98,11 @@ logcheck (1.2.51) unstable; urgency=medium
     events.
 
   * ignore.d.server/ntp: ignore debug messages from signal_no_reset.
+  * ignore.d.server/ntp: ignore messages about which port ntpd bound to.
 
   * Added README.backports.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 16 Nov 2006 15:07:12 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 16 Nov 2006 16:32:55 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
