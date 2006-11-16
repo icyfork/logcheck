@@ -61,3 +61,10 @@
 # squidguard
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'storedir'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'counters'$
+# squid 2.6
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Using epoll for the IO loop$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Adding domain [-._[:alnum:]]+ from /etc/resolv\.conf$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Set Current Directory to /var/spool/squid$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Accepting transparently proxied HTTP connections at [:.[:xdigit:]]+, port [[:digit:]]{1,5}, FD [[:digit:]]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Store rebuilding is [[:space:]]*[.[:digit:]]+% complete$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: [[:space:]]*Took [.[:digit:]]+ seconds \([[:digit:].]+ objects/sec\)\.$
