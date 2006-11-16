@@ -67,6 +67,7 @@ logcheck (1.2.51) unstable; urgency=medium
   * ignore.d.server/dhclient: filtering send_packet messages which are purely
     informational or redundant without any extra info.
   * ignore.d.server/dhcp: updated for latest BOOTP messages.
+  * ignore.d.server/dhcp: fixed to filter requests for unknown leases.
 
   * ignore.d.server/hplip: added to filter information messages from
     hpiod/hpijs/hpssd.
@@ -107,7 +108,7 @@ logcheck (1.2.51) unstable; urgency=medium
 
   * Added README.backports.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 16 Nov 2006 16:46:49 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 16 Nov 2006 17:56:42 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
