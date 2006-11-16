@@ -70,6 +70,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/bi
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/bluez-utils 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/courier 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cpqarrayd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cpufreqd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cron 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cron-apt 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cups-lpd 0640 != 0644
