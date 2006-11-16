@@ -1,7 +1,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Set niceness of the process: [[:digit:]]{1,2}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Set uid/gid of the process \([[:digit:]]{1,5}, [[:digit:]]{1,5}\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Set umask of the process: [[:digit:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Chdir to home dir: [-_./[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Chdir to (home|chdir) dir: [-_./[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Fork the process$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Reset the group leader$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Fork a second time the process$

@@ -63,7 +63,8 @@ logcheck (1.2.51) unstable; urgency=medium
     Alexander Gerasiov (closes: #398163).
   * ignore.d.server/postfix: ignore messages about changed hash tables.
 
-  * ignore.d.{workstation,server}/mldonkey: moved to server category.
+  * ignore.d.{workstation,server}/mldonkey: moved to server category and added
+    some additional rules for informational status messages.
 
   * ignore.d.server/dhclient: filtering send_packet messages which are purely
     informational or redundant without any extra info.
@@ -112,7 +113,7 @@ logcheck (1.2.51) unstable; urgency=medium
 
   * Added README.backports.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 16 Nov 2006 18:00:45 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 16 Nov 2006 18:01:49 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
