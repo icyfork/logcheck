@@ -1,3 +1,11 @@
+logcheck (1.2.52) unstable; urgency=low
+
+  * [TODO] ignore.d.server/dovecot: cleanup of dovecot filters to match some
+    more operational messages reported by Stefan Schlesinger (closesNOTYET:
+    #396760).
+
+ -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 19:48:34 +0100
+
 logcheck (1.2.51) unstable; urgency=medium
 
   * medium urgency to increase the chance of making etch as per agreement with
