@@ -117,7 +117,7 @@ logcheck (1.2.51) unstable; urgency=medium
 
   * Added README.backports.
 
- -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 10:53:35 +0100
+ -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 11:24:05 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
