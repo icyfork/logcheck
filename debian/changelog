@@ -72,6 +72,8 @@ logcheck (1.2.51) unstable; urgency=medium
   * */*postfix: also ignore [-_$] in local part of message-id; thanks to
     Alexander Gerasiov (closes: #398163).
   * ignore.d.server/postfix: ignore messages about changed hash tables.
+  * ignore.d.server/postfix: ignore summary messages when postsuper deleted
+    queue entries.
 
   * ignore.d.{workstation,server}/mldonkey: moved to server category and added
     some additional rules for informational status messages.
@@ -127,7 +129,7 @@ logcheck (1.2.51) unstable; urgency=medium
   * Now recommends logcheck-database of at least the current verson (>=
     instead of =).
 
- -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 17:51:02 +0100
+ -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 18:26:33 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
