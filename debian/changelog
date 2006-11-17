@@ -4,7 +4,9 @@ logcheck (1.2.52) unstable; urgency=low
     more operational messages reported by Stefan Schlesinger (closesNOTYET:
     #396760).
 
- -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 19:48:34 +0100
+  * ignore.d.workstation/kernel: also ignore lack of UDF partition.
+
+ -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 21:11:51 +0100
 
 logcheck (1.2.51) unstable; urgency=medium
 
