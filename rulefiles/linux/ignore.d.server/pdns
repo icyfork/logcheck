@@ -8,6 +8,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Listening on controlsocket in '/var/run/pdns\.controlsocket'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: This is a guarded instance of pdns$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: (UD|TC)P server bound to [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: (UD|TC)Pv6 server bound to \[[:.[:xdigit:]]+\]:[[:digit:]]{2,5}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: PowerDNS comes with ABSOLUTELY NO WARRANTY\. This is free software, and you are welcome to redistribute it according to the terms of the GPL version 2\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Set effective (user|group) id to [[:digit:]]{1,5}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: DNS Proxy launched, local port [[:digit:]]{1,5}, remote [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
@@ -36,6 +37,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received an overly large question from [.[:digit:]]{7,15}, dropping$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Unable to determine SOA serial for ([-_.[:alnum:]]+)? at potential supermaster [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Created new slave zone '[-_.[:alnum:]]+' from supermaster [.[:digit:]]{7,15}, queued axfr$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Domain [-_.[:alnum:]]+ is stale, master serial [[:digit:]]+, our serial [[:digit:]]+$
 # pgsql
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: This is module gpgsqlbackend\.so reporting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gpgsql Connection succesful$

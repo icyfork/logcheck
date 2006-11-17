@@ -36,6 +36,8 @@ logcheck (1.2.51) unstable; urgency=medium
 
   * ignore.d.server/pdns: added more filters to silence recent versions of
     pdns (except for startup/shutdown).
+  * ignore.d.server/pdns: also hide IPv6-related messages and messages related
+    to syncing of new slave zones.
 
   * ignore.d.server/anacron: also ignore messages with exit status.
 
@@ -113,7 +115,7 @@ logcheck (1.2.51) unstable; urgency=medium
 
   * Added README.backports.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 16 Nov 2006 18:01:49 +0100
+ -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 10:46:12 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
