@@ -7,6 +7,8 @@ logcheck (1.2.51) unstable; urgency=medium
   * violations.d/kernel: added to elevate messages about media errors.
   * violations.ignore.d/kernel: ignore some non-critical messages by device
     drivers, such as USB stuff.
+  * violations.ignore.d/kernel: ignore if AGP fails to initialise on Matrox
+    cards.
   * ignore.d.server/kernel: ignore message about device-mapper loading.
   * ignore.d.server/kernel: ignore startup banners by tun/tap driver.
   * ignore.d.server/kernel: ignore startup configuration printout by sk98lin.
@@ -22,6 +24,8 @@ logcheck (1.2.51) unstable; urgency=medium
   * ignore.d.workstation/kernel: ignore intel8x0 (soundcard) initialisation
     messages.
   * ignore.d.workstation/kernel: ignore more messages related to USB hotplug.
+  * ignore.d.workstation/kernel: ignore message about DRM loading and
+    initializing.
   * ignore.d.{workstation,server}/kernel: moved several messages to server
     class as they also apply to servers.
 
@@ -119,7 +123,7 @@ logcheck (1.2.51) unstable; urgency=medium
   * Now recommends logcheck-database of at least the current verson (>=
     instead of =).
 
- -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 16:34:55 +0100
+ -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 17:38:44 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
