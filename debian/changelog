@@ -56,6 +56,8 @@ logcheck (1.2.51) unstable; urgency=medium
   * violations.ignore.d/logcheck-bluez-utils: ignore non-critical failure
     messages about connections that failed.
   * ignore.d.server/bluez-utils: added to filter dund connection messages.
+  * ignore.d.workstation/bluez-utils: add filters to ignore device connection
+    and disconnection, as well as startup/shutdown.
 
   * violations.ignore.d/postfix: ignore unsupported SSL cert purpose.
   * violations.ignore.d/postfix: ignore messages related to amavisd-new
@@ -123,7 +125,7 @@ logcheck (1.2.51) unstable; urgency=medium
   * Now recommends logcheck-database of at least the current verson (>=
     instead of =).
 
- -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 17:38:44 +0100
+ -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 17:47:08 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
