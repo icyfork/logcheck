@@ -59,6 +59,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: parseHttpRequest: Unsupported method '.*'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: parseHttpRequest: Requestheader contains NULL characters$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: clientReadRequest: FD [[:digit:]]+ (\([.[:digit:]]{7,15}:[[:digit:]]{1,5}\) )?Invalid Request$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: WARNING: Closing client [.[:digit:]]{7,15} connection due to lifetime timeout$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: 	http://[-._[:alnum:]]+(:[[:digit:]]+)?[-._/:@[:alnum:]]*
 # squidguard
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'storedir'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'counters'$
