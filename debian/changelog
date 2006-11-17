@@ -101,6 +101,11 @@ logcheck (1.2.51) unstable; urgency=medium
 
   * ignore.d.server/proftpd: support IPv6 addresses with UseReverseDNS off;
     thanks to Gregor Hermens (closes: 397466).
+  * ignore.d.server/proftpd: ignore messages by new version of proftpd about
+    aborted transfers and chrooting to the root directory.
+  * ignore.d.server/proftpd: ignore message about failure to bind to IPv6
+    sockets if protocol is not available, as IPv6 cannot be turned off it
+    seems (see http://bugs.proftpd.org/show_bug.cgi?id=2817).
 
   * ignore.d.server/amandad: ignore messages with resolved hostnames instead
     of IPs; thanks to Jan Evert van Grootheest (closes: #396407).
@@ -129,7 +134,7 @@ logcheck (1.2.51) unstable; urgency=medium
   * Now recommends logcheck-database of at least the current verson (>=
     instead of =).
 
- -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 18:26:33 +0100
+ -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 18:36:32 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
