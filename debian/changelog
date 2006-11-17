@@ -54,6 +54,8 @@ logcheck (1.2.51) unstable; urgency=medium
   * ignore.d.server/bluez-utils: added to filter dund connection messages.
 
   * violations.ignore.d/postfix: ignore unsupported SSL cert purpose.
+  * violations.ignore.d/postfix: ignore messages related to amavisd-new
+    banning attachments.
   * ignore.d.server/postfix: filtering message when smtp client is greylisted.
   * ignore.d.server/postfix: ignore redundant message about reload by
     postfix-script as master also logs.
@@ -115,7 +117,7 @@ logcheck (1.2.51) unstable; urgency=medium
 
   * Added README.backports.
 
- -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 10:46:12 +0100
+ -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 10:53:35 +0100
 
 logcheck (1.2.50) unstable; urgency=low
 
