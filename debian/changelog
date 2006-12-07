@@ -3,10 +3,15 @@ logcheck (1.2.52) unstable; urgency=low
   * [TODO] ignore.d.server/dovecot: cleanup of dovecot filters to match some
     more operational messages reported by Stefan Schlesinger (closesNOTYET:
     #396760).
+  * ignore.d.server/dovecot: ignore delivery notification log messages by
+    deliver MDA.
 
   * ignore.d.workstation/kernel: also ignore lack of UDF partition.
 
- -- martin f. krafft <madduck@debian.org>  Fri, 17 Nov 2006 21:11:51 +0100
+  * ignore.d.server/proftpd: small correction wrt IPv6 addresses (closes:
+    #397466).
+
+ -- martin f. krafft <madduck@debian.org>  Thu,  7 Dec 2006 12:17:09 +0400
 
 logcheck (1.2.51) unstable; urgency=medium
 

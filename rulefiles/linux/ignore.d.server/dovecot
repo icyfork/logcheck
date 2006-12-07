@@ -14,3 +14,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-build-param: SSL parameters regeneration completed$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\(-_.[[:alnum:]]+\): (pg|my)sql: Connected to [-_.[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: \(pam_unix\) check pass; user unknown$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ deliver\([-_.@[:alnum:]]+\): msgid=<[^[:space:]]+>: saved mail to [-_.[:alnum:]]+$
