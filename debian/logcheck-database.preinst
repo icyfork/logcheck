@@ -15,7 +15,7 @@ set -e
 # the debian-policy package
 
 # Source debconf library.
-. /usr/share/debconf/confmodule
+#. /usr/share/debconf/confmodule
 
 # File removed from the package.
 rmfiles="ignore.d.workstation/dhclient ignore.d.workstation/dhcp"
