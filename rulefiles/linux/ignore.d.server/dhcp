@@ -14,8 +14,9 @@
 #Added for dhcp 3
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPDISCOVER from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+(: load balance to peer [._[:alnum:]-]+)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPOFFER on [.0-9]{7,15} to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPREQUEST for [.0-9]{7,15} (\([.0-9]{7,15}\) |)from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+(: load balance to peer [._[:alnum:]-]+|: lease owned by peer|: wrong network)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPN?ACK on [.0-9]{7,15} to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPREQUEST for [.0-9]{7,15} (\([.0-9]{7,15}\) |)from [:[:alnum:]]+ (\([._[:alnum:]-]+\) )?via [.[:alnum:]]+(: load balance to peer [._[:alnum:]-]+\.?|: lease owned by peer\.?|: wrong network\.?)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK on [.0-9]{7,15} to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPNAK on [.0-9]{7,15} to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPINFORM from [.0-9]{7,15} via [.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPRELEASE of [.0-9]{7,15} from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]]+ \((not |)found\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]{7,15}( \([:[:alnum:]]+\) via [.[:alnum:]]+)?$
