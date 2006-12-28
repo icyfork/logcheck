@@ -95,7 +95,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: intel8x0: clocking to [[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[drm\] Initialized card for PCI DMA\.$
 # this stuff is from pmounts autodetection
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: UDF-fs: No (VRS|partition) found$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: UDF-fs: No (VRS|partition) found( \([[:digit:]]+\))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Unable to identify CD-ROM format\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: FAT: bogus number of reserved sectors$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: FAT: utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!$
