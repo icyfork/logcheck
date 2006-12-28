@@ -24,6 +24,7 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
   * ignore.d.server/ssh: ignoring message about corrupted input MAC.
   * ignore.d.server/ssh: ignoring message about bad packet length.
   * ignore.d.server/ssh: ignoring message about bad protocol identification.
+  * ignore.d.server/ssh: ignore messages about missing auth information.
 
   * ignore.d.server/dcc: ignore message about which DCC servers are used.
 
@@ -33,7 +34,7 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
     (closes: #402204).
   * Do not source debconf confmodule in preinst as it's not needed.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 11:52:46 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 11:54:34 +0100
 
 logcheck (1.2.51) unstable; urgency=medium
 
