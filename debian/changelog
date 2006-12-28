@@ -15,11 +15,13 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
 
   * ignore.d.server/netconsole: first couple of filters added.
 
+  * ignore.d.server/ssh: ignoring message about corrupted input MAC.
+
   * Added Spanish debconf translation by Javier Fernández-Sanguino
     (closes: #402204).
   * Do not source debconf confmodule in preinst as it's not needed.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 11:25:08 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 11:26:12 +0100
 
 logcheck (1.2.51) unstable; urgency=medium
 
