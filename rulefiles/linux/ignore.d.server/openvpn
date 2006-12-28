@@ -31,3 +31,19 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: read UDPv4 \[EHOSTUNREACH\|EHOSTUNREACH\]: No route to host \(code=113\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: read UDPv4 \[EHOSTUNREACH\|EHOSTUNREACH\|EHOSTUNREACH\]: No route to host \(code=113\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Adaptive compression state (OFF|ON)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: /sbin/route del -net [.[:digit:]]{7,15} netmask [.[:digit:]]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Closing TUN/TAP interface$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Diffie-Hellman initialized with [[:digit:]]+ bit key$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TLS-Auth MTU parms \[ L:[[:digit:]]+ D:[[:digit:]]+ EF:[[:digit:]]+ EB:[[:digit:]]+ ET:[[:digit:]]+ EL:[[:digit:]]+ \]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TUN/TAP device tun[[:digit:]]+ opened$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: /sbin/ifconfig tun[[:digit:]]+ [.[:digit:]]{7,15} pointopoint [.[:digit:]]{7,15} mtu [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: /sbin/route add -net [.[:digit:]]{7,15} netmask [.[:digit:]]{7,15} gw [.[:digit:]]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TCPv4_SERVER link local \(bound\): [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Listening for incoming TCP connection on [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: TCPv4_SERVER link remote: \[undef\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: MULTI: multi_init called, r=[[:digit:]]+ v=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: IFCONFIG POOL: base=[.[:digit:]]{7,15} size=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: IFCONFIG POOL LIST$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: Initialization Sequence Completed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: MULTI: TCP INIT maxclients=[[:digit:]]+ maxevents=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ovpn-[._[:alnum:]-]+\[[0-9]+\]: [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5} SENT CONTROL \[[-_.[:alnum:]]+\]: 'PUSH_REPLY(,redirect-gateway,route [.[:digit:]]{7,15})?,ping [[:digit:]]+,ping-restart [[:digit:]]+,ifconfig [.[:digit:]]{7,15} [.[:digit:]]{7,15}' \(status=[[:digit:]]+\)$
