@@ -46,6 +46,11 @@ case "$1" in
     fi
 	fi
 
+  # give logcheck system user a real name unless it has one.
+  if [ -z "$(getent passwd logcheck | cut -d: -f5)" ]; then
+    chfn -f 'Logcheck system user' logcheck
+  fi
+
 	# Remove unused old directory on upgrade
 	if [ -n "$2" ] && dpkg --compare-versions "$2" lt "1.2.25"; then
 	    if [ -d /var/state/logcheck ]; then
