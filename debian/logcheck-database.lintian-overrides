@@ -103,10 +103,12 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/is
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/jabberd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/kernel 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/logcheck 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/lpr 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/maradns 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/mldonkey-server 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/mon 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/nagios 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/netconsole 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/nfs 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/nntpcache 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/nscd 0640 != 0644
@@ -137,6 +139,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/sl
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/smartd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/smokeping 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/snmpd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/snort 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/spamd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/spamc 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/squid 0640 != 0644
@@ -149,6 +152,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/th
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/ucd-snmp 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/uptimed 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/userv 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/watchdog 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/webmin 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/xinetd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/bind 0640 != 0644
