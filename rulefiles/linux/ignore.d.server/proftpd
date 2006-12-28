@@ -7,6 +7,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - mod_delay/[0-9.]+: delaying for [0-9]+ usecs$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - FTP no transfer timeout, disconnected$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - USER [-_.[:alnum:]]+: no such user found from [.:_[:alnum:]-]+ \[[.:[:xdigit:]]+\] to [.:[:xdigit:]]+:[[:digit:]]{2,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - Maximum login attempts \([[:digit:]]+\) exceeded$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - no such user '[-_.[:alnum:]]+'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - notice: user ftp: aborting transfer: Data connection closed\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ (\([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) )?- error setting IPV6_V6ONLY: Protocol not available$
