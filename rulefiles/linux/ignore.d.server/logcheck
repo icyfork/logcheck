@@ -3,3 +3,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ PAM_[^[:space:]]+: [^[:space:]]+ session opened for user [.[:alnum:]-]+ by \(uid=0\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ PAM_[^[:space:]]+: [^[:space:]]+ session closed for user [.[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ identd\[[0-9]+\]: started$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chfn\[[0-9]+\]: changed user `logcheck' information$
