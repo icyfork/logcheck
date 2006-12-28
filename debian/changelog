@@ -4,6 +4,7 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
     operational messages reported by Stefan Schlesinger (closes: #396760).
   * ignore.d.server/dovecot: ignore delivery notification log messages by
     deliver MDA.
+  * ignore.d.server/dovecot: amend for new log format.
 
   * ignore.d.workstation/kernel: also ignore lack of UDF partition.
 
@@ -32,7 +33,7 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
     (closes: #402204).
   * Do not source debconf confmodule in preinst as it's not needed.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 11:50:34 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 11:52:46 +0100
 
 logcheck (1.2.51) unstable; urgency=medium
 
