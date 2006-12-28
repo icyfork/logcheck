@@ -1,4 +1,4 @@
-logcheck (1.2.52~unreleased.1) unstable; urgency=low
+logcheck (1.2.52) unstable; urgency=low
 
   * ignore.d.server/dovecot: cleanup of dovecot filters to match some more
     operational messages reported by Stefan Schlesinger (closes: #396760).
@@ -64,7 +64,7 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
   * Assign a real name to the logcheck system user, unless the real name GECOS
     field is not empty (closes: #402800).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 12:27:23 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 12:32:00 +0100
 
 logcheck (1.2.51) unstable; urgency=medium
 
