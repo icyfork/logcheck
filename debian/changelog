@@ -18,6 +18,7 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
   * ignore.d.server/cron-apt: ignore + in package names.
 
   * ignore.d.server/dhcp: fixed to filter requests for unknown leases.
+  * ignore.d.server/dhcp: hide message about duplicate lease.
 
   * ignore.d.server/ssh: ignoring message about corrupted input MAC.
   * ignore.d.server/ssh: ignoring message about bad packet length.
@@ -31,7 +32,7 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
     (closes: #402204).
   * Do not source debconf confmodule in preinst as it's not needed.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 11:47:42 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 11:50:34 +0100
 
 logcheck (1.2.51) unstable; urgency=medium
 
