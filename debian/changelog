@@ -42,14 +42,17 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
   * ignore.d.server/courier: fix bogus rule, thanks to Michael Tautschnig
     (closes: #400350).
 
-  * ignore.d.server/rsync: ignore rule about file list built; thanks to
-    Russ Albery (closes: #400425).
+  * ignore.d.server/rsync: ignore rule about file list built; thanks to Russ
+    Albery (closes: #400425).
+
+  * ignore.d.server/lpr: ignore restart message; thanks to Russ Albery
+    (closes: #400427).
 
   * Added Spanish debconf translation by Javier Fernández-Sanguino
     (closes: #402204).
   * Do not source debconf confmodule in preinst as it's not needed.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 12:10:47 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 12:12:04 +0100
 
 logcheck (1.2.51) unstable; urgency=medium
 
