@@ -32,6 +32,8 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
   * ignore.d.server/ssh: ignore messages about missing auth information.
   * ignore.d.server/ssh: support filtering gssapi-keyex messages; thanks to
     Russ Allbery (closes: #400426).
+  * ignore.d.server/ssh: allow dashes in hostnames of refused connect
+    messages; thanks to Russ Allbery (closes: #400813).
   * violations.ignore.d/logcheck-ssh: ignore ssh hosts.allow warnings
     (closes: #400714).
 
@@ -54,7 +56,7 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
     (closes: #402204).
   * Do not source debconf confmodule in preinst as it's not needed.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 12:13:48 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 12:15:14 +0100
 
 logcheck (1.2.51) unstable; urgency=medium
 
