@@ -10,11 +10,13 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
   * ignore.d.server/proftpd: small correction wrt IPv6 addresses (closes:
     #397466).
 
+  * ignore.d.server/watchdog: first couple of filters added.
+
   * Added Spanish debconf translation by Javier Fernández-Sanguino
     (closes: #402204).
   * Do not source debconf confmodule in preinst as it's not needed.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 12 Dec 2006 11:55:15 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 11:20:41 +0100
 
 logcheck (1.2.51) unstable; urgency=medium
 
