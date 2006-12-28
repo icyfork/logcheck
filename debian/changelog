@@ -30,6 +30,8 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
   * ignore.d.server/ssh: ignoring message about bad packet length.
   * ignore.d.server/ssh: ignoring message about bad protocol identification.
   * ignore.d.server/ssh: ignore messages about missing auth information.
+  * ignore.d.server/ssh: support filtering gssapi-keyex messages; thanks to
+    Russ Allbery (closes: #400426).
 
   * ignore.d.server/dcc: ignore message about which DCC servers are used.
 
@@ -47,7 +49,7 @@ logcheck (1.2.52~unreleased.1) unstable; urgency=low
     (closes: #402204).
   * Do not source debconf confmodule in preinst as it's not needed.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 12:09:38 +0100
+ -- martin f. krafft <madduck@debian.org>  Thu, 28 Dec 2006 12:10:47 +0100
 
 logcheck (1.2.51) unstable; urgency=medium
 
