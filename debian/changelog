@@ -2,14 +2,15 @@ logcheck (1.2.53) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix: ignore entries for messages
     bounced/deferred by the LDA.
-  * violations.ignore.d/logcheck-ssh: ignore ssh_msg_recv messages which are
-    escalated to violations.
   * ignore.d.server/postfix: ignore network_biopair_interop messages about
     read errors.
   * violations.ignore.d/logcheck-postfix, ignore.d.server/postfix: ignore
     messages related to checks done by the cleanup daemon.
 
- -- martin f. krafft <madduck@debian.org>  Thu,  4 Jan 2007 18:56:56 +0100
+  * violations.ignore.d/logcheck-ssh: ignore ssh_msg_recv messages which are
+    escalated to violations.
+
+ -- martin f. krafft <madduck@debian.org>  Thu,  4 Jan 2007 18:57:42 +0100
 
 logcheck (1.2.52) unstable; urgency=low
 
