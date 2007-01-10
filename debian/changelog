@@ -4,6 +4,7 @@ logcheck (1.2.53) unstable; urgency=low
     bounced/deferred by the LDA.
   * ignore.d.server/postfix: ignore network_biopair_interop messages about
     read errors.
+  * ignore.d.server/postfix: ignore bounce messages on bad address syntax.
   * violations.ignore.d/logcheck-postfix, ignore.d.server/postfix: ignore
     messages related to checks done by the cleanup daemon.
   * violations.ignore.d/logcheck-postfix: more extended DSN matches
@@ -19,7 +20,7 @@ logcheck (1.2.53) unstable; urgency=low
 
   * ignore.d.server/pdns: ignore message about . zone refreshes.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 10 Jan 2007 18:31:47 +0100
+ -- martin f. krafft <madduck@debian.org>  Wed, 10 Jan 2007 18:33:36 +0100
 
 logcheck (1.2.52) unstable; urgency=low
 
