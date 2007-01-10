@@ -24,10 +24,13 @@ logcheck (1.2.53) unstable; urgency=low
   * ignore.d.server/pdns: ignore message about . zone refreshes.
 
   * ignore.d.server/spamd: ignore logger and server pid info messages.
-  
-  * ignore.d.server/dovecot: ignore disconnection messages after login too.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 10 Jan 2007 18:42:01 +0100
+  * ignore.d.server/dovecot: ignore disconnection messages after login too.
+  
+  * violation.ignore.d/ssh: ignore messages about illegal users with IPs
+    reverse resolved too.
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 10 Jan 2007 18:43:39 +0100
 
 logcheck (1.2.52) unstable; urgency=low
 
