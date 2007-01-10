@@ -1,4 +1,4 @@
-logcheck (1.2.53) unstable; urgency=low
+logcheck (1.2.53~unreleased.3) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix: ignore entries for messages
     bounced/deferred by the LDA.
@@ -36,7 +36,10 @@ logcheck (1.2.53) unstable; urgency=low
     any type (related to mldonkey) in a hackish way, due to locale mismatches
     (see #350206).
 
- -- martin f. krafft <madduck@debian.org>  Wed, 10 Jan 2007 20:35:32 +0100
+  * violations.ignore.d/logcheck-sudo: properly ignore invocations of
+    sudoedit.
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 10 Jan 2007 20:37:18 +0100
 
 logcheck (1.2.52) unstable; urgency=low
 
