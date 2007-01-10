@@ -1,4 +1,4 @@
-logcheck (1.2.53~unreleased.3) unstable; urgency=low
+logcheck (1.2.53~unreleased.4) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix: ignore entries for messages
     bounced/deferred by the LDA.

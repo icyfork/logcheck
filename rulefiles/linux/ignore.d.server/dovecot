@@ -6,7 +6,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login: (user=<[-_.@[:alnum:]]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), )?rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS( handshake)?)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Too many invalid commands: rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS( handshake)?)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Inactivity: (method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), )?rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS( handshake)?)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: (user=<[-_.@[:alnum:]]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), )rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS( handshake)?)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: (user=<[-_.@[:alnum:]]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), )?rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS( handshake)?)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Logged out$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login: rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, TLS( handshake)?)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: POP3\([-_.@[:alnum:]]+\): Disconnected: Logged out top=[[:digit:]]+/[[:digit:]]+, retr=[[:digit:]]+/[[:digit:]]+, del=[[:digit:]]+/[[:digit:]]+, size=[[:digit:]]+$
