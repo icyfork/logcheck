@@ -6,13 +6,15 @@ logcheck (1.2.53) unstable; urgency=low
     read errors.
   * violations.ignore.d/logcheck-postfix, ignore.d.server/postfix: ignore
     messages related to checks done by the cleanup daemon.
+  * violations.ignore.d/logcheck-postfix: more extended DSN matches
+    contributed by Jefferson Cowart; thanks (closes: #405786)!
 
   * violations.ignore.d/logcheck-ssh: ignore ssh_msg_recv messages which are
     escalated to violations.
   
   * ignore.d.server/dcc: ignore message about sleep after failure.
 
- -- martin f. krafft <madduck@debian.org>  Mon,  8 Jan 2007 15:10:23 +0100
+ -- martin f. krafft <madduck@debian.org>  Wed, 10 Jan 2007 16:51:15 +0100
 
 logcheck (1.2.52) unstable; urgency=low
 
