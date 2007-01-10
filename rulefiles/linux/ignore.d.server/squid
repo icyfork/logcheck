@@ -56,7 +56,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: aioSync: flushing pending I/O operations$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: aioSync: done$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: urlParse: URL too large \([[:digit:]]+ bytes\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: parseHttpRequest: Unsupported method '.*'$
+# next rule without $ at the end because of #350206 and locale mismatches with non-latin1 or non-ascii characters.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: parseHttpRequest: Unsupported method 
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: parseHttpRequest: Requestheader contains NULL characters$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: clientReadRequest: FD [[:digit:]]+ (\([.[:digit:]]{7,15}:[[:digit:]]{1,5}\) )?Invalid Request$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: WARNING: Closing client [.[:digit:]]{7,15} connection due to lifetime timeout$
