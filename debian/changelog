@@ -12,6 +12,8 @@ logcheck (1.2.53) unstable; urgency=low
     contributed by Jefferson Cowart; thanks (closes: #405786)!
   * violations.ignore.d/logcheck-postfix: fix greylisting defer message for
     zero-sized senders (<>).
+  * violations.ignore.d/logcheck-postfix: fix greylisting defer filter for
+    new-style messages.
 
   * violations.ignore.d/logcheck-ssh: ignore ssh_msg_recv messages which are
     escalated to violations.
@@ -34,7 +36,7 @@ logcheck (1.2.53) unstable; urgency=low
     any type (related to mldonkey) in a hackish way, due to locale mismatches
     (see #350206).
 
- -- martin f. krafft <madduck@debian.org>  Wed, 10 Jan 2007 18:46:59 +0100
+ -- martin f. krafft <madduck@debian.org>  Wed, 10 Jan 2007 20:35:32 +0100
 
 logcheck (1.2.52) unstable; urgency=low
 
