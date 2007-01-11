@@ -1,4 +1,4 @@
-logcheck (1.2.53~unreleased.4) unstable; urgency=low
+logcheck (1.2.53~unreleased.5) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix: ignore entries for messages
     bounced/deferred by the LDA.
@@ -38,6 +38,10 @@ logcheck (1.2.53~unreleased.4) unstable; urgency=low
 
   * violations.ignore.d/logcheck-sudo: properly ignore invocations of
     sudoedit.
+
+  * ignore.d.server/openvpn, violations.ignore.d/logcheck-openvpn: also honour
+    "openvpn" as process name, which seems to be used by clients; thanks to
+    Vincent Danjean for being persistent (closes: #406179).
 
  -- martin f. krafft <madduck@debian.org>  Wed, 10 Jan 2007 20:37:18 +0100
 
