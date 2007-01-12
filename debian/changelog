@@ -45,7 +45,9 @@ logcheck (1.2.53~unreleased.5) unstable; urgency=low
     "openvpn" as process name, which seems to be used by clients; thanks to
     Vincent Danjean for being persistent (closes: #406179).
 
- -- martin f. krafft <madduck@debian.org>  Fri, 12 Jan 2007 11:27:49 +0100
+  * ignore.d.server/dhclient: updated to new style for informational messages.
+
+ -- martin f. krafft <madduck@debian.org>  Fri, 12 Jan 2007 11:31:18 +0100
 
 logcheck (1.2.52) unstable; urgency=low
 
