@@ -54,3 +54,6 @@
 # this is stuff related to the webmin bandwidth module, also in use by shorewall it seems
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: BANDWIDTH_OUT:IN= OUT=[[:alnum:]]+ SRC=[.0-9]{7,15} DST=[.0-9]{7,15} LEN=[0-9]+ TOS=0x[[:xdigit:]]+ PREC=0x[[:xdigit:]]+ TTL=[0-9]+ ID=[0-9]+ (DF )?PROTO=TCP SPT=[0-9]+ DPT=[0-9]+ WINDOW=[0-9]+ RES=0x[[:xdigit:]]+ ACK PSH URGP=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: BANDWIDTH_IN:IN=[[:alnum:]]+ OUT= MAC=[:[:xdigit:]]+ SRC=[.0-9]{7,15} DST=[.0-9]{7,15} LEN=[0-9]+ TOS=0x[[:xdigit:]]+ PREC=0x[[:xdigit:]]+ TTL=[0-9]+ ID=[0-9]+ (DF )?PROTO=TCP SPT=[0-9]+ DPT=[0-9]+ WINDOW=[0-9]+ RES=0x[[:xdigit:]]+ ACK (PSH )?URGP=[0-9]+$
+# bridging
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Bridge firewalling registered$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:alnum:]]+: port [[:digit:]]+\([[:alnum:].]+\) entering disabled state$
