@@ -97,9 +97,12 @@
 # this stuff is from pmounts autodetection
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: UDF-fs: No (VRS|partition) found( \([[:digit:]]+\))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Unable to identify CD-ROM format\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: FAT: Did not find valid FSINFO signature\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:      Found signature1 0x[[:xdigit:]]+ signature2 0x[[:xdigit:]]+ \(sector = [[:digit:]]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: FAT: bogus number of reserved sectors$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: FAT: utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: VFS: Can't find a valid FAT filesystem on dev [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: VFS: Can't find ext[234] filesystem on dev [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: NTFS driver [.[:digit:]]+ \[Flags: R/W MODULE\]\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: NTFS-fs error \(device [^[:space:]]+\): read_ntfs_boot_sector\(\): Primary boot sector is invalid\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: NTFS-fs error \(device [^[:space:]]+\): read_ntfs_boot_sector\(\): Mount option [^[:space:]]+ not used\. Aborting without trying to recover\.$

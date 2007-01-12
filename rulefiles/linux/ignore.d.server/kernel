@@ -31,8 +31,10 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Device not ready\. Make sure there is a disc in the drive\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: libata version [.[:digit:]]+ loaded\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:lower:]]+: unknown partition table$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:lower:]]+:( ([[:lower:]]+[[:digit:]]+|[<>]))+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ([[:lower:]]+):( (\1[[:digit:]]+|[<>]))+
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:lower:]]+: cache flushes supported$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: scsi [:[:digit:]]+ Direct-Access[[:space:]]+[[:alnum:][:space:]]+PQ: [[:digit:]]+ ANSI: [[:digit:]]+ CCS$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: sd [:[:digit:]]+ Attached scsi generic sg[[:digit:]]+ type [[:digit:]]+$
 # sk98lin output
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+speed:[[:space:]]+100?0?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:space:]]+autonegotiation:[[:space:]]+(yes|no)$
