@@ -38,3 +38,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/local\[[[:digit:]]+\]: warning: maildir access problem for UID/GID=[[:digit:]]+/[[:digit:]]+: create [/.[:alnum:]]+: Permission denied$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/local\[[0-9]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)? relay=local, delay=[0-9.]+(, delays=([.0-9]+/){3}[.0-9]+)?(, dsn=[45](\.[0-9]+){2})?, status=(deferred|bounced) \(.+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:upper:]0-9]+: reject: header [^[:space:]]+:.+ from=<[^[:space:]]*>( to=<[^[:space:]]+>)? proto=E?SMTP helo=<[^[:space:]]+>: .+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:alnum:]]+: (resent-)?message-id=(<?[^[:space:]]+>?)?$

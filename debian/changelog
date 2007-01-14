@@ -18,6 +18,9 @@ logcheck (1.2.53~unreleased.6) unstable; urgency=low
     new-style messages.
   * violations.ignore.d/logcheck-postfix: ignore messages about deliverable
     messages (sender address verification).
+  * violations.ignore.d/logcheck-postfix: ignore cleanup status messages which
+    have been elevated to violations due to matches between domain names and
+    violation filters (e.g. vrfy.org).
 
   * violations.ignore.d/logcheck-ssh: ignore ssh_msg_recv messages which are
     escalated to violations.
@@ -61,7 +64,7 @@ logcheck (1.2.53~unreleased.6) unstable; urgency=low
     This should hopefully fix some of the "Check temporary directory"
     messages.
 
- -- martin f. krafft <madduck@debian.org>  Sun, 14 Jan 2007 17:22:54 +0100
+ -- martin f. krafft <madduck@debian.org>  Sun, 14 Jan 2007 17:24:29 +0100
 
 logcheck (1.2.52) unstable; urgency=low
 
