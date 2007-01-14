@@ -4,3 +4,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ PAM_[^[:space:]]+: [^[:space:]]+ session closed for user [.[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ identd\[[0-9]+\]: started$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chfn\[[0-9]+\]: changed user `logcheck' information$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ usermod\[[0-9]+\]: changed user `logcheck' home from '[^']+ to '/var/lib/logcheck'$
