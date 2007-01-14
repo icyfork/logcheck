@@ -106,7 +106,8 @@ cleanup() {
     if [ -d $TMPDIR ]; then
         # Remove the tmp directory
         if [ $NOCLEANUP -eq 0 ];then 
-    	    debug "Cleanup: Removing - $TMPDIR" 
+    	    cd
+    	    debug "cleanup: Removing - $TMPDIR" 
     	    rm -r $TMPDIR
         else
     	    debug "cleanup: Not removing - $TMPDIR"
@@ -164,8 +165,8 @@ checked!
 Details:
 $message
 
-Check temporary directory: $TMPDIR
-
+${TMPDIR:+Check temporary directory: $TMPDIR
+}
 Also verify that the logcheck user can read all files referenced in
 /etc/logcheck/logcheck.logfiles!
 
