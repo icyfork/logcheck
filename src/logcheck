@@ -106,7 +106,7 @@ cleanup() {
     if [ -d $TMPDIR ]; then
         # Remove the tmp directory
         if [ $NOCLEANUP -eq 0 ];then 
-    	    cd
+    	    cd /var/lib/logcheck
     	    debug "cleanup: Removing - $TMPDIR" 
     	    rm -r $TMPDIR
         else

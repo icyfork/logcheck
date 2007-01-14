@@ -60,9 +60,9 @@ logcheck (1.2.53~unreleased.7) unstable; urgency=low
   * ignore.d.server/saned: also ignore access granted messages for other
     usernames.
 
-  * logcheck now chdir()s to $HOME before cleanup of the temporary directory.
-    This should hopefully fix some of the "Check temporary directory"
-    messages.
+  * logcheck now chdir()s to /var/lib/logcheck before cleanup of the temporary
+    directory. This should hopefully fix some of the "Check temporary
+    directory" messages.
 
   * Modified the system account Gecos name to "logcheck system account".
 
