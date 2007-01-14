@@ -48,7 +48,7 @@ case "$1" in
 
   # give logcheck system user a real name unless it has one.
   if [ -z "$(getent passwd logcheck | cut -d: -f5)" ]; then
-    chfn -f 'Logcheck system user' logcheck
+    chfn -f 'logcheck system account' logcheck
   fi
 
 	# Remove unused old directory on upgrade
