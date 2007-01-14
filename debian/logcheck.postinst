@@ -28,11 +28,16 @@ case "$1" in
 	# check for logcheck user or bad version without home
 	# touch cron job on updating accounts to fix #284788
 	if ! getent passwd logcheck > /dev/null; then
-	  adduser --quiet --system --no-create-home --group logcheck ||true
+	  adduser --quiet --system --home /var/lib/logcheck --no-create-home \
+      --group logcheck ||true
 	  touch /etc/cron.d/logcheck || true
-    	elif dpkg --compare-versions "$2" eq 1.2.19; then
-	   usermod -d /var/lib/logcheck logcheck > /dev/null || true
 	fi
+
+  # make sure the home directory exists
+  if [ ! -d "$(getent passwd logcheck | cut -d: -f6)" ]; then
+    usermod -d /var/lib/logcheck logcheck > /dev/null || true
+  fi
+
 	# check for logcheck in adm group
 	if ! getent group adm | grep logcheck > /dev/null; then
 	  adduser --quiet logcheck adm || true
