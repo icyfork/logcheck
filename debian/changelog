@@ -1,4 +1,4 @@
-logcheck (1.2.53~unreleased.7) unstable; urgency=low
+logcheck (1.2.53) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix: ignore entries for messages
     bounced/deferred by the LDA.
@@ -70,7 +70,7 @@ logcheck (1.2.53~unreleased.7) unstable; urgency=low
     to a non-existing directory, change it to /var/lib/logcheck. Also ignore
     the corresponding log entry by usermod.
 
- -- martin f. krafft <madduck@debian.org>  Sun, 14 Jan 2007 17:36:22 +0100
+ -- martin f. krafft <madduck@debian.org>  Tue, 16 Jan 2007 07:13:32 +0100
 
 logcheck (1.2.52) unstable; urgency=low
 
