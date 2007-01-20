@@ -14,8 +14,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Authorized to [^[:space:]]+, krb5 principal [^[:space:]]+ \(krb5_kuserok\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: Could not get shadow information for NOUSER$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Bad protocol version identification '[^']*' from ([:.[:xdigit:]]+|UNKNOWN)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: I(llegal|nvalid) user [-_.[:alnum:]]* from ([:.[:xdigit:]]+|UNKNOWN)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Failed (keyboard-interactive/pam|password|none) for i(llegal|nvalid) user [-._[:alnum:]]* from ([:.[:xdigit:]]+|UNKNOWN) port [[:digit:]]{1,5} ssh2?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: I(llegal|nvalid) user [-<!>_.[:alnum:]]* from ([:.[:xdigit:]]+|UNKNOWN)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Failed (keyboard-interactive/pam|password|none) for i(llegal|nvalid) user [-<!>._[:alnum:]]* from ([:.[:xdigit:]]+|UNKNOWN) port [[:digit:]]{1,5} ssh2?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_unix\) check pass; user unknown$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_unix\) auth could not identify password for \[[-_.[:alnum:]]*\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Address [._[:alnum:]-]+ maps to [._[:alnum:]-]+, but this does not map back to the address - POSSIBLE BREAK-?IN ATTEMPT!$
