@@ -6,7 +6,9 @@ logcheck (1.2.54) unstable; urgency=low
   * ignore.d.workstation/kernel: ignore all kinds of input devices, not just
     Logitech mice; thanks to Dave Vehrs for the patch (closes: #407087).
 
- -- martin f. krafft <madduck@debian.org>  Sat, 20 Jan 2007 17:12:02 +0000
+  * ignore.d.server/postfix: make anvil filter rules ipv6 compliant.
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 20 Jan 2007 17:32:51 +0000
 
 logcheck (1.2.53) unstable; urgency=low
 
