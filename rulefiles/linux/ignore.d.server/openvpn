@@ -46,5 +46,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: IFCONFIG POOL LIST$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Initialization Sequence Completed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: MULTI: TCP INIT maxclients=[[:digit:]]+ maxevents=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5} MULTI: internal route [.[:digit:]]{7,15}/[[:digit:]]{2} -> [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5} MULTI: Learn: [.[:digit:]]{7,15}/[[:digit:]]{2} -> [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5} SENT CONTROL \[[-_.[:alnum:]]+\]: 'PUSH_REPLY(,redirect-gateway,route [.[:digit:]]{7,15})?,ping [[:digit:]]+,ping-restart [[:digit:]]+,ifconfig [.[:digit:]]{7,15} [.[:digit:]]{7,15}' \(status=[[:digit:]]+\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [-_.[:alnum:]]+,[.[:digit:]]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [-_.[:alnum:]]+/[.[:digit:]]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5} OPTIONS IMPORT: reading client specific options from: [-_./[:alnum:]]+$
