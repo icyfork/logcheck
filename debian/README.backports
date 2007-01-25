@@ -5,6 +5,9 @@ Please see
   http://svn.debian.org/wsvn/logcheck/logcheck/trunk/debian/README.backports?op=file&rev=0&sc=0
 for the latest version of this document.
 
+Also see http://wiki.logcheck.org/index.cgi/TestBuilds . In case of
+disagreement, please notify me and prefer the first version.
+
 Following a stable Debian release, logcheck rules (in package
 logcheck-database) will be updated and backported (at irregular intervals) to
 install cleanly on systems running the stable release. You can obtain these
