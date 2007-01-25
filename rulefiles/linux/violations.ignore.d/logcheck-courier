@@ -1,1 +1,1 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pop3d-ssl: Unexpected SSL connection shutdown\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ((imap|pop3)(login|d-ssl)|couriertcpd): Unexpected SSL connection shutdown\.$
