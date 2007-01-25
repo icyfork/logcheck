@@ -17,7 +17,7 @@ In short, you need to make these changes:
 ---8<---
 # cat <<_eof >> /etc/apt/sources.list
 ## unless you have backports already enabled:
-deb http://www.backports.org/debian sarge-backports main
+deb http://www.backports.org/debian etch-backports main
 _eof
 # cat <<_eof >> /etc/apt/preferences
 Package: logcheck-database
@@ -31,15 +31,15 @@ Even newer packages are available from my own archive:
 
 ---8<---
 # cat <<_eof >> /etc/apt/sources.list
-deb http://debian.madduck.net/repo sarge-backports main
+deb http://debian.madduck.net/repo etch-backports main
 _eof
 # cat <<_eof >> /etc/apt/preferences
 Package: *
-Pin: release a=etch-backports, release o=madduck
+Pin: release a=etch-backports,o=madduck
 Pin-Priority: 50
 
 Package: logcheck-database
-Pin: release a=etch-backports, release o=madduck
+Pin: release a=etch-backports,o=madduck
 Pin-Priority: 600
 _eof
 # apt-get update; apt-get upgrade
