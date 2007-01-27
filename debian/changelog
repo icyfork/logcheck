@@ -23,11 +23,14 @@ logcheck (1.2.54~unreleased.4) unstable; urgency=low
   * ignore.d.server/courier, violations.ignore.d/loghceck-courier: ignore
     SSL/TLS connection errors for all components.
 
+  * ignore.d.workstation/logcheck, ignore.d.server/cracklib: moved cracklib
+    rules to server level (closes: #408557).
+
   * Added Galician debconf translation by Jacobo Tarrio (closes: #408123).
 
   * Updated Czech debconf translation; thanks Miroslav Kure (closes: #407830).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 25 Jan 2007 16:21:10 +0000
+ -- martin f. krafft <madduck@debian.org>  Sat, 27 Jan 2007 13:37:15 +0000
 
 logcheck (1.2.53) unstable; urgency=low
 
