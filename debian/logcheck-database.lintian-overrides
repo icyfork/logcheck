@@ -38,7 +38,6 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstati
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/bind 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/bluez-utils 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/bonobo 0640 != 0644
-logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/cracklib 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/francine 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/gconf 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/gdm 0640 != 0644
@@ -73,6 +72,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/bl
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/courier 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cpqarrayd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cpufreqd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cracklib 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cron 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cron-apt 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cups-lpd 0640 != 0644
