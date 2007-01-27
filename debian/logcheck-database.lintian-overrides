@@ -87,6 +87,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dk
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dnsmasq 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dovecot 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dspam 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/epmd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/exim4 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/gps 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/grinch 0640 != 0644
