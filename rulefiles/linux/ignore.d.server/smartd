@@ -19,4 +19,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, is SMART capable\. Adding to "monitor" list\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Sending warning via [^[:space:]]+ to [^[:space:]]+ \.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]: Warning via [^[:space:]]+ to [^[:space:]]+: successful$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]:[[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]:[[:space:]]*$
