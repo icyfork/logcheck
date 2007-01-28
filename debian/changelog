@@ -1,4 +1,4 @@
-logcheck (1.2.54~unreleased.4) unstable; urgency=low
+logcheck (1.2.54~unreleased.5) unstable; urgency=low
 
   * ignore.d.server/dovecot: also ignore local logins, which are "secured",
     not "TLS". Thanks to Marco Nenciarini for the patch (closes: #407642).
@@ -32,6 +32,9 @@ logcheck (1.2.54~unreleased.4) unstable; urgency=low
 
   * ignore.d.server/epmd: ignore information output from erlang-base daemon
     epmd; thanks Armin Berres for the patch (closes: #408559).
+
+  * ignore.d.server/spamd: improve rules for corner cases, thanks to Armin
+    Berres for his help.
 
   * Added Galician debconf translation by Jacobo Tarrio (closes: #408123).
 
