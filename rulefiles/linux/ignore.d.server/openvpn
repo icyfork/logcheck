@@ -13,20 +13,20 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Local Options hash \(VER=V3\): '[0-9a-f]+'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: (Local|Expected Remote) Options hash \(VER=V3\): '[0-9a-f]+'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: UDPv4 link (local \(bound\)|remote): (\[undef\]|[._[:alnum:]-]+):[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS: move_session: dest=TM_LAME_DUCK src=TM_ACTIVE reinit_src=1$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS: move_session: dest=TM_ACTIVE src=TM_UNTRUSTED reinit_src=1$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS: tls_multi_process: untrusted session promoted to trusted$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS: tls_multi_process: killed expiring key$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS: tls_pre_decrypt: first response to initial packet from [0-9.]{7,15}:[0-9]+, sid=[0-9a-f]+ [0-9a-f]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS: tls_pre_decrypt: new session incoming connection from [0-9.]{7,15}:[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS: tls_process: killed expiring key$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS: soft reset sec=[0-9]+ bytes=[0-9]+/[0-9]+ pkts=[0-9]+/[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS: new session incoming connection from [0-9.]{7,15}:[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS: Initial packet from [0-9.]{7,15}:[0-9]+, sid=[0-9a-f]{8,8} [0-9a-f]{8,8}$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS Error: Unknown data channel key ID or IP address received from [0-9.]{7,15}:[0-9]+: [0-9]+ \(see FAQ for more info on this error\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS Error: local/remote TLS keys are out of sync: [0-9.]{7,15}:[0-9]+ \[1\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS Error: Received control packet from unexpected IP addr: [0-9.]{7,15}:[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS Error: TLS key negotiation failed to occur within 60 seconds \(check your network connectivity\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: move_session: dest=TM_LAME_DUCK src=TM_ACTIVE reinit_src=1$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: move_session: dest=TM_ACTIVE src=TM_UNTRUSTED reinit_src=1$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: tls_multi_process: untrusted session promoted to trusted$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: tls_multi_process: killed expiring key$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: tls_pre_decrypt: first response to initial packet from [0-9.]{7,15}:[0-9]+, sid=[0-9a-f]+ [0-9a-f]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: tls_pre_decrypt: new session incoming connection from [0-9.]{7,15}:[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: tls_process: killed expiring key$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: soft reset sec=[-0-9]+ bytes=[0-9]+/[0-9]+ pkts=[0-9]+/[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: new session incoming connection from [0-9.]{7,15}:[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: Initial packet from [0-9.]{7,15}:[0-9]+, sid=[0-9a-f]{8,8} [0-9a-f]{8,8}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: Unknown data channel key ID or IP address received from [0-9.]{7,15}:[0-9]+: [0-9]+ \(see FAQ for more info on this error\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: local/remote TLS keys are out of sync: [0-9.]{7,15}:[0-9]+ \[1\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: Received control packet from unexpected IP addr: [0-9.]{7,15}:[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: TLS key negotiation failed to occur within 60 seconds \(check your network connectivity\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: (read|write) UDPv4 \[EHOSTUNREACH\]: No route to host \(code=113\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: read UDPv4 \[EHOSTUNREACH\|EHOSTUNREACH\]: No route to host \(code=113\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: read UDPv4 \[EHOSTUNREACH\|EHOSTUNREACH\|EHOSTUNREACH\]: No route to host \(code=113\)$

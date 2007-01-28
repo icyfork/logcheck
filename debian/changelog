@@ -1,4 +1,4 @@
-logcheck (1.2.54~unreleased.5) unstable; urgency=low
+logcheck (1.2.54~unreleased.6) unstable; urgency=low
 
   * ignore.d.server/dovecot: also ignore local logins, which are "secured",
     not "TLS". Thanks to Marco Nenciarini for the patch (closes: #407642).
@@ -22,6 +22,8 @@ logcheck (1.2.54~unreleased.5) unstable; urgency=low
 
   * ignore.d.server/openvpn: ignore messages related to client-side routes and
     client-config-dir.
+  * ignore.d.server/openvpn, violations.ignore.d/logcheck-openvpn: fix up
+    a bunch of the rules for various stages of the connections.
 
   * ignore.d.server/ssh: ignore messages about invalid users even with <!>'"
     characters in the usernames.
