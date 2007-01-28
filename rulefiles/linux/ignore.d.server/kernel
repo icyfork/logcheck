@@ -57,3 +57,10 @@
 # bridging
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: Bridge firewalling registered$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:alnum:]]+: port [[:digit:]]+\([[:alnum:].]+\) entering disabled state$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: 3ware( 9000)? Storage Controller device driver for Linux v[.[:digit:]-]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: scsi[[:digit:]] : 3ware( 9000)? Storage Controller$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: 3w-[9x]xxx: scsi[[:digit:]]: Found a 3ware( 9000)? Storage Controller at 0x[[:xdigit:]]+, IRQ: [[:digit:]]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: 3w-9xxx: scsi[[:digit:]]: Firmware [[:alnum:].]+ [.[:digit:]]+, BIOS [[:alnum:]]+ [.[:digit:]]+, Ports: [[:digit:]]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: 3w-9xxx: scsi[[:digit:]]: AEN: INFO \(0x[[:xdigit:]]+:0x[[:xdigit:]]+\): Verify (started|paused|completed):unit=[[:digit:]]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: 3w-9xxx: scsi[[:digit:]]: AEN: INFO \(0x[[:xdigit:]]+:0x[[:xdigit:]]+\): Battery charging (started|completed):\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: 3w-9xxx: scsi[[:digit:]]: AEN: INFO \(0x[[:xdigit:]]+:0x[[:xdigit:]]+\): Battery capacity test (started|completed):([[:digit:]]+ hours)?\.$
