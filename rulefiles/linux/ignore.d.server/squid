@@ -72,3 +72,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Accepting transparently proxied HTTP connections at [:.[:xdigit:]]+, port [[:digit:]]{1,5}, FD [[:digit:]]+\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Store rebuilding is [[:space:]]*[.[:digit:]]+% complete$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: [[:space:]]*Took [.[:digit:]]+ seconds \([[:digit:].]+ objects/sec\)\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: storeLocateVary: Not our vary marker object, [[:xdigit:]]+ = '[^']+', '[^']+'/'[^']+'$
