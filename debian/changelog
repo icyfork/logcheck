@@ -3,7 +3,10 @@ logcheck (1.2.55) unstable; urgency=low
   * violations.ignore.d/logcheck-passwd: ignore PAM warnings on authentication
     failures.
 
- -- martin f. krafft <madduck@debian.org>  Mon,  5 Feb 2007 08:29:03 +0000
+  * violations.ignore.d/logcheck-saslauthd: ignore PAM warnings on
+    authentication failures.
+
+ -- martin f. krafft <madduck@debian.org>  Mon,  5 Feb 2007 08:31:50 +0000
 
 logcheck (1.2.54) unstable; urgency=low
 
