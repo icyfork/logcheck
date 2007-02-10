@@ -8,6 +8,8 @@ logcheck (1.2.55) unstable; urgency=low
 
   * ignore.d.server/saned: ignore some more error messages.
 
+  * ignore.d.server/hplip: ignore some more error messages.
+
   * violations.d/logcheck: elevate messages matching /violations/i.
 
   * violations.ignore.d/logcheck-proftpd: ignore warning about attempted root
@@ -23,7 +25,7 @@ logcheck (1.2.55) unstable; urgency=low
     delayed).
     - ignore RBL rejects after successful reverse DNS resolution.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 10 Feb 2007 16:52:08 +0000
+ -- martin f. krafft <madduck@debian.org>  Sat, 10 Feb 2007 16:55:30 +0000
 
 logcheck (1.2.54) unstable; urgency=low
 
