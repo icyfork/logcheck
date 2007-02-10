@@ -18,10 +18,12 @@ logcheck (1.2.55) unstable; urgency=low
   * ignore.d.server/kernel: ignore more initialisation messages from SCSI
     subsystem.
 
-  * violations.ignore.d/logcheck-postfix: ignore sender verification rejects
-    after MAIL (in case they are not delayed).
+  * violations.ignore.d/logcheck-postfix:
+    - ignore sender verification rejects after MAIL (in case they are not
+    delayed).
+    - ignore RBL rejects after successful reverse DNS resolution.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 10 Feb 2007 16:50:04 +0000
+ -- martin f. krafft <madduck@debian.org>  Sat, 10 Feb 2007 16:52:08 +0000
 
 logcheck (1.2.54) unstable; urgency=low
 
