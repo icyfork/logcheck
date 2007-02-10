@@ -15,7 +15,10 @@ logcheck (1.2.55) unstable; urgency=low
 
   * ignore.d.server/ssh: ignore @ in names of nonexistent accounts.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 10 Feb 2007 16:45:36 +0000
+  * ignore.d.server/kernel: ignore more initialisation messages from SCSI
+    subsystem.
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 10 Feb 2007 16:48:48 +0000
 
 logcheck (1.2.54) unstable; urgency=low
 
