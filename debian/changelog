@@ -10,7 +10,10 @@ logcheck (1.2.55) unstable; urgency=low
 
   * violations.d/logcheck: elevate messages matching /violations/i.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 10 Feb 2007 16:43:44 +0000
+  * violations.ignore.d/logcheck-proftpd: ignore warning about attempted root
+    logins.
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 10 Feb 2007 16:44:46 +0000
 
 logcheck (1.2.54) unstable; urgency=low
 
