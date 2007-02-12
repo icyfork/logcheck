@@ -1,7 +1,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/postfix-script: refreshing the Postfix mail system$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: skipped, still being delivered$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: from=<.*>, status=expired, returned to sender$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: message-id=(<?[^[:space:]]+>?)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: message-id=(<?[^[:space:]]+>?)?( \(added by [^[:space:]]+\))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: removed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: to=<[^[:space:]]+>, relay=none, delay=[0-9]+, status=deferred \(delivery temporarily suspended: connect to [^[:space:]]+: (Connection timed out|read timeout|Connection refused)\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/n?qmgr\[[0-9]+\]: [[:alnum:]]+: to=<[^[:space:]]+>, relay=none, delay=[0-9]+, status=deferred \(delivery temporarily suspended: Host or domain name not found. Name service error for name=[^[:space:]]+ type=MX: Host not found, try again\)$
@@ -69,7 +69,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:alnum:]]+: client=[^[:space:]]+, sasl_sender=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:alnum:]]+: client=[^[:space:]]+, sasl_method=[-[:alnum:]]+, sasl_username=[-_.@[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:alnum:]]+: client=[._[:alnum:]-]+\[[0-9a-f.:]{3,39}\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:alnum:]]+: (resent-)?message-id=(<?[^[:space:]]+>?)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:alnum:]]+: (resent-)?message-id=(<?[^[:space:]]+>?)?( \(added by [^[:space:]]+\))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: numeric result [[0-9a-f.:]{3,39}]+ in address->name lookup for [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Illegal address syntax from [^[:space:]]+ in (MAIL|RCPT) command: .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: [._[:alnum:]-]+\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\] sent non-SMTP command: .*$

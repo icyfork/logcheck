@@ -24,8 +24,9 @@ logcheck (1.2.55) unstable; urgency=low
     - ignore sender verification rejects after MAIL (in case they are not
     delayed).
     - ignore RBL rejects after successful reverse DNS resolution.
+    - allow extra information after message-id.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 10 Feb 2007 16:55:30 +0000
+ -- martin f. krafft <madduck@debian.org>  Mon, 12 Feb 2007 20:41:28 +0000
 
 logcheck (1.2.54) unstable; urgency=low
 
