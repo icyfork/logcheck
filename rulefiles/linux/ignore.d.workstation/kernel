@@ -70,6 +70,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ input.agent\[[0-9]+\]:[[:space:]]+((mouse|ts|ev|joy)dev|evbug): (already loaded|loaded successfully|blacklisted)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: input: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:digit:].-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: input: [-_/[:alnum:][:space:]]+ as /class/input/input[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: input: AT Translated Set 2 keyboard on isa[[:digit:]]+/serio[[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: pl2303 [-:0-9.]+ PL-2303 converter detected$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: usb [-:0-9]+ [-[:alnum:][:space:]]+ converter now attached to ttyUSB[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [-[:alnum:]]+ ttyUSB[0-9]: [-[:alnum:][:space:]]+ converter now disconnected from ttyUSB[0-9]$
