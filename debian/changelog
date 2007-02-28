@@ -42,6 +42,7 @@ logcheck (1.2.55) unstable; urgency=low
     - more policyd-weight rules by Armin Berres (closes: #410416).
     - ignore messages related to RBL DNS lookup errors.
     - ignore messages on successful delivery to Sendmail.
+    - improve filters for messages relating to deferred mail.
 
   * ignore.d.server/spamd:
     - ignore init messages with scores in SQL (closes: #411111).
@@ -60,7 +61,7 @@ logcheck (1.2.55) unstable; urgency=low
   * debconf translation updates:
     - Portuguese by Pedro Ribeiro (closes: #410734).
 
- -- martin f. krafft <madduck@debian.org>  Wed, 28 Feb 2007 11:51:14 +0100
+ -- martin f. krafft <madduck@debian.org>  Wed, 28 Feb 2007 12:12:27 +0100
 
 logcheck (1.2.54) unstable; urgency=low
 
