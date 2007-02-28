@@ -11,7 +11,6 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-cyrus 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-dcc 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-dovecot 0640 != 0644
-logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-fetchmail 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-hylafax 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-innd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-kernel 0640 != 0644
@@ -91,7 +90,6 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/do
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dspam 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/epmd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/exim4 0640 != 0644
-logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/fetchmail 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/gnu-imap4d 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/gps 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/grinch 0640 != 0644
