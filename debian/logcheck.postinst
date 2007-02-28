@@ -33,6 +33,12 @@ case "$1" in
 	  touch /etc/cron.d/logcheck || true
 	fi
 
+	# check for logcheck group in case account exists without group
+	if ! getent group logcheck >/dev/null; then
+	  addgroup --system logcheck
+    usermod -g logcheck logcheck
+	fi  
+
   # make sure the home directory exists
   if [ ! -d "$(getent passwd logcheck | cut -d: -f6)" ]; then
     usermod -d /var/lib/logcheck logcheck > /dev/null || true
