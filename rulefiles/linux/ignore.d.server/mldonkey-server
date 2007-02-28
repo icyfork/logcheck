@@ -71,3 +71,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cCO\] Sources correctly saved$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cCO\] Options backup as \.tar\.gz correctly saved$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] Core stopped$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: verifySignature: BER decode error$
