@@ -1,3 +1,10 @@
+logcheck (1.2.56~unreleased.1) unstable; urgency=low
+
+  * ignore.d.server/dovecot:
+    - ignore additional, non-conventional comment to msgid on deliver message.
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 28 Feb 2007 20:15:00 +0100
+
 logcheck (1.2.55) unstable; urgency=low
 
   * Actually install README.backports.gz to /usr/share/doc/logcheck

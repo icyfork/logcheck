@@ -14,7 +14,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-build-param: SSL parameters regeneration completed$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\(-_.[[:alnum:]]+\): (pg|my)sql: Connected to [-_.[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: \(pam_unix\) check pass; user unknown$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ deliver\([-_.@[:alnum:]]+\): msgid=<[^[:space:]]+>: saved mail to [-_.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ deliver\([-_.@[:alnum:]]+\): msgid=<[^[:space:]]+>( \(added by [^[:space:]]+\))?: saved mail to [-_.[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth-worker\([-_.[:alnum:]]+\): (pg|my)sql: Connected to [-_.[:alnum:]]+ \([-_.[:alnum:]]+\)$
 # see #396760
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\([[:alnum:]]+\): client in: AUTH [[:digit:]]+[[:space:]]+(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5)[[:space:]]+service=IMAP[[:space:]]+(secured )?lip=[.:[:xdigit:]]+[[:space:]]+rip=[.:[:xdigit:]]+[[:space:]]+resp=<hidden>$
