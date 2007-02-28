@@ -52,13 +52,13 @@ logcheck (1.2.55) unstable; urgency=low
     - ignore connection message to db by auth-worker; thanks to Guillaume
       Rischard.
 
-  * ignore.d.server/fetchmail:
+  * ignore.d.server/fetchmail, violations.ignore.d/logcheck-fetchmail:
     - ignore cert verification errors and name mismatches (closes: #412798).
 
   * debconf translation updates:
     - Portuguese by Pedro Ribeiro (closes: #410734).
 
- -- martin f. krafft <madduck@debian.org>  Wed, 28 Feb 2007 11:31:14 +0100
+ -- martin f. krafft <madduck@debian.org>  Wed, 28 Feb 2007 11:33:31 +0100
 
 logcheck (1.2.54) unstable; urgency=low
 
