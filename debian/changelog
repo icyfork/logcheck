@@ -6,10 +6,13 @@ logcheck (1.2.56) unstable; urgency=low
   * ignore.d.server/postfix:
     - more policyd-weight rules by Armin Berres (closes: #410416).
 
+  * ignore.d.server/spamd:
+    - ignore init messages with scores in SQL (closes: #411111).
+
   * debconf translation updates:
     - Portuguese by Pedro Ribeiro (closes: #410734).
 
- -- martin f. krafft <madduck@debian.org>  Wed, 28 Feb 2007 09:33:52 +0100
+ -- martin f. krafft <madduck@debian.org>  Wed, 28 Feb 2007 09:34:50 +0100
 
 logcheck (1.2.55) unstable; urgency=low
 

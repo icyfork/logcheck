@@ -1,5 +1,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]:( spamd:)? connection from [._[:alnum:]-]+ \[[\.[:digit:]]+\] at port [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]:( spamd:)? (info: )?setuid to [[:alnum:]-]+ succeeded$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]:( spamd:)? (info: )?setuid to [[:alnum:]-]+ succeeded(, reading scores from SQL)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]:( spamd:)? (clean message|identified spam) \([0-9.-]+/[0-9.]+\) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [0-9.]+ seconds, [0-9]+ bytes\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: child states: [[:upper:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]:( spamd:)? got connection over [/[:alnum:]]+$
