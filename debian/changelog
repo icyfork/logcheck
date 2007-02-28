@@ -1,3 +1,10 @@
+logcheck (1.2.56) unstable; urgency=low
+
+  * Actually install README.backports.gz to /usr/share/doc/logcheck
+    (closes: #411021).
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 28 Feb 2007 09:31:08 +0100
+
 logcheck (1.2.55) unstable; urgency=low
 
   * violations.ignore.d/logcheck-passwd: ignore PAM warnings on authentication
