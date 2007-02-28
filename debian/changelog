@@ -3,31 +3,36 @@ logcheck (1.2.55) unstable; urgency=low
   * Actually install README.backports.gz to /usr/share/doc/logcheck
     (closes: #411021).
 
-  * violations.ignore.d/logcheck-passwd: ignore PAM warnings on authentication
-    failures.
+  * violations.ignore.d/logcheck-passwd:
+    - ignore PAM warnings on authentication failures.
 
-  * violations.ignore.d/logcheck-saslauthd: ignore PAM warnings on
-    authentication failures.
+  * violations.ignore.d/logcheck-saslauthd:\
+    - ignore PAM warnings on authentication failures.
 
-  * ignore.d.server/saned: ignore some more error messages.
+  * ignore.d.server/saned:
+    - ignore some more error messages.
 
-  * ignore.d.server/hplip: ignore some more error messages.
+  * ignore.d.server/hplip: 
+    - ignore some more error messages.
 
-  * violations.d/logcheck: elevate messages matching /violations/i.
+  * violations.d/logcheck: 
+    - elevate messages matching /violations/i.
 
-  * violations.ignore.d/logcheck-proftpd: ignore warning about attempted root
-    logins.
+  * violations.ignore.d/logcheck-proftpd:
+    - ignore warning about attempted root logins.
 
-  * ignore.d.server/ssh: ignore @ in names of nonexistent accounts.
+  * ignore.d.server/ssh:
+    - ignore @ in names of nonexistent accounts.
 
-  * ignore.d.server/kernel: ignore more initialisation messages from SCSI
-    subsystem.
+  * ignore.d.server/kernel:
+    - ignore more initialisation messages from SCSI subsystem.
 
-  * ignore.d.workstation/kernel: ignore keyboard connection messages.
+  * ignore.d.workstation/kernel:
+    - ignore keyboard connection messages.
 
   * violations.ignore.d/logcheck-postfix:
     - ignore sender verification rejects after MAIL (in case they are not
-    delayed).
+      delayed).
     - ignore RBL rejects after successful reverse DNS resolution.
     - allow extra information after message-id.
     - ignore certificate verification failures due to invalid CA certs.
