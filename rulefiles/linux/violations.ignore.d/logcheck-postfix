@@ -22,6 +22,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=19:self signed certificate in certificate chain$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=20:unable to get local issuer certificate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=21:unable to verify the first certificate$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=24:invalid CA certificate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=26:unsupported certificate purpose$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=27:certificate not trusted$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate peer name verification failed for [^[:space:]]+: [[:digit:]]+ dNSNames in certificate found, but none matches

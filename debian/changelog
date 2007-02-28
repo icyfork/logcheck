@@ -28,6 +28,7 @@ logcheck (1.2.55) unstable; urgency=low
     delayed).
     - ignore RBL rejects after successful reverse DNS resolution.
     - allow extra information after message-id.
+    - ignore certificate verification failures due to invalid CA certs.
 
   * ignore.d.server/postfix:
     - more policyd-weight rules by Armin Berres (closes: #410416).
@@ -47,7 +48,7 @@ logcheck (1.2.55) unstable; urgency=low
   * debconf translation updates:
     - Portuguese by Pedro Ribeiro (closes: #410734).
 
- -- martin f. krafft <madduck@debian.org>  Wed, 28 Feb 2007 11:08:37 +0100
+ -- martin f. krafft <madduck@debian.org>  Wed, 28 Feb 2007 11:09:53 +0100
 
 logcheck (1.2.54) unstable; urgency=low
 
