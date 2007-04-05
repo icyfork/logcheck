@@ -1,4 +1,9 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Peer Connection Initiated with [0-9.]{7,15}:[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: IMPORTANT: OpenVPN's default port number is now 1194, based on an official port number assignment by IANA.  OpenVPN 2.0-beta16 and earlier used 5000 as the default port\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( \[[-._[:alnum:]]+\])? Peer Connection Initiated with [0-9.]{7,15}:[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Control Channel Authentication: using '[-._/[:alnum:]]+' as a OpenVPN static key file$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: (Outgo|Incom)ing Control Channel Authentication: Using [[:digit:]]+ bit message hash '(SHA1|MD5)' for HMAC authentication$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: NOTE: UID/GID downgrade will be delayed because of --client, --pull, or --up-delay$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [GU]ID set to [-._[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Data Channel (En|De)crypt: Cipher '[[:alnum:]-]+' initialized with [0-9]+ bit key$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Data Channel (En|De)crypt: Using [0-9]+ bit message hash '[[:alnum:]-]+' for HMAC authentication$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Control Channel: TLSv1, cipher TLSv1/SSLv3 [[:alnum:]-]+, [0-9]+ bit RSA$
@@ -12,7 +17,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Preserving previous TUN/TAP instance: [[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Local Options hash \(VER=V3\): '[0-9a-f]+'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: (Local|Expected Remote) Options hash \(VER=V3\): '[0-9a-f]+'$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: UDPv4 link (local \(bound\)|remote): (\[undef\]|[._[:alnum:]-]+):[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: UDPv4 link (local( \(bound\))?|remote): (\[undef\]|[._[:alnum:]-]+:[0-9]+)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: move_session: dest=TM_LAME_DUCK src=TM_ACTIVE reinit_src=1$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: move_session: dest=TM_ACTIVE src=TM_UNTRUSTED reinit_src=1$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: tls_multi_process: untrusted session promoted to trusted$
@@ -35,8 +40,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Closing TUN/TAP interface$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Diffie-Hellman initialized with [[:digit:]]+ bit key$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TLS-Auth MTU parms \[ L:[[:digit:]]+ D:[[:digit:]]+ EF:[[:digit:]]+ EB:[[:digit:]]+ ET:[[:digit:]]+ EL:[[:digit:]]+ \]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TUN/TAP device tun[[:digit:]]+ opened$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: /sbin/ifconfig tun[[:digit:]]+ [.[:digit:]]{7,15} pointopoint [.[:digit:]]{7,15} mtu [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TUN/TAP device tun[-._[:alnum:]]+ opened$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: /sbin/ifconfig tun[-._[:alnum:]]+ [.[:digit:]]{7,15} pointopoint [.[:digit:]]{7,15} mtu [[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: /sbin/route add -net [.[:digit:]]{7,15} netmask [.[:digit:]]{7,15} gw [.[:digit:]]{7,15}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: TCPv4_SERVER link local \(bound\): [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Listening for incoming TCP connection on [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
@@ -48,7 +53,12 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: MULTI: TCP INIT maxclients=[[:digit:]]+ maxevents=[[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? MULTI: internal route [.[:digit:]]{7,15}/[[:digit:]]{2} -> [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? MULTI: Learn: [.[:digit:]]{7,15}/[[:digit:]]{2} -> [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5}$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5} SENT CONTROL \[[-_.[:alnum:]]+\]: 'PUSH_REPLY(,redirect-gateway,route [.[:digit:]]{7,15})?,ping [[:digit:]]+,ping-restart [[:digit:]]+,ifconfig [.[:digit:]]{7,15} [.[:digit:]]{7,15}' \(status=[[:digit:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? PUSH: Received control message: 'PUSH_REPLY(,redirect-gateway)?(,route [.[:digit:]]{7,15}( [.[:digit:]]{7,15})?)*,ping [[:digit:]]+,ping-restart [[:digit:]]+,ifconfig [.[:digit:]]{7,15} [.[:digit:]]{7,15}'( \(status=[[:digit:]]+\))?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? SENT CONTROL \[[-_.[:alnum:]]+\]: 'PUSH_REPLY(,redirect-gateway)?(,route [.[:digit:]]{7,15})*,ping [[:digit:]]+,ping-restart [[:digit:]]+,ifconfig [.[:digit:]]{7,15} [.[:digit:]]{7,15}' \(status=[[:digit:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? SENT CONTROL \[[-_.[:alnum:]]+\]: 'PUSH_REQUEST' \(status=[[:digit:]]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [-_.[:alnum:]]+/[.[:digit:]]{7,15}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? OPTIONS IMPORT: reading client specific options from: [-_./[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? OPTIONS IMPORT: timers and/or timeouts modified$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? OPTIONS IMPORT: --ifconfig/up options modified$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? OPTIONS IMPORT: route options modified$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? VERIFY SCRIPT OK: depth=[[:digit:]]+, /[-:_./=@[:alnum:]]+$
