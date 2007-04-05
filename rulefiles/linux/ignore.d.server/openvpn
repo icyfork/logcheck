@@ -51,3 +51,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5} SENT CONTROL \[[-_.[:alnum:]]+\]: 'PUSH_REPLY(,redirect-gateway,route [.[:digit:]]{7,15})?,ping [[:digit:]]+,ping-restart [[:digit:]]+,ifconfig [.[:digit:]]{7,15} [.[:digit:]]{7,15}' \(status=[[:digit:]]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [-_.[:alnum:]]+/[.[:digit:]]{7,15}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? OPTIONS IMPORT: reading client specific options from: [-_./[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? VERIFY SCRIPT OK: depth=[[:digit:]]+, /[-_./=@[:alnum:]]+$

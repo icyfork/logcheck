@@ -1,3 +1,10 @@
+logcheck (1.2.56~unreleased.2) unstable; urgency=low
+
+  * ignore.d.server/openvpn:
+    - ignore messages related to tls-verify script.
+
+ -- martin f. krafft <madduck@debian.org>  Thu, 05 Apr 2007 21:14:54 +0200
+
 logcheck (1.2.56~unreleased.1) unstable; urgency=low
 
   [ martin f. krafft ]
