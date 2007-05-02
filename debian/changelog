@@ -14,8 +14,10 @@ logcheck (1.2.56~unreleased.2) unstable; urgency=low
     Thanks Michael Shuler.
 
   [ Russ Allbery ]
-  * ignore.d.server/postfix: Postfix 2.4.0 now logs as error some of the
-    deferral messages formerly logged as qmgr.
+  * ignore.d.server/postfix:
+    - Postfix 2.4.0 now logs as error some of the deferral messages
+      formerly logged as qmgr.
+    - Fix typo in "while performing the HELO handshake" message.
 
  -- martin f. krafft <madduck@debian.org>  Thu, 05 Apr 2007 21:29:23 +0200
 
