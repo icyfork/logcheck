@@ -42,7 +42,11 @@ logcheck (1.2.56) unstable; urgency=low
   * ignore.d.server/ssh:
     - also ignore backslashes in invalid/illegal user names.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 12:57:48 +0200
+  * ignore.d.server/postfix:
+    - ignore all warnings about malformed domain names in resource data of
+      MX/CNAME records.
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 12:59:58 +0200
 
 logcheck (1.2.55) unstable; urgency=low
 
