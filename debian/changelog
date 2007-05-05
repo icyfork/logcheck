@@ -49,6 +49,7 @@ logcheck (1.2.56) unstable; urgency=low
     - ignore notice about generated sender delivery status notification.
     - filter certificate warnings for smtp and smtpd.
     - ignore warnings about timed out conversations.
+    - filter out qmgr undeliverable warnings.
 
   * ignore.d.server/openvpn:
     - ignore ping-restart process respawn.
@@ -56,7 +57,7 @@ logcheck (1.2.56) unstable; urgency=low
   * ignore.d.server/thttpd:
     - ignore stats messages.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:08:05 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:10:43 +0200
 
 logcheck (1.2.55) unstable; urgency=low
 
