@@ -1,34 +1,26 @@
-#
-#    Translators, if you are not familiar with the PO format, gettext
-#    documentation is worth reading, especially sections dedicated to
-#    this format, e.g. by running:
-#         info -n '(gettext)PO Files'
-#         info -n '(gettext)Header Entry'
-#
-#    Some information specific to po-debconf are available at
-#            /usr/share/doc/po-debconf/README-trans
-#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
-#
-#    Developers do not need to manually edit POT or PO files.
+# logcheck's po-debconf Brazilian Portuguse translation.
+# Copyright (C) 2007, Andr√© Lu√≠s Lopes
+# This file is distributed under the same license as the logcheck package.
+# Andr√© Lu√≠s Lopes <andrelop@debian.org>, 2006.
+# Andr√© Lu√≠s Lopes <andrelop@debian.org>, 2007.
 #
 msgid ""
-msgstr ""
+msgstr "pt_BR utf-8\n"
 "Project-Id-Version: logcheck\n"
 "Report-Msgid-Bugs-To: logcheck-devel@lists.alioth.debian.org\n"
 "POT-Creation-Date: 2006-09-16 08:51+0200\n"
-"PO-Revision-Date: 2004-06-15 22:39-0300\n"
-"Last-Translator: AndrÈ LuÌs Lopes <andrelop@debian.org>\n"
+"PO-Revision-Date: 2007-04-21 17:39-0300\n"
+"Last-Translator: Andr√© Lu√≠s Lopes <andrelop@debian.org>\n"
 "Language-Team: Debian-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: boolean
 #. Description
 #: ../logcheck-database.templates:1001
-#, fuzzy
 msgid "Would you like to delete obsolete conffiles?"
-msgstr "Remover arquivos de configuraÁ„o obsoletos"
+msgstr "Voc√™ gostaria de remover conffiles obsoletos?"
 
 #. Type: boolean
 #. Description
@@ -39,28 +31,27 @@ msgid ""
 "negatives."
 msgstr ""
 "Os arquivos de regras na base de dados do logcheck passaram por uma "
-"auditoria para remoÁ„o de entradas duplicadas e para torn·-los mais "
-"especÌficos - isso tambÈm reduz falsos negativos."
+"auditoria para remo√ß√£o de entradas duplicadas e para torn√°-los mais "
+"espec√≠ficos - isso tamb√©m reduz falsos negativos."
 
 #. Type: boolean
 #. Description
 #: ../logcheck-database.templates:1001
-#, fuzzy
 msgid ""
 "As a result of this a number of rulefiles have been removed from the package."
 msgstr ""
 "Como um resultado dessa auditoria, diversos arquivos de regras foram "
-"removidos do pacote. VocÍ gostaria de removÍ-los tambÈm de seu sistema ?"
+"removidos do pacote."
 
 #~ msgid "Changes to ignore.d directory behaviour"
-#~ msgstr "MudanÁas no comportamento do diretÛrio ignore.d"
+#~ msgstr "Mudan√ßas no comportamento do diret√≥rio ignore.d"
 
 #~ msgid ""
 #~ "Now the ignore.d directories function in an additive manner (i.e. higher "
 #~ "levels also include the lower levels):"
 #~ msgstr ""
-#~ "Agora os diretÛrios ignore.d funcionam de maneira aditiva (ou seja, "
-#~ "nÌveis mais altos tambÈm incluem os nÌveis mais baixos):"
+#~ "Agora os diret√≥rios ignore.d funcionam de maneira aditiva (ou seja, "
+#~ "n√≠veis mais altos tamb√©m incluem os n√≠veis mais baixos):"
 
 #~ msgid ""
 #~ " - workstation  = workstation + server + paranoid\n"
@@ -76,43 +67,43 @@ msgstr ""
 #~ "directories."
 #~ msgstr ""
 #~ "Adicionalmente, o run-parts(8) agora controla quais arquivos de regras "
-#~ "s„o incluÌdos dos diretÛrios .d ."
+#~ "s√£o inclu√≠dos dos diret√≥rios .d ."
 
 #~ msgid "Please see /usr/share/doc/logcheck for more details."
 #~ msgstr "Por favor, consulte /usr/share/doc/logcheck para maiores detalhes."
 
 #, fuzzy
 #~ msgid "Changing the report level or email address"
-#~ msgstr "Mudando o nÌvel de relatÛrio ou endereÁo de e-mail."
+#~ msgstr "Mudando o n√≠vel de relat√≥rio ou endere√ßo de e-mail."
 
 #~ msgid ""
 #~ "To change from the default report level (server) or the default email "
 #~ "address (root) you need to edit \"/etc/logcheck/logcheck.conf\"."
 #~ msgstr ""
-#~ "Para mudar o nÌvel de relatÛrio padr„o (servidor) ou o endereÁo de e-mail "
-#~ "padr„o (root) vocÍ precisa editar o arquivo \"/etc/logcheck/logcheck.conf"
+#~ "Para mudar o n√≠vel de relat√≥rio padr√£o (servidor) ou o endere√ßo de e-mail "
+#~ "padr√£o (root) voc√™ precisa editar o arquivo \"/etc/logcheck/logcheck.conf"
 #~ "\"."
 
 #~ msgid "Logcheck standard rulefiles renamed"
-#~ msgstr "Arquivos de regras padrıes do logcheck renomeados"
+#~ msgstr "Arquivos de regras padr√µes do logcheck renomeados"
 
 #~ msgid ""
 #~ "As of version 1.2.1, the \"standard\" rulefiles have been renamed to "
 #~ "\"logcheck\" and the \"standard.postfix\" file has been renamed to "
 #~ "\"logcheck-postfix\"."
 #~ msgstr ""
-#~ "Iniciando com a vers„o 1.2.1, o arquivo de regras \"standard\" foi "
+#~ "Iniciando com a vers√£o 1.2.1, o arquivo de regras \"standard\" foi "
 #~ "renomeado para \"logcheck\" e o arquivo \"standard.postfix\" foi "
 #~ "renomeadopara \"logcheck.postfix\"."
 
 #~ msgid "Local modifications should be put into .d directories"
-#~ msgstr "ModificaÁıes locais devem ser colocadas nos diretÛrios .d ."
+#~ msgstr "Modifica√ß√µes locais devem ser colocadas nos diret√≥rios .d ."
 
 #~ msgid ""
 #~ "From version 1.1.1-8, logcheck supports run-parts controled rule "
 #~ "directories:"
 #~ msgstr ""
-#~ "Iniciando com a vers„o 1.1.1-8 o logcheck suporta diretÛrios de regras "
+#~ "Iniciando com a vers√£o 1.1.1-8 o logcheck suporta diret√≥rios de regras "
 #~ "controlados pelo run-parts:"
 
 #~ msgid ""
@@ -136,8 +127,8 @@ msgstr ""
 #~ "The ignore.d.{workstation,server,paranoid} directory to be used is set by "
 #~ "the REPORTLEVEL option in the file \"/etc/logcheck/logcheck.conf\"."
 #~ msgstr ""
-#~ "O diretÛrio ignore.d.{workstation,server,paranoid} a ser usado È definido "
-#~ "pela opÁ„o REPORTLEVEL no arquivo \"/etc/logcheck/logcheck.conf\"."
+#~ "O diret√≥rio ignore.d.{workstation,server,paranoid} a ser usado √© definido "
+#~ "pela op√ß√£o REPORTLEVEL no arquivo \"/etc/logcheck/logcheck.conf\"."
 
 #~ msgid ""
 #~ "These directories may contain files prefixed with \"logcheck-"
@@ -148,31 +139,31 @@ msgstr ""
 #~ "use rules collected from all the files found in the appropriate "
 #~ "directories."
 #~ msgstr ""
-#~ "Esses diretÛrios podem conter arquivos iniciados com \"logcheck-"
-#~ "\" (contendo padrıes genÈricos de alerta/sobreescrita), nomeados "
-#~ "\"(nome_do_pacote)\" (contendo padrıes especÌficos para o pacote "
-#~ "especÌfio) ou nomeados \"local\", respectivamente iniciados com \"local-"
-#~ "\" (criados pelo administrador local, contendo padrıes personalizados "
-#~ "para o seu site em particular). O logcheck ir· ent„o usar regras "
-#~ "coletadas de todos os arquivos encontrados nos diretÛrios apropriados."
+#~ "Esses diret√≥rios podem conter arquivos iniciados com \"logcheck-"
+#~ "\" (contendo padr√µes gen√©ricos de alerta/sobreescrita), nomeados "
+#~ "\"(nome_do_pacote)\" (contendo padr√µes espec√≠ficos para o pacote "
+#~ "espec√≠fio) ou nomeados \"local\", respectivamente iniciados com \"local-"
+#~ "\" (criados pelo administrador local, contendo padr√µes personalizados "
+#~ "para o seu site em particular). O logcheck ir√° ent√£o usar regras "
+#~ "coletadas de todos os arquivos encontrados nos diret√≥rios apropriados."
 
 #~ msgid "Please see /usr/share/doc/logcheck for more information."
-#~ msgstr "Por favor consulte /usr/share/doc/logcheck para maiores informaıes."
+#~ msgstr "Por favor consulte /usr/share/doc/logcheck para maiores informa√µes."
 
 #~ msgid "Logcheck no longer runs as root."
-#~ msgstr "O logcheck n„o È mais executado como root."
+#~ msgstr "O logcheck n√£o √© mais executado como root."
 
 #~ msgid ""
 #~ "Logcheck now runs as user logcheck.  Your logs must be readable by this "
 #~ "user if they are to be scanned by logcheck."
 #~ msgstr ""
-#~ "O logcheck agora È executado como o usu·rio logcheck. Seus logs devem "
-#~ "poder ser lidos por esse usu·rio caso vocÍ queira que eles sejam "
+#~ "O logcheck agora √© executado como o usu√°rio logcheck. Seus logs devem "
+#~ "poder ser lidos por esse usu√°rio caso voc√™ queira que eles sejam "
 #~ "considerados pelo logcheck."
 
 #~ msgid ""
 #~ "If you have not altered your logcheck configuration, you need not worry "
 #~ "this."
 #~ msgstr ""
-#~ "Caso vocÍ n„o tenha alterado sua configuraÁ„o do logcheck, vocÍ n„o "
+#~ "Caso voc√™ n√£o tenha alterado sua configura√ß√£o do logcheck, voc√™ n√£o "
 #~ "precisa se preocupar com isso."
