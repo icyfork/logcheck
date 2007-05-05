@@ -55,9 +55,10 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/[ls]mtp\[[0-9]+\]: [[:upper:]0-9]+: to=<[^[:space:]]+>, relay=[._[:alnum:]-]+\[[0-9.]{7,15}\](:[[:digit:]]{1,5})?, (conn_use=[[:digit:]]+, )?delay=[.0-9]+(, delays=([.0-9]+/){3}[.0-9]+)?(, dsn=2(\.[0-9]+){2})?, status=sent \(2[0-9][0-9] .+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: ([0-9a-f.:]{3,39})+: address not listed for hostname [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: too many errors after ([[:upper:]]{4}|UNKNOWN) from [._[:alnum:]-]+\[[.[:digit:]]+\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: valid_hostname: invalid character [0-9]+\(decimal\): .*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: valid_hostname: misplaced delimiter: .$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: valid_hostname: empty hostname$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: valid_hostname: invalid character [0-9]+\(decimal\): .*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: valid_hostname: misplaced delimiter: .$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: valid_hostname: empty hostname$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: valid_hostname: numeric hostname: [.[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: numeric domain name in resource data of MX record for [._[:alnum:]-]+: [0-9a-f.:]{3,39}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: mailer loop: best MX for [^[:space:]]+ is local$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: enabling PIX <CRLF>\.<CRLF> workaround for .*$
@@ -98,7 +99,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: NOQUEUE: discard: RCPT from [^[:space:]]+: <[^[:space:]]+>: .+; from=[^[:space:]]+ to=[^[:space:]]+ proto=E?SMTP helo=<[^[:space:]]+>$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:xdigit:]]+: to=<[^[:space:]]+>, relay=none,( conn_use=[0-9]+,)? delay=[0-9.]+,( delays=[0-9./]+,)?( dsn=[45]\.[0-9]\.[0-9],)? status=(bounced|deferred) \(.+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: ([-._[:alnum:]]+): RBL lookup error: Host or domain name not found\. Name service error for name=\1 type=A: Host not found, try again$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: valid_hostname: (empty|numeric) hostname$
 # mysql
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: commit transaction$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin: no result found$
