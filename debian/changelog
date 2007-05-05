@@ -1,6 +1,7 @@
-logcheck (1.2.56) unstable; urgency=low
+logcheck (1.2.56~unreleased.3) UNRELEASED; urgency=low
 
-  [ martin f. krafft ]
+  * Thanks to Eric Evans and Russ Allbery for their contributions.
+
   * ignore.d.server/dovecot:
     - ignore additional, non-conventional comment to msgid on deliver message.
 
@@ -10,15 +11,12 @@ logcheck (1.2.56) unstable; urgency=low
     - allow free-form tun names.
     - handle multiple routes.
     - ignore stuff related to tls-auth
+    - ignore ping-restart process respawn.
 
-  [ Eric Evans ]
-  * ignore.d.server/postfix: updated an anvil stats pattern to match the
-    submission service name in addition to port 587, (closes: #418449).
-    Thanks Michael Shuler.
-
-  [ Russ Allbery ]
-  * ignore.d.server/postfix: (closes: #404852)
-    - ignore more timeout and connection refused messages.
+  * ignore.d.server/postfix:
+    - updated an anvil stats pattern to match the submission service name in
+      addition to port 587, (closes: #418449). Thanks Michael Shuler.
+    - ignore more timeout and connection refused messages (closes: #404852).
     - allow more logging information in connection failure messages.
     - allow any message ID for cleanup; there are too many possibilities.
     - make the DSN optional in remote accept messages.
@@ -27,6 +25,14 @@ logcheck (1.2.56) unstable; urgency=low
     - Postfix 2.4.0 now logs as error some of the deferral messages
       formerly logged as qmgr.
     - Fix typo in "while performing the HELO handshake" message.
+    - ignore all warnings about malformed domain names in resource data of
+      MX/CNAME records.
+    - ignore warnings about numeric hostnames by valid_hostname.
+    - ignore notice about generated sender delivery status notification.
+    - filter certificate warnings for smtp and smtpd.
+    - ignore warnings about timed out conversations.
+    - filter out qmgr undeliverable warnings.
+    - do not hardcode column names for mysql query; thanks Andreas Beckmann.
 
   * violations.ignore.d/logcheck-postfix:
     - smtpd_peer_init is optional before DNS failure messages.
@@ -38,26 +44,13 @@ logcheck (1.2.56) unstable; urgency=low
   * violations.ignore.d/logcheck-ssh:
     - ignore host/address mismatch messages from TCP wrappers.
 
-  [ martin f. krafft ]
   * ignore.d.server/ssh:
     - also ignore backslashes in invalid/illegal user names.
-
-  * ignore.d.server/postfix:
-    - ignore all warnings about malformed domain names in resource data of
-      MX/CNAME records.
-    - ignore warnings about numeric hostnames by valid_hostname.
-    - ignore notice about generated sender delivery status notification.
-    - filter certificate warnings for smtp and smtpd.
-    - ignore warnings about timed out conversations.
-    - filter out qmgr undeliverable warnings.
-
-  * ignore.d.server/openvpn:
-    - ignore ping-restart process respawn.
 
   * ignore.d.server/thttpd:
     - ignore stats messages.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:10:43 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:15:52 +0200
 
 logcheck (1.2.55) unstable; urgency=low
 
