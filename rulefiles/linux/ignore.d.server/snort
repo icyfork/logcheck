@@ -1,4 +1,4 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: .$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:[[:space:]]*.?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: (\`|\\+)-.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     alert_fragments: (INACTIVE|ACTIVE)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     alert_incomplete: (INACTIVE|ACTIVE)$

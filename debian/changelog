@@ -58,10 +58,12 @@ logcheck (1.2.56~unreleased.3) UNRELEASED; urgency=low
     - ignore messages by POP3 server; thanks to Stephan Windmüller
       (closes: #421768)
 
-  * Updated pt_BR debconf translation; thanks to Andr�� Lu��s Lopes
-    (closes: #421525).
+  * ignore.d.server/snort:
+    - ignore empty log lines; thanks to Johan Walles (closes: #413262).
 
- -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:25:26 +0200
+  * Updated pt_BR debconf translation; thanks to Andr�� Lu��s Lopes
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:27:44 +0200
 
 logcheck (1.2.55) unstable; urgency=low
 
