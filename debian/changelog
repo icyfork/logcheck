@@ -45,8 +45,9 @@ logcheck (1.2.56) unstable; urgency=low
   * ignore.d.server/postfix:
     - ignore all warnings about malformed domain names in resource data of
       MX/CNAME records.
+    - ignore warnings about numeric hostnames by valid_hostname.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 12:59:58 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 13:01:30 +0200
 
 logcheck (1.2.55) unstable; urgency=low
 
