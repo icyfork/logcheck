@@ -53,7 +53,10 @@ logcheck (1.2.56) unstable; urgency=low
   * ignore.d.server/openvpn:
     - ignore ping-restart process respawn.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:01:52 +0200
+  * ignore.d.server/thttpd:
+    - ignore stats messages.
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:08:05 +0200
 
 logcheck (1.2.55) unstable; urgency=low
 
