@@ -151,6 +151,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/ss
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/stunnel 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/sympa 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/syslogd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/teapop 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/tftpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/thttpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/thy 0640 != 0644
