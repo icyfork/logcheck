@@ -47,8 +47,9 @@ logcheck (1.2.56) unstable; urgency=low
       MX/CNAME records.
     - ignore warnings about numeric hostnames by valid_hostname.
     - ignore notice about generated sender delivery status notification.
+    - filter certificate warnings for smtp and smtpd.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 13:02:50 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 13:27:23 +0200
 
 logcheck (1.2.55) unstable; urgency=low
 
