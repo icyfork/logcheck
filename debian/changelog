@@ -1,6 +1,9 @@
-logcheck (1.2.56~unreleased.2) unstable; urgency=low
+logcheck (1.2.56) unstable; urgency=low
 
   [ martin f. krafft ]
+  * ignore.d.server/dovecot:
+    - ignore additional, non-conventional comment to msgid on deliver message.
+
   * ignore.d.server/openvpn:
     - ignore messages related to tls-verify script.
     - hide informational messages related to UDP.
@@ -14,22 +17,6 @@ logcheck (1.2.56~unreleased.2) unstable; urgency=low
     Thanks Michael Shuler.
 
   [ Russ Allbery ]
-  * ignore.d.server/postfix:
-    - Postfix 2.4.0 now logs as error some of the deferral messages
-      formerly logged as qmgr.
-    - Fix typo in "while performing the HELO handshake" message.
-  * violations.ignore.d/logcheck-postfix:
-    - Ignore qmgr message expiration messages.
-
- -- martin f. krafft <madduck@debian.org>  Thu, 05 Apr 2007 21:29:23 +0200
-
-logcheck (1.2.56~unreleased.1) unstable; urgency=low
-
-  [ martin f. krafft ]
-  * ignore.d.server/dovecot:
-    - ignore additional, non-conventional comment to msgid on deliver message.
-
-  [ Russ Allbery ]
   * ignore.d.server/postfix: (closes: #404852)
     - ignore more timeout and connection refused messages.
     - allow more logging information in connection failure messages.
@@ -37,17 +24,25 @@ logcheck (1.2.56~unreleased.1) unstable; urgency=low
     - make the DSN optional in remote accept messages.
     - ignore numeric hostname and DNS lookup failures.
     - ignore invalid octet count errors from trivial-rewrite.
+    - Postfix 2.4.0 now logs as error some of the deferral messages
+      formerly logged as qmgr.
+    - Fix typo in "while performing the HELO handshake" message.
 
   * violations.ignore.d/logcheck-postfix:
     - smtpd_peer_init is optional before DNS failure messages.
     - allow conn_use information in smtp failure messages.
     - add another variation on remote message acceptance.
     - allow more message IDs in cleanup log messages.
+    - Ignore qmgr message expiration messages.
 
   * violations.ignore.d/logcheck-ssh:
     - ignore host/address mismatch messages from TCP wrappers.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 28 Feb 2007 21:14:44 +0100
+  [ martin f. krafft ]
+  * ignore.d.server/ssh:
+    - also ignore backslashes in invalid/illegal user names.
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 12:57:48 +0200
 
 logcheck (1.2.55) unstable; urgency=low
 
