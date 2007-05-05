@@ -1,2 +1,2 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: [[:alnum:]]+: media error \(bad sector\): status=0x[[:xdigit:]]+ { DriveReady SeekComplete Error }$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: end_request: I/O error, dev [[:alnum:]]+, sector [[:digit:]]+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+.[[:digit:]]+\])? [[:alnum:]]+: media error \(bad sector\): status=0x[[:xdigit:]]+ { DriveReady SeekComplete Error }$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+.[[:digit:]]+\])? end_request: I/O error, dev [[:alnum:]]+, sector [[:digit:]]+

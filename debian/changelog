@@ -61,10 +61,14 @@ logcheck (1.2.56~unreleased.3) UNRELEASED; urgency=low
   * ignore.d.server/snort:
     - ignore empty log lines; thanks to Johan Walles (closes: #413262).
 
+  * ignore.d.*/kernel, violations.ignore.d/logcheck-kernel:
+    - allow kernel timestamps (CONFIG_PRINTK_TIME); thanks to Samuel Thibault
+      (closes: #416971).
+
   * Updated pt_BR debconf translation; thanks to Andr�� Lu��s Lopes
     (closes: #421525).
 
- -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:50:36 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:57:42 +0200
 
 logcheck (1.2.55) unstable; urgency=low
 
