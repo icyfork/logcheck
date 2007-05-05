@@ -50,7 +50,11 @@ logcheck (1.2.56~unreleased.3) UNRELEASED; urgency=low
   * ignore.d.server/thttpd:
     - ignore stats messages.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:15:52 +0200
+  * ignore.d.server/spamd:
+    - ignore checking notice when there is no message-id ("unknown"); thanks
+      Fabian Fagerholm (closes: #421913).
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 15:21:59 +0200
 
 logcheck (1.2.55) unstable; urgency=low
 
