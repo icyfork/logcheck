@@ -4,7 +4,10 @@ logcheck (1.2.57~unreleased.1) UNRELEASED; urgency=low
     - ignore reverse DNS errors and dropped connections, thanks to Stephan
       Windmüller.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 05 May 2007 21:04:15 +0200
+  * ignore.d.server/squid:
+    - ignore extension method registrations for MERGE, MKACTIVITY, CHECKOUT.
+
+ -- martin f. krafft <madduck@debian.org>  Mon, 07 May 2007 07:12:10 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 

@@ -73,3 +73,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Store rebuilding is [[:space:]]*[.[:digit:]]+% complete$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: [[:space:]]*Took [.[:digit:]]+ seconds \([[:digit:].]+ objects/sec\)\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: storeLocateVary: Not our vary marker object, [[:xdigit:]]+ = '[^']+', '[^']+'/'[^']+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: Extension method '(MERGE|MKACTIVITY|CHECKOUT)' added, enum=[[:digit:]]+$
