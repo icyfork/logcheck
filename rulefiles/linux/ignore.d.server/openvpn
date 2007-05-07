@@ -6,7 +6,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [GU]ID set to [-._[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Data Channel (En|De)crypt: Cipher '[[:alnum:]-]+' initialized with [0-9]+ bit key$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Data Channel (En|De)crypt: Using [0-9]+ bit message hash '[[:alnum:]-]+' for HMAC authentication$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Control Channel: TLSv1, cipher TLSv1/SSLv3 [[:alnum:]-]+, [0-9]+ bit RSA$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Control Channel: TLSv1, cipher TLSv1/SSLv3 [[:alnum:]-]+, [0-9]+ bit RSA$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: VERIFY SCRIPT OK: depth=[0-9]+, .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: VERIFY OK: depth=[0-9]+, .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: VERIFY OK: nsCertType=SERVER$
@@ -14,11 +14,12 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: SIGUSR1\[soft,ping-restart\] received, process restarting$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Restart pause, [[:digit:]]+ second\(s\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Closing TCP/UDP socket$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Re-using SSL/TLS context$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: (Data|Control) Channel MTU parms \[[[:upper:]:0-9 ]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Re-using SSL/TLS context$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? VERIFY SCRIPT OK: depth=[[:digit:]]+, /(CN|O)=.+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? LZO compression initialized$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? (Data|Control) Channel MTU parms \[[[:upper:]:0-9/ ]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Preserving previous TUN/TAP instance: [[:alnum:]-]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Local Options hash \(VER=V3\): '[0-9a-f]+'$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: (Local|Expected Remote) Options hash \(VER=V3\): '[0-9a-f]+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? (Local|Expected Remote) Options hash \(VER=V[34]\): '[[:xdigit:]]+'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: UDPv4 link (local( \(bound\))?|remote): (\[undef\]|[._[:alnum:]-]+:[0-9]+)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: move_session: dest=TM_LAME_DUCK src=TM_ACTIVE reinit_src=1$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: move_session: dest=TM_ACTIVE src=TM_UNTRUSTED reinit_src=1$
@@ -51,6 +52,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: MULTI: multi_init called, r=[[:digit:]]+ v=[[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: IFCONFIG POOL: base=[.[:digit:]]{7,15} size=[[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: IFCONFIG POOL LIST$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? REMOVE PUSH ROUTE: 'route [.[:digit:]]{7,15} [.[:digit:]]{7,15}'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Initialization Sequence Completed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: MULTI: TCP INIT maxclients=[[:digit:]]+ maxevents=[[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? MULTI: internal route [.[:digit:]]{7,15}/[[:digit:]]{2} -> [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5}$
