@@ -1,4 +1,4 @@
-logcheck (1.2.57~unreleased.1) UNRELEASED; urgency=low
+logcheck (1.2.57~unreleased.3) UNRELEASED; urgency=low
 
   * ignore.d.server/teapop:
     - ignore reverse DNS errors and dropped connections, thanks to Stephan
@@ -11,7 +11,7 @@ logcheck (1.2.57~unreleased.1) UNRELEASED; urgency=low
     - more filters for informational, day-to-day messages we don't need to
       see.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 07 May 2007 07:13:29 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 08 May 2007 15:53:59 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 
