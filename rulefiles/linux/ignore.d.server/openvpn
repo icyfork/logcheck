@@ -4,8 +4,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: (Outgo|Incom)ing Control Channel Authentication: Using [[:digit:]]+ bit message hash '(SHA1|MD5)' for HMAC authentication$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: NOTE: UID/GID downgrade will be delayed because of --client, --pull, or --up-delay$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: [GU]ID set to [-._[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Data Channel (En|De)crypt: Cipher '[[:alnum:]-]+' initialized with [0-9]+ bit key$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Data Channel (En|De)crypt: Using [0-9]+ bit message hash '[[:alnum:]-]+' for HMAC authentication$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Data Channel (En|De)crypt: Cipher '[[:alnum:]-]+' initialized with [[:digit:]]+ bit key$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Data Channel (En|De)crypt: Using [0-9]+ bit message hash '[[:alnum:]-]+' for HMAC authentication$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Control Channel: TLSv1, cipher TLSv1/SSLv3 [[:alnum:]-]+, [0-9]+ bit RSA$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: VERIFY SCRIPT OK: depth=[0-9]+, .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: VERIFY OK: depth=[0-9]+, .*$
@@ -65,4 +65,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? OPTIONS IMPORT: timers and/or timeouts modified$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? OPTIONS IMPORT: --ifconfig/up options modified$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? OPTIONS IMPORT: route options modified$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? VERIFY SCRIPT OK: depth=[[:digit:]]+, /[-:_./=@[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5})? VERIFY (SCRIPT )?OK: depth=[[:digit:]]+, /[-:_./=@[:alnum:]]+$
