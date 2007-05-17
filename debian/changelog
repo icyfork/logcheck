@@ -11,6 +11,8 @@ logcheck (1.2.57~unreleased.3) UNRELEASED; urgency=low
     - more filters for informational, day-to-day messages we don't need to
       see.
 
+  * Made dependency on logtail unversioned.
+
  -- martin f. krafft <madduck@debian.org>  Tue, 08 May 2007 15:53:59 +0200
 
 logcheck (1.2.56) unstable; urgency=low
