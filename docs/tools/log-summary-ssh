@@ -32,7 +32,7 @@ my %inv;			# failed ip => host mappings
 my $invf = 0;			# flag values
 
 while (<>) {
-  if (m/^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Illegal user (.*) from (.*)$/) {
+  if (m/^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: (?:Illegal|Invalid) user (.*) from (.*)$/) {
     my $ip = $2;
     chomp $ip;
     $h{$ip} ++;

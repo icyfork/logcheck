@@ -1,4 +1,4 @@
-logcheck (1.2.57~unreleased.3) UNRELEASED; urgency=low
+logcheck (1.2.57~unreleased.4) UNRELEASED; urgency=low
 
   * ignore.d.server/teapop:
     - ignore reverse DNS errors and dropped connections, thanks to Stephan
@@ -36,7 +36,10 @@ logcheck (1.2.57~unreleased.3) UNRELEASED; urgency=low
 
   * Made dependency on logtail unversioned.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 22 May 2007 00:17:55 +0200
+  * Patch for log-summary-ssh by Justin Pryzby to ignore messages related to
+    invalid users as well as illegal ones (closes: #422525).
+
+ -- martin f. krafft <madduck@debian.org>  Tue, 22 May 2007 00:44:30 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 
