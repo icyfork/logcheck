@@ -67,3 +67,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi[[:digit:]]: AEN: INFO \(0x[[:xdigit:]]+:0x[[:xdigit:]]+\): Battery capacity test (started|completed):([[:digit:]]+ hours)?\.$
 # other
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? st: Version [[:digit:]]+, fixed bufsize [[:digit:]]+, s/g segs [[:digit:]]+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]]+: register 'cdc_ether' at usb-[-.:[:digit:]]+, CDC Ethernet Device, [:[:xdigit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]]+: unregister 'cdc_ether' usb-[-.:[:digit:]]+, CDC Ethernet Device[[:space:]]*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? capilib_new_ncci: kcapi: appl [0-9]+ ncci 0x[12]0[12]0[12] up$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? kcapi: appl [0-9]+ ncci 0x[12]0[12]0[12] down$

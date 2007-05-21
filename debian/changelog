@@ -1,4 +1,4 @@
-logcheck (1.2.57~unreleased.4) UNRELEASED; urgency=low
+logcheck (1.2.57~unreleased.5) UNRELEASED; urgency=low
 
   * ignore.d.server/teapop:
     - ignore reverse DNS errors and dropped connections, thanks to Stephan
@@ -15,7 +15,7 @@ logcheck (1.2.57~unreleased.4) UNRELEASED; urgency=low
     - ignore warnings about concurrent connection limit exceeded.
     - ignore info about sender delivery status notification.
 
-  * ignore.d.workstation/kernel:
+  * ignore.d.server/kernel:
     - ignore registration messages by cdc_ether network devices.
     - ignore st load message.
     - patch by Remi Letot to ignore capi messages; thanks (closes: #422621).
