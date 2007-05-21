@@ -17,14 +17,16 @@ logcheck (1.2.57~unreleased.3) UNRELEASED; urgency=low
 
   * ignore.d.workstation/kernel:
     - ignore registration messages by cdc_ether network devices.
+    - ignore st load message.
 
   * ignore.d.server/ntp:
     - ignore kernel time sync status change.
 
   * Made dependency on logtail unversioned.
+  *
   * 
 
- -- martin f. krafft <madduck@debian.org>  Mon, 21 May 2007 10:20:34 +0200
+ -- martin f. krafft <madduck@debian.org>  Mon, 21 May 2007 10:21:54 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 

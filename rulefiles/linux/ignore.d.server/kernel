@@ -65,3 +65,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi[[:digit:]]: AEN: INFO \(0x[[:xdigit:]]+:0x[[:xdigit:]]+\): Verify (started|paused|completed):unit=[[:digit:]]+\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi[[:digit:]]: AEN: INFO \(0x[[:xdigit:]]+:0x[[:xdigit:]]+\): Battery charging (started|completed):\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi[[:digit:]]: AEN: INFO \(0x[[:xdigit:]]+:0x[[:xdigit:]]+\): Battery capacity test (started|completed):([[:digit:]]+ hours)?\.$
+# other
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? st: Version [[:digit:]]+, fixed bufsize [[:digit:]]+, s/g segs [[:digit:]]+
