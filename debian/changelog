@@ -34,12 +34,16 @@ logcheck (1.2.57~unreleased.4) UNRELEASED; urgency=low
   * ignore.d.server/mldonkey-server:
     - ignore messages about resource loading when ANSI locale is used.
 
+  * ignore.d.server/cron:
+    - ignore crontab entries even if helper is referenced by absolute path;
+      thanks to Marc Sherman for the patch (closes: #422618, #422884).
+
   * Made dependency on logtail unversioned.
 
   * Patch for log-summary-ssh by Justin Pryzby to ignore messages related to
     invalid users as well as illegal ones (closes: #422525).
 
- -- martin f. krafft <madduck@debian.org>  Tue, 22 May 2007 00:44:30 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 22 May 2007 00:46:33 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 
