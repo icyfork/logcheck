@@ -129,5 +129,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? PM: Writing back config space on device [[:alnum:]:.]+ at offset [0-9] \(was [0-9]+, writing [0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? loop: loaded \(max [0-9]+ devices\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? oprofile: using NMI interrupt\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? usb[[:digit:]]+: register 'cdc_ether' at usb-[-.:[:digit:]]+, CDC Ethernet Device, [:[:xdigit:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? usb[[:digit:]]+: unregister 'cdc_ether' usb-[-.:[:digit:]]+, CDC Ethernet Device[[:space:]]*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]]+: register 'cdc_ether' at usb-[-.:[:digit:]]+, CDC Ethernet Device, [:[:xdigit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]]+: unregister 'cdc_ether' usb-[-.:[:digit:]]+, CDC Ethernet Device[[:space:]]*$
