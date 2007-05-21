@@ -36,7 +36,7 @@ logcheck (1.2.57~unreleased.3) UNRELEASED; urgency=low
 
   * Made dependency on logtail unversioned.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 22 May 2007 00:17:23 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 22 May 2007 00:17:55 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 
