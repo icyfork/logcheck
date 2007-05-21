@@ -45,10 +45,10 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] Core started$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] Starting MLDonkey [.[:digit:]]+ \.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] Logging in \./mlnet\.log$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] Language [[:upper:]]+, locale [-[:alnum:]]+, ulimit for open files [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] Language [[:upper:]]+, locale [-_.[:alnum:]]+, ulimit for open files [[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] MLDonkey is working in \.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] loaded language resource file$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} Loading language resource /var/lib/mldonkey/mlnet_strings\.[[:lower:]]+(_[[:upper:]]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} Loading language resource /[-/_.[:alnum:]]+/mlnet_strings\.[-_.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[DNS\] Resolving \[[-_.[:alnum:]]+\] \.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cWeb\] saving guarding\.p2p \(http://www\.bluetack\.co\.uk/config/level1\.gz\)
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cWeb\] saving server\.met \(http://www\.gruk\.org/server\.met\.gz\)
