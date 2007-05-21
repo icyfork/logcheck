@@ -3,7 +3,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: no servers reachable$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: synchronized to ([0-9.]{7,15}|[0-9a-fA-F:.]{4,39}), stratum [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: synchronized to LOCAL\([0-9]+\), stratum [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: kernel time sync (disabled|enabled) [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: kernel time sync (disabled|enabled|status change) [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: precision = [0-9]+\.[0-9]+ usec$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: peer ([.0-9]{7,15}|[0-9a-fA-F:.]{4,39}) now (in)?valid$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: adjusting local clock by -?[.0-9]+s$
