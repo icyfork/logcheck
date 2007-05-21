@@ -78,7 +78,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/[ls]mtp\[[0-9]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)* relay=[^[:space:]]+,( conn_use=[[:digit:]]+,)? delay=[.0-9]+,( delays=[.0-9/]+, dsn=[0-9.]+,)? status=sent \(250 [0-9.]+ (Ok((, id=[-0-9]+, from MTA(\([^[:space:]]+\))?: 250 ([0-9.]+ )?Ok)?: queued as [0-9A-F]+|, discarded, UBE, id=[-0-9]+)*|[[:alnum:]]+ Message accepted for delivery)\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/local\[[0-9]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)* relay=local, delay=[0-9]+, status=sent \(delivered to command: exec /usr/bin/procmail\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/local\[[0-9]+\]: table hash:[^[:space:]]+\([-,|_[:alnum:]]+\) has changed -- restarting$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: : SPF pass: smtp_comment=.*: [.[:alnum:]]+ MX [.[:alnum:]]+ A [0-9a-f.:]+, header_comment=[.[:alnum:]+: domain of [%[:punct:][:alnum:]]+@[.[:alnum:]]+ designates [0-9a-f.:]{3,39} as permitted sender$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: : SPF pass: smtp_comment=.*: [.[:alnum:]]+ MX [.[:alnum:]]+ A [0-9a-f.:]+, header_comment=[.[:alnum:]]+: domain of [%[:punct:][:alnum:]]+@[.[:alnum:]]+ designates [0-9a-f.:]{3,39} as permitted sender$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/anvil\[[0-9]+\]: statistics: max (message|recipient|connection) (count|rate) [/[:digit:]s]+ for \(([.:[:xdigit:]]+)?(smtp(s)?|25|submission|587):[.:[:xdigit:]]+\) at \w{3} [ :0-9]{11}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/anvil\[[0-9]+\]: statistics: max cache size [[:digit:]]+ at \w{3} [ :0-9]{11}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/scache\[[0-9]+\]: statistics: start interval \w{3} [ :0-9]{11}$
@@ -99,6 +99,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: NOQUEUE: discard: RCPT from [^[:space:]]+: <[^[:space:]]+>: .+; from=[^[:space:]]+ to=[^[:space:]]+ proto=E?SMTP helo=<[^[:space:]]+>$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:xdigit:]]+: to=<[^[:space:]]+>, relay=none,( conn_use=[0-9]+,)? delay=[0-9.]+,( delays=[0-9./]+,)?( dsn=[45]\.[0-9]\.[0-9],)? status=(bounced|deferred) \(.+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: ([-._[:alnum:]]+): RBL lookup error: Host or domain name not found\. Name service error for name=\1 type=A: Host not found, try again$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Connection concurrency limit exceeded: [[:digit:]]+ from [-._[:alnum:]]+\[[.[:digit:]]{7,15}\] for service smtp$
 # mysql
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: commit transaction$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin: no result found$

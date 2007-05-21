@@ -11,9 +11,12 @@ logcheck (1.2.57~unreleased.3) UNRELEASED; urgency=low
     - more filters for informational, day-to-day messages we don't need to
       see.
 
+  * ignore.d.server/postfix
+    - ignore warnings about concurrent connection limit exceeded.
+
   * Made dependency on logtail unversioned.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 08 May 2007 15:53:59 +0200
+ -- martin f. krafft <madduck@debian.org>  Mon, 21 May 2007 10:11:03 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 
