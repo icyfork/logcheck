@@ -18,6 +18,7 @@ logcheck (1.2.57~unreleased.4) UNRELEASED; urgency=low
   * ignore.d.workstation/kernel:
     - ignore registration messages by cdc_ether network devices.
     - ignore st load message.
+    - patch by Remi Letot to ignore capi messages; thanks (closes: #422621).
 
   * ignore.d.server/ntp:
     - ignore kernel time sync status change.
@@ -43,7 +44,7 @@ logcheck (1.2.57~unreleased.4) UNRELEASED; urgency=low
   * Patch for log-summary-ssh by Justin Pryzby to ignore messages related to
     invalid users as well as illegal ones (closes: #422525).
 
- -- martin f. krafft <madduck@debian.org>  Tue, 22 May 2007 00:46:33 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 22 May 2007 00:48:13 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 
