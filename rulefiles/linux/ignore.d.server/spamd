@@ -1,19 +1,19 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]:( spamd:)? connection from [._[:alnum:]-]+ \[[\.[:digit:]]+\] at port [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]:( spamd:)? (info: )?setuid to [[:alnum:]-]+ succeeded(, reading scores from SQL)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]:( spamd:)? (clean message|identified spam) \([0-9.-]+/[0-9.]+\) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [0-9.]+ seconds, [0-9]+ bytes\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]: prefork: child states: [[:upper:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]:( spamd:)? got connection over [/[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]:( spamd:)? handled cleanup of child pid [0-9]+ due to SIGCHLD$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]:( spamd:)? server successfully spawned child process, pid [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]:( spamd:)? using default config for [-._+=[:alnum:]]+(@[-._[:alnum:]]+)?: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]:( spamd:)? (process|check)ing message (<[^>]+>( aka <[^>]+>)?|\(unknown\)) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]:( spamd:)? server pid: [[:digit:]]{1,5}$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]: logger: removing stderr method$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]: (spamd: )?result: [.YN] [ [:digit:]-]+ -( [._[:alnum:],]+)? scantime=[0-9.]+,size=[0-9]+,(user=[^,]+,uid=[0-9]+,required_score=[0-9.]+,rhost=[._[:alnum:]-]+,raddr=[0-9.]+,rport=[0-9]+,)?mid=<[^[:space:]]+>(,rmid=<[^[:space:]]+>)?,(bayes=[.[:digit:]]+(e-[[:digit:]]+)?,)?autolearn=(ham|spam|no|disabled)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]: FuzzyOcr: FuzzyOcr stopped, message got [[:digit:]]+ points by other FuzzyOcr tests \([.[:digit:]]+>[.[:digit:]]+\)\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]: (spamd: )?Tell: Setting (local|remote|local,remote) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [.[:digit:]]+ seconds, [[:digit:]]+ bytes$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]: (spamd: )?Tell: Did nothing for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [.[:digit:]]+ seconds, [[:digit:]]+ bytes$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|report)\[[0-9]+\]: reporter: spam reported to (DCC|SpamCop)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? connection from [._[:alnum:]-]+ \[[\.[:digit:]]+\] at port [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? (info: )?setuid to [[:alnum:]-]+ succeeded(, reading scores from SQL)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? (clean message|identified spam) \([0-9.-]+/[0-9.]+\) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [0-9.]+ seconds, [0-9]+ bytes\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: prefork: child states: [[:upper:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? got connection over [/[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? handled cleanup of child pid [0-9]+ due to SIGCHLD$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? server successfully spawned child process, pid [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? using default config for [-._+=[:alnum:]]+(@[-._[:alnum:]]+)?: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? (process|check)ing message (<[^>]+>( aka <[^>]+>)?|\(unknown\)) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? server pid: [[:digit:]]{1,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: logger: removing stderr method$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: (spamd: )?result: [.YN] [ [:digit:]-]+ -( [._[:alnum:],]+)? scantime=[0-9.]+,size=[0-9]+,(user=[^,]+,uid=[0-9]+,required_score=[0-9.]+,rhost=[._[:alnum:]-]+,raddr=[0-9.]+,rport=[0-9]+,)?mid=<[^[:space:]]+>(,rmid=<[^[:space:]]+>)?,(bayes=[.[:digit:]]+(e-[[:digit:]]+)?,)?autolearn=(ham|spam|no|disabled)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: FuzzyOcr: FuzzyOcr stopped, message got [[:digit:]]+ points by other FuzzyOcr tests \([.[:digit:]]+>[.[:digit:]]+\)\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: (spamd: )?Tell: Setting (local|remote|local,remote) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [.[:digit:]]+ seconds, [[:digit:]]+ bytes$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: (spamd: )?Tell: Did nothing for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [.[:digit:]]+ seconds, [[:digit:]]+ bytes$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: spam reported to (DCC|SpamCop)$
 # razor, temporary I hope
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (check|report)\[[0-9]+\]: \[ 2\] \[bootup\] Logging initiated LogDebugLevel=[[:digit:]]+ to sys-syslog$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (check|re(port|voke))\[[0-9]+\]: \[ 2\] \[bootup\] Logging initiated LogDebugLevel=[[:digit:]]+ to sys-syslog$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ check\[[0-9]+\]: \[ 3\] mail [[:digit:]]+ is (not )?known spam\.$
