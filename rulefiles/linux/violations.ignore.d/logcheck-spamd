@@ -3,4 +3,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]:( spamd:)? (process|check)ing message <[^>]+>( aka <[^>]+>)? for [-._+=[:alnum:]]+(@[-.[:alnum:]]+:[[:digit:]]+|:[[:digit:]]+)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: (spamd: )?result: (.|Y|N) [ [:digit:]-]+ - [._[:alnum:],]+ scantime=[0-9.]+,size=[0-9]+,(user=[a-z]+,uid=[0-9]+,required_score=[0-9.]+,rhost=[._[:alnum:]-]+,raddr=[0-9.]+,rport=[0-9]+,)?mid=<[^[:space:]]+>,(bayes=(0|1),)?autolearn=(ham|spam|no)$
 #temp razor rule:
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ revoke\[[0-9]+\]: reporter: razor2 revoke failed: No such file or directory revoke requires authentication at /usr/share/perl5/Mail/SpamAssassin/Plugin/Razor2\.pm line [[:digit:]]+\. at /usr/share/perl5/Mail/SpamAssassin/Plugin/Razor2\.pm line [[:digit:]]+\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ re(voke|port)\[[0-9]+\]: reporter: razor2 revoke failed: No such file or directory revoke requires authentication at /usr/share/perl5/Mail/SpamAssassin/Plugin/Razor2\.pm line [[:digit:]]+\. at /usr/share/perl5/Mail/SpamAssassin/Plugin/Razor2\.pm line [[:digit:]]+\.
