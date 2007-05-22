@@ -1,1 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) Passed CLEAN,( \[[.[:digit:]]{7,15}\]){2} <[^>]+> -> <[^>]+>, Message-ID: <[^>]+>,( Resent-Message-ID: <[^>]+>,)? mail_id: [-+[:alnum:]]+, Hits: -, queued_as: [[:xdigit:]]+, [[:digit:]]+ ms$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) NOTICE: Not sending DSN in response to bulk mail from <[^.]+> containing [[:upper:] ]+, mail intentionally dropped$

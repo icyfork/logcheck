@@ -1,4 +1,4 @@
-logcheck (1.2.57~unreleased.5) UNRELEASED; urgency=low
+logcheck (1.2.57~unreleased.6) UNRELEASED; urgency=low
 
   * ignore.d.server/teapop:
     - ignore reverse DNS errors and dropped connections, thanks to Stephan
@@ -40,8 +40,7 @@ logcheck (1.2.57~unreleased.5) UNRELEASED; urgency=low
       thanks to Marc Sherman for the patch (closes: #422618, #422884).
 
   * ignore.d.server/amavisd-new, violations.ignore.d/logcheck-amavisd-new:
-    - ignore BAD-HEADER and NOTICE messages.
-    - ignore pass messages (see #406854).
+    - start taking over the package's file by implementing proper rules.
 
   * Made dependency on logtail unversioned.
 
