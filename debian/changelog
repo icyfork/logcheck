@@ -39,12 +39,15 @@ logcheck (1.2.57~unreleased.5) UNRELEASED; urgency=low
     - ignore crontab entries even if helper is referenced by absolute path;
       thanks to Marc Sherman for the patch (closes: #422618, #422884).
 
+  * ignore.d.server/amavisd-new, violations.ignore.d/logcheck-amavisd-new:
+    - ignore BAD-HEADER and NOTICE messages.
+
   * Made dependency on logtail unversioned.
 
   * Patch for log-summary-ssh by Justin Pryzby to ignore messages related to
     invalid users as well as illegal ones (closes: #422525).
 
- -- martin f. krafft <madduck@debian.org>  Tue, 22 May 2007 00:48:13 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 22 May 2007 16:11:00 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 

@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) NOTICE: Not sending DSN in response to bulk mail from <[^.]+> containing [[:upper:] ]+, mail intentionally dropped$
