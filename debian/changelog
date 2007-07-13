@@ -45,12 +45,15 @@ logcheck (1.2.57~unreleased.6) UNRELEASED; urgency=low
   * ignore.d.server/amavisd-new, violations.ignore.d/logcheck-amavisd-new:
     - start taking over the package's file by implementing proper rules.
 
+  * ignore.d.server/ikiwiki:
+    - first version of ikiwiki filters, hides rebuilds.
+
   * Made dependency on logtail unversioned.
 
   * Patch for log-summary-ssh by Justin Pryzby to ignore messages related to
     invalid users as well as illegal ones (closes: #422525).
 
- -- martin f. krafft <madduck@debian.org>  Tue, 22 May 2007 21:54:50 +0200
+ -- martin f. krafft <madduck@debian.org>  Fri, 13 Jul 2007 13:45:39 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 
