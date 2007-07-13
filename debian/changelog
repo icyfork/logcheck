@@ -48,12 +48,15 @@ logcheck (1.2.57~unreleased.6) UNRELEASED; urgency=low
   * ignore.d.server/ikiwiki:
     - first version of ikiwiki filters, hides rebuilds.
 
+  * ignore.d.server/ssh:
+    - ignore more characters in invalid/illegal usernames.
+
   * Made dependency on logtail unversioned.
 
   * Patch for log-summary-ssh by Justin Pryzby to ignore messages related to
     invalid users as well as illegal ones (closes: #422525).
 
- -- martin f. krafft <madduck@debian.org>  Fri, 13 Jul 2007 13:45:39 +0200
+ -- martin f. krafft <madduck@debian.org>  Fri, 13 Jul 2007 13:49:40 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 
