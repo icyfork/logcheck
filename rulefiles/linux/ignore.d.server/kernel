@@ -34,7 +34,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? [[:lower:]]+: unknown partition table$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? ([[:lower:]]+):( (\1[[:digit:]]+|[<>]))+
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? [[:lower:]]+: cache flushes supported$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? scsi [:[:digit:]]+ Direct-Access[[:space:]]+[[:alnum:][:space:]]+PQ: [[:digit:]]+ ANSI: [[:digit:]]+ CCS$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? scsi [:[:digit:]]+ Direct-Access[[:space:]]+[[:alnum:][:space:][:punct:]]+PQ: [[:digit:]]+ ANSI: [[:digit:]]+( CCS)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+ Attached scsi generic sg[[:digit:]]+ type [[:digit:]]+$
 # sk98lin output
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]+speed:[[:space:]]+100?0?$
