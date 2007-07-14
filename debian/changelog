@@ -60,6 +60,7 @@ logcheck (1.2.57~unreleased.6) UNRELEASED; urgency=low
 
   * ignore.d.server/ssh:
     - ignore more characters in invalid/illegal usernames.
+    - ignore SSH-1.0-SSH_Version_Mapper scans.
 
   * ignore.d.server/bluez-utils:
     - ignore startup and connection messages.
@@ -77,7 +78,7 @@ logcheck (1.2.57~unreleased.6) UNRELEASED; urgency=low
   * Patch for log-summary-ssh by Justin Pryzby to ignore messages related to
     invalid users as well as illegal ones (closes: #422525).
 
- -- martin f. krafft <madduck@debian.org>  Sat, 14 Jul 2007 10:54:02 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 14 Jul 2007 12:32:04 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 

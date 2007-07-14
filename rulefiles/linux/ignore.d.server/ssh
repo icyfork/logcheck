@@ -27,3 +27,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Bad protocol version identification '[^']+' from ([:[:xdigit:].]+|UNKNOWN)+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: User [-_.[:alnum:]]+ from [-_.[:alnum:]]+ not allowed because not listed in AllowUsers$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: User [-_.[:alnum:]]+ from [-_.[:alnum:]]+ not allowed because listed in DenyUsers$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: scanned from [:[:xdigit:].]+ with SSH-[.[:digit:]]+-SSH_Version_Mapper\.  Don't panic\.$
