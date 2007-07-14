@@ -64,12 +64,16 @@ logcheck (1.2.57~unreleased.6) UNRELEASED; urgency=low
   * ignore.d.server/bluez-utils:
     - ignore startup and connection messages.
 
+  * ignore.d.server/amavisd-new:
+    - update rules to handle corner cases, when multiple addresses are used,
+      among other things.
+
   * Made dependency on logtail unversioned.
 
   * Patch for log-summary-ssh by Justin Pryzby to ignore messages related to
     invalid users as well as illegal ones (closes: #422525).
 
- -- martin f. krafft <madduck@debian.org>  Sat, 14 Jul 2007 10:38:10 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 14 Jul 2007 10:44:12 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 
