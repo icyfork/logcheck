@@ -23,6 +23,7 @@ logcheck (1.2.57~unreleased.6) UNRELEASED; urgency=low
     - ignore st load message.
     - patch by Remi Letot to ignore capi messages; thanks (closes: #422621).
     - update rule to filter more usb-storage plugin messages
+    - ignore HIDP initialisation message.
 
   * ignore.d.workstation/kernel:
     - USB IDs are hexadecimal, not just decimal.
@@ -66,7 +67,7 @@ logcheck (1.2.57~unreleased.6) UNRELEASED; urgency=low
   * Patch for log-summary-ssh by Justin Pryzby to ignore messages related to
     invalid users as well as illegal ones (closes: #422525).
 
- -- martin f. krafft <madduck@debian.org>  Sat, 14 Jul 2007 10:21:18 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 14 Jul 2007 10:23:00 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 
