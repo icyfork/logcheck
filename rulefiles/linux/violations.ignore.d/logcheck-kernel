@@ -1,3 +1,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? usbmon: debugfs is not available$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:][:space:]]+: probe of [:.[:xdigit:]]+ failed with error [-[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? \[drm:mga_do_agp_dma_bootstrap\] \*ERROR\* Unable to acquire AGP: [-[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? [[:lower:]]+: test WP failed, assume Write Enabled$
