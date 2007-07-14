@@ -24,7 +24,7 @@ clean:
 	rm -f build-stamp install-stamp
 
 	rm -f docs/logcheck.8
-	-$(MAKE) clean DESTDIR=$(CURDIR)/debian/tmp
+	[ ! -f Makefile ] || -$(MAKE) clean DESTDIR=$(CURDIR)/debian/tmp
 
 	debconf-updatepo
 

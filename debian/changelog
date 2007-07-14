@@ -80,8 +80,10 @@ logcheck (1.2.57) unstable; urgency=low
 
   * debian/control: switch to using source:Version instead of Source-Version;
     thanks lintian.
+  * debian/rules: don't fail clean target when no Makefile is present; thanks
+    lintian (it does not actually matter here).
 
- -- martin f. krafft <madduck@debian.org>  Sat, 14 Jul 2007 13:07:20 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 14 Jul 2007 13:08:22 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 
