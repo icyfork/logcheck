@@ -28,6 +28,7 @@ logcheck (1.2.57~unreleased.6) UNRELEASED; urgency=low
 
   * ignore.d.workstation/kernel:
     - USB IDs are hexadecimal, not just decimal.
+    - ignore DRM initialisation messages by R200 chipsets.
 
   * violations.ignore.d/kernel:
     - ignore test WP failure on usb-storage connection.
@@ -68,7 +69,7 @@ logcheck (1.2.57~unreleased.6) UNRELEASED; urgency=low
   * Patch for log-summary-ssh by Justin Pryzby to ignore messages related to
     invalid users as well as illegal ones (closes: #422525).
 
- -- martin f. krafft <madduck@debian.org>  Sat, 14 Jul 2007 10:27:33 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 14 Jul 2007 10:38:10 +0200
 
 logcheck (1.2.56) unstable; urgency=low
 

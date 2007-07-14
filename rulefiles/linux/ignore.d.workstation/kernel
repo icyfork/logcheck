@@ -95,6 +95,9 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? intel8x0_measure_ac97_clock: measured [[:digit:]]+ usecs$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? intel8x0: clocking to [[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? \[drm\] Initialized card for PCI DMA\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? \[drm\] Setting GART location based on new memory map$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? \[drm\] Loading R200 Microcode$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? \[drm\] writeback test succeeded in [[:digit:]]+ usecs$
 # this stuff is from pmounts autodetection
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? UDF-fs: No (VRS|partition) found( \([[:digit:]]+\))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? Unable to identify CD-ROM format\.$
