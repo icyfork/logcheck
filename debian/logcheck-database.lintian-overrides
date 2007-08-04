@@ -22,6 +22,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-passwd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-pdns 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-postfix 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-procmail 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-proftpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-pureftp 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-samba 0640 != 0644

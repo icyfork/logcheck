@@ -1,8 +1,10 @@
 logcheck (1.2.58) unstable; urgency=low
 
+  * ignore.d.server/procmail: ignore write errors from procmail.
+
   * Add Russian debconf translation by Yuri Kozlov (closes: #434231).
 
- -- martin f. krafft <madduck@debian.org>  Mon, 23 Jul 2007 10:53:32 +0200
+ -- martin f. krafft <madduck@debian.org>  Sat, 04 Aug 2007 18:02:00 +0200
 
 logcheck (1.2.57) unstable; urgency=low
 
