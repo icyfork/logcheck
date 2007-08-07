@@ -1,3 +1,9 @@
+logcheck (1.2.59.0) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Marc Haber <mh+debian-packages@zugschlus.de>  Tue, 07 Aug 2007 14:43:19 +0200
+
 logcheck (1.2.59) experimental; urgency=low
 
   * add logtail2
