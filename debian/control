@@ -2,7 +2,7 @@ Source: logcheck
 Section: admin
 Priority: optional
 Maintainer: Debian logcheck Team <logcheck-devel@lists.alioth.debian.org>
-Uploaders: Todd Troxell <ttroxell@debian.org>, Gerfried Fuchs <alfie@debian.org>, Eric Evans <eevans@debian.org>, martin f. krafft <madduck@debian.org>
+Uploaders: Todd Troxell <ttroxell@debian.org>, Gerfried Fuchs <alfie@debian.org>, Eric Evans <eevans@debian.org>, martin f. krafft <madduck@debian.org>, Marc Haber <mh+debian-packages@zugschlus.de>
 Standards-Version: 3.7.2
 Build-Depends: debhelper (>= 4.1.13), po-debconf
 Build-Depends-Indep: docbook-to-man
@@ -10,7 +10,7 @@ XS-Vcs-Svn: svn://svn.debian.org/svn/logcheck/logcheck/trunk
 
 Package: logcheck
 Architecture: all
-Depends: adduser, debconf, grep (>= 2.5.1-1), exim4 | mail-transport-agent, cron (>=3.0pl1-68), sysklogd | system-log-daemon | syslog-ng, mailx, logtail, lockfile-progs, ${misc:Depends}
+Depends: adduser, debconf, grep (>= 2.5.1-1), exim4 | mail-transport-agent, cron (>=3.0pl1-68), sysklogd | system-log-daemon | syslog-ng, mailx, logtail2, lockfile-progs, ${misc:Depends}
 Recommends: logcheck-database (>= ${source:Version})
 Suggests: syslog-summary
 Description: mails anomalies in the system logfiles to the administrator
@@ -33,6 +33,21 @@ Package: logtail
 Architecture: all
 Depends: perl (>= 5.8.0)
 Replaces: logcheck (<= 1.1.1-9)
+Description: Print log file lines that have not been read (deprecated)
+ This program will read in a standard text file and create an
+ offset marker when it reads the end. The offset marker is read
+ the next time logtail is run and the text file pointer is moved
+ to the offset location. This allows logtail to read in the next
+ lines of data following the marker. This is good for marking log
+ files for automatic log file checkers to monitor system events.
+ .
+ This program is in the process of being replaced by logtail2, which
+ automatically handles a single instace of log rotation.
+
+Package: logtail2
+Architecture: all
+Depends: perl (>= 5.8.0)
+Replaces: logcheck (<= 1.1.1-9)
 Description: Print log file lines that have not been read
  This program will read in a standard text file and create an
  offset marker when it reads the end. The offset marker is read
@@ -40,6 +55,14 @@ Description: Print log file lines that have not been read
  to the offset location. This allows logtail to read in the next
  lines of data following the marker. This is good for marking log
  files for automatic log file checkers to monitor system events.
+ .
+ If logtail2 finds that the inode of the file was changed, it assumes
+ that the log has been rotated, and tries to find the file it was
+ rotated to using heuristic plugins. If it finds the file, it will
+ print the remainder of the file starting at the offset saved to the
+ offset file. If a file with the correct inode
+ was not found, logtail2 will only print the new file in its entirety
+ before writing a new offset file.
  .
  This program is mainly used by logcheck, because it returns only
  parts of the system logfiles that have not already been checked.

@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+sub {
+  my ($filename) = @_;
+  my $rotated_filename="";
+  if (-e "$filename.1") {
+    # assume the log is rotated by logrotate(8)
+    # should also probably check if file is still fresh
+    $rotated_filename="$filename.1";
+  }
+  return $rotated_filename;
+}

@@ -23,10 +23,17 @@ the case where a file has been replaced by another of the same name
 common effect of logfile rotation.  On the other hand a file 
 shrinking _without_ moving is a possible symptom of intruders
 covering their tracks, and triggers prominent warnings in the output.
+
+Logtail2, a different executeable, also handles log file rotation by
+guessing a file name that might have been the target of log rotation
+and printing that file's contents starting with the stored offset. If
+you have a non-standard rotation scheme, you can drop your own
+heuristic into /usr/share/logtail/detectrotate/ and have it
+automatically picked up by logtail2.
 ======================================================================
 COMMANDLINE ARGUMENTS
 ---------------------
-See logtail(8).
+See logtail(8) and logtail2(8).
 
 The first, compulsory argument is the name of the input logfile;
 unlike tail, logtail cannot use stdin! 

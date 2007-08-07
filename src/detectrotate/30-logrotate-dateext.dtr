@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+sub {
+  my ($filename) = @_;
+  my $rotated_filename="";
+  # find out whether we have a dateext rotation scheme
+  my @list = glob("$filename-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]");
+  if ( @list ) {
+    $rotated_filename = (sort(glob("$filename-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]")))[-1];
+  }
+  return $rotated_filename;
+}

@@ -73,7 +73,7 @@ CONFFILE="/etc/logcheck/logcheck.conf"
 STATEDIR="/var/lib/logcheck"
 LOGFILES_LIST="/etc/logcheck/logcheck.logfiles"
 LOGFILE_FALLBACK="/var/log/syslog"
-LOGTAIL="/usr/sbin/logtail"
+LOGTAIL="/usr/sbin/logtail2"
 CAT="/bin/cat"
 SYSLOG_SUMMARY="/usr/bin/syslog-summary"
 
@@ -418,30 +418,7 @@ logoutput() {
     debug "logoutput called with file: $file"
     if [ -f "$file" ]; then
 	offsetfile="$STATEDIR/offset$(echo $file | tr / .)"
-	if [ -s "$offsetfile" -a -r "$offsetfile" ]; then
-	    if [[ $(wc -c < "$file") -lt $(tail -n 1  "$offsetfile") ]]; then
-	        # assume the log is rotated by savelog(8)
-		# syslog-ng leaves old files here
-		if [ -e "$file.0" -a "$file.0" -nt "$file.1.gz" ]; then
-		    debug "Running logtail on rotated: $file.0"
-		    $LOGTAIL -f "$file.0" -o "$offsetfile" $LOGTAIL_OPTS > \
-			$TMPDIR/logoutput/$(basename "$file") 2>&1 \
-			|| error "Could not run logtail or save output"
-		    rm -f "$offsetfile" \
-		        || error "Could not remove $offsetfile"
-		# assume the log is rotated by logrotate(8)
-		# should also probably check if file is still fresh
-		elif [ -e "$file.1" ]; then
-		    debug "Running logtail on rotated: $file.1"
-		    $LOGTAIL -f "$file.1" -o "$offsetfile" $LOGTAIL_OPTS > \
-			$TMPDIR/logoutput/$(basename "$file") 2>&1 \
-			|| error "Could not run logtail or save output"
-		    rm -f "$offsetfile" \
-		        || error "Could not remove $offsetfile"
-		fi
-	    fi
-	fi
-	debug "Running logtail: $file"
+	debug "Running $LOGTAIL on $file"
 	$LOGTAIL -f "$file" -o "$offsetfile" $LOGTAIL_OPTS \
 	    >> $TMPDIR/logoutput/$(basename "$file") 2>&1 \
 	    || error "Could not run logtail or save output"

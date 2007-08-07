@@ -1,0 +1,91 @@
+.TH LOGTAIL 8 "28 Jul 2007" "Debian" "logtail2 manual"
+.SH NAME
+logtail2 \- print log file lines that have not been read
+.SH SYNOPSIS
+.B logtail2
+.RI [-t]
+.BI \-f logfile
+.RI [\-o offsetfile ]
+.SH DESCRIPTION
+.B logtail2
+reads a specified file (usually a log file) and writes
+to the standard output that part of it
+which has not been read by previous runs of
+.BR logtail2 .
+It prints the appropriate number of bytes from the end of
+.IR logfile ,
+assuming that all changes that are made to it are to add new
+characters to it. 
+.P
+.I logfile
+must be a plain file.  A symlink is not allowed.
+.P
+.B logtail2
+stores the information about how much of it has already been read
+in a separate file called
+.IR offsetfile .
+.I offsetfile
+can be omitted.  If omitted, the file named
+.I logfile.offset
+in the same directory which contains
+.I logfile
+is used by default.
+.P
+If
+.I offsetfile
+is not empty, the inode of
+.I logfile
+is checked.  If the inode is changed,
+.B logtail2
+uses the heuristics stored in
+.I /usr/share/logtail2/detectrotate/
+to find a file that might be the rotated
+.I logfile
+and prints it starting with the stored offset. It then proceeds to
+simply print the entire new
+.I file
+and generates a new
+.I offsetfile.
+If the inode is not changed but
+.I logfile
+is shorter than it was at the last run of
+.BR logtail2 ,
+it writes a warning message to the standard output.
+.SH OPTIONS
+.TP
+.B \-f
+.I logfile 
+to be read after offset
+.TP
+.B \-o
+.I offsetfile 
+stores offset of previous run
+.TP
+.B \-t
+test mode - do not change offset in
+.I offsetfile
+.SH RETURN VALUES
+.IP 0
+successful
+.IP 65
+cannot get the size of
+.IR logfile
+.IP 66
+general file or directory access issue
+.IP 73
+cannot write
+.I offsetfile
+.SH AUTHOR
+The original
+.B logtail
+was written in C by Craig H. Rowland <crowland@psionic.com>.
+This version of
+.B logtail
+is a modification of Paul Slootman's re-implementation in perl.
+enhanced by the Debian Logcheck Team <logcheck-devel@lists.alioth.debian.org>.
+.P
+This manual was written by Oohara Yuuma <oohara@libra.interq.or.jp>
+and enhanced by the Debian Logcheck Team
+<logcheck-devel@lists.alioth.debian.org>..
+.SH SEE ALSO
+.BR logcheck (8)

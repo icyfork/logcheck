@@ -2,6 +2,7 @@
 
 CONFDIR = etc/logcheck
 BINDIR = usr/sbin
+SHAREDIR = usr/share/logtail/detectrotate
 
 install:
 	# Create the directories
@@ -9,6 +10,7 @@ install:
 	install -d $(DESTDIR)/var/lib/logcheck
 	install -d $(DESTDIR)/usr/sbin
 	install -d $(DESTDIR)/var/lock/logcheck
+	install -d $(DESTDIR)/$(SHAREDIR)
 
 	install -m 2750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.paranoid
 	install -m 2750 -d $(DESTDIR)/$(CONFDIR)/ignore.d.workstation
@@ -21,6 +23,10 @@ install:
 	# Install the scripts
 	install -m 755 src/logcheck $(DESTDIR)/$(BINDIR)/
 	install -m 755 src/logtail $(DESTDIR)/$(BINDIR)/
+	install -m 755 src/logtail2 $(DESTDIR)/$(BINDIR)/
+	install -m 755 src/detectrotate/10-savelog.dtr $(DESTDIR)/$(SHAREDIR)/
+	install -m 755 src/detectrotate/20-logrotate.dtr $(DESTDIR)/$(SHAREDIR)/
+	install -m 755 src/detectrotate/30-logrotate-dateext.dtr $(DESTDIR)/$(SHAREDIR)/
 
 	# Install the config files
 	install -m 640 etc/logcheck.logfiles $(DESTDIR)/$(CONFDIR)
