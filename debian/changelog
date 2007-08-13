@@ -12,7 +12,10 @@ logcheck (1.2.60) UNRELEASED; urgency=low
   * violations.ignore.d/logcheck-postfix:
     - ignore milter-reject virus rejection notices.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 13 Aug 2007 23:20:31 +0200
+  * ignore.d.server/postfix:
+    - ignore warning about not being able to resolve (sender) MX hosts.
+
+ -- martin f. krafft <madduck@debian.org>  Mon, 13 Aug 2007 23:25:23 +0200
 
 logcheck (1.2.59) experimental; urgency=low
 
