@@ -28,56 +28,8 @@ set -e
 
 confdir="/etc/logcheck"
 
-# Files removed from the package.
-rmfiles="ignore.d.workstation/dhclient \
-         ignore.d.workstation/dhcp \
-         ignore.d.workstation/cron \
-         ignore.d.workstation/imap \
-         ignore.d.workstation/isdnlog \
-         ignore.d.workstation/isdnutils \
-         ignore.d.workstation/oidentd \
-         ignore.d.workstation/proftpd \
-         ignore.d.workstation/qpopper \
-         ignore.d.workstation/samba \
-         ignore.d.workstation/ssh \
-         ignore.d.workstation/stunnel \
-         ignore.d.workstation/sysklogd \
-         ignore.d.workstation/telnetd \
-         ignore.d.workstation/uptimed \
-         ignore.d.workstation/imp \
-         ignore.d.workstation/samba \
-         ignore.d.workstation/squid \
-         ignore.d.workstation/ipppd \
-         ignore.d.workstation/exim \
-         ignore.d.workstation/portsentry \
-         ignore.d.workstation/qmail \
-         ignore.d.server/telnetd \
-         ignore.d.server/qpopper \
-         ignore.d.server/bind \
-         ignore.d.server/portsentry \
-         ignore.d.server/qmail \
-         ignore.d.server/sysklog \
-         ignore.d.paranoid/exim \
-         ignore.d.paranoid/portsentry \
-         ignore.d.paranoid/qmail \
-         violations.ignore.d/su \
-         violations.ignore.d/logcheck"
-
-secondrmfiles="violations.ignore.d/innd"
-
 case "$1" in
     configure)
-	if dpkg --compare-versions "$2" lt "1.2.6"; then
-	    db_get logcheck-database/conffile-cleanup
-	    if [ "$RET" = true ]; then
-		echo -n "Removing old conffiles from $confdir: "
-		for file in $rmfiles; do
-		    rm -f $confdir/$file
-		done
-		echo "Done"
-	    fi
-	fi
-
 	# Remove old sarge mv logcheck-data configfiles if unchanged
 	if [ -n "$2" ] && dpkg --compare-versions "$2" lt "1.2.48"; then
 		proftpd_sum=$(sha1sum '/etc/logcheck/ignore.d.paranoid/proftpd' 2>/dev/null \

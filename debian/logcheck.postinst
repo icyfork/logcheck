@@ -62,12 +62,6 @@ case "$1" in
     chfn -f 'logcheck system account' logcheck
   fi
 
-	# Remove unused old directory on upgrade
-	if [ -n "$2" ] && dpkg --compare-versions "$2" lt "1.2.25"; then
-	    if [ -d /var/state/logcheck ]; then
-		rm -fr /var/state/logcheck
-	    fi
-	fi
 	# Add logcheck mail header on install
         if [ ! -n "$2" ] && [ ! -f /etc/logcheck/header.txt ]; then
           cp -p /usr/share/logcheck/header.txt /etc/logcheck
@@ -84,7 +78,7 @@ case "$1" in
 	chgrp -R logcheck /etc/logcheck || true
 
     	# Set Permissions on install or upgrade
-	if [ ! -n "$2" ] || dpkg --compare-versions "$2" lt "1.2.34"; then
+	if [ ! -n "$2" ]; then
     	  chown -R logcheck:logcheck /var/lib/logcheck  || true
           chmod 2750 /etc/logcheck/ignore.d.paranoid || true
           chmod 2750 /etc/logcheck/ignore.d.workstation || true

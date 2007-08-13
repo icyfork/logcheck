@@ -26,8 +26,6 @@ clean:
 	rm -f docs/logcheck.8
 	[ ! -f Makefile ] || $(MAKE) clean DESTDIR=$(CURDIR)/debian/tmp
 
-	debconf-updatepo
-
 	dh_clean
 
 install: install-stamp
@@ -63,7 +61,6 @@ binary-indep: build install
 	dh_installman -p logtail2 docs/logtail2.8
 	dh_installman -p logcheck docs/logcheck.8
 	dh_installchangelogs
-	dh_installdebconf
 #	dh_strip
 	dh_compress
 	dh_fixperms --exclude etc/logcheck
@@ -93,14 +90,6 @@ help:
 	@echo '  checkpo       -   prints translation status'
 	@echo
 	@echo 'Execute debian/rules file'
-
-# check the debconf translations
-checkpo:
-	for i in debian/po/*.po; do \
-		echo \"Checking: $$i\"; \
-		msgmerge -U $$i debian/po/templates.pot; \
-		msgfmt -o /dev/null -c --statistics $$i; \
-	done
 
 # Done by the uploader:
 # cvs update..

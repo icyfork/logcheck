@@ -1,8 +1,16 @@
 logcheck (1.2.59.0) UNRELEASED; urgency=low
 
+  [ Marc Haber ]
   * NOT RELEASED YET
 
- -- Marc Haber <mh+debian-packages@zugschlus.de>  Tue, 07 Aug 2007 14:43:19 +0200
+  [ maximilian attems ]
+  * logcheck-database.config, logcheck-database.postinst,
+    logcheck-database.preinst, logcheck.postinst, logcheck-database.templates:
+    Kill code for upgrades from version earlier then Sarge, no debconf.
+    Thus remove ancient po files.
+  * debian/control: No debconf no debconf-updatepo need anymore.
+
+ -- maximilian attems <maks@debian.org>  Mon, 13 Aug 2007 13:05:00 +0200
 
 logcheck (1.2.59) experimental; urgency=low
 

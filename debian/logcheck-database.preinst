@@ -17,58 +17,8 @@ set -e
 # Source debconf library.
 #. /usr/share/debconf/confmodule
 
-# File removed from the package.
-rmfiles="ignore.d.workstation/dhclient ignore.d.workstation/dhcp"
-
-workstation="automount bind cron dhcp exim imap imp ipppd isdnutils oidentd \
-             portsentry postfix proftpd qmail qpopper samba squid stunnel \
-             sysklogd telnetd uptimed"
-
-server="cron exim portsentry ppp qmail qpopper squid sysklogd telnetd"
-
-ruledirs="cracking.d ignore.d.workstation ignore.d.server ignore.d.paranoid \
-          violations.d violations.ignore.d"
-
-confdir="/etc/logcheck"
-
 case "$1" in
     install|upgrade)
-	# upgrading 
-	if [ -n "$2" ]; then
-	    # The standard files were renamed in 1.2.1 release, so
-	    # we'll move it to the new name.
-	    if dpkg --compare-versions "$2" lt "1.2.1"; then
-		echo -n "Copying standard files to logcheck: "
-		for dir in $ruledirs; do
-		    if [ -f $confdir/$dir/standard ]; then
-			echo -n "$dir, "
-			mv $confdir/$dir/standard $confdir/$dir/logcheck
-		    fi
-		done
-		echo 
-		echo -n "Renaming violations.ignore.d/standard.postfix to logcheck-postfix: "
-		if [ -f $confdir/violations.ignore.d/standard.postfix ]; then 
-		    mv $confdir/violations.ignore.d/standard.postfix \
-			$confdir/violations.ignore.d/logcheck-postfix
-		fi
-		echo "Done"
-	    fi
-
-            # Rename violations.ignore.d/innd was renamed to 
-	    # violations.ignore.d/logcheck-innd in release 1.2.7
-	    if dpkg --compare-versions "$2" lt "1.2.7"; then
-		if [ -f $confdir/violations.ignore.d/innd ]; then
-		    echo -n "Renaming $confdir/violations.ignore.d/innd: "
-		    if [ -f $confdir/violations.ignore.d/logcheck-innd ]; then
-			echo "Failed - target file exists"
-		    else
-			mv $confdir/violations.ignore.d/innd \
-			    $confdir/violations.ignore.d/logcheck-innd
-			echo "Done"
-		    fi
-		fi
-	    fi
-	fi
 	;;
     
     abort-upgrade)
