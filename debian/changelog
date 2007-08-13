@@ -13,9 +13,9 @@ logcheck (1.2.60) UNRELEASED; urgency=low
     - ignore milter-reject virus rejection notices.
 
   * ignore.d.server/postfix:
-    - ignore warning about not being able to resolve (sender) MX hosts.
+    - ignore warnings about not being able to resolve (sender) MX hosts.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 13 Aug 2007 23:25:23 +0200
+ -- martin f. krafft <madduck@debian.org>  Mon, 13 Aug 2007 23:47:45 +0200
 
 logcheck (1.2.59) experimental; urgency=low
 
