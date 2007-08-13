@@ -1,7 +1,4 @@
-logcheck (1.2.59.0) UNRELEASED; urgency=low
-
-  [ Marc Haber ]
-  * NOT RELEASED YET
+logcheck (1.2.60) UNRELEASED; urgency=low
 
   [ maximilian attems ]
   * logcheck-database.config, logcheck-database.postinst,
@@ -11,7 +8,11 @@ logcheck (1.2.59.0) UNRELEASED; urgency=low
   * debian/control: No debconf no debconf-updatepo need anymore.
   * debian/control: Drop versioned dep of presarge grep.
 
- -- maximilian attems <maks@debian.org>  Mon, 13 Aug 2007 13:31:20 +0200
+  [ martin f. krafft ]
+  * violations.ignore.d/logcheck-postfix:
+    - ignore milter-reject virus rejection notices.
+
+ -- martin f. krafft <madduck@debian.org>  Mon, 13 Aug 2007 23:20:31 +0200
 
 logcheck (1.2.59) experimental; urgency=low
 
