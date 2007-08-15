@@ -28,7 +28,10 @@ logcheck (1.2.60) UNRELEASED; urgency=low
     - ignore message ids with sfid trailer (crm114 adds this).
     - also ignore passing of BAD-HEADER diagnosed messages.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 11:05:08 +0200
+  * ignore.d.server/squid:
+    - ignore DNS failure messages.
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 11:06:14 +0200
 
 logcheck (1.2.59) experimental; urgency=low
 
