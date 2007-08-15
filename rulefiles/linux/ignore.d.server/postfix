@@ -118,3 +118,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policyd-weight\[[[:digit:]]+\]: decided action=(450 |550) (Mail appeared to be SPAM or forged. Ask your Mail/DNS-Administrator to correct HELO and DNS MX settings or to get removed from DNSBLs(; (in [^[:space:]]+|MTA helo: [^[:space:]]+, MTA hostname: [^[:space:]]+ \(helo/hostname mismatch\)))*|Your MTA is listed in too many DNSBLs; check [^[:space:]]+)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policyd-weight\[[[:digit:]]+\]: (weighted check|decided action=PREPEND X-policyd-weight):  ([_[:alpha:]]+=((-)?[[:digit:].]+|ERR) )+(\(check from: [^[:space:]]+ - helo: [^[:space:]]+ - helo-domain: [^[:space:]]+\)  ([\()/_[:alpha:]]+=(-)?[[:digit:].]+ )+)*<client=[^[:space:]]+> <helo=[^[:space:]]+> <from=[^[:space:]]+> <to=[^[:space:]]+>, rate: (-)?[[:digit:].]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policyd-weight\[[[:digit:]]+\]: cache: (purged|deleted) [^[:space:]]+ from HAM cache$
+# clamav-milter
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: milter unix:/var/run/clamav/clamav-milter\.ctl: can't read SMFIC_MAIL reply packet header: Connection timed out$
+

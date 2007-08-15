@@ -11,14 +11,17 @@ logcheck (1.2.60) UNRELEASED; urgency=low
   [ martin f. krafft ]
   * violations.ignore.d/logcheck-postfix:
     - ignore milter-reject virus rejection notices.
+    - ignore temporary milter failures (due to clamav-milter socket timeouts).
 
   * ignore.d.server/postfix:
     - ignore warnings about not being able to resolve (sender) MX hosts.
+    - ignore timeouts on clamav-milter socket.
 
   * ignore.d.server/spamassassin:
     - ignore more runtime, informational messages.
+  * 
 
- -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 10:28:49 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 10:35:12 +0200
 
 logcheck (1.2.59) experimental; urgency=low
 
