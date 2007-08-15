@@ -19,6 +19,7 @@ logcheck (1.2.60) UNRELEASED; urgency=low
     - ignore warnings about MX hosts without valid A/address records.
     - ignore lost connection message in stage with two words (e.g. MAIL FROM).
     - ignore timeout messages after all kinds of SMTP commands, incl. UNKNOWN.
+    - ignore pickup messages.
 
   * ignore.d.server/spamd:
     - ignore more runtime, informational messages.
@@ -41,7 +42,7 @@ logcheck (1.2.60) UNRELEASED; urgency=low
   * ignore.d.server/pdns:
     - ignore warning about zero-sized packet from remote.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 11:21:13 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 11:24:43 +0200
 
 logcheck (1.2.59) experimental; urgency=low
 

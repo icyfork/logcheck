@@ -34,6 +34,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: conversation with [._[:alnum:]-]+\[[0-9a-f.:]{3,39}\] timed out while (receiving the initial server greeting|sending [[:alnum:]]+( [[:alnum:]]+)?|sending end of data -- message may be sent more than once)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/bounce\[[0-9]+\]: [[:upper:]0-9]+: sender (non-delivery|delivery status) notification: [[:upper:]0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/postsuper\[[0-9]+\]: Deleted: [[:digit:]]+ messages?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/pickup\[[0-9]+\]: [[:xdigit:]]+: uid=[[:digit:]]+ from=<[^>]+> orig_id=[[:xdigit:]]+$
 # Postfix 2.1
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+ server dropped connection without sending the initial SMTP greeting \(port 25\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: host [^[:space:]]+ refused to talk to me: [45][0-9][0-9].*$
