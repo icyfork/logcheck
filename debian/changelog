@@ -31,7 +31,10 @@ logcheck (1.2.60) UNRELEASED; urgency=low
   * ignore.d.server/squid:
     - ignore DNS failure messages.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 11:06:14 +0200
+  * ignore.d.server/pdns:
+    - ignore warning about zero-sized packet from remote.
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 11:07:25 +0200
 
 logcheck (1.2.59) experimental; urgency=low
 
