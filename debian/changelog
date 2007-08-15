@@ -20,10 +20,11 @@ logcheck (1.2.60) UNRELEASED; urgency=low
 
   * ignore.d.server/spamassassin:
     - ignore more runtime, informational messages.
-  *
-  * 
 
- -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 10:38:09 +0200
+  * ignore.d.server/dovecot:
+    - ignore disconnected messages without a username.
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 10:40:11 +0200
 
 logcheck (1.2.59) experimental; urgency=low
 
