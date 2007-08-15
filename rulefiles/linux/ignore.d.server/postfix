@@ -75,7 +75,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Illegal address syntax from [^[:space:]]+ in (MAIL|RCPT) command: .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: [._[:alnum:]-]+\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\] sent non-SMTP command: .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Illegal address syntax from [._[:alnum:]-]+\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\] in MAIL command: .*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: SSL_accept error from [._[:alnum:]-]+\[[0-9a-f.:]{3,39}\]: -1$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: SSL_accept error from [._[:alnum:]-]+\[[0-9a-f.:]{3,39}\]: -?[[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: smtpd_spf_result: unknown SPF result 4 \(unknown\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/[ls]mtp\[[0-9]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)* relay=[^[:space:]]+,( conn_use=[[:digit:]]+,)? delay=[.0-9]+,( delays=[.0-9/]+, dsn=[0-9.]+,)? status=sent \(250 [0-9.]+ (Ok((, id=[-0-9]+, from MTA(\([^[:space:]]+\))?: 250 ([0-9.]+ )?Ok)?: queued as [0-9A-F]+|, discarded, UBE, id=[-0-9]+)*|[[:alnum:]]+ Message accepted for delivery)\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/local\[[0-9]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)* relay=local, delay=[0-9]+, status=sent \(delivered to command: exec /usr/bin/procmail\)$
