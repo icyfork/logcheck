@@ -1,1 +1,3 @@
 usr/sbin/logtail
+usr/sbin/logtail2
+usr/share/logtail/detectrotate/*
