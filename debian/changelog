@@ -18,8 +18,12 @@ logcheck (1.2.60) UNRELEASED; urgency=low
     - ignore timeouts on clamav-milter socket.
     - ignore warnings about MX hosts without valid A/address records.
 
-  * ignore.d.server/spamassassin:
+  * ignore.d.server/spamd:
     - ignore more runtime, informational messages.
+
+  * violations.ignore.d/logcheck-spamd:
+    - ignore informational messages about razor agent
+      initialisation/registration
 
   * ignore.d.server/dovecot:
     - ignore disconnected messages without a username.
@@ -34,7 +38,7 @@ logcheck (1.2.60) UNRELEASED; urgency=low
   * ignore.d.server/pdns:
     - ignore warning about zero-sized packet from remote.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 11:07:25 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 11:16:05 +0200
 
 logcheck (1.2.59) experimental; urgency=low
 
