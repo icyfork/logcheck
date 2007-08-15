@@ -16,12 +16,14 @@ logcheck (1.2.60) UNRELEASED; urgency=low
   * ignore.d.server/postfix:
     - ignore warnings about not being able to resolve (sender) MX hosts.
     - ignore timeouts on clamav-milter socket.
+    - ignore warnings about MX hosts without valid A/address records.
 
   * ignore.d.server/spamassassin:
     - ignore more runtime, informational messages.
+  *
   * 
 
- -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 10:35:12 +0200
+ -- martin f. krafft <madduck@debian.org>  Wed, 15 Aug 2007 10:38:09 +0200
 
 logcheck (1.2.59) experimental; urgency=low
 
