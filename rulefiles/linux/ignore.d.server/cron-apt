@@ -3,6 +3,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: CRON-APT ACTION: (0-update|3-download)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: CRON-APT LINE: (/usr/bin/apt-get )?update -o quiet=2$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: CRON-APT LINE: (/usr/bin/apt-get )?dist-upgrade -d -y -o APT::Get::Show-Upgraded=true$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: CRON-APT LINE: (/usr/bin/apt-get )?autoclean -y$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Reading [pP]ackage [lL]ists\.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Building [dD]ependency [tT]ree\.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: The following NEW packages will be installed:$
@@ -13,6 +14,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Need to get [[:digit:].]+([kM]?B)(/[.[:digit:]]+([kM]?B))* of archives\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: After unpacking [[:digit:].]+([kM]?B) (of additional disk space will be used|disk space will be freed)\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Get:[[:digit:]]+ ((ht|f)tp|file)://[.[:alnum:]/_-]+ [./[:alnum:]-]+ [-[:alnum:]_+.]+ [+.:~[:alnum:]-]+ \[[.[:digit:]]+[kM]?B\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Del [-[:alnum:]_+.]+ \[[.[:digit:]]+[kM]?B\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Fetched [[:digit:].]+[kM]?B in ([[:digit:]]+m)?[[:digit:]]+s \([[:digit:].]+[kM]?B/s\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Download complete and in download only mode$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: E: Some index files failed to download, they have been ignored, or old ones used instead\.$
