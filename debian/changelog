@@ -77,7 +77,10 @@ logcheck (1.2.60) unstable; urgency=low
   * ignore.d.server/cron-apt:
     - ignore messages from autoclean (closes: #437748).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 12:12:22 +0200
+  * ignore.d.server/stunnel:
+    - make stunnel pid optional (closes: #428429).
+
+ -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 12:21:31 +0200
 
 logcheck (1.2.59) UNRELEASED; urgency=low
 
