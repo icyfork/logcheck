@@ -1,2 +1,2 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone [._[:alnum:]-]+/IN: refresh: failure trying master [._[:alnum:]-]+#53: .*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: unexpected RCODE \((REFUSED|SERVFAIL)\) resolving '[^[:space:]]+': [.[:digit:]]+#[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: unexpected RCODE \((REFUSED|SERVFAIL|15)\) resolving '[^[:space:]]+': [.[:digit:]]+#[0-9]+$

@@ -1,5 +1,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone [._[:alnum:]-]+/IN: transferred serial [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: (client [.#[:digit:]]+: )?received notify for zone '[._[:alnum:]-]+'$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: unexpected RCODE \((REFUSED|SERVFAIL)\) resolving '[^[:space:]]+': [.[:digit:]]+#[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: unexpected RCODE \((REFUSED|SERVFAIL|15)\) resolving '[^[:space:]]+': [.[:digit:]]+#[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: FORMERR resolving '[^[:space:]]+': [.[:digit:]]+#[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone [._[:alnum:]-]+/IN: Transfer started.$
