@@ -55,6 +55,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstati
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/nntpcache 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/polypaudio 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/postfix 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/procmail 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/ppp 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/proftpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/pump 0640 != 0644
