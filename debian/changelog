@@ -35,6 +35,7 @@ logcheck (1.2.59) unstable; urgency=low
     - ignore pickup messages.
     - do not require unknown_*_domain filters to include "valid_hostname"
       (closes: #437752).
+    - ignore recipient verification check success messages.
 
   * ignore.d.server/spamd:
     - ignore more runtime, informational messages.
@@ -75,7 +76,7 @@ logcheck (1.2.59) unstable; urgency=low
   * ignore.d.server/cron-apt:
     - ignore messages from autoclean (closes: #437748).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 10:58:01 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 11:02:01 +0200
 
 logcheck (1.2.58) unstable; urgency=low
 

@@ -104,6 +104,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: ([-._[:alnum:]]+): RBL lookup error: Host or domain name not found\. Name service error for name=\1 type=A: Host not found, try again$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Connection concurrency limit exceeded: [[:digit:]]+ from [-._[:alnum:]]+\[[.[:digit:]]{7,15}\] for service smtp$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/bounce\[[0-9]+\]: [[:xdigit:]]+: sender delivery status notification: [[:xdigit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: to=<[^[:space:]]+>, relay=[._[:alnum:]-]+\[[0-9.]{7,15}\](:[[:digit:]]{1,5})?, (conn_use=[[:digit:]]+, )?delay=[.0-9]+(, delays=([.0-9]+/){3}[.0-9]+)?(, dsn=2(\.[0-9]+){2})?, status=deliverable \(250 Ok\)$
 # mysql
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: commit transaction$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin: no result found$
