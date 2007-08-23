@@ -1,12 +1,4 @@
-logcheck (1.2.59) unstable; urgency=low
-
-  [ Marc Haber ]
-  * add logtail2
-    * now handles log rotation internally (with a plugin scheme).
-    * can deal with rotated logfiles (closes: #336265).
-    * supports logrotate's dateext rotation.
-    * the previous logtail is deprecated and may be removed in the future.
-  * Add myself to uploaders. Thanks for allowing me to join.
+logcheck (1.2.60) unstable; urgency=low
 
   [ maximilian attems ]
   * logcheck-database.config, logcheck-database.postinst,
@@ -85,7 +77,19 @@ logcheck (1.2.59) unstable; urgency=low
   * ignore.d.server/cron-apt:
     - ignore messages from autoclean (closes: #437748).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 11:31:26 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 12:12:22 +0200
+
+logcheck (1.2.59) UNRELEASED; urgency=low
+
+  [ Marc Haber ]
+  * add logtail2 (closes: #435443):
+    * now handles log rotation internally (with a plugin scheme).
+    * can deal with rotated logfiles (closes: #336265).
+    * supports logrotate's dateext rotation.
+    * the previous logtail is deprecated and may be removed in the future.
+  * Add myself to uploaders. Thanks for allowing me to join.
+
+ -- Marc Haber <mh+debian-packages@zugschlus.de>  Tue, 07 Aug 2007 14:39:49 +0200
 
 logcheck (1.2.58) unstable; urgency=low
 
