@@ -20,6 +20,7 @@ logcheck (1.2.59) unstable; urgency=low
   * violations.ignore.d/logcheck-postfix:
     - ignore milter-reject virus rejection notices.
     - ignore temporary milter failures (due to clamav-milter socket timeouts).
+    - fix authentication failure messages related to SASL (closes: #437886).
 
   * ignore.d.server/postfix:
     - ignore warnings about not being able to resolve (sender) MX hosts.
@@ -56,7 +57,7 @@ logcheck (1.2.59) unstable; urgency=low
   * ignore.d.server/bind, violations.ignore.d/logcheck-bind:
     - also ignore unresolved RCODE 15 in warning messages (closes: #437891).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 09:50:55 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 09:53:16 +0200
 
 logcheck (1.2.58) unstable; urgency=low
 
