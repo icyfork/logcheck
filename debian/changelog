@@ -2,10 +2,10 @@ logcheck (1.2.59) unstable; urgency=low
 
   [ Marc Haber ]
   * add logtail2
-    * handles log rotation internally (with a plugin scheme)
-    * supports dateext rotation
-    * logcheck now uses logtail2
-    * the "normal" logtail is deprecated and may be removed in the future
+    * now handles log rotation internally (with a plugin scheme).
+    * can deal with rotated logfiles (closes: #336265).
+    * supports logrotate's dateext rotation.
+    * the previous logtail is deprecated and may be removed in the future.
   * Add myself to uploaders. Thanks for allowing me to join.
 
   [ maximilian attems ]
