@@ -53,6 +53,7 @@ logcheck (1.2.59) unstable; urgency=low
   * ignore.d.server/dovecot:
     - ignore disconnected messages without a username.
     - ignore disconnected messages during IMAP commands, other than IDLE.
+    - ignore deliver messages with crm114 sfid attached.
 
   * ignore.d.server/amavisd-new:
     - ignore message ids with sfid trailer (crm114 adds this).
@@ -81,7 +82,7 @@ logcheck (1.2.59) unstable; urgency=low
   * ignore.d.server/cron-apt:
     - ignore messages from autoclean (closes: #437748).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 11:12:28 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 11:25:30 +0200
 
 logcheck (1.2.58) unstable; urgency=low
 
