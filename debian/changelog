@@ -41,6 +41,7 @@ logcheck (1.2.59) unstable; urgency=low
   * ignore.d.server/spamd:
     - ignore more runtime, informational messages.
     - handle trailing space (closes: #429886).
+    - ignore successful pyzor report notifications.
 
   * violations.ignore.d/logcheck-spamd:
     - ignore informational messages about razor agent
@@ -77,7 +78,7 @@ logcheck (1.2.59) unstable; urgency=low
   * ignore.d.server/cron-apt:
     - ignore messages from autoclean (closes: #437748).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 11:03:18 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 11:04:04 +0200
 
 logcheck (1.2.58) unstable; urgency=low
 
