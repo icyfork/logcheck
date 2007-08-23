@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ puppetd\[[0-9]+\]: Starting configuration run$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ puppetd\[[0-9]+\]: Finished configuration run in [0-9.]+ seconds$

@@ -66,7 +66,11 @@ logcheck (1.2.59) unstable; urgency=low
   * violations.ignore.d/logcheck-proftpd:
     - deal with IPv6 addresses (closes: #437753).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 09:57:30 +0200
+  * ignore.d.server/puppetd:
+    - add filter for informational puppetd rules by Sebastian Himberger;
+      thanks! (closes: #437478).
+
+ -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 10:18:39 +0200
 
 logcheck (1.2.58) unstable; urgency=low
 

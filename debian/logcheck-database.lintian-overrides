@@ -133,6 +133,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/pp
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/pptpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/procmail 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/proftpd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/puppetd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/pure-ftpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/qpopper 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/rbldnsd 0640 != 0644
