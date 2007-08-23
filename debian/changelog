@@ -24,6 +24,7 @@ logcheck (1.2.59) unstable; urgency=low
     - ignore temporary milter failures (due to clamav-milter socket timeouts).
     - fix authentication failure messages related to SASL (closes: #437886).
     - ignore ETRN rejection warnings (closes: #437882).
+    - ignore SOFTBOUNCE defers.
 
   * ignore.d.server/postfix:
     - ignore warnings about not being able to resolve (sender) MX hosts.
@@ -84,7 +85,7 @@ logcheck (1.2.59) unstable; urgency=low
   * ignore.d.server/cron-apt:
     - ignore messages from autoclean (closes: #437748).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 11:28:53 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 11:31:26 +0200
 
 logcheck (1.2.58) unstable; urgency=low
 
