@@ -2,7 +2,7 @@ logcheck backports
 ==================
 
 Please see
-  http://svn.debian.org/wsvn/logcheck/logcheck/trunk/debian/README.backports?op=file&rev=0&sc=0
+  http://git.debian.org/?p=logcheck/logcheck.git;a=blob;f=debian/README.backports;hb=HEAD
 for the latest version of this document.
 
 Also see http://wiki.logcheck.org/index.cgi/TestBuilds . In case of

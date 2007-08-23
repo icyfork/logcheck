@@ -6,7 +6,8 @@ Uploaders: Todd Troxell <ttroxell@debian.org>, Gerfried Fuchs <alfie@debian.org>
 Standards-Version: 3.7.2
 Build-Depends: debhelper (>= 4.1.13)
 Build-Depends-Indep: docbook-to-man
-XS-Vcs-Svn: svn://svn.debian.org/svn/logcheck/logcheck/trunk
+XS-Vcs-Git: git://git.debian.org/git/logcheck/logcheck.git
+XS-Vcs-Browser: http://git.debian.org/?p=logcheck/logcheck.git
 
 Package: logcheck
 Architecture: all

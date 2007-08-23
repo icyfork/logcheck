@@ -44,18 +44,10 @@ See /usr/local/share/logcheck-database/README.backports.gz .
 
 Getting the source/contributing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The Debian logcheck package is now maintained in Subversion:
-  anonymous:    svn://svn.debian.org/svn/logcheck
-  write access: svn+ssh://aliothuser@svn.debian.org/svn/logcheck
-  web svn:      http://svn.debian.org/wsvn/logcheck
+The Debian logcheck package is now maintained with git:
+  git://git.debian.org/git/logcheck/logcheck.git
 
-Instructions how to use SVN and how to build packages from the source:
-  http://lists.alioth.debian.org/pipermail/logcheck-devel/2006-July/002743.html
-  http://lists.alioth.debian.org/pipermail/logcheck-devel/2006-July/002746.html
-
-You should be able to import this into an SVK checkout even without write
-access, so submitting patches has just become even easier. Submissions for
-documentation welcome, watch this space.
+Also see: http://www.logcheck.org/git.html
 
  -- martin f. krafft <madduck@debian.org>  Sun, 09 Jul 2006 14:06:04 +0200
 
