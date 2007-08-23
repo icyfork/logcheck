@@ -39,6 +39,7 @@ logcheck (1.2.59) unstable; urgency=low
     - ignore timeouts also after END-OF-MESSAGE.
     - ignore timeouts while sending XFORWARD name/address.
     - ignore peer cert verification warnings when OU is missing.
+    - ignore timeout during EHLO handshake.
 
   * ignore.d.server/spamd:
     - ignore more runtime, informational messages.
@@ -83,7 +84,7 @@ logcheck (1.2.59) unstable; urgency=low
   * ignore.d.server/cron-apt:
     - ignore messages from autoclean (closes: #437748).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 11:26:11 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 23 Aug 2007 11:28:53 +0200
 
 logcheck (1.2.58) unstable; urgency=low
 
