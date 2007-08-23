@@ -66,7 +66,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: mailer loop: best MX for [^[:space:]]+ is local$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: enabling PIX <CRLF>\.<CRLF> workaround for .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: malformed domain name in resource data of (MX|CNAME) record for [^[:space:]]+:.*$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: timeout after [[:upper:]]+ from [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: timeout after [-[:upper:]]+ from [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:alnum:]]+: client=[^[:space:]]+, sasl_sender=.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:alnum:]]+: client=[^[:space:]]+, sasl_method=[-[:alnum:]]+, sasl_username=[-_.@[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:alnum:]]+: client=[._[:alnum:]-]+\[[0-9a-f.:]{3,39}\]$
