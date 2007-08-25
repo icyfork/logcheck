@@ -619,7 +619,7 @@ else
 fi
 
 # Create the secure temporary directory or exit
-TMPDIR=$(mktemp -d -p /tmp logcheck.XXXXXX) \
+TMPDIR=$(mktemp -d -p $TMP logcheck.XXXXXX) \
     || TMPDIR=$(mktemp -d -p /var/tmp logcheck.XXXXXX) \
     || error "Could not create temporary directory"
 
