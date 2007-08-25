@@ -1,3 +1,11 @@
+logcheck (1.2.61) unstable; urgency=low
+
+  * Provide $TMP and allow the administrator to specify an alternate location
+    to store temporary files; thanks to Micah Anderson for the patch
+    (closes: #412201).
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 25 Aug 2007 09:57:01 +0100
+
 logcheck (1.2.60) unstable; urgency=low
 
   [ maximilian attems ]
