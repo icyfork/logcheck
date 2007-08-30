@@ -11,7 +11,10 @@ logcheck (1.2.61) unstable; urgency=low
   * ignore.d.server/rsync:
     - Ignore runtime rsyncd messages; patch by Justin Pryzby (closes: #440181)
 
- -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 16:05:45 +0200
+  * violations.ignore.d/logcheck-postfix:
+    - ignore temporary DNS lookup failures when checking for sender MX.
+
+ -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 17:28:48 +0200
 
 logcheck (1.2.60) unstable; urgency=low
 
