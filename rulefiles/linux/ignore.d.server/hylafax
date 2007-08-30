@@ -11,6 +11,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: RECV FAX \([0-9]+\): from.+, page [0-9]+ in [0-9:]+, INF, [0-9.]+ line/mm, [12]-D M.+, [0-9]+ bit/s$
 # The .* below is the modem's identification string.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: MODEM .*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: MODEM .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: NOTIFY: bin/notify \"doneq/q[[:digit:]]+\" \"done\" \"[[:digit:]]+:[[:digit:]]{2}\"$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: NOTIFY exit status: 0 \([[:digit:]]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxSend\[[0-9]+\]: SEND FAX: JOB [[:digit:]]+ DEST [ [:digit:]()-]+ COMMID \w+ DEVICE '[/[:alnum:]]+'$
