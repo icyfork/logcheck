@@ -22,9 +22,11 @@ logcheck (1.2.61) unstable; urgency=low
       a CNAME, which is not correct, but people do it and it works regardless.
     - ignore when smtpd tells us its discarding EHLO keywords
       ($smtpd_discard_ehlo_keyword*).
-  * 
 
- -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 17:38:19 +0200
+  * ignore.d.server/spamd, violations.ignore.d/logcheck-spamd:
+    - ignore spamcop failure and success messages.
+
+ -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 17:40:44 +0200
 
 logcheck (1.2.60) unstable; urgency=low
 
