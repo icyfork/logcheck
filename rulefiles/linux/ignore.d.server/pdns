@@ -5,7 +5,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Error sending reply with sendto \(socket=[0-9]\): Invalid argument$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns\[[0-9]+\]: Received packet from recursor backend with id [0-9] which is a duplicate$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns_recursor\[[0-9]+\]: Refreshed ([0-9]+|\.) records$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns_recursor\[[0-9]+\]: Unable to parse packet from remote server [.0-9]{7,15}: Wrong size for A record \(0\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns_recursor\[[0-9]+\]: Unable to parse packet from remote( UDP)? server [.0-9]{7,15}: (Wrong size for A record \(0\)|Error parsing packet of 115 bytes \(rd=0\), out of bounds: vector::_M_range_check|packet smalll?er than DNS header)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Listening on controlsocket in '/var/run/pdns\.controlsocket'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: This is a guarded instance of pdns$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: (UD|TC)P server bound to [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
