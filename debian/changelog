@@ -1,7 +1,12 @@
 logcheck (1.2.61) unstable; urgency=low
 
-  * Apply filter rules for new PAM log format; thanks to Aaron M. Ucko
-    (closes: #440123).
+  * Provide $TMP and allow the administrator to specify an alternate location
+    to store temporary files; thanks to Micah Anderson for the patch
+    (closes: #412201).
+
+  * ignore.d.server/logcheck:
+    - Apply filter rules for new PAM log format; thanks to Aaron M. Ucko
+      (closes: #440123).
 
  -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 08:49:50 +0200
 
