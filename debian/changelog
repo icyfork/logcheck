@@ -29,8 +29,9 @@ logcheck (1.2.61) unstable; urgency=low
 
   * ignore.d.server/pdns:
     - ignore messages about invalid packet sizes received from other machines.
+    - ignore launch message after TCP nameserver was cycled.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 17:47:14 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 17:48:46 +0200
 
 logcheck (1.2.60) unstable; urgency=low
 

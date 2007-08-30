@@ -39,6 +39,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Unable to determine SOA serial for ([-_.[:alnum:]]+)? at potential supermaster [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Created new slave zone '[-_.[:alnum:]]+' from supermaster [.[:digit:]]{7,15}, queued axfr$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Domain [-_.[:alnum:]]+ is stale, master serial [[:digit:]]+, our serial [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: TCP nameserver had error, cycling backend:Trying to read data from remote TCP client [.[0-9]]{7,15}: Connection reset by peer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: TCP server is without backend connections, launching$
 # pgsql
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: This is module gpgsqlbackend\.so reporting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gpgsql Connection succesful$
