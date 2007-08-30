@@ -20,8 +20,11 @@ logcheck (1.2.61) unstable; urgency=low
       client connecting.
     - ignore when libc6 warns about in-addr.arpa request being answered with
       a CNAME, which is not correct, but people do it and it works regardless.
+    - ignore when smtpd tells us its discarding EHLO keywords
+      ($smtpd_discard_ehlo_keyword*).
+  * 
 
- -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 17:36:24 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 17:38:19 +0200
 
 logcheck (1.2.60) unstable; urgency=low
 
