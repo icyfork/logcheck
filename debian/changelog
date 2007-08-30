@@ -15,7 +15,7 @@ logcheck (1.2.61) unstable; urgency=low
     - ignore temporary DNS lookup failures when checking for sender MX.
     - also ignore defer notices smtp gets after the DATA command.
     - ignore some rejections when $smtpd_delay_reject=no is set; thanks to
-      Justin Pryzby (closes: #425642).
+      Justin Pryzby (closes: #425642, #426736).
 
   * ignore.d.server/postfix:
     - ignore TLS library receiving SSLv3 alert 10, since it's just a broken
