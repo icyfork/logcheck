@@ -13,8 +13,9 @@ logcheck (1.2.61) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix:
     - ignore temporary DNS lookup failures when checking for sender MX.
+    - also ignore defer notices smtp gets after the DATA command.
 
- -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 17:28:48 +0200
+ -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 17:32:01 +0200
 
 logcheck (1.2.60) unstable; urgency=low
 
