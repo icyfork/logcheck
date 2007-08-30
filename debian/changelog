@@ -8,7 +8,10 @@ logcheck (1.2.61) unstable; urgency=low
     - Apply filter rules for new PAM log format; thanks to Aaron M. Ucko
       (closes: #440123).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 08:49:50 +0200
+  * ignore.d.server/rsync:
+    - Ignore runtime rsyncd messages; patch by Justin Pryzby (closes: #440181)
+
+ -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 16:05:45 +0200
 
 logcheck (1.2.60) unstable; urgency=low
 

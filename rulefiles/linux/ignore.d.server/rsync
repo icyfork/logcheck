@@ -6,4 +6,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: rsync error: received SIGUSR1 or SIGINT \(code 20\) at rsync.c\([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: rsync error: error in rsync protocol data stream \(code 12\) at io.c\([0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: rsync: read error: Connection reset by peer \(104\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: building file list$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: (building|receiving) file list$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: [^[:space:]]+/$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: [^[:space:]]+ -> [^[:space:]]+$
