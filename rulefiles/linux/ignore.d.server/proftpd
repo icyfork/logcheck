@@ -1,4 +1,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd: \(pam_unix\) session (opened|closed) for user [._[:alnum:]-]+( by \(uid=[0-9]+\))?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd: pam_unix\(proftpd:session\): session (opened|closed) for user [._[:alnum:]-]+( by \(uid=[0-9]+\))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - FTP session (opened|closed)\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - (USER [._[:alnum:]-]+|ANON (anonymous|ftp)): Login successful\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]: [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - (USER [._[:alnum:]-]+|ANON (anonymous|ftp)): Limit access denies login\.$

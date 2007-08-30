@@ -2,6 +2,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ su\[[0-9]+\]: \(pam_[[:alnum:]]+\) session opened for user [[:alnum:]-]+ by \(uid=[0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ su\[[0-9]+\]: \(pam_[[:alnum:]]+\) session opened for user [[:alnum:]-]+ by [[:alnum:]-]+\(uid=[0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ su\[[0-9]+\]: \(pam_[[:alnum:]]+\) session closed for user [[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ su\[[0-9]+\]: pam_[[:alnum:]]+\(su:session\): session opened for user [[:alnum:]-]+ by [[:alnum:]-]*\(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ su\[[0-9]+\]: pam_[[:alnum:]]+\(su:session\): session closed for user [[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ su\[[0-9]+\]: \+ \?\?\? root:[_[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ su\[[0-9]+\]: Successful su for [[:alnum:]-]+ by [[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ su\[[0-9]+\]: pam_authenticate: Authentication failure$

@@ -1,2 +1,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: \(pam_[[:alnum:]]+\) session opened for user [^[:space:]]+ by ([[:alnum:]-]+)?\(uid=[0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: \(pam_[[:alnum:]]+\) session closed for user [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: pam_[[:alnum:]]+\(ssh:session\): session opened for user [^[:space:]]+ by ([[:alnum:]-]+)?\(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: pam_[[:alnum:]]+\(ssh:session\): session closed for user [^[:space:]]+$
