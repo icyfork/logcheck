@@ -28,8 +28,8 @@ logcheck (1.2.61) unstable; urgency=low
 
   * ignore.d.server/spamd, violations.ignore.d/logcheck-spamd:
     - ignore spamcop failure and success messages.
-    - do not ignore child state K, which indicates kill and might be a problem
-      (closes: #436439).
+    - do not ignore child state K, which indicates kill and might be
+      a problem; thanks Frans Pop (closes: #436439).
 
   * ignore.d.server/pdns:
     - ignore messages about invalid packet sizes received from other machines.
