@@ -25,6 +25,7 @@ logcheck (1.2.61) unstable; urgency=low
     - ignore when smtpd tells us its discarding EHLO keywords
       ($smtpd_discard_ehlo_keyword*).
     - ignore SASL authentication failures due to empty passwords.
+    - ignore AV system overload warnings by milter-reject.
 
   * ignore.d.server/spamd, violations.ignore.d/logcheck-spamd:
     - ignore spamcop failure and success messages.
@@ -42,7 +43,7 @@ logcheck (1.2.61) unstable; urgency=low
   * ignore.d.server/bind
     - ignore view queries; thanks Justin Pryzby (closes: #428629).
 
- -- martin f. krafft <madduck@debian.org>  Fri, 31 Aug 2007 12:50:22 +0200
+ -- martin f. krafft <madduck@debian.org>  Fri, 31 Aug 2007 12:56:44 +0200
 
 logcheck (1.2.60) unstable; urgency=low
 
