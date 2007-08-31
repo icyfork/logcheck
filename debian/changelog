@@ -30,6 +30,7 @@ logcheck (1.2.61) unstable; urgency=low
     - ignore spamcop failure and success messages.
     - do not ignore child state K, which indicates kill and might be
       a problem; thanks Frans Pop (closes: #436439).
+    - update check result rule in violations.ignore.d.
 
   * ignore.d.server/pdns:
     - ignore messages about invalid packet sizes received from other machines.
@@ -41,7 +42,7 @@ logcheck (1.2.61) unstable; urgency=low
   * ignore.d.server/bind
     - ignore view queries; thanks Justin Pryzby (closes: #428629).
 
- -- martin f. krafft <madduck@debian.org>  Thu, 30 Aug 2007 18:18:00 +0200
+ -- martin f. krafft <madduck@debian.org>  Fri, 31 Aug 2007 12:50:22 +0200
 
 logcheck (1.2.60) unstable; urgency=low
 
