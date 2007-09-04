@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2004-2006 Debian Logcheck Team 
+# Copyright (C) 2004-2007 Debian Logcheck Team 
 #                         <logcheck-devel@alioth.lists.debian.org>
 # Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>
 # Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
@@ -21,8 +21,6 @@
 # You should have received a copy of the GNU General Public License
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-
-# $Id: logcheck,v 1.142 2006/07/06 10:16:42 ttroxell Exp $
 
 if [ $UID == 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"

@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# $Id: logcheck.postinst,v 1.48 2006/07/04 17:35:14 maks-guest Exp $
-
 set -e
 
 # summary of how this script can be called:
