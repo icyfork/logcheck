@@ -43,7 +43,7 @@ logcheck (1.2.61) unstable; urgency=low
   * ignore.d.server/bind
     - ignore view queries; thanks Justin Pryzby (closes: #428629).
 
- -- martin f. krafft <madduck@debian.org>  Fri, 31 Aug 2007 12:56:44 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 04 Sep 2007 19:38:31 +0200
 
 logcheck (1.2.60) unstable; urgency=low
 
