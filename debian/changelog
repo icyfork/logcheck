@@ -1,4 +1,4 @@
-logcheck (1.2.62) unstable; urgency=low
+logcheck (1.2.62~unreleased.1) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix:
     - fix filter for milter AV system overload.
@@ -7,7 +7,7 @@ logcheck (1.2.62) unstable; urgency=low
   * ignore.d.server/dovecot:
     - ignore notice about dovecot fixing index files.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 11 Sep 2007 14:05:19 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 11 Sep 2007 14:08:26 +0200
 
 logcheck (1.2.61) unstable; urgency=low
 
