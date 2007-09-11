@@ -1,3 +1,10 @@
+logcheck (1.2.62~unreleased.2) unstable; urgency=low
+
+  * ignore.d.server/postfix:
+    - ignore milter-discard messages after END-OF-MESSAGE.
+
+ -- martin f. krafft <madduck@debian.org>  Tue, 11 Sep 2007 15:58:23 +0200
+
 logcheck (1.2.62~unreleased.1) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix:

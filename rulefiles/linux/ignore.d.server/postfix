@@ -125,3 +125,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL3_READ_BYTES:sslv3 alert unexpected message:s3_pkt\.c:[[:digit:]]+:SSL alert number 10:$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: gethostby\*\.getanswer: asked for "([-_.[:alnum:]]+)", got "\1"$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: discarding EHLO keywords:( [[:upper:]]+)+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:alnum:]]+: milter-discard: END-OF-MESSAGE from [-._[:alnum:]]+\[[.[:digit:]]+\]: milter triggers DISCARD action; from=<[^[:space:]]*> to=<[^[:space:]]*> proto=E?SMTP helo=<[^[:space:]]+>$
