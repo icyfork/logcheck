@@ -19,3 +19,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\([[:alnum:]]+\): client in: AUTH [[:digit:]]+[[:space:]]+(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5)[[:space:]]+service=IMAP[[:space:]]+(secured )?lip=[.:[:xdigit:]]+[[:space:]]+rip=[.:[:xdigit:]]+[[:space:]]+resp=<hidden>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\([[:alnum:]]+\): client in: CONT<hidden>
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\([[:alnum:]]+\): client out: CONT[[:space:]]+[[:digit:]]+[[:space:]]+[[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Fixed index file /[-._/[:alnum:]]+/dovecot\.index: first_(recent|unseen)_uid_lowwater [[:digit:]]+ -> [[:digit:]]+$
