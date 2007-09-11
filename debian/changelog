@@ -2,8 +2,10 @@ logcheck (1.2.62) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix:
     - fix filter for milter AV system overload.
+    - ignoring warning about milter blocking mail to suspicious recipient
+      addresses.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 11 Sep 2007 13:59:37 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 11 Sep 2007 14:02:51 +0200
 
 logcheck (1.2.61) unstable; urgency=low
 

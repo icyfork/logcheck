@@ -45,5 +45,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/pickup\[[0-9]+\]: [[:alnum:]]+: uid=[[:digit:]]+ from=<[^[:space:]]+>$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:xdigit:]]+: milter-reject: END-OF-MESSAGE from [-._[:alnum:]]+\[[.[:digit:]]+\]: [45]\.7\.1 virus [-._/[:alnum:]]+ detected by ClamAV - http://www\.clamav\.net; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: NOQUEUE: milter-reject: MAIL from [-._[:alnum:]]+\[[.[:digit:]]+\]: 451 4\.(7\.1 Service unavailable|3\.2 AV system temporarily overloaded) - (please )?try (again )?later; proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: NOQUEUE: milter-reject: RCPT from [-._[:alnum:]]+\[[.[:digit:]]+\]: 554 5\.7\.1 Suspicious recipient address blocked; from=<[^[:space:]]*> proto=E?SMTP helo=<[^[:space:]]+>$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: reject: ETRN [._[:alnum:]-]+\.\.\. from [._[:alnum:]-]+\[[0-9.]{7,15}\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Unable to look up MX host [._[:alnum:]-]+ for Sender address [^[:space:]]+: Temporary failure in name resolution$
