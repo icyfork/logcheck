@@ -3,7 +3,10 @@ logcheck (1.2.62) unstable; urgency=low
   * violations.ignore.d/logcheck-postfix:
     - ignore rejections due to improper SMTP command pipelining.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 13:42:31 +0100
+  * ignore.d.server/postfix
+    - ignore smtp client failures due to lost connections with relays.
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 13:44:30 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 
