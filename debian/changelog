@@ -1,4 +1,4 @@
-logcheck (1.2.62) unstable; urgency=low
+logcheck (1.2.62~unreleased.3) unstable; urgency=low
 
   * remove ignore.d.server/thttpd because thttpd package provides a better
     version (closes: #441504).
@@ -13,8 +13,12 @@ logcheck (1.2.62) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix:
     - ignore rejections due to improper SMTP command pipelining.
+    - fix filter for milter AV system overload.
+    - ignoring warning about milter blocking mail to suspicious recipient
+      addresses.
 
   * ignore.d.server/postfix:
+    - ignore milter-discard messages after END-OF-MESSAGE.
     - ignore smtp client failures due to lost connections with relays.
     - patch from Justin Pryzby to support postfix check_helo_(mx|ns)_access
       (closes: #443185).
@@ -22,7 +26,10 @@ logcheck (1.2.62) unstable; urgency=low
   * ignore.d.server/rsync:
     - patch from Justin Pryzby to update rules for 2.6.9 (closes: #443178).
 
- -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 14:11:50 +0100
+  * ignore.d.server/dovecot:
+    - ignore notice about dovecot fixing index files.
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 17:23:16 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 
@@ -69,7 +76,7 @@ logcheck (1.2.61) unstable; urgency=low
   * ignore.d.server/bind
     - ignore view queries; thanks Justin Pryzby (closes: #428629).
 
- -- martin f. krafft <madduck@debian.org>  Fri, 31 Aug 2007 12:56:44 +0200
+ -- martin f. krafft <madduck@debian.org>  Tue, 04 Sep 2007 19:38:31 +0200
 
 logcheck (1.2.60) unstable; urgency=low
 
