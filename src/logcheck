@@ -79,6 +79,7 @@ SYSLOG_SUMMARY="/usr/bin/syslog-summary"
 INTRO=1
 LOGCHECKDEBUG=0
 MAILOUT=0
+MAILASATTACH=0
 NOCLEANUP=0
 REBOOT=0
 FQDN=0
@@ -295,7 +296,11 @@ sendreport() {
 	debug "Sent report to STDOUT"
     else
 	debug "Sending report: '$subject' to $SENDMAILTO"
-	cat $TMPDIR/report | mail -s "$subject" "$SENDMAILTO"
+        if [ $MAILASATTACH -eq 1 ]; then
+          echo -e "Report at the attachment" | nail -s "$subject" -a "$TMPDIR/report" "$SENDMAILTO"
+        else
+          cat $TMPDIR/report | mail -s "$subject" "$SENDMAILTO"
+        fi
     fi
 }
 

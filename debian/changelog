@@ -6,6 +6,9 @@ logcheck (1.2.62) unstable; urgency=low
   * apply patch by Marc Haber to fix logtail2 when there are no archived logs
     found (closes: #441388).
 
+  * apply patch by Rolan Kruggel which allos logcheck to be configured to
+    attach log output, rather than inlining it (closes: #402739).
+
   * make dependency on logtail versioned (>= 1.2.59; closes: #443134).
 
   * violations.ignore.d/logcheck-postfix:
@@ -14,7 +17,7 @@ logcheck (1.2.62) unstable; urgency=low
   * ignore.d.server/postfix
     - ignore smtp client failures due to lost connections with relays.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 13:53:35 +0100
+ -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 14:08:34 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 
