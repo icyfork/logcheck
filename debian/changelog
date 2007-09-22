@@ -6,7 +6,10 @@ logcheck (1.2.62) unstable; urgency=low
   * ignore.d.server/postfix
     - ignore smtp client failures due to lost connections with relays.
 
- -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 13:44:30 +0100
+  * remove ignore.d.server/thttpd because thttpd package provides a better
+    version (closes: #441504).
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 13:45:38 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 

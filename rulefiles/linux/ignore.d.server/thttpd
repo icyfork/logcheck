@@ -1,6 +1,0 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ thttpd\[[0-9]+\]: up [[:digit:]]+ seconds, stats for [[:digit:]]+ seconds:$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ thttpd\[[0-9]+\]:   thttpd - [[:digit:]]+ connections \([[:digit:]]+/sec\), [[:digit:]]+ max simultaneous, [[:digit:]]+ bytes \([[:digit:]]+/sec\), [[:digit:]]+ httpd_conns allocated$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ thttpd\[[0-9]+\]:   libhttpd - [[:digit:]]+ strings allocated, [[:digit:]]+ bytes \([.[:digit:]]+ bytes/str\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ thttpd\[[0-9]+\]:   map cache - [[:digit:]]+ allocated, [[:digit:]]+ active \([[:digit:]]+ bytes\), [[:digit:]]+ free; hash size: [[:digit:]]+; expire age: [[:digit:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ thttpd\[[0-9]+\]:   fdwatch - [[:digit:]]+ selects \([.[:digit:]]+/sec\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ thttpd\[[0-9]+\]:   timers - [[:digit:]]+ allocated, [[:digit:]]+ active, [[:digit:]]+ free$
