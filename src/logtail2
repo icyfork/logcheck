@@ -122,7 +122,7 @@ sub determine_rotated_logfile {
     #} else {
     #  print "no rotated file found\n";
     #}
-    if ($rotated_filename && inode($rotated_filename) == $inode) {
+    if ($rotated_filename && -e "$rotated_filename" && inode($rotated_filename) == $inode) {
       return $rotated_filename;
     } else {
       return "";

@@ -1,15 +1,18 @@
 logcheck (1.2.62) unstable; urgency=low
 
+  * remove ignore.d.server/thttpd because thttpd package provides a better
+    version (closes: #441504).
+
+  * apply patch by Marc Haber to fix logtail2 when there are no archived logs
+    found (closes: #441388).
+
   * violations.ignore.d/logcheck-postfix:
     - ignore rejections due to improper SMTP command pipelining.
 
   * ignore.d.server/postfix
     - ignore smtp client failures due to lost connections with relays.
 
-  * remove ignore.d.server/thttpd because thttpd package provides a better
-    version (closes: #441504).
-
- -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 13:45:38 +0100
+ -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 13:47:33 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 

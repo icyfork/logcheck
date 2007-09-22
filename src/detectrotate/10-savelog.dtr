@@ -3,7 +3,7 @@
 sub {
   my ($filename) = @_;
   my $rotated_filename="";
-  if (-e "$filename.0" && (mtime("$filename.0") > mtime("$filename.1.gz")) ) {
+  if (-e "$filename.0" && -e "$filename.1.gz" && (mtime("$filename.0") > mtime("$filename.1.gz")) ) {
     # assume the log is rotated by savelog(8)
     # syslog-ng leaves old files here
     $rotated_filename="$filename.0";
