@@ -16,11 +16,13 @@ logcheck (1.2.62) unstable; urgency=low
 
   * ignore.d.server/postfix:
     - ignore smtp client failures due to lost connections with relays.
+    - patch from Justin Pryzby to support postfix check_helo_(mx|ns)_access
+      (closes: #443185).
 
   * ignore.d.server/rsync:
     - patch from Justin Pryzby to update rules for 2.6.9 (closes: #443178).
 
- -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 14:10:09 +0100
+ -- martin f. krafft <madduck@debian.org>  Sat, 22 Sep 2007 14:11:50 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 
