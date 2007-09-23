@@ -31,7 +31,10 @@ logcheck (1.2.62~unreleased.4) unstable; urgency=low
   * ignore.d.server/dovecot:
     - ignore notice about dovecot fixing index files.
 
- -- martin f. krafft <madduck@debian.org>  Sun, 23 Sep 2007 23:18:35 +0100
+  * ignore.d.server/incron:
+    - ignore CMD log messages.
+
+ -- martin f. krafft <madduck@debian.org>  Sun, 23 Sep 2007 23:22:04 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 

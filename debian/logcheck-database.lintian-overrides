@@ -168,6 +168,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/we
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/xinetd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/bind 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/cron 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/incron 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/logcheck 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/postfix 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/ppp 0640 != 0644
