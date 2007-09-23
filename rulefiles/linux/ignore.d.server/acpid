@@ -5,3 +5,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: client connected from [[:digit:]]+\[[[:digit:]]+:[[:digit:]]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: notifying client [[:digit:]]+\[[[:digit:]]+:[[:digit:]]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: executing action "/etc/acpi/(actions/){0,1}[[:alnum:]_]+\.sh( [[:lower:]/]+( [[:upper:]]+ [[:xdigit:]]{8} [[:xdigit:]]{8}){0,1}){0,1}"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: client has disconnected$
