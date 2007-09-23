@@ -47,7 +47,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: host [^[:space:]]+ said: .* \(in reply to (HELO|EHLO|MAIL FROM|RCPT TO|end of DATA) command\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: no MX host for [^[:space:]]+ has a valid (A|address) record$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Unable to look up (NS|MX) host for [._[:alnum:]-]+: Host not found(, try again)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Unable to look up MX host [._[:alnum:]-]+ for (Helo command|Sender address) [^[:space:]]+: (Name or service not known|No address associated with hostname)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Unable to look up (NS|MX) host [._[:alnum:]-]+ for (Helo command|Sender address) [^[:space:]]+: (Name or service not known|No address associated with hostname)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: host [^[:space:]]+ greeted me with my own hostname [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: host [^[:space:]]+ replied to HELO/EHLO with my own hostname [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: decided action=DUNNO$
