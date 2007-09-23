@@ -1,1 +1,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ incrond\[[0-9]+\]: \([[:alnum:]-]+\) CMD \([-_./[:space:][:alnum:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ incrond\[[0-9]+\]: loading (system|user) tables$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ incrond\[[0-9]+\]: loading table for user [-_.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ incrond\[[0-9]+\]: ready to process filesystem events$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ incrond\[[0-9]+\]: table for user [-_.[:alnum:]]+ changed, reloading$

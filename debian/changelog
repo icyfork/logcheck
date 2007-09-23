@@ -1,4 +1,4 @@
-logcheck (1.2.62~unreleased.4) unstable; urgency=low
+logcheck (1.2.62~unreleased.5) unstable; urgency=low
 
   * remove ignore.d.server/thttpd because thttpd package provides a better
     version (closes: #441504).
@@ -34,7 +34,9 @@ logcheck (1.2.62~unreleased.4) unstable; urgency=low
     - ignore notice about dovecot fixing index files.
 
   * ignore.d.server/incron:
-    - ignore CMD log messages.
+    - ignore some startup messages
+    - ignore messages about table reloading
+    - ignore messages about command execution.
 
  -- martin f. krafft <madduck@debian.org>  Sun, 23 Sep 2007 23:28:01 +0100
 
