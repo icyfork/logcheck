@@ -20,6 +20,8 @@ logcheck (1.2.62~unreleased.4) unstable; urgency=low
   * ignore.d.server/postfix:
     - ignore milter-discard messages after END-OF-MESSAGE.
     - ignore smtp client failures due to lost connections with relays.
+    - ignore smtp client failures due to lost connections during later
+      commands.
     - patch from Justin Pryzby to support postfix check_helo_(mx|ns)_access
       (closes: #443185).
     - ignore Postfix lost connection messages w/o IP address, patch by Russ
@@ -34,7 +36,7 @@ logcheck (1.2.62~unreleased.4) unstable; urgency=low
   * ignore.d.server/incron:
     - ignore CMD log messages.
 
- -- martin f. krafft <madduck@debian.org>  Sun, 23 Sep 2007 23:22:04 +0100
+ -- martin f. krafft <madduck@debian.org>  Sun, 23 Sep 2007 23:28:01 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 
