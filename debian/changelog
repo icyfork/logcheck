@@ -1,4 +1,4 @@
-logcheck (1.2.62~unreleased.3) unstable; urgency=low
+logcheck (1.2.62~unreleased.4) unstable; urgency=low
 
   * remove ignore.d.server/thttpd because thttpd package provides a better
     version (closes: #441504).
@@ -22,6 +22,8 @@ logcheck (1.2.62~unreleased.3) unstable; urgency=low
     - ignore smtp client failures due to lost connections with relays.
     - patch from Justin Pryzby to support postfix check_helo_(mx|ns)_access
       (closes: #443185).
+    - ignore Postfix lost connection messages w/o IP address, patch by Russ
+      Allbery.
 
   * ignore.d.server/rsync:
     - patch from Justin Pryzby to update rules for 2.6.9 (closes: #443178).
