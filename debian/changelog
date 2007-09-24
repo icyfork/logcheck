@@ -16,6 +16,8 @@ logcheck (1.2.62~unreleased.5) unstable; urgency=low
     - fix filter for milter AV system overload.
     - ignoring warning about milter blocking mail to suspicious recipient
       addresses.
+    - duplicate some filters from ignore.d.server/postfix for when servers use
+      "hacker words" which cause logcheck to escalate to violations.
 
   * ignore.d.server/postfix:
     - ignore milter-discard messages after END-OF-MESSAGE.
@@ -41,7 +43,7 @@ logcheck (1.2.62~unreleased.5) unstable; urgency=low
   * ignore.d.server/dhclient:
     - ignore message about option answers being larger than buffers.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 24 Sep 2007 23:29:40 +0100
+ -- martin f. krafft <madduck@debian.org>  Mon, 24 Sep 2007 23:36:03 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 
