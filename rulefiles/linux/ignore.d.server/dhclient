@@ -22,3 +22,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: For info, please visit http://www.isc.org/dhcp-contrib.html$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: No DHCPOFFERS received\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?: Sleeping\.$
+# 3.0
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient: parse_option_buffer: option [-[:alnum:]]+ \([[:digit:]]+\) larger than buffer\.$

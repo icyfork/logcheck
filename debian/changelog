@@ -38,7 +38,10 @@ logcheck (1.2.62~unreleased.5) unstable; urgency=low
     - ignore messages about table reloading
     - ignore messages about command execution.
 
- -- martin f. krafft <madduck@debian.org>  Sun, 23 Sep 2007 23:28:01 +0100
+  * ignore.d.server/dhclient:
+    - ignore message about option answers being larger than buffers.
+
+ -- martin f. krafft <madduck@debian.org>  Mon, 24 Sep 2007 23:29:40 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 
