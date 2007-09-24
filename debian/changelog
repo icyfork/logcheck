@@ -43,7 +43,15 @@ logcheck (1.2.62~unreleased.5) unstable; urgency=low
   * ignore.d.server/dhclient:
     - ignore message about option answers being larger than buffers.
 
- -- martin f. krafft <madduck@debian.org>  Mon, 24 Sep 2007 23:36:03 +0100
+  * ignore.d.server/acpid:
+    - ignore basic messages from acpid; thanks to Hanspeter Kunz for the patch
+      (closes: #443171).
+
+  * ignore.d.server/bind:
+    Thanks to Frédéric Brière for the following patches:
+    - ignore messages about notify without SOA (closes: #443869)
+
+ -- martin f. krafft <madduck@debian.org>  Mon, 24 Sep 2007 23:41:58 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 
