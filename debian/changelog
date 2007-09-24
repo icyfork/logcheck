@@ -50,8 +50,9 @@ logcheck (1.2.62~unreleased.5) unstable; urgency=low
   * ignore.d.server/bind:
     Thanks to Frédéric Brière for the following patches:
     - ignore messages about notify without SOA (closes: #443869)
+    - ignore messages about denied queries (closes: #443886).
 
- -- martin f. krafft <madduck@debian.org>  Mon, 24 Sep 2007 23:41:58 +0100
+ -- martin f. krafft <madduck@debian.org>  Mon, 24 Sep 2007 23:43:34 +0100
 
 logcheck (1.2.61) unstable; urgency=low
 
