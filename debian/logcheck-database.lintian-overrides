@@ -5,7 +5,6 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/violations.d/logch
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.d/smartd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.d/su 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.d/sudo 0640 != 0644
-logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-amavisd-new 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-bind 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-bluez-utils 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-courier 0640 != 0644
@@ -66,7 +65,6 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstati
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/xdm 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/acpid 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/amandad 0640 != 0644
-logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/amavisd-new 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/anacron 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/anon-proxy 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/apache 0640 != 0644

@@ -25,6 +25,7 @@ Package: logcheck-database
 Architecture: all
 Depends: ${misc:Depends}
 Replaces: logcheck (<= 1.1.1-9)
+Conflicts: amavisd-new (<< 1:2.5.2-1)
 Description: database of system log rules for the use of log checkers
  This database is part of the Logcheck package, but might be used by others.
  It brings a database of regular expressions for matching system log entries
