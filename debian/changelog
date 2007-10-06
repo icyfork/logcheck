@@ -1,3 +1,10 @@
+logcheck (1.2.64) unstable; urgency=low
+
+  * Fix spelling error in configuration file; thanks to Frans "I am bored"
+    Pop (closes: #445537).
+
+ -- martin f. krafft <madduck@debian.org>  Sat, 06 Oct 2007 18:12:50 +0100
+
 logcheck (1.2.63) unstable; urgency=low
 
   * Conflict with amavisd-new (<< 1:2.5.2-1), since amavisd-new now maintains
