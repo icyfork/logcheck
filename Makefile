@@ -8,7 +8,7 @@ install:
 	# Create the directories
 	install -m 750 -d $(DESTDIR)/$(CONFDIR)
 	install -d $(DESTDIR)/var/lib/logcheck
-	install -d $(DESTDIR)/usr/sbin
+	install -d $(DESTDIR)/$(BINDIR)
 	install -d $(DESTDIR)/var/lock/logcheck
 	install -d $(DESTDIR)/$(SHAREDIR)
 
