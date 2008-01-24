@@ -10,6 +10,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) USER [-_.[:alnum:]]+: no such user found from [.:_@[:alnum:]-]+ \[[.:[:xdigit:]]+\] to [.:[:xdigit:]]+:[[:digit:]]{2,5}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) Maximum login attempts \([[:digit:]]+\) exceeded$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) no such user '[-_.@[:alnum:]]+'$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) notice: user ftp: aborting transfer: Data connection closed\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) notice: user [-_.[:alnum:]]+: aborting transfer: Data connection closed\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]:? [._[:alnum:]-]+ (\([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) )?- error setting IPV6_V6ONLY: Protocol not available$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]:? [._[:alnum:]-]+ (\([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) )?- Preparing to chroot to directory '[-/._[:alnum:]]+'$
