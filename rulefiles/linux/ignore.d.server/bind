@@ -7,3 +7,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: (client [.#[:digit:]]+: )?notify question section contains no SOA$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client [[:digit:].]+#[[:digit:]]+: query (\(cache\) )?'.*' denied$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client [.#[:digit:]]+: updating zone '[-._[:alnum:]]+/IN': (adding an RR|deleting rrset) at '[._[:alnum:]-]+' A$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: dispatch 0x[[:xdigit:]]+: shutting down due to TCP receive error: [[:digit:].]+#[[:digit:]]+: connection reset$
