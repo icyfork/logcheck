@@ -62,7 +62,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: (valid_hostname: )?invalid character [0-9]+\(decimal\): .*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: (valid_hostname: )?misplaced delimiter: .$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: (valid_hostname: )?empty hostname$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: (valid_hostname: )?numeric hostname: [.[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: (valid_hostname: )?numeric hostname: [.[:digit:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: warning: numeric domain name in resource data of MX record for [._[:alnum:]-]+: [0-9a-f.:]{3,39}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: warning: mailer loop: best MX for [^[:space:]]+ is local$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:upper:]0-9]+: enabling PIX <CRLF>\.<CRLF> workaround for .*$
