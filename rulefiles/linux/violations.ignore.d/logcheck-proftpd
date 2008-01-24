@@ -1,6 +1,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd: \(pam_unix\) authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=[-_.:[:alnum:]]+  user=[-_.[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd: pam_unix\(proftpd:[[:alnum:]]+\): authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=[-_.:[:alnum:]]+  user=[-_.[:alnum:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]{1,5}\]: [._[:alnum:]-]+ \([._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - PAM\([-_.[:alnum:]]+\): Authentication failure\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]{1,5}\]: [._[:alnum:]-]+ \([._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - Connection from [._[:alnum:]-]+ \[[.:[:xdigit:]]+\] denied\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]{1,5}\]: [._[:alnum:]-]+ \([._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - USER [-._[:alnum:]]+ \(Login failed\): Limit access denies login$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]{1,5}\]: [._[:alnum:]-]+ \([._[:alnum:]-]+\[[.:[:xdigit:]]+\]\) - SECURITY VIOLATION: root login attempted\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]{1,5}\]:? [._[:alnum:]-]+ \([._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) PAM\([-_.[:alnum:]]+\): Authentication failure\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]{1,5}\]:? [._[:alnum:]-]+ \([._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) Connection from [._[:alnum:]-]+ \[[.:[:xdigit:]]+\] denied\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]{1,5}\]:? [._[:alnum:]-]+ \([._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) USER [-._[:alnum:]]+ \(Login failed\): Limit access denies login$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]{1,5}\]:? [._[:alnum:]-]+ \([._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) SECURITY VIOLATION: root login attempted\.$
