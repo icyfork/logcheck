@@ -13,7 +13,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? SIGUSR1\[soft,(ping-restart|connection-reset)\] received, (process|client-instance) restarting$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: Restart pause, [[:digit:]]+ second\(s\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: (Closing TCP/UDP|TCP/UDP: Closing) socket$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Re-using SSL/TLS context$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Re-using (SSL/TLS context|pre-shared static key)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? VERIFY SCRIPT OK: depth=[[:digit:]]+, /(CN|O)=.+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? LZO compression initialized$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? (Data|Control) Channel MTU parms \[[[:upper:]:0-9/ ]+\]$
