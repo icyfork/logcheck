@@ -1,7 +1,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ([[:alnum:]]+\[[0-9]+\])?: \(pam_[[:alnum:]]+\) session opened for user [.[:alnum:]-]+ by (root|LOGIN)?\(uid=0\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ([[:alnum:]]+\[[0-9]+\])?: \(pam_[[:alnum:]]+\) session closed for user [.[:alnum:]-]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ([[:alnum:]]+\[[0-9]+\])?: pam_[[:alnum:]]+\([[:alnum:]]+:session\): session opened for user [.[:alnum:]-]+ by (root|LOGIN)?\(uid=0\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ([[:alnum:]]+\[[0-9]+\])?: pam_[[:alnum:]]+\([[:alnum:]]+:session\): session closed for user [.[:alnum:]-]+$
 # new pam format
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ([[:alnum:]]+\[[0-9]+\])?: pam_[[:alnum:]]+\([[:alnum:]]+:[[:alnum:]]+\): session opened for user [.[:alnum:]-]+ by (root|LOGIN)?\(uid=0\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ([[:alnum:]]+\[[0-9]+\])?: pam_[[:alnum:]]+\([[:alnum:]]+:[[:alnum:]]+\): session closed for user [.[:alnum:]-]+$
