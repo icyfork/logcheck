@@ -30,3 +30,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: User [-_.[:alnum:]]+ from [-_.[:alnum:]]+ not allowed because not listed in AllowUsers$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: User [-_.[:alnum:]]+ from [-_.[:alnum:]]+ not allowed because listed in DenyUsers$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: scanned from [:[:xdigit:].]+ with SSH-[.[:digit:]]+-SSH_Version_Mapper\.  Don't panic\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Nasty PTR record "[:[:xdigit:].]+" is set up for [:[:xdigit:].]+, ignoring$
