@@ -14,7 +14,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Received NOTIFY answer$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: (master|slave) zone "[^[:space:]]+" \(IN\) loaded \(serial [0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: (ns_forw|ns_resp|sysquery): query\([^[:space:]]+\) (NS points to CNAME \([^[:space:]]+\)|No possible A RRs|All possible A RR's lame|Bogus LOOPBACK A RR \([^[:space:]]+\) learnt \([^[:space:]]+\))$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client [0-9a-f.:]+#[0-9]+: transfer of '[^[:space:]]+/IN': AXFR started$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client [0-9a-f.:]+#[0-9]+: transfer of '[^[:space:]]+/IN': AXFR (started|ended)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone [^[:space:]]+: transferred serial [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: transfer of '[^[:space:]]+' from [^[:space:]]+: end of transfer$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone [^[:space:]]+/IN: sending notifies \(serial [0-9]+\)$
