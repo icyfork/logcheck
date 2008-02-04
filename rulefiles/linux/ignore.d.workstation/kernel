@@ -132,3 +132,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? PM: Writing back config space on device [[:alnum:]:.]+ at offset [0-9] \(was [0-9]+, writing [0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? loop: loaded \(max [0-9]+ devices\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? oprofile: using NMI interrupt\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: bttv[[:digit:]]+: PLL: 28636363 => 35468950 \.\. ok$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: bttv[[:digit:]]+: PLL can sleep, using XTAL \(28636363\)\.$
