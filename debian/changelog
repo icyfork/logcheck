@@ -4,15 +4,85 @@ logcheck (1.2.64) unstable; urgency=low
   * Fix spelling error in configuration file; thanks to Frans "I am bored"
     Pop (closes: #445537).
 
+  * Remove version from cron dependency to allow e.g. bcron-run to satisfy the
+    requirement.
+  * Clean up accidental duplication in Makefile; hardcoded /usr/sbin is now
+    $(BINDIR) (Ed Santiago)
+
   [ maximilian attems ]
   * Clean up linux/violations.d/logcheck, all the "Attack" rules look
     pretty much dubious. Nobody should serisouly run rshd or rlogind.
 
-  [ martin f. krafft ]
-  * Remove version from cron dependency to allow e.g. bcron-run to satisfy the
-    requirement.
+  [ Frédéric Brière ]
+  * ignore.d.server/bind:
+    - moved "[bind] query $FOO denied" rule to violations.ignore.d
+      (closes: #443881).
+    - added bind's "AXFR ended" rule alongside "AXFR started"
+      (closes: #445046).
+    - added "adding an RR"/"deleting rrset" bind rules for dynamic DNS.
+    - added "connection reset" rule for bind.
+    - added "journal file does not exist" rule for bind.
 
- -- martin f. krafft <madduck@debian.org>  Wed, 05 Mar 2008 08:48:05 +0100
+  * ignore.d.server/sasl2-bin:
+    - added DB_NOTFOUND and "user not found" rules for sasl2-bin.
+
+  * ignore.d.workstation/kernel:
+    - ignore bttv PLL messages
+    - ignore (un)register messages from zaurus module (closes: #444096).
+
+  * ignore.d.server/ddclient:
+    - added two basic rules for ddclient (closes: #444097).
+
+  * ignore.d.server/telnetd:
+    - added basic rules for telnetd (closes: #444100).
+
+  * ignore.d.server/ssh:
+    - ignore "Nasty PTR record" messages from openssh (closes: #445074).
+
+  * violations.ignore.d/logcheck-ssh:
+    - adjused ssh "Failed password" rule to allow omitting "illegal/invalid
+      user" (closes: #445072).
+    - updated ssh "reverse mapping" rule to include IP address
+      (closes: #445073).
+
+  * ignore.d.server/tftpd:
+    - added tftpd "serving file from ..." rule (closes: #445069).
+
+  * ignore.d.server/dspam:
+    - corrected illegal regex in ignore.d.server/dspam.
+
+  * violations.ignore.d/logcheck-sudo:
+    - ignore PAM session messages triggered by sudo.
+
+  * ignore.d.server/postfix:
+    - Postfix considers that "-" can be part of a numeric hostname.
+    - ignore Postfix bad address syntax errors from postfix/error
+      (closes: #464896) (Russ Allbery)
+
+  * violations.ignore.d/logcheck-postfix:
+    - allow any error message following "SASL authentication failure" in
+      postfix.
+
+  * ignore.d.server/libpam-mount:
+    - added libpam-mount rule "realpath of volume $FOO is $BAR".
+
+  * ignore.d.server/proftpd:
+    - adapted rules for SystemLog syntax.
+    - added "FTP login|session timed out" rule.
+    - added "Incorrect password" proftpd rule.
+    - adjusted proftpd rules to catch unresolved IPv6 hosts.
+    - added "@" to proftpd "no such user" rules, to catch anonymous@foo.bar.
+    - adjusted proftpd "Data connection closed" rule to allow arbitrary
+      usernames.
+
+  * ignore.d.server/openvpn:
+    - added "Re-using pre-shared static key" openvpn rule.
+    - re-enabled :port portion of "UDPv4 link" openvpn rule.
+
+  * ignore.d.workstation/bluetooth-alsa
+    - adding rules for headsetd (bluetooth-alsa).
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 05 Mar 2008 09:57:19 +0100
 
 logcheck (1.2.63) unstable; urgency=low
 
