@@ -38,6 +38,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-cron-apt 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/automount 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/bind 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/bluetooth-alsa 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/bluez-utils 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/bonobo 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/francine 0640 != 0644
@@ -83,6 +84,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cv
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cvsd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/cyrus 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dcc 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/ddclient 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dhclient 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dhcp 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dictd 0640 != 0644
@@ -157,6 +159,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/st
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/sympa 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/syslogd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/teapop 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/telnetd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/tftpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/thy 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/ucd-snmp 0640 != 0644
