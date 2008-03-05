@@ -8,7 +8,11 @@ logcheck (1.2.64) unstable; urgency=low
   * Clean up linux/violations.d/logcheck, all the "Attack" rules look
     pretty much dubious. Nobody should serisouly run rshd or rlogind.
 
- -- maximilian attems <maks@debian.org>  Wed, 14 Nov 2007 13:01:40 +0100
+  [ martin f. krafft ]
+  * Remove version from cron dependency to allow e.g. bcron-run to satisfy the
+    requirement.
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 05 Mar 2008 08:48:05 +0100
 
 logcheck (1.2.63) unstable; urgency=low
 
