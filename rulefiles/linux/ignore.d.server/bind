@@ -5,7 +5,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone [._[:alnum:]-]+/IN: Transfer started.$
 ^\w{3} [ :0-9]{11} [-._[:alnum:]]+ named\[[0-9]+\]: client [0-9.]{7,15}#[0-9]+: view (localhost|any|slave): query: [-._[:alnum:]]+ IN (CNAME|A6|AAAA|A|MX|PTR|TXT|NS|SOA|SSHFP) [-+](E?)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: (client [.#[:digit:]]+: )?notify question section contains no SOA$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client [[:digit:].]+#[[:digit:]]+: query (\(cache\) )?'.*' denied$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: journal file [-./_[:alnum:]]+ does not exist, creating it$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client [.#[:digit:]]+: updating zone '[-._[:alnum:]]+/IN': (adding an RR|deleting rrset) at '[._[:alnum:]-]+' A$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: dispatch 0x[[:xdigit:]]+: shutting down due to TCP receive error: [[:digit:].]+#[[:digit:]]+: connection reset$
