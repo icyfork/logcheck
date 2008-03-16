@@ -26,6 +26,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: uid lease [.0-9]{7,15} for client [:[:xdigit:]]+ is duplicate on [.0-9]{7,15}/[[:digit:]]+$
 # Dyndns support
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: [Aa]dded (new )?(forward|reverse) map from [._[:alnum:]-]+ to [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: removed reverse map on [._[:alnum:]-]+\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: Can't update forward map [._[:alnum:]-]+ to [.0-9]{7,15}: no such RRset$
 # udhcpd support
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ udhcpd\[[0-9]+\]: sending OFFER of [.0-9]{7,15}$
