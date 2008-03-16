@@ -15,7 +15,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: FuzzyOcr: FuzzyOcr stopped, message got [[:digit:]]+ points by other FuzzyOcr tests \([.[:digit:]]+>[.[:digit:]]+\)\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: (spamd: )?Tell: Setting (local|remote|local,remote) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [.[:digit:]]+ seconds, [[:digit:]]+ bytes$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: (spamd: )?Tell: Did nothing for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [.[:digit:]]+ seconds, [[:digit:]]+ bytes$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: spam reported to (DCC|SpamCop|Pyzor)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: spam reported to (DCC|SpamCop|Pyzor|Razor)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: could not report spam to (SpamCop|Pyzor|Razor|DCC via dccproc)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: no revoke methods available, so couldn't revoke$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: no reporting methods available, so couldn't report$
