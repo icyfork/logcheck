@@ -9,3 +9,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: (building|receiving) file list$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: [^[:space:]]+/$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: [^[:space:]]+ -> [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: module-list request from [._[:alnum:]-]+ \([0-9.]{7,15}\)$
