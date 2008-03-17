@@ -8,3 +8,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[NOTICE\] File successfully renamed or moved: \[.+\]->\[.+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[NOTICE\] Deleted .+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([.[:alnum:]-]+@[._[:alnum:]-]+\) \[INFO\] Timeout$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: PAM-listfile: Refused user [._[:alnum:]-]+ for service pure-ftpd$
