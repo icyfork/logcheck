@@ -93,7 +93,7 @@ logcheck (1.2.64) unstable; urgency=low
 
   [ martin f. krafft ]
   * ignore.d.server/spamd
-    - deal with socket connections by e.g. evolution (closes: #448510).
+    - deal with socket connections by e.g. evolution (closes: #448510, #473619).
 
  -- martin f. krafft <madduck@debian.org>  Wed, 09 Apr 2008 15:49:10 +0200
 
