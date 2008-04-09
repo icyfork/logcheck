@@ -8,7 +8,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? using default config for [-._+=[:alnum:]]+(@[-._[:alnum:]]+)?: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? creating default_prefs: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: config: created user preferences file: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? (process|check)ing message (<[^>]+>( aka <[^>]+>)?|\(unknown\)) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? (process|check)ing message (<[^>]+>|\(unknown\))( aka <[^>]+>)? for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? server pid: [[:digit:]]{1,5}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: logger: removing stderr method$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: (spamd: )?result: [.YN] [ [:digit:]-]+ - ([._[:alnum:],]+ )?scantime=[0-9.]+,size=[0-9]+,(user=[^,]+,uid=[0-9]+,required_score=[0-9.]+,rhost=[._[:alnum:]-]+,raddr=[0-9.]+,rport=[/[:alnum:].-]+,)?mid=(<[^[:space:]]+>|\(unknown\))(rmid=(<[^[:space:]]+>|\(unknown\)),)?,(bayes=[.[:digit:]]+(e-[[:digit:]]+)?,)?autolearn=(ham|spam|no|disabled|unavailable) *$

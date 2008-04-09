@@ -98,6 +98,10 @@ logcheck (1.2.64) unstable; urgency=low
   * ignore.d.workstation/kernel
     - also ignore loading of R300 microcode (closes: #474606).
 
+  * ignore.d.server/spamd
+    - fix spamd processing message pattern when msgid is unknown; thanks to
+      Michal Čihař for the patch (closes: #471936).
+
  -- martin f. krafft <madduck@debian.org>  Wed, 09 Apr 2008 15:57:48 +0200
 
 logcheck (1.2.63) unstable; urgency=low
