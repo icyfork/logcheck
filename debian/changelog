@@ -86,6 +86,11 @@ logcheck (1.2.64) unstable; urgency=low
   * ignore.d.workstation/bluetooth-alsa
     - adding rules for headsetd (bluetooth-alsa).
 
+  * ignore.d.server/dhcp
+    - Adding dhcp rules for DNS updates by ddns_remove_a()
+      (closes: #459875, #472368)
+    - Added dhcp "removed reverse map" rule, which occurs on DHCPRELEASE.
+
   [ martin f. krafft ]
   * ignore.d.server/spamd
     - deal with socket connections by e.g. evolution (closes: #448510).
