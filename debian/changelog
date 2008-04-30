@@ -106,7 +106,11 @@ logcheck (1.2.64) unstable; urgency=low
     - Fix up rules to match when views are in use; thanks Shawn Heisey
       (closes: #477932).
 
- -- martin f. krafft <madduck@debian.org>  Sat, 26 Apr 2008 08:02:11 +0400
+  * ignore.d.server/dkim-filter
+    - ignore warnings about bad signature data; thanks to Clint Adams
+      (closes: #478334).
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 30 Apr 2008 12:01:31 +0400
 
 logcheck (1.2.63) unstable; urgency=low
 

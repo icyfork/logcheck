@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dkim-filter\[[[:digit:]]+\]: [[:xdigit:]]{10} SSL error:04077068:rsa routines:RSA_verify:bad signature$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dkim-filter\[[[:digit:]]+\]: [[:xdigit:]]{10}: bad signature data$

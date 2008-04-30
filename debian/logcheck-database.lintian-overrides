@@ -89,6 +89,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dh
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dhcp 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dictd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dkfilter 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dkim-filter 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dnsmasq 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dovecot 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dspam 0640 != 0644
