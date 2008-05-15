@@ -75,9 +75,8 @@ case "$1" in
 	# unreadable upon upgrade.  <ttroxell@debian.org>
 	chgrp -R logcheck /etc/logcheck || true
 
-    	# Set Permissions on install or upgrade
+    	# Set Permissions on install, not upgrade
 	if [ ! -n "$2" ]; then
-    	  chown -R logcheck:logcheck /var/lib/logcheck  || true
           chmod 2750 /etc/logcheck/ignore.d.paranoid || true
           chmod 2750 /etc/logcheck/ignore.d.workstation || true
           chmod 2750 /etc/logcheck/ignore.d.server || true
@@ -89,6 +88,8 @@ case "$1" in
           # just in case
           chown logcheck /var/lock/logcheck > /dev/null || true
 	fi
+    	chown -R logcheck:logcheck /var/lib/logcheck || true
+    	chmod 0770 /var/lib/logcheck || true
 
 	;;
     

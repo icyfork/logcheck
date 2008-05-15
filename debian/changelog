@@ -110,6 +110,9 @@ logcheck (1.2.64) unstable; urgency=low
     - ignore warnings about bad signature data; thanks to Clint Adams
       (closes: #478334).
 
+  * Set permissions on /var/lib/logcheck to 0770 to prevent disclosure of
+    information (closes: #481347).
+
  -- martin f. krafft <madduck@debian.org>  Wed, 30 Apr 2008 12:01:31 +0400
 
 logcheck (1.2.63) unstable; urgency=low
