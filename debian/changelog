@@ -111,7 +111,7 @@ logcheck (1.2.64) unstable; urgency=low
       (closes: #478334).
 
   * Set permissions on /var/lib/logcheck to 0770 to prevent disclosure of
-    information (closes: #481347).
+    information (see #481347).
 
   * If nail is not installed and MAILASATTACH is set, fall back to regular
     method (closes: #479278).
