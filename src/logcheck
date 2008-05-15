@@ -297,10 +297,16 @@ sendreport() {
     else
 	debug "Sending report: '$subject' to $SENDMAILTO"
         if [ $MAILASATTACH -eq 1 ]; then
-          echo -e "Report at the attachment" | nail -s "$subject" -a "$TMPDIR/report" "$SENDMAILTO"
-        else
-          cat $TMPDIR/report | mail -s "$subject" "$SENDMAILTO"
+          debug "Sending report as attachment"
+          if command -v nail >/dev/null; then
+            echo -e "Report attached" | nail -s "$subject" -a "$TMPDIR/report" "$SENDMAILTO"
+            return $?
+          else
+            echo >> $TMPDIR/report
+            echo Could not send report as attachment, nail not installed >> $TMPDIR/report
+          fi
         fi
+        cat $TMPDIR/report | mail -s "$subject" "$SENDMAILTO"
     fi
 }
 
