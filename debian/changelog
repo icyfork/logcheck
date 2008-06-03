@@ -43,6 +43,8 @@ logcheck (1.2.64) unstable; urgency=low
   * Clean up linux/violations.d/logcheck, all the "Attack" rules look
     pretty much dubious. Nobody should serisouly run rshd or rlogind.
 
+  * control: s/XS-Vcs/Vcs/ git lines are official.
+
   [ Frédéric Brière ]
   * ignore.d.server/bind:
     - moved "[bind] query $FOO denied" rule to violations.ignore.d
@@ -116,14 +118,10 @@ logcheck (1.2.64) unstable; urgency=low
     - Added dhcp "removed reverse map" rule, which occurs on DHCPRELEASE.
 
   [ Gerfried Fuchs ]
-
   * Bumped Standards-Version to 3.7.3, no further changes required anymore.
   * Added Homepage source control field.
   * debian/logtail.NEWS: Fix date format in trailer lines.
   * Updated my email address in debian/control and debian/copyright.
-
-  [ maximilian attems ]
-  * control: s/XS-Vcs/Vcs/ git lines are official.
 
  -- Gerfried Fuchs <rhonda@debian.at>  Tue, 03 Jun 2008 13:43:58 +0200
 
