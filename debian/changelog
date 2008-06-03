@@ -122,6 +122,9 @@ logcheck (1.2.64) unstable; urgency=low
   * debian/logtail.NEWS: Fix date format in trailer lines.
   * Updated my email address in debian/control and debian/copyright.
 
+  [ maximilian attems ]
+  * control: s/XS-Vcs/Vcs/ git lines are official.
+
  -- Gerfried Fuchs <rhonda@debian.at>  Tue, 03 Jun 2008 13:43:58 +0200
 
 logcheck (1.2.63) unstable; urgency=low

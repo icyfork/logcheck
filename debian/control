@@ -6,8 +6,8 @@ Uploaders: Todd Troxell <ttroxell@debian.org>, Gerfried Fuchs <rhonda@debian.at>
 Standards-Version: 3.7.3
 Build-Depends: debhelper (>= 4.1.13)
 Build-Depends-Indep: docbook-to-man
-XS-Vcs-Git: git://git.debian.org/git/logcheck/logcheck.git
-XS-Vcs-Browser: http://git.debian.org/?p=logcheck/logcheck.git
+Vcs-Git: git://git.debian.org/git/logcheck/logcheck.git
+Vcs-Browser: http://git.debian.org/?p=logcheck/logcheck.git
 Homepage: http://www.logcheck.org/
 
 Package: logcheck
