@@ -44,6 +44,8 @@ logcheck (1.2.64) unstable; urgency=low
     pretty much dubious. Nobody should serisouly run rshd or rlogind.
   * control: s/XS-Vcs/Vcs/ git lines are official.
   * Add myself to Uploaders.
+  * debian/rules, debian/logcheck-database.linda-overrides: Nuke old
+    dup overrides, lintian rules.
 
   [ Frédéric Brière ]
   * ignore.d.server/bind:
