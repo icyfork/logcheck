@@ -119,10 +119,10 @@ logcheck (1.2.64) unstable; urgency=low
 
   * Bumped Standards-Version to 3.7.3, no further changes required anymore.
   * Added Homepage source control field.
-  * debian/logtail.NEWS: Added , after the weekday in the tailer lines.
+  * debian/logtail.NEWS: Fix date format in trailer lines.
   * Updated my email address in debian/control and debian/copyright.
 
- -- Gerfried Fuchs <rhonda@debian.at>  Tue, 03 Jun 2008 13:23:50 +0200
+ -- Gerfried Fuchs <rhonda@debian.at>  Tue, 03 Jun 2008 13:43:58 +0200
 
 logcheck (1.2.63) unstable; urgency=low
 
