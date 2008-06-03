@@ -42,8 +42,8 @@ logcheck (1.2.64) unstable; urgency=low
   [ maximilian attems ]
   * Clean up linux/violations.d/logcheck, all the "Attack" rules look
     pretty much dubious. Nobody should serisouly run rshd or rlogind.
-
   * control: s/XS-Vcs/Vcs/ git lines are official.
+  * Add myself to Uploaders.
 
   [ Frédéric Brière ]
   * ignore.d.server/bind:
