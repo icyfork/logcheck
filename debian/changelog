@@ -15,6 +15,30 @@ logcheck (1.2.64) unstable; urgency=low
     - ignore additional "(0 bytes)" on lost connnections (closes: #470102)
       (Russ Allbery)
 
+  * ignore.d.server/spamd
+    - deal with socket connections by e.g. evolution (closes: #448510, #473619).
+
+  * ignore.d.workstation/kernel
+    - also ignore loading of R300 microcode (closes: #474606).
+
+  * ignore.d.server/spamd
+    - fix spamd processing message pattern when msgid is unknown; thanks to
+      Michal Čihař for the patch (closes: #471936).
+
+  * ignore.d.server/bind
+    - Fix up rules to match when views are in use; thanks Shawn Heisey
+      (closes: #477932).
+
+  * ignore.d.server/dkim-filter
+    - ignore warnings about bad signature data; thanks to Clint Adams
+      (closes: #478334).
+
+  * Set permissions on /var/lib/logcheck to 0770 to prevent disclosure of
+    information (see #481347).
+
+  * If nail is not installed and MAILASATTACH is set, fall back to regular
+    method (closes: #479278).
+
   [ maximilian attems ]
   * Clean up linux/violations.d/logcheck, all the "Attack" rules look
     pretty much dubious. Nobody should serisouly run rshd or rlogind.
@@ -91,32 +115,14 @@ logcheck (1.2.64) unstable; urgency=low
       (closes: #459875, #472368)
     - Added dhcp "removed reverse map" rule, which occurs on DHCPRELEASE.
 
-  [ martin f. krafft ]
-  * ignore.d.server/spamd
-    - deal with socket connections by e.g. evolution (closes: #448510, #473619).
+  [ Gerfried Fuchs ]
 
-  * ignore.d.workstation/kernel
-    - also ignore loading of R300 microcode (closes: #474606).
+  * Bumped Standards-Version to 3.7.3, no further changes required anymore.
+  * Added Homepage source control field.
+  * debian/logtail.NEWS: Added , after the weekday in the tailer lines.
+  * Updated my email address in debian/control and debian/copyright.
 
-  * ignore.d.server/spamd
-    - fix spamd processing message pattern when msgid is unknown; thanks to
-      Michal Čihař for the patch (closes: #471936).
-
-  * ignore.d.server/bind
-    - Fix up rules to match when views are in use; thanks Shawn Heisey
-      (closes: #477932).
-
-  * ignore.d.server/dkim-filter
-    - ignore warnings about bad signature data; thanks to Clint Adams
-      (closes: #478334).
-
-  * Set permissions on /var/lib/logcheck to 0770 to prevent disclosure of
-    information (see #481347).
-
-  * If nail is not installed and MAILASATTACH is set, fall back to regular
-    method (closes: #479278).
-
- -- martin f. krafft <madduck@debian.org>  Wed, 30 Apr 2008 12:01:31 +0400
+ -- Gerfried Fuchs <rhonda@debian.at>  Tue, 03 Jun 2008 13:23:50 +0200
 
 logcheck (1.2.63) unstable; urgency=low
 
