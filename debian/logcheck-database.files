@@ -6,4 +6,3 @@ etc/logcheck/ignore.d.workstation
 etc/logcheck/ignore.d.server
 etc/logcheck/ignore.d.paranoid
 usr/share/lintian/overrides/logcheck-database
-usr/share/linda/overrides/logcheck-database
