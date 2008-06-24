@@ -2,8 +2,10 @@ logcheck (1.2.65) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix:
     - fixed filters for certificate messages that changed in postfix 2.5.
+  * ignore.d.server/maradns:
+    - ignore messages related to resolvconf integration.
 
- -- martin f. krafft <madduck@debian.org>  Tue, 24 Jun 2008 18:42:41 +0100
+ -- martin f. krafft <madduck@debian.org>  Tue, 24 Jun 2008 18:46:14 +0100
 
 logcheck (1.2.64) unstable; urgency=low
 
