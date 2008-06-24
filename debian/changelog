@@ -12,8 +12,11 @@ logcheck (1.2.65) unstable; urgency=low
   * ignore.d.server/dovecot:
     - ignore aborted logins with 0 authentication attempts, e.g. due to
       nagios; thanks to René Hertell (closes: #487208).
+  * ignore.d.server/cron-apt:
+    - ignore harmless messages about state and space usage prediction; thanks
+      to Daniel Hahler (closes: #484546).
 
- -- martin f. krafft <madduck@debian.org>  Tue, 24 Jun 2008 18:54:40 +0100
+ -- martin f. krafft <madduck@debian.org>  Tue, 24 Jun 2008 18:56:26 +0100
 
 logcheck (1.2.64) unstable; urgency=low
 
