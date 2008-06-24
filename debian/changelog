@@ -15,6 +15,8 @@ logcheck (1.2.65) unstable; urgency=low
   * ignore.d.server/cron-apt:
     - ignore harmless messages about state and space usage prediction; thanks
       to Daniel Hahler (closes: #484546).
+  * ignore.d.server/spamd:
+    - ignore child state K; thanks to Ross Boylan (closes: #484328).
 
  -- martin f. krafft <madduck@debian.org>  Tue, 24 Jun 2008 18:56:26 +0100
 
