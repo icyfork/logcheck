@@ -25,6 +25,8 @@ logcheck (1.2.65) unstable; urgency=low
   * ignore.d.server/courier:
     - update rules to include port information; thanks to Antoine Pardignon
       (closes: #446310).
+    - ignore couriertcpd messages; thanks to Andrew Gallagher
+      (closes: #451118).
   * ignore.d.server/smbd_audit:
     - ignore smbd audit log entries (closes: #452879).
   * ignore.d.server/acpid:
