@@ -30,6 +30,8 @@ logcheck (1.2.65) unstable; urgency=low
   * ignore.d.server/acpid:
     - follow recent modifications in acpid log output; thanks to Arno Renevier
       (closes: #450660).
+  * ignore.d.server/otrs:
+    - ignore OTRS CGI notices (closes: #450697).
 
  -- martin f. krafft <madduck@debian.org>  Tue, 24 Jun 2008 18:56:26 +0100
 

@@ -125,6 +125,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/ns
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/ntp 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/oidentd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/openvpn 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/otrs 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/pdns 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/perdition 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/policyd 0640 != 0644
