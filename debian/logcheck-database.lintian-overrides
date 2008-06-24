@@ -149,6 +149,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/sa
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/scponly 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/slapd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/smartd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/smbd_audit 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/smokeping 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/snmpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/snort 0640 != 0644
