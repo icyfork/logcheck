@@ -1,4 +1,4 @@
-This email is sent by logcheck. If you wish to no-longer receive it,
-you can either deinstall the logcheck package or modify its
-configuration file (/etc/logcheck/logcheck.conf).
+This email is sent by logcheck. If you no longer wish to receive
+such mails, you can either deinstall the logcheck package or modify
+its configuration file (/etc/logcheck/logcheck.conf).
 
