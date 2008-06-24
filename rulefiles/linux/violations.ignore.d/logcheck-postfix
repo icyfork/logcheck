@@ -20,14 +20,15 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: Read failed in network_biopair_interop with errno=[0-9]+: num_read=[-0-9]+, want_read=[0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: handler sender_permitted_from: DUNNO$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/policy-spf\[[0-9]+\]: : SPF none: smtp_comment=SPF: domain of sender [^[:space:]]+ does not designate mailers, header_comment=[.[:lower:]]+: domain of [^[:space:]]+ does not designate permitted sender hosts$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+:( num=10:)?certificate has expired$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=18:self signed certificate$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=19:self signed certificate in certificate chain$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=20:unable to get local issuer certificate$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=21:unable to verify the first certificate$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=24:invalid CA certificate$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=26:unsupported certificate purpose$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: num=27:certificate not trusted$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: (num=10:)?certificate has expired$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: (num=18:)?self[- ]signed certificate$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: (num=19:)?self[- ]signed certificate in certificate chain$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: (num=20:)?unable to get local issuer certificate$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: (num=21:)?unable to verify the first certificate$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: (num=24:)?invalid CA certificate$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: (num=26:)?unsupported certificate purpose$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: (num=27:)?certificate not trusted$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate verification failed for [^[:space:]]+: untrusted issuer [-@._/=[:space:][:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate peer name verification failed for [^[:space:]]+: [[:digit:]]+ dNSNames in certificate found, but none matches
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd?\[[0-9]+\]: certificate peer name verification failed for [^[:space:]]+: CommonName mis-match:( [._[:alnum:]-]+)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:upper:]0-9]+: reject: RCPT from [^[:space:]]+: [45][0-9][0-9]( [45](\.[[:digit:]]){2})? <[^[:space:]]+>: Client host rejected: Greylisted( for [0-9]+ (seconds|minutes))?,?( \(?see http://isg\.ee\.ethz\.ch/tools/postgrey/help/[.[:alnum:]-]+\.html\)?;)? from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
