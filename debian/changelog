@@ -20,6 +20,8 @@ logcheck (1.2.65) unstable; urgency=low
   * ignore.d.server/ssh:
     - ignore host-based auth logins; thanks to Tilman Koschnick
       (closes: #483214)
+  * ignore.d.server/imapproxy:
+    - ignore failures to read from client socket (closes: #482523).
 
  -- martin f. krafft <madduck@debian.org>  Tue, 24 Jun 2008 18:56:26 +0100
 
