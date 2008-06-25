@@ -26,6 +26,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-pureftp 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-samba 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-saslauthd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-sasl2-bin 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-sendmail_tmp 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-smartd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/violations.ignore.d/logcheck-spamd 0640 != 0644
@@ -64,6 +65,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstati
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/wdm 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/winbind 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/xdm 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.workstation/xlockmore 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/acpid 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/amandad 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/anacron 0640 != 0644
@@ -95,6 +97,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/do
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/dspam 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/epmd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/exim4 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/ftpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/gnu-imap4d 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/gps 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/grinch 0640 != 0644
@@ -112,6 +115,8 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/is
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/isdnutils 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/jabberd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/kernel 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/krb5-kdc 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/libpam-mount 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/logcheck 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/lpr 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/maradns 0640 != 0644
@@ -147,6 +152,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/sa
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/samba 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/saned 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/saslauthd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/sasl2-bin 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/schroot 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/scponly 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/slapd 0640 != 0644
@@ -169,8 +175,10 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/th
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/ucd-snmp 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/uptimed 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/userv 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/vsftpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/watchdog 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/webmin 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/wu-ftpd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/xinetd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/bind 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.paranoid/cron 0640 != 0644
