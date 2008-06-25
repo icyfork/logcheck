@@ -34,6 +34,9 @@ logcheck (1.2.65) unstable; urgency=low
       (closes: #450660).
   * ignore.d.server/otrs:
     - ignore OTRS CGI notices (closes: #450697).
+  * ignore.d.server/openvpn:
+    - ignore messages about dropped packets due to bad source addresses (out
+      of connection messages).
   * fix wording in header.txt (closes: #472937).
 
  -- martin f. krafft <madduck@debian.org>  Tue, 24 Jun 2008 18:56:26 +0100
