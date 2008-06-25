@@ -1,5 +1,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: TLS key negotiation failed to occur within [[:digit:]]+ seconds( \(check your network connectivity\))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: TLS handshake failed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? WARNING: Bad encapsulated packet length from peer \([[:digit:]]+\), which must be > 0 and <= 1544 -- please ensure that --tun-mtu or --link-mtu is equal on both peers -- this condition could also indicate a possible active attack on the TCP link -- \[Attempt?ing restart\.\.\.\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: read UDPv4 \[ECONNREFUSED\]: Connection refused \(code=111\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: read UDPv4 \[ECONNREFUSED\|ECONNREFUSED\]: Connection refused \(code=111\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[0-9]+\]: read UDPv4 \[ECONNREFUSED\|ECONNREFUSED\|ECONNREFUSED\]: Connection refused \(code=111\)$
