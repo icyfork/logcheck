@@ -40,6 +40,8 @@ logcheck (1.2.65) unstable; urgency=low
       of connection messages).
     - ignore messages about packets with wrong encapsulated lengths, which are
       mostly portscanners, or hosts connecting to openvpn on ports like 443.
+  * ignore.d.server/schroot:
+    - ignore operational schroot messages for logins and running commands.
   * fix wording in header.txt (closes: #472937).
 
  -- martin f. krafft <madduck@debian.org>  Tue, 24 Jun 2008 18:56:26 +0100

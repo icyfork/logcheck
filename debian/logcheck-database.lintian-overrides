@@ -147,6 +147,7 @@ logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/sa
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/samba 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/saned 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/saslauthd 0640 != 0644
+logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/schroot 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/scponly 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/slapd 0640 != 0644
 logcheck-database binary: non-standard-file-perm etc/logcheck/ignore.d.server/smartd 0640 != 0644
