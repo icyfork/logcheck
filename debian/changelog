@@ -45,6 +45,7 @@ logcheck (1.2.65) unstable; urgency=low
   * ignore.d.server/dhcp:
     - ignore DHCPACKs that have no hardware address (Windows).
   * fix wording in header.txt (closes: #472937).
+  * change obsolete mailx dependency to bsd-mailx.
 
  -- martin f. krafft <madduck@debian.org>  Tue, 24 Jun 2008 18:56:26 +0100
 
