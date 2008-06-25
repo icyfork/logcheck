@@ -7,6 +7,7 @@ logcheck (1.2.65) unstable; urgency=low
       Justin Larue (closes: #486440).
     - ignore hostname verification due to DNS name not found; thanks to
       Justin Larue (closes: #486440).
+    - do not report connection failures due to timeouts.
   * ignore.d.server/maradns:
     - ignore messages related to resolvconf integration.
   * ignore.d.server/dovecot:
