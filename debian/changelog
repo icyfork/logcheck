@@ -1,3 +1,10 @@
+logcheck (1.2.66) unstable; urgency=low
+
+  * Re-added mailx as dependency, which is a virtual package. Lintian
+    misguided me. Sorry (closes: #488102).
+
+ -- martin f. krafft <madduck@debian.org>  Thu, 26 Jun 2008 15:49:15 +0200
+
 logcheck (1.2.65) unstable; urgency=low
 
   * violations.ignore.d/logcheck-postfix:
