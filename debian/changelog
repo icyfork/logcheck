@@ -1,3 +1,12 @@
+logcheck (1.2.67) unstable; urgency=low
+
+  [ Gerfried Fuchs ]
+  * fix ignore.d.server/smbd_audit which had an unescaped | resulting in
+    everything ignored (closes: #489009). As this hasn't transitioned yet to
+    testing no urgency bump.
+
+ -- Gerfried Fuchs <rhonda@debian.at>  Thu, 03 Jul 2008 09:36:13 +0200
+
 logcheck (1.2.66) unstable; urgency=low
 
   * Re-added mailx as dependency, which is a virtual package. Lintian
