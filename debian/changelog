@@ -4,8 +4,10 @@ logcheck (1.2.67) unstable; urgency=low
   * fix ignore.d.server/smbd_audit which had an unescaped | resulting in
     everything ignored (closes: #489009). As this hasn't transitioned yet to
     testing no urgency bump.
+  * Added README.source, more or less a plain copy from
+    <http://www.logcheck.org/git.html>
 
- -- Gerfried Fuchs <rhonda@debian.at>  Thu, 03 Jul 2008 09:36:13 +0200
+ -- Gerfried Fuchs <rhonda@debian.at>  Fri, 04 Jul 2008 10:38:07 +0200
 
 logcheck (1.2.66) unstable; urgency=low
 

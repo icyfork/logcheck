@@ -1,0 +1,69 @@
+Logcheck - git
+[ transcription of <http://www.logcheck.org/git.html> ]
+
+The logcheck git repository is available via for online browsing:
+<http://git.debian.org/?p=logcheck/logcheck.git;a=summary>
+
+To obtain the source, you clone it:
+
+git clone git://git.debian.org/git/logcheck/logcheck.git
+# or the webpage sources:
+git clone git://git.debian.org/git/logcheck/web.git
+
+To submit patches, please follow this document:
+<http://repo.or.cz/w/git.git?a=blob;f=Documentation/SubmittingPatches;hb=HEAD>
+
+And send your patches via email to the logcheck-devel mailing list:
+<http://lists.alioth.debian.org/mailman/listinfo/logcheck-devel>
+
+First, the setup, which you only have to do once on each machine you work
+with:
+
+# leave out --global if you want to set your identity only for logcheck
+git config --global user.name 'your name'
+git config --global user.email 'your@email.address'
+# the next two are not needed but ensure that git does not send patches to
+# your own email address.
+git config sendemail.signedoffcc false
+git config sendemail.suppressfrom true
+git clone git://git.debian.org/git/logcheck/logcheck.git
+
+To prepare the actual patch, do the following:
+
+git pull
+git checkout -b some-name-identifying-my-work
+while not finished:
+  // if resuming after a while, maybe update your branch:
+  git rebase master
+  // edit files
+  git add files
+  git commit
+  ...
+end
+
+After you've brought your change to a state where you want to submit it,
+please squash it into logical single commits. If you only made one change,
+then this will do:
+
+git checkout -b temp-squash master
+git merge --squash some-name-identifying-my-work
+git commit // ... remove the "Squashed commit of the following:" leader
+git format-patch -M -s master
+// now inspect the files this created in $PWD
+// when you're ready to submit, do:
+git send-email --to your@email.address
+// check that it's okay when it arrives
+git send-email --to logcheck-devel@lists.alioth.debian.org
+
+For multiple logical changes, cherry-pick or squash-merge every commit
+belonging to a change to the integration branch and then commit it.
+
+Also, read the git-send-email manpage in case you're submitting multiple
+logical changes, in case you want to thread them.
+
+The manpage also includes information about adding a prologue message
+explaining your patch, or how to insert it into an existing thread
+(in-reply-to).
+
+Developers with write access to the repository may also push their
+changes, using the ssh transport instead of the git protocol.
