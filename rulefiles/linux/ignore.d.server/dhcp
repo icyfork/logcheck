@@ -19,7 +19,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPNAK on [.0-9]{7,15} to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPINFORM from [.0-9]{7,15} via [.[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPRELEASE of [.0-9]{7,15} from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [.[:alnum:]-]+ \((not |)found\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]{7,15}( \([:[:alnum:]]+\) via [.[:alnum:]-]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]{7,15}( \(([:[:xdigit:]]+|<no client hardware address>)\) via [.[:alnum:]-]+)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: pool [0-9a-f]{7} [.0-9]{7,15}/[:[:alnum:]]+ total [:[:alnum:]]+  free [:[:alnum:]]+  backup [:[:alnum:]]+  lts [:[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: ICMP Echo reply while lease [.[:digit:]]{7,15} valid\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: Abandoning IP address [.[:digit:]]{7,15} pinged before offer$

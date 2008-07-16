@@ -1,3 +1,73 @@
+logcheck (1.2.67) unstable; urgency=low
+
+  [ Gerfried Fuchs ]
+  * fix ignore.d.server/smbd_audit which had an unescaped | resulting in
+    everything ignored (closes: #489009). As this hasn't transitioned yet to
+    testing no urgency bump.
+  * Added README.source, more or less a plain copy from
+    <http://www.logcheck.org/git.html>
+
+ -- Gerfried Fuchs <rhonda@debian.at>  Fri, 04 Jul 2008 10:38:07 +0200
+
+logcheck (1.2.66) unstable; urgency=low
+
+  * Re-added mailx as dependency, which is a virtual package. Lintian
+    misguided me. Sorry (closes: #488102).
+  * Upgrade to Standards-Version 3.8.0, which requires no other changes.
+
+ -- martin f. krafft <madduck@debian.org>  Thu, 26 Jun 2008 15:49:15 +0200
+
+logcheck (1.2.65) unstable; urgency=low
+
+  * violations.ignore.d/logcheck-postfix:
+    - fixed filters for certificate messages that changed in postfix 2.5.
+  * ignore.d.server/postfix:
+    - ignore connection messages for anonymous TLS connections; thanks to
+      Justin Larue (closes: #486440).
+    - ignore hostname verification due to DNS name not found; thanks to
+      Justin Larue (closes: #486440).
+    - do not report connection failures due to timeouts.
+  * ignore.d.server/maradns:
+    - ignore messages related to resolvconf integration.
+  * ignore.d.server/dovecot:
+    - ignore aborted logins with 0 authentication attempts, e.g. due to
+      nagios; thanks to René Hertell (closes: #487208).
+  * ignore.d.server/cron-apt:
+    - ignore harmless messages about state and space usage prediction; thanks
+      to Daniel Hahler (closes: #484546).
+  * ignore.d.server/spamd:
+    - ignore child state K; thanks to Ross Boylan (closes: #484328).
+  * ignore.d.server/ssh:
+    - ignore host-based auth logins; thanks to Tilman Koschnick
+      (closes: #483214)
+  * ignore.d.server/imapproxy:
+    - ignore failures to read from client socket (closes: #482523).
+  * ignore.d.server/courier:
+    - update rules to include port information; thanks to Antoine Pardignon
+      (closes: #446310).
+    - ignore couriertcpd messages; thanks to Andrew Gallagher
+      (closes: #451118).
+  * ignore.d.server/smbd_audit:
+    - ignore smbd audit log entries (closes: #452879).
+  * ignore.d.server/acpid:
+    - follow recent modifications in acpid log output; thanks to Arno Renevier
+      (closes: #450660).
+  * ignore.d.server/otrs:
+    - ignore OTRS CGI notices (closes: #450697).
+  * ignore.d.server/openvpn:
+    - ignore messages about dropped packets due to bad source addresses (out
+      of connection messages).
+    - ignore messages about packets with wrong encapsulated lengths, which are
+      mostly portscanners, or hosts connecting to openvpn on ports like 443.
+  * ignore.d.server/schroot:
+    - ignore operational schroot messages for logins and running commands.
+  * ignore.d.server/dhcp:
+    - ignore DHCPACKs that have no hardware address (Windows).
+  * fix wording in header.txt (closes: #472937).
+  * change obsolete mailx dependency to bsd-mailx.
+
+ -- martin f. krafft <madduck@debian.org>  Tue, 24 Jun 2008 18:56:26 +0100
+
 logcheck (1.2.64~bpo40+1) etch-backports; urgency=low
 
   * Rebuild for etch-backports.
