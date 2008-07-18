@@ -1,24 +1,24 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Lame delegation$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Lame server on '[^[:space:]]+' \(in '[^[:space:]]+'\?\): \[[.0-9]+\].[0-9]+ '[^[:space:]]+'$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Response from$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: reloading$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Cleaned cache of [0-9]+ RRsets?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Sent NOTIFY for [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: approved AXFR from [^[:space:]]+ for [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone transfer \(AXFR\) of [^[:space:]]+ to [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: suppressing duplicate notify$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: USAGE [0-9]+ [0-9]+ CPU=[.0-9]+u/[.0-9]+s CHILDCPU=[.0-9]+u/[.0-9]+s$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: NSTATS [0-9]+ [0-9]+( (A|CNAME|SOA|NS|PTR|MX|TXT|AAAA|SRV|38|IXFR|AXFR|ANY|NAPTR)=[0-9]+)+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: XSTATS [0-9]+ [0-9]+( (RR|RNXD|RFwdR|RDupR|RFail|RFErr|RErr|RAXFR|RLame|ROpts|SSysQ|SAns|SFwdQ|SDupQ|SErr|RQ|RIQ|RFwdQ|RDupQ|RTCP|SFwdR|SFail|SFErr|SNaAns|SNXD|RUQ|RURQ|RUXFR|RUUpd)=[0-9]+)+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: lame server resolving '[^[:space:]]+' \(in '[^[:space:]]+'\?\): [.0-9.]+#[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Received NOTIFY answer$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: (master|slave) zone "[^[:space:]]+" \(IN\) loaded \(serial [0-9]+\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: (ns_forw|ns_resp|sysquery): query\([^[:space:]]+\) (NS points to CNAME \([^[:space:]]+\)|No possible A RRs|All possible A RR's lame|Bogus LOOPBACK A RR \([^[:space:]]+\) learnt \([^[:space:]]+\))$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client [0-9a-f.:]+#[0-9]+: transfer of '[^[:space:]]+/IN': AXFR (started|ended)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone [^[:space:]]+: transferred serial [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: transfer of '[^[:space:]]+' from [^[:space:]]+: end of transfer$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone [^[:space:]]+/IN: sending notifies \(serial [0-9]+\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: rcvd NOTIFY\([^[:space:]]+, IN, SOA\) from \[[0-9a-f.:]+\]\.[0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: late CNAME in answer section for [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: no IPv6 interfaces found$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: loading configuration from '/etc/bind/named\.conf'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (master|slave) zone "[^[:space:]]+" \(IN\) loaded \(serial [[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (ns_forw|ns_resp|sysquery): query\([^[:space:]]+\) (NS points to CNAME \([^[:space:]]+\)|No possible A RRs|All possible A RR's lame|Bogus LOOPBACK A RR \([^[:space:]]+\) learnt \([^[:space:]]+\))$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: Cleaned cache of [[:digit:]]+ RRsets?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: Lame delegation$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: Lame server on '[^[:space:]]+' \(in '[^[:space:]]+'\?\): \[[.[:digit:]]+\].[[:digit:]]+ '[^[:space:]]+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: NSTATS [[:digit:]]+ [[:digit:]]+( (A|CNAME|SOA|NS|PTR|MX|TXT|AAAA|SRV|38|IXFR|AXFR|ANY|NAPTR)=[[:digit:]]+)+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: Received NOTIFY answer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: Response from$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: Sent NOTIFY for [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: USAGE [[:digit:]]+ [[:digit:]]+ CPU=[.[:digit:]]+u/[.[:digit:]]+s CHILDCPU=[.[:digit:]]+u/[.[:digit:]]+s$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: XSTATS [[:digit:]]+ [[:digit:]]+( (RR|RNXD|RFwdR|RDupR|RFail|RFErr|RErr|RAXFR|RLame|ROpts|SSysQ|SAns|SFwdQ|SDupQ|SErr|RQ|RIQ|RFwdQ|RDupQ|RTCP|SFwdR|SFail|SFErr|SNaAns|SNXD|RUQ|RURQ|RUXFR|RUUpd)=[[:digit:]]+)+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: approved AXFR from [^[:space:]]+ for [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client [[:digit:]a-f.:]+#[[:digit:]]+: transfer of '[^[:space:]]+/IN': AXFR (started|ended)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: lame server resolving '[^[:space:]]+' \(in '[^[:space:]]+'\?\): [.[:digit:].]+#[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: late CNAME in answer section for [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: loading configuration from '/etc/bind/named\.conf'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: no IPv6 interfaces found$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: rcvd NOTIFY\([^[:space:]]+, IN, SOA\) from \[[[:digit:]a-f.:]+\]\.[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: reloading$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: suppressing duplicate notify$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: transfer of '[^[:space:]]+' from [^[:space:]]+: end of transfer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [^[:space:]]+/IN: sending notifies \(serial [[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [^[:space:]]+: transferred serial [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone transfer \(AXFR\) of [^[:space:]]+ to [^[:space:]]+$

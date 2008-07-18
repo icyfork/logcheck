@@ -1,19 +1,19 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/pickup\[[0-9]+\]: [[:alnum:]]+: uid=[0-9]+ from=[^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/cleanup\[[0-9]+\]: [[:alnum:]]+: (resent-|)message-id=<[^[:space:]]+>$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/qmgr\[[0-9]+\]: [[:alnum:]]+: from=<[^[:space:]]*>, size=[0-9]+, nrcpt=[0-9]+ \(queue active\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/nqmgr\[[0-9]+\]: [[:alnum:]]+: from=<[^[:space:]]*>, size=[0-9]+, nrcpt=[0-9]+ \(queue active\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:alnum:]]+: to=[^[:space:]]+, relay=[^[:space:]]+, delay=[.0-9]+, (delays=[.0-9/]+, dsn=[.0-9]+, )?status=[[:alnum:]]+ \(.*\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: [[:alnum:]]+: to=[^[:space:]]+, orig_to=[^[:space:]]+, relay=[^[:space:]]+, delay=[.0-9]+, (delays=[.0-9/]+, dsn=[.0-9]+, )?status=[[:alnum:]]+ \(.*\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: [[:alnum:]]+: client=[^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: disconnect from [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: connect from [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(local|pipe|virtual)\[[0-9]+\]: [[:alnum:]]+: to=[^[:space:]]+, (orig_to=[^[:space:]]+, |)relay=[^[:space:]]+, delay=[.0-9]+, (delays=[.0-9/]+, dsn=[.0-9]+, )?status=[[:alnum:]]+ \(.*\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: alias database\.\*rebuilt$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: aliases\.\*longest$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: from=[^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: lost input channel$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: message-id=<[^[:space:]]+>$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: putoutmsg$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: status=[^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\[[0-9]+\]: timeout waiting$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtp\[[0-9]+\]: connect to [^[:space:]]+: Connection timed out \(port 25\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(local|pipe|virtual)\[[[:digit:]]+\]: [[:alnum:]]+: to=[^[:space:]]+, (orig_to=[^[:space:]]+, |)relay=[^[:space:]]+, delay=[.[:digit:]]+, (delays=[.[:digit:]/]+, dsn=[.[:digit:]]+, )?status=[[:alnum:]]+ \(.*\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: (resent-|)message-id=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/nqmgr\[[[:digit:]]+\]: [[:alnum:]]+: from=<[^[:space:]]*>, size=[[:digit:]]+, nrcpt=[[:digit:]]+ \(queue active\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/pickup\[[[:digit:]]+\]: [[:alnum:]]+: uid=[[:digit:]]+ from=[^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/qmgr\[[[:digit:]]+\]: [[:alnum:]]+: from=<[^[:space:]]*>, size=[[:digit:]]+, nrcpt=[[:digit:]]+ \(queue active\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:alnum:]]+: to=[^[:space:]]+, orig_to=[^[:space:]]+, relay=[^[:space:]]+, delay=[.[:digit:]]+, (delays=[.[:digit:]/]+, dsn=[.[:digit:]]+, )?status=[[:alnum:]]+ \(.*\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:alnum:]]+: to=[^[:space:]]+, relay=[^[:space:]]+, delay=[.[:digit:]]+, (delays=[.[:digit:]/]+, dsn=[.[:digit:]]+, )?status=[[:alnum:]]+ \(.*\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: connect to [^[:space:]]+: Connection timed out \(port 25\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:alnum:]]+: client=[^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: connect from [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: disconnect from [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: alias database\.\*rebuilt$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: aliases\.\*longest$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: from=[^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: lost input channel$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: message-id=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: putoutmsg$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: status=[^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: timeout waiting$
