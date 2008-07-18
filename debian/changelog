@@ -1,4 +1,7 @@
-logcheck (1.2.68) unstable; urgency=low
+logcheck (1.3) unstable; urgency=low
+
+  * Formalise the dropping of violations.d/logcheck. Please see
+    /usr/share/doc/logcheck-database/NEWS.Debian.gz for more information.
 
   * ignore.d.server/dovecot:
     - ignore connection closed messages.
