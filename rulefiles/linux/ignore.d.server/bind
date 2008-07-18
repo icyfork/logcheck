@@ -1,11 +1,9 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone [._[:alnum:]-]+/IN(/[._[:alnum:]-]+)?: transferred serial [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: (client [.:[:xdigit:]]+#[[:digit:]]+: )?(view [._[:alnum:]-]+: )?received notify for zone '[._[:alnum:]-]+'$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: unexpected RCODE \((FORMERR|SERVFAIL|NXDOMAIN|NOTIMP|REFUSED|YXDOMAIN|YXRRSET|NXRRSET|NOTAUTH|NOTZONE|BADVERS|<rcode [[:digit:]]+>|[[:digit:]]+)\) resolving '[^[:space:]]+': [.:[:xdigit:]]+#[[:digit:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: FORMERR resolving '[^[:space:]]+': [.:[:xdigit:]]+#[[:digit:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone [._[:alnum:]-]+/IN(/[._[:alnum:]-]+)?: Transfer started.$
-^\w{3} [ :0-9]{11} [-._[:alnum:]]+ named\[[0-9]+\]: client [.:[:xdigit:]]+#[[:digit:]]+: view (localhost|any|slave): query: [-._[:alnum:]]+ IN (CNAME|A6|AAAA|A|MX|PTR|TXT|NS|SOA|SSHFP) [-+](E?)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: (client [.:[:xdigit:]]+#[[:digit:]]+: )?notify question section contains no SOA$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: journal file [-./_[:alnum:]]+ does not exist, creating it$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client [.:[:xdigit:]]+#[[:digit:]]+: updating zone '[-._[:alnum:]]+/IN': (adding an RR|deleting rrset) at '[._[:alnum:]-]+' A$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: dispatch 0x[[:xdigit:]]+: shutting down due to TCP receive error: [.:[:xdigit:]]+#[[:digit:]]+: connection reset$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: enforced delegation-only for '[._[:alnum:]-]+' \([._[:alnum:]-]+/(A|AAAA)/IN\) from [.:[:xdigit:]]+#[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: FORMERR resolving '[^[:space:]]+': [.:[:xdigit:]]+#[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client [.:[:xdigit:]]+#[[:digit:]]+: updating zone '[-._[:alnum:]]+/IN': (adding an RR|deleting rrset) at '[._[:alnum:]-]+' A$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client [[:digit:].]+#[[:digit:]]+: query (\(cache\) )?'.*' denied$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: dispatch 0x[[:xdigit:]]+: shutting down due to TCP receive error: [.:[:xdigit:]]+#[[:digit:]]+: connection reset$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: enforced delegation-only for '[._[:alnum:]-]+' \([._[:alnum:]-]+/(A|AAAA)/IN\) from [.:[:xdigit:]]+#[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: journal file [-./_[:alnum:]]+ does not exist, creating it$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: unexpected RCODE \((FORMERR|SERVFAIL|NXDOMAIN|NOTIMP|REFUSED|YXDOMAIN|YXRRSET|NXRRSET|NOTAUTH|NOTZONE|BADVERS|<rcode [[:digit:]]+>|[[:digit:]]+)\) resolving '[^[:space:]]+': [.:[:xdigit:]]+#[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [._[:alnum:]-]+/IN(/[._[:alnum:]-]+)?: Transfer started.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [._[:alnum:]-]+/IN: refresh: failure trying master [._[:alnum:]-]+#53: .*$

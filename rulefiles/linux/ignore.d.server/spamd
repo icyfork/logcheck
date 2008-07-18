@@ -1,32 +1,37 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? connection from [._[:alnum:]-]+ \[[\.[:digit:]]+\] at port [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? (info: )?setuid to [[:alnum:]-]+ succeeded(, reading scores from SQL)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? (clean message|identified spam) \([0-9.-]+/[0-9.]+\) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [0-9.]+ seconds, [0-9]+ bytes\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: prefork: child states: [[:upper:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? got connection over [/[:alnum:].-]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? handled cleanup of child pid [0-9]+ due to SIGCHLD$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? server successfully spawned child process, pid [0-9]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? using default config for [-._+=[:alnum:]]+(@[-._[:alnum:]]+)?: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? creating default_prefs: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: config: created user preferences file: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? (process|check)ing message (<[^>]+>|\(unknown\))( aka <[^>]+>)? for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? server pid: [[:digit:]]{1,5}$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: logger: removing stderr method$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: (spamd: )?result: [.YN] [ [:digit:]-]+ - ([._[:alnum:],]+ )?scantime=[0-9.]+,size=[0-9]+,(user=[^,]+,uid=[0-9]+,required_score=[0-9.]+,rhost=[._[:alnum:]-]+,raddr=[0-9.]+,rport=[/[:alnum:].-]+,)?mid=(<[^[:space:]]+>|\(unknown\))(rmid=(<[^[:space:]]+>|\(unknown\)),)?,(bayes=[.[:digit:]]+(e-[[:digit:]]+)?,)?autolearn=(ham|spam|no|disabled|unavailable) *$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: FuzzyOcr: FuzzyOcr stopped, message got [[:digit:]]+ points by other FuzzyOcr tests \([.[:digit:]]+>[.[:digit:]]+\)\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: (spamd: )?Tell: Setting (local|remote|local,remote) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [.[:digit:]]+ seconds, [[:digit:]]+ bytes$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: (spamd: )?Tell: Did nothing for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [.[:digit:]]+ seconds, [[:digit:]]+ bytes$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: spam reported to (DCC|SpamCop|Pyzor|Razor)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: could not report spam to (SpamCop|Pyzor|Razor|DCC via dccproc)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: no revoke methods available, so couldn't revoke$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: no reporting methods available, so couldn't report$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: SpamCop message older than [[:digit:]]+ days, not reporting
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: SpamCop report to [-._[:alnum:]]+ succeeded$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ check\[[0-9]+\]: rules: meta test [._[:alnum:]]+ has dependency '[._[:alnum:]]+' with a zero score$
-# razor, temporary I hope
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (check|re(port|voke)|admin)\[[0-9]+\]: \[ 2\] \[bootup\] Logging initiated LogDebugLevel=[[:digit:]]+ to sys-syslog$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ check\[[0-9]+\]: \[ 3\] mail [[:digit:]]+ is (not )?known spam\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ admin\[[0-9]+\]: \[ 3\] Attempting to register\.
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ admin\[[0-9]+\]: \[ 3\] Register successful\.  Identity stored in [-/_.[:alnum:]]+/\.razor/identity-[[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ admin\[[0-9]+\]: \[ 2\]  Razor-Agents v[.[:digit:]]+ starting razor-admin -register$
-#437816
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ check\[[0-9]+\]: Use of uninitialized value in split at /usr/share/perl5/Mail/SpamAssassin/Plugin/Check\.pm line 389\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (check|re(port|voke)|admin)\[[[:digit:]]+\]: \[ 2\] \[bootup\] Logging initiated LogDebugLevel=[[:digit:]]+ to sys-syslog$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: (spamd: )?Tell: Did nothing for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [.[:digit:]]+ seconds, [[:digit:]]+ bytes$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: (spamd: )?Tell: Setting (local|remote|local,remote) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [.[:digit:]]+ seconds, [[:digit:]]+ bytes$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: (spamd: )?result: [.YN] [ [:digit:]-]+ - ([._[:alnum:],]+ )?scantime=[[:digit:].]+,size=[[:digit:]]+,(user=[^,]+,uid=[[:digit:]]+,required_score=[[:digit:].]+,rhost=[._[:alnum:]-]+,raddr=[[:digit:].]+,rport=[/[:alnum:].-]+,)?mid=(<[^[:space:]]+>|\(unknown\))(rmid=(<[^[:space:]]+>|\(unknown\)),)?,(bayes=[.[:digit:]]+(e-[[:digit:]]+)?,)?autolearn=(ham|spam|no|disabled|unavailable) *$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: (spamd: )?result: [.YN] [ [:digit:]-]+ - ([._[:alnum:],]+ )?scantime=[[:digit:].]+,size=[[:digit:]]+,(user=[^,]+,uid=[[:digit:]]+,required_score=[[:digit:].]+,rhost=[._[:alnum:]-]+,raddr=[[:digit:].]+,rport=[[:digit:]]+,)?mid=(<[^[:space:]]+>|\(unknown\))(rmid=(<[^[:space:]]+>|\(unknown\)),)?,(bayes=[.[:digit:]]+(e-[[:digit:]]+)?,)?autolearn=(ham|spam|no|disabled|unavailable) *$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: Cannot open bayes databases /home/[_[:alnum:]-]+/.spamassassin/bayes_\* R/W: lock failed: File exists$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: FuzzyOcr: FuzzyOcr stopped, message got [[:digit:]]+ points by other FuzzyOcr tests \([.[:digit:]]+>[.[:digit:]]+\)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: config: created user preferences file: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: failed sanity check, [[:digit:]]+ bytes claimed, [[:digit:]-]+ bytes seen$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: logger: removing stderr method$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: prefork: child states: [[:upper:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: reporter: SpamCop message older than [[:digit:]]+ days, not reporting
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: reporter: SpamCop report to [-._[:alnum:]]+ failed: Net::SMTP error$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: reporter: SpamCop report to [-._[:alnum:]]+ succeeded$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: reporter: could not report spam to (SpamCop|Pyzor|Razor|DCC via dccproc)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: reporter: no reporting methods available, so couldn't report$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: reporter: no revoke methods available, so couldn't revoke$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: reporter: spam reported to (DCC|SpamCop|Pyzor|Razor)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? (clean message|identified spam) \([[:digit:].-]+/[[:digit:].]+\) for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)? in [[:digit:].]+ seconds, [[:digit:]]+ bytes\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? (info: )?setuid to [[:alnum:]-]+ succeeded(, reading scores from SQL)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? (process|check)ing message (<[^>]+>|\(unknown\))( aka <[^>]+>)? for [-._+=[:alnum:]]+(@[-.[:alnum:]]+)?(:[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? (process|check)ing message <[^>]+>( aka <[^>]+>)? for [-._+=[:alnum:]]+(@[-.[:alnum:]]+:[[:digit:]]+|:[[:digit:]]+)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? connection from [._[:alnum:]-]+ \[[\.[:digit:]]+\] at port [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? creating default_prefs: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? got connection over [/[:alnum:].-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? handled cleanup of child pid [[:digit:]]+ due to SIGCHLD$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? server pid: [[:digit:]]{1,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? server successfully spawned child process, pid [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? using default config for [-._+=[:alnum:]]+(@[-._[:alnum:]]+)?: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ admin\[[[:digit:]]+\]: \[ 2\]  Razor-Agents v[.[:digit:]]+ starting razor-admin -register$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ admin\[[[:digit:]]+\]: \[ 3\] Attempting to register\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ admin\[[[:digit:]]+\]: \[ 3\] Register successful\.  Identity stored in [-/_.[:alnum:]]+/\.razor/identity-[[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ admin\[[[:digit:]]+\]: \[ [[:digit:]]+\]  Razor-Agents v[.[:digit:]]+ starting razor-admin --(create|register)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ check\[[[:digit:]]+\]: Use of uninitialized value in split at /usr/share/perl5/Mail/SpamAssassin/Plugin/Check\.pm line 389\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ check\[[[:digit:]]+\]: \[ 3\] mail [[:digit:]]+ is (not )?known spam\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ check\[[[:digit:]]+\]: rules: meta test [._[:alnum:]]+ has dependency '[._[:alnum:]]+' with a zero score$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ re(voke|port)\[[[:digit:]]+\]: reporter: razor2 re(voke|port) failed: No such file or directory re(voke|port) requires authentication at /usr/share/perl5/Mail/SpamAssassin/Plugin/Razor2\.pm line [[:digit:]]+\. at /usr/share/perl5/Mail/SpamAssassin/Plugin/Razor2\.pm line [[:digit:]]+\.
