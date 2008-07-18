@@ -1,0 +1,5 @@
+*.log
+files
+logcheck
+logtail
+logcheck-database
