@@ -85,7 +85,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=24:)?invalid CA certificate$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=26:)?unsupported certificate purpose$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=27:)?certificate not trusted$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: untrusted issuer [-@._/=[:space:][:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: untrusted issuer [-&@(),._/=[:space:][:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: initializing the server-side TLS engine$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: issuer=[[:space:]]*/O=.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: setting up TLS connection (to|from) [._[:alnum:]-]+(\[[[:digit:]a-f.:]{3,39}\])?$
