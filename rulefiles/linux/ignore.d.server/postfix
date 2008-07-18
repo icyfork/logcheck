@@ -170,7 +170,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/local\[[[:digit:]]+\]: warning: maildir access problem for UID/GID=[[:digit:]]+/[[:digit:]]+: create [/.[:alnum:]]+: Permission denied$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/local\[[[:digit:]]+\]: warning: perhaps you need to create the maildirs in advance$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: Peer verification: [[:digit:]]+ dNSNames in certificate found, but no one does match [-_.[:alnum:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: peer certificate has no (subject CN|issuer Organization)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: (tls_text_name: [-._[:alnum:]]+\[[.[:digit:]]+\]: )?peer certificate has no (subject CN|issuer Organization)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: SASL authentication failure: .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [-._[:alnum:]]+\[[.[:digit:]]+\]: SASL (LOGIN|PLAIN|(DIGEST|CRAM)-MD5|APOP) authentication failed(:[ [:alnum:]]*)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: non-SMTP command from [^[:space:]]+\[[[:digit:]a-f.:]{3,39}\]: .+$
