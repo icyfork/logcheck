@@ -2,6 +2,7 @@ logcheck (1.2.68) unstable; urgency=low
 
   * ignore.d.server/dovecot:
     - ignore connection closed messages.
+    - ignore auth failure messages whe ruser and rip are known.
   * ignore.d.server/postfix:
     - ignore messages about untrusted cert issuers that have any of &(), in
       their name.
