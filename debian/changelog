@@ -7,6 +7,8 @@ logcheck (1.2.68) unstable; urgency=low
     - ignore messages about untrusted cert issuers that have any of &(), in
       their name.
     - ignore new message format for lacking subject CN in peer cert.
+  * ignore.d.server/ssh:
+    - ignore authentication failures with new PAM format.
 
  -- martin f. krafft <madduck@debian.org>  Thu, 17 Jul 2008 12:17:19 +0200
 
