@@ -13,6 +13,10 @@ logcheck (1.3) unstable; urgency=low
   * ignore.d.server/ssh:
     - ignore authentication failures with new PAM format.
 
+  * Rulefiles are now installed with mode 644; the directories are still moe
+    700, so the files are not publicly readable (unless the admin hardlinks
+    them elsewhere).
+
  -- martin f. krafft <madduck@debian.org>  Thu, 17 Jul 2008 12:17:19 +0200
 
 logcheck (1.2.67) unstable; urgency=low

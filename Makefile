@@ -33,17 +33,17 @@ install:
 	install -m 640 etc/logcheck.conf $(DESTDIR)/$(CONFDIR)
 
 	# Install the rulefiles
-	install -m 640 rulefiles/linux/ignore.d.paranoid/* \
+	install -m 644 rulefiles/linux/ignore.d.paranoid/* \
 		$(DESTDIR)/$(CONFDIR)/ignore.d.paranoid/
-	install -m 640 rulefiles/linux/ignore.d.server/* \
+	install -m 644 rulefiles/linux/ignore.d.server/* \
 		$(DESTDIR)/$(CONFDIR)/ignore.d.server/
-	install -m 640 rulefiles/linux/ignore.d.workstation/* \
+	install -m 644 rulefiles/linux/ignore.d.workstation/* \
 		$(DESTDIR)/$(CONFDIR)/ignore.d.workstation/
-	install -m 640 rulefiles/linux/violations.d/* \
+	install -m 644 rulefiles/linux/violations.d/* \
 		$(DESTDIR)/$(CONFDIR)/violations.d/
-	install -m 640 rulefiles/linux/violations.ignore.d/* \
+	install -m 644 rulefiles/linux/violations.ignore.d/* \
 		$(DESTDIR)/$(CONFDIR)/violations.ignore.d/
-	install -m 640 rulefiles/linux/cracking.d/* \
+	install -m 644 rulefiles/linux/cracking.d/* \
 		$(DESTDIR)/$(CONFDIR)/cracking.d/
 
 clean:
