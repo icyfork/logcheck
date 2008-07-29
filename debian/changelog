@@ -9,6 +9,8 @@ logcheck (1.2.68) unstable; urgency=low
     - ignore "NOQUEUE: milter-reject" messages.
     - enhanced "TLS library problem" rule to also ignore "bad
       certificate" errors.
+    - added rule to ignore "SSL23_GET_CLIENT_HELLO:unknown protocol"
+      messages.
 
  -- martin f. krafft <madduck@debian.org>  Thu, 17 Jul 2008 12:17:19 +0200
 
