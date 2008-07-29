@@ -21,4 +21,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\([[:alnum:]]+\): client in: CONT<hidden>
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\([[:alnum:]]+\): client out: CONT[[:space:]]+[[:digit:]]+[[:space:]]+[[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Fixed index file /[-._/[:alnum:]&]+/dovecot\.index: first_(recent|unseen)_uid_lowwater [[:digit:]]+ -> [[:digit:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Connection closed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Connection closed(: Connection reset by peer)?$
