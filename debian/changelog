@@ -2,6 +2,7 @@ logcheck (1.2.68) unstable; urgency=low
 
   * ignore.d.server/dovecot:
     - ignore connection closed messages.
+    - ignore forwards and to cope with missing >'s at the end of long msgids.
 
  -- martin f. krafft <madduck@debian.org>  Thu, 17 Jul 2008 12:17:19 +0200
 
