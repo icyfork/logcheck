@@ -6,7 +6,9 @@ logcheck (1.2.68) unstable; urgency=low
     - ignore closed connection messages also when connection is reset by peer.
 
   * ignore.d.server/postfix:
-    - ignore "NOQUEUE: milter-reject" messages
+    - ignore "NOQUEUE: milter-reject" messages.
+    - enhanced "TLS library problem" rule to also ignore "bad
+      certificate" errors.
 
  -- martin f. krafft <madduck@debian.org>  Thu, 17 Jul 2008 12:17:19 +0200
 
