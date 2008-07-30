@@ -1,5 +1,7 @@
 logcheck (1.2.68) unstable; urgency=low
 
+  * Thanks to Hanspeter Kunz for all his patches.
+
   * ignore.d.server/dovecot:
     - ignore connection closed messages.
     - ignore forwards and to cope with missing >'s at the end of long msgids.
