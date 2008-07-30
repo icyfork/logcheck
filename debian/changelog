@@ -6,12 +6,21 @@ logcheck (1.3) unstable; urgency=low
   * Remove most messages from cracking.d/logcheck and split up the remaining
     ones into separate files.
 
+  * Thanks to Hanspeter Kunz for all his patches.
+
   * ignore.d.server/dovecot:
     - ignore connection closed messages.
     - ignore auth failure messages whe ruser and rip are known.
+    - ignore forwards and to cope with missing >'s at the end of long msgids.
+    - ignore closed connection messages also when connection is reset by peer.
   * ignore.d.server/postfix:
     - ignore messages about untrusted cert issuers that have any of &(), in
       their name.
+    - ignore "NOQUEUE: milter-reject" messages.
+    - enhanced "TLS library problem" rule to also ignore "bad
+      certificate" errors.
+    - added rule to ignore "SSL23_GET_CLIENT_HELLO:unknown protocol"
+      messages.
     - ignore new message format for lacking subject CN in peer cert.
   * ignore.d.server/ssh:
     - ignore authentication failures with new PAM format.

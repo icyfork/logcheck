@@ -109,6 +109,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: (dis)?connect from [^[:space:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: discard: RCPT from [^[:space:]]+: <[^[:space:]]+>: .+; from=[^[:space:]]+ to=[^[:space:]]+ proto=E?SMTP helo=<[^[:space:]]+>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: milter-reject: MAIL from [-._[:alnum:]]+\[[.[:digit:]]+\]: 451 4\.(7\.1 Service unavailable|3\.2 AV system temporarily overloaded) - (please )?try (again )?later; proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: milter-reject: MAIL from [^[:space:]]+: .+; from=[^[:space:]]+ proto=E?SMTP helo=<[^[:space:]]+>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: milter-reject: RCPT from [-._[:alnum:]]+\[[.[:digit:]]+\]: 554 5\.7\.1 Suspicious recipient address blocked; from=<[^[:space:]]*> proto=E?SMTP helo=<[^[:space:]]+>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: reject: [[:upper:]]+ from [^[:space:]]+: 554( 5\.7\.1)? <[^[:space:]]+>: Relay access denied;( from=<[^[:space:]]*> to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: reject: [[:upper:]]+ from [^[:space:]]+: 554( [[:digit:]]\.[[:digit:]]\.[[:digit:]])? <[^[:space:]]+>: Client host rejected: Access denied;( from=<[^[:space:]]*> to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
@@ -164,7 +165,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin try and connect to a host$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin trying to open db '[^[:space:]]+' on host '[^[:space:]]+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin: no result found$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL3_READ_BYTES:sslv3 alert unexpected message:s3_pkt\.c:[[:digit:]]+:SSL alert number 10:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL3_READ_BYTES:sslv3 alert (unexpected message|bad certificate):s3_pkt\.c:[[:digit:]]+:SSL alert number (10|42):$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: milter unix:/var/run/clamav/clamav-milter\.ctl: can't read SMFIC_MAIL reply packet header: Connection timed out$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:xdigit:]]+: replace: header [-[:alnum:]]+: .+: [-[:alnum:]]+: .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/local\[[[:digit:]]+\]: warning: maildir access problem for UID/GID=[[:digit:]]+/[[:digit:]]+: create [/.[:alnum:]]+: Permission denied$
@@ -175,3 +176,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [-._[:alnum:]]+\[[.[:digit:]]+\]: SASL (LOGIN|PLAIN|(DIGEST|CRAM)-MD5|APOP) authentication failed(:[ [:alnum:]]*)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: non-SMTP command from [^[:space:]]+\[[[:digit:]a-f.:]{3,39}\]: .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/trivial-rewrite\[[[:digit:]]+\]: warning: valid_ipv4_hostaddr: invalid octet count: ?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol:s23_srvr\.c:[[:digit:]]+:$

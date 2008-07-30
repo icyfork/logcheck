@@ -1,16 +1,17 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (dovecot: )?(imap|pop3)-login: Disconnected \[[.:[:xdigit:]]+\]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (imap|pop3)-login: Login: [.[:alnum:]@-]+ \[[.:[:xdigit:]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ deliver\([-_.@[:alnum:]]+\): msgid=<[^[:space:]]+>( \((added by [^[:space:]]+|sfid-[_[:xdigit:]]+)\))?: saved mail to [-_.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ deliver\([-_.@[:alnum:]]+\): msgid=<[^[:space:]]+>?( \((added by [^[:space:]]+|sfid-[_[:xdigit:]]+)\))?: (saved mail to [-_.[:alnum:]]+|forwarded to <[^[:space:]]+>)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: \(pam_unix\) authentication failure; logname= uid=0 euid=0 tty=dovecot ruser=([-_.@[:alnum:]]+)? rhost=([.:[:xdigit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: \(pam_unix\) check pass; user unknown$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: pam_unix\(dovecot:[[:alnum:]]+\): authentication failure; logname= uid=0 euid=0 tty=dovecot ruser= rhost=$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: pam_unix\(dovecot:[[:alnum:]]+\): check pass; user unknown$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (imap|pop3)-login: Login: [.[:alnum:]@-]+ \[[.:[:xdigit:]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login( \([[:digit:]]+ authentication attempts\))?: rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login: (user=<[-_.@[:alnum:]]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), )?rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: ((Too many invalid commands|Inactivity): )?(user=<[-_.@[:alnum:]]+>, )?(method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), )?rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Logged out$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Login: user=<[-_.@[:alnum:]]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Connection closed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Connection closed(: Connection reset by peer)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Disconnected(: Logged out| for inactivity|: Disconnected| in [[:upper:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Fixed index file /[-._/[:alnum:]&]+/dovecot\.index: first_(recent|unseen)_uid_lowwater [[:digit:]]+ -> [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: POP3\([-_.@[:alnum:]]+\): Disconnected(: Logged out| for inactivity|: Disconnected)? top=[[:digit:]]+/[[:digit:]]+, retr=[[:digit:]]+/[[:digit:]]+, del=[[:digit:]]+/[[:digit:]]+, size=[[:digit:]]+$
