@@ -30,6 +30,8 @@ logcheck (1.3) unstable; urgency=low
     - ignore message when IP was already set to the current IP.
   * ignore.d.server/ntp:
     - allow hyphen in interface names in listen messages.
+  * ignore.d.server/pdns:
+    - ignore parsing errors for packages of arbitrary size.
 
   * Rulefiles are now installed with mode 644; the directories are still moe
     700, so the files are not publicly readable (unless the admin hardlinks

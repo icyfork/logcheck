@@ -49,4 +49,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gpgsql Connection succesful$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gsqlite: connection to '[-._/[:alnum:]]+' success?ful$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns_recursor\[[[:digit:]]+\]: Refreshed ([[:digit:]]+|\.) records$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns_recursor\[[[:digit:]]+\]: Unable to parse packet from remote( UDP)? server [.[:digit:]]{7,15}: (Wrong size for A record \(0\)|Error parsing packet of 115 bytes \(rd=0\), out of bounds: vector::_M_range_check|packet smalll?er than DNS header)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns_recursor\[[[:digit:]]+\]: Unable to parse packet from remote( UDP)? server [.[:digit:]]{7,15}: (Wrong size for A record \(0\)|Error parsing packet of [[:digit:]]+ bytes \(rd=0\), out of bounds: vector::_M_range_check|packet smalll?er than DNS header)$
