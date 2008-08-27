@@ -26,6 +26,8 @@ logcheck (1.3) unstable; urgency=low
     - ignore authentication failures with new PAM format.
   * ignore.d.server/kernel:
     - ignore unsupported function warnings from PnPBIOS
+  * ignore.d.server/no-ip:
+    - ignore message when IP was already set to the current IP.
 
   * Rulefiles are now installed with mode 644; the directories are still moe
     700, so the files are not publicly readable (unless the admin hardlinks
