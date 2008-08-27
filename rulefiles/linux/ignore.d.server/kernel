@@ -201,6 +201,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? usbcore: registered new driver [_[:lower:]-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? usbcore: registered new interface driver [_[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? usbmon: debugfs is not available$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? PnPBIOS: (get_stat_res|escd_info|isapnp_config): function not supported on this system$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ modprobe: FATAL: Error inserting apm \([^[:space:]]+\): No such device$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ scsi.agent\[[[:digit:]]+\]: (disk|cdrom) at [\./:[:alnum:]-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ scsi.agent\[[[:digit:]]+\]:[[:space:]]+ sd_mod: loaded successfully \(for disk\)$
