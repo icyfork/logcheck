@@ -26,6 +26,7 @@ logcheck (1.3) unstable; urgency=low
       letter SMTP commands.
     - ignore milter-reject messages after RCPT which include the recipient.
     - ignore multiple PIX workaround messages.
+    - ignore anvil connection rate statistics for unknown DNS hosts.
   * ignore.d.server/ssh:
     - ignore authentication failures with new PAM format.
   * ignore.d.server/kernel:
