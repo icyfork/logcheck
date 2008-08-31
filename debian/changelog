@@ -1,7 +1,8 @@
 logcheck (1.3) unstable; urgency=low
 
   * Formalise the dropping of violations.d/logcheck. Please see
-    /usr/share/doc/logcheck-database/NEWS.Debian.gz for more information.
+    /usr/share/doc/logcheck-database/NEWS.Debian.gz for more information
+    (closes: #471072).
 
   * Remove most messages from cracking.d/logcheck and split up the remaining
     ones into separate files.
