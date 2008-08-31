@@ -18,3 +18,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) Connection from [._[:alnum:]-]+ \[[.:[:xdigit:]]+\] denied\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) PAM\([-_.[:alnum:]]+\): Authentication failure\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) SECURITY VIOLATION: root login attempted\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) Passive data transfer failed, possibly due to network issues$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) Check your PassivePorts and MasqueradeAddress settings,$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) and any router, NAT, and firewall rules in the network path\.$
