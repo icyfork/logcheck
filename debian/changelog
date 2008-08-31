@@ -15,6 +15,7 @@ logcheck (1.3) unstable; urgency=low
     - ignore closed connection messages also when connection is reset by peer.
   * ignore.d.server/postfix:
     - fix most regexps to support IPv6 addresses.
+    - allow port 587 in regexps whereever port 25 is used.
     - ignore messages about untrusted cert issuers that have any of &(), in
       their name.
     - ignore "NOQUEUE: milter-reject" messages.
