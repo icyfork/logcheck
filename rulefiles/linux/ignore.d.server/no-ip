@@ -1,1 +1,0 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ no-ip\[[[:digit:]]+\]: [-._[:alnum:]]+ was already set to [.[:digit:]]{7,15}\.$
