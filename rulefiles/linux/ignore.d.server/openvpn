@@ -15,6 +15,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: Initialization Sequence Completed$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: Listening for incoming TCP connection on [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: MULTI: TCP INIT maxclients=[[:digit:]]+ maxevents=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: MULTI: new connection by client '[-._[:alnum:]]+' will cause previous active sessions by this client to be dropped\.  Remember to use the --duplicate-cn option if you want multiple clients using the same certificate or username to concurrently connect\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: MULTI: multi_create_instance called$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: MULTI: multi_init called, r=[[:digit:]]+ v=[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: NOTE: UID/GID downgrade will be delayed because of --client, --pull, or --up-delay$
