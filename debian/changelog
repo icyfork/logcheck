@@ -7,6 +7,8 @@ logcheck (1.3) unstable; urgency=low
   * Remove most messages from cracking.d/logcheck and split up the remaining
     ones into separate files.
 
+  * Add Auto-Submitted header to outgoing mails (closes: #489172).
+
   * Thanks to Hanspeter Kunz for all his patches.
 
   * ignore.d.server/dovecot:

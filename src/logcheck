@@ -59,6 +59,9 @@ REPORTLEVEL="server"
 # default to sent mails to local root
 SENDMAILTO="root"
 
+# by default, append a header
+MAILARGS="-a 'Auto-Submitted: auto-generated'"
+
 # Set the default subject lines
 ATTACKSUBJECT="Security Alerts"
 SECURITYSUBJECT="Security Events"
@@ -171,7 +174,7 @@ Also verify that the logcheck user can read all files referenced in
 
 $(export)
 EOF
-	} | mail -s "Logcheck: $HOSTNAME $DATE exiting due to errors" \
+	} | mail $MAILARGS -s "Logcheck: $HOSTNAME $DATE exiting due to errors" \
 	    "$SENDMAILTO"
     
     elif [ $MAILOUT -eq 1 ]; then
@@ -306,7 +309,7 @@ sendreport() {
             echo Could not send report as attachment, nail not installed >> $TMPDIR/report
           fi
         fi
-        cat $TMPDIR/report | mail -s "$subject" "$SENDMAILTO"
+        cat $TMPDIR/report | mail $MAILARGS -s "$subject" "$SENDMAILTO"
     fi
 }
 
