@@ -43,6 +43,7 @@ logcheck (1.3) unstable; urgency=low
   * ignore.d.server/openvpn:
     - ignore messages about clients reconnecting and dropping previous active
       connections.
+    - ignore restarts due to fatal TLS errors.
 
   * Rulefiles are now installed with mode 644; the directories are still moe
     700, so the files are not publicly readable (unless the admin hardlinks

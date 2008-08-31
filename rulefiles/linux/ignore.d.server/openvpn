@@ -53,7 +53,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? OPTIONS IMPORT: timers and/or timeouts modified$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? REMOVE PUSH ROUTE: 'route [.[:digit:]]{7,15} [.[:digit:]]{7,15}'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Re-using (SSL/TLS context|pre-shared static key)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? SIGUSR1\[soft,(ping-restart|connection-reset)\] received, (process|client-instance) restarting$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? SIGUSR1\[soft,(ping-restart|connection-reset|tls-error)\] received, (process|client-instance) restarting$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Fatal TLS error \(check_tls_errors_co\), restarting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: Received control packet from unexpected IP addr: [[:digit:].]{7,15}:[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: TLS handshake failed$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: TLS key negotiation failed to occur within 60 seconds \(check your network connectivity\)$
