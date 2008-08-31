@@ -55,6 +55,7 @@ logcheck (1.3) unstable; urgency=low
     - ignore replay-window backtrack warnings.
     - ignore connection reset messages with negative status (?) numbers.
     - do not require TUN devices to be named tun-*.
+    - also ignore client CNs with @ (closes: #493066).
   * ignore.d.server/proftpd:
     - ignore when proftpd barfs all over syslog when a passive transfer
       failed.
