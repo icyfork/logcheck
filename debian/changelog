@@ -46,6 +46,7 @@ logcheck (1.3) unstable; urgency=low
       connections.
     - ignore restarts due to fatal TLS errors.
     - ignore replay-window backtrack warnings.
+    - ignore connection reset messages with negative status (?) numbers.
 
   * Rulefiles are now installed with mode 644; the directories are still moe
     700, so the files are not publicly readable (unless the admin hardlinks
