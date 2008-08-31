@@ -14,6 +14,7 @@ logcheck (1.3) unstable; urgency=low
     - ignore forwards and to cope with missing >'s at the end of long msgids.
     - ignore closed connection messages also when connection is reset by peer.
   * ignore.d.server/postfix:
+    - fix most regexps to support IPv6 addresses.
     - ignore messages about untrusted cert issuers that have any of &(), in
       their name.
     - ignore "NOQUEUE: milter-reject" messages.
