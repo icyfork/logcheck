@@ -2,7 +2,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: (Outgo|Incom)ing Control Channel Authentication: Using [[:digit:]]+ bit message hash '(SHA1|MD5)' for HMAC authentication$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: ([-_.[:alnum:]]+/)?[.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: (read|write) UDPv4 \[EHOSTUNREACH\]: No route to host \(code=113\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: /sbin/ifconfig tun[-._[:alnum:]]+ [.[:digit:]]{7,15} pointopoint [.[:digit:]]{7,15} mtu [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: /sbin/ifconfig [-._[:alnum:]]+ [.[:digit:]]{7,15} pointopoint [.[:digit:]]{7,15} mtu [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: /sbin/route add -net [.[:digit:]]{7,15} netmask [.[:digit:]]{7,15} gw [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: /sbin/route del -net [.[:digit:]]{7,15} netmask [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: Adaptive compression state (OFF|ON)$
@@ -25,7 +25,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: TCPv4_SERVER link (local \(bound\)|remote): [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: TCPv4_SERVER link (remote|local): \[undef\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: TLS-Auth MTU parms \[ L:[[:digit:]]+ D:[[:digit:]]+ EF:[[:digit:]]+ EB:[[:digit:]]+ ET:[[:digit:]]+ EL:[[:digit:]]+ \]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: TUN/TAP device tun[-._[:alnum:]]+ opened$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: TUN/TAP device [-._[:alnum:]]+ opened$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: UDPv4 link (local( \(bound\))?|remote): (\[undef\]|[._[:alnum:]-]+)(:[[:digit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: VERIFY OK: nsCertType=SERVER$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: [GU]ID set to [-._[:alnum:]]+$
