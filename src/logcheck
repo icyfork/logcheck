@@ -174,7 +174,8 @@ Also verify that the logcheck user can read all files referenced in
 
 $(export)
 EOF
-	} | mail $MAILARGS -s "Logcheck: $HOSTNAME $DATE exiting due to errors" \
+	} | eval mail $MAILARGS \
+	    -s "'Logcheck: $HOSTNAME $DATE exiting due to errors'" \
 	    "$SENDMAILTO"
     
     elif [ $MAILOUT -eq 1 ]; then
@@ -309,7 +310,7 @@ sendreport() {
             echo Could not send report as attachment, nail not installed >> $TMPDIR/report
           fi
         fi
-        cat $TMPDIR/report | mail $MAILARGS -s "$subject" "$SENDMAILTO"
+        cat $TMPDIR/report | eval mail $MAILARGS -s "'$subject'" "$SENDMAILTO"
     fi
 }
 
