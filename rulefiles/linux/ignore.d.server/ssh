@@ -18,6 +18,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_[[:alnum:]]+\) session opened for user [^[:space:]]+( by ([[:alnum:]-]+)?\(uid=[[:digit:]]+\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_unix\) auth could not identify password for \[[-_.[:alnum:]]*\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_unix\) check pass; user unknown$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_unix\) bad username \[[^]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: Could not get shadow information for NOUSER$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: PAM: Authentication failure for [^[:space:]]+ from ([:.[:xdigit:]]+|UNKNOWN|[-_.[:alnum:]]+)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: PAM: User not known to the underlying authentication module for i(llegal|nvalid) user [^[:space:]]+ from ([:.[:xdigit:]]+|UNKNOWN|[-_.[:alnum:]]+)$
