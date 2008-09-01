@@ -1,3 +1,9 @@
+logcheck (1.2.68~bpo40+1) etch-backports; urgency=low
+
+  * Rebuild for etch-backports.
+
+ -- Gerfried Fuchs <rhonda@debian.at>  Mon, 01 Sep 2008 09:59:58 +0200
+
 logcheck (1.2.68) unstable; urgency=low
 
   * Thanks to Hanspeter Kunz for all his patches.
