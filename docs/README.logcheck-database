@@ -111,6 +111,12 @@ thus for instance any log message at all matching "ATTACK"
 a "Security Alert", unless you deliberately tamper with
 "cracking.ignore.d" rules.
 
+** Debian Note: we emptied out ./logcheck and merged all
+./logcheck-<packagename> files into the ignore.d.*/<packagename>
+files. This was done because the standard rules in ./logcheck matched
+too many false positives (see e.g. #449028) and resulted in a lot of
+rule duplication (#254542).
+
 Remember that package-specific "ignore" filters will _not_ override
 non-package-specific "flagging" patterns!  Thus for instance if
 "fooserver" outputs syslog messages like this:
@@ -208,5 +214,8 @@ everything, therefore the following exceptions apply:
 *  Debug messages
 *  Messages produced by software not included in Debian
 *  Temporary messages which are due to a bug in the package
+*  Messages related to daemon startups and shutdowns
 
 Please do not file bugs related to these messages.
+
+# vim:tw=70

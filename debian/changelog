@@ -1,3 +1,21 @@
+logcheck (1.2.68) unstable; urgency=low
+
+  * Thanks to Hanspeter Kunz for all his patches.
+
+  * ignore.d.server/dovecot:
+    - ignore connection closed messages.
+    - ignore forwards and to cope with missing >'s at the end of long msgids.
+    - ignore closed connection messages also when connection is reset by peer.
+
+  * ignore.d.server/postfix:
+    - ignore "NOQUEUE: milter-reject" messages.
+    - enhanced "TLS library problem" rule to also ignore "bad
+      certificate" errors.
+    - added rule to ignore "SSL23_GET_CLIENT_HELLO:unknown protocol"
+      messages.
+
+ -- martin f. krafft <madduck@debian.org>  Thu, 17 Jul 2008 12:17:19 +0200
+
 logcheck (1.2.67~bpo40+1) etch-backports; urgency=low
 
   * Rebuild for etch-backports.
