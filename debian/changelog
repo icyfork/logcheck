@@ -1,3 +1,10 @@
+logcheck (1.3.2) experimental; urgency=low
+
+  [ Gerfried Fuchs ]
+  * Remove amavisd-new conflict, the file name conflict is long gone.
+
+ -- Gerfried Fuchs <rhonda@debian.at>  Tue, 02 Sep 2008 12:19:39 +0200
+
 logcheck (1.3.1) experimental; urgency=low
 
   * Removed ignore.d.server/no-ip, which clashes with the no-ip package, which
