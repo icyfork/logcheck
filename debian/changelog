@@ -1,3 +1,10 @@
+logcheck (1.2.68~bpo40+2) etch-backports; urgency=low
+
+  * Removed Conflicts with amavisd-new, mentioned by David Schweikert. I'll
+    remove it from the master branch too. Sorry for the inconvenience.
+
+ -- Gerfried Fuchs <rhonda@debian.at>  Tue, 02 Sep 2008 12:08:06 +0200
+
 logcheck (1.2.68~bpo40+1) etch-backports; urgency=low
 
   * Rebuild for etch-backports.
