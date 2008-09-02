@@ -41,8 +41,8 @@ install-stamp: build-stamp
 	mkdir -p $(DESTDIR)/usr/share/lintian/overrides
 	install -m644 debian/logcheck.lintian-overrides \
 		$(DESTDIR)/usr/share/lintian/overrides/logcheck
-	install -m644 debian/logcheck-database.lintian-overrides \
-		$(DESTDIR)/usr/share/lintian/overrides/logcheck-database
+	# install -m644 debian/logcheck-database.lintian-overrides \
+	# 	$(DESTDIR)/usr/share/lintian/overrides/logcheck-database
 
 	touch install-stamp
 
