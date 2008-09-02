@@ -5,4 +5,3 @@ etc/logcheck/violations.ignore.d
 etc/logcheck/ignore.d.workstation
 etc/logcheck/ignore.d.server
 etc/logcheck/ignore.d.paranoid
-usr/share/lintian/overrides/logcheck-database
