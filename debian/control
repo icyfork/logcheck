@@ -16,11 +16,11 @@ Depends: adduser, exim4 | mail-transport-agent, cron, sysklogd | system-log-daem
 Recommends: logcheck-database (>= ${source:Version})
 Suggests: syslog-summary
 Description: mails anomalies in the system logfiles to the administrator
- Logcheck was part of the Abacus Project of security tools, but this
- version has been rewritten. 
- .
  Logcheck helps spot problems and security violations in your logfiles
  automatically and will send the results to you in e-mail.
+ .
+ Logcheck was part of the Abacus Project of security tools, but this
+ version has been rewritten.
 
 Package: logcheck-database
 Architecture: all
