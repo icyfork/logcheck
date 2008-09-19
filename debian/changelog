@@ -9,8 +9,10 @@ logcheck (1.3.2) experimental; urgency=low
     (closes: #498613)
   * Apply patch from Jari Aalto for fixing package description paragraph
     ordering by importence, thanks (closes: #499415)
+  * Supress cron session closed messages too, thanks to Ferenc Wagner for
+    noticing (closes: #499393)
 
- -- Gerfried Fuchs <rhonda@debian.at>  Fri, 19 Sep 2008 12:50:48 +0200
+ -- Gerfried Fuchs <rhonda@debian.at>  Fri, 19 Sep 2008 13:03:06 +0200
 
 logcheck (1.3.1) experimental; urgency=low
 
