@@ -27,8 +27,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: Write failed: (Connection (timed out|reset by peer)|Broken pipe)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: recv_rexec_state: ssh_msg_recv failed$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: nss_ldap: reconnect(ing|ed) to LDAP server(\.\.\.| after [[:digit:]]+ attempt\(s\))$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_[[:alnum:]]+\(ssh:session\): session closed for user [^[:space:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_[[:alnum:]]+\(ssh:session\): session opened for user [^[:space:]]+( by ([[:alnum:]-]+)?\(uid=[[:digit:]]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_[[:alnum:]]+\(sshd?:session\): session closed for user [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_[[:alnum:]]+\(sshd?:session\): session opened for user [^[:space:]]+( by ([[:alnum:]-]+)?\(uid=[[:digit:]]+\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_unix\(ssh:[[:alnum:]]+\): check pass; user unknown$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_unix\(ssh:auth\): auth could not identify password for \[[-_.[:alnum:]]*\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: (\(pam_unix\)|pam_unix\(sshd:auth\):) authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=[^[:space:]]+([[:space:]]+user=[^[:space:]]+)?$
