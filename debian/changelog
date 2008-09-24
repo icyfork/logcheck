@@ -1,3 +1,11 @@
+logcheck (1.2.69) unstable; urgency=low
+
+  [ Gerfried Fuchs ]
+  * Merge ssh rule change from violations.ignore.d/logcheck-ssh to
+    ignore.d.server/ssh (closes: #500017)
+
+ -- Gerfried Fuchs <rhonda@debian.at>  Wed, 24 Sep 2008 14:02:56 +0200
+
 logcheck (1.2.68) unstable; urgency=low
 
   * Thanks to Hanspeter Kunz for all his patches.

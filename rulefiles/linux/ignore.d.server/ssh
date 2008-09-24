@@ -21,7 +21,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_unix\(ssh:[[:alnum:]]+\): check pass; user unknown$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_unix\(ssh:auth\): auth could not identify password for \[[-_.[:alnum:]]*\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Address [._[:alnum:]-]+ maps to [._[:alnum:]-]+, but this does not map back to the address - POSSIBLE BREAK-?IN ATTEMPT!$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: reverse mapping checking getaddrinfo for [._[:alnum:]-]+ failed - POSSIBLE BREAK-?IN ATTEMPT!$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: reverse mapping checking getaddrinfo for [._[:alnum:]-]+ (\[[:.[:xdigit:]]+\] )?failed - POSSIBLE BREAK-?IN ATTEMPT!$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: fatal: recv_rexec_state: ssh_msg_recv failed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: ssh_msg_send: write$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnecting: Corrupted MAC on input\.$
