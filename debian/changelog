@@ -8,9 +8,10 @@ logcheck (1.2.69) unstable; urgency=low
       + ignore client connection messages (closes: #495923).
     - violations.d/su:
       + match both, user-root and user:root styles (closes: #491694).
+  * ignore.d.server/nagios, violations.ignore.d/logcheck-nagios: also support
+    nagios3 as string in the log lines (closes: #514335).
 
-
- -- Gerfried Fuchs <rhonda@debian.at>  Wed, 24 Sep 2008 14:02:56 +0200
+ -- Gerfried Fuchs <rhonda@debian.at>  Mon, 09 Feb 2009 21:29:26 +0100
 
 logcheck (1.2.68) unstable; urgency=low
 
