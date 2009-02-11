@@ -1,4 +1,4 @@
-logcheck (1.2.69) unstable; urgency=low
+logcheck (1.2.69) unstable; urgency=high
 
   [ Gerfried Fuchs ]
   * Merge ssh rule change from violations.ignore.d/logcheck-ssh to
@@ -11,7 +11,7 @@ logcheck (1.2.69) unstable; urgency=low
   * ignore.d.server/nagios, violations.ignore.d/logcheck-nagios: also support
     nagios3 as string in the log lines (closes: #514335).
 
- -- Gerfried Fuchs <rhonda@debian.at>  Mon, 09 Feb 2009 21:29:26 +0100
+ -- Gerfried Fuchs <rhonda@debian.at>  Wed, 11 Feb 2009 12:55:11 +0100
 
 logcheck (1.2.68) unstable; urgency=low
 
