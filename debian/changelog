@@ -16,6 +16,10 @@ logcheck (1.3.2) experimental; urgency=low
   * ignore.d.server/nagios, violations.ignore.d/logcheck-nagios: also support
     nagios3 as string in the log lines (closes: #514335).
 
+  [ martin f. krafft ]
+  * ignore.d.server/postfix:
+    - ignore milter rejection messages.
+
  -- Gerfried Fuchs <rhonda@debian.at>  Mon, 09 Feb 2009 21:29:23 +0100
 
 logcheck (1.3.1) experimental; urgency=low
