@@ -20,3 +20,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\([[:alnum:]]+\): client in: CONT<hidden>
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\([[:alnum:]]+\): client out: CONT[[:space:]]+[[:digit:]]+[[:space:]]+[[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-build-param: SSL parameters regeneration completed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: managesieve-login: Login: user=<[._[:alnum:]-]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), rip=[.:[:digit:]]+, lip=[.:[:digit:]]+, (TLS( handshake)?|secured)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: MANAGESIEVE\([._[:alnum:]-]+\): Connection closed$
