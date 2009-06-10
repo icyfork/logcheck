@@ -166,7 +166,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin try and connect to a host$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin trying to open db '[^[:space:]]+' on host '[^[:space:]]+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin: no result found$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL3_READ_BYTES:sslv3 alert (unexpected message|bad certificate):s3_pkt\.c:[[:digit:]]+:SSL alert number (10|42):$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL3_READ_BYTES:(reason\([[:digit:]]+\)|sslv3 alert (unexpected message|bad certificate)):s3_pkt\.c:[[:digit:]]+:SSL alert number (0|10|42):$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: milter unix:/var/run/clamav/clamav-milter\.ctl: can't read SMFIC_MAIL reply packet header: Connection timed out$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:xdigit:]]+: replace: header [-[:alnum:]]+: .+: [-[:alnum:]]+: .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/local\[[[:digit:]]+\]: warning: maildir access problem for UID/GID=[[:digit:]]+/[[:digit:]]+: create [/.[:alnum:]]+: Permission denied$
