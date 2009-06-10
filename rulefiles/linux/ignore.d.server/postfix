@@ -151,7 +151,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: network_biopair_interop: error reading [[:digit:]]+ bytes from the network: Connection reset by peer$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: numeric hostname: [[:xdigit:].:]{3,39}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: numeric result [[[:xdigit:].:]{3,39}]+ in address->name lookup for [^[:space:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: reject: ETRN [._[:alnum:]-]+\.\.\. from [._[:alnum:]-]+\[[[:digit:].]{7,15}\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: reject: ETRN \[?[._[:alnum:]-]+\]?\.\.\. from [._[:alnum:]-]+\[[[:digit:].]{7,15}\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: smtpd_peer_init: [[:xdigit:].:]{3,39}: address not listed for hostname [._[:alnum:]-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: smtpd_spf_result: unknown SPF result 4 \(unknown\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning:( smtpd_peer_init:)? [[:xdigit:].:]{3,39}: hostname [^[:space:]]+ verification failed: (Temporary failure in name resolution|Name or service not known|No address associated with hostname)$
