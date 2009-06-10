@@ -11,7 +11,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/bounce\[[[:digit:]]+\]: [[:xdigit:]]+: sender delivery status notification: [[:xdigit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: (resent-)?message-id=.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: (resent-|)message-id=<?[^>]+>?( \(added by [^[:space:]]+\))?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-discard: END-OF-MESSAGE from [-._[:alnum:]]+\[[.[:digit:]]+\]: milter triggers DISCARD action; from=<[^[:space:]]*> to=<[^[:space:]]*> proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-discard: END-OF-MESSAGE from [-._[:alnum:]]+\[([.[:digit:]]+|[:[:xdigit:]]+)\]: milter triggers DISCARD action; from=<[^[:space:]]*> to=<[^[:space:]]*> proto=E?SMTP helo=<[^[:space:]]+>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: header [^[:space:]]+:.+ from=<[^[:space:]]*>( to=<[^[:space:]]+>)? proto=E?SMTP helo=<[^[:space:]]+>: .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:xdigit:]]+: milter-reject: END-OF-MESSAGE from [-._[:alnum:]]+\[[.[:digit:]]+\]: [45]\.7\.1 (virus [-._/[:alnum:]]+ detected by ClamAV - http://www\.clamav\.net|Command rejected); from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:xdigit:]]+: to=<[^[:space:]]+>, relay=none,( conn_use=[[:digit:]]+,)? delay=[[:digit:].]+,( delays=[[:digit:]./]+,)?( dsn=[45]\.[[:digit:]]\.[[:digit:]],)? status=(bounced|deferred) \(.+\)$
