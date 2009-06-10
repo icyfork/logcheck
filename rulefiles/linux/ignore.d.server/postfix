@@ -133,7 +133,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: fingerprint=([[:digit:]A-F]{2}:){15}[[:digit:]A-F]{2}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: lost connection after [[:upper:]]+( \([[:digit:]]+ bytes\))? from [._[:alnum:]-]+\[(unknown|[[:xdigit:].:]{3,39})\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: timeout after [-[:upper:]]+( \([[:digit:]]+ bytes\))? from [^[:space:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: too many errors after ([[:upper:]]{4}|END-OF-MESSAGE|UNKNOWN) from [._[:alnum:]-]+\[[.[:digit:]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: too many errors after ([[:upper:]]{4}|END-OF-MESSAGE|UNKNOWN|DATA \(0 bytes\)) from [._[:alnum:]-]+\[[.[:digit:]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: unable to open Berkeley db /etc/sasldb: No such file or directory$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: ([-._[:alnum:]]+): RBL lookup error: Host or domain name not found\. Name service error for name=\1 type=A: Host not found, try again$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: ([[:xdigit:].:]{3,39})+: address not listed for hostname [^[:space:]]+$
