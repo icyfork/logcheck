@@ -1,5 +1,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (dovecot: )?(imap|pop3)-login: Disconnected \[[.:[:xdigit:]]+\]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ deliver\([-_.@[:alnum:]]+\): msgid=<?[^:\(]*>?( \((added by [^[:space:]]+|sfid-[_[:xdigit:]]+)\))?: (saved mail to [-_.[:alnum:]]+|forwarded to <[^[:space:]]+>)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ deliver\([-_.@[:alnum:]]+\): msgid=<?[^:\(]*>?( \((added by [^[:space:]]+|sfid-[_[:xdigit:]]+)\)?)?: (saved mail to [-_.[:alnum:]]+|forwarded to <[^[:space:]]+>)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: \(pam_unix\) authentication failure; logname= uid=0 euid=0 tty=dovecot ruser=([-_.@[:alnum:]]+)? rhost=([.:[:xdigit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: \(pam_unix\) check pass; user unknown$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: pam_unix\(dovecot:[[:alnum:]]+\): authentication failure; logname= uid=0 euid=0 tty=dovecot ruser= rhost=$
