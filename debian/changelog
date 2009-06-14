@@ -28,10 +28,10 @@ logcheck (1.3.2) experimental; urgency=low
     - ignore managesieve logins and disconnects
   * ignore.d.server/postfix:
     - generalize rule for ETRN rejections (allow brackets)
-    - IPv6-ification of milter-discard rule 
-    - added optional "orig_to" to one of "postfix/smtp status=sent" rules 
-      where it was missing  
-    - ignore another TLS library problem 
+    - IPv6-ification of milter-discard rule
+    - added optional "orig_to" to one of "postfix/smtp status=sent" rules
+      where it was missing
+    - ignore another TLS library problem
       (SSL3_READ_BYTES:reason(1000):s3_pkt.c:1057:SSL alert number 0)
     - ignore "too many errors after DATA (0 bytes)"
 
