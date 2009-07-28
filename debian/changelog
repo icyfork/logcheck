@@ -3,8 +3,10 @@ logcheck (1.3.3) experimental; urgency=low
   [ Hanspeter Kunz ]
   * ignore.d.server/spamd:
     - enhanced rule to ignore "Tell: Setting local Removing remote" messages
+  * ignore.d.server/dovecot
+    - merged the two rules on aborted logins (thereby matching more cases)
 
- -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Tue, 28 Jul 2009 13:28:23 +0200
+ -- Hanspeter Kunz <hkunz@franz.ifi.uzh.ch>  Tue, 28 Jul 2009 13:58:43 +0200
 
 logcheck (1.3.2) experimental; urgency=low
 

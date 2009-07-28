@@ -5,8 +5,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: pam_unix\(dovecot:[[:alnum:]]+\): authentication failure; logname= uid=0 euid=0 tty=dovecot ruser= rhost=$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: pam_unix\(dovecot:[[:alnum:]]+\): check pass; user unknown$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (imap|pop3)-login: Login: [.[:alnum:]@-]+ \[[.:[:xdigit:]]+\]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login( \([[:digit:]]+ authentication attempts\))?: rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login: (user=<[-_.@[:alnum:]]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), )?rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login( \([[:digit:]]+ authentication attempts\))?: (user=<[-_.@[:alnum:]]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), )?rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: ((Too many invalid commands|Inactivity): )?(user=<[-_.@[:alnum:]]+>, )?(method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), )?rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Logged out$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Login: user=<[-_.@[:alnum:]]+>, method=(PLAIN|plain|LOGIN|login|(CRAM|DIGEST)-MD5|(cram|digest)-md5), rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))?$
