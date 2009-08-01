@@ -6,6 +6,7 @@ logcheck (1.3.3) experimental; urgency=low
   * ignore.d.server/dovecot
     - merged the two rules on aborted logins (thereby matching more cases)
     - ignore more authentication failure messages 
+    - ignore even more authentication failure messages
   * ignore.d.server/vacation (NEW)
     - ignore complaints on mails with no initial from line
   * ignore.d.server/postfix
@@ -13,7 +14,7 @@ logcheck (1.3.3) experimental; urgency=low
   * ignore.d.server/ssh
     - ignore pam_unix(sshd:auth) user unknown messages
 
- -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Sat, 01 Aug 2009 13:57:49 +0200
+ -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Sat, 01 Aug 2009 14:24:09 +0200
 
 logcheck (1.3.2) experimental; urgency=low
 
