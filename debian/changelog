@@ -8,8 +8,10 @@ logcheck (1.3.3) experimental; urgency=low
     - ignore more authentication failure messages 
   * ignore.d.server/vacation (NEW)
     - ignore complaints on mails with no initial from line
+  * ignore.d.server/postfix
+    - ignore more undeliverable mail messages (unknown in virtual alias table)
 
- -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Sat, 01 Aug 2009 13:13:35 +0200
+ -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Sat, 01 Aug 2009 13:32:26 +0200
 
 logcheck (1.3.2) experimental; urgency=low
 
