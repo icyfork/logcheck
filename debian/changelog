@@ -9,8 +9,6 @@ logcheck (1.3.3) experimental; urgency=low
     - ignore more authentication failure messages 
     - ignore even more authentication failure messages
     - ignore ldap authentiation failure messages
-  * ignore.d.server/vacation (NEW)
-    - ignore complaints on mails with no initial from line
   * ignore.d.server/postfix
     - ignore more undeliverable mail messages (unknown in virtual alias table)
   * ignore.d.server/ssh
