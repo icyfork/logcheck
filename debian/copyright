@@ -7,7 +7,7 @@ consisting of:
 	Gerfried Fuchs <rhonda@debian.at>
 	Eric Evans <eevans@sym-link.com>
 	Jamie Penman-Smithson <jamie@silverdream.org>
-  martin f. krafft <madduck@debian.org>
+ 	martin f. krafft <madduck@debian.org>
 
 The project is currently hosted on Alioth at:
 http://alioth.debian.org/projects/logcheck/
@@ -29,7 +29,7 @@ Copyright:
 
 This software is published under the terms of the GNU general public license.
 On Debian systems, a copy of the license can normally be found under 
-/usr/share/common-licenses/GPL.
+/usr/share/common-licenses/GPL-2.
 
 
 Notes on forks:

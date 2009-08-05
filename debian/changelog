@@ -14,6 +14,7 @@ logcheck (1.3.3) experimental; urgency=low
   * ignore.d.server/ssh
     - ignore pam_unix(sshd:auth) user unknown messages
   * increased debian/compat to 7
+  * set license to GPLv2 (instead of GPL) 
 
   [ martin f. krafft ]
   * ignore.d.server/clamav-milter:
@@ -23,7 +24,7 @@ logcheck (1.3.3) experimental; urgency=low
   * ignore.d.server/postfix:
     - clean up "connect to" failure messages.
 
- -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Wed, 05 Aug 2009 16:39:38 +0200
+ -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Wed, 05 Aug 2009 16:41:25 +0200
 
 logcheck (1.3.2) experimental; urgency=low
 
