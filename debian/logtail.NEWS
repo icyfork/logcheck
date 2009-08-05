@@ -1,7 +1,7 @@
 logtail (1.2.35) unstable; urgency=low
 
   * logtail's calling options now respect reverse compatibility with
-    software written preceeding the changes in 1.2.24.  See changelog.
+    software written preceding the changes in 1.2.24.  See changelog.
 
  -- Todd Troxell <ttroxell@debian.org>  Sun, 20 Feb 2005 23:01:00 +0500
 
