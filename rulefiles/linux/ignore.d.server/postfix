@@ -58,14 +58,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>(, orig_to=<[^[:space:]]+>)?, relay=[._[:alnum:]-]+\[[[:digit:].]{7,15}\](:[[:digit:]]{1,5})?,( conn_use=[[:digit:]]+,)? delay=[.[:digit:]]+(, delays=([.[:digit:]]+/){3}[.[:digit:]]+)?(, dsn=[45](\.[[:digit:]]+){2})?, status=(deferred|bounced|undeliverable|SOFTBOUNCE) \(host [._[:alnum:]-]+\[[[:digit:].]{7,15}\] said: [45][[:digit:]][[:digit:]][- ]+.* \(in reply to (HELO|EHLO|MAIL FROM|RCPT TO|DATA|end of DATA) command\)\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>, relay=[._[:alnum:]-]+\[[[:digit:].]{7,15}\](:[[:digit:]]{1,5})?, (conn_use=[[:digit:]]+, )?delay=[.[:digit:]]+(, delays=([.[:digit:]]+/){3}[.[:digit:]]+)?(, dsn=2(\.[[:digit:]]+){2})?, status=deliverable \(250 Ok\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>, relay=[._[:alnum:]-]+\[[[:digit:].]{7,15}\](:[[:digit:]]{1,5})?, delay=[.[:digit:]]+(, delays=([.[:digit:]]+/){3}[.[:digit:]]+)?(, dsn=2(\.[[:digit:]]+){2})?, status=deliverable \(2[[:digit:]][[:digit:]] .*\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: connect to [^[:space:]]+ ?\[[[:xdigit:].:]{3,39}\]: read timeout \(port (25|587)\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: connect to [^[:space:]]+ Connection (refused|timed out) \(port [[:digit:]]+\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: connect to [^[:space:]]+ Network is unreachable \(port (25|587)\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: connect to [^[:space:]]+ No route to host \(port (25|587)\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: connect to [^[:space:]]+ server dropped connection without sending the initial SMTP greeting \(port (25|587)\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: connect to [^[:space:]]+ server refused mail service \(port (25|587)\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: connect to [^[:space:]]+: (Connection timed out|read timeout|Connection refused)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: connect to [^[:space:]]+: server dropped connection without sending the initial greeting \(port (25|587)\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: connect to [^[:space:]]+: (read timeout|Connection (refused|timed out)|Network is unreachable|No route to host)( \(port [[:digit:]]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: connect to [^[:space:]]+ server (refused mail service|dropped connection without sending the initial (SMTP )?greeting)( \(port (25|587)\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: warning: host [^[:space:]]+ greeted me with my own hostname [._[:alnum:]-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: warning: host [^[:space:]]+ replied to HELO/EHLO with my own hostname [._[:alnum:]-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: warning: mailer loop: best MX for [^[:space:]]+ is local$
