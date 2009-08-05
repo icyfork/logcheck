@@ -3,8 +3,8 @@ Section: admin
 Priority: optional
 Maintainer: Debian logcheck Team <logcheck-devel@lists.alioth.debian.org>
 Uploaders: Todd Troxell <ttroxell@debian.org>, Gerfried Fuchs <rhonda@debian.at>, Eric Evans <eevans@debian.org>, martin f. krafft <madduck@debian.org>, Marc Haber <mh+debian-packages@zugschlus.de>, maximilian attems <maks@debian.org>, Hanspeter Kunz <hkunz@ifi.uzh.ch>
-Standards-Version: 3.8.0
-Build-Depends: debhelper (>= 4.1.13)
+Standards-Version: 3.8.2
+Build-Depends: debhelper (>= 7.0.15)
 Build-Depends-Indep: docbook-to-man
 Vcs-Git: git://git.debian.org/git/logcheck/logcheck.git
 Vcs-Browser: http://git.debian.org/?p=logcheck/logcheck.git
