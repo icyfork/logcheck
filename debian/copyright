@@ -27,7 +27,8 @@ Copyright:
  Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
  Copyright (C) 1996-1997 Craig H. Rowland <crowland@psionic.com>
 
-This software is published under the terms of the GNU general public license.
+This software is published under the terms of the GNU general public license,
+version 2 (not later).
 On Debian systems, a copy of the license can normally be found under 
 /usr/share/common-licenses/GPL-2.
 
