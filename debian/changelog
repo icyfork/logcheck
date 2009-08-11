@@ -25,10 +25,6 @@ logcheck (1.3.3) unstable; urgency=low
   * Special-case lockfile error message in case logcheck is still running. Now
     logcheck differentiates between another process still running and some
     other problem with obtaining the lock.
-  * ignore.d.server/clamav-milter:
-    - ignore connect warnings when hostname is "unknown", e.g. when the
-      connection was closed before postfix even had time to create the socket
-      properly (see #530520).
   * ignore.d.server/postfix:
     - clean up "connect to" failure messages.
   * Remove lock directory, which logcheck recreates at runtime.

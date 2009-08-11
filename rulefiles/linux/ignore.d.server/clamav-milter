@@ -1,1 +1,0 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ clamav-milter\[[[:digit:]]{,5}\]: Can't resolve LocalNet hostname unknown$
