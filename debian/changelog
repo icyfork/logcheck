@@ -16,7 +16,7 @@ logcheck (1.3.3) experimental; urgency=low
   * bumped debhelper compatibility level to 6
   * set license to GPLv2 (instead of GPL)
   * fixed typo in logtail.NEWS
-  * bumped standards to 3.8.0
+  * bumped standards to 3.8.2
   * use dh_prep instead of dh_clean -k
 
   [ martin f. krafft ]
