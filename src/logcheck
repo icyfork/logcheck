@@ -624,7 +624,12 @@ lockfile-create --retry 1 $LOCKFILE > /dev/null 2>&1
 
 if [ $? -eq 1 ]; then 
     trap 0
-    error "Failed to get lockfile: $LOCKFILE.lock" "noclean"
+    if [ -e ${LOCKFILE}.lock ]; then
+        error "Another logcheck process is still running" "noclean"
+    else
+        error "Failed to get lockfile: $LOCKFILE.lock" "noclean"
+    fi
+
 else 
     debug "Running lockfile-touch $LOCKFILE.lock"
     lockfile-touch $LOCKFILE &
