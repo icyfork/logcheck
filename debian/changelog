@@ -13,7 +13,7 @@ logcheck (1.3.3) experimental; urgency=low
     - ignore more undeliverable mail messages (unknown in virtual alias table)
   * ignore.d.server/ssh
     - ignore pam_unix(sshd:auth) user unknown messages
-  * Bumped debhelper compatibility level to 6
+  * Bumped debhelper compatibility level to 7
   * Use dh_prep instead of dh_clean -k
   * Specify licence as GPLv2 (instead of unversioned GPL)
   * Fixed typo in logtail.NEWS
