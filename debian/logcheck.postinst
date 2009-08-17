@@ -65,11 +65,9 @@ case "$1" in
           cp -p /usr/share/logcheck/header.txt /etc/logcheck
         fi
 
-	# Fix permissions for lock on install or upgrade
-	if [ ! -n "$2" ] || dpkg --compare-versions "$2" lt "1.2.39"; then
-          chown -R logcheck:logcheck /var/lock/logcheck || true
-	  chmod 755 /var/lock/logcheck || true
-        fi
+	# Fix permissions for lock
+        chown -R logcheck:logcheck /var/lock/logcheck || true
+	chmod 755 /var/lock/logcheck || true
 
 	# Unconditionalizing this for now as we have files that are
 	# unreadable upon upgrade.  <ttroxell@debian.org>
@@ -85,8 +83,6 @@ case "$1" in
           chmod 2750 /etc/logcheck/violations.d || true
           chmod 2750 /etc/logcheck/violations.ignore.d || true
     	  chmod -R g+rX /etc/logcheck || true
-          # just in case
-          chown logcheck /var/lock/logcheck > /dev/null || true
 	fi
     	chown -R logcheck:logcheck /var/lib/logcheck || true
     	chmod 0770 /var/lib/logcheck || true
