@@ -72,3 +72,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbmon: debugfs is not available$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? PnPBIOS: (get_stat_res|escd_info|isapnp_config): function not supported on this system$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ modprobe: FATAL: Error inserting apm \([^[:space:]]+\): No such device$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDP: bad checksum\. From [.[:digit:]]+:[[:digit:]]+ to [.[:digit:]]+:[[:digit:]]+ ulen [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDP: short packet: From [.[:digit:]]+:[[:digit:]]+ [[:digit:]]+/[[:digit:]]+ to [.[:digit:]]+:[[:digit:]]+$

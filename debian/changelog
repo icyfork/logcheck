@@ -4,6 +4,7 @@ logcheck (1.3.4) experimental; urgency=low
   * Adjusted various kernel SCSI rules for removable media
   * Added USB kernel rules for USB_ANNOUNCE_NEW_DEVICES
   * Merged USB "new device" and "reset device" rules
+  * Ignore "UDP: bad checksum" and "UDP: short packet" kernel messages
 
  -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
 
