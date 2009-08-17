@@ -12,7 +12,7 @@ logcheck (1.3.4) experimental; urgency=low
   * Adjusted ssh "Authentication failure" rule for "invalid user"
   * Updated cron-apt "Fetched" rule to match new time formats
     (closes: #531596)
-  * Updated cron-apt "Fetched" rule to match all possible sizes and lengths
+  * Updated cron-apt rules to match all possible sizes and lengths
   * Replaced bashisms with POSIX equivalents (closes: #508546)
   * Depend on rsyslog by default (closes: #526911)
 
