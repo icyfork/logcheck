@@ -8,6 +8,7 @@ logcheck (1.3.4) experimental; urgency=low
   * Corrected xdm pam_session rules
   * Updated acpid "client has disconnected" rule
   * Updated libpam-mount "realpath of X is Y" rule
+  * Added libpam-mount "Command successful" rule
 
  -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
 
