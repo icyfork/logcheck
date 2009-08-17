@@ -9,6 +9,7 @@ logcheck (1.3.4) experimental; urgency=low
   * Updated acpid "client has disconnected" rule
   * Updated libpam-mount "realpath of X is Y" rule
   * Added libpam-mount "Command successful" rule
+  * Adjusted ssh "Authentication failure" rule for "invalid user"
 
  -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
 
