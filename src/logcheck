@@ -22,7 +22,7 @@
 # along with Logcheck; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-if [ $UID == 0 ]; then
+if [ `id -u` = 0 ]; then
     echo "logcheck should not be run as root. Use su to invoke logcheck:"
     echo "su -s /bin/bash -c \"/usr/sbin/logcheck${@:+ $@}\" logcheck"
     echo "Or use sudo: sudo -u logcheck logcheck${@:+ $@}."
@@ -303,7 +303,7 @@ sendreport() {
         if [ $MAILASATTACH -eq 1 ]; then
           debug "Sending report as attachment"
           if command -v nail >/dev/null; then
-            echo -e "Report attached" | nail -s "$subject" -a "$TMPDIR/report" "$SENDMAILTO"
+            echo "Report attached" | nail -s "$subject" -a "$TMPDIR/report" "$SENDMAILTO"
             return $?
           else
             echo >> $TMPDIR/report
