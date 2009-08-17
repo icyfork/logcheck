@@ -12,7 +12,7 @@ Homepage: http://www.logcheck.org/
 
 Package: logcheck
 Architecture: all
-Depends: adduser, exim4 | mail-transport-agent, cron, sysklogd | system-log-daemon | syslog-ng, bsd-mailx | mailx, logtail (>= 1.2.59), lockfile-progs, ${misc:Depends}
+Depends: adduser, exim4 | mail-transport-agent, cron, rsyslog | system-log-daemon, bsd-mailx | mailx, logtail (>= 1.2.59), lockfile-progs, ${misc:Depends}
 Recommends: logcheck-database (>= ${source:Version})
 Suggests: syslog-summary
 Description: mails anomalies in the system logfiles to the administrator

@@ -14,6 +14,7 @@ logcheck (1.3.4) experimental; urgency=low
     (closes: #531596)
   * Updated cron-apt "Fetched" rule to match all possible sizes and lengths
   * Replaced bashisms with POSIX equivalents (closes: #508546)
+  * Depend on rsyslog by default (closes: #526911)
 
  -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
 
