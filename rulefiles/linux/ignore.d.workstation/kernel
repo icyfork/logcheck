@@ -20,7 +20,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: over-current change on port [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: port [[:digit:]]+ disabled by hub \(EMI\?\), re-enabling\.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: configuration #[[:digit:]] chosen from [[:digit:]]+ choices?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: new (low|full|high) speed USB device using ([_[:alnum:]-]+ and )?address [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: (new|reset) (low|full|high) speed USB device using ([_[:alnum:]-]+ and )?address [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: New USB device found, idVendor=[[:xdigit:]]+, idProduct=[[:xdigit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: New USB device strings: Mfr=[[:digit:]]+, Product=[[:digit:]]+, SerialNumber=[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: (Product|Manufacturer|SerialNumber): .*$
@@ -122,7 +122,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hfs: unable to find HFS\+ superblock$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hfs: can't find a HFS filesystem on dev [^[:space:]]+\.$
 # connection of usb devices
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [-.[:digit:]]+: reset (full|high) speed USB device using [oe]hci_hcd and address [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [-.[:digit:]]+: not running at top speed; connect to a high speed hub$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb-storage: device found at [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]*Vendor: [-_. [:alnum:]]+Model: [-_. [:alnum:]]+Rev: [-_. [:alnum:]]+$
