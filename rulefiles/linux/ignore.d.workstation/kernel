@@ -21,6 +21,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: port [[:digit:]]+ disabled by hub \(EMI\?\), re-enabling\.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: configuration #[[:digit:]] chosen from [[:digit:]]+ choices?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: new (low|full|high) speed USB device using ([_[:alnum:]-]+ and )?address [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: New USB device found, idVendor=[[:xdigit:]]+, idProduct=[[:xdigit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: New USB device strings: Mfr=[[:digit:]]+, Product=[[:digit:]]+, SerialNumber=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: (Product|Manufacturer|SerialNumber): .*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub\.c: new USB device [.:[:digit:]-]+, assigned address [[:digit:]]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]-[.[:digit:]]+: USB disconnect, address [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb.c: USB disconnect on device [.:[:digit:]-]+ address [[:digit:]]+$
