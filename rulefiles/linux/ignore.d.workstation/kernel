@@ -48,11 +48,16 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? scsi[[:digit:]]+ : SCSI emulation for (IEEE-1394 SBP-2 Devices|USB Mass Storage devices)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Attached scsi removable disk sd[a-z]( at scsi[[:digit:]], channel [[:digit:]], id [[:digit:]], lun [[:digit:]])?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [[:digit:]:]+ Attached scsi (removable )?disk sd[a-z]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Attached SCSI (removable )?disk$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? SCSI device sd[a-z]: [[:digit:]]+ 512-byte hdwr sectors \([[:digit:]]+ MB\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]*sd[a-z]: sd[a-z]1( sd[a-z][[:digit:]]+)*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sr[[:digit:]]+: [^[:space:]]+ drive: [ \/[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] [[:digit:]]+ [[:digit:]]+-byte hardware sectors \([[:digit:]]+ MB\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Write Protect is (off|on)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Mode Sense: [[:digit:]]+ [[:digit:]]+ [[:digit:]]+ [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Assuming drive cache: write through$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]*sd[a-z]:( sd[a-z][[:digit:]]+)*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sr[[:digit:]]+: [^[:space:]]+ drive(: [ \/[:alnum:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? +Type: +[^[:space:]]+ +ANSI SCSI revision: [[:digit:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Attached scsi CD-ROM sr[[:digit:]]+ at scsi[[:digit:]], channel [[:digit:]], id [[:digit:]], lun [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (sr [:[:digit:]]+: )?Attached scsi CD-ROM sr[[:digit:]]+( at scsi[[:digit:]], channel [[:digit:]], id [[:digit:]], lun [[:digit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ scsi.agent\[[[:digit:]]+\]: (disk|cdrom) at [\./:[:alnum:]-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ scsi.agent\[[[:digit:]]+\]:[[:space:]]+ sd_mod: loaded successfully \(for disk\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])?  /dev/scsi/host[[:digit:]]/bus[[:digit:]]/target[[:digit:]]/lun[[:digit:]]: p[[:digit:]]$

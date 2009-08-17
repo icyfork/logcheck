@@ -61,9 +61,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? lp[[:digit:]]+ out of paper$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? lp[[:digit:]]+: ECP mode$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? martian source 255\.255\.255\.255 from [.[:digit:]]{7,15} on dev [[:alnum:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? scsi [:[:digit:]]+ Direct-Access[[:space:]]+[[:alnum:][:space:][:punct:]]+PQ: [[:digit:]]+ ANSI: [[:digit:]]+( CCS)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? scsi [:[:digit:]]+ (Direct-Access[[:space:]]+)?[[:alnum:][:space:][:punct:]]+PQ: [[:digit:]]+ ANSI: [[:digit:]]+( CCS)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? scsi[[:digit:]] : 3ware( 9000)? Storage Controller$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+ Attached scsi generic sg[[:digit:]]+ type [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (scsi|sd|sr) [:[:digit:]]+ Attached scsi generic sg[[:digit:]]+ type [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? skge [[:alnum:]]+: Link is up at 100?0? Mbps, (full|half) duplex, flow control tx and rx$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? st: Version [[:digit:]]+, fixed bufsize [[:digit:]]+, s/g segs [[:digit:]]+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? tun: Universal TUN/TAP device driver, [.[:digit:]]+$
