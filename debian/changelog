@@ -5,7 +5,7 @@ logcheck (1.3.4) experimental; urgency=low
   * Added USB kernel rules for USB_ANNOUNCE_NEW_DEVICES
   * Merged USB "new device" and "reset device" rules
   * Ignore "UDP: bad checksum" and "UDP: short packet" kernel messages
-  * Corrected xdm pam_session rules
+  * Corrected xdm pam_session rules (closes: #508335)
   * Updated acpid "client has disconnected" rule
   * Updated libpam-mount "realpath of X is Y" rule
   * Added libpam-mount "Command successful" rule
