@@ -15,8 +15,7 @@ logcheck (1.3.4) experimental; urgency=low
   * Updated cron-apt rules to match all possible sizes and lengths
   * Replaced bashisms with POSIX equivalents (closes: #508546)
   * Depend on rsyslog by default (closes: #526911)
-  * Unconditionally set ownership/permissions on /var/lock/logcheck
-    (closes: #515156)
+  * Dropped (now useless) ownership/permissions fixes on /var/lock/logcheck
 
  -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
 
