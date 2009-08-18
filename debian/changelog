@@ -17,6 +17,7 @@ logcheck (1.3.4) experimental; urgency=low
   * Depend on rsyslog by default (closes: #526911)
   * Dropped (now useless) ownership/permissions fixes on /var/lock/logcheck
   * ignore.d.server/openvpn: match pathless ifconfig/route
+  * ignore.d.server/openvpn: match '.' and '_' in interface names
 
  -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
 
