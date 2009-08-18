@@ -1,1 +1,1 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ \[[0-9]+\]: running: /(usr/)?bin/(groups|ls|mkdir|mv|pwd|rm|rsync|scp).* \(username: [._[:alnum:]-]+\([0-9]+\), IP/port: [.:[:alnum:]]+ [0-9]+ 22\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scponly\[[0-9]+\]: running: /(usr/)?bin/(groups|ls|mkdir|mv|pwd|rm|rsync|scp).* \(username: [._[:alnum:]-]+\([0-9]+\), IP/port: [.:[:alnum:]]+ [0-9]+ 22\)$
