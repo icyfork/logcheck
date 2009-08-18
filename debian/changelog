@@ -26,6 +26,8 @@ logcheck (1.3.4) experimental; urgency=low
     - added missing process name before PID
     - added the exhaustive list of commands allowed by scponly
   * Added rule for ext3 writeback data mode (closes: #542273)
+  * ignore.d.server/dovecot:
+    - replaced the (incomplete) method list with a wildcard (closes: #530591)
 
  -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
 
