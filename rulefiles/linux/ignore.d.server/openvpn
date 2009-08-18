@@ -2,9 +2,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: (Outgo|Incom)ing Control Channel Authentication: Using [[:digit:]]+ bit message hash '(SHA1|MD5)' for HMAC authentication$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: (read|write) UDPv4 \[EHOSTUNREACH\]: No route to host \(code=113\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: /sbin/ifconfig [-._[:alnum:]]+ [.[:digit:]]{7,15} pointopoint [.[:digit:]]{7,15} mtu [[:digit:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: /sbin/route add -net [.[:digit:]]{7,15} netmask [.[:digit:]]{7,15} gw [.[:digit:]]{7,15}$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: /sbin/route del -net [.[:digit:]]{7,15} netmask [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: (/sbin/)?ifconfig [-._[:alnum:]]+ [.[:digit:]]{7,15} pointopoint [.[:digit:]]{7,15} mtu [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: (/sbin/)?route add -net [.[:digit:]]{7,15} netmask [.[:digit:]]{7,15} gw [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: (/sbin/)?route del -net [.[:digit:]]{7,15} netmask [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: Adaptive compression state (OFF|ON)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: Closing TUN/TAP interface$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: Control Channel Authentication: using '[-._/[:alnum:]]+' as a OpenVPN static key file$

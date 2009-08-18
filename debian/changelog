@@ -16,6 +16,7 @@ logcheck (1.3.4) experimental; urgency=low
   * Replaced bashisms with POSIX equivalents (closes: #508546)
   * Depend on rsyslog by default (closes: #526911)
   * Dropped (now useless) ownership/permissions fixes on /var/lock/logcheck
+  * ignore.d.server/openvpn: match pathless ifconfig/route
 
  -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
 
