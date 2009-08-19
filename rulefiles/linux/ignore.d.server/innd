@@ -44,6 +44,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ auth starting authenticator [[:alnum:][:space:][:punct:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ exit articles [0-9]+ groups [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ group [.[:alnum:]+-]+ [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ no_(read|post) [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ no_access_realm$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ post ok <[[:graph:]]+@[._[:alnum:]-]+>$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ res <[_[:alnum:]-]+>(@[._[:alnum:]-]+)?$

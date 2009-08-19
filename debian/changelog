@@ -33,6 +33,8 @@ logcheck (1.3.4) experimental; urgency=low
   * ignore.d.server/postfix: (closes: #529367)
     - allow optional port number after "setting up TLS connection"
     - recognize "Trusted TLS connection established"
+  * ignore.d.server/inn:
+    - added "no_read"/"no_post" rule (closes: #533487)
 
  -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
 
