@@ -53,7 +53,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [[:digit:]:]+ Attached scsi (removable )?disk sd[a-z]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Attached SCSI (removable )?disk$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? SCSI device sd[a-z]: [[:digit:]]+ 512-byte hdwr sectors \([[:digit:]]+ MB\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] [[:digit:]]+ [[:digit:]]+-byte hardware sectors \([[:digit:]]+ MB\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] [[:digit:]]+ [[:digit:]]+-byte hardware sectors:? \([.[:digit:]]+ [MG]B(/[.[:digit:]]+ [MG]iB)?\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Write Protect is (off|on)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Mode Sense: [[:digit:]]+ [[:digit:]]+ [[:digit:]]+ [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Assuming drive cache: write through$
