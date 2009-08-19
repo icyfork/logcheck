@@ -39,6 +39,7 @@ logcheck (1.3.4) experimental; urgency=low
     - added various connection failure resolver messages (closes: #536071)
   * ignore.d.workstation/kernel:
     - adjusted sd "hardware sectors" rule for 2.6.28 (closes: #542390)
+    - further adjusted that rule for 2.6.31-rc1
 
  -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
 
