@@ -4,6 +4,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: dispatch 0x[[:xdigit:]]+: shutting down due to TCP receive error: [.:[:xdigit:]]+#[[:digit:]]+: connection reset$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: enforced delegation-only for '[._[:alnum:]-]+' \([._[:alnum:]-]+/(A|AAAA)/IN\) from [.:[:xdigit:]]+#[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: journal file [-./_[:alnum:]]+ does not exist, creating it$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: unexpected RCODE \((FORMERR|SERVFAIL|NXDOMAIN|NOTIMP|REFUSED|YXDOMAIN|YXRRSET|NXRRSET|NOTAUTH|NOTZONE|BADVERS|<rcode [[:digit:]]+>|[[:digit:]]+)\) resolving '[^[:space:]]+': [.:[:xdigit:]]+#[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: ((network|host) (unreachable|down)|connection refused|unexpected RCODE \((FORMERR|SERVFAIL|NXDOMAIN|NOTIMP|REFUSED|YXDOMAIN|YXRRSET|NXRRSET|NOTAUTH|NOTZONE|BADVERS|<rcode [[:digit:]]+>|[[:digit:]]+)\)) resolving '[^[:space:]]+': [.:[:xdigit:]]+#[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [._[:alnum:]-]+/IN(/[._[:alnum:]-]+)?: Transfer started.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [._[:alnum:]-]+/IN: refresh: failure trying master [._[:alnum:]-]+#53: .*$
