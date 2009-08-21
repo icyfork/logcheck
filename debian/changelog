@@ -38,6 +38,7 @@ logcheck (1.3.4) experimental; urgency=low
     - recognize "Trusted TLS connection established"
   * ignore.d.server/postfix:
     - allow <> as MAIL FROM in various messages
+    - removing wildcard "reject: (RCPT|MAIL)" rule
   * ignore.d.server/innd:
     - added "no_read"/"no_post" rule (closes: #533487)
   * ignore.d.server/bind:
