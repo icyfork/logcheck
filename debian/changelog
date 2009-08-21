@@ -25,6 +25,8 @@ logcheck (1.3.4) experimental; urgency=low
     - added "authentication succeeded' rule
   * ignore.d.server/dhcp:
     - interface names can have underscore in them (closes: #518422)
+    - merged "Wrote X to leases file" rules, and added new ones
+      (closes: #526116)
   * ignore.d.server/scponly: (closes: #506333)
     - added missing process name before PID
     - added the exhaustive list of commands allowed by scponly

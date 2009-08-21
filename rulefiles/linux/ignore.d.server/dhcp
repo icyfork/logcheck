@@ -2,9 +2,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): Copyright [0-9-]+ Internet (Software|Systems) Consortium\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): All rights reserved\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): For info, please visit http://www.isc.org/(products/DHCP|sw/dhcp/)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): Wrote [0-9]+ deleted host decls to leases file\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): Wrote [0-9]+ new dynamic host decls to leases file\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): Wrote [0-9]+ leases to leases file\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): Wrote [0-9]+ (leases|(class|group|deleted host|new dynamic host) decls) to leases file\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): (BOOTREQUEST|DHCPDISCOVER) from [:[:alnum:]]+ (\([\(\):._[:alnum:]-]+\) )?via [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): BOOTREPLY (for|on) [.0-9]{7,15} to [:[:alnum:]]+ (\([:._[:alnum:]-]+\) )?via [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): DHCPOFFER on [.0-9]{7,15} to [:[:alnum:]]+ (\([\(\)._[:alnum:]-]+\) )?via [._[:alnum:]-]+$
