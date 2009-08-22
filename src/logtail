@@ -35,6 +35,7 @@ if (!$opts{f} && $#ARGV != 0 && $#ARGV != 1) {
    exit 66;
 } elsif ($#ARGV == 0) {
    $logfile = $ARGV[0];
+   $offsetfile = $opts{o};
 } elsif ($#ARGV == 1) {
    ($logfile, $offsetfile) = ($ARGV[0], $ARGV[1]);
 } else {
