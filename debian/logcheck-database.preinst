@@ -21,7 +21,9 @@ set -e
 # them later on will not work correctly.  If you ever forget, you'll need to
 # add them to OLD_CONFFILES below, instead.
 
-REMOVED_CONFFILES=""
+REMOVED_CONFFILES="
+	/etc/logcheck/ignore.d.server/sendmail
+"
 
 # List of conffiles which were once part of this package a long time ago, and
 # have never been cleaned up properly.  They will be removed if they are still

@@ -53,6 +53,8 @@ logcheck (1.3.4) experimental; urgency=low
     - further adjusted that rule for 2.6.31-rc1
   * logtail/logtail2 no longer ignore -o when called with only one argument
     (closes: #453309)
+  * Deleting obsolete conffiles in logcheck-database.preinst
+    - ignore.d.server/sendmail, also in sendmail-base (closes: #542265)
 
  -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
 
