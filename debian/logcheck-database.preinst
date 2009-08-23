@@ -14,8 +14,48 @@ set -e
 # the debian-policy package
 
 
+# List of conffiles which have been removed from this package.  These will be
+# deleted (or backed away) at the next upgrade.
+#
+# Conffiles must be listed here from the very moment of their removal; adding
+# them later on will not work correctly.
+
+REMOVED_CONFFILES=""
+
+
+# Copied from <http://wiki.debian.org/DpkgConffileHandling>
+rm_conffile() {
+    local PKGNAME="$1"
+    local CONFFILE="$2"
+
+    [ -e "$CONFFILE" ] || return 0
+
+    # Do nothing if that file no longer belongs to us
+    dpkg-query --listfiles "$PKGNAME" | grep -q "^$CONFFILE$" || return 0
+
+    local md5sum="$(md5sum $CONFFILE | sed -e 's/ .*//')"
+    local old_md5sum="$(dpkg-query -W -f='${Conffiles}' $PKGNAME | \
+            sed -n -e "\' $CONFFILE ' { s/ obsolete$//; s/.* //; p }")"
+    if [ "$md5sum" != "$old_md5sum" ]; then
+        echo "Obsolete conffile $CONFFILE has been modified by you."
+        echo "Saving as $CONFFILE.dpkg-bak ..."
+        mv -f "$CONFFILE" "$CONFFILE".dpkg-bak
+    else
+        echo "Removing obsolete conffile $CONFFILE ..."
+        rm -f "$CONFFILE"
+    fi
+}
+
+
 case "$1" in
     install|upgrade)
+        # Remove $REMOVED_CONFFILES on upgrade, or when re-installing
+        # after the package was removed (but not purged).
+        if [ "$2" ]; then
+            for CONFFILE in $REMOVED_CONFFILES; do
+                rm_conffile logcheck-database "$CONFFILE"
+            done
+        fi
     ;;
 
     abort-upgrade)
