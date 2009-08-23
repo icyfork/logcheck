@@ -22,6 +22,8 @@ set -e
 # add them to OLD_CONFFILES below, instead.
 
 REMOVED_CONFFILES="
+	/etc/logcheck/ignore.d.server/lpr
+	/etc/logcheck/ignore.d.server/ntp
 	/etc/logcheck/ignore.d.server/sendmail
 "
 
