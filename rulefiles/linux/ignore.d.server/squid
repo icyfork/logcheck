@@ -66,6 +66,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: logfileRotate: /var/log/squid/access\.log$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: logfileRotate: /var/log/squid/store\.log$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: parseHttpRequest: Requestheader contains NULL characters$
+# next rule without $ at the end because of #350206 and locale mismatches with non-latin1 or non-ascii characters.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: parseHttpRequest: Unsupported method 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: storeDirWriteCleanLogs: Starting\.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: storeLateRelease: released [[:digit:]]+ objects$
