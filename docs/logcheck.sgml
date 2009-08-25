@@ -8,7 +8,7 @@
 manpage.1: manpage.sgml
 	docbook-to-man $< > $@
 
-    
+
 	The docbook-to-man binary is found in the docbook-to-man package.
 	Please remember that if you create the nroff version in one of the
 	debian/rules file targets (such as build), you will need to include
@@ -71,7 +71,7 @@ manpage.1: manpage.sgml
 
     <para>The <command>&dhpackage;</command> program helps spot problems and
     security violations in your logfiles automatically and will send the
-    results to you periodically in an e-mail. By default logcheck runs as 
+    results to you periodically in an e-mail. By default logcheck runs as
     an hourly cronjob just off the hour and after every reboot.</para>
 
     <para><command>&dhpackage;</command> supports three level of filtering:
@@ -83,8 +83,8 @@ manpage.1: manpage.sgml
     included at level "server" and "workstation".</para>
 
     <para>The messages reported are sorted into three layers, system events,
-    security events and attack alerts. The verbosity of system events is 
-    controlled by which level you choose, paranoid, server or workstation. 
+    security events and attack alerts. The verbosity of system events is
+    controlled by which level you choose, paranoid, server or workstation.
     However, security events and attack alerts are not affected by this.</para>
 
   </refsect1>
@@ -254,7 +254,7 @@ manpage.1: manpage.sgml
   <refsect1>
     <title>AUTHOR</title>
 
-    <para>&dhpackage; is developed by Debian &dhpackage; Team at alioth: 
+    <para>&dhpackage; is developed by Debian &dhpackage; Team at alioth:
     http://alioth.debian.org/projects/logcheck/.</para>
 
     <para>This manual page was written by &dhusername;.</para>

@@ -35,7 +35,7 @@ case "$1" in
 	if ! getent group logcheck >/dev/null; then
 	  addgroup --system logcheck
     usermod -g logcheck logcheck
-	fi  
+	fi
 
   # make sure the home directory exists
   if [ ! -d "$(getent passwd logcheck | cut -d: -f6)" ]; then
@@ -45,7 +45,7 @@ case "$1" in
 	# check for logcheck in adm group
 	if ! getent group adm | grep logcheck > /dev/null; then
 	  adduser --quiet logcheck adm || true
-	fi  
+	fi
 
 	# add logcheck to /etc/aliases
 	if [ -f /etc/aliases ] || [ -L /etc/aliases ]; then
@@ -69,7 +69,7 @@ case "$1" in
 	# unreadable upon upgrade.  <ttroxell@debian.org>
 	chgrp -R logcheck /etc/logcheck || true
 
-    	# Set Permissions on install, not upgrade
+	# Set Permissions on install, not upgrade
 	if [ ! -n "$2" ]; then
           chmod 2750 /etc/logcheck/ignore.d.paranoid || true
           chmod 2750 /etc/logcheck/ignore.d.workstation || true
@@ -78,17 +78,17 @@ case "$1" in
           chmod 2750 /etc/logcheck/cracking.ignore.d || true
           chmod 2750 /etc/logcheck/violations.d || true
           chmod 2750 /etc/logcheck/violations.ignore.d || true
-    	  chmod -R g+rX /etc/logcheck || true
+	  chmod -R g+rX /etc/logcheck || true
 	fi
-    	chown -R logcheck:logcheck /var/lib/logcheck || true
-    	chmod 0770 /var/lib/logcheck || true
+	chown -R logcheck:logcheck /var/lib/logcheck || true
+	chmod 0770 /var/lib/logcheck || true
 
 	;;
-    
+
     abort-upgrade|abort-remove|abort-deconfigure)
-	
+
 	;;
-    
+
     *)
         echo "postinst called with unknown argument \`$1'" >&2
         exit 1

@@ -62,7 +62,7 @@ clean:
 	-rm -rf $(DESTDIR)/$(CONFDIR)/violations.ignore.d/
 	-rm -rf $(DESTDIR)/$(CONFDIR)/cracking.d/
 	# Remove the statedir and it's contents
-	-rm -rf $(DESTDIR)/var/lib/logcheck 
+	-rm -rf $(DESTDIR)/var/lib/logcheck
 
 	# Finally remove the config directory
 	-rmdir $(DESTDIR)/$(CONFDIR)

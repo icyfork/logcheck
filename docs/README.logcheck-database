@@ -71,7 +71,7 @@ following kinds:
 
 ./<packagename>
 
-The rule filename must only contain characters compatible with 
+The rule filename must only contain characters compatible with
 run-parts(8).  As of this writing, this includes alphanumeric characters,
 underscore, and hyphen.
 
@@ -92,7 +92,7 @@ _do_ need to be "Security Events" triggers but also exceptional
 variants which _don't_ - maybe it logs either
     "$DATE $HOSTNAME fooserver[$PID]: $USER barred"
 or
-    "$DATE $HOSTNAME fooserver[$PID]: none barred". 
+    "$DATE $HOSTNAME fooserver[$PID]: none barred".
 In this situation the alarm can be overruled by a
 violations.ignore rulefile named "fooserver" which filters
 "none barred".  This will _not_ affect other "Security Events"

@@ -2,24 +2,24 @@
 
 # log-summary-ssh
 # Selects two lines that are very common with ssh scans.
-# This script removes those from output and prints out aggregate 
+# This script removes those from output and prints out aggregate
 # statistics for those (both by host and by attempted user names).
 #
 # Reads from stdin or from command line arguments and prints to stdout.
 #
-# If you want to use this with logcheck, copy this to 
-# /usr/local/sbin/log-summary-ssh and add following lines to 
+# If you want to use this with logcheck, copy this to
+# /usr/local/sbin/log-summary-ssh and add following lines to
 # /etc/logcheck/logcheck.conf (or your config file):
 #
 # SYSLOGSUMMARY=1
 # SYSLOG_SUMMARY=/usr/local/sbin/log-summary-ssh
 #
-# If you want to use both syslog-summary and this script, you need to 
+# If you want to use both syslog-summary and this script, you need to
 # write a some kind of wrapper around those.
 # #!/bin/sh
 # syslog-summary $* | log-summary-sh
 #
-# Markus Peuhkuri <puhuri@iki.fi> 2005  
+# Markus Peuhkuri <puhuri@iki.fi> 2005
 # Use of this file is unrestricted.
 
 use strict;

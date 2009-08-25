@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2004-2007 Debian Logcheck Team 
+# Copyright (C) 2004-2007 Debian Logcheck Team
 #                         <logcheck-devel@alioth.lists.debian.org>
 # Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>
 # Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
@@ -107,12 +107,12 @@ cleanup() {
 
     if [ -d "$TMPDIR" ]; then
         # Remove the tmp directory
-        if [ "$NOCLEANUP" -eq 0 ];then 
-    	    cd /var/lib/logcheck
-    	    debug "cleanup: Removing - $TMPDIR" 
-    	    rm -r "$TMPDIR"
+        if [ "$NOCLEANUP" -eq 0 ];then
+	    cd /var/lib/logcheck
+	    debug "cleanup: Removing - $TMPDIR"
+	    rm -r "$TMPDIR"
         else
-    	    debug "cleanup: Not removing - $TMPDIR"
+	    debug "cleanup: Not removing - $TMPDIR"
         fi
     fi
 }
@@ -120,7 +120,7 @@ cleanup() {
 # Log debug output to standard error
 debug() {
 	if [ "$LOGCHECKDEBUG" -eq 1 ]; then
-		echo "D: [$(date +%s)] $1" >&2 
+		echo "D: [$(date +%s)] $1" >&2
 	fi
 }
 
@@ -153,7 +153,7 @@ error() {
            debug "error: Removing lockfile: $LOCKFILE.lock"
            lockfile-remove "$LOCKFILE"
        fi
-	
+
     fi
 
     debug "Error: $message"
@@ -177,7 +177,7 @@ EOF
 	} | eval mail $MAILARGS \
 	    -s "'Logcheck: $HOSTNAME $DATE exiting due to errors'" \
 	    "$SENDMAILTO"
-    
+
     elif [ "$MAILOUT" -eq 1 ]; then
           {
 	      echo "Error: $message."
@@ -210,7 +210,7 @@ cleanrules() {
     dir="$1"
     cleaned="$2"
 
-    if [ -d "$dir" ]; then 
+    if [ -d "$dir" ]; then
         if [ ! -d "$cleaned" ]; then
 	    mkdir "$cleaned" \
 	        || error "Could not make dir $cleaned for cleaned rulefiles."
@@ -222,8 +222,8 @@ cleanrules() {
 		if [ -r "${dir}/${rulefile}" ]; then
 			# pipe to cat on greps to get usable exit status
 			egrep --text -v '^[[:space:]]*$|^#' "$dir/$rulefile" | cat \
-		    		>> "$cleaned/$rulefile" \
-		    	|| error "Couldn't append to $cleaned/$rulefile."
+				>> "$cleaned/$rulefile" \
+			|| error "Couldn't append to $cleaned/$rulefile."
 		else
 			error "Couldn't read $dir/$rulefile"
 		fi
@@ -248,7 +248,7 @@ report() {
 		    || error "Could not append to report."
 	else
 	    if [ "$SYSLOGSUMMARY" -eq 1 ] && [ ! -x "$SYSLOG_SUMMARY" ]; then
-	    	debug "report : WARNING : can't exec $SYSLOG_SUMMARY. Running without summary"
+		debug "report : WARNING : can't exec $SYSLOG_SUMMARY. Running without summary"
 	    fi
 	    debug "report: cat'ing - $*"
 	    cat "$TMPDIR/checked" >> "$TMPDIR/report" \
@@ -334,19 +334,19 @@ greplogoutput() {
 	# apply different ignore rules
 	if [ -s "$TMPDIR/checked" ]; then
 	    debug "greplogoutput: Entries in checked"
-	    
+
 	    if [ -n "$ignore" -a -f "$ignore/$(basename "$grepfile")" ]; then
 		cleanchecked "$ignore/$(basename "$grepfile")"
 	    fi
 
-	    # quick and dirty fix for ignoring logcheck-foo files 
+	    # quick and dirty fix for ignoring logcheck-foo files
 	    # in the case logcheck itself has no raised entry
 	    if [ -n "$ignore" -a -f "$ignore/logcheck-$(basename "$grepfile")" ]; then
 		cleanchecked "$ignore/logcheck-$(basename "$grepfile")"
 	    fi
-	    
+
 	    # If it's the logcheck file, we do something special
-	    if [ "$(basename "$grepfile")" = "logcheck" ]; then 
+	    if [ "$(basename "$grepfile")" = "logcheck" ]; then
 
 		# Now ignore all entries from the ignore dir
 		# old logcheck versions only ignored logcheck-<package> files
@@ -357,9 +357,9 @@ greplogoutput() {
 			cleanchecked "$ignore/$file"
 		    done
 		else
-		    debug "No Logcheck override files" 
+		    debug "No Logcheck override files"
 		fi
- 
+
 		debug "Cleaning logcheck"
 		# Remove any entries already reported
 		for file in $(ls "$raise/" | grep -v '^logcheck') ; do
@@ -368,7 +368,7 @@ greplogoutput() {
 		done
 	    fi
 
-	    if [ -n "$ignorehigher" ]; then 
+	    if [ -n "$ignorehigher" ]; then
 		if [ -d "$ignorehigher" -a -s "$TMPDIR/checked" ]; then
 		    cleanchecked "$ignorehigher"
 		fi
@@ -382,7 +382,7 @@ greplogoutput() {
 
 	        # Now apply any local-* files
 	        for file in $(ls -1 "$ignore/" | grep '^local-') ; do
-	    	    cleanchecked "$ignore/$file"
+		    cleanchecked "$ignore/$file"
 	        done
 	    fi
 
@@ -402,7 +402,7 @@ greplogoutput() {
 cleanchecked() {
     clean="$1"
 
-    if [ -f "$clean" ]; then 
+    if [ -f "$clean" ]; then
 	debug "cleanchecked - file: $clean"
         egrep --text -v -f "$clean" "$TMPDIR/checked" | cat >> "$TMPDIR/checked.1"  \
 	    || error "Could not output to $TMPDIR/checked.1."
@@ -445,7 +445,7 @@ logoutput() {
 usage() {
     debug "usage: Printing usage and exiting"
     cat<<EOF
-usage: logcheck [-c CFG] [-d] [-h] [-H HOST] [-l LOG] [-L CFG] [-m MAIL] [-o] 
+usage: logcheck [-c CFG] [-d] [-h] [-H HOST] [-l LOG] [-L CFG] [-m MAIL] [-o]
                 [-r DIR] [-s|-p|-w] [-R] [-S DIR] [-t] [-T] [-u]
  -c CFG       = override default configuration file
  -d           = debug mode
@@ -461,7 +461,7 @@ usage: logcheck [-c CFG] [-d] [-h] [-H HOST] [-l LOG] [-L CFG] [-m MAIL] [-o]
  -s           = use the "server" runlevel
  -S DIR       = override default state directory
  -t           = testing mode, don't update the logfile offsets
- -T           = do not remove the TMPDIR 
+ -T           = do not remove the TMPDIR
  -u           = enable syslog-summary
  -v           = print version
  -w           = use the "workstation" runlevel
@@ -501,7 +501,7 @@ while getopts "$GETOPTS" opt; do
     esac
 done
 
-# Now reset $OPTIND to 1 
+# Now reset $OPTIND to 1
 OPTIND=1
 
 debug "Sourcing - $CONFFILE"
@@ -525,7 +525,7 @@ else
     fi
 fi
 
-# Use sort -u or -k 1,3 -s 
+# Use sort -u or -k 1,3 -s
 if [ "$SORTUNIQ" -eq 1 ];then
     SORT="sort -u"
 else
@@ -538,11 +538,11 @@ if [ "$FQDN" -eq 1 ]; then
 else
         HOSTNAME="$(hostname --short)" > /dev/null 2>&1
 fi
-		
+
 # Now check for the other options
 while getopts "$GETOPTS" opt; do
     case "$opt" in
-    	H)
+	H)
 	   debug "Setting HOSTNAME to $OPTARG"
 	   HOSTNAME="$OPTARG"
 	   ;;
@@ -616,13 +616,13 @@ fi
 trap 'cleanup' 0
 
 debug "Trying to get lockfile: $LOCKFILE.lock"
-if [ ! -d "$LOCKDIR" ]; then 
+if [ ! -d "$LOCKDIR" ]; then
 	mkdir -m 0755 "$LOCKDIR"
 fi
 lockfile-create --retry 1 "$LOCKFILE" > /dev/null 2>&1
 
 
-if [ $? -eq 1 ]; then 
+if [ $? -eq 1 ]; then
     trap 0
     if [ -e "${LOCKFILE}.lock" ]; then
         error "Another logcheck process is still running" "noclean"
@@ -630,7 +630,7 @@ if [ $? -eq 1 ]; then
         error "Failed to get lockfile: $LOCKFILE.lock" "noclean"
     fi
 
-else 
+else
     debug "Running lockfile-touch $LOCKFILE.lock"
     lockfile-touch "$LOCKFILE" &
     LOCK="$!"
@@ -647,7 +647,7 @@ cleanrules "$RULEDIR/violations.d" "$TMPDIR/violations"
 cleanrules "$RULEDIR/violations.ignore.d" "$TMPDIR/violations-ignore"
 
 # Now clean the ignore rulefiles for the report levels
-for level in $REPORTLEVELS; do 
+for level in $REPORTLEVELS; do
     cleanrules "$RULEDIR/ignore.d.$level" "$TMPDIR/ignore"
 done
 
@@ -665,12 +665,12 @@ mkdir "$TMPDIR/logoutput" \
 if [ ! "$LOGFILE" ] && [ -r "$LOGFILES_LIST" ]; then
     egrep --text -v "(^#|^[[:space:]]*$)" "$LOGFILES_LIST" | while read file; do
 	logoutput "$file"
-    done 
+    done
 elif [ "$LOGFILE" ]; then
     if [ -f "$LOGFILE" ] && [ -r "$LOGFILE" ]; then
         logoutput "$LOGFILE"
     else
-    	error "$LOGFILE don't exist or we do not have permissions to read it"
+	error "$LOGFILE don't exist or we do not have permissions to read it"
     fi
 elif [ -r "$LOGFILE_FALLBACK" ]; then
         logoutput "$LOGFILE_FALLBACK"
@@ -684,7 +684,7 @@ debug "Sorting logs"
 $SORT "$TMPDIR/logoutput"/* | sed -e 's/[[:space:]]\+$//' | cat  \
     > "$TMPDIR/logoutput-sorted" \
         || error "Could not output to $TMPDIR/logoutput-sorted."
- 
+
 
 # See if the tmp file exists and actually has data to check,
 # if it doesn't we should erase it and exit as our job is done.
@@ -703,7 +703,7 @@ else
 fi
 
 if [ -f "$TMPDIR/errors" ]; then
-    { 
+    {
 	cat<<EOF
 
 $(cat "$TMPDIR/errors")
@@ -731,7 +731,7 @@ fi
 # Check for security events
 if [ -d "$TMPDIR/violations" ]; then
     debug "Checking for security events"
-    rm -f "$TMPDIR/checked" 
+    rm -f "$TMPDIR/checked"
 
     if [ "$ATTACK" -eq 1 ]; then
 	greplogoutput "$TMPDIR/violations" "$SECURITYSUBJECT" \
@@ -753,7 +753,7 @@ if [ -d "$TMPDIR/ignore" ]; then
 	debug "Removing alerts from system events"
 	cleanchecked "$TMPDIR/cracking"
     fi
-    if [ -s "$TMPDIR/checked" ]; then 	
+    if [ -s "$TMPDIR/checked" ]; then
 	debug "Removing violations from system events"
 	cleanchecked "$TMPDIR/violations"
     fi

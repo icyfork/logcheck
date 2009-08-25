@@ -1,17 +1,17 @@
 logcheck (1.2.33) unstable; urgency=low
 
   * Logcheck's rulefile directory permissions have been changed in this
-    release from 0740 to 4740. 
+    release from 0740 to 4740.
 
  -- Todd Troxell <ttroxell@debian.org>  Fri, 07 Jan 2005 20:23:00 +0500
 
 logcheck (1.2.19-2) unstable; urgency=low
 
-  * As of version 1.2.19, logcheck no longer runs as root.  
-    Logcheck runs as user logcheck which has been created 
+  * As of version 1.2.19, logcheck no longer runs as root.
+    Logcheck runs as user logcheck which has been created
     and added to group adm upon configuration.
 
-    If you have customized your configuration, 
+    If you have customized your configuration,
     you will need to be sure that your
     logs are readable by the logcheck user.
 
@@ -25,7 +25,7 @@ logcheck (1.2.3) unstable; urgency=low
     - workstation  = workstation + server + paranoid
     - server       = server + paranoid
     - paranoid     = paranoid
-    
+
     Also run-parts(8) now controls which rulefiles are included from the .d
     directories. Please see /usr/share/doc/logcheck for more details.
 

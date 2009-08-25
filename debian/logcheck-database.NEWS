@@ -62,7 +62,7 @@ logcheck-database (1.1.1-8) unstable; urgency=low
 
   From version 1.1.1-8, logcheck supports run-parts controled rule
   directories:
-  
+
   - /etc/logcheck/cracking.d
   - /etc/logcheck/cracking.ignore.d [for local use only]
   - /etc/logcheck/violations.d

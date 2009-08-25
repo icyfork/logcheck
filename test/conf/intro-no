@@ -1,4 +1,4 @@
-# Uncommet the following to change the date and time format for the 
+# Uncommet the following to change the date and time format for the
 # subject of e-Mails to the format for your locale
 #DATE=$(/bin/date +'%X %x')
 
@@ -17,7 +17,7 @@ REPORTLEVEL="server"
 #SECURITYSUBJECT="Security Events"
 #EVENTSSUBJECT="System Events"
 
-# Uncomment the below to use sort -u, this will destory the 
+# Uncomment the below to use sort -u, this will destory the
 # orginal log order
 #SORTUNIQ=1
 

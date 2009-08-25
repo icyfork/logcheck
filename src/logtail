@@ -67,7 +67,7 @@ unless (not $offsetfile) {
     if (open(OFFSET, $offsetfile)) {
         $_ = <OFFSET>;
         unless (! defined $_) {
-       	    chomp $_;
+	    chomp $_;
 	    $inode = $_;
 	    $_ = <OFFSET>;
 	    unless (! defined $_) {

@@ -152,7 +152,7 @@ else:
 # Test 2a and 2b still need to be finished.
 
 # Test 2a - cracking ignore support: enabled
-print "Testing enabled cracking ignore...", 
+print "Testing enabled cracking ignore...",
 
 test2a = Logcheck("./conf/cracking-ignore-enabled",
                 "./logs/cracking-ignore/files",
@@ -168,10 +168,10 @@ if test2a.Check(expected.Test2a()):
 else:
     print "failed"
     print test2a.Result(),
-    fail = 1    
+    fail = 1
 
 # Test 2b - cracking ignore support: disabled
-print "Testing disabled cracking ignore...", 
+print "Testing disabled cracking ignore...",
 
 test2b = Logcheck("../etc/logcheck.conf",
                 "./logs/cracking-ignore/files",
@@ -191,7 +191,7 @@ else:
 
 
 # Test 3 - violations.ignore.d/local-*
-print "Testing violations.ignore.d/local-*...", 
+print "Testing violations.ignore.d/local-*...",
 
 test3 = Logcheck("../etc/logcheck.conf",
                 "./logs/violations.ignore.d-local/files",
@@ -207,7 +207,7 @@ if test3.Check(expected.Test3()):
 else:
     print "failed"
     print test3.Result(),
-    fail = 1        
+    fail = 1
 
 # Test 4a - Intro "yes" (disabled)
 print "Testing old style disabled intro...",

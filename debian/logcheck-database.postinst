@@ -53,11 +53,11 @@ case "$1" in
     chgrp -R logcheck /etc/logcheck
   fi
 	;;
-    
+
     abort-upgrade|abort-remove|abort-deconfigure)
-	
+
 	;;
-    
+
     *)
         echo "postinst called with unknown argument \`$1'" >&2
         exit 1

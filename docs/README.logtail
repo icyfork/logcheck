@@ -4,7 +4,7 @@ SYNOPSIS
 Logtail is so named because it can be used to read the last few
 messages in a constantly-growing file; but rather than showing a
 fixed proportion of the log, it bookmarks its place and only prints
-out the material added since your last visit. 
+out the material added since your last visit.
 
 This utility was originally provided as part of the package
 "logcheck", but can now be installed independently.
@@ -20,7 +20,7 @@ is read from the beginning.
 Inode information is taken into account so that logtail can detect
 the case where a file has been replaced by another of the same name
 (but probably with different content, so it's all printed) - a
-common effect of logfile rotation.  On the other hand a file 
+common effect of logfile rotation.  On the other hand a file
 shrinking _without_ moving is a possible symptom of intruders
 covering their tracks, and triggers prominent warnings in the output.
 
@@ -36,7 +36,7 @@ COMMANDLINE ARGUMENTS
 See logtail(8) and logtail2(8).
 
 The first, compulsory argument is the name of the input logfile;
-unlike tail, logtail cannot use stdin! 
+unlike tail, logtail cannot use stdin!
 
 The second, optional argument specifies the filename to which offset
 records should be written.  By default it simply adds .offset to the

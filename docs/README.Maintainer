@@ -20,13 +20,13 @@ files that a package can include are
  - /etc/logcheck/ignore.d.workstation/<packagename>
 
 As the higher level ignore.d directories include the lower levels
-(i.e. server = server + paranoid) you should try to split your 
+(i.e. server = server + paranoid) you should try to split your
 rulefile between the different ignore.d directories.
 
 If during the normal operation of your package it produces ignorable
 syslog messages that are included by
 /etc/logcheck/violations.d/<packagename> have to also include the
-following rulefile 
+following rulefile
 
  - /etc/logcheck/violations.ignore.d/<packagename>
 
@@ -37,7 +37,7 @@ but install separate files into each level; note that it is no longer
 necessary anyway for rules to be repeated in each ignore.d.*
 directory.  We are now using run-parts (see run-parts(8) for more
 details) directly for listing the rulefiles, and this will ignore
-symlinks. If your filename contains .'s you should replace them with _'s 
+symlinks. If your filename contains .'s you should replace them with _'s
 so that the file will be included.
 
 The following directory is for local admin use only and packages
@@ -50,7 +50,7 @@ any files to be parsed.
 
 If you are planning on adding rules for your package, please check to
 see if we have included them first.  If we already have rules and you
-would like to maintain your own, please let us know before you upload 
+would like to maintain your own, please let us know before you upload
 so we can avoid filename confilcts.
 
 -- Debian Logcheck Team <logcheck-devel@lists.alioth.debian.org>

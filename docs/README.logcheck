@@ -3,7 +3,7 @@ SYNOPSIS
 --------
 Logcheck compares recent log entries with a series of sets of egrep
 pattern-matching rules that flag them as urgent or filter them out
-as routine, and mails the results to the administrator. 
+as routine, and mails the results to the administrator.
 ======================================================================
 SCHEDULING
 ----------
@@ -13,7 +13,7 @@ reduce the frequency, but it's often better to tune the filtering
 rules instead (see below on REPORTLEVELS).  On the other hand if you
 need to be sure of spotting security incidents while they're
 happening then the shorter the interval the better, as long as runs
-don't start overlapping. 
+don't start overlapping.
 ======================================================================
 LOG ENTRIES
 -----------
@@ -31,7 +31,7 @@ RULES DIRECTORIES
 Installing "logcheck" should also have pulled in the package
 "logcheck-database", which provides pattern-matching "rules" files;
 see the corresponding README for that package for details of how
-they are organised. 
+they are organised.
 ======================================================================
 REPORTLEVEL
 -----------
@@ -41,7 +41,7 @@ medium and low "security ratings", not to be confused with the three
 filtering layers used by the logcheck-database directories.
 Reportlevels only affect the handling of the leftover log-messages
 of the final "System Events" layer, functioning rather like
-verbosity settings: 
+verbosity settings:
 
 "paranoid" is "high verbosity" - meaning that only the minimal set
 	of filters in ignore.d.paranoid should be applied.  This is

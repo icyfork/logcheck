@@ -53,7 +53,7 @@ foreach my $package (@{$dh{DOPACKAGES}}) {
 L<debhelper(7)>
 
 This program is a part of debhelper.
-    
+
 =head1 AUTHOR
 
 Jon Middleton <jjm@debian.org>

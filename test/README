@@ -6,7 +6,7 @@ This is the logcheck test suite, it needs to test the following.
  * Enabling/disabling the intro message
  * cracking
  * cracking ignore support
- * violations 
+ * violations
  * violations ignore
  * different reportlevels
 

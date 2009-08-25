@@ -1799,7 +1799,7 @@ logcheck (1.2.41) unstable; urgency=low
   * Fix hostname match in cups-lpd rules thanks Gilbert Laycock
     <gtl1@mcs.le.ac.uk> (Closes: #322179)
   * Add horde3 rules for users login/logout thanks Martin Lohmeier
-    <martin@mein-horde.de> (Closes: #322570) 
+    <martin@mein-horde.de> (Closes: #322570)
   * Fix logcheck.8 rendering of docbook-to-man. (Closes: #322036)
 
   [Todd Troxell]
@@ -1814,13 +1814,13 @@ logcheck (1.2.40) unstable; urgency=low
     violations.ignore.d/logcheck-postfix. (Closes: #305350)
   * Add postfix rule for "Temporary failure in name resolution" messages.
   * Add rules for policyd, add comma to throttle rule.
-  * Add nagios rules for PROCESS_SERVICE_CHECK_RESULT messages. 
+  * Add nagios rules for PROCESS_SERVICE_CHECK_RESULT messages.
     (Closes: #306695)
   * Add more ntp rules for "adjusting local clock" messages. (Closes: #303661)
   * Add postfix rule for "unknown SPF result" messages when using the
     libspf2 patch.
   * Add rule for bind 9.3 "FORMERR resolving" messages.
-  * Add more nagios rules for SERVICE_FLAPPING messages and 
+  * Add more nagios rules for SERVICE_FLAPPING messages and
     ENABLE_*_NOTIFICATIONS messages.
   * Fix udev rules to match alphanumeric device names and subdirectories in
     front of %k. (Closes: #307588)
@@ -1835,11 +1835,11 @@ logcheck (1.2.40) unstable; urgency=low
   * Add nagios rule for ENABLE_NOTIFICATIONS messages.
   * Add postfix rule to suppress "certificate has expired" messages.
   * Add postfix rule for "misplaced delimiter" hostname warnings.
-  * Add nagios rules to match ACKNOWLEDGEMENT, ADD_SVC_COMMENT, HOST_DOWNTIME 
+  * Add nagios rules to match ACKNOWLEDGEMENT, ADD_SVC_COMMENT, HOST_DOWNTIME
     and DISABLE_SVC_NOTIFICATIONS messages.
   * Add the first rules for qpopper and qpopper-drac. (Closes: #125794,
     #191637)
-  * Fix innd rules in violations.ignore.d/logcheck-innd for innfeed to match 
+  * Fix innd rules in violations.ignore.d/logcheck-innd for innfeed to match
     "global/final seconds.." messages.
   * Correct innd rule for perl filter rejection messages to match hostnames with
     hyphens and underscores too.
@@ -1868,7 +1868,7 @@ logcheck (1.2.40) unstable; urgency=low
   * Minor additions to logcheck(8).
   * Add rule for cron nss_ldap message in ignore.d.server/cron.
   * Generalise kernel message no IPv6 routers present level workstation.
-  * Update rsync daemon rule thanks Paul Slootman <paul@debian.org> 
+  * Update rsync daemon rule thanks Paul Slootman <paul@debian.org>
     (Closes: #308800)
   * Update postfix peer verification rule match. (Closes: #307889)
   * Beautify logcheck.postinst don't call dpkg --compare-versions when no $2.
@@ -1915,7 +1915,7 @@ logcheck (1.2.38) unstable; urgency=low
     too. (Closes: #302678)
   todd:
   * Change lockfile location from /var/lock/logcheck to
-    /var/lock/logcheck/logcheck (Thanks Rainer Zocholl) to avoid 
+    /var/lock/logcheck/logcheck (Thanks Rainer Zocholl) to avoid
     potential DoS condition. (Closes: #304978)
   * Make lockfile debug messages refer to the correct files.
   * Add note about dh_installlogcheck permissions. (See #302379)
@@ -1945,13 +1945,13 @@ logcheck (1.2.36) unstable; urgency=low
   * Add harmless pdns rule at server level.
   * Add rules for cups-lpd at level server.
   * Add violations.ignore.d/logcheck-dcc for the nightly dccifd reporting.
-  * Add rule ignore.d.server/kernel for printer out of paper. 
+  * Add rule ignore.d.server/kernel for printer out of paper.
     (Closes: #298291)
   * Add one more apm rule for useless gdm logout message.
   * Add rules for 2 harmless dhcpd and dhclient messages.
   * Add cvsd, pam rules from Peter Palfrader <weasel@debian.org>.
   * Add ssh rule for timeout before authentication.
-  * Check time of rotated logfile against already gzipped logfile. 
+  * Check time of rotated logfile against already gzipped logfile.
     syslog-ng leaves old syslog.0 logfile in /var/log. (Closes: #296096)
   todd:
   * Add support for warnings in report
@@ -1966,7 +1966,7 @@ logcheck (1.2.35) unstable; urgency=low
   maks:
   * logtail fix invocation without switches (compat to old versions).
   * Add smartd rule, whitespace fix openvpn rule, merge old smartd rules.
-  * Add rule for imaplogin disconnected + logout messages. 
+  * Add rule for imaplogin disconnected + logout messages.
     (closes: #294950, #295418)
   * Add rule violations.ignore.d/logcheck-ssh + rule ignore.d.server/ssh for
     the PARANOID wildcard in /etc/hosts.deny.
@@ -1988,7 +1988,7 @@ logcheck (1.2.35) unstable; urgency=low
   todd:
   * Correct link syntax in copyright (closes: 296214).
   * Add comments to clarify postinst
-  
+
  -- Todd Troxell <ttroxell@debian.org>  Sunday, 20 Feb 2005 23:17:00 -0500
 
 logcheck (1.2.34) unstable; urgency=low
@@ -1996,9 +1996,9 @@ logcheck (1.2.34) unstable; urgency=low
   todd:
   * Correct "Gandhi" spelling in docs/README.how.to.interpret.
     Thanks Satya <debbugs@thesatya.com> (closes: #289529)
-  * Set logtail to report errors on stderr instead of stdout. 
+  * Set logtail to report errors on stderr instead of stdout.
     (closes: #289801)
-  * Adjust logcheck to redirect stdout and also stderr when reporting in order 
+  * Adjust logcheck to redirect stdout and also stderr when reporting in order
     to maintain the current behavior of logcheck after the change above.
   * Change rule directories to setgid for real this time. (closes: #291395)
   * Update gconf, workstation/kernel rules
@@ -2015,7 +2015,7 @@ logcheck (1.2.34) unstable; urgency=low
 logcheck (1.2.33) unstable; urgency=low
 
   maks:
-  * Enhance rules at level workstation for removable devices. 
+  * Enhance rules at level workstation for removable devices.
     (closes: #284505, #284825)
   * Fix dnsmasq rule regarding DHCPINFORM. (closes: #286532)
   * Add rbldnsd rules at level server from Rafael Jesus Alcantara Perez
@@ -2034,7 +2034,7 @@ logcheck (1.2.33) unstable; urgency=low
   * Add future package plans to TODO
   * Remove dh_strip and dh_shlibdeps from debian/rules
   * Touch cron.d/logcheck in postinst. (closes: #284788)
-  * Conditionally set permissions in postinst on version <1.2.33 
+  * Conditionally set permissions in postinst on version <1.2.33
     (closes: #287184)
   * Update dh_installlogcheck, which has already been patched in debhelper.
     (closes: #287237)
@@ -2044,7 +2044,7 @@ logcheck (1.2.33) unstable; urgency=low
 logcheck (1.2.32) unstable; urgency=low
 
   maks:
-  * Add rules for jabberd, openvpn, rsnapshot, saslauthd, stunnel at 
+  * Add rules for jabberd, openvpn, rsnapshot, saslauthd, stunnel at
     level server from Peter Palfrader <weasel@debian.org>.
   * Default reportlevel is "server", correct logcheck.conf thanks koki.
   * Fix up space in newer xdm logging.
@@ -2088,7 +2088,7 @@ logcheck (1.2.30) unstable; urgency=low
   maks:
   * Move pptpd rules to level server.
   * Small typo fixes in docs.
-  * New rules for bind, courier, cpqarrayd, dhcp, jabberd, nagios, ntp, 
+  * New rules for bind, courier, cpqarrayd, dhcp, jabberd, nagios, ntp,
     openvpn, postfix, slapd, smartd, smokeping, squid, ssh, thy, uptimed.
     all for level server thanks to Peter Palfrader <weasel@debian.org>.
   * Logcheck/rules: Don't take locale for granted use character class instead.
@@ -2138,9 +2138,9 @@ logcheck (1.2.29) unstable; urgency=low
   jamie:
   * Updated rules for innd, added rule for cleanfeed.
   * Small correction to gps rules.
-  * Added SPF postfix policy server rule for 'SPF pass'. 
+  * Added SPF postfix policy server rule for 'SPF pass'.
   * Fix spelling mistake in dhcp rules. (Closes: #276063)
-  * Change dhcp rules to reflect ISC's change of name. 
+  * Change dhcp rules to reflect ISC's change of name.
     Thanks to Dirk Prosdorf for the patch. (Closes: #276317)
 
  -- Todd Troxell <ttroxell@debian.org>  Saturday, 16 Oct 2004 19:14:03 -0500
@@ -2148,7 +2148,7 @@ logcheck (1.2.29) unstable; urgency=low
 logcheck (1.2.28) unstable; urgency=low
 
   maks:
-  * Small fixes: join 2 lines in ignore.d.server/postfix, add '^' for 
+  * Small fixes: join 2 lines in ignore.d.server/postfix, add '^' for
     start-of-line ignore.d.server/scponly (Closes: #270398)
   * Small rule update oidentd (Closes: #271286)
   * Check if logcheck has the permissions to read the offsetfiles.
@@ -2180,7 +2180,7 @@ logcheck (1.2.26) unstable; urgency=low
   maks:
   * Fix multi-line build-depends lintian warning for source package.
   * Add su usage hint a root check. thanks todd and Alfie!
-  * Small rules updated and added dhcp, nagios, postfix, squid, winbind. 
+  * Small rules updated and added dhcp, nagios, postfix, squid, winbind.
     (Closes: #267587, #266432)
 
  -- Todd Troxell <ttroxell@debian.org>  Tuesday, 31 Aug 2004 02:02:03 -0400
@@ -2214,7 +2214,7 @@ logcheck (1.2.24) unstable; urgency=low
   * Added dhcpd-client, kernel, ntp, postfix rules. (Closes: #259094)
   * Added lots of postfix rules at level workstation for those,
     who wants to include /var/log/mail.log. (Closes: #206495)
-  * Generalize "nobody" to "[_[:alnum:]-]+" for su rule. 
+  * Generalize "nobody" to "[_[:alnum:]-]+" for su rule.
   * Update rules ignore.d.paranoid/cron, ignore.d.paranoid/postfix.
     New courier rules merged and simplified from imap, impd-ssl and pop3d-ssl.
     thanks to Bastian Blank <waldi@debian.org>. (Closes: #258759)
@@ -2229,7 +2229,7 @@ logcheck (1.2.24) unstable; urgency=low
   * Updated logcheck help message to all existent switches.
     Corrected logcheck command line parsing, -T needs no args.
     Use 6 'X' for mktemp(1) template. Better lock handling. (Closes: #260330)
-  * Do not create unused /var/state/logcheck and really get rid of it. 
+  * Do not create unused /var/state/logcheck and really get rid of it.
     (Closes: #260096)
   * Added cs Translation. thanks Jan Outrata. (Closes: #260382)
   * Remove duplicate postfix rules, fix for remote string add lmtp rule.
@@ -2247,8 +2247,8 @@ logcheck (1.2.23) unstable; urgency=low
 
   maks:
   * Remove logcheck pre-dependency on logtail.
-  * Added imapproxy, kernel, nfs, scponly rules. 
-  * Updated dhcpd, innd, postfix, su, sudo rules. 
+  * Added imapproxy, kernel, nfs, scponly rules.
+  * Updated dhcpd, innd, postfix, su, sudo rules.
     (Closes: #253879, #244171, #190101, #254681, #253861, #186372, #255560).
   * Fix locale dependent regexes.
   * Implemented testing mode to logcheck - doesn't update offset.
@@ -2271,7 +2271,7 @@ logcheck (1.2.23) unstable; urgency=low
  -- Todd Troxell <ttroxell@debian.org>  Thursday, 12 Jul 2004 22:55:19 -0500
 
 logcheck (1.2.22a) unstable; urgency=low
-  
+
   maks:
   * Fix broken cleancheck call. (Closes: #252966, #253075, #253260, #253486)
 
@@ -2281,7 +2281,7 @@ logcheck (1.2.22) unstable; urgency=low
 
   maks:
   * Remove broken attempt to avoid UTF-8. (Closes: #214117)
-  * Update automount, innd, kernel, openvpn, postfix rules. 
+  * Update automount, innd, kernel, openvpn, postfix rules.
     (Closes: #252216, #249474, #244172, #252174, #187496, #249181, #252712)
   * Better readability of greplogoutput() in logcheck.
   * Our Perl usage needs 5.8, add dependency. (Closes: #252078)
@@ -2290,7 +2290,7 @@ logcheck (1.2.22) unstable; urgency=low
   todd:
   * add MAILTO=root to logcheck.cron.d (Closes: #252597)
 
- -- Todd Troxell <ttroxell@debian.org>  Saturday, 05 Jun 2004 14:02:47 -0500 
+ -- Todd Troxell <ttroxell@debian.org>  Saturday, 05 Jun 2004 14:02:47 -0500
 
 logcheck (1.2.21) unstable; urgency=low
 
@@ -2299,7 +2299,7 @@ logcheck (1.2.21) unstable; urgency=low
   * Recommend use of an offsite email address in main conf.
   * Added and updated bind, cracklib, innd, kernel, logcheck, nntpcache,
     Login.app, proftp, postfix, pump, sendmail rulefiles.
-    (Closes: #248816, #213709, #198767, #248409, #249074, #250374, #250373, 
+    (Closes: #248816, #213709, #198767, #248409, #249074, #250374, #250373,
      #249181)
   * Added -v switch (outputs logcheck version).
   * Harden permissions regarding world.
@@ -2327,7 +2327,7 @@ logcheck (1.2.21) unstable; urgency=low
   * Made addition of logcheck user and permissions/ownership changes a
     conditional of an upgrade from a version less than 1.2.19.
     (Closes: #249324)
-  * Added a note to README.Debian on how to manually change the cronjob 
+  * Added a note to README.Debian on how to manually change the cronjob
     interval. (Closes: #222240, #226937)
   alfie:
   * src/logcheck: test also for readability for the header.txt and footer.txt.
@@ -2458,7 +2458,7 @@ logcheck (1.2.17) unstable; urgency=low
 logcheck (1.2.16) unstable; urgency=low
 
   * Penultimate upload before the new perl revision homed at:
-  		http://alioth.debian.org/projects/logcheck
+		http://alioth.debian.org/projects/logcheck
     Volunteers and co-maintainers welcome, many thanks for the
     recent bug triaging by many people.
   * Suggest syslog-summery in the control file.

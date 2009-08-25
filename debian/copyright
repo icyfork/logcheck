@@ -7,7 +7,7 @@ consisting of:
 	Gerfried Fuchs <rhonda@debian.at>
 	Eric Evans <eevans@sym-link.com>
 	Jamie Penman-Smithson <jamie@silverdream.org>
- 	martin f. krafft <madduck@debian.org>
+	martin f. krafft <madduck@debian.org>
 
 The project is currently hosted on Alioth at:
 http://alioth.debian.org/projects/logcheck/
@@ -20,16 +20,16 @@ as well as the 'CHANGES' file.
 
 Copyright:
 
- Copyright (C) 2004-2006 Debian Logcheck Team 
+ Copyright (C) 2004-2006 Debian Logcheck Team
                          <logcheck-devel@lists.alioth.debian.org>
- Copyright (C) 2003      Steve Kemp <skx@debian.org> 
+ Copyright (C) 2003      Steve Kemp <skx@debian.org>
  Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>
  Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
  Copyright (C) 1996-1997 Craig H. Rowland <crowland@psionic.com>
 
 This software is published under the terms of the GNU general public license,
 version 2 (not later).
-On Debian systems, a copy of the license can normally be found under 
+On Debian systems, a copy of the license can normally be found under
 /usr/share/common-licenses/GPL-2.
 
 
@@ -42,7 +42,7 @@ points to a new version which is not currently related to Debian's logcheck.
 In order to clarify the currently available branches forked of the original
 upstream version please see the following graph:
 
-Psionic's version developed by Craig Rowland 
+Psionic's version developed by Craig Rowland
 1.1.1 (last release june 1997, stalled)
   |   (freebsd uses this http://www.freshports.org/security/logcheck/)
   |
@@ -61,6 +61,6 @@ Psionic's version developed by Craig Rowland
   |                                             Todd Troxell, Apr
   |                                             2004 - logcheck
   .--- 1.2  - 1.2.1 - 1.2.3                     team formed.)
-      (Doug Hunley, new fork from 
+      (Doug Hunley, new fork from
        upstream, June 2003, available at
        http://doug.hunley.homeip.net/tools/)

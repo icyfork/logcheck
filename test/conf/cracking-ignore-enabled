@@ -11,7 +11,7 @@
 
 #INTRO=1
 
-# Controls the level of filtering: 
+# Controls the level of filtering:
 # Can be Set to "workstation", "server" or "paranoid" for different
 # levels of filtering. Defaults to paranoid if not set.
 

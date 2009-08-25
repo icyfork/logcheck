@@ -42,7 +42,7 @@
 
 * Debian Package, post sarge
   Switch dh_movefiles to dh_install in rules, include header.
-  Use package.manpages, call dh_installman once in rules. 
+  Use package.manpages, call dh_installman once in rules.
   Web-based rule submission, with sanity checks.
   Split logcheck-database from source package to simplify maintenance.
   Move rulefile permission fixes to logcheck-database postinst.

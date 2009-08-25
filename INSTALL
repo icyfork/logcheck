@@ -5,7 +5,7 @@ If you are running Debian, you will benefit from installing the .debs
 Otherwise, perform a manual install like this.
 
 ! These instructions are likely incomplete.  If you had to do something
-different, please contact the logcheck team at 
+different, please contact the logcheck team at
 logcheck-devel@lists.alioth.debian.org.
 
 -Extract logcheck and run make install.
