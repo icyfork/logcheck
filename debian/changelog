@@ -1,6 +1,8 @@
 logcheck (1.3.4) experimental; urgency=low
 
   [ Hannes von Haugwitz ]
+  * ignore.d.server/smartd
+    - added rule to match completed self-test
   * Added some rules for wpasupplicant (closes: #544084)
   * ignore.d.server/su, violations.ignore.d/logcheck-su
     - adjusted su rules to also match /dev/ prefix
