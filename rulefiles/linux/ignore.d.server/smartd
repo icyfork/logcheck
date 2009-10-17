@@ -12,6 +12,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, opened$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, starting scheduled (Long|Short) Self-Test\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, previous self-test completed without error$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, self-test in progress, [1-9]0% remaining$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[(3ware|cciss)_disk_[[:digit:]]+\])?, old test of type (S|L) not run at (Sun|Mon|Tue|Wed|Thu|Fri|Sat) \w{3} [ :[:digit:]]{11} [0-9]{4} [A-Z]+, starting now.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Home page is http://smartmontools\.sourceforge\.net/$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Monitoring [[:digit:]]+ ATA and [[:digit:]]+ SCSI devices
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Opened configuration file /etc/smartd\.conf$
