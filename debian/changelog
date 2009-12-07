@@ -1,4 +1,4 @@
-logcheck (1.3.4) experimental; urgency=low
+logcheck (1.3.4) unstable; urgency=low
 
   [ Hannes von Haugwitz ]
   * ignore.d.workstation/ifplugd
@@ -71,7 +71,10 @@ logcheck (1.3.4) experimental; urgency=low
   * ignore.d.server/smartd:
     - Replaced hardcoded controller list with generic pattern (closes: #555828)
 
- -- Frédéric Brière <fbriere@fbriere.net>  Mon, 17 Aug 2009 11:48:08 -0400
+  [ Gerfried Fuchs ]
+  * Upload to unstable.
+
+ -- Gerfried Fuchs <rhonda@debian.at>  Mon, 07 Dec 2009 18:06:40 +0100
 
 logcheck (1.3.3) unstable; urgency=low
 
