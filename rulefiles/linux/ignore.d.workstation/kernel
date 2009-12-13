@@ -107,6 +107,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] Setting GART location based on new memory map$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] Loading R[23]00 Microcode$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] writeback test succeeded in [[:digit:]]+ usecs$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] (DAC-6|LVDS-8): set mode (640x480|800x600|1024x768|1152x864|1280x1024|1440x900)? [0-9a-f]{1,2}$
 # this stuff is from pmounts autodetection
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs: No (VRS|partition) found( \([[:digit:]]+\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Unable to identify CD-ROM format\.$
