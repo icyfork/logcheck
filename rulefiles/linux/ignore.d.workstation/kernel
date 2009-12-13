@@ -145,3 +145,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb[[:digit:]]+: register 'zaurus' at usb-[[:digit:]:.-]+, (Sharp Zaurus SL-5x00|Sharp Zaurus, PXA-2xx based|Olympus R1000|pseudo-MDLM =\(BLAN\) device), [[:digit:]a-f:]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb[[:digit:]]+: unregister 'zaurus' usb-[[:digit:]:.-]+, (Sharp Zaurus SL-5x00|Sharp Zaurus, PXA-2xx based|Olympus R1000|pseudo-MDLM =\(BLAN\) device)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? thinkpad_acpi: EC reports that Thermal Table has changed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: (authenticate(d| with AP ([0-9a-f]{2}:){5}[0-9a-f]{2})|associate(d| with AP ([0-9a-f]{2}:){5}[0-9a-f]{2}))$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: RX AssocResp from ([0-9a-f]{2}:){5}[0-9a-f]{2} \(capab=0x411 status=0 aid=[0-9]\)$
