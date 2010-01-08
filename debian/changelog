@@ -1,10 +1,12 @@
 logcheck (1.3.6) UNRELEASED; urgency=low
 
   [ Hannes von Haugwitz ]
+  * ignore.d.server/login
+    - adjusted login rule to also match /dev/ prefix
   * ignore.d.workstation/ifplugd
-    - Added rules for ifplugd.action script execution
+    - added rules for ifplugd.action script execution
   * ignore.d.workstation/ppp
-    - Adjusted rule for successful CHAP authentication
+    - adjusted rule for successful CHAP authentication
   * Added myself to the Uploaders field.
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Sat, 02 Jan 2010 08:27:32 +0100
