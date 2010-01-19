@@ -1,6 +1,7 @@
 logcheck (1.3.6) UNRELEASED; urgency=low
 
   [ Hannes von Haugwitz ]
+  * Added rule for libpam-gnome-keyring, thanks to Jerome Wittmann (closes: #565774)
   * ignore.d.workstation/kernel:
     - extended the rules for WLAN authentication and association
   * Added rules for successful non-root login to text console.
