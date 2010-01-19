@@ -1,6 +1,8 @@
 logcheck (1.3.6) UNRELEASED; urgency=low
 
   [ Hannes von Haugwitz ]
+  * ignore.d.server/nagios:
+    - removed rule for nrpe
   * Added rule for libpam-gnome-keyring, thanks to Jerome Wittmann (closes: #565774)
   * ignore.d.workstation/kernel:
     - extended the rules for WLAN authentication and association
