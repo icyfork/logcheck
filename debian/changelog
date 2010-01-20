@@ -14,6 +14,7 @@ logcheck (1.3.6) UNRELEASED; urgency=low
     - ignore ext4 mount message
   * ignore.d.server/login
     - adjusted login rule to also match /dev/ prefix
+    - added rule to match newgrp messages, thanks to Martin Mazur (closes: #545318)
   * ignore.d.workstation/ifplugd
     - added rules for ifplugd.action script execution
   * ignore.d.workstation/ppp
