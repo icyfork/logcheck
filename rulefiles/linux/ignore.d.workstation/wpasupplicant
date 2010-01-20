@@ -4,7 +4,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: WPA: Key negotiation completed with ([0-9a-f]{2}:){5}[0-9a-f]{2} \[PTK=(CCMP|TKIP) GTK=(CCMP|TKIP)\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: CTRL-EVENT-CONNECTED - Connection to ([0-9a-f]{2}:){5}[0-9a-f]{2} completed \((re)?auth\) \[id=[0-9]+ id_str=[[:alnum:]]+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: CTRL-EVENT-SCAN-RESULTS$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: CTRL-EVENT-EAP-(STARTED EAP authentication started|SUCCESS EAP authentication completed successfully|METHOD EAP vendor 0 method 25 \(PEAP\) selected)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: CTRL-EVENT-EAP-(STARTED EAP authentication started|SUCCESS EAP authentication completed successfully|METHOD EAP vendor 0 method (17 \(LEAP|25 \(PEAP)\) selected)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: EAP-MSCHAPV2: Authentication succeeded$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: EAP-TLV: TLV Result - Success - EAP-TLV/Phase2 Completed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: WPS-AP-AVAILABLE$
