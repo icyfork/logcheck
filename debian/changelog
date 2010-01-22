@@ -4,6 +4,7 @@ logcheck (1.3.6) UNRELEASED; urgency=low
   * Removed obsolete files in violations.ignore.d/ (closes: #566107)
   * ignore.d.workstation/wpasupplicant:
     - adjusted rule to also match LEAP method
+    - allow empty id_str in CTRL-EVENT-CONNECTED message
   * Added rules for dhcpcd, thanks to Paweł Hajdan, Jr. (closes: #564702)
   * ignore.d.server/nagios:
     - removed rule for nrpe
