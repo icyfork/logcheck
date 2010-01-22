@@ -1,3 +1,27 @@
+logcheck (1.3.5) unstable; urgency=low
+
+  [ Hannes von Haugwitz ]
+  * Added rule for fcron
+  * ignore.d.server/nagios
+    - ignore harmless "CURRENT (HOST|SERVICE) STATE" messages
+  * ignore.d.workstation/kernel
+    - ignore "set mode" message from DRM
+    - added some rules for WLAN authentication and association
+    - ignore "thinkpad_acpi: EC reports that Thermal Table has changed" message
+  * Added nslcd rule for ldap server connection
+  * ignore.d.server/cron-apt
+    - ignore disk space freed message, thanks to Tim Small (closes: #557087)
+    - tiny regex code change
+  * Deleting obsolete conffiles in logcheck-database.preinst
+    - ignore.d.server/oidentd, also in oidentd (closes: #544686, #560428)
+  * ignore.d.server/dhclient
+    - adjusted rule to match new web address
+  * ignore.d.workstation/xdm
+    - ignore successful kerberos authentication
+  * Added xscreensaver rule for successful kerberos authentication
+
+ -- martin f. krafft <madduck@debian.org>  Wed, 30 Dec 2009 08:10:08 +0100
+
 logcheck (1.3.4~bpo50+1) lenny-backports; urgency=low
 
   * Rebuild for lenny-backports.

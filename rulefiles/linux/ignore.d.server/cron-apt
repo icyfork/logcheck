@@ -1,5 +1,5 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cron-apt: E: Some index files failed to download, they have been ignored, or old ones used instead\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: After this operation, [.[:digit:]]+[kMGTPEZY]?B of additional disk space will be used\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: E: Some index files failed to download, they have been ignored, or old ones used instead\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: After this operation, [.[:digit:]]+[kMGTPEZY]?B (of additional disk space will be used|disk space will be freed)\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: After unpacking [[:digit:].]+([kMGTPEZY]?B) (of additional disk space will be used|disk space will be freed)\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: Building [dD]ependency [tT]ree\.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron-apt: CRON-APT ACTION: (0-update|3-download)$

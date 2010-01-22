@@ -4,6 +4,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: EXTERNAL COMMAND: (ENABLE|DISABLE)_(HOST_|HOST_SVC_|SVC_)?NOTIFICATIONS;[._[:alnum:]-]+(;[^;]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;[._[:alnum:]-]+;[^;]+;[[:digit:]]+;.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: EXTERNAL COMMAND: SCHEDULE_HOST_DOWNTIME;[._[:alnum:]-]+;[[:digit:];]+;[[:alnum:]]+;.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: CURRENT HOST STATE: [._[:alnum:]-]+;UP;(SOFT|HARD);[[:digit:]];.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: CURRENT SERVICE STATE: [._[:alnum:]-]+;[^;]+;(WARNING|OK);(SOFT|HARD);[[:digit:]];.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST ALERT: [._[:alnum:]-]+;(DOWN|UP|UNREACHABLE);(SOFT|HARD);.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST DOWNTIME ALERT: [._[:alnum:]-]+;(STARTED|STOPPED);.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST EVENT HANDLER: [._[:alnum:]-]+;(UP|DOWN);(SOFT|HARD);[[:digit:]]+;.*$

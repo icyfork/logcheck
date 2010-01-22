@@ -107,6 +107,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] Setting GART location based on new memory map$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] Loading R[23]00 Microcode$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] writeback test succeeded in [[:digit:]]+ usecs$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] (DAC-6|LVDS-8): set mode (640x480|800x600|1024x768|1152x864|1280x1024|1440x900)? [0-9a-f]{1,2}$
 # this stuff is from pmounts autodetection
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs: No (VRS|partition) found( \([[:digit:]]+\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Unable to identify CD-ROM format\.$
@@ -144,3 +145,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? bttv[[:digit:]]+: PLL can sleep, using XTAL \(28636363\)\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb[[:digit:]]+: register 'zaurus' at usb-[[:digit:]:.-]+, (Sharp Zaurus SL-5x00|Sharp Zaurus, PXA-2xx based|Olympus R1000|pseudo-MDLM =\(BLAN\) device), [[:digit:]a-f:]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb[[:digit:]]+: unregister 'zaurus' usb-[[:digit:]:.-]+, (Sharp Zaurus SL-5x00|Sharp Zaurus, PXA-2xx based|Olympus R1000|pseudo-MDLM =\(BLAN\) device)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? thinkpad_acpi: EC reports that Thermal Table has changed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: (authenticate(d| with AP ([0-9a-f]{2}:){5}[0-9a-f]{2})|associate(d| with AP ([0-9a-f]{2}:){5}[0-9a-f]{2}))$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: RX AssocResp from ([0-9a-f]{2}:){5}[0-9a-f]{2} \(capab=0x411 status=0 aid=[0-9]\)$
