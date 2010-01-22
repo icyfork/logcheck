@@ -1,6 +1,7 @@
 logcheck (1.3.6) UNRELEASED; urgency=low
 
   [ Hannes von Haugwitz ]
+  * Removed obsolete files in violations.ignore.d/ (closes: #566107)
   * ignore.d.workstation/wpasupplicant:
     - adjusted rule to also match LEAP method
   * Added rules for dhcpcd, thanks to Paweł Hajdan, Jr. (closes: #564702)

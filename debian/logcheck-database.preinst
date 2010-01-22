@@ -26,6 +26,33 @@ REMOVED_CONFFILES="
 	/etc/logcheck/ignore.d.server/lpr
 	/etc/logcheck/ignore.d.server/ntp
 	/etc/logcheck/ignore.d.server/sendmail
+	/etc/logcheck/violations.ignore.d/logcheck-bind
+	/etc/logcheck/violations.ignore.d/logcheck-bluez-utils
+	/etc/logcheck/violations.ignore.d/logcheck-courier
+	/etc/logcheck/violations.ignore.d/logcheck-cron-apt
+	/etc/logcheck/violations.ignore.d/logcheck-cyrus
+	/etc/logcheck/violations.ignore.d/logcheck-dcc
+	/etc/logcheck/violations.ignore.d/logcheck-dovecot
+	/etc/logcheck/violations.ignore.d/logcheck-hylafax
+	/etc/logcheck/violations.ignore.d/logcheck-innd
+	/etc/logcheck/violations.ignore.d/logcheck-login
+	/etc/logcheck/violations.ignore.d/logcheck-mon
+	/etc/logcheck/violations.ignore.d/logcheck-nagios
+	/etc/logcheck/violations.ignore.d/logcheck-openvpn
+	/etc/logcheck/violations.ignore.d/logcheck-passwd
+	/etc/logcheck/violations.ignore.d/logcheck-pdns
+	/etc/logcheck/violations.ignore.d/logcheck-postfix
+	/etc/logcheck/violations.ignore.d/logcheck-proftpd
+	/etc/logcheck/violations.ignore.d/logcheck-pureftp
+	/etc/logcheck/violations.ignore.d/logcheck-samba
+	/etc/logcheck/violations.ignore.d/logcheck-sasl2-bin
+	/etc/logcheck/violations.ignore.d/logcheck-saslauthd
+	/etc/logcheck/violations.ignore.d/logcheck-sendmail_tmp
+	/etc/logcheck/violations.ignore.d/logcheck-spamd
+	/etc/logcheck/violations.ignore.d/logcheck-squid
+	/etc/logcheck/violations.ignore.d/logcheck-ssh
+	/etc/logcheck/violations.ignore.d/logcheck-usb
+	/etc/logcheck/violations.ignore.d/logcheck-winbind
 "
 
 # List of conffiles which were once part of this package a long time ago, and

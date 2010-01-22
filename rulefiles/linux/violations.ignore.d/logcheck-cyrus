@@ -1,3 +1,0 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cyrus/imapd\[[0-9]+\]: SQUAT failed to open index file$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cyrus/imapd\[[0-9]+\]: SQUAT failed$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cyrus/lmtpd\[[0-9]+\]: DBERROR db3: [12] lockers$

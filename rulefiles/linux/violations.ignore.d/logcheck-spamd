@@ -1,8 +1,0 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: Cannot open bayes databases /home/[_[:alnum:]-]+/.spamassassin/bayes_\* R/W: lock failed: File exists$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: failed sanity check, [0-9]+ bytes claimed, [0-9-]+ bytes seen$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]:( spamd:)? (process|check)ing message <[^>]+>( aka <[^>]+>)? for [-._+=[:alnum:]]+(@[-.[:alnum:]]+:[[:digit:]]+|:[[:digit:]]+)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: (spamd: )?result: [.YN] [ [:digit:]-]+ - ([._[:alnum:],]+ )?scantime=[0-9.]+,size=[0-9]+,(user=[^,]+,uid=[0-9]+,required_score=[0-9.]+,rhost=[._[:alnum:]-]+,raddr=[0-9.]+,rport=[0-9]+,)?mid=(<[^[:space:]]+>|\(unknown\))(rmid=(<[^[:space:]]+>|\(unknown\)),)?,(bayes=[.[:digit:]]+(e-[[:digit:]]+)?,)?autolearn=(ham|spam|no|disabled|unavailable) *$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ admin\[[0-9]+\]: \[ [[:digit:]]+\]  Razor-Agents v[.[:digit:]]+ starting razor-admin --(create|register)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[0-9]+\]: reporter: SpamCop report to [-._[:alnum:]]+ failed: Net::SMTP error$
-#temp razor rule:
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ re(voke|port)\[[0-9]+\]: reporter: razor2 re(voke|port) failed: No such file or directory re(voke|port) requires authentication at /usr/share/perl5/Mail/SpamAssassin/Plugin/Razor2\.pm line [[:digit:]]+\. at /usr/share/perl5/Mail/SpamAssassin/Plugin/Razor2\.pm line [[:digit:]]+\.

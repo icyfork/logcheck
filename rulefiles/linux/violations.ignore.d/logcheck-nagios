@@ -1,1 +1,0 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;CRITICAL;.*$
