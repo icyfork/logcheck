@@ -1,6 +1,9 @@
 logcheck (1.3.6) UNRELEASED; urgency=low
 
   [ Hannes von Haugwitz ]
+  * ignore.d.paranoid/cron:
+    - make /usr/sbin/ optional in pathnames of cron,
+      thanks to Matthias Andree (closes: #566198)
   * ignore.d.server/dhclient:
     - adjusted rules to match optional ip address,
       thanks to David Pashley (closes: #552222)
