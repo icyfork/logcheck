@@ -1,6 +1,9 @@
 logcheck (1.3.6) UNRELEASED; urgency=low
 
   [ Hannes von Haugwitz ]
+  * ignore.d.paranoid/sysklogd:
+    - more specific matching of upstream version and optional distribution revision,
+      thanks to Caspar Clemens Mierau (closes: #566200)
   * ignore.d.paranoid/cron:
     - make /usr/sbin/ optional in pathnames of cron,
       thanks to Matthias Andree (closes: #566198)
