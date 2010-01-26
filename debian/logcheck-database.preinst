@@ -53,6 +53,8 @@ REMOVED_CONFFILES="
 	/etc/logcheck/violations.ignore.d/logcheck-ssh
 	/etc/logcheck/violations.ignore.d/logcheck-usb
 	/etc/logcheck/violations.ignore.d/logcheck-winbind
+	/etc/logcheck/violations.ignore.d/logcheck-kernel
+	/etc/logcheck/violations.ignore.d/logcheck-smartd
 "
 
 # List of conffiles which were once part of this package a long time ago, and
