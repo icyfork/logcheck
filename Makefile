@@ -4,6 +4,8 @@ CONFDIR = etc/logcheck
 BINDIR = usr/sbin
 SHAREDIR = usr/share/logtail/detectrotate
 
+all:
+
 install:
 	# Create the directories
 	install -m 750 -d $(DESTDIR)/$(CONFDIR)
