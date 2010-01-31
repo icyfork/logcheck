@@ -1,6 +1,9 @@
 logcheck (1.3.7) UNRELEASED; urgency=low
 
   [ Hannes von Haugwitz ]
+  * ignore.d.server/bind:
+    - added rules for "received notify for zone" and
+      "zone is up to date" message
   * Makefile: added an empty "all" make target,
     thanks to Paweł Hajdan, Jr. (closes: #567150)
   * ignore.d.server/ssh:
@@ -12,9 +15,9 @@ logcheck (1.3.7) UNRELEASED; urgency=low
   * ignore.d.server/dovecot:
     - added an optional prefix "dovecot: " to the deliver rule
     - added rule to ignore various sieve messages (stored mail, forwards,
-      vacation replies and discards) 
+      vacation replies and discards)
 
- -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Sat, 30 Jan 2010 18:07:12 +0100
+ -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Sun, 31 Jan 2010 20:13:27 +0100
 
 logcheck (1.3.6) unstable; urgency=low
 
