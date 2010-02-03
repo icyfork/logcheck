@@ -80,7 +80,8 @@ manpage.1: manpage.sgml
     "server" is the default and contains rules for many different daemons.
     "workstation" is for sheltered machines and filters most of the messages.
     The ignore rules work in additive manner. "paranoid" rules are also
-    included at level "server" and "workstation".</para>
+    included at level "server". "workstation" level includes both "paranoid"
+    and "server" rules.</para>
 
     <para>The messages reported are sorted into three layers, system events,
     security events and attack alerts. The verbosity of system events is
