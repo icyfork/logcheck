@@ -1,6 +1,9 @@
 logcheck (1.3.7) UNRELEASED; urgency=low
 
   [ Hannes von Haugwitz ]
+  * ignore.d.server/mountd: new
+    - added rule for authenticated mount/unmount requests,
+      thanks to Paweł Hajdan, Jr. (closes: #567842)
   * docs/logcheck.sgml: clarify that "server" rules are
     included in "workstation" level
   * ignore.d.server/klogind: new
