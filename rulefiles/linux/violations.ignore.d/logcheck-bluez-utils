@@ -1,2 +1,0 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dund\[[[:digit:]]+\]: Accept failed\. Interrupted system call\([[:digit:]]+\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dund\[[[:digit:]]+\]: Service record unregistration failed\.$

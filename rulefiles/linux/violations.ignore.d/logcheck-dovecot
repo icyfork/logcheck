@@ -1,2 +1,0 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: \(pam_unix\) authentication failure; logname= uid=0 euid=0 tty=dovecot ruser= rhost=$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: pam_unix\(dovecot:[[:alnum:]]+\): authentication failure; logname= uid=0 euid=0 tty=dovecot ruser= rhost=$

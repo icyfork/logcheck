@@ -2,7 +2,7 @@ Source: logcheck
 Section: admin
 Priority: optional
 Maintainer: Debian logcheck Team <logcheck-devel@lists.alioth.debian.org>
-Uploaders: Todd Troxell <ttroxell@debian.org>, Gerfried Fuchs <rhonda@debian.at>, Eric Evans <eevans@debian.org>, martin f. krafft <madduck@debian.org>, Marc Haber <mh+debian-packages@zugschlus.de>, maximilian attems <maks@debian.org>, Hanspeter Kunz <hkunz@ifi.uzh.ch>
+Uploaders: Todd Troxell <ttroxell@debian.org>, Gerfried Fuchs <rhonda@debian.at>, Eric Evans <eevans@debian.org>, martin f. krafft <madduck@debian.org>, Marc Haber <mh+debian-packages@zugschlus.de>, maximilian attems <maks@debian.org>, Hanspeter Kunz <hkunz@ifi.uzh.ch>, Hannes von Haugwitz <hannes@vonhaugwitz.com>
 Standards-Version: 3.8.3
 Build-Depends: debhelper (>= 7)
 Build-Depends-Indep: docbook-to-man
@@ -12,7 +12,7 @@ Homepage: http://www.logcheck.org/
 
 Package: logcheck
 Architecture: all
-Depends: adduser, exim4 | mail-transport-agent, cron, rsyslog | system-log-daemon, bsd-mailx | mailx, logtail (>= 1.2.59), lockfile-progs, ${misc:Depends}
+Depends: adduser, exim4 | mail-transport-agent, cron, rsyslog | system-log-daemon, mime-construct, logtail (>= 1.2.59), lockfile-progs, ${misc:Depends}
 Recommends: logcheck-database (>= ${source:Version})
 Suggests: syslog-summary
 Description: mails anomalies in the system logfiles to the administrator

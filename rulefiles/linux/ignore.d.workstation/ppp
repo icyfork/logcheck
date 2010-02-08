@@ -1,5 +1,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: Connect: ppp[[:digit:]]+ <--> [[:alnum:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: (CH|P)AP authentication succeeded(: (CH|P)AP authentication success, unit [[:digit:]]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: (CH|P)AP authentication succeeded(: (Congratulations!|(CH|P)AP authentication success, unit [[:digit:]]+))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Connection terminated\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Device ttyS1 is locked by pid [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pppd\[[0-9]+\]: Exit\.$

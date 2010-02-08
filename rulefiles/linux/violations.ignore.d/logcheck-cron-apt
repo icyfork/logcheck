@@ -1,1 +1,0 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cron-apt: E: Some index files failed to download, they have been ignored, or old ones used instead\.$
