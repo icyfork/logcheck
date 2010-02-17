@@ -1,6 +1,8 @@
 logcheck (1.3.7) UNRELEASED; urgency=low
 
   [ Hannes von Haugwitz ]
+  * ignore.d.server/wu-ftpd:
+    - adjusted rule to match optional pid (closes: #570207)
   * src/logcheck:
     - use 7bit encoding for sending mail
   * ignore.d.workstation/kernel:
