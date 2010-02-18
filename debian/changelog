@@ -35,6 +35,7 @@ logcheck (1.3.7) UNRELEASED; urgency=low
   [ Frédéric Brière ]
   * ignore.d.server/kernel:
     - added IPv6 support to "Treason uncloaked!" rule (closes: #546004)
+    - added "Peer unexpectedly shrunk window" alternate rule
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Sun, 31 Jan 2010 20:13:27 +0100
 
