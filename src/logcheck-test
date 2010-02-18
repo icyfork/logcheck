@@ -1,0 +1,205 @@
+#!/bin/sh
+#
+# Copyright © 2007–2010 Hannes von Haugwitz <hannes@vonhaugwitz.com>
+
+# This file is part of Logcheck
+
+# Logcheck is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+
+# Logcheck is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with Logcheck; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+set -u
+
+FILE=
+PREFIX=
+SUFFIX=
+RULEFILE=
+INVERT=
+RULE=
+
+NOTQUIET=true
+
+trap 'cleanup; trap - 1 2 3 4 5 6 7 8 10 11 12 13 14 15 16' 1 2 3 4 5 6 7 8 10 11 12 13 14 15 16
+
+cleanup() { :; }
+
+usage() {
+    cat<<EOF
+usage: logcheck-test
+-h|--help                   : Show usage information
+-a|--auth.log               : Parse /var/log/auth.log
+-s|--syslog                 : Parse /var/log/syslog
+-l|--log-file LOGFILE       : Parse LOGFILE
+-i|--invert-match           : Show lines that don't match the RULE or RULEFILE
+-q|--quiet                  : Suppress rule summary
+
+-e|--surround-rule          : Surround RULE with standard prefix and suffix
+-P|--append-prefix PREFIX   : Append PREFIX to rule prefix
+-S|--prepend-suffix SUFFIX  : Prepend SUFFIX to rule suffix
+
+-r|--rule-file RULEFILE     : Use file RULEFILE for rule input
+EOF
+}
+
+err() {
+    echo "ERROR: $@!" >&2
+}
+
+warn() {
+    echo "WARNING: $@!" >&2
+}
+
+while [ -n "${1:-}" ]; do
+    ARGUMENT="$1"
+    shift
+    case "$ARGUMENT" in
+        -r|--rule-file)
+            if [ -z "${1:-}" ] ; then
+                err "$ARGUMENT needs an rule file as argument"
+                exit 4
+            else
+                RULEFILE="$1"
+                if ! [ -f "$RULEFILE" ] ; then
+                    err "'$RULEFILE' is no regular file"
+                    exit 5
+                elif ! [ -r "$RULEFILE" ] ; then
+                    err "'$RULEFILE' permission denied"
+                    exit 6
+                fi
+                shift
+            fi
+        ;;
+        -l|--log-file)
+            if [ -z "${1:-}" ] ; then
+                err "$ARGUMENT needs a log file as argument"
+                exit 7
+            else
+                if [ -z "$FILE" ] ; then
+                    FILE="$1"
+                    if ! [ -f "$FILE" ] ; then
+                        err "'$FILE' is no regular file"
+                        exit 8
+                    fi
+                else
+                    warn "option -l $1 ignored"
+                fi
+                shift
+            fi
+        ;;
+        -a|--auth.log)
+            if [ -z "$FILE" ] ; then
+                FILE="/var/log/auth.log"
+            else
+                warn "option -a ignored"
+            fi
+        ;;
+        -s|--syslog)
+            if [ -z "$FILE" ] ; then
+                FILE="/var/log/syslog"
+            else
+                warn "option -s ignored"
+            fi
+        ;;
+        -q|--quiet)
+            NOTQUIET=false
+        ;;
+        -i|--invert-match)
+            INVERT="-v"
+        ;;
+        -e|--surround-rule)
+            if [ -n "$PREFIX" ] ; then
+                err "-e option must precede -P option"
+                exit 9
+            elif [ -n "$SUFFIX" ] ; then
+                err "-e option must precede -S option"
+                exit 10
+            else
+                PREFIX="^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ "
+                SUFFIX="\$"
+            fi
+        ;;
+        -P|--append-prefix)
+            if [ -z "${1:-}" ] ; then
+                err "-P needs an argument"
+                exit 11
+            else
+                PREFIX="$PREFIX$1"
+                shift
+            fi
+        ;;
+        -S|--prepend-suffix)
+            if [ -z "${1:-}" ] ; then
+                err "-S needs an argument"
+                exit 12
+            else
+                SUFFIX="$SUFFIX$1"
+                shift
+            fi
+        ;;
+        -h|--help)
+            usage
+            exit 0
+        ;;
+        -*)
+            err "$ARGUMENT: invalid option"
+            exit 13
+        ;;
+        *)
+            if [ -n "$RULEFILE" ] ; then
+                err "you cannot use both RULE and RULEFILE"
+                exit 16
+            fi
+            RULE="$ARGUMENT"
+            if [ -n "${1:-}" ] ; then
+                err "options must preceed RULE"
+                exit 14
+            fi
+        ;;
+    esac
+done
+
+if [ -z "$FILE" ] ; then
+    err "no log file specified, please choose -a or -s or -l LOGFILE"
+    exit 2
+elif ! [ -r "$FILE" ] ; then
+    err "'$FILE' permission denied"
+    exit 3
+else
+    if [ -n "$RULEFILE" ] ; then
+        CLEANRULE="$(mktemp --tmpdir logcheck-test.XXXXXXXXXX)"
+        cleanup() { rm -rf $CLEANRULE; }
+        egrep --text -v '^[[:space:]]*$|^#' "$RULEFILE" >> $CLEANRULE
+        sed -e 's/[[:space:]]*$//' $FILE | egrep $INVERT -f "$CLEANRULE"
+        GREP="$?"
+        cleanup
+    else
+        if [ -n "$RULE" ] ; then
+            sed -e 's/[[:space:]]*$//' $FILE | egrep $INVERT "$PREFIX$RULE$SUFFIX"
+            GREP="$?"
+        else
+            err "no RULE specified"
+            exit 15
+        fi
+    fi
+    [ $GREP -ne 0 ] && EXIT="1" || EXIT="0"
+    if $NOTQUIET ; then
+        echo "================================================================================"
+        echo "parsed file: $FILE"
+        if [ -n "$RULEFILE" ] ; then
+            echo "used rule file: $RULEFILE"
+        else
+            echo "used rule: '$PREFIX$RULE$SUFFIX'"
+        fi
+    fi
+    exit $EXIT
+fi

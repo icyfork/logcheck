@@ -1,6 +1,7 @@
 logcheck (1.3.7) UNRELEASED; urgency=low
 
   [ Hannes von Haugwitz ]
+  * Added src/logcheck-test and docs/logcheck-test.1
   * ignore.d.server/wu-ftpd:
     - adjusted rule to match optional pid (closes: #570207)
   * src/logcheck:
