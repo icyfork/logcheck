@@ -24,6 +24,7 @@ logcheck (1.3.7) UNRELEASED; urgency=low
     - added an empty "all" make target, thanks to
       Paweł Hajdan, Jr. (closes: #567150)
     - renamed BINDIR to SBINDIR
+    - added logtail2 script to "clean" make target
   * ignore.d.server/ssh:
     - added rule for "disconnected by user" message (closes: #567317)
   * ignore.d.workstation/ifplugd:

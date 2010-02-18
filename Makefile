@@ -52,6 +52,7 @@ clean:
 	# Remove the scripts
 	-rm -f  $(DESTDIR)/$(SBINDIR)/logcheck
 	-rm -f  $(DESTDIR)/$(SBINDIR)/logtail
+	-rm -f  $(DESTDIR)/$(SBINDIR)/logtail2
 	# Remove the configfiles
 	-rm -f $(DESTDIR)/$(CONFDIR)/logcheck.logfiles
 	-rm -f $(DESTDIR)/$(CONFDIR)/logcheck.conf
