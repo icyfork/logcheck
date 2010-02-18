@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 CONFDIR = etc/logcheck
-BINDIR = usr/sbin
+SBINDIR = usr/sbin
 SHAREDIR = usr/share/logtail/detectrotate
 
 all:
@@ -10,7 +10,7 @@ install:
 	# Create the directories
 	install -m 750 -d $(DESTDIR)/$(CONFDIR)
 	install -d $(DESTDIR)/var/lib/logcheck
-	install -d $(DESTDIR)/$(BINDIR)
+	install -d $(DESTDIR)/$(SBINDIR)
 	install -d $(DESTDIR)/var/lock/logcheck
 	install -d $(DESTDIR)/$(SHAREDIR)
 
@@ -23,9 +23,9 @@ install:
 	install -m 2750 -d $(DESTDIR)/$(CONFDIR)/violations.ignore.d
 
 	# Install the scripts
-	install -m 755 src/logcheck $(DESTDIR)/$(BINDIR)/
-	install -m 755 src/logtail $(DESTDIR)/$(BINDIR)/
-	install -m 755 src/logtail2 $(DESTDIR)/$(BINDIR)/
+	install -m 755 src/logcheck $(DESTDIR)/$(SBINDIR)/
+	install -m 755 src/logtail $(DESTDIR)/$(SBINDIR)/
+	install -m 755 src/logtail2 $(DESTDIR)/$(SBINDIR)/
 	install -m 755 src/detectrotate/10-savelog.dtr $(DESTDIR)/$(SHAREDIR)/
 	install -m 755 src/detectrotate/20-logrotate.dtr $(DESTDIR)/$(SHAREDIR)/
 	install -m 755 src/detectrotate/30-logrotate-dateext.dtr $(DESTDIR)/$(SHAREDIR)/
@@ -50,8 +50,8 @@ install:
 
 clean:
 	# Remove the scripts
-	-rm -f  $(DESTDIR)/$(BINDIR)/logcheck
-	-rm -f  $(DESTDIR)/$(BINDIR)/logtail
+	-rm -f  $(DESTDIR)/$(SBINDIR)/logcheck
+	-rm -f  $(DESTDIR)/$(SBINDIR)/logtail
 	# Remove the configfiles
 	-rm -f $(DESTDIR)/$(CONFDIR)/logcheck.logfiles
 	-rm -f $(DESTDIR)/$(CONFDIR)/logcheck.conf
