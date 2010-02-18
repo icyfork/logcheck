@@ -27,7 +27,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? PCI: Setting latency timer of device [[:alnum:]:.]+ to [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? SCSI device [[:alnum:]]+: drive cache: write (through|back)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? SCSI subsystem initialized$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? TCP: Treason uncloaked! Peer [.[:digit:]]{7,15}:[[:digit:]]{1,5}/[[:digit:]]{1,5} shrinks window [[:digit:]]+:[[:digit:]]+\. Repaired\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? TCP: Treason uncloaked! Peer [:.[:xdigit:]]+:[[:digit:]]{1,5}/[[:digit:]]{1,5} shrinks window [[:digit:]]+:[[:digit:]]+\. Repaired\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? XFS mounting filesystem [[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:][:space:]]+: probe of [:.[:xdigit:]]+ failed with error [-[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]]+: link up\.$
