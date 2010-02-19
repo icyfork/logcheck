@@ -46,6 +46,7 @@ logcheck (1.3.7) UNRELEASED; urgency=low
     - usbhid no longer prints the source filename in its messages
     - allow ':' and arbitrary paths for input devices
     - adjusted "USB HID" rule to match generic devices
+    - adjusted "USB HID" rule for newer kernels
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Sun, 31 Jan 2010 20:13:27 +0100
 
