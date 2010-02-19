@@ -77,7 +77,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (drivers/usb/input/hid-core.c|usbhid): v[\:[:digit:].]+USB HID core driver$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/class/cdc-acm.c: v[\:[:digit:].]+USB Abstract Control Model driver for USB modems and ISDN adapters$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ input.agent\[[[:digit:]]+\]:[[:space:]]+((mouse|ts|ev|joy)dev|evbug): (already loaded|loaded successfully|blacklisted)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:xdigit:].-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input(,hidraw[[:digit:]]+)?: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse|Device) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:xdigit:].-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: [-_/:[:alnum:][:space:]]+ as [-.:/[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: AT Translated Set 2 keyboard on isa[[:digit:]]+/serio[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? pl2303 [-:[:digit:].]+ PL-2303 converter detected$
