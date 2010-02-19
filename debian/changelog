@@ -31,6 +31,7 @@ logcheck (1.3.7) UNRELEASED; urgency=low
     - added rule for "client: OK" message
   * debian/control:
     - bumped to Standards-Version 3.8.4 (no changes necessary)
+    - added ${misc:Depends} to logtail Depends
 
   [ Hanspeter Kunz ]
   * ignore.d.server/dovecot:

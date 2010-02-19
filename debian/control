@@ -33,7 +33,7 @@ Description: database of system log rules for the use of log checkers
 
 Package: logtail
 Architecture: all
-Depends: perl (>= 5.8.0)
+Depends: perl (>= 5.8.0), ${misc:Depends}
 Replaces: logcheck (<= 1.1.1-9)
 Description: Print log file lines that have not been read (deprecated)
  This program will read in a standard text file and create an
