@@ -1,4 +1,4 @@
-logcheck-database (1.3) unstable; urgency=low
+logcheck-database (1.3.0) unstable; urgency=low
 
   logcheck-database dropped violations.d/logcheck a while ago because it was
   causing too many false positives and required insane amounts of rule
