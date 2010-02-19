@@ -110,6 +110,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] (DAC-6|LVDS-8): set mode (640x480|800x600|1024x768|1152x864|1280x1024|1440x900)? [0-9a-f]{1,2}$
 # this stuff is from pmounts autodetection
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs: No (VRS|partition) found( \([[:digit:]]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs: Partition marked readonly; forcing readonly mount$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs INFO UDF: Mounting volume '[_[:alnum:]]+', timestamp [/[:digit:]]+ [:[:digit:]]+ \([[:xdigit:]]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Unable to identify CD-ROM format\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? FAT: Did not find valid FSINFO signature\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])?      Found signature1 0x[[:xdigit:]]+ signature2 0x[[:xdigit:]]+ \(sector = [[:digit:]]+\)$
