@@ -73,8 +73,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ohci_hcd [.[:digit:]\:]+: wakeup$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbcore: registered new driver [_[:lower:]-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb.c: registered new driver [_[:lower:]-]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/input/hid-core.c: ctrl urb status [-[:digit:]]+ received$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/input/hid-core.c: v[\:[:digit:].]+USB HID core driver$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (drivers/usb/input/hid-core.c|usbhid): ctrl urb status [-[:digit:]]+ received$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (drivers/usb/input/hid-core.c|usbhid): v[\:[:digit:].]+USB HID core driver$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/class/cdc-acm.c: v[\:[:digit:].]+USB Abstract Control Model driver for USB modems and ISDN adapters$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ input.agent\[[[:digit:]]+\]:[[:space:]]+((mouse|ts|ev|joy)dev|evbug): (already loaded|loaded successfully|blacklisted)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:xdigit:].-]+$
