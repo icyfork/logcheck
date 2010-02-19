@@ -15,7 +15,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ISO 9660 Extensions: [_[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ISOFS: changing to secondary root$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? agpgart: Found an AGP [[:digit:].]+ compliant device at [[:digit:]:.]+\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? agpgart: Putting AGP V[[:digit:]] device at [[:digit:]:.]+ into [[:digit:]]x mode$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? agpgart-[-[:alnum:]]+ [[:xdigit:]:.]+: AGP [.[:digit:]]+ bridge$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? agpgart(-[-[:alnum:]]+ [[:xdigit:]:.]+)?: [pP]utting AGP V[[:digit:]] device (at [[:digit:]:.]+ )?into [[:digit:]]x mode$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? pci [[:xdigit:]:.]+: putting AGP V[[:digit:]] device into [[:digit:]]x mode$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: (USB hub found|[[:digit:]]+ ports detected)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: over-current change on port [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: port [[:digit:]]+ disabled by hub \(EMI\?\), re-enabling\.\.\.$
