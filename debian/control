@@ -3,7 +3,7 @@ Section: admin
 Priority: optional
 Maintainer: Debian logcheck Team <logcheck-devel@lists.alioth.debian.org>
 Uploaders: Todd Troxell <ttroxell@debian.org>, Gerfried Fuchs <rhonda@debian.at>, Eric Evans <eevans@debian.org>, martin f. krafft <madduck@debian.org>, Marc Haber <mh+debian-packages@zugschlus.de>, maximilian attems <maks@debian.org>, Hanspeter Kunz <hkunz@ifi.uzh.ch>, Hannes von Haugwitz <hannes@vonhaugwitz.com>
-Standards-Version: 3.8.3
+Standards-Version: 3.8.4
 Build-Depends: debhelper (>= 7)
 Build-Depends-Indep: docbook-to-man
 Vcs-Git: git://git.debian.org/git/logcheck/logcheck.git
@@ -33,7 +33,7 @@ Description: database of system log rules for the use of log checkers
 
 Package: logtail
 Architecture: all
-Depends: perl (>= 5.8.0)
+Depends: perl (>= 5.8.0), ${misc:Depends}
 Replaces: logcheck (<= 1.1.1-9)
 Description: Print log file lines that have not been read (deprecated)
  This program will read in a standard text file and create an

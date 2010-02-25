@@ -15,7 +15,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ISO 9660 Extensions: [_[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ISOFS: changing to secondary root$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? agpgart: Found an AGP [[:digit:].]+ compliant device at [[:digit:]:.]+\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? agpgart: Putting AGP V[[:digit:]] device at [[:digit:]:.]+ into [[:digit:]]x mode$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? agpgart-[-[:alnum:]]+ [[:xdigit:]:.]+: AGP [.[:digit:]]+ bridge$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? agpgart(-[-[:alnum:]]+ [[:xdigit:]:.]+)?: [pP]utting AGP V[[:digit:]] device (at [[:digit:]:.]+ )?into [[:digit:]]x mode$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? pci [[:xdigit:]:.]+: putting AGP V[[:digit:]] device into [[:digit:]]x mode$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: (USB hub found|[[:digit:]]+ ports detected)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: over-current change on port [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: port [[:digit:]]+ disabled by hub \(EMI\?\), re-enabling\.\.\.$
@@ -73,12 +75,12 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ohci_hcd [.[:digit:]\:]+: wakeup$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbcore: registered new driver [_[:lower:]-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb.c: registered new driver [_[:lower:]-]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/input/hid-core.c: ctrl urb status [-[:digit:]]+ received$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/input/hid-core.c: v[\:[:digit:].]+USB HID core driver$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (drivers/usb/input/hid-core.c|usbhid): ctrl urb status [-[:digit:]]+ received$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (drivers/usb/input/hid-core.c|usbhid): v[\:[:digit:].]+USB HID core driver$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/class/cdc-acm.c: v[\:[:digit:].]+USB Abstract Control Model driver for USB modems and ISDN adapters$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ input.agent\[[[:digit:]]+\]:[[:space:]]+((mouse|ts|ev|joy)dev|evbug): (already loaded|loaded successfully|blacklisted)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:xdigit:].-]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: [-_/[:alnum:][:space:]]+ as /class/input/input[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (generic-usb [.:[:xdigit:]]+: )?input(,hidraw[[:digit:]]+)?: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse|Device) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:xdigit:].-]+(/input[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: [-_/:[:alnum:][:space:]]+ as [-.:/[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: AT Translated Set 2 keyboard on isa[[:digit:]]+/serio[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? pl2303 [-:[:digit:].]+ PL-2303 converter detected$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [-:[:digit:]]+ [-[:alnum:][:space:]]+ converter now attached to ttyUSB[[:digit:]]+$
@@ -110,6 +112,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] (DAC-6|LVDS-8): set mode (640x480|800x600|1024x768|1152x864|1280x1024|1440x900)? [0-9a-f]{1,2}$
 # this stuff is from pmounts autodetection
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs: No (VRS|partition) found( \([[:digit:]]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs: Partition marked readonly; forcing readonly mount$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs INFO UDF: Mounting volume '[_[:alnum:]]+', timestamp [/[:digit:]]+ [:[:digit:]]+ \([[:xdigit:]]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Unable to identify CD-ROM format\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? FAT: Did not find valid FSINFO signature\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])?      Found signature1 0x[[:xdigit:]]+ signature2 0x[[:xdigit:]]+ \(sector = [[:digit:]]+\)$
@@ -149,3 +153,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: (authenticate(d| with AP ([0-9a-f]{2}:){5}[0-9a-f]{2})|associate(d| with AP ([0-9a-f]{2}:){5}[0-9a-f]{2}))$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: ((direct probe to|a(uthentic|ssoci)ate with) AP ([0-9a-f]{2}:){5}[0-9a-f]{2} \(try [1-3]\)|direct probe responded)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: RX (Rea|A)ssocResp from ([0-9a-f]{2}:){5}[0-9a-f]{2} \(capab=0x[[:xdigit:]]+ status=0 aid=[0-9]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? mmc[0-9]: (new SD card at address [[:xdigit:]]{4}|card [[:xdigit:]]{4} removed)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? mmcblk[0-9]: mmc[0-9]:[[:xdigit:]]{4} [[:alnum:]]+ [.[:digit:]]+ [MG]iB$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])?  mmcblk[0-9]:( p[0-9])+$

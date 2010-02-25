@@ -1,3 +1,59 @@
+logcheck (1.3.7) unstable; urgency=low
+
+  [ Hannes von Haugwitz ]
+  * Added src/logcheck-test and docs/logcheck-test.1
+  * ignore.d.server/wu-ftpd:
+    - adjusted rule to match optional pid (closes: #570207)
+  * src/logcheck:
+    - use 7bit encoding for sending mail
+  * ignore.d.workstation/kernel:
+    - added rules for inserted and removed SD cards
+  * ignore.d.server/mountd: new
+    - added rule for authenticated mount/unmount requests,
+      thanks to Paweł Hajdan, Jr. (closes: #567842)
+  * docs/logcheck.sgml: clarify that "server" rules are
+    included in "workstation" level
+  * ignore.d.server/klogind: new
+    - added rule for "connect from" message
+  * ignore.d.server/login:
+    - added rule for root logins on pseudo terminals
+  * ignore.d.server/bind:
+    - added rules for "received notify for zone" and
+      "zone is up to date" message
+  * Makefile:
+    - added an empty "all" make target, thanks to
+      Paweł Hajdan, Jr. (closes: #567150)
+    - renamed BINDIR to SBINDIR
+    - added logtail2 script to "clean" make target
+  * ignore.d.server/ssh:
+    - added rule for "disconnected by user" message (closes: #567317)
+  * ignore.d.workstation/ifplugd:
+    - added rule for "client: OK" message
+  * debian/control:
+    - bumped to Standards-Version 3.8.4 (no changes necessary)
+    - added ${misc:Depends} to logtail Depends
+
+  [ Hanspeter Kunz ]
+  * ignore.d.server/dovecot:
+    - added an optional prefix "dovecot: " to the deliver rule
+    - added rule to ignore various sieve messages (stored mail, forwards,
+      vacation replies and discards)
+
+  [ Frédéric Brière ]
+  * ignore.d.server/kernel:
+    - added IPv6 support to "Treason uncloaked!" rule (closes: #546004)
+    - added "Peer unexpectedly shrunk window" alternate rule
+    - allow '-' in usbcore interface driver names (e.g. snd-usb-audio)
+  * ignore.d.workstation/kernel:
+    - added UDF-fs "readonly partition" and "Mounting volume" rules
+    - usbhid no longer prints the source filename in its messages
+    - allow ':' and arbitrary paths for input devices
+    - adjusted "USB HID" rule to match generic devices
+    - adjusted "USB HID" rule for newer kernels
+    - adjusted agpgart rules for newer kernels
+
+ -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Fri, 19 Feb 2010 07:16:32 +0100
+
 logcheck (1.3.6~bpo50+1) lenny-backports; urgency=low
 
   * Rebuild for lenny-backports.
@@ -8,8 +64,8 @@ logcheck (1.3.6) unstable; urgency=low
 
   [ Hannes von Haugwitz ]
   * ignore.d.paranoid/sysklogd:
-    - more specific matching of upstream version and optional distribution revision,
-      thanks to Caspar Clemens Mierau (closes: #566200)
+    - more specific matching of upstream version and optional distribution
+      revision, thanks to Caspar Clemens Mierau (closes: #566200)
   * ignore.d.paranoid/cron:
     - make /usr/sbin/ optional in pathnames of cron,
       thanks to Matthias Andree (closes: #566198)
@@ -28,7 +84,8 @@ logcheck (1.3.6) unstable; urgency=low
   * Added rules for dhcpcd, thanks to Paweł Hajdan, Jr. (closes: #564702)
   * ignore.d.server/nagios:
     - removed rule for nrpe
-  * Added rule for libpam-gnome-keyring, thanks to Jerome Wittmann (closes: #565774)
+  * Added rule for libpam-gnome-keyring,
+    thanks to Jerome Wittmann (closes: #565774)
   * ignore.d.workstation/kernel:
     - extended the rules for WLAN authentication and association
   * Added rules for successful non-root login to text console.
@@ -36,7 +93,8 @@ logcheck (1.3.6) unstable; urgency=low
     - ignore ext4 mount message
   * ignore.d.server/login
     - adjusted login rule to also match /dev/ prefix
-    - added rule to match newgrp messages, thanks to Martin Mazur (closes: #545318)
+    - added rule to match newgrp messages,
+      thanks to Martin Mazur (closes: #545318)
   * ignore.d.workstation/ifplugd
     - added rules for ifplugd.action script execution
   * ignore.d.workstation/ppp

@@ -1,0 +1,113 @@
+.TH logcheck-test 1 "Feb 19, 2010"
+.SH NAME
+logcheck-test \- test new logcheck rules easily
+.SH SYNOPSIS
+.B logcheck-test
+.RB [ \-q | \-i ]
+.RB [ \-a | \-s | \-l
+.IR FILE ]
+.RB [ \-e ]
+.RB [ \-P
+.IR PREFIX ]
+.RB [ \-S
+.IR SUFFIX ]
+.I RULE
+.br
+.B logcheck-test
+.RB [ \-q | \-i ]
+.RB [ \-a | \-s | \-l
+.IR FILE ]
+.B \-r
+.I RULEFILE
+.
+.SH DESCRIPTION
+.B logcheck-test
+parses a log file for matching lines specified by a single rule or a rule file. If using a single
+.I RULE
+you can set a
+.I PREFIX
+and a
+.I SUFFIX
+to write new rules easily.
+
+.SH OPTIONS
+.TP
+.B -h, --help
+Show usage information
+.TP
+.B -a, --auth.log
+Parse /var/log/auth.log for matching lines
+.TP
+.B -s, --syslog
+Parse /var/log/syslog for matching lines
+.TP
+.B -l, --log-file FILE
+Parse FILE for matching lines
+.TP
+.B -i, --invert-match
+Show line that don't match the RULE or the RULEFILE
+.TP
+.B -q, --quiet
+Suppress rule summary at the end of output
+.TP
+.B -e, --surround-rule
+Surround RULE with standard prefix and suffix:
+
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ 
+.IR RULE $
+.TP
+.B -P, --append-prefix PREFIX
+Append PREFIX to rule prefix. Option can be given multiple times
+.TP
+.B -S, --prepend-suffix SUFFIX
+Prepend SUFFIX to rule suffix. Option can be given multiple times
+.TP
+.B -r, --rule-file RULEFILE
+Use file RULEFILE for rule input
+.SH EXAMPLES
+With
+.B logcheck-test
+you can easily write and test new rules.
+.PP
+Test a single rule against /var/log/syslog:
+.RS
+.fam C
+logcheck -s "RULE"
+.fam T
+.RE
+
+.PP
+Test a single rule against ~/log, surround the rule with standard prefix and suffix and append "kernel " to prefix:
+.RS
+.fam C
+logcheck -l ~/log -e -P "kernel " "RULE"
+.fam T
+.RE
+
+.PP
+Test the rules in rulefiles/linux/ignore.d.server/kernel against ~/log:
+.RS
+.fam C
+logcheck -l ~/log -r rulefiles/linux/ignore.d.server/kernel
+.fam T
+.RE
+
+.PP
+Test which lines the rules in rulefiles/linux/ignore.d.server/kernel doesn't match:
+.RS
+.fam C
+logcheck -l ~/log -r rulefiles/linux/ignore.d.server/kernel -i
+.fam T
+.RE
+
+.SH "EXIT STATUS"
+On successful matching
+.B logcheck-test
+will complete with exit code 0. An exit code of 1 indicates no successful matching.
+.PP
+An exit code greater then 1 indicates an error occurred. Textual errors are written to the standard error stream.
+.SH "SEE ALSO"
+\fBlogcheck\fR(8)
+.SH "AUTHOR"
+logcheck is developed by Debian logcheck Team at alioth:
+http://alioth.debian.org/projects/logcheck/. This manual was written by Hannes von Haugwitz <hannes@vonhaugwitz.com>.

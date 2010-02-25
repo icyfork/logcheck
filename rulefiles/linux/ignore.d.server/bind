@@ -7,3 +7,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: ((network|host) (unreachable|down)|connection refused|unexpected RCODE \((FORMERR|SERVFAIL|NXDOMAIN|NOTIMP|REFUSED|YXDOMAIN|YXRRSET|NXRRSET|NOTAUTH|NOTZONE|BADVERS|<rcode [[:digit:]]+>|[[:digit:]]+)\)) resolving '[^[:space:]]+': [.:[:xdigit:]]+#[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [._[:alnum:]-]+/IN(/[._[:alnum:]-]+)?: Transfer started.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [._[:alnum:]-]+/IN: refresh: failure trying master [._[:alnum:]-]+#53: .*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client [.:[:xdigit:]]+#[[:digit:]]+: received notify for zone '[-._[:alnum:]]+': TSIG '[-_[:alnum:]]+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [-._[:alnum:]]+/IN: notify from [.:[:xdigit:]]+#[[:digit:]]+: zone is up to date$
