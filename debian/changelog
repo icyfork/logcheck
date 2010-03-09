@@ -5,6 +5,7 @@ logcheck (1.3.8) UNRELEASED; urgency=low
     - removed useless trap signal 16
   * ignore.d.workstation/wpasupplicant:
     - allow '_' in id_str of CTRL-EVENT-CONNECTED message
+    - added rules for wpa_action messages
   * ignore.d.workstation/kernel:
     - "Mode Sense" is hexadecimal, not just decimal
     - ignore "usb-storage" message
