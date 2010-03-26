@@ -23,8 +23,10 @@ logcheck (1.3.8) UNRELEASED; urgency=low
   * ignore.d.server/dovecot:
     - ignore more failed and aborted logins
     - msgid's may contain colons   
+    - ignore discarded vacation responses (bulk, auto-submited, duplicates)
+    - ignore duplicate forwards 
 
- -- Hanspeter Kunz <hp@edelkunz.ch>  Fri, 26 Mar 2010 23:58:27 +0100
+ -- Hanspeter Kunz <hp@edelkunz.ch>  Sat, 27 Mar 2010 00:08:40 +0100
 
 logcheck (1.3.7) unstable; urgency=low
 
