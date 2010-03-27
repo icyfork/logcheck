@@ -14,6 +14,9 @@ logcheck (1.3.8) UNRELEASED; urgency=low
     - adjusted rule to match EXT3-fs and writeback data mode
   * ignore.d.server/bind:
     - added rule to ignore "success resolving" messages
+  * ignore.d.server/nfs:
+    - allow '_', '-' and '.' in mount path, thanks to
+      G. T. Laycock (closes: #575378)
 
   [ Gerfried Fuchs ]
   * debian/logcheck.NEWS, debian/logtail.NEWS:
