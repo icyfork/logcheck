@@ -10,6 +10,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST DOWNTIME ALERT: [._[:alnum:]-]+;(STARTED|STOPPED);.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST EVENT HANDLER: [._[:alnum:]-]+;(UP|DOWN);(SOFT|HARD);[[:digit:]]+;.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;(DOWN|UP|UNREACHABLE);.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST FLAPPING ALERT: [._[:alnum:]-]+;(STARTED|STOPPED); Host appears to have (started|stopped) flapping \([[:digit:].]+% change (<|>=?) [.[:digit:]]+% threshold\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: LOG ROTATION: (DAILY|WEEKLY|MONTHLY)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: LOG VERSION: 2\.[[:digit:]]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: Nagios (1|2)\.[[:digit:]] starting\.\.\. \(PID=[[:digit:]]+\)$
