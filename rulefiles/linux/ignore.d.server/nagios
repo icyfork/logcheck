@@ -15,7 +15,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: Nagios (1|2)\.[[:digit:]] starting\.\.\. \(PID=[[:digit:]]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;(CRITICAL|WARNING|OK|UNKNOWN);(SOFT|HARD);.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE ALERT: [[:alnum:]]+;PING;(WARNING|OK).*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE FLAPPING ALERT: [._[:alnum:]-]+;[._[:alnum:]-]+;(STARTED|STOPPED); Service appears to have (started|stopped) flapping \([[:digit:].]+% change [<>] [.[:digit:]]+% threshold\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE FLAPPING ALERT: [._[:alnum:]-]+;[._[:alnum:]-]+;(STARTED|STOPPED); Service appears to have (started|stopped) flapping \([[:digit:].]+% change (<|>=?) [.[:digit:]]+% threshold\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;(ACKNOWLEDGEMENT \()?(CRITICAL|WARNING|OK|UNKNOWN)(\))?;.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;CRITICAL;.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: Warning: Host '[[:alnum:]]+' has no services associated with it\!$
