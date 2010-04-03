@@ -36,11 +36,12 @@ logcheck (1.3.8) UNRELEASED; urgency=low
     - ignore more "Connection closed" messages
     - ignore "Too many invalid IMAP commands"
     - ignore more "Connection closed" messages (MANAGESIEVE)
+    - ignore aborted authentications
   * ignore.d.server/postfix:
     - ignore disconnects during EHLO (and not only HELO) handshakes
     - merged 5 similar "lost connection" rules into one
 
- -- Hanspeter Kunz <hp@edelkunz.ch>  Sat, 03 Apr 2010 13:31:52 +0200
+ -- Hanspeter Kunz <hkunz@irulan.localdomain>  Sat, 03 Apr 2010 17:43:38 +0200
 
 logcheck (1.3.7) unstable; urgency=low
 
