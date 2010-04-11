@@ -76,3 +76,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ modprobe: FATAL: Error inserting apm \([^[:space:]]+\): No such device$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDP: bad checksum\. From [.[:digit:]]+:[[:digit:]]+ to [.[:digit:]]+:[[:digit:]]+ ulen [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDP: short packet: From [.[:digit:]]+:[[:digit:]]+ [[:digit:]]+/[[:digit:]]+ to [.[:digit:]]+:[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: imklog [.[:digit:]]+, log source = /proc/kmsg started\.$
