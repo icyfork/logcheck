@@ -529,9 +529,9 @@ fi
 
 # Hostname either fully qualified or not.
 if [ "$FQDN" -eq 1 ]; then
-        HOSTNAME="$(hostname --fqdn)" > /dev/null 2>&1
+        HOSTNAME="$(hostname --fqdn 2>/dev/null)"
 else
-        HOSTNAME="$(hostname --short)" > /dev/null 2>&1
+        HOSTNAME="$(hostname --short 2>/dev/null)"
 fi
 
 # Now check for the other options

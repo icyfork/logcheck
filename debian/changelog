@@ -23,6 +23,8 @@ logcheck (1.3.8) UNRELEASED; urgency=low
   * src/logcheck:
     - look for {header,footer}.txt in $RULEDIR, thanks to Kerstin Puschke
     - cd to $STATEDIR before cleaning up temp dir, thanks to Kerstin Puschke
+    - fixed stream redirection of hostname command,
+      thanks to Bob Proulx (see #574858)
   * ignore.d.server/dnsmasq:
     - adjusted rule to also match '-dhcp' suffix in dhcp subsystem messages,
       thanks to Michał Sawicz
