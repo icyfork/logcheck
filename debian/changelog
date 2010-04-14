@@ -18,7 +18,7 @@ logcheck (1.3.8) UNRELEASED; urgency=low
     - allow '_', '-' and '.' in mount path, thanks to
       G. T. Laycock (closes: #575378)
   * ignore.d.server/nagios:
-    - allow '>=' in "SERVICE FLAPPING ALERT" message 
+    - allow '>=' in "SERVICE FLAPPING ALERT" message
     - added rule to ignore "HOST FLAPPING ALERT" message
   * src/logcheck:
     - look for {header,footer}.txt in $RULEDIR, thanks to Kerstin Puschke
