@@ -28,6 +28,7 @@ logcheck (1.3.8) UNRELEASED; urgency=low
   * ignore.d.server/dnsmasq:
     - adjusted rule to also match '-dhcp' suffix in dhcp subsystem messages,
       thanks to Michał Sawicz
+  * Switch to dpkg-source 3.0 (native) format
 
   [ Gerfried Fuchs ]
   * debian/logcheck.NEWS, debian/logtail.NEWS:
