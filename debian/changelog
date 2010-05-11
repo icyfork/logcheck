@@ -4,7 +4,11 @@ logcheck (1.3.9) UNRELEASED; urgency=low
   * ignore.d.workstation/kernel:
     - adjusted rule to ignore more "usb-storage" messages
 
- -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Sun, 25 Apr 2010 19:07:30 +0200
+  [ Hanspeter Kunz ]
+  * ignore.d.server/dovecot:
+    - sieve: msgids might be followed by "(added by ...)"
+
+ -- Hanspeter Kunz <hp@edelkunz.ch>  Wed, 12 May 2010 01:02:21 +0200
 
 logcheck (1.3.8) unstable; urgency=low
 
