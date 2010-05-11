@@ -1,33 +1,33 @@
 logcheck (1.2.33) unstable; urgency=low
 
-  * Logcheck's rulefile directory permissions have been changed in this
-    release from 0740 to 4740.
+  Logcheck's rulefile directory permissions have been changed in this
+  release from 0740 to 4740.
 
  -- Todd Troxell <ttroxell@debian.org>  Fri, 07 Jan 2005 20:23:00 +0500
 
 logcheck (1.2.19-2) unstable; urgency=low
 
-  * As of version 1.2.19, logcheck no longer runs as root.
-    Logcheck runs as user logcheck which has been created
-    and added to group adm upon configuration.
+  As of version 1.2.19, logcheck no longer runs as root.
+  Logcheck runs as user logcheck which has been created
+  and added to group adm upon configuration.
 
-    If you have customized your configuration,
-    you will need to be sure that your
-    logs are readable by the logcheck user.
+  If you have customized your configuration,
+  you will need to be sure that your
+  logs are readable by the logcheck user.
 
  -- Todd Troxell <ttroxell@debian.org>  Wed, 05 May 2004 12:00:00 +0000
 
 logcheck (1.2.3) unstable; urgency=low
 
-  * Changes to ignore.d directory behaviour
-    Now the ignore.d directories function in an additive manner (i.e. higher
-    levels also include the lower levels):
-    - workstation  = workstation + server + paranoid
-    - server       = server + paranoid
-    - paranoid     = paranoid
+  Changes to ignore.d directory behaviour
+  Now the ignore.d directories function in an additive manner (i.e. higher
+  levels also include the lower levels):
+  - workstation  = workstation + server + paranoid
+  - server       = server + paranoid
+  - paranoid     = paranoid
 
-    Also run-parts(8) now controls which rulefiles are included from the .d
-    directories. Please see /usr/share/doc/logcheck for more details.
+  Also run-parts(8) now controls which rulefiles are included from the .d
+  directories. Please see /usr/share/doc/logcheck for more details.
 
  -- Jon Middleton <jjm@debian.org>  Sun, 12 Jan 2003 23:48:13 +0000
 

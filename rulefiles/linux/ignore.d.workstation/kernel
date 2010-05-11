@@ -51,6 +51,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ieee1394: sbp2: Logged into SBP-2 device$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ieee1394: Node [:[:digit:]\-]+ Max speed \[S[[:digit:]]+\] - Max payload \[[[:digit:]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? scsi[[:digit:]]+ : SCSI emulation for (IEEE-1394 SBP-2 Devices|USB Mass Storage devices)$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? scsi[[:digit:]]+ : usb-storage [0-9]-[0-9]:1\.0$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Attached scsi removable disk sd[a-z]( at scsi[[:digit:]], channel [[:digit:]], id [[:digit:]], lun [[:digit:]])?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [[:digit:]:]+ Attached scsi (removable )?disk sd[a-z]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Attached SCSI (removable )?disk$
@@ -58,7 +59,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] [[:digit:]]+ [[:digit:]]+-byte (hardware sectors|logical blocks):? \([.[:digit:]]+ [MG]B(/[.[:digit:]]+ [MG]iB)?\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] [[:digit:]]+-byte physical blocks$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Write Protect is (off|on)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Mode Sense: [[:digit:]]+ [[:digit:]]+ [[:digit:]]+ [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Mode Sense: [[:xdigit:]]+ [[:xdigit:]]+ [[:xdigit:]]+ [[:xdigit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Assuming drive cache: write through$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]*sd[a-z]:( sd[a-z][[:digit:]]+)*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sr[[:digit:]]+: [^[:space:]]+ drive(: [ \/[:alnum:]]+)?$

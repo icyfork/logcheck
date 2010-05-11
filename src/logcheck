@@ -108,7 +108,7 @@ cleanup() {
     if [ -d "$TMPDIR" ]; then
         # Remove the tmp directory
         if [ "$NOCLEANUP" -eq 0 ];then
-	    cd /var/lib/logcheck
+	    cd $STATEDIR
 	    debug "cleanup: Removing - $TMPDIR"
 	    rm -r "$TMPDIR"
         else
@@ -188,8 +188,8 @@ EOF
 
 # Add an identification line at the beginning of the sent mail
 setintro() {
-    if [ -f /etc/logcheck/header.txt -a -r /etc/logcheck/header.txt ] ; then
-       $CAT /etc/logcheck/header.txt >> "$TMPDIR/report" \
+    if [ -f "$RULEDIR/header.txt" -a -r "$RULEDIR/header.txt" ] ; then
+       $CAT "$RULEDIR/header.txt" >> "$TMPDIR/report" \
            || error "Could not append header to $TMPDIR/report."
     fi
 }
@@ -197,8 +197,8 @@ setintro() {
 
 # Add a footer to the report.
 setfooter() {
-    if [ -f /etc/logcheck/footer.txt -a -r /etc/logcheck/footer.txt ] ; then
-       $CAT /etc/logcheck/footer.txt >> "$TMPDIR/report" \
+    if [ -f "$RULEDIR/footer.txt" -a -r "$RULEDIR/footer.txt" ] ; then
+       $CAT "$RULEDIR/footer.txt" >> "$TMPDIR/report" \
            || error "Could not append footer to $TMPDIR/report."
     fi
 }
@@ -529,9 +529,9 @@ fi
 
 # Hostname either fully qualified or not.
 if [ "$FQDN" -eq 1 ]; then
-        HOSTNAME="$(hostname --fqdn)" > /dev/null 2>&1
+        HOSTNAME="$(hostname --fqdn 2>/dev/null)"
 else
-        HOSTNAME="$(hostname --short)" > /dev/null 2>&1
+        HOSTNAME="$(hostname --short 2>/dev/null)"
 fi
 
 # Now check for the other options

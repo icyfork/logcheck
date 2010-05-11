@@ -1,20 +1,20 @@
 logtail (1.2.35) unstable; urgency=low
 
-  * logtail's calling options now respect reverse compatibility with
-    software written preceding the changes in 1.2.24.  See changelog.
+  logtail's calling options now respect reverse compatibility with
+  software written preceding the changes in 1.2.24.  See changelog.
 
  -- Todd Troxell <ttroxell@debian.org>  Sun, 20 Feb 2005 23:01:00 +0500
 
 logcheck (1.2.34) unstable; urgency=low
 
-  * logtail now reports errors on stderr instead of stdout.
+  logtail now reports errors on stderr instead of stdout.
 
  -- Todd Troxell <ttroxell@debian.org>  Tue, 11 Jan 2005 01:08:31 +0500
 
 logtail (1.2.24) unstable; urgency=low
 
-  * logtail changed the way it parses the commandline.
-    The switch for the logfile '-f' is mandatory.
-    See manpage logtail(8) for further details on how to invoke logtail.
+  logtail changed the way it parses the commandline.
+  The switch for the logfile '-f' is mandatory.
+  See manpage logtail(8) for further details on how to invoke logtail.
 
  -- maximilian attems <max@nl.linux.org>  Sat, 27 Nov 2004 14:10:52 +0100
