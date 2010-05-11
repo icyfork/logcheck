@@ -176,7 +176,7 @@ elif ! [ -r "$FILE" ] ; then
     exit 3
 else
     if [ -n "$RULEFILE" ] ; then
-        CLEANRULE="$(mktemp --tmpdir logcheck-test.XXXXXXXXXX)"
+        CLEANRULE="$(mktemp -p /tmp logcheck-test.XXXXXXXXXX)"
         cleanup() { rm -rf $CLEANRULE; }
         egrep --text -v '^[[:space:]]*$|^#' "$RULEFILE" >> $CLEANRULE
         sed -e 's/[[:space:]]*$//' $FILE | egrep $INVERT -f "$CLEANRULE"
