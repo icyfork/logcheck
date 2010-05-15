@@ -8,7 +8,7 @@ logcheck (1.3.8~bpo50+1) lenny-backports; urgency=low
   * Changed mktemp parameters in src/logcheck-test to what is supported in
     lenny.
 
- -- 
+ -- Gerfried Fuchs <rhonda@debian.at>  Thu, 12 May 2010 02:04:36 +0200
 
 logcheck (1.3.8) unstable; urgency=low
 
