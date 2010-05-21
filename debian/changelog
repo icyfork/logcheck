@@ -7,6 +7,8 @@ logcheck (1.3.9) UNRELEASED; urgency=low
     - fixed spelling error
   * debian/control:
     - added DM-Upload-Allowed field
+  * ignore.d.workstation/wpasupplicant:
+    - match more frequencies in 'Trying to associate' message
 
   [ Hanspeter Kunz ]
   * ignore.d.server/dovecot:
