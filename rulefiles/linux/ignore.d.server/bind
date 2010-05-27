@@ -11,4 +11,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [-._[:alnum:]]+/IN: notify from [.:[:xdigit:]]+#[[:digit:]]+: zone is up to date$
 ^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[0-9]+\]: success resolving '[^[:space:]]+' \(in '[.[:alnum:]-]+'\?\) after (disabling EDNS|reducing the advertised EDNS UDP packet size to 512 octets)$
 ^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: error \((FORMERR|connection refused|unexpected RCODE (REFUSED|SERVFAIL)|(network|host) unreachable)\) resolving '[^[:space:]]+': [.:[:xdigit:]]+#[[:digit:]]+$
-^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: DNS format error from [.:[:xdigit:]]+#[[:digit:]]+ resolving [^[:space:]]+( for client [.:[:xdigit:]]+#[[:digit:]]+)?: (invalid response|sideways referral)$
