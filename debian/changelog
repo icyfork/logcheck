@@ -24,6 +24,8 @@ logcheck (1.3.9) UNRELEASED; urgency=low
     - fix rule to match greylisting notices.
   * ignore.d.server/ntop:
     - ignore warnings about truncated packets.
+  * ignore.d.server/schroot:
+    - ignore new-style PAM session notices.
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Fri, 14 May 2010 21:56:13 +0200
 
