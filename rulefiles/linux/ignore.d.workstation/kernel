@@ -152,7 +152,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb[[:digit:]]+: unregister 'zaurus' usb-[[:digit:]:.-]+, (Sharp Zaurus SL-5x00|Sharp Zaurus, PXA-2xx based|Olympus R1000|pseudo-MDLM =\(BLAN\) device)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? thinkpad_acpi: EC reports that Thermal Table has changed$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: (authenticate(d| with AP ([0-9a-f]{2}:){5}[0-9a-f]{2})|associate(d| with AP ([0-9a-f]{2}:){5}[0-9a-f]{2}))$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: ((direct probe to|a(uthentic|ssoci)ate with) AP ([0-9a-f]{2}:){5}[0-9a-f]{2} \(try [1-3]\)|direct probe responded)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: ((direct probe to|a(uthentic|ssoci)ate with) (AP )?([0-9a-f]{2}:){5}[0-9a-f]{2} \(try [1-3]\)|direct probe responded)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: RX (Rea|A)ssocResp from ([0-9a-f]{2}:){5}[0-9a-f]{2} \(capab=0x[[:xdigit:]]+ status=0 aid=[0-9]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? mmc[0-9]: (new SD card at address [[:xdigit:]]{4}|card [[:xdigit:]]{4} removed)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? mmcblk[0-9]: mmc[0-9]:[[:xdigit:]]{4} [[:alnum:]]+ [.[:digit:]]+ [MG]iB$
