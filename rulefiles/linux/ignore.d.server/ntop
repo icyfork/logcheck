@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntop\[[[:digit:]]{2,5}\]:[[:space:]]+\*\*WARNING\*\* packet truncated \([[:digit:]]+->[[:digit:]]+\)$
