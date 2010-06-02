@@ -33,6 +33,8 @@ logcheck (1.3.9) UNRELEASED; urgency=low
     - ignore unknown attribute warnings/messages by rc_avpair_new.
   * ignore.d.server/git-daemon
     - ignore warnings on access to nonexistent git repository.
+  * ignore.d.server/kernel
+    - ignore message about kernel logging (proc) being stopped.
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Fri, 14 May 2010 21:56:13 +0200
 
