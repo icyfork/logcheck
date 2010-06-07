@@ -1,3 +1,10 @@
+logcheck (1.3.10) UNRELEASED; urgency=low
+
+  * logcheck-database.preinst
+    - deleting ignore.d.server/ntop, also in ntop (closes: #584824, #584849)
+
+ -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Mon, 07 Jun 2010 06:39:33 +0200
+
 logcheck (1.3.9) unstable; urgency=low
 
   [ Hannes von Haugwitz ]
