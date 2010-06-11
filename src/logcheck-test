@@ -161,7 +161,7 @@ while [ -n "${1:-}" ]; do
             fi
             RULE="$ARGUMENT"
             if [ -n "${1:-}" ] ; then
-                err "options must preceed RULE"
+                err "options must precede RULE"
                 exit 14
             fi
         ;;

@@ -27,7 +27,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Queued notification of domain '[-_.[:alnum:]]+' to [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for ([-_.[:alnum:]]+)? from [.[:digit:]]{7,15} for which we are not authoritative$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for [-_.[:alnum:]]+ from [.[:digit:]]{7,15} which is not a master$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for [-_.[:alnum:]]+ from master [.[:digit:]]{7,15}, we are up to date: [[:digit:]]+<=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for [-_.[:alnum:]]+ from (master )?[.[:digit:]]{7,15}, we are up to date: [[:digit:]]+<=[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received a malformed qdomain from [.[:digit:]]{7,15}, '.+': (dropping|sending servfail)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received an overly large question from [.[:digit:]]{7,15}, dropping$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received an unknown opcode [[:digit:]]+ from [.[:digit:]]{7,15} for( [-_.[:alnum:]]+)?$
@@ -47,6 +47,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: [[:digit:]]+ domains? for which we are master needs? notifications$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: [[:digit:]]+ slave domains? needs? checking$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gpgsql Connection succesful$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gsqlite: connection to '[-._/[:alnum:]]+' success?ful$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gsqlite3?: connection to '[-._/[:alnum:]]+' success?ful$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Initiating transfer of '[-_.[:alnum:]]+' from remote '[.[:digit:]]{7,15}'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns_recursor\[[[:digit:]]+\]: Refreshed ([[:digit:]]+|\.) records$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns_recursor\[[[:digit:]]+\]: Unable to parse packet from remote( UDP)? server [.[:digit:]]{7,15}: (Wrong size for A record \(0\)|Error parsing packet of [[:digit:]]+ bytes \(rd=0\), out of bounds: vector::_M_range_check|packet smalll?er than DNS header)$
