@@ -1,6 +1,14 @@
+logcheck (1.3.11) UNRELEASED; urgency=low
+
+  [ Hannes von Haugwitz ]
+  * ignore.d.server/smartd:
+    - ignore "scheduled Offline Immediate Test" (closes: #585802)
+
+ -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Mon, 14 Jun 2010 08:32:11 +0200
+
 logcheck (1.3.10) unstable; urgency=low
 
-  * logcheck-database.preinst
+  * logcheck-database.preinst:
     - deleting ignore.d.server/ntop, also in ntop (closes: #584824, #584849)
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Mon, 07 Jun 2010 08:51:02 +0200
