@@ -9,6 +9,11 @@ logcheck (1.3.11) UNRELEASED; urgency=low
     - ignore successful kerberos authentication
     - ignore session opened/closed messages
 
+  [ martin f. krafft ]
+  * ignore.d.server/postfix:
+    - patch from Mathias Krause to address changes in policy-weightd log
+      message format.
+
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Mon, 14 Jun 2010 08:32:11 +0200
 
 logcheck (1.3.10) unstable; urgency=low
