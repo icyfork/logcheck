@@ -5,6 +5,9 @@ logcheck (1.3.11) UNRELEASED; urgency=low
     - ignore "scheduled Offline Immediate Test" (closes: #585802)
   * ignore.d.server/vlock: new
     - ignore successful kerberos authentication
+  * ignore.d.workstation/slim: new
+    - ignore successful kerberos authentication
+    - ignore session opened/closed messages
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Mon, 14 Jun 2010 08:32:11 +0200
 
