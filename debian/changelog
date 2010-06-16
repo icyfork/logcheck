@@ -13,6 +13,8 @@ logcheck (1.3.11) UNRELEASED; urgency=low
   * ignore.d.server/postfix:
     - patch from Mathias Krause to address changes in policy-weightd log
       message format.
+  * ignore.d.server/ssh:
+    - messages about invalid users can contain zero-length usernames.
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Mon, 14 Jun 2010 08:32:11 +0200
 
