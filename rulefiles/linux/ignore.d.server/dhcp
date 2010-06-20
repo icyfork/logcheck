@@ -36,3 +36,5 @@
 # print_dns_status(), also called for the expr_dns_transaction opcode.  I'd
 # rather not proceed without hearing from someone using DDNS updates, though.
 #^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd:( (if|and|add|delete) [._[:alnum:]-]+ ([[:digit:]]+ )?IN ((A|PTR|MX|CNAME)( [._[:alnum:]-]+)?|TXT "[^"]*"|CNAME <keydata>)( (rrset|domain) (exists|doesn't exist))?)+: success\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: (Searching|No host entry) for \(\&\(objectClass=dhcpHost\)\(dhcpHWAddress=ethernet [[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}\)\) in LDAP tree [=,.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Found dhcpHWAddress LDAP entry [=,.[:alnum:]]+$
