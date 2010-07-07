@@ -5,8 +5,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Did not receive identification string from ([:[:xdigit:].]+|UNKNOWN)+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Bad packet length [[:digit:]]+\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Corrupted MAC on input\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Failed (keyboard-interactive/pam|password|none) for (i(llegal|nvalid) user )?[^[:space:]]+ from ([:.[:xdigit:]]+|UNKNOWN|[-_.[:alnum:]]+) port [[:digit:]]{1,5} ssh2?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: I(llegal|nvalid) user [^[:space:]]+ from ([:.[:xdigit:]]+|UNKNOWN)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Failed (keyboard-interactive/pam|password|none) for (i(llegal|nvalid) user )?[^[:space:]]* from ([:.[:xdigit:]]+|UNKNOWN|[-_.[:alnum:]]+) port [[:digit:]]{1,5} ssh2?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: I(llegal|nvalid) user [^[:space:]]* from ([:.[:xdigit:]]+|UNKNOWN)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Nasty PTR record "[:[:xdigit:].]+" is set up for [:[:xdigit:].]+, ignoring$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: PAM pam_putenv: delete non-existent entry; [[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Postponed keyboard-interactive(/pam)? for [^[:space:]]+ from [^[:space:]]+ port [[:digit:]]+( (ssh|ssh2))?$

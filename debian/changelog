@@ -1,3 +1,36 @@
+logcheck (1.3.11) UNRELEASED; urgency=low
+
+  [ Hannes von Haugwitz ]
+  * ignore.d.server/smartd:
+    - ignore "scheduled Offline Immediate Test" (closes: #585802)
+  * ignore.d.server/vlock: new
+    - ignore successful kerberos authentication
+  * ignore.d.workstation/slim: new
+    - ignore successful kerberos authentication
+    - ignore session opened/closed messages
+  * debian/control:
+    - bumped to Standards-Version 3.9.0 (no changes necessary)
+    - depend on default-mta instead of exim4
+  * ignore.d.workstation/wpasupplicant:
+    - match 5660 MHz in 'Trying to associate' message
+
+  [ martin f. krafft ]
+  * ignore.d.server/postfix:
+    - patch from Mathias Krause to address changes in policy-weightd log
+      message format.
+  * ignore.d.server/ssh:
+    - messages about invalid users can contain zero-length usernames.
+
+  [ Hanspeter Kunz ]
+  * ignore.d.server/dhcp:
+    - ignore messages about LDAP lookups of host entries
+    - ignore messages on sending options to hosts (as a result of LDAP lookups)
+  * ignore.d.server/postfix:
+    - ignore another TLS library problem
+      (SSL23_GET_CLIENT_HELLO:http request:s23_srvr.c:379)
+
+ -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Mon, 05 Jul 2010 18:42:18 +0200
+
 logcheck (1.3.10~bpo50+1) lenny-backports; urgency=low
 
   * Rebuilt for lenny-backports.
@@ -9,7 +42,7 @@ logcheck (1.3.10~bpo50+1) lenny-backports; urgency=low
 
 logcheck (1.3.10) unstable; urgency=low
 
-  * logcheck-database.preinst
+  * logcheck-database.preinst:
     - deleting ignore.d.server/ntop, also in ntop (closes: #584824, #584849)
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Mon, 07 Jun 2010 08:51:02 +0200

@@ -10,7 +10,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?, initial Temperature is [[:digit:]]+ Celsius$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?, is SMART capable\. Adding to "monitor" list\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?, opened$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?, starting scheduled (Long|Short) Self-Test\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?, starting scheduled (Offline Immediate |(Long|Short) Self-)Test\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?, previous self-test completed without error$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?, self-test in progress, [1-9]0% remaining$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?, old test of type (S|L) not run at (Sun|Mon|Tue|Wed|Thu|Fri|Sat) \w{3} [ :[:digit:]]{11} [0-9]{4} [A-Z]+, starting now.$
