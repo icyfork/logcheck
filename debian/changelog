@@ -21,6 +21,8 @@ logcheck (1.3.11) UNRELEASED; urgency=low
       by i.d.s/libpam-krb5
   * ignore.d.workstation/login:
     - removed successful krb auth rule, rule is covered by i.d.s/libpam-krb5
+  * violations.ignore.d/logcheck-su:
+    - ignore successful kerberos authentication
 
   [ martin f. krafft ]
   * ignore.d.server/postfix:
