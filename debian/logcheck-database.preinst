@@ -22,6 +22,7 @@ set -e
 # add them to OLD_CONFFILES below, instead.
 
 REMOVED_CONFFILES="
+	/etc/logcheck/ignore.d.server/cracklib
 	/etc/logcheck/ignore.d.workstation/xscreensaver
 	/etc/logcheck/ignore.d.server/ntop
 	/etc/logcheck/ignore.d.server/oidentd

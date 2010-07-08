@@ -19,6 +19,7 @@ logcheck (1.3.11) UNRELEASED; urgency=low
   * logcheck-database.preinst:
     - deleting ignore.d.workstation/xscreensaver, rule is covered
       by i.d.s/libpam-krb5
+    - deleting ignore.d.server/cracklib, rules maintained in cracklib-runtime
   * ignore.d.workstation/login:
     - removed successful krb auth rule, rule is covered by i.d.s/libpam-krb5
   * violations.ignore.d/logcheck-su:
