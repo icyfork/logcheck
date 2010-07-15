@@ -18,7 +18,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPINFORM from [.0-9]{7,15} via [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPRELEASE of [.0-9]{7,15} from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [._[:alnum:]-]+ \((not |)found\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]{7,15}( \(([:[:xdigit:]]+|<no client hardware address>)\) via [._[:alnum:]-]+)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: pool [0-9a-f]{7} [.0-9]{7,15}/[:[:alnum:]]+ total [:[:alnum:]]+  free [:[:alnum:]]+  backup [:[:alnum:]]+  lts [:[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: ((balancing|balanced) )?pool [0-9a-f]{6,7} [.0-9]{7,15}/[:[:alnum:]]+ ? total [:[:alnum:]]+  free [:[:alnum:]]+  backup [:[:alnum:]]+  lts [:[:alnum:]-]+.*(  max-(own \(\+/-\)[[:digit:]]+|misbal [[:digit:]]+))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: ICMP Echo reply while lease [.[:digit:]]{7,15} valid\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: Abandoning IP address [.[:digit:]]{7,15} pinged before offer$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: uid lease [.0-9]{7,15} for client [:[:xdigit:]]+ is duplicate on [.0-9]{7,15}/[[:digit:]]+$
