@@ -38,11 +38,13 @@ logcheck (1.3.11) UNRELEASED; urgency=low
     - ignore messages on sending options to hosts (as a result of LDAP lookups)
     - ignore more balancing/balanced pool messages
     - Found dhcpHWAddress: LDAP entries may contain underscores and dashes
+    - removed rule to "ignore messages about leased addresses which respond to
+      to ping requests" because this is probably caused by a misconfiguration
   * ignore.d.server/postfix:
     - ignore another TLS library problem
       (SSL23_GET_CLIENT_HELLO:http request:s23_srvr.c:379)
 
- -- Hanspeter Kunz <hp@edelkunz.ch>  Sat, 17 Jul 2010 01:08:55 +0200
+ -- Hanspeter Kunz <hp@edelkunz.ch>  Sun, 18 Jul 2010 00:21:13 +0200
 
 logcheck (1.3.10) unstable; urgency=low
 
