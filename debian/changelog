@@ -31,6 +31,8 @@ logcheck (1.3.11) UNRELEASED; urgency=low
       message format.
   * ignore.d.server/ssh:
     - messages about invalid users can contain zero-length usernames.
+  * ignore.d.server/postfix:
+    - ignore delay notification log entries (closes: #589981).
 
   [ Hanspeter Kunz ]
   * ignore.d.server/dhcp:

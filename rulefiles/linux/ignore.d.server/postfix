@@ -7,9 +7,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/[ls]mtp\[[[:digit:]]+\]: [[:upper:][:digit:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)? relay=[^[:space:]]+,( conn_use=[[:digit:]]+,)? delay=[.[:digit:]]+,( delays=[.[:digit:]/]+, dsn=[[:digit:].]+,)? status=sent \(250 [[:digit:].]+ Ok((, id=[-[:digit:]]+, from MTA(\([^[:space:]]+\))?: 250 ([[:digit:].]+ )?Ok)?: queued as [[:digit:]A-F]+|, discarded, UBE, id=[-[:digit:]]+)*|, DSN muted \([45][[:digit:]][[:digit:]] [45](\.[[:digit:]]){2} .+\)\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/anvil\[[[:digit:]]+\]: statistics: max (message|recipient|connection) (count|rate) [/[:digit:]s]+ for \(([.:[:xdigit:]]+)?(smtp(s)?|25|submission|587):([.:[:xdigit:]]+|unknown)\) at \w{3} [ :[:digit:]]{11}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/anvil\[[[:digit:]]+\]: statistics: max cache size [[:digit:]]+ at \w{3} [ :[:digit:]]{11}$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/bounce\[[[:digit:]]+\]: [[:upper:][:digit:]]+: sender (non-delivery|delivery status) notification: [[:upper:][:digit:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/bounce\[[[:digit:]]+\]: [[:xdigit:]]+: sender delivery status notification: [[:xdigit:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: (resent-)?message-id=.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/bounce\[[[:digit:]]+\]: [[:xdigit:]]+: sender (delay|non-delivery|delivery status) notification: [[:xdigit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: (resent-|)message-id=<?[^>]+>?( \(added by [^[:space:]]+\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-discard: END-OF-MESSAGE from [-._[:alnum:]]+\[([.[:digit:]]+|[:[:xdigit:]]+)\]: milter triggers DISCARD action; from=<[^[:space:]]*> to=<[^[:space:]]*> proto=E?SMTP helo=<[^[:space:]]+>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: header [^[:space:]]+:.+ from=<[^[:space:]]*>( to=<[^[:space:]]+>)? proto=E?SMTP helo=<[^[:space:]]+>: .+$
