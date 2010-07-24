@@ -24,9 +24,6 @@ logcheck (1.3.11) UNRELEASED; urgency=low
     - removed successful krb auth rule, rule is covered by i.d.s/libpam-krb5
   * violations.ignore.d/logcheck-su:
     - ignore successful kerberos authentication
-  * ignore.d.server/dhcp:
-    - added missing '^' to the last two rules
-    - fixed invalid range end issue
 
   [ martin f. krafft ]
   * ignore.d.server/postfix:
