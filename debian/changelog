@@ -26,6 +26,9 @@ logcheck (1.3.11) UNRELEASED; urgency=low
     - ignore successful kerberos authentication
   * ignore.d.server/smartd
     - ignore 'state read' and 'state written' messages
+  * debian/copyright:
+    - updated copyright year to 2010
+    - added Marc, Hanspeter and myself as team members
 
   [ martin f. krafft ]
   * ignore.d.server/postfix:
