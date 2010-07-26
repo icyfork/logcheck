@@ -23,3 +23,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: smartd has fork\(\)ed into background mode\. New PID=[[:digit:]]+\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: smartd version [.[:digit:]]+ (\[[-_[:alnum:]]+\] )?Copyright \(C\) 2002-[[:digit:]]+ Bruce Allen$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]:[[:space:]]*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?, state (read from|written to) /var/lib/smartmontools/smartd\.[-_[:alnum:]]+\.ata\.state$
