@@ -41,5 +41,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: (Found dhcpServer LDAP entry|LDAP: Parsing dhcpServer options|LDAP: Parsing dhcpService DN|Found LDAP entry|Parsing external DNs for) '[%=,_[:alnum:]-]+'( \.\.\.)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: (Searching|No host entry) for \(\&\(objectClass=dhcpHost\)\(dhcpHWAddress=ethernet [[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}\)\) in LDAP tree [=,.[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Found dhcpHWAddress LDAP entry [-_=,.[:alnum:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending the following options: '(filename "[.[:alnum:]]+"[#.;[:alnum:][:space:]-]+)?fixed-address [#.;[:alnum:][:space:]-]+(next-server [#.;[:alnum:][:space:]-]+)?'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending the following options: '(filename \"[.[:alnum:]]+\"|(fixed-address|next-server) [.[:digit:]]{7,15}|;#012)+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: bind update on [.[:digit:]]{7,15} got ack from dhcp-failover: xid mismatch\.$
