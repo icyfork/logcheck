@@ -42,4 +42,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: (Searching|No host entry) for \(\&\(objectClass=dhcpHost\)\(dhcpHWAddress=ethernet [[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}\)\) in LDAP tree [=,.[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Found dhcpHWAddress LDAP entry [-_=,.[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending the following options: '(filename \"[.[:alnum:]]+\"|(fixed-address|next-server) [.[:digit:]]{7,15}|;#012)+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending config line '(allow booting|allow bootp|ddns-update-style (ad-hoc|interim|none)|default-lease-time [[:digit:]]+|max-lease-time [[:digit:]]+|min-lease-time [[:digit:]]+|authoritative|option domain-name "[._[:alnum:]-]+"|option domain-name-servers [._,[:alnum:][:space:]-]+|option subnet-mask [.[:digit:]]{7,15}|;#012)+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: bind update on [.[:digit:]]{7,15} got ack from dhcp-failover: xid mismatch\.$
