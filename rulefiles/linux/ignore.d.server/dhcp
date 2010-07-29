@@ -43,6 +43,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Found dhcpHWAddress LDAP entry [-_=,.[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending the following options: '(filename \"[.[:alnum:]]+\"|(fixed-address|next-server) [.[:digit:]]{7,15}|;#012)+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending config line '(allow booting|allow bootp|ddns-update-style (ad-hoc|interim|none)|(default|max|min)-lease-time [[:digit:]]+|authoritative|option domain-name "[._[:alnum:]-]+"|option domain-name-servers [._,[:alnum:][:space:]-]+|option subnet-mask [.[:digit:]]{7,15}|;#012)+'$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending config line '((subnet|netmask|option routers) [.[:digit:]]{7,15}|[[:space:]]|\{#012|\}#012|;#012)+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending config line '((subnet|netmask|option routers|option subnet-mask) [.[:digit:]]{7,15}|(default|max|min)-lease-time [[:digit:]]+|[[:space:]]|\{#012|\}#012|;#012)+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending config line 'pool (range [.[:digit:]]{7,15} [.[:digit:]]+|(default|min|max)-lease-time [[:digit:]]+|failover peer "[-._[:alnum:]]+"|deny dynamic bootp clients|[[:space:]]|\{#012|\}#012|;#012)+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: bind update on [.[:digit:]]{7,15} got ack from dhcp-failover: xid mismatch\.$
