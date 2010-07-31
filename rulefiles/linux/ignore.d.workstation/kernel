@@ -157,3 +157,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? mmc[0-9]: (new SD card at address [[:xdigit:]]{4}|card [[:xdigit:]]{4} removed)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? mmcblk[0-9]: mmc[0-9]:[[:xdigit:]]{4} [[:alnum:]]+ [.[:digit:]]+ [MG]iB$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])?  mmcblk[0-9]:( p[0-9])+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? cfg80211: Calling CRDA to update world regulatory domain$
