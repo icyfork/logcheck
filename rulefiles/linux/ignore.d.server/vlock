@@ -1,1 +1,0 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vlock-main: pam_krb5\(vlock:auth\): user [[:alnum:]-]+ authenticated as [[:alnum:]-]+@[.A-Z]+$

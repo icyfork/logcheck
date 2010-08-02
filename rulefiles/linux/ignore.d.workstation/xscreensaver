@@ -1,1 +1,0 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ xscreensaver(\[[0-9]+\])?: pam_krb5\(xscreensaver:auth\): user [[:alnum:]-]+ authenticated as [[:alnum:]-]+@[.A-Z]+$
