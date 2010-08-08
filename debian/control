@@ -26,7 +26,7 @@ Description: mails anomalies in the system logfiles to the administrator
 Package: logcheck-database
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: logcheck (<= 1.1.1-9)
+Replaces: logcheck (<= 1.1.1-9), amavisd-new (<= 2:2.6.4-1)
 Description: database of system log rules for the use of log checkers
  This database is part of the Logcheck package, but might be used by others.
  It brings a database of regular expressions for matching system log entries
