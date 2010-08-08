@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) (Blocked|Passed) BAD-HEADER,( \[[.:[:xdigit:]]+\]){2} <[^>]*> -> <[^>]*>, quarantine: badh-[-+[:alnum:]]+, Message-ID: [^[:space:]]*, mail_id: [-+[:alnum:]]+, Hits: -, queued_as: [[:xdigit:]]+, [[:digit:]]+ ms$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) (Blocked|Passed), <[^[:space:]]+> -> <[^[:space:]]+>, Message-ID: <[^[:space:]]+>, Hits: -$
