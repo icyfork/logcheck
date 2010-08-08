@@ -19,6 +19,8 @@ logcheck (1.3.12) UNRELEASED; urgency=low
   * Re-integrating ignore.d.server/amavisd-new violations.ignore.d/amavisd-new
     after a long time.
   * Add Replaces: amavisd-new (<= 2:2.6.4-1) to logcheck-database for that.
+  * Remove these files from the debian/logcheck-database.preinst OLD_CONFFILES
+    list.
 
  -- 
 
