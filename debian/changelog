@@ -16,13 +16,13 @@ logcheck (1.3.12) UNRELEASED; urgency=low
     - added some rules to ignore WLAN disconnections
 
   [ Gerfried Fuchs ]
-  * Re-integrating ignore.d.server/amavisd-new violations.ignore.d/amavisd-new
-    after a long time (closes: #583155)
+  * Re-integrating ignore.d.server/amavisd-new after a long time
+    (closes: #583155)
   * Add Replaces: amavisd-new (<= 2:2.6.4-1) to logcheck-database for that.
-  * Remove these files from the debian/logcheck-database.preinst OLD_CONFFILES
+  * Remove this file from the debian/logcheck-database.preinst OLD_CONFFILES
     list.
 
- -- 
+ -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Tue, 10 Aug 2010 08:41:00 +0200
 
 logcheck (1.3.11) unstable; urgency=low
 
