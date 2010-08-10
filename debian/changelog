@@ -1,4 +1,4 @@
-logcheck (1.3.12) UNRELEASED; urgency=low
+logcheck (1.3.12) unstable; urgency=low
 
   [ Hanspeter Kunz ]
   * ignore.d.server/dhcp:
@@ -25,7 +25,7 @@ logcheck (1.3.12) UNRELEASED; urgency=low
   * Remove this file from the debian/logcheck-database.preinst OLD_CONFFILES
     list.
 
- -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Tue, 10 Aug 2010 08:41:00 +0200
+ -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Tue, 10 Aug 2010 21:46:08 +0200
 
 logcheck (1.3.11) unstable; urgency=low
 
