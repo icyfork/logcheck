@@ -14,10 +14,13 @@ logcheck (1.3.12) UNRELEASED; urgency=low
     - added rule to ignore 'No probe response from AP' message
   * ignore.d.workstation/wpasupplicant:
     - added some rules to ignore WLAN disconnections
+  * ignore.d.server/amavisd-new:
+    - match local mails in 'Passed CLEAN' message, thanks to Patrice Le Gurun
+      (closes: #563348)
 
   [ Gerfried Fuchs ]
   * Re-integrating ignore.d.server/amavisd-new after a long time
-    (closes: #583155, #563348)
+    (closes: #583155)
   * Add Replaces: amavisd-new (<= 2:2.6.4-1) to logcheck-database for that.
   * Remove this file from the debian/logcheck-database.preinst OLD_CONFFILES
     list.
