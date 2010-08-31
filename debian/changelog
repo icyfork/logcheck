@@ -1,3 +1,32 @@
+logcheck (1.3.12) unstable; urgency=low
+
+  [ Hanspeter Kunz ]
+  * ignore.d.server/dhcp:
+    - generalized rule for "sending options to hosts"
+    - ignore reading global configuration from an LDAP directory
+    - allow dots in the DN (parsing of the DHCP configuration from LDAP dir)
+    - ignore reading subnet configuration from an LDAP directory
+    - ignore reading pool configuration from an LDAP directory
+
+  [ Hannes von Haugwitz ]
+  * ignore.d.workstation/kernel:
+    - ignore 'cfg80211: Calling CRDA to update world regulatory domain' message
+    - added rule to ignore 'No probe response from AP' message
+  * ignore.d.workstation/wpasupplicant:
+    - added some rules to ignore WLAN disconnections
+  * ignore.d.server/amavisd-new:
+    - match local mails in 'Passed CLEAN' message, thanks to Patrice Le Gurun
+      (closes: #563348)
+
+  [ Gerfried Fuchs ]
+  * Re-integrating ignore.d.server/amavisd-new after a long time
+    (closes: #583155)
+  * Add Replaces: amavisd-new (<= 2:2.6.4-1) to logcheck-database for that.
+  * Remove this file from the debian/logcheck-database.preinst OLD_CONFFILES
+    list.
+
+ -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Tue, 10 Aug 2010 21:46:08 +0200
+
 logcheck (1.3.11~bpo50+1) lenny-backports; urgency=low
 
   * Rebuild for lenny-backports. Former changes kept:

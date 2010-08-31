@@ -81,8 +81,6 @@ OLD_CONFFILES="
   /etc/logcheck/ignore.d.paranoid/imap        38069d1aa006e84dafb61beffab594db
   /etc/logcheck/ignore.d.paranoid/proftpd     9e1f0d8fb64ce5edc8c47eaf720444fa \
                                               d41d8cd98f00b204e9800998ecf8427e
-  /etc/logcheck/ignore.d.server/amavisd-new   98200a65a3ea8555726dfb2deb3dd796 \
-                                              745a32dee4331c1aff00f431fb82fe51
   /etc/logcheck/ignore.d.server/imapd-ssl     cd0953f2f26496b18d8e49febf529fd7
   /etc/logcheck/ignore.d.server/no-ip         b5d4f9a294cd9345060a3e21271d860d
   /etc/logcheck/ignore.d.server/pop3d-ssl     a88ce3eeca092bca762fbff0a985581e \
