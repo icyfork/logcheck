@@ -6,6 +6,13 @@ logcheck (1.3.13) UNRELEASED; urgency=low
   * violations.ignore.d/logcheck-sudo:
     - match COMMAND=list and TTY=console, thanks to Michel Messerschmidt for
       the patch (closes: #593482)
+  * ignore.d.server/amavisd-new:
+    - applied changes by Christian Dröge (closes: #594605):
+      - IPv6 support for IP addresses
+      - allow PASSED SPAM in log
+      - optional minus sign after "Hits:"
+      - optional quarantine in log line
+      - optional Message-ID
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Tue, 31 Aug 2010 18:17:54 +0200
 
