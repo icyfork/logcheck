@@ -7,8 +7,9 @@ logcheck (1.3.14) unstable; urgency=low
   [ Hanspeter Kunz ]
   * ignore.d.server/dovecot:
     - allow for arbitrary msgids
+    - ignore discarded vacation replies with precedence Bulk and list
 
- -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Sat, 06 Nov 2010 01:27:59 +0100
+ -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Sat, 06 Nov 2010 01:43:34 +0100
 
 logcheck (1.3.13) unstable; urgency=low
 
