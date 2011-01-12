@@ -8,8 +8,10 @@ logcheck (1.3.14) unstable; urgency=low
   * ignore.d.server/dovecot:
     - allow for arbitrary msgids
     - ignore discarded vacation replies with precedence Bulk and list
+  * ignore.d.server/postfix:
+    - ignore (temporary) rejects messages when the sender domain is not found
 
- -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Sat, 06 Nov 2010 01:43:34 +0100
+ -- Hanspeter Kunz <hkunz@ifi.uzh.ch>  Wed, 12 Jan 2011 10:10:24 +0100
 
 logcheck (1.3.13) unstable; urgency=low
 
