@@ -16,14 +16,10 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: Listening for incoming TCP connection on [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: MULTI: TCP INIT maxclients=[[:digit:]]+ maxevents=[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: MULTI: new connection by client '[-._[:alnum:]]+' will cause previous active sessions by this client to be dropped\.  Remember to use the --duplicate-cn option if you want multiple clients using the same certificate or username to concurrently connect\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: MULTI: multi_create_instance called$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: MULTI: multi_init called, r=[[:digit:]]+ v=[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: NOTE: UID/GID downgrade will be delayed because of --client, --pull, or --up-delay$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: Preserving previous TUN/TAP instance: [._[:alnum:]-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: Restart pause, [[:digit:]]+ second\(s\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: TCP connection established with [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: TCPv4_SERVER link (local \(bound\)|remote): [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: TCPv4_SERVER link (remote|local): \[undef\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: TLS-Auth MTU parms \[ L:[[:digit:]]+ D:[[:digit:]]+ EF:[[:digit:]]+ EB:[[:digit:]]+ ET:[[:digit:]]+ EL:[[:digit:]]+ \]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: TUN/TAP device [-._[:alnum:]]+ opened$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: UDPv4 link (local( \(bound\))?|remote): (\[undef\]|[._[:alnum:]-]+)(:[[:digit:]]+)?$
@@ -45,6 +41,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? LZO compression initialized$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? MULTI: Learn: [.[:digit:]]{7,15}(/[[:digit:]]{2})? -> [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? MULTI: bad source address from client \[[.[:digit:]]{7,15}\], packet dropped$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? MULTI: multi_create_instance called$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? MULTI: internal route [.[:digit:]]{7,15}/[[:digit:]]{2} -> [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? MULTI: primary virtual IP for [-_.[:alnum:]]+/[.[:digit:]]{7,15}:[[:digit:]]{2,5}: [.[:digit:]]{7,15}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? OPTIONS IMPORT: --ifconfig/up options modified$
@@ -54,6 +51,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? REMOVE PUSH ROUTE: 'route [.[:digit:]]{7,15} [.[:digit:]]{7,15}'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Re-using (SSL/TLS context|pre-shared static key)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS: Username/Password authentication succeeded for username '[^[:space:]]+' (\[CN SET\])?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TCP connection established with (\[AF_INET\])?[.[:digit:]]{7,15}:[[:digit:]]{2,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TCPv4_SERVER link (local \(bound\)|remote): (\[AF_INET\])?[.[:digit:]]{7,15}:[[:digit:]]{2,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TCPv4_SERVER link (remote|local): \[undef\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? SIGUSR1\[soft,(ping-restart|connection-reset|tls-error)\] received, (process|client-instance) restarting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Fatal TLS error \(check_tls_errors_co\), restarting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: Received control packet from unexpected IP addr: [[:digit:].]{7,15}:[[:digit:]]+$

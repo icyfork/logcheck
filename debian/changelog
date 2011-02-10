@@ -3,6 +3,8 @@ logcheck (1.3.14) unstable; urgency=low
   [ martin f. krafft ]
   * ignore.d.server/postfix:
     - ignore notice about verified TLS connections.
+  * ignore.d.server/openvpn:
+    - broaden filters to catch more messages.
 
   [ Hanspeter Kunz ]
   * ignore.d.server/dovecot:
