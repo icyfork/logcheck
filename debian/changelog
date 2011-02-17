@@ -16,6 +16,8 @@ logcheck (1.3.14) unstable; urgency=low
   [ Hannes von Haugwitz ]
   * src/logcheck:
     - added numeric timezone information to subject line
+  * docs/README.logcheck-database:
+    - mention logcheck-test in 'TESTING RULES' section
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Thu, 17 Feb 2011 06:43:37 +0100
 

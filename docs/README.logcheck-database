@@ -175,7 +175,10 @@ hostnames explicitly - hence "oempc" above, rather than the pattern
 TESTING RULES
 =============
 
-To test new rules, you can grep your log file, and remove trailing
+To test new rules, it is recommended to use the logcheck-test command (see
+logcheck-test(1)).
+
+Alternatively you can manually grep your log file, and remove trailing
 space with something like this:
 
     sed -e 's/[[:space:]]*$//' /var/log/syslog | egrep \
