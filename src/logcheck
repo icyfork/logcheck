@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2004-2010 Debian Logcheck Team
+# Copyright (C) 2004-2011 Debian Logcheck Team
 #                         <logcheck-devel@alioth.lists.debian.org>
 # Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>
 # Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
@@ -50,8 +50,8 @@ ATTACK=0
 GETOPTS="c:dhH:l:L:m:opr:RsS:tTuvw"
 
 # Get the details for the email message
-DATE="$(date +'%Y-%m-%d %H:%M')"
-VERSION="1.3.7"
+DATE="$(date +'%Y-%m-%d %H:%M %z')"
+VERSION="1.3.14"
 
 # Set the default report level
 REPORTLEVEL="server"
