@@ -1,4 +1,4 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: Trying to associate with ([0-9a-f]{2}:){5}[0-9a-f]{2} \(SSID='[[:alnum:]-]+' freq=(24([1-6][27]|72|84)|5(24|32|5[068]|66|70)0) MHz\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: Trying to associate with ([0-9a-f]{2}:){5}[0-9a-f]{2} \(SSID='[[:alnum:]-]+' freq=(24([1-6][27]|72|84)|5(2[046]|3[02]|5[068]|6[68]|70)0) MHz\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: Associated with ([0-9a-f]{2}:){5}[0-9a-f]{2}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: WPA: Group rekeying completed with ([0-9a-f]{2}:){5}[0-9a-f]{2} \[GTK=(CCMP|TKIP)\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wpa_supplicant\[[0-9]+\]: WPA: Key negotiation completed with ([0-9a-f]{2}:){5}[0-9a-f]{2} \[PTK=(CCMP|TKIP) GTK=(CCMP|TKIP)\]$
