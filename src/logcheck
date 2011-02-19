@@ -304,6 +304,10 @@ sendreport() {
           debug "Sending report as attachment"
           eval mime-construct $MIMECONSTRUCTARGS --subject "'$subject'" --encoding "7bit" --string "'Report attached'" --to "$SENDMAILTO" --attachment "logcheck_report" --encoding "7bit" --file "$TMPDIR/report"
           return $?
+        elif [ "$MAILASATTACH" -eq 2 ]; then
+          debug "Sending report as gzip attachment"
+          eval mime-construct $MIMECONSTRUCTARGS --subject "'$subject'" --encoding "7bit" --string "'Report attached'" --to "$SENDMAILTO" --type "application/x-gzip" --attachment "logcheck_report.gz" --file "'gzip -c $TMPDIR/report |'"
+          return $?
         fi
         eval mime-construct $MIMECONSTRUCTARGS --subject "'$subject'" --to "$SENDMAILTO" --encoding "7bit" --file "$TMPDIR/report"
     fi
