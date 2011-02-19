@@ -72,7 +72,7 @@ you can easily write and test new rules.
 Test a single rule against /var/log/syslog:
 .RS
 .fam C
-logcheck \-s "RULE"
+logcheck-test \-s "RULE"
 .fam T
 .RE
 
@@ -80,7 +80,7 @@ logcheck \-s "RULE"
 Test a single rule against ~/log, surround the rule with standard prefix and suffix and append "kernel " to prefix:
 .RS
 .fam C
-logcheck \-l ~/log \-e \-P "kernel " "RULE"
+logcheck-test \-l ~/log \-e \-P "kernel " "RULE"
 .fam T
 .RE
 
@@ -88,7 +88,7 @@ logcheck \-l ~/log \-e \-P "kernel " "RULE"
 Test the rules in rulefiles/linux/ignore.d.server/kernel against ~/log:
 .RS
 .fam C
-logcheck \-l ~/log \-r rulefiles/linux/ignore.d.server/kernel
+logcheck-test \-l ~/log \-r rulefiles/linux/ignore.d.server/kernel
 .fam T
 .RE
 
@@ -96,7 +96,7 @@ logcheck \-l ~/log \-r rulefiles/linux/ignore.d.server/kernel
 Test which lines the rules in rulefiles/linux/ignore.d.server/kernel doesn't match:
 .RS
 .fam C
-logcheck \-l ~/log \-r rulefiles/linux/ignore.d.server/kernel \-i
+logcheck-test \-l ~/log \-r rulefiles/linux/ignore.d.server/kernel \-i
 .fam T
 .RE
 
