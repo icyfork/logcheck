@@ -1,4 +1,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ webmin\[[0-9]+\]: Successful login as [[:alnum:]]+ from [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ webmin\[[0-9]+\]: Logout by [[:alnum:]]+ from [._[:alnum:]-]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ webmin\[[0-9]+\]: Timeout of [[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ webmin\[[0-9]+\]: Timeout of( PAM)? session for [[:alnum:]]+$
