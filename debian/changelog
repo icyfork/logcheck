@@ -52,6 +52,9 @@ logcheck (1.3.14) unstable; urgency=low
     - applied changes by Paweł Hajdan, Jr. (closes: #608574):
       - adjusted rule to match DHCPNAK messages
       - ignore "Ignoring domain" messages
+  * ignore.d.server/webmin:
+    - adjusted rule to match new output format, thanks to Tim
+      Riemenschneider (closes: #590559)
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Thu, 17 Feb 2011 06:43:37 +0100
 
