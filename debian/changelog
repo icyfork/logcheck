@@ -40,6 +40,8 @@ logcheck (1.3.14) unstable; urgency=low
     - use 'logcheck-test' instead of 'logcheck' in the EXAMPLES
   * ignore.d.workstation/libpam-gnome-keyring:
     - adjusted rule to match messages without quotes (closes: #618411)
+  * ignore.d.server/dhclient:
+    - allow '-' in interface name (closes: #622942)
 
   [ Gerfried Fuchs ]
   * Remove myself from uploaders.
