@@ -45,6 +45,7 @@ logcheck (1.3.14) unstable; urgency=low
   * ignore.d.workstation/kernel:
     - ignore 'cfg80211: Calling CRDA for country' message
     - ignore 'Monitor-Mwait' messages
+    - ignore WLAN 'waiting for beacon' and 'beacon received' messages
 
   [ Gerfried Fuchs ]
   * Remove myself from uploaders.
