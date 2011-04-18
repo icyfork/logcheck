@@ -160,3 +160,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? mmcblk[0-9]: mmc[0-9]:[[:xdigit:]]{4} [[:alnum:]]+ [.[:digit:]]+ [MG]iB$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])?  mmcblk[0-9]:( p[0-9])+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? cfg80211: Calling CRDA (to update world regulatory domain|for country: [A-Z][A-Z])$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Monitor-Mwait will be used to enter C-[123] state$
