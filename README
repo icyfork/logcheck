@@ -1,0 +1,30 @@
+Overview
+
+Logcheck is a simple utility which is designed to allow a system administrator to view the logfiles which are produced upon hosts under their control.
+
+It does this by mailing summaries of the logfiles to them, after first filtering out "normal" entries.
+
+Normal entries are entries which match one of the many included regular expression files contain in the database.
+This Project
+
+This project is intended to be the place for all future development of logcheck which seems to be dead upstream.
+
+Any Debian developer, or other volunteer is welcome to join in discussion on the mailing lists, or comment.
+
+There are several aims of this project:
+
+    Recode logcheck to be more understandable, with increased documentation.
+    Have a more complete, and maintainable, collection of rule files.
+    Encourage other users to collaborate.
+
+Active Developers
+
+    Todd Troxell (http://caffeine.rapidpacket.com/~xtat/)
+    Maximilian Attems
+    Gerfried Fuchs
+    Eric Evans
+    Jamie Penman-Smithson
+    martin f. krafft (http://people.debian.org/~madduck/)
+    Hannes von Haugwitz
+
+Our IRC channel is #logcheck on oftc.net.
