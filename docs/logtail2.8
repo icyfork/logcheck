@@ -6,6 +6,7 @@ logtail2 \- print log file lines that have not been read
 .RI [\-t]
 .BI \-f logfile
 .RI [\-o offsetfile ]
+.RI [\-d detectrotatedir ]
 .SH DESCRIPTION
 .B logtail2
 reads a specified file (usually a log file) and writes
@@ -39,7 +40,9 @@ is checked.  If the inode is changed,
 .B logtail2
 uses the heuristics stored in
 .I /usr/share/logtail/detectrotate/
-to find a file that might be the rotated
+(see also the option
+.I -d
+) to find a file that might be the rotated
 .I logfile
 and prints it starting with the stored offset. It then proceeds to
 simply print the entire new
@@ -60,6 +63,10 @@ to be read after offset
 .B \-o
 .I offsetfile
 stores offset of previous run
+.TP
+.B \-d
+.I detectrotatedir
+directory to store heuristics data
 .TP
 .B \-t
 test mode - do not change offset in

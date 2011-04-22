@@ -21,32 +21,55 @@
 
 use strict;
 use warnings;
-my ($size, $logfile, $offsetfile);
+my ($size, $logfile, $offsetfile, $dir_detectrotate);
 use Getopt::Std;
 use File::Basename;
 my %opts = ();
 
 # process args and switches
 my ($TEST_MODE) = 0;
-getopts("f:o:t", \%opts);
+getopts("d:f:o:t", \%opts);
 
+#
 # try to detect plain logtail invocation without switches
-if (!$opts{f} && $#ARGV != 0 && $#ARGV != 1) {
+#
+#
+# Invoking without -f option, and the number of arguments > 3.
+# (number of arguments = $#ARGV + 1). For example:
+#    logcheck2 -d foobar -o example
+#
+if (!$opts{f} && $#ARGV > 3) {
    print STDERR "No logfile to read. Use -f [LOGFILE].\n";
    exit 66;
+#
+# Invoking without only one arguments. The argument is the log file
+# The offset file is created by appending the suffix ".offset" to that
+# filename. Oh, this is so dangerous. Example
+#    logcheck2 /path/to/log/file
+# The offset file will be /path/to/log/file.offset
+#
 } elsif ($#ARGV == 0) {
    $logfile = $ARGV[0];
-   $offsetfile = $opts{o};
+   $offsetfile = $opts{o}; # FIXME: I don't think this linke works.
+#
+# Invoking with simple format to specify both log file and offset file
+# Example:
+#   logcheck2 log_file offsec_file
+#
 } elsif ($#ARGV == 1) {
    ($logfile, $offsetfile) = ($ARGV[0], $ARGV[1]);
 } else {
-   ($logfile, $offsetfile) = ($opts{f}, $opts{o});
+   ($logfile, $offsetfile, $dir_detectrotate) = ($opts{f}, $opts{o}, $opts{d});
 }
 
 if ($opts{t}) {
     $TEST_MODE = 1;
 }
 
+if (!$dir_detectrotate) {
+  $dir_detectrotate = "/usr/share/logtail/detectrotate/";
+  print STDERR "Warning: The default directory is used: $dir_detectrotate\n";
+}
 
 sub print_from_offset {
     my ($filename, $offset) = @_;
@@ -109,7 +132,7 @@ sub determine_rotated_logfile {
     # function with dateext magic added.
 
     #print "determine_rotated_logfile $filename $inode\n";
-    for my $codefile (glob("/usr/share/logtail/detectrotate/*.dtr")) {
+    for my $codefile (glob("$dir_detectrotate/*.dtr")) {
         my $func = do $codefile;
         if (!$func) {
 	    print STDERR "cannot compile $codefile: $!";
