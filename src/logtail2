@@ -21,24 +21,25 @@
 
 use strict;
 use warnings;
-my ($size, $logfile, $offsetfile, $dir_detectrotate);
+my ($size, $logfile, $offsetfile, $dir_detectrotate, $sleep_time);
 use Getopt::Std;
 use File::Basename;
 my %opts = ();
 
 # process args and switches
 my ($TEST_MODE) = 0;
-getopts("d:f:o:t", \%opts);
+getopts("s:d:f:o:t", \%opts);
 
+# First, get data from options if they are specified.
+($logfile, $offsetfile, $dir_detectrotate, $sleep_time) = ($opts{f}, $opts{o}, $opts{d}, $opts{s});
+
+# TRY to detect arguments from remained parts (which are unresolved
+# by the function (getopts)).
 #
-# try to detect plain logtail invocation without switches
+# If the option -f isn't specified, we expect the last arguments
+# should be a filename (FIXME: or STDIN ?)
 #
-#
-# Invoking without -f option, and the number of arguments > 3.
-# (number of arguments = $#ARGV + 1). For example:
-#    logcheck2 -d foobar -o example
-#
-if (!$opts{f} && $#ARGV > 3) {
+if (!$opts{f} && $#ARGV > 1) {
    print STDERR "No logfile to read. Use -f [LOGFILE].\n";
    exit 66;
 #
@@ -50,7 +51,7 @@ if (!$opts{f} && $#ARGV > 3) {
 #
 } elsif ($#ARGV == 0) {
    $logfile = $ARGV[0];
-   $offsetfile = $opts{o}; # FIXME: I don't think this linke works.
+   $offsetfile = $opts{o};
 #
 # Invoking with simple format to specify both log file and offset file
 # Example:
@@ -58,8 +59,6 @@ if (!$opts{f} && $#ARGV > 3) {
 #
 } elsif ($#ARGV == 1) {
    ($logfile, $offsetfile) = ($ARGV[0], $ARGV[1]);
-} else {
-   ($logfile, $offsetfile, $dir_detectrotate) = ($opts{f}, $opts{o}, $opts{d});
 }
 
 if ($opts{t}) {
@@ -68,8 +67,11 @@ if ($opts{t}) {
 
 if (!$dir_detectrotate) {
   $dir_detectrotate = "/usr/share/logtail/detectrotate/";
-  print "Warning: The default directory is used: $dir_detectrotate\n";
 }
+
+if (!$sleep_time) {
+  $sleep_time = 0;
+};
 
 sub print_from_offset {
     my ($filename, $offset) = @_;
@@ -153,74 +155,84 @@ sub determine_rotated_logfile {
     }
 }
 
-if (! -f $logfile) {
-    print STDERR "File $logfile cannot be read: $!\n";
-    exit 66;
-}
-unless ($offsetfile) {
-    # offsetfile not given, use .offset/$logfile in the same directory
-    $offsetfile = $logfile . '.offset';
-}
+while (1) {
+  if (! -f $logfile) {
+      print STDERR "File $logfile cannot be read: $!\n";
+      exit 66;
+  }
+  unless ($offsetfile) {
+      # offsetfile not given, use .offset/$logfile in the same directory
+      $offsetfile = $logfile . '.offset';
+  }
 
-my ($inode, $ino, $offset) = (0, 0, 0);
+  my ($inode, $ino, $offset) = (0, 0, 0);
 
-if ($offsetfile) {
-    # If offset file exists, open and parse it.
-    if (open(OFFSET, $offsetfile)) {
+  if ($offsetfile) {
+      # If offset file exists, open and parse it.
+      if (open(OFFSET, $offsetfile)) {
+          $_ = <OFFSET>;
+          if (defined $_) {
+        chomp $_;
+        $inode = $_;
         $_ = <OFFSET>;
         if (defined $_) {
-	    chomp $_;
-	    $inode = $_;
-	    $_ = <OFFSET>;
-	    if (defined $_) {
-	        chomp $_;
-	        $offset = $_;
-	    }
+            chomp $_;
+            $offset = $_;
         }
-    }
+          }
+      }
 
-    # determine log file inode and size
-    unless (($ino,$size) = (stat($logfile))[1,7]) {
-        print STDERR "Cannot get $logfile file size: $!\n";
-        exit 65;
-    }
+      # determine log file inode and size
+      unless (($ino,$size) = (stat($logfile))[1,7]) {
+          print STDERR "Cannot get $logfile file size: $!\n";
+          exit 65;
+      }
 
-    if ($inode == $ino) {
-	# inode is still the same
-        exit 0 if $offset == $size; # short cut
-        if ($offset > $size) {
-            $offset = 0;
-            print "***************\n";
-            print "*** WARNING ***: Log file $logfile is smaller than last time checked!\n";
-            print "*************** This could indicate tampering.\n";
-        }
-    }
+      if ($inode == $ino) {
+    # inode is still the same
+          # exit 0 if $offset == $size; # short cut
+          if ($offset > $size) {
+              $offset = 0;
+              print "***************\n";
+              print "*** WARNING ***: Log file $logfile is smaller than last time checked!\n";
+              print "*************** This could indicate tampering.\n";
+          }
+      }
 
-    if ($inode != $ino) {
-	# this is the interesting case: inode has changed.
-	# So the file might have been rotated. We need to print the
-	# entire file.
-        # Additionally, we might want to see whether we can find the
-	# previous instance of the file and to process it from here.
-	#print "inode $inode, ino $ino\n";
-	my $rotatedfile = determine_rotated_logfile($logfile,$inode);
-	if ( $rotatedfile ) {
-	  print_from_offset($rotatedfile,$offset);
-	}
-	# print the actual file from beginning
-        $offset = 0;
+      if ($inode != $ino) {
+    # this is the interesting case: inode has changed.
+    # So the file might have been rotated. We need to print the
+    # entire file.
+          # Additionally, we might want to see whether we can find the
+    # previous instance of the file and to process it from here.
+    #print "inode $inode, ino $ino\n";
+    my $rotatedfile = determine_rotated_logfile($logfile,$inode);
+    if ( $rotatedfile ) {
+      print_from_offset($rotatedfile,$offset);
     }
+    # print the actual file from beginning
+          $offset = 0;
+      }
+  }
+
+  $size = print_from_offset($logfile,$offset);
+
+  # update offset, unless test mode
+  unless ($TEST_MODE) {
+      unless (open(OFFSET, ">", $offsetfile)) {
+          print STDERR "File $offsetfile cannot be created. Check your permissions: $!\n";
+          exit 73;
+      }
+      print OFFSET "$ino\n$size\n";
+      close OFFSET;
+  }
+
+  if ($sleep_time == 0) {
+    exit 0;
+  }
+  else {
+    sleep $sleep_time;
+  }
 }
 
-$size = print_from_offset($logfile,$offset);
-
-# update offset, unless test mode
-unless ($TEST_MODE) {
-    unless (open(OFFSET, ">", $offsetfile)) {
-        print STDERR "File $offsetfile cannot be created. Check your permissions: $!\n";
-        exit 73;
-    }
-    print OFFSET "$ino\n$size\n";
-    close OFFSET;
-}
 exit 0;
