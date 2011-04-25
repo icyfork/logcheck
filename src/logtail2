@@ -68,7 +68,7 @@ if ($opts{t}) {
 
 if (!$dir_detectrotate) {
   $dir_detectrotate = "/usr/share/logtail/detectrotate/";
-  print STDERR "Warning: The default directory is used: $dir_detectrotate\n";
+  print "Warning: The default directory is used: $dir_detectrotate\n";
 }
 
 sub print_from_offset {
