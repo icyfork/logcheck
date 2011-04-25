@@ -21,17 +21,17 @@
 
 use strict;
 use warnings;
-my ($size, $logfile, $offsetfile, $dir_detectrotate, $sleep_time);
+my ($size, $logfile, $offsetfile, $dir_detectrotate, $sleep_time, $enable_buffer);
 use Getopt::Std;
 use File::Basename;
 my %opts = ();
 
 # process args and switches
 my ($TEST_MODE) = 0;
-getopts("s:d:f:o:t", \%opts);
+getopts("b:s:d:f:o:t", \%opts);
 
 # First, get data from options if they are specified.
-($logfile, $offsetfile, $dir_detectrotate, $sleep_time) = ($opts{f}, $opts{o}, $opts{d}, $opts{s});
+($logfile, $offsetfile, $dir_detectrotate, $sleep_time, $enable_buffer) = ($opts{f}, $opts{o}, $opts{d}, $opts{s}, $opts{b});
 
 # TRY to detect arguments from remained parts (which are unresolved
 # by the function (getopts)).
@@ -71,7 +71,11 @@ if (!$dir_detectrotate) {
 
 if (!$sleep_time) {
   $sleep_time = 0;
-};
+}
+
+if (defined($enable_buffer) and $enable_buffer == 0) {
+  select(STDOUT); $| = 1;
+}
 
 sub print_from_offset {
     my ($filename, $offset) = @_;
@@ -155,7 +159,7 @@ sub determine_rotated_logfile {
     }
 }
 
-while (1) {
+LOOP: while (1) {
   if (! -f $logfile) {
       print STDERR "File $logfile cannot be read: $!\n";
       exit 66;
