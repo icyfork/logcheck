@@ -21,16 +21,20 @@
 
 use strict;
 use warnings;
-my ($size, $logfile, $offsetfile);
+my ($size, $logfile, $offsetfile, $sleep_time, $enable_buffer);
+
 use Getopt::Std;
 my %opts = ();
 
 # process args and switches
 my ($TEST_MODE) = 0;
-getopts("f:o:t", \%opts);
+getopts("b:s:f:o:t", \%opts);
+
+# First, get data from options if they are specified.
+($logfile, $offsetfile, $sleep_time, $enable_buffer) = ($opts{f}, $opts{o}, $opts{s}, $opts{b});
 
 # try to detect plain logtail invocation without switches
-if (!$opts{f} && $#ARGV != 0 && $#ARGV != 1) {
+if (!$opts{f} && $#ARGV > 1) {
    print STDERR "No logfile to read. Use -f [LOGFILE].\n";
    exit 66;
 } elsif ($#ARGV == 0) {
@@ -46,71 +50,84 @@ if ($opts{t}) {
     $TEST_MODE = 1;
 }
 
-
-if (! -f $logfile) {
-    print STDERR "File $logfile cannot be read.\n";
-    exit 66;
-}
-unless ($offsetfile) {
-    # offsetfile not given, use .offset/$logfile in the same directory
-    $offsetfile = $logfile . '.offset';
+if (!$sleep_time) {
+  $sleep_time = 0;
 }
 
-unless (open(LOGFILE, $logfile)) {
-    print STDERR "File $logfile cannot be read.\n";
-    exit 66;
+if (defined($enable_buffer) and $enable_buffer == 0) {
+  select(STDOUT); $| = 1;
 }
 
-my ($inode, $ino, $offset) = (0, 0, 0);
+LOOP: while (1) {
+  if (! -f $logfile) {
+      print STDERR "File $logfile cannot be read.\n";
+      exit 66;
+  }
+  unless ($offsetfile) {
+      # offsetfile not given, use .offset/$logfile in the same directory
+      $offsetfile = $logfile . '.offset';
+  }
 
-unless (not $offsetfile) {
-    if (open(OFFSET, $offsetfile)) {
+  unless (open(LOGFILE, $logfile)) {
+      print STDERR "File $logfile cannot be read.\n";
+      exit 66;
+  }
+
+  my ($inode, $ino, $offset) = (0, 0, 0);
+
+  unless (not $offsetfile) {
+      if (open(OFFSET, $offsetfile)) {
+          $_ = <OFFSET>;
+          unless (! defined $_) {
+        chomp $_;
+        $inode = $_;
         $_ = <OFFSET>;
         unless (! defined $_) {
-	    chomp $_;
-	    $inode = $_;
-	    $_ = <OFFSET>;
-	    unless (! defined $_) {
-	        chomp $_;
-	        $offset = $_;
-	    }
+            chomp $_;
+            $offset = $_;
         }
-    }
+          }
+      }
 
-    unless ((undef,$ino,undef,undef,undef,undef,undef,$size) = stat $logfile) {
-        print STDERR "Cannot get $logfile file size.\n", $logfile;
-        exit 65;
-    }
+      unless ((undef,$ino,undef,undef,undef,undef,undef,$size) = stat $logfile) {
+          print STDERR "Cannot get $logfile file size.\n", $logfile;
+          exit 65;
+      }
 
-    if ($inode == $ino) {
-        exit 0 if $offset == $size; # short cut
-        if ($offset > $size) {
-            $offset = 0;
-            print "***************\n";
-            print "*** WARNING ***: Log file $logfile is smaller than last time checked!\n";
-            print "*************** This could indicate tampering.\n";
-        }
-    }
-    if ($inode != $ino || $offset > $size) {
-        $offset = 0;
-    }
-    seek(LOGFILE, $offset, 0);
+      if ($inode == $ino) {
+          # exit 0 if $offset == $size; # short cut
+          if ($offset > $size) {
+              $offset = 0;
+              print "***************\n";
+              print "*** WARNING ***: Log file $logfile is smaller than last time checked!\n";
+              print "*************** This could indicate tampering.\n";
+          }
+      }
+      if ($inode != $ino || $offset > $size) {
+          $offset = 0;
+      }
+      seek(LOGFILE, $offset, 0);
+  }
+
+  while (<LOGFILE>) {
+      print $_;
+  }
+
+  $size = tell LOGFILE;
+  close LOGFILE;
+
+  # update offset, unless test mode
+  unless ($TEST_MODE) {
+      unless (open(OFFSET, ">$offsetfile")) {
+          print STDERR "File $offsetfile cannot be created. Check your permissions.\n";
+          exit 73;
+      }
+      print OFFSET "$ino\n$size\n";
+      close OFFSET;
+  }
+
+  exit 0 if ($sleep_time == 0);
+  sleep $sleep_time;
 }
 
-while (<LOGFILE>) {
-    print $_;
-}
-
-$size = tell LOGFILE;
-close LOGFILE;
-
-# update offset, unless test mode
-unless ($TEST_MODE) {
-    unless (open(OFFSET, ">$offsetfile")) {
-        print STDERR "File $offsetfile cannot be created. Check your permissions.\n";
-        exit 73;
-    }
-    print OFFSET "$ino\n$size\n";
-    close OFFSET;
-}
 exit 0;

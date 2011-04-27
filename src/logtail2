@@ -231,12 +231,8 @@ LOOP: while (1) {
       close OFFSET;
   }
 
-  if ($sleep_time == 0) {
-    exit 0;
-  }
-  else {
-    sleep $sleep_time;
-  }
+  exit 0 if ($sleep_time == 0);
+  sleep $sleep_time;
 }
 
 exit 0;
